@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dr1ulgoec785u"]
+
+[ext_resource type="PackedScene" uid="uid://5uxnoy7o0w4m" path="res://Museum/museum.tscn" id="1_h8g3x"]
+[ext_resource type="PackedScene" uid="uid://bnowdbcs0lak" path="res://Player/playerController.tscn" id="2_ma34m"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ma34m"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_rlvo1"]
+sky_material = SubResource("ProceduralSkyMaterial_ma34m")
+
+[sub_resource type="Environment" id="Environment_afcvc"]
+background_mode = 2
+sky = SubResource("Sky_rlvo1")
+tonemap_mode = 2
+
+[node name="MainGame" type="Node3D" unique_id=517629617]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1023967660]
+environment = SubResource("Environment_afcvc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=8777766]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Museum" parent="." unique_id=1748015087 instance=ExtResource("1_h8g3x")]
+
+[node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_ma34m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.140633, 1.0154171, 0)

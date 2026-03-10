@@ -2,18 +2,16 @@
 
 [ext_resource type="Script" uid="uid://uyc6a0144gf5" path="res://Player/player_controller.gd" id="1_3ehtj"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m6rf4"]
-albedo_color = Color(0.91764706, 0.5764706, 0.22352941, 1)
-
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_2i3gr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t46ri"]
 
 [node name="PlayerController" type="CharacterBody3D" unique_id=1779176938]
 script = ExtResource("1_3ehtj")
+sprint_speed = 3.8
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=969291666]
-material_override = SubResource("StandardMaterial3D_m6rf4")
+visible = false
 mesh = SubResource("CapsuleMesh_2i3gr")
 
 [node name="Collider" type="CollisionShape3D" parent="." unique_id=168268418]
@@ -22,4 +20,4 @@ shape = SubResource("CapsuleShape3D_t46ri")
 [node name="Head" type="Node3D" parent="." unique_id=1498516129]
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=294614914]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8750032, -0.08505428)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8707956, -0.016380817)
