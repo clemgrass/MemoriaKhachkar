@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://5uxnoy7o0w4m"]
 
+[ext_resource type="PackedScene" uid="uid://tm0w8xnnstuw" path="res://Museum/Room_0/room0.tscn" id="1_gh3s1"]
+[ext_resource type="PackedScene" uid="uid://bnowdbcs0lak" path="res://Player/playerController.tscn" id="2_hn60f"]
+
 [node name="Museum" type="Node3D" unique_id=1748015087]
+
+[node name="Room0" parent="." unique_id=307174438 instance=ExtResource("1_gh3s1")]
+
+[node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_hn60f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.446854, 1.1073687, 0)

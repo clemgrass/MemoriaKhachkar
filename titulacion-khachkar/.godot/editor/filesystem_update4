@@ -1,0 +1,5 @@
+res://Player/platerController.tscn
+res://Player/playerController.tscn
+res://Player/player_controller.gd
+res://Museum/Room_0/room0.tscn
+res://Museum/museum.tscn
