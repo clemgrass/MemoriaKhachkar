@@ -338,3 +338,82 @@ size = Vector3(8.88, 0.29003906, 0.58428764)
 transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
 operation = 2
 size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="northWall" type="CSGCylinder3D" parent="." unique_id=1398977793]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 37.9, 0, 0)
+radius = 16.0
+height = 0.8
+sides = 10
+
+[node name="dBot" type="CSGBox3D" parent="northWall" unique_id=1748421651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.794922, 0, 0)
+operation = 2
+size = Vector3(16.589844, 88.99902, 49.075195)
+
+[node name="dRec" type="CSGBox3D" parent="northWall" unique_id=2077206893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.998296, 0, 0.030914307)
+operation = 2
+size = Vector3(5, 1, 4)
+
+[node name="dCircle2" type="CSGCylinder3D" parent="northWall" unique_id=957718614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5004086, 0, 0.03178954)
+operation = 2
+radius = 2.0
+sides = 36
+
+[node name="dCircle1" type="CSGCylinder3D" parent="northWall" unique_id=2107648353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.662412, 0, 0.032984734)
+operation = 2
+radius = 2.0
+sides = 36
+
+[node name="holderFull" type="CSGBox3D" parent="northWall" unique_id=262276450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.998296, 0, 0.030914307)
+size = Vector3(0.1640625, 0.16625977, 4.1552734)
+
+[node name="holderCircle1" type="CSGCylinder3D" parent="northWall" unique_id=309646414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.501708, 0, 0)
+radius = 2.5
+height = 0.164
+sides = 36
+
+[node name="dTop" type="CSGBox3D" parent="northWall/holderCircle1" unique_id=830620924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49804688, 0, -0.0769043)
+operation = 2
+size = Vector3(3.5976563, 1, 5.3725586)
+
+[node name="dBot" type="CSGCylinder3D" parent="northWall/holderCircle1" unique_id=578363922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13177586, 0, 0)
+operation = 2
+radius = 2.5
+height = 0.164
+sides = 36
+
+[node name="holderCircle2" type="CSGCylinder3D" parent="northWall" unique_id=26776488]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.4525933, 0, 0)
+radius = 2.5
+height = 0.164
+sides = 36
+
+[node name="dTop" type="CSGBox3D" parent="northWall/holderCircle2" unique_id=1518980652]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49804688, 0, -0.0769043)
+operation = 2
+size = Vector3(3.5976563, 1, 5.3725586)
+
+[node name="dBot" type="CSGCylinder3D" parent="northWall/holderCircle2" unique_id=1242356184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13177586, 0, 0)
+operation = 2
+radius = 2.5
+height = 0.164
+sides = 36
+
+[node name="southorthWall" type="CSGCylinder3D" parent="." unique_id=916696625]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -37.9, 0, 0)
+radius = 16.0
+height = 0.8
+sides = 10
+
+[node name="dBot" type="CSGBox3D" parent="southorthWall" unique_id=499472634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.794922, 0, 0)
+operation = 2
+size = Vector3(16.589844, 88.99902, 49.075195)
