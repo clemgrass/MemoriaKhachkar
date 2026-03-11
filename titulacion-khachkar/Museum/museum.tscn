@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cxf1diuhvtr1y" path="res://Museum/Walls/westWall.tscn" id="4_g3fcc"]
 [ext_resource type="PackedScene" uid="uid://bibtoqpefc6mg" path="res://Museum/Walls/eastWall.tscn" id="5_rj70m"]
 [ext_resource type="PackedScene" uid="uid://cdryhpln0dniq" path="res://Museum/Walls/southWall.tscn" id="6_veqx0"]
+[ext_resource type="PackedScene" uid="uid://d4by5ptehcr8m" path="res://Museum/Walls/roof.tscn" id="7_x3da8"]
 
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
@@ -25,3 +26,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 5.518, 14.86)
 
 [node name="SouthWall" parent="." unique_id=1256002170 instance=ExtResource("6_veqx0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 5.518, 0)
+
+[node name="Roof" parent="." unique_id=2143347187 instance=ExtResource("7_x3da8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.199726, 10.233034, 0)

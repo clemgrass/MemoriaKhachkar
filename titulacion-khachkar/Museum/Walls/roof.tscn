@@ -2,7 +2,339 @@
 
 [node name="Roof" type="Node3D" unique_id=2143347187]
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=342589117]
+[node name="mainP" type="CSGCylinder3D" parent="." unique_id=342589117]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
-radius = 15.0
+radius = 16.0
 height = 75.8
+sides = 10
+
+[node name="mainP" type="CSGCylinder3D" parent="mainP" unique_id=1195364754]
+operation = 2
+radius = 15.0
+height = 76.0
+sides = 10
+
+[node name="dBot" type="CSGBox3D" parent="mainP" unique_id=436070004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.794922, 0, 0)
+operation = 2
+size = Vector3(16.589844, 88.99902, 49.075195)
+
+[node name="win1" type="CSGBox3D" parent="mainP" unique_id=629926634]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683135, -32.725, 11.955533)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win1" unique_id=1392378011]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win1" unique_id=1993054941]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win1" unique_id=632116239]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win2" type="CSGBox3D" parent="mainP" unique_id=2118227873]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, -23.347, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win2" unique_id=2048036509]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win2" unique_id=198201020]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win2" unique_id=426394033]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win3" type="CSGBox3D" parent="mainP" unique_id=78299793]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, -13.945, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win3" unique_id=1768169313]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win3" unique_id=734525673]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win3" unique_id=2004096944]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win4" type="CSGBox3D" parent="mainP" unique_id=420876794]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, -4.595, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win4" unique_id=674700584]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win4" unique_id=2048045148]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win4" unique_id=1617111175]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win5" type="CSGBox3D" parent="mainP" unique_id=624644724]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, 4.755, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win5" unique_id=1055972546]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win5" unique_id=1815529651]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win5" unique_id=347872104]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win6" type="CSGBox3D" parent="mainP" unique_id=1675074740]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, 14.105, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win6" unique_id=1879137971]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win6" unique_id=738666794]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win6" unique_id=19975520]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win7" type="CSGBox3D" parent="mainP" unique_id=1348081238]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, 23.455, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win7" unique_id=953143422]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win7" unique_id=368248031]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win7" unique_id=1367261241]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win8" type="CSGBox3D" parent="mainP" unique_id=1312273256]
+transform = Transform3D(0.82609826, 0, 0.5635261, 0, 1, 0, -0.5635261, 0, 0.82609826, 8.683, 32.805, 11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win8" unique_id=1524913704]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win8" unique_id=1409593559]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win8" unique_id=267672691]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win9" type="CSGBox3D" parent="mainP" unique_id=861891523]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, -32.725, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win9" unique_id=1381653861]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win9" unique_id=747252631]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win9" unique_id=1062158897]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win10" type="CSGBox3D" parent="mainP" unique_id=227423340]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, -23.347, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win10" unique_id=900646412]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win10" unique_id=590683765]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win10" unique_id=600418298]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win11" type="CSGBox3D" parent="mainP" unique_id=1508019373]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, -13.945, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win11" unique_id=1710448448]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win11" unique_id=1641545464]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win11" unique_id=1338652479]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win12" type="CSGBox3D" parent="mainP" unique_id=389597973]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, -4.595, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win12" unique_id=952059107]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win12" unique_id=1866347666]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win12" unique_id=185494532]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win13" type="CSGBox3D" parent="mainP" unique_id=1766600079]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, 4.755, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win13" unique_id=1040059723]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win13" unique_id=1517140683]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win13" unique_id=1554417395]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win14" type="CSGBox3D" parent="mainP" unique_id=379769545]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, 14.105, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win14" unique_id=1648043597]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win14" unique_id=949527206]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win14" unique_id=1432833186]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win15" type="CSGBox3D" parent="mainP" unique_id=932894048]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, 23.455, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win15" unique_id=320952676]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win15" unique_id=491896113]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win15" unique_id=121458613]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
+
+[node name="win16" type="CSGBox3D" parent="mainP" unique_id=266981034]
+transform = Transform3D(0.82609826, 0, -0.5635261, 0, 1, 0, 0.5635261, 0, 0.82609826, 8.683, 32.805, -11.956)
+operation = 2
+size = Vector3(8.880432, 8.35, 1.8544922)
+
+[node name="metal1" type="CSGBox3D" parent="mainP/win16" unique_id=1648024938]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6339394e-12, 0, 0, 1, -0.047, -1.38, 0.277)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal2" type="CSGBox3D" parent="mainP/win16" unique_id=349784040]
+transform = Transform3D(1, 0, 0, -1.0010234e-15, 1, 1.6357158e-12, 0, 0, 1, -0.046999454, 1.3799992, 0.27700043)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.58428764)
+
+[node name="metal3" type="CSGBox3D" parent="mainP/win16" unique_id=801051803]
+transform = Transform3D(-4.3711374e-08, -1, 0, 1, -4.371139e-08, 7.252172e-14, -3.5527137e-15, 0, 1, -0.046983242, 0, 0.33939552)
+operation = 2
+size = Vector3(8.88, 0.29003906, 0.45896912)
