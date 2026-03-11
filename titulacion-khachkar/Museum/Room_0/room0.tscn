@@ -1,8 +1,16 @@
 [gd_scene format=3 uid="uid://tm0w8xnnstuw"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q3y8d"]
+albedo_color = Color(1, 0, 0.101960786, 1)
+
 [node name="Room0" type="Node3D" unique_id=307174438]
 
 [node name="floor" type="CSGBox3D" parent="." unique_id=2061786099]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019264221, 0, -0.06696391)
 use_collision = true
 size = Vector3(80, 0.1, 30)
+
+[node name="stub1" type="CSGBox3D" parent="." unique_id=486375063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.804146, 0.069, -0.0765419)
+size = Vector3(0.1, 0.1, 30.088917)
+material = SubResource("StandardMaterial3D_q3y8d")

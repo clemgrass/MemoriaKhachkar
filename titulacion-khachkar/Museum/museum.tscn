@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://tm0w8xnnstuw" path="res://Museum/Room_0/room0.tscn" id="1_gh3s1"]
 [ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="2_hn60f"]
 [ext_resource type="PackedScene" uid="uid://bn4sys00qptlt" path="res://Museum/Entrance/arches.tscn" id="3_dm54h"]
+[ext_resource type="PackedScene" uid="uid://cxf1diuhvtr1y" path="res://Museum/Walls/westWall.tscn" id="4_g3fcc"]
+[ext_resource type="PackedScene" uid="uid://bibtoqpefc6mg" path="res://Museum/Walls/eastWall.tscn" id="5_rj70m"]
+[ext_resource type="PackedScene" uid="uid://cdryhpln0dniq" path="res://Museum/Walls/southWall.tscn" id="6_veqx0"]
 
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
@@ -12,4 +15,13 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.75, -1, 0)
 
 [node name="Arches" parent="." unique_id=973585447 instance=ExtResource("3_dm54h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5, 5.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5, 5.5, -0.065)
+
+[node name="WestWall" parent="." unique_id=237330063 instance=ExtResource("4_g3fcc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 5.518, -14.86)
+
+[node name="EastWall" parent="." unique_id=1440207670 instance=ExtResource("5_rj70m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1, 5.518, 14.86)
+
+[node name="SouthWall" parent="." unique_id=1256002170 instance=ExtResource("6_veqx0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 5.518, 0)

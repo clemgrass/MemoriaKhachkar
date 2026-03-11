@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cdryhpln0dniq"]
+
+[node name="SouthWall" type="Node3D" unique_id=1256002170]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1889702798]
+size = Vector3(0.4, 11, 30)

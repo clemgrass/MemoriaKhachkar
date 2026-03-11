@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bibtoqpefc6mg"]
+
+[node name="EastWall" type="Node3D" unique_id=1440207670]
+
+[node name="wall" type="CSGBox3D" parent="." unique_id=689131251]
+use_collision = true
+size = Vector3(75.8, 11, 0.4)
