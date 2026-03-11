@@ -49,6 +49,10 @@ func _physics_process(delta: float) -> void:
 	if can_jump:
 		if Input.is_action_just_pressed(input_jump) and is_on_floor():
 			velocity.y = jump_velocity
+			
+			#Abre puerta, esto debe quedar introducido en el lograr el puzzle 0
+			var door = get_node("/root/MainGame/Museum/Door")
+			door.open_door()
 
 	if can_sprint and Input.is_action_pressed(input_sprint):
 			move_speed = sprint_speed

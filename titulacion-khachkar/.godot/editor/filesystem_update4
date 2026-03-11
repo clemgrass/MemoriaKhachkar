@@ -7,3 +7,5 @@ res://Museum/Walls/southWall.tscn
 res://Museum/Walls/roof.tscn
 res://World/MainGame.tscn
 res://Museum/Entrance/door.tscn
+res://Player/player_controller.gd
+res://Museum/Entrance/door.gd

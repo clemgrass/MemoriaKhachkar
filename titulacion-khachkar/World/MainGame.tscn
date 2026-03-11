@@ -17,11 +17,11 @@ tonemap_mode = 2
 
 [node name="MainGame" type="Node3D" unique_id=517629617]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1023967660]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=902214904]
 environment = SubResource("Environment_afcvc")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=8777766]
-transform = Transform3D(1.1924881e-08, 0.33709517, 0.94147056, 0, -0.94147056, 0.33709517, 1, -4.0198196e-09, -1.1226924e-08, 0, 0, 0)
+transform = Transform3D(-2.1663197e-08, 0.7477981, 0.6639262, 5.804227e-08, -0.6639262, 0.7477981, 1, 5.4735484e-08, -2.9021136e-08, 0, 0, 0)
 shadow_enabled = true
 
 [node name="Museum" parent="." unique_id=1748015087 instance=ExtResource("1_h8g3x")]

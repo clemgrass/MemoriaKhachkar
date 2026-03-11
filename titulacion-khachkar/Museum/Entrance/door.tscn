@@ -1,11 +1,74 @@
 [gd_scene format=3 uid="uid://dblecjbfmq0xi"]
 
+[ext_resource type="Script" uid="uid://ds87qycfv74gx" path="res://Museum/Entrance/door.gd" id="1_alksk"]
 [ext_resource type="Material" uid="uid://cahhyu3r2wcbn" path="res://Museum/Entrance/Textures/mainDoorTexture.tres" id="1_rh4by"]
 
+[sub_resource type="Animation" id="Animation_rh4by"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("leftDoor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 1.41)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("leftDoor:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_alksk"]
+resource_name = "open"
+length = 2.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("leftDoor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 1.41), Vector3(0.82202244, 0, 1.602388)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("leftDoor:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.6492625, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_btcr1"]
+_data = {
+&"RESET": SubResource("Animation_rh4by"),
+&"open": SubResource("Animation_alksk")
+}
+
 [node name="Door" type="Node3D" unique_id=586879168]
+script = ExtResource("1_alksk")
 
 [node name="leftDoor" type="CSGBox3D" parent="." unique_id=1610157107]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.41)
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 0, 0, 1.41)
 use_collision = true
 size = Vector3(0.351, 6.47, 2.827)
 material = ExtResource("1_rh4by")
@@ -15,3 +78,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.41)
 use_collision = true
 size = Vector3(0.351, 6.47, 2.827)
 material = ExtResource("1_rh4by")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1921387980]
+libraries/ = SubResource("AnimationLibrary_btcr1")
