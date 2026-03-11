@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://dblecjbfmq0xi"]
 
+[ext_resource type="Material" uid="uid://cahhyu3r2wcbn" path="res://Museum/Entrance/Textures/mainDoorTexture.tres" id="1_rh4by"]
+
 [node name="Door" type="Node3D" unique_id=586879168]
+
+[node name="leftDoor" type="CSGBox3D" parent="." unique_id=1610157107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.41)
+use_collision = true
+size = Vector3(0.351, 6.47, 2.827)
+material = ExtResource("1_rh4by")
+
+[node name="rightDoor" type="CSGBox3D" parent="." unique_id=448544399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.41)
+use_collision = true
+size = Vector3(0.351, 6.47, 2.827)
+material = ExtResource("1_rh4by")
