@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://tm0w8xnnstuw" path="res://Museum/Room_0/room0.tscn" id="1_gh3s1"]
 [ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="2_hn60f"]
+[ext_resource type="PackedScene" uid="uid://bn4sys00qptlt" path="res://Museum/Entrance/arches.tscn" id="3_dm54h"]
 
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
@@ -9,3 +10,6 @@
 
 [node name="Stairs" parent="." unique_id=1301923489 instance=ExtResource("2_hn60f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.75, -1, 0)
+
+[node name="Arches" parent="." unique_id=973585447 instance=ExtResource("3_dm54h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5, 5.5, 0)

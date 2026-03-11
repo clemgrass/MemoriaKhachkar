@@ -1,7 +1,2 @@
-res://Player/platerController.tscn
-res://Player/playerController.tscn
-res://Player/player_controller.gd
-res://Museum/Room_0/room0.tscn
+res://Museum/Entrance/arches.tscn
 res://Museum/museum.tscn
-res://World/MainGame.tscn
-res://Museum/Entrance/stairs.tscn
