@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://5uxnoy7o0w4m" path="res://Museum/museum.tscn" id="1_h8g3x"]
 [ext_resource type="PackedScene" uid="uid://bnowdbcs0lak" path="res://Player/playerController.tscn" id="2_ma34m"]
+[ext_resource type="PackedScene" uid="uid://cclarcjb2ap10" path="res://Terrain/outsideWorld.tscn" id="3_rlvo1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ma34m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -29,3 +30,6 @@ shadow_enabled = true
 [node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_ma34m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.140633, 1.0154171, 0)
 sprint_speed = 5.6
+
+[node name="OutsideWorld" parent="." unique_id=1986257652 instance=ExtResource("3_rlvo1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0455875, 0)

@@ -6,3 +6,4 @@ res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
 res://Terrain/ground.tscn
 res://Terrain/outsideWorld.tscn
 res://Terrain/forest.tscn
+res://Terrain/tree_instances.gd
