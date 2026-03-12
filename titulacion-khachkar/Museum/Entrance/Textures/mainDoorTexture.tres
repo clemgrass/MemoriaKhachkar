@@ -1,8 +1,8 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cahhyu3r2wcbn"]
 
-[ext_resource type="Texture2D" uid="uid://dfrd7bk805l1" path="res://Museum/Entrance/Textures/textures/rough_pine_door_diff_4k.jpg" id="1_gvtqo"]
-[ext_resource type="Texture2D" uid="uid://d0mg3hwyo61et" path="res://Museum/Entrance/Textures/textures/rough_pine_door_arm_4k.jpg" id="2_jynjl"]
-[ext_resource type="Texture2D" uid="uid://b7ny7j3ygaqu" path="res://Museum/Entrance/Textures/textures/rough_pine_door_nor_gl_4k.jpg" id="3_i3ybi"]
+[ext_resource type="Texture2D" uid="uid://dfrd7bk805l1" path="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_diff_4k.jpg" id="1_gvtqo"]
+[ext_resource type="Texture2D" uid="uid://d0mg3hwyo61et" path="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_arm_4k.jpg" id="2_jynjl"]
+[ext_resource type="Texture2D" uid="uid://b7ny7j3ygaqu" path="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_nor_gl_4k.jpg" id="3_i3ybi"]
 
 [resource]
 albedo_texture = ExtResource("1_gvtqo")

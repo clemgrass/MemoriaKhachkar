@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cclarcjb2ap10"]
+
+[ext_resource type="PackedScene" uid="uid://dfi37bfo4i2ym" path="res://Terrain/ground.tscn" id="1_4ut5n"]
+
+[node name="OutsideWorld" type="Node3D" unique_id=1986257652]
+
+[node name="Ground" parent="." unique_id=1184140385 instance=ExtResource("1_4ut5n")]

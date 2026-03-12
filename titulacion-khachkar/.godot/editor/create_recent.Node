@@ -1,3 +1,4 @@
+MeshInstance3D
 CSGCylinder3D
 CSGBox3D
 SpotLight3D
@@ -6,5 +7,4 @@ AnimationPlayer
 Node3D
 Camera3D
 CollisionShape3D
-MeshInstance3D
 CharacterBody3D

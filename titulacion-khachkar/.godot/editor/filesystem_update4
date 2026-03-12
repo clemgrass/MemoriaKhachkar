@@ -3,3 +3,6 @@ res://Museum/Room_Khachkar/khachkar_0.tscn
 res://Museum/museum.tscn
 res://World/MainGame.tscn
 res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
+res://Terrain/ground.tscn
+res://Terrain/outsideWorld.tscn
+res://Terrain/forest.tscn
