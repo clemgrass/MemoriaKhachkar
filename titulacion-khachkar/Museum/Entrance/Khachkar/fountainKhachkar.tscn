@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://wnffdeqjb6pw"]
+
+[ext_resource type="PackedScene" uid="uid://dxtvh8walkv0n" path="res://Museum/Entrance/Khachkar/Khachkar0.glb" id="1_4acio"]
+
+[node name="FountainKhachkar" type="Node3D" unique_id=1898502432]
+
+[node name="outerFountain" type="CSGCylinder3D" parent="." unique_id=1428764181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+use_collision = true
+radius = 4.0
+height = 0.404
+sides = 36
+
+[node name="douterFountain" type="CSGCylinder3D" parent="outerFountain" unique_id=716916127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16186523, 0)
+operation = 2
+use_collision = true
+radius = 3.8
+height = 0.67626953
+sides = 36
+
+[node name="Khachkar0" parent="." unique_id=1115336005 instance=ExtResource("1_4acio")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -0.5970268, 1.318, 10)
+
+[node name="kSupport" type="CSGBox3D" parent="." unique_id=214732657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07967055, 0.334157, -0.010284424)
+use_collision = true
+size = Vector3(1.1079102, 1.2431641, 3.9172974)
+
+[node name="detail1" type="CSGCylinder3D" parent="." unique_id=394296612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08907986, -0.4731562, 0)
+use_collision = true
+radius = 2.549
+sides = 36
+
+[node name="detail2" type="CSGCylinder3D" parent="." unique_id=505558518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08907986, -0.33402812, 0)
+use_collision = true
+radius = 2.3
+sides = 36
+
+[node name="detail3" type="CSGCylinder3D" parent="." unique_id=1477811523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08907986, -0.2629832, 0)
+use_collision = true
+radius = 2.1
+height = 2.1420898
+sides = 36
+
+[node name="inisWall" type="CSGBox3D" parent="." unique_id=1563319244]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07967055, 2.2322807, -0.010284424)
+visible = false
+use_collision = true
+size = Vector3(1.1079102, 2.4941406, 3.9172974)
