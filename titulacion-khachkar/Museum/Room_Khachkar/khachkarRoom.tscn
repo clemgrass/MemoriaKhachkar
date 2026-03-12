@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://qrdi8mvcket"]
+
+[ext_resource type="PackedScene" uid="uid://dxtvh8walkv0n" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar0.glb" id="1_1mhfy"]
+[ext_resource type="PackedScene" uid="uid://cpdd2nd82lq4l" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb" id="2_ewkbf"]
+[ext_resource type="PackedScene" uid="uid://ccg5kbdyir1ef" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar1.glb" id="2_smiyn"]
+[ext_resource type="PackedScene" uid="uid://c4niqt1qil88u" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3.glb" id="3_smiyn"]
+[ext_resource type="PackedScene" uid="uid://2fi6ish7yvri" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb" id="4_yutx4"]
+[ext_resource type="PackedScene" uid="uid://b3q7ckmb77pja" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb" id="5_ebdpw"]
+[ext_resource type="PackedScene" uid="uid://byjwqn76w4uhv" path="res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb" id="6_sfs07"]
+
+[node name="KhachkarRoom" type="Node3D" unique_id=2080924142]
+
+[node name="Khachkar0" parent="." unique_id=1794589844 instance=ExtResource("1_1mhfy")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.9304948, 0.46488863, 9.903009)
+
+[node name="khachkar1" parent="." unique_id=497236083 instance=ExtResource("2_smiyn")]
+
+[node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("2_ewkbf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
+
+[node name="Khachkar3" parent="." unique_id=960770345 instance=ExtResource("3_smiyn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="Khachkar4" parent="." unique_id=1903476150 instance=ExtResource("4_yutx4")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.154, 0, 7.5)
+
+[node name="Khachkar5" parent="." unique_id=1741839314 instance=ExtResource("5_ebdpw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="Kachkar6" parent="." unique_id=2029568894 instance=ExtResource("6_sfs07")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.49750662, 0, 15.806491)

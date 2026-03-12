@@ -1,11 +1,2 @@
-res://Museum/Entrance/arches.tscn
-res://Museum/museum.tscn
-res://Museum/Room_0/room0.tscn
-res://Museum/Walls/westWall.tscn
-res://Museum/Walls/eastWall.tscn
-res://Museum/Walls/southWall.tscn
-res://Museum/Walls/roof.tscn
-res://World/MainGame.tscn
-res://Museum/Entrance/door.tscn
-res://Player/player_controller.gd
-res://Museum/Entrance/door.gd
+res://Museum/Room_Khachkar/khachkarRoom.tscn
+res://Museum/Room_Khachkar/khachkar_0.tscn

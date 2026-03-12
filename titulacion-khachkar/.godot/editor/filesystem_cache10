@@ -1,13 +1,14 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773248457
+::res://::1773322279
 ::res://MainMenu/::1773157339
-::res://Museum/::1773246099
-museum.tscn::PackedScene::2148373344252418662::1773246099::0::1::::<><><>0<>0<><>::uid://tm0w8xnnstuw::::res://Museum/Room_0/room0.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://bn4sys00qptlt::::res://Museum/Entrance/arches.tscn<>uid://cxf1diuhvtr1y::::res://Museum/Walls/westWall.tscn<>uid://bibtoqpefc6mg::::res://Museum/Walls/eastWall.tscn<>uid://cdryhpln0dniq::::res://Museum/Walls/southWall.tscn<>uid://d4by5ptehcr8m::::res://Museum/Walls/roof.tscn
-::res://Museum/Entrance/::1773248457
+::res://Museum/::1773322029
+museum.tscn::PackedScene::2148373344252418662::1773248942::0::1::::<><><>0<>0<><>::uid://tm0w8xnnstuw::::res://Museum/Room_0/room0.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://bn4sys00qptlt::::res://Museum/Entrance/arches.tscn<>uid://cxf1diuhvtr1y::::res://Museum/Walls/westWall.tscn<>uid://bibtoqpefc6mg::::res://Museum/Walls/eastWall.tscn<>uid://cdryhpln0dniq::::res://Museum/Walls/southWall.tscn<>uid://d4by5ptehcr8m::::res://Museum/Walls/roof.tscn<>uid://dblecjbfmq0xi::::res://Museum/Entrance/door.tscn
+::res://Museum/Entrance/::1773250790
 arches.tscn::PackedScene::3359879355977061293::1773240492::0::1::::<><><>0<>0<><>::
-door.tscn::PackedScene::7252405964069696154::1773247707::0::1::::<><><>0<>0<><>::
+door.gd::GDScript::8492758482825407815::1773250145::0::1::::<>Node3D<><>0<>0<><>::
+door.tscn::PackedScene::7252405964069696154::1773250790::0::1::::<><><>0<>0<><>::uid://ds87qycfv74gx::::res://Museum/Entrance/door.gd<>uid://cahhyu3r2wcbn::::res://Museum/Entrance/Textures/mainDoorTexture.tres
 stairs.tscn::PackedScene::3651895338357976004::1773160494::0::1::::<><><>0<>0<><>::
-::res://Museum/Entrance/Textures/::1773248722
+::res://Museum/Entrance/Textures/::1773248778
 mainDoorTexture.tres::StandardMaterial3D::4787760984198580151::1773248770::0::1::::<><><>0<>0<><>::uid://dfrd7bk805l1::::res://Museum/Entrance/Textures/textures/rough_pine_door_diff_4k.jpg<>uid://d0mg3hwyo61et::::res://Museum/Entrance/Textures/textures/rough_pine_door_arm_4k.jpg<>uid://b7ny7j3ygaqu::::res://Museum/Entrance/Textures/textures/rough_pine_door_nor_gl_4k.jpg
 ::res://Museum/Entrance/Textures/textures/::1773248458
 rough_pine_door_arm_4k.jpg::CompressedTexture2D::8939170382024321627::1773248413::1773248458::1::::<><><>0<>0<>7f487179e650f3e4a92473a0bae5065f<>res://.godot/imported/rough_pine_door_arm_4k.jpg-f829c18e1ac34cdc39bc0bb164a001f1.s3tc.ctex::
@@ -15,14 +16,31 @@ rough_pine_door_diff_4k.jpg::CompressedTexture2D::221927648734620640::1773248413
 rough_pine_door_nor_gl_4k.jpg::CompressedTexture2D::137082807682571428::1773248413::1773248458::1::::<><><>0<>0<>90277a7939c08b0ce91d0e4fb9eaa4c4<>res://.godot/imported/rough_pine_door_nor_gl_4k.jpg-7b991599b06f4834c011df08e6953278.s3tc.ctex::
 ::res://Museum/Room_0/::1773241257
 room0.tscn::PackedScene::1359919543866221258::1773241257::0::1::::<><><>0<>0<><>::
+::res://Museum/Room_Khachkar/::1773324002
+khachkarRoom.tscn::PackedScene::34068062062426339::1773323934::0::1::::<><><>0<>0<><>::uid://dxtvh8walkv0n::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar0.glb<>uid://cpdd2nd82lq4l::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb<>uid://c4niqt1qil88u::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3.glb<>uid://2fi6ish7yvri::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb<>uid://b3q7ckmb77pja::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb<>uid://byjwqn76w4uhv::::res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb
+::res://Museum/Room_Khachkar/Khachkar_Models/::1773324079
+Kachkar6.glb::PackedScene::4090897411012110715::1773323474::1773323484::1::::<><><>0<>0<>75fb9e27f8a89913c2d854d33ee94699<>res://.godot/imported/Kachkar6.glb-f6815f5677812dd49585b041c60e2756.scn::uid://cwsefljjupr4r::::res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6_uv_map (1).jpg
+Khachkar0.glb::PackedScene::8814117956757983539::1773323766::1773323812::1::::<><><>0<>0<>aaa7ea257d1fb1834769b25bbf6be97d<>res://.godot/imported/Khachkar0.glb-a99a83cd655bdec22f065ab56bbcc833.scn::uid://c2xh6k2i8luul::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar0_uv_map (2).jpg
+khachkar1.glb::PackedScene::4927444747168271037::1773324079::1773324083::1::::<><><>0<>0<>3b18c31b3a0036c9dc655ba6f9f74be6<>res://.godot/imported/khachkar1.glb-62e292ab8bc47789402fb9feddac1df3.scn::uid://cdsr5ermhw2ho::::res://Museum/Room_Khachkar/Khachkar_Models/khachkar1_khachkar1_uv_map.jpg
+Khachkar2.glb::PackedScene::5832098211606465805::1773322324::1773322328::1::::<><><>0<>0<>e89eb27646c3143595dbce8343d3a55a<>res://.godot/imported/Khachkar2.glb-51b878bd59d738538c44d63d23bdb894.scn::uid://jwdgqqmf13yu::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2_uv_map (1).jpg
+Khachkar2_uv_map (1).jpg::CompressedTexture2D::677309634716770132::1773322325::1773322328::1::::<><><>0<>0<>31c1186ea9e2b37ce2a7354444499943<>res://.godot/imported/Khachkar2_uv_map (1).jpg-52a4d70dabfd066bb97ff71a78d382cf.s3tc.ctex::
+Khachkar3.glb::PackedScene::6835670091183225042::1773322612::1773322616::1::::<><><>0<>0<>04ed85ca478f2624e79fde798778b641<>res://.godot/imported/Khachkar3.glb-807f3b656e81fc9291be8248d6337a57.scn::uid://h2oxhv4wv0kc::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3_uv_map (2).jpg
+Khachkar3_uv_map (2).jpg::CompressedTexture2D::547951617436608802::1773322613::1773322616::1::::<><><>0<>0<>7ea6fa4e4374302b1089bfe53a138e50<>res://.godot/imported/Khachkar3_uv_map (2).jpg-4bd0ad0c95b25ca699d64684470d7e4c.s3tc.ctex::
+Khachkar4.glb::PackedScene::1905962210905416254::1773322775::1773322779::1::::<><><>0<>0<>0428e61c39c4bb06d4de98115530648d<>res://.godot/imported/Khachkar4.glb-29b7ff3749ed142cc4faa106c60c751d.scn::uid://d05x8rmy4unm2::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4_uv_map (4).jpg
+Khachkar4_uv_map (4).jpg::CompressedTexture2D::8977370809249007191::1773322776::1773322779::1::::<><><>0<>0<>c0a3a7067acd52709a09aa2883aba2d0<>res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.s3tc.ctex::
+Khachkar5.glb::PackedScene::4386685408839928846::1773322897::1773322901::1::::<><><>0<>0<>908e6748d746346350c8b4db639c6611<>res://.godot/imported/Khachkar5.glb-33753c7a990448d522bd581048483a1d.scn::uid://bvcfucxbs2q4a::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5_uv_map (5).jpg
+Khachkar5_uv_map (5).jpg::CompressedTexture2D::3864854597089602930::1773322899::1773322901::1::::<><><>0<>0<>7512e97a6c9d1b976956f9db005ebfe1<>res://.godot/imported/Khachkar5_uv_map (5).jpg-eddbbd77bad311048119c71fc8983f97.s3tc.ctex::
+Kachkar6_uv_map (1).jpg::CompressedTexture2D::6354407116032927943::1773323478::1773323484::1::::<><><>0<>0<>a245f0d742c1be7ac27f4d30acd2e4a5<>res://.godot/imported/Kachkar6_uv_map (1).jpg-208da25476ddbeec7fe764f31f670c9e.s3tc.ctex::
+Khachkar0_uv_map (2).jpg::CompressedTexture2D::6715901779868127659::1773323806::1773323813::1::::<><><>0<>0<>e7a2929ee00b33c1bbb0b0b8ceb72443<>res://.godot/imported/Khachkar0_uv_map (2).jpg-ee4d5f1007286f39f5061fe0c0940807.s3tc.ctex::
+khachkar1_khachkar1_uv_map.jpg::CompressedTexture2D::5021652697478103240::1773324080::1773324083::1::::<><><>0<>0<>a51e792d0f7bf0ecef227bb25c626406<>res://.godot/imported/khachkar1_khachkar1_uv_map.jpg-26d3b35dda679abf561b06800afa5d6a.s3tc.ctex::
 ::res://Museum/Walls/::1773247543
 eastWall.tscn::PackedScene::2951175298262858042::1773242871::0::1::::<><><>0<>0<><>::
 roof.tscn::PackedScene::9198314493372575602::1773247543::0::1::::<><><>0<>0<><>::
 southWall.tscn::PackedScene::5019972833970347740::1773242976::0::1::::<><><>0<>0<><>::
 westWall.tscn::PackedScene::6399091110454656408::1773242868::0::1::::<><><>0<>0<><>::
-::res://Player/::1773157814
+::res://Player/::1773250346
 playerController.tscn::PackedScene::97915239036222750::1773157814::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd
-player_controller.gd::GDScript::1453498772295999128::1773157004::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player_controller.gd::GDScript::1453498772295999128::1773250346::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://Terrain/::1773157350
-::res://World/::1773246485
-MainGame.tscn::PackedScene::8407380535072764980::1773246485::0::1::::<><><>0<>0<><>::uid://5uxnoy7o0w4m::::res://Museum/museum.tscn<>uid://bnowdbcs0lak::::res://Player/playerController.tscn
+::res://World/::1773250382
+MainGame.tscn::PackedScene::8407380535072764980::1773250382::0::1::::<><><>0<>0<><>::uid://5uxnoy7o0w4m::::res://Museum/museum.tscn<>uid://bnowdbcs0lak::::res://Player/playerController.tscn
