@@ -7,3 +7,5 @@ res://Terrain/ground.tscn
 res://Terrain/outsideWorld.tscn
 res://Terrain/forest.tscn
 res://Terrain/tree_instances.gd
+res://Museum/Entrance/arches.tscn
+res://Museum/Entrance/Textures/entranceWallWhiter.tres

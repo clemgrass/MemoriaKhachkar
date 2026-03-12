@@ -1,26 +1,6 @@
 [gd_scene format=3 uid="uid://dfi37bfo4i2ym"]
 
-[ext_resource type="Texture2D" uid="uid://6d0v88r63dip" path="res://Terrain/Textures/textures_grassForest/forest_leaves_04_diff_4k.jpg" id="1_pptii"]
-[ext_resource type="Texture2D" uid="uid://d4jdl1iaytypb" path="res://Terrain/Textures/textures_grassForest/forest_leaves_04_arm_4k.jpg" id="2_x3lmr"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2qvn6"]
-albedo_texture = ExtResource("1_pptii")
-metallic = 1.0
-metallic_texture = ExtResource("2_x3lmr")
-roughness_texture = ExtResource("2_x3lmr")
-uv1_scale = Vector3(50, 50, 1)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_020gd"]
-material = SubResource("StandardMaterial3D_2qvn6")
-size = Vector2(200, 200)
-subdivide_width = 50
-subdivide_depth = 50
-
 [node name="Ground" type="Node3D" unique_id=1184140385]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=719457592]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3113971, 0, 0)
-mesh = SubResource("PlaneMesh_020gd")
 
 [node name="floor" type="CSGBox3D" parent="." unique_id=409696691]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5009909, 0)

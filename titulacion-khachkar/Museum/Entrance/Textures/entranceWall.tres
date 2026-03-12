@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://21wv6auhe5yl"]
+
+[ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="1_e0m3d"]
+[ext_resource type="Texture2D" uid="uid://da6lbcnywusw5" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_nor_gl_4k.jpg" id="2_sgwsq"]
+[ext_resource type="Texture2D" uid="uid://de1pp06wwcprv" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg" id="3_7eiw0"]
+
+[resource]
+albedo_texture = ExtResource("1_e0m3d")
+metallic = 1.0
+metallic_texture = ExtResource("2_sgwsq")
+roughness_texture = ExtResource("3_7eiw0")
