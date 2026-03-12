@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cdryhpln0dniq" path="res://Museum/Walls/southWall.tscn" id="6_veqx0"]
 [ext_resource type="PackedScene" uid="uid://d4by5ptehcr8m" path="res://Museum/Walls/roof.tscn" id="7_x3da8"]
 [ext_resource type="PackedScene" uid="uid://dblecjbfmq0xi" path="res://Museum/Entrance/door.tscn" id="8_yfuot"]
+[ext_resource type="PackedScene" uid="uid://qrdi8mvcket" path="res://Museum/Room_Khachkar/khachkarRoom.tscn" id="9_aek4y"]
 
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
@@ -33,3 +34,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.199726, 10.233034, 0)
 
 [node name="Door" parent="." unique_id=586879168 instance=ExtResource("8_yfuot")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.92633, 2.9660282, -0.06474739)
+
+[node name="KhachkarRoom" parent="." unique_id=2080924142 instance=ExtResource("9_aek4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.026530147, 0)

@@ -1,6 +1,8 @@
-AnimationPlayer
 CSGBox3D
+SpotLight3D
+DirectionalLight3D
 CSGCylinder3D
+AnimationPlayer
 Node3D
 Camera3D
 CollisionShape3D

@@ -28,3 +28,4 @@ shadow_enabled = true
 
 [node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_ma34m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.140633, 1.0154171, 0)
+sprint_speed = 5.6
