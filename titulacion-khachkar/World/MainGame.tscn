@@ -27,6 +27,7 @@ transform = Transform3D(-6.920299e-08, 0.7477981, 0.66392606, 1.00250055e-07, -0
 shadow_enabled = true
 
 [node name="Museum" parent="." unique_id=1748015087 instance=ExtResource("1_h8g3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_ma34m")]
 transform = Transform3D(-0.6953986, 0, 0.7186242, 0, 1, 0, -0.7186242, 0, -0.6953986, 61.699284, 1.0154171, -15.532893)
