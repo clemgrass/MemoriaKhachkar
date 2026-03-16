@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bce1howo16h1i"]
+
+[node name="Pilar" type="Node3D" unique_id=1878544974]
+
+[node name="p1" type="CSGCylinder3D" parent="." unique_id=1382835825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.038, 0)
+radius = 0.25
+height = 0.075
+sides = 36
+
+[node name="p2" type="CSGCylinder3D" parent="." unique_id=1787450590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.113, 0)
+radius = 0.125
+height = 0.075
+sides = 36
+
+[node name="p3" type="CSGBox3D" parent="." unique_id=981788222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+size = Vector3(0.1, 0.2, 0.1)
+
+[node name="p4" type="CSGCylinder3D" parent="." unique_id=1441209651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38738063, 0)
+radius = 0.125
+height = 0.075
+sides = 36
+
+[node name="p5" type="CSGCylinder3D" parent="." unique_id=1911354716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4620205, 0)
+radius = 0.25
+height = 0.075
+sides = 36

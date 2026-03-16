@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://da7if7oypv7we"]
+
+[ext_resource type="PackedScene" uid="uid://cpwl6rpa2acm2" path="res://Museum/Second_Floor/Rail/Rings.tscn" id="1_h8jh1"]
+[ext_resource type="PackedScene" uid="uid://40kq2rab20dq" path="res://Museum/Second_Floor/Rail/FloorDetail.tscn" id="2_hhn64"]
+
+[node name="Conection" type="Node3D" unique_id=167304725]
+
+[node name="Rings" parent="." unique_id=1763409923 instance=ExtResource("1_h8jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28326556, 0.46234465, 0)
+
+[node name="rings2" parent="Rings" unique_id=105576885 instance=ExtResource("1_h8jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0)
+
+[node name="rings3" parent="Rings" unique_id=734924368 instance=ExtResource("1_h8jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, 0)
+
+[node name="rings4" parent="Rings" unique_id=1858591624 instance=ExtResource("1_h8jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, 0, 0)
+
+[node name="rings5" parent="Rings" unique_id=1548583035 instance=ExtResource("1_h8jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36, 0, 0)
+
+[node name="rings6" parent="Rings" unique_id=806377347 instance=ExtResource("1_h8jh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0, 0)
+
+[node name="FloorDetail" parent="." unique_id=488259784 instance=ExtResource("2_hhn64")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5101313, 0, 0)

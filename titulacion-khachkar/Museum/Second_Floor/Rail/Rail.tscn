@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://c2vv3w2c2cgym"]
+
+[ext_resource type="PackedScene" uid="uid://bce1howo16h1i" path="res://Museum/Second_Floor/Rail/Pilar.tscn" id="1_5xkhc"]
+[ext_resource type="PackedScene" uid="uid://cpwl6rpa2acm2" path="res://Museum/Second_Floor/Rail/Rings.tscn" id="2_cfu37"]
+[ext_resource type="PackedScene" uid="uid://40kq2rab20dq" path="res://Museum/Second_Floor/Rail/FloorDetail.tscn" id="3_cfu37"]
+[ext_resource type="PackedScene" uid="uid://dwn5w7tk45bbq" path="res://Museum/Second_Floor/Rail/Cross.tscn" id="4_waci5"]
+
+[node name="Rail" type="Node3D" unique_id=764071564]
+
+[node name="Pilar" parent="." unique_id=1878544974 instance=ExtResource("1_5xkhc")]
+
+[node name="Rings" parent="." unique_id=1763409923 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28326556, 0.46234465, 0)
+
+[node name="rings2" parent="Rings" unique_id=1876419892 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0)
+
+[node name="rings3" parent="Rings" unique_id=672064470 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, 0)
+
+[node name="rings4" parent="Rings" unique_id=2122202651 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, 0, 0)
+
+[node name="rings5" parent="Rings" unique_id=1212259691 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36, 0, 0)
+
+[node name="rings6" parent="Rings" unique_id=781235634 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0, 0)
+
+[node name="Pilar2" parent="." unique_id=1814629748 instance=ExtResource("1_5xkhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0184554, 0, 0)
+
+[node name="FloorDetail" parent="." unique_id=488259784 instance=ExtResource("3_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5101313, 0, 0)
+
+[node name="Rings2" parent="." unique_id=2120005872 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3053954, 0.46234465, 0)
+
+[node name="rings2" parent="Rings2" unique_id=1881087141 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0)
+
+[node name="rings3" parent="Rings2" unique_id=2033938683 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, 0)
+
+[node name="rings4" parent="Rings2" unique_id=190873102 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, 0, 0)
+
+[node name="rings5" parent="Rings2" unique_id=1209820682 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36, 0, 0)
+
+[node name="rings6" parent="Rings2" unique_id=1921992648 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0, 0)
+
+[node name="Pilar3" parent="." unique_id=1570201112 instance=ExtResource("1_5xkhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.040585, 0, 0)
+
+[node name="FloorDetail2" parent="." unique_id=1701705035 instance=ExtResource("3_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5291061, 0, 0)
+
+[node name="Cross" parent="." unique_id=1984412013 instance=ExtResource("4_waci5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.539525, 0, 0)
+
+[node name="FloorDetail3" parent="." unique_id=1653575627 instance=ExtResource("3_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5492613, 0, 0)
+
+[node name="Pilar4" parent="." unique_id=1368251844 instance=ExtResource("1_5xkhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0412974, 0, 0)
+
+[node name="Rings3" parent="." unique_id=432854263 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.324563, 0.46234465, 0)
+
+[node name="rings2" parent="Rings3" unique_id=1958105639 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0)
+
+[node name="rings3" parent="Rings3" unique_id=1682967340 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, 0)
+
+[node name="rings4" parent="Rings3" unique_id=1541971154 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, 0, 0)
+
+[node name="rings5" parent="Rings3" unique_id=1349015725 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36, 0, 0)
+
+[node name="rings6" parent="Rings3" unique_id=653914076 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0, 0)
+
+[node name="Pilar5" parent="." unique_id=1095555943 instance=ExtResource("1_5xkhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.059753, 0, 0)
+
+[node name="FloorDetail4" parent="." unique_id=2450747 instance=ExtResource("3_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5514288, 0, 0)
+
+[node name="Rings4" parent="." unique_id=1881173245 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.343029, 0.46234465, 0)
+
+[node name="rings2" parent="Rings4" unique_id=295265068 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0)
+
+[node name="rings3" parent="Rings4" unique_id=537526519 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, 0)
+
+[node name="rings4" parent="Rings4" unique_id=1022354980 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, 0, 0)
+
+[node name="rings5" parent="Rings4" unique_id=654000858 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36, 0, 0)
+
+[node name="rings6" parent="Rings4" unique_id=219694491 instance=ExtResource("2_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0, 0)
+
+[node name="Pilar6" parent="." unique_id=1616179632 instance=ExtResource("1_5xkhc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.078219, 0, 0)
+
+[node name="FloorDetail5" parent="." unique_id=1031392445 instance=ExtResource("3_cfu37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.569895, 0, 0)

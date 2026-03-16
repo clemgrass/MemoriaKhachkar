@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://40kq2rab20dq"]
+
+[node name="FloorDetail" type="Node3D" unique_id=488259784]
+
+[node name="fd1" type="CSGBox3D" parent="." unique_id=1056063323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, 0)
+size = Vector3(1, 0.03, 0.48)
+
+[node name="fd2" type="CSGBox3D" parent="." unique_id=1169303058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045, 0)
+size = Vector3(1, 0.03, 0.24)

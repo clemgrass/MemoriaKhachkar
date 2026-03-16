@@ -10,12 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://dblecjbfmq0xi" path="res://Museum/Entrance/door.tscn" id="8_yfuot"]
 [ext_resource type="PackedScene" uid="uid://qrdi8mvcket" path="res://Museum/Room_Khachkar/khachkarRoom.tscn" id="9_aek4y"]
 [ext_resource type="PackedScene" uid="uid://wnffdeqjb6pw" path="res://Museum/Entrance/Khachkar/fountainKhachkar.tscn" id="10_vbj7j"]
+[ext_resource type="PackedScene" uid="uid://cl50nx7wocr2b" path="res://Museum/Second_Floor/LevelFloor.tscn" id="11_44psb"]
 
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
 [node name="Room0" parent="." unique_id=307174438 instance=ExtResource("1_gh3s1")]
 
-[node name="Stairs" parent="." unique_id=1301923489 instance=ExtResource("2_hn60f")]
+[node name="StairsOutside" parent="." unique_id=1301923489 instance=ExtResource("2_hn60f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.75, -1, 0)
 
 [node name="Arches" parent="." unique_id=973585447 instance=ExtResource("3_dm54h")]
@@ -41,3 +42,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.026530147, 0)
 
 [node name="FountainKhachkar" parent="." unique_id=1898502432 instance=ExtResource("10_vbj7j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.19842, -1.35238, -0.17345834)
+
+[node name="LevelFloor" parent="." unique_id=532701115 instance=ExtResource("11_44psb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.04411, 0, 0)

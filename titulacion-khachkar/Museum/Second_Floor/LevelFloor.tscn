@@ -1,0 +1,271 @@
+[gd_scene format=3 uid="uid://cl50nx7wocr2b"]
+
+[ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="1_j4nf5"]
+[ext_resource type="PackedScene" uid="uid://c2vv3w2c2cgym" path="res://Museum/Second_Floor/Rail/Rail.tscn" id="2_xipgr"]
+[ext_resource type="PackedScene" uid="uid://da7if7oypv7we" path="res://Museum/Second_Floor/Rail/Conection.tscn" id="3_hw7hd"]
+[ext_resource type="PackedScene" uid="uid://cpwl6rpa2acm2" path="res://Museum/Second_Floor/Rail/Rings.tscn" id="4_ikl06"]
+[ext_resource type="PackedScene" uid="uid://40kq2rab20dq" path="res://Museum/Second_Floor/Rail/FloorDetail.tscn" id="5_4ilnc"]
+[ext_resource type="PackedScene" uid="uid://bce1howo16h1i" path="res://Museum/Second_Floor/Rail/Pilar.tscn" id="6_uaoq7"]
+[ext_resource type="PackedScene" uid="uid://dwn5w7tk45bbq" path="res://Museum/Second_Floor/Rail/Cross.tscn" id="7_uaoq7"]
+
+[node name="LevelFloor" type="Node3D" unique_id=532701115]
+
+[node name="StairsMiddle" parent="." unique_id=1301923489 instance=ExtResource("1_j4nf5")]
+transform = Transform3D(0.3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="s2" parent="StairsMiddle" unique_id=1514581291 instance=ExtResource("1_j4nf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1.1, 0)
+
+[node name="s3" parent="StairsMiddle" unique_id=1393435594 instance=ExtResource("1_j4nf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2.2, 0)
+
+[node name="s4" parent="StairsMiddle" unique_id=609699686 instance=ExtResource("1_j4nf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 3.3, 0)
+
+[node name="s5" parent="StairsMiddle" unique_id=1302405256 instance=ExtResource("1_j4nf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 4.4, 0)
+
+[node name="s6" parent="StairsMiddle" unique_id=475813951 instance=ExtResource("1_j4nf5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 5.5, 0)
+
+[node name="floorSouth" type="CSGBox3D" parent="." unique_id=1557088053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.21737, 6.7, 0)
+use_collision = true
+size = Vector3(5.3912354, 0.1, 30)
+
+[node name="floorLeft" type="CSGBox3D" parent="." unique_id=1248026288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.978516, 6.7, 13.5)
+use_collision = true
+size = Vector3(55, 0.1, 3)
+
+[node name="floorNorth" type="CSGBox3D" parent="." unique_id=1480909245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.164837, 6.7, 0)
+use_collision = true
+size = Vector3(15.372345, 0.1, 30)
+
+[node name="floorRight" type="CSGBox3D" parent="." unique_id=721780364]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.979, 6.7, -13.5)
+use_collision = true
+size = Vector3(55, 0.1, 3)
+
+[node name="railsRight" type="Node3D" parent="." unique_id=2068296624]
+
+[node name="Rail1" parent="railsRight" unique_id=764071564 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.264746, 6.7483582, -12.260356)
+
+[node name="Conection1" parent="railsRight" unique_id=167304725 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.186437, 6.7483582, -12.260356)
+
+[node name="Rail2" parent="railsRight" unique_id=1826711234 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1679325, 6.7483582, -12.260356)
+
+[node name="Conection2" parent="railsRight" unique_id=9113991 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0863879, 6.7483582, -12.260356)
+
+[node name="Rail3" parent="railsRight" unique_id=635675594 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.063575864, 6.7483582, -12.260356)
+
+[node name="Conection3" parent="railsRight" unique_id=2045966996 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0197315, 6.7483582, -12.260356)
+
+[node name="Rail4" parent="railsRight" unique_id=536997926 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0486417, 6.7483582, -12.260356)
+
+[node name="Conection4" parent="railsRight" unique_id=1283796012 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.131948, 6.7483582, -12.260356)
+
+[node name="Rail5" parent="railsRight" unique_id=728770536 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.156446, 6.7483582, -12.260356)
+
+[node name="Conection5" parent="railsRight" unique_id=470640518 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.239754, 6.7483582, -12.260356)
+
+[node name="Rail6" parent="railsRight" unique_id=1664356117 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.264467, 6.7483582, -12.260356)
+
+[node name="Conection6" parent="railsRight" unique_id=1401926810 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.347775, 6.7483582, -12.260356)
+
+[node name="Rail7" parent="railsRight" unique_id=447584431 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.372211, 6.7483582, -12.260356)
+
+[node name="Conection7" parent="railsRight" unique_id=1109581726 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.455519, 6.7483582, -12.260356)
+
+[node name="Rail8" parent="railsRight" unique_id=2081444897 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.478937, 6.7483582, -12.260356)
+
+[node name="Conection8" parent="railsRight" unique_id=1133307139 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.562244, 6.7483582, -12.260356)
+
+[node name="Rail9" parent="railsRight" unique_id=1670930825 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.58947, 6.7483582, -12.260356)
+
+[node name="Conection9" parent="railsRight" unique_id=312413588 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.672775, 6.7483582, -12.260356)
+
+[node name="railsLeft" type="Node3D" parent="." unique_id=45698456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24.56074)
+
+[node name="Rail1" parent="railsLeft" unique_id=921669211 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.264746, 6.7483582, -12.260356)
+
+[node name="Conection1" parent="railsLeft" unique_id=681589704 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.186437, 6.7483582, -12.260356)
+
+[node name="Rail2" parent="railsLeft" unique_id=2143652986 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1679325, 6.7483582, -12.260356)
+
+[node name="Conection2" parent="railsLeft" unique_id=1597304291 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0863879, 6.7483582, -12.260356)
+
+[node name="Rail3" parent="railsLeft" unique_id=17977244 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.063575864, 6.7483582, -12.260356)
+
+[node name="Conection3" parent="railsLeft" unique_id=1132813670 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0197315, 6.7483582, -12.260356)
+
+[node name="Rail4" parent="railsLeft" unique_id=892875872 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0486417, 6.7483582, -12.260356)
+
+[node name="Conection4" parent="railsLeft" unique_id=1334734613 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.131948, 6.7483582, -12.260356)
+
+[node name="Rail5" parent="railsLeft" unique_id=504836357 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.156446, 6.7483582, -12.260356)
+
+[node name="Conection5" parent="railsLeft" unique_id=164227682 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.239754, 6.7483582, -12.260356)
+
+[node name="Rail6" parent="railsLeft" unique_id=1262998414 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.264467, 6.7483582, -12.260356)
+
+[node name="Conection6" parent="railsLeft" unique_id=456338638 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.347775, 6.7483582, -12.260356)
+
+[node name="Rail7" parent="railsLeft" unique_id=387174952 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.372211, 6.7483582, -12.260356)
+
+[node name="Conection7" parent="railsLeft" unique_id=2140367916 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.455519, 6.7483582, -12.260356)
+
+[node name="Rail8" parent="railsLeft" unique_id=1506962458 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.478937, 6.7483582, -12.260356)
+
+[node name="Conection8" parent="railsLeft" unique_id=850415897 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.562244, 6.7483582, -12.260356)
+
+[node name="Rail9" parent="railsLeft" unique_id=1772172067 instance=ExtResource("2_xipgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.58947, 6.7483582, -12.260356)
+
+[node name="Conection9" parent="railsLeft" unique_id=716351114 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.672775, 6.7483582, -12.260356)
+
+[node name="railsNorth" type="Node3D" parent="." unique_id=167785791]
+
+[node name="RingsRightCon" parent="railsNorth" unique_id=1133316389 instance=ExtResource("4_ikl06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.496857, 7.2113338, -12.260356)
+
+[node name="Rail1" parent="railsNorth" unique_id=1194596966 instance=ExtResource("2_xipgr")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, -12.260356)
+
+[node name="Conection1" parent="railsNorth" unique_id=1115443325 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, -7.1787205)
+
+[node name="Rail2" parent="railsNorth" unique_id=562373343 instance=ExtResource("2_xipgr")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, -6.1548376)
+
+[node name="Conection2" parent="railsNorth" unique_id=1744874620 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, -1.0732021)
+
+[node name="Rail3" parent="railsNorth" unique_id=885404707 instance=ExtResource("2_xipgr")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, -0.049497604)
+
+[node name="Conection3" parent="railsNorth" unique_id=896813047 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, 5.032138)
+
+[node name="Rail4" parent="railsNorth" unique_id=1791037309 instance=ExtResource("2_xipgr")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, 6.056569)
+
+[node name="Conection4" parent="railsNorth" unique_id=895571228 instance=ExtResource("3_hw7hd")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.78779, 6.7483582, 11.138205)
+
+[node name="FloorDetailLeft" parent="railsNorth" unique_id=488259784 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.784775, 6.7483582, 12.036146)
+
+[node name="PilarLeftCon" parent="railsNorth" unique_id=1878544974 instance=ExtResource("6_uaoq7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.791092, 6.7483582, 12.301131)
+
+[node name="FloorDetailLeft2" parent="railsNorth" unique_id=313310591 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.52761, 6.7483582, 12.29917)
+
+[node name="RingsLeftCon1" parent="railsNorth" unique_id=1763409923 instance=ExtResource("4_ikl06")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.788197, 7.210875, 11.961804)
+
+[node name="RingsLeftCon2" parent="railsNorth" unique_id=761011224 instance=ExtResource("4_ikl06")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.788197, 7.210875, 12.052023)
+
+[node name="RingsLeftCon3" parent="railsNorth" unique_id=1064148617 instance=ExtResource("4_ikl06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.49751, 7.210875, 12.300865)
+
+[node name="FloorDetailRight1" parent="railsNorth" unique_id=1727248373 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.524273, 6.7483582, -12.260356)
+
+[node name="FloorDetailRight2" parent="railsNorth" unique_id=1917047490 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.777515, 6.7483582, -11.996175)
+
+[node name="railsSouth" type="Node3D" parent="." unique_id=1151257348]
+
+[node name="Rail1Left" parent="railsSouth" unique_id=2059105168 instance=ExtResource("2_xipgr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.781662, 6.7483582, 11.720301)
+
+[node name="FloorDetailLeft2" parent="railsSouth" unique_id=1997418624 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.512264, 6.7483582, 12.29917)
+
+[node name="FloorDetailLeft" parent="railsSouth" unique_id=1597627801 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.777284, 6.7483582, 12.036146)
+
+[node name="RingsLeft" parent="railsSouth" unique_id=1891716371 instance=ExtResource("4_ikl06")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, -12.615016, 7.212922, 11.953114)
+
+[node name="Rings2Left" parent="railsSouth" unique_id=506006017 instance=ExtResource("4_ikl06")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, -12.541869, 7.212922, 12.02626)
+
+[node name="Rings3Left" parent="railsSouth" unique_id=1842238284 instance=ExtResource("4_ikl06")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, -12.471648, 7.212922, 12.09575)
+
+[node name="CrossLeft" parent="railsSouth" unique_id=1984412013 instance=ExtResource("7_uaoq7")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.775097, 6.75, 6.1352577)
+
+[node name="FloorDetailLeft3" parent="railsSouth" unique_id=1132422392 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.775564, 6.75, 6.1432333)
+
+[node name="PilarLeft" parent="railsSouth" unique_id=692720166 instance=ExtResource("6_uaoq7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.776913, 6.75, 5.6191907)
+
+[node name="Rail1Right" parent="railsSouth" unique_id=1939228257 instance=ExtResource("2_xipgr")]
+transform = Transform3D(-0.00038401783, 0, -1, 0, 1, 0, 1, 0, -0.00038401783, -12.780637, 6.7483582, -11.695312)
+
+[node name="FloorDetailRight" parent="railsSouth" unique_id=482166147 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(-1, 0, 0.00038406253, 0, 1, 0, -0.00038406253, 0, -1, -12.522335, 6.7483582, -12.259335)
+
+[node name="FloorDetailRight2" parent="railsSouth" unique_id=833589868 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(0.00038410723, 0, 0.9999998, 0, 1, 0, -0.9999998, 0, 0.00038410723, -12.784893, 6.7483582, -11.996208)
+
+[node name="RingsRight" parent="railsSouth" unique_id=34509023 instance=ExtResource("4_ikl06")]
+transform = Transform3D(0.7012328, 0, 0.71293193, 0, 1, 0, -0.71293193, 0, 0.7012328, -12.631111, 7.212922, -11.944677)
+
+[node name="Rings2Right" parent="railsSouth" unique_id=291090048 instance=ExtResource("4_ikl06")]
+transform = Transform3D(0.7012328, 0, 0.71293193, 0, 1, 0, -0.71293193, 0, 0.7012328, -12.558572, 7.212922, -12.018426)
+
+[node name="Rings3Right" parent="railsSouth" unique_id=1813195938 instance=ExtResource("4_ikl06")]
+transform = Transform3D(0.7012328, 0, 0.71293193, 0, 1, 0, -0.71293193, 0, 0.7012328, -12.489666, 7.212922, -12.089219)
+
+[node name="CrossRight" parent="railsSouth" unique_id=1197438199 instance=ExtResource("7_uaoq7")]
+transform = Transform3D(-0.00038401783, 0, -1, 0, 1, 0, 1, 0, -0.00038401783, -12.789346, 6.75, -6.110272)
+
+[node name="FloorDetailRight3" parent="railsSouth" unique_id=1053740762 instance=ExtResource("5_4ilnc")]
+transform = Transform3D(-0.00038401783, 0, -1, 0, 1, 0, 1, 0, -0.00038401783, -12.788876, 6.75, -6.118247)
+
+[node name="PilarRight" parent="railsSouth" unique_id=452784008 instance=ExtResource("6_uaoq7")]
+transform = Transform3D(-1, 0, 0.00038406253, 0, 1, 0, -0.00038406253, 0, -1, -12.787728, 6.75, -5.5942044)

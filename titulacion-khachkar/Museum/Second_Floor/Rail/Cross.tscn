@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://dwn5w7tk45bbq"]
+
+[node name="Cross" type="Node3D" unique_id=1984412013]
+
+[node name="top" type="CSGBox3D" parent="." unique_id=650513724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.47833803, 0)
+size = Vector3(1, 0.016676025, 0.5)
+
+[node name="circle" type="CSGCylinder3D" parent="." unique_id=2115490101]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.13, 0)
+radius = 0.07
+height = 0.03
+sides = 32
+
+[node name="dcircle" type="CSGCylinder3D" parent="circle" unique_id=511110773]
+operation = 2
+radius = 0.06
+height = 0.035
+sides = 32
+
+[node name="d1" type="CSGCylinder3D" parent="circle" unique_id=1955285009]
+transform = Transform3D(0.1, 0, 0, 0, 1, 0, 0, 0, 0.45, 0, -1.2935836e-09, -0.029593743)
+radius = 0.07
+height = 0.03
+sides = 32
+
+[node name="dd1" type="CSGCylinder3D" parent="circle/d1" unique_id=440165708]
+operation = 2
+radius = 0.06
+height = 0.035
+sides = 32
+
+[node name="d2" type="CSGCylinder3D" parent="circle" unique_id=1012935633]
+transform = Transform3D(1.9106854e-16, 4.371139e-08, 0.45, 0, 1, -1.9670125e-08, -0.1, 0, 8.598085e-16, 0.02988106, 4.885128e-16, 1.1175871e-08)
+radius = 0.07
+height = 0.03
+sides = 32
+
+[node name="dd2" type="CSGCylinder3D" parent="circle/d2" unique_id=1179762526]
+operation = 2
+radius = 0.06
+height = 0.035
+sides = 32
+
+[node name="d3" type="CSGCylinder3D" parent="circle" unique_id=143646058]
+transform = Transform3D(0.1, 0, 0, 0, 1, 0, 0, 0, 0.45, 0, 1.3438209e-09, 0.03074304)
+radius = 0.07
+height = 0.03
+sides = 32
+
+[node name="dd3" type="CSGCylinder3D" parent="circle/d3" unique_id=16740531]
+operation = 2
+radius = 0.06
+height = 0.035
+sides = 32
+
+[node name="d4" type="CSGCylinder3D" parent="circle" unique_id=2040240663]
+transform = Transform3D(1.9106853e-16, 4.371139e-08, 0.45, 0, 1, -1.9670125e-08, -0.1, 0, 8.5980843e-16, -0.03, 0, 0)
+radius = 0.07
+height = 0.03
+sides = 32
+
+[node name="dd4" type="CSGCylinder3D" parent="circle/d4" unique_id=886058152]
+operation = 2
+radius = 0.06
+height = 0.035
+sides = 32
+
+[node name="verticalCross" type="CSGBox3D" parent="." unique_id=830276920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335, 0)
+size = Vector3(0.07, 0.27, 0.03)
+
+[node name="d1" type="CSGCylinder3D" parent="verticalCross" unique_id=966166803]
+transform = Transform3D(1.9106853e-15, -4.371139e-08, -0.99999994, -0.99999994, -4.371139e-08, 0, -4.3711385e-08, 1, -4.3711385e-08, -0.046284825, 0.112811476, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d12" type="CSGBox3D" parent="verticalCross" unique_id=2074946691]
+transform = Transform3D(0.0023736493, 0.99999714, 0, -0.99999714, 0.0023736493, 0, 0, 0, 1, -0.046450704, 0.07040197, 0)
+operation = 2
+size = Vector3(0.08, 0.05, 0.031)
+
+[node name="d2" type="CSGCylinder3D" parent="verticalCross" unique_id=1638379098]
+transform = Transform3D(1.9106853e-15, -4.371139e-08, -0.99999994, -0.99999994, -4.371139e-08, 0, -4.3711385e-08, 1, -4.3711385e-08, 0.046518654, 0.113031775, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d13" type="CSGBox3D" parent="verticalCross" unique_id=315237105]
+transform = Transform3D(0.0023736493, 0.99999714, 0, -0.99999714, 0.0023736493, 0, 0, 0, 1, 0.04664003, 0.07062295, 0)
+operation = 2
+size = Vector3(0.08, 0.05, 0.031)
+
+[node name="d3" type="CSGCylinder3D" parent="verticalCross" unique_id=1226641470]
+transform = Transform3D(-0.0002617836, 4.3699934e-08, 0.9999998, 0.9999998, 4.372282e-08, 0.0002617836, -4.3711385e-08, 1, -4.3711385e-08, 0.046501923, -0.11164826, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d14" type="CSGBox3D" parent="verticalCross" unique_id=1151920876]
+transform = Transform3D(-0.0026353896, -0.99999654, 0, 0.99999654, -0.0026353896, 0, 0, 0, 1, 0.04657704, -0.03900689, 0)
+operation = 2
+size = Vector3(0.14046386, 0.05, 0.031)
+
+[node name="d4" type="CSGCylinder3D" parent="verticalCross" unique_id=927741330]
+transform = Transform3D(-0.0002617836, 4.3699934e-08, 0.9999998, 0.9999998, 4.372282e-08, 0.0002617836, -4.3711385e-08, 1, -4.3711385e-08, -0.046301495, -0.11189285, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d15" type="CSGBox3D" parent="verticalCross" unique_id=379767167]
+transform = Transform3D(-0.0026353896, -0.99999654, 0, 0.99999654, -0.0026353896, 0, 0, 0, 1, -0.046511397, -0.040106714, 0)
+operation = 2
+size = Vector3(0.13875487, 0.05, 0.031)
+
+[node name="horizontalCross" type="CSGBox3D" parent="." unique_id=645741009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38, 0)
+size = Vector3(0.25, 0.09, 0.03)
+
+[node name="d1" type="CSGCylinder3D" parent="horizontalCross" unique_id=142202980]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.101409, -0.047733456, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d12" type="CSGBox3D" parent="horizontalCross" unique_id=87807606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059, -0.048, 0)
+operation = 2
+size = Vector3(0.08, 0.05, 0.031)
+
+[node name="d2" type="CSGCylinder3D" parent="horizontalCross" unique_id=398149588]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.101409, 0.04507029, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d13" type="CSGBox3D" parent="horizontalCross" unique_id=1200566226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059, 0.045091003, 0)
+operation = 2
+size = Vector3(0.08, 0.05, 0.031)
+
+[node name="d3" type="CSGCylinder3D" parent="horizontalCross" unique_id=962522837]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.101, -0.048456013, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d14" type="CSGBox3D" parent="horizontalCross" unique_id=1944325740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059, -0.048456013, 0)
+operation = 2
+size = Vector3(0.08, 0.05, 0.031)
+
+[node name="d4" type="CSGCylinder3D" parent="horizontalCross" unique_id=1960488840]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.101, 0.04454401, 0)
+operation = 2
+radius = 0.024902344
+height = 0.032
+sides = 36
+
+[node name="d15" type="CSGBox3D" parent="horizontalCross" unique_id=1091784557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059, 0.04454401, 0)
+operation = 2
+size = Vector3(0.08, 0.05, 0.031)
