@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bxtmjm6r5qugq" path="res://Museum/Room_1/room1.tscn" id="2_2j5jp"]
 [ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="2_hn60f"]
 [ext_resource type="PackedScene" uid="uid://bn4sys00qptlt" path="res://Museum/Entrance/arches.tscn" id="3_dm54h"]
+[ext_resource type="PackedScene" uid="uid://bwmd81jay1cl7" path="res://Museum/Room_2/room2.tscn" id="3_o17lx"]
 [ext_resource type="PackedScene" uid="uid://cxf1diuhvtr1y" path="res://Museum/Walls/westWall.tscn" id="4_g3fcc"]
 [ext_resource type="PackedScene" uid="uid://bibtoqpefc6mg" path="res://Museum/Walls/eastWall.tscn" id="5_rj70m"]
 [ext_resource type="PackedScene" uid="uid://cdryhpln0dniq" path="res://Museum/Walls/southWall.tscn" id="6_veqx0"]
@@ -76,6 +77,15 @@ light_color = Color(1, 0.8745098, 0.6862745, 1)
 light_energy = 3.0
 omni_range = 15.0
 
+[node name="Room2" parent="." unique_id=897654918 instance=ExtResource("3_o17lx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.358395, 0, -32.37526)
+
+[node name="l1" type="OmniLight3D" parent="Room2" unique_id=288218043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4736843, 2.9169757, -1.9146118)
+light_color = Color(1, 0.8745098, 0.6862745, 1)
+light_energy = 3.0
+omni_range = 15.0
+
 [node name="StairsOutside" parent="." unique_id=1301923489 instance=ExtResource("2_hn60f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.75, -1, 0)
 
@@ -93,6 +103,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 5.518, 0)
 
 [node name="Roof" parent="." unique_id=2143347187 instance=ExtResource("7_x3da8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.199726, 10.233034, 0)
+visible = false
 
 [node name="Door" parent="." unique_id=586879168 instance=ExtResource("8_yfuot")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.92633, 2.9660282, -0.06474739)

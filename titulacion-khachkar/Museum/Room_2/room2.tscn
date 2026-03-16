@@ -1,15 +1,75 @@
 [gd_scene format=3 uid="uid://bwmd81jay1cl7"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_by3m2"]
+radius = 15.0
+height = 40.0
+radial_segments = 9
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_7p2nh"]
+radius = 14.0
+height = 40.0
+
 [node name="Room2" type="Node3D" unique_id=897654918]
 
-[node name="floor" type="CSGBox3D" parent="." unique_id=1448371299]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7368164, 0)
-size = Vector3(20, 3.4736328, 20)
+[node name="walls" type="CSGMesh3D" parent="." unique_id=342677882]
+use_collision = true
+mesh = SubResource("CapsuleMesh_by3m2")
 
-[node name="walls" type="CSGBox3D" parent="." unique_id=1061188103]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
-size = Vector3(20, 11, 20)
-
-[node name="dWalls" type="CSGBox3D" parent="walls" unique_id=1917916268]
+[node name="dbot" type="CSGBox3D" parent="walls" unique_id=500679820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.371094, 0)
 operation = 2
-size = Vector3(20, 11, 20)
+size = Vector3(40.1416, 20.742188, 32.083984)
+
+[node name="dtop" type="CSGMesh3D" parent="walls" unique_id=966377472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0024790764, 0, 0.0024795532)
+operation = 2
+mesh = SubResource("CapsuleMesh_7p2nh")
+
+[node name="door" type="CSGBox3D" parent="walls" unique_id=1094990622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 0.23461914, 15.247758)
+operation = 2
+size = Vector3(1.6234741, 4.4692383, 4.086426)
+
+[node name="connect" type="CSGBox3D" parent="." unique_id=314439774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 0.25854492, 15.631669)
+operation = 2
+use_collision = true
+size = Vector3(2, 4.51709, 3.3186035)
+
+[node name="door" type="CSGBox3D" parent="connect" unique_id=1755019943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96946716, 0)
+operation = 2
+size = Vector3(1.6234741, 2.4588318, 4.086426)
+
+[node name="floor" type="CSGCylinder3D" parent="." unique_id=2017231352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+use_collision = true
+radius = 15.0
+sides = 64
+
+[node name="Ramp" type="CSGCylinder3D" parent="." unique_id=323851568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1987305, 0)
+use_collision = true
+radius = 15.0
+height = 8.397461
+sides = 64
+
+[node name="dRamp" type="CSGCylinder3D" parent="Ramp" unique_id=926251945]
+operation = 2
+use_collision = true
+radius = 10.0
+height = 8.5
+sides = 64
+
+[node name="dEntrance" type="CSGBox3D" parent="Ramp" unique_id=384742143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089660645, 0.34394836, 12.16024)
+operation = 2
+size = Vector3(4.6484375, 9.381195, 6.7783203)
+
+[node name="rampCarving" type="CSGCylinder3D" parent="Ramp" unique_id=2007215321]
+transform = Transform3D(1, 0, 0, 0, 0.97437006, -0.22495104, 0, 0.22495104, 0.97437006, 0, 2.6824942, 0.30563152)
+operation = 2
+use_collision = true
+radius = 13.5
+height = 6.8643384
+sides = 64
