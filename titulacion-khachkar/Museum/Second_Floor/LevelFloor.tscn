@@ -28,6 +28,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 4.4, 0)
 [node name="s6" parent="StairsMiddle" unique_id=475813951 instance=ExtResource("1_j4nf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 5.5, 0)
 
+[node name="fill1" type="CSGBox3D" parent="StairsMiddle" unique_id=1268403283]
+transform = Transform3D(3.3333333, 0, 0, 0, 1, 0, 0, 0, 1, -10.270288, 0.5, 0)
+use_collision = true
+size = Vector3(2.1210938, 1.1, 10)
+
+[node name="fill2" type="CSGBox3D" parent="StairsMiddle" unique_id=459662471]
+transform = Transform3D(3.3333333, 0, 0, 0, 1, 0, 0, 0, 1, -17.26584, 1.0501679, 0)
+use_collision = true
+size = Vector3(2.1210938, 2.2003357, 10)
+
+[node name="fill3" type="CSGBox3D" parent="StairsMiddle" unique_id=1462604903]
+transform = Transform3D(3.3333333, 0, 0, 0, 1, 0, 0, 0, 1, -24.285769, 1.6031114, 0)
+use_collision = true
+size = Vector3(2.1210938, 3.3062224, 10)
+
+[node name="fill4" type="CSGBox3D" parent="StairsMiddle" unique_id=739437796]
+transform = Transform3D(3.3333333, 0, 0, 0, 1, 0, 0, 0, 1, -31.243734, 2.1494064, 0)
+use_collision = true
+size = Vector3(2.1210938, 4.3988123, 10)
+
+[node name="fill5" type="CSGBox3D" parent="StairsMiddle" unique_id=600403854]
+transform = Transform3D(3.3333333, 0, 0, 0, 1, 0, 0, 0, 1, -38.23868, 2.699639, 0)
+use_collision = true
+size = Vector3(2.1069336, 5.500062, 10)
+
 [node name="floorSouth" type="CSGBox3D" parent="." unique_id=1557088053]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.21737, 6.7, 0)
 use_collision = true

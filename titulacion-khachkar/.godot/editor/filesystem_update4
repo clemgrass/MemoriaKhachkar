@@ -9,3 +9,8 @@ res://Museum/Second_Floor/Rail/FloorDetail.tscn
 res://Museum/Second_Floor/Rail/Cross.tscn
 res://Museum/Second_Floor/Rail/Conection.tscn
 res://Player/playerController.tscn
+res://Museum/Entrance/stairs.tscn
+res://Museum/Room_0/room0.tscn
+res://Museum/Room_1/room1.tscn
+res://Museum/Walls/eastWall.tscn
+res://Museum/Room_2/room2.tscn

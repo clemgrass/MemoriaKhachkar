@@ -1,8 +1,10 @@
+CSGBox3D
+CSGMesh3D
+CSGPolygon3D
 OmniLight3D
 LightmapGI
 VoxelGI
 Node3D
-CSGBox3D
 CSGCylinder3D
 MultiMeshInstance3D
 MeshInstance3D
@@ -10,5 +12,3 @@ SpotLight3D
 DirectionalLight3D
 AnimationPlayer
 Camera3D
-CollisionShape3D
-CharacterBody3D

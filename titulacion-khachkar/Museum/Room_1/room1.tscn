@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://bxtmjm6r5qugq"]
+
+[ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="1_472g3"]
+
+[node name="Room1" type="Node3D" unique_id=541123252]
+
+[node name="Stairs" parent="." unique_id=1301923489 instance=ExtResource("1_472g3")]
+transform = Transform3D(-4.371139e-08, 0, -0.25, 0, 1, 0, 1, 0, -1.0927847e-08, -3.7631648, 0, 1.7823486)
+
+[node name="Stairs2" parent="." unique_id=497020961 instance=ExtResource("1_472g3")]
+transform = Transform3D(-4.371139e-08, 0, -0.25, 0, 1, 0, 1, 0, -1.0927847e-08, 3.763, 0, 1.782)
+
+[node name="floor" type="CSGBox3D" parent="." unique_id=520301452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -2.5)
+use_collision = true
+size = Vector3(10, 1, 15)
+
+[node name="floor2" type="CSGBox3D" parent="." unique_id=1967224978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.026306152, -7.4644775)
+use_collision = true
+size = Vector3(10, 2.0526123, 5.071045)
+
+[node name="walls" type="CSGBox3D" parent="." unique_id=149256359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -2.5)
+use_collision = true
+size = Vector3(11, 5, 15)
+
+[node name="dwalls" type="CSGBox3D" parent="walls" unique_id=1333481414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0703125, 0.35717773)
+operation = 2
+use_collision = true
+size = Vector3(10, 4.859375, 14.706543)
+
+[node name="KhachkarZone1" type="CSGBox3D" parent="." unique_id=1111496049]
+transform = Transform3D(1.2, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 1.0861843, -3.9760528)
+use_collision = true
+size = Vector3(1, 2.7, 0.3)
+
+[node name="KhachkarZone2" type="CSGBox3D" parent="KhachkarZone1" unique_id=851669478]
+transform = Transform3D(0.96592563, 0, -0.25881898, 0, 1, 0, 0.25881898, 0, 0.96592563, 1.3153592, 0, 0.1329937)
+use_collision = true
+size = Vector3(1, 2.7, 0.3)
+
+[node name="KhachkarZone3" type="CSGBox3D" parent="KhachkarZone1" unique_id=167946575]
+transform = Transform3D(0.9659257, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.9659257, -1.315, 0, 0.133)
+use_collision = true
+size = Vector3(1, 2.7, 0.3)
+
+[node name="KhachkarZone4" type="CSGBox3D" parent="KhachkarZone1" unique_id=525176919]
+transform = Transform3D(0.99997467, 0, 0, 0, 1, 0, 0, 0, 0.99997467, 0.013276306, 0, -0.10483694)
+use_collision = true
+size = Vector3(1.7490845, 2.7, 0.17808227)
+
+[node name="PuzzleZone1" type="CSGBox3D" parent="." unique_id=650433343]
+transform = Transform3D(1.8, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.33484, -8.49855)
+use_collision = true
+size = Vector3(1, 2.7, 0.3)
+
+[node name="dPhoto" type="CSGBox3D" parent="PuzzleZone1" unique_id=257324802]
+transform = Transform3D(0.5555556, 0, 0, 0, 1.4285715, 0, 0, 0, 1, 0, 0.45428467, 0.07946491)
+operation = 2
+size = Vector3(0.7, 0.7, 0.2)
+
+[node name="change" type="CSGBox3D" parent="PuzzleZone1" unique_id=1038992256]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, -0.2520001, 0.21899986)
+size = Vector3(0.75878906, 0.13330078, 0.38110352)
+
+[node name="PuzzleZone2" type="CSGBox3D" parent="PuzzleZone1" unique_id=992166374]
+transform = Transform3D(0.96592563, 0, -0.25881898, 0, 1, 0, 0.25881898, 0, 0.96592563, 1.3153592, 0, 0.1329937)
+use_collision = true
+size = Vector3(1, 2.7, 0.3)
+
+[node name="dPhoto" type="CSGBox3D" parent="PuzzleZone1/PuzzleZone2" unique_id=1668445306]
+transform = Transform3D(0.55555564, 0, -5.9604645e-08, 0, 1.4285711, 0, 2.9802322e-08, 0, 0.9999999, -0.012143016, 0.45428467, 0.08292675)
+operation = 2
+size = Vector3(0.8954102, 0.7, 0.2)
+
+[node name="change" type="CSGBox3D" parent="PuzzleZone1/PuzzleZone2" unique_id=575745447]
+transform = Transform3D(1.0000001, -8.940697e-08, -8.940697e-08, 0, 0.70710015, -0.70710015, 4.4703484e-08, 0.7071061, 0.7071061, -0.013919473, -0.2520001, 0.20125389)
+size = Vector3(0.75878906, 0.13330078, 0.38110352)
+
+[node name="PuzzleZone3" type="CSGBox3D" parent="PuzzleZone1" unique_id=1003378241]
+transform = Transform3D(0.9659257, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.9659257, -1.315, 0, 0.133)
+use_collision = true
+size = Vector3(1, 2.7, 0.3)
+
+[node name="dPhoto" type="CSGBox3D" parent="PuzzleZone1/PuzzleZone3" unique_id=1106895081]
+transform = Transform3D(0.5555557, 0, 5.9604645e-08, 0, 1.4285715, 0, 1.4901161e-08, 0, 1.0000001, 0.034279943, 0.45428467, 0.061264038)
+operation = 2
+size = Vector3(0.7, 0.7, 0.2)
+
+[node name="change" type="CSGBox3D" parent="PuzzleZone1/PuzzleZone3" unique_id=650474972]
+transform = Transform3D(1.0000001, 5.9604645e-08, 5.9604645e-08, 0, 0.7071067, -0.7071067, 0, 0.7071068, 0.7071068, -0.003580451, -0.2520001, 0.17969894)
+size = Vector3(0.75878906, 0.13330078, 0.38110352)
+
+[node name="PuzzleZone4" type="CSGBox3D" parent="PuzzleZone1" unique_id=1782820897]
+transform = Transform3D(0.9999747, 0, 0, 0, 1, 0, 0, 0, 0.99997467, 0.013276306, 0, -0.10483742)
+use_collision = true
+size = Vector3(1.7490845, 2.7, 0.17808227)
