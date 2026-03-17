@@ -10,3 +10,13 @@ size = Vector3(75.8, 11, 0.4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.398983, -3.896428, -0.01928711)
 operation = 2
 size = Vector3(1.6292114, 3.2406616, 0.9614258)
+
+[node name="dDoor" type="CSGBox3D" parent="wall" unique_id=179886044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.569805, -2.606373, 0)
+operation = 2
+size = Vector3(34.59961, 7.217969, 1)
+
+[node name="topdoor" type="CSGBox3D" parent="wall" unique_id=545700977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.096924, 2.9635072, 0.057678223)
+operation = 2
+size = Vector3(2.5795898, 3.4766846, 1.1153564)

@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://bi4n7s8nok62p"]
+
+[ext_resource type="PackedScene" uid="uid://dksx00gunoe3b" path="res://Museum/Room_4/piano.tscn" id="1_adgbp"]
+[ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="2_3ibg6"]
+
+[node name="Room4" type="Node3D" unique_id=830062090]
+
+[node name="floor" type="CSGBox3D" parent="." unique_id=1415117518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -1.6943359, 0)
+use_collision = true
+size = Vector3(35, 3.3886719, 15)
+
+[node name="westWall" type="CSGBox3D" parent="." unique_id=1444301197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 2.5, -7.406293)
+use_collision = true
+size = Vector3(35, 5, 0.185)
+
+[node name="roof" type="CSGBox3D" parent="." unique_id=964821607]
+transform = Transform3D(1, 0, 0, 0, 0.9943379, 0.10626407, 0, -0.10626407, 0.9943379, -7.5, 5.755327, 0.09117651)
+size = Vector3(35, 0.09964843, 15.085)
+
+[node name="dWin" type="CSGBox3D" parent="roof" unique_id=459154242]
+transform = Transform3D(1, 0, 0, 0, 1.0000054, -4.0233135e-07, 0, 4.0233135e-07, 1.0000054, 12.726818, 0, 0)
+operation = 2
+size = Vector3(8.013672, 1, 12.953125)
+
+[node name="dWin2" type="CSGBox3D" parent="roof" unique_id=1589716458]
+transform = Transform3D(1, 0, 0, 0, 1.0000054, -4.0233135e-07, 0, 4.0233135e-07, 1.0000054, 4.132321, 0, 0)
+operation = 2
+size = Vector3(8.013672, 1, 12.953125)
+
+[node name="dWin3" type="CSGBox3D" parent="roof" unique_id=1358791089]
+transform = Transform3D(1, 0, 0, 0, 1.0000054, -4.0233135e-07, 0, 4.0233135e-07, 1.0000054, -4.512645, 0, 0)
+operation = 2
+size = Vector3(8.013672, 1, 12.953125)
+
+[node name="dWin4" type="CSGBox3D" parent="roof" unique_id=1797099755]
+transform = Transform3D(1, 0, 0, 0, 1.0000054, -4.0233135e-07, 0, 4.0233135e-07, 1.0000054, -13.0501, 0, 0)
+operation = 2
+size = Vector3(8.013672, 1, 12.953125)
+
+[node name="southWall" type="CSGBox3D" parent="." unique_id=1308952436]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -24.907, 2.5, 0)
+use_collision = true
+size = Vector3(15, 5, 0.185)
+
+[node name="dDoor" type="CSGBox3D" parent="southWall" unique_id=968923250]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.518601, -1.2770848, 0)
+operation = 2
+size = Vector3(1.5, 2.5, 1)
+
+[node name="southWallgap" type="CSGBox3D" parent="southWall" unique_id=2092415090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.206603, 0)
+use_collision = true
+size = Vector3(15, 1.793457, 0.185)
+
+[node name="dgapsouth" type="CSGBox3D" parent="southWall/southWallgap" unique_id=2095217670]
+transform = Transform3D(-4.371139e-08, 0.10626407, -0.9943379, 0, 0.9943379, 0.10626407, 1, 4.64495e-09, -4.3463892e-08, 0.1500668, 1.0632467, 0.35194588)
+operation = 2
+size = Vector3(1.5270996, 2.1684766, 15.34914)
+
+[node name="northWallgap" type="CSGBox3D" parent="southWall" unique_id=663526327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.207, 34.815)
+use_collision = true
+size = Vector3(15, 1.793457, 0.185)
+
+[node name="dgapnort" type="CSGBox3D" parent="southWall/northWallgap" unique_id=352807129]
+transform = Transform3D(-4.371139e-08, 0.10626407, -0.9943379, 0, 0.9943379, 0.10626407, 1, 4.64495e-09, -4.3463892e-08, 0.1500668, 1.0632467, 0.35194588)
+operation = 2
+size = Vector3(1.5270996, 2.1684766, 15.34914)
+
+[node name="northWall" type="CSGBox3D" parent="." unique_id=232751754]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.908, 2.5, 0)
+use_collision = true
+size = Vector3(15, 5, 0.185)
+
+[node name="rest0" type="CSGBox3D" parent="." unique_id=1407664208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.566, 0, -2.952206)
+use_collision = true
+size = Vector3(34, 0.4, 5.1777344)
+
+[node name="gameSpace" type="CSGBox3D" parent="rest0" unique_id=439260995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51049805, -0.1450305, -0.78718424)
+operation = 2
+size = Vector3(8.105957, 0.80804443, 7.3193054)
+
+[node name="rest1" type="CSGBox3D" parent="." unique_id=2079588222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5658054, 0.2, -3.927691)
+use_collision = true
+size = Vector3(34, 0.4, 5.1777344)
+
+[node name="gameSpace" type="CSGBox3D" parent="rest1" unique_id=9148712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51049805, -0.13746215, -0.78718424)
+operation = 2
+size = Vector3(8.105957, 0.82318115, 7.3193054)
+
+[node name="rest2" type="CSGBox3D" parent="." unique_id=1160925948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.566, 0.4, -4.552762)
+use_collision = true
+size = Vector3(34, 0.4, 4.3432617)
+
+[node name="gameSpace" type="CSGBox3D" parent="rest2" unique_id=1229674589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51049805, -0.11548951, -0.78718424)
+operation = 2
+size = Vector3(8.105957, 0.86712646, 7.3193054)
+
+[node name="rest3" type="CSGBox3D" parent="." unique_id=1898336040]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.566, 0.6, -5.24814)
+use_collision = true
+size = Vector3(34, 0.4, 3.529541)
+
+[node name="gameSpace" type="CSGBox3D" parent="rest3" unique_id=1669499116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51049805, -0.08570433, -0.78718424)
+operation = 2
+size = Vector3(8.105957, 0.9266968, 7.3193054)
+
+[node name="rest4" type="CSGBox3D" parent="." unique_id=1273358601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.566, 0.8, -5.697124)
+use_collision = true
+size = Vector3(34, 0.4, 2.4475098)
+
+[node name="gameSpace" type="CSGBox3D" parent="rest4" unique_id=253222391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51049805, -0.120372355, -0.78718424)
+operation = 2
+size = Vector3(8.105957, 0.85736084, 7.3193054)
+
+[node name="Piano" parent="." unique_id=1816672050 instance=ExtResource("1_adgbp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.019968, -0.01648748, 3.4828877)
+
+[node name="kachkar" type="CSGBox3D" parent="." unique_id=1788955497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.941061, 0.90951514, -4.510231)
+use_collision = true
+size = Vector3(1.5, 2, 0.3)
+
+[node name="gameStation" type="CSGBox3D" parent="." unique_id=1049687046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6659236, -0.109313965, -4.0377502)
+use_collision = true
+size = Vector3(4.16803, 0.7813721, 2.8198853)
+
+[node name="Piano2" parent="gameStation" unique_id=2096307862 instance=ExtResource("1_adgbp")]
+transform = Transform3D(0.4, 0, 0, 0, -1.7484556e-08, -0.4, 0, 0.4, -1.7484556e-08, -1.5971031, 1.4595865, -1.0461912)
+
+[node name="wall" type="CSGBox3D" parent="gameStation" unique_id=848202447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3824744, -1.2212753)
+size = Vector3(4.16803, 2.3607864, 0.3773346)
+
+[node name="noteMeaning" type="CSGBox3D" parent="gameStation" unique_id=1430189813]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, -0.22306848, -0.8644366)
+size = Vector3(3.28125, 2.0858307, 1.58564)
+
+[node name="d1" type="CSGBox3D" parent="gameStation" unique_id=296099148]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, -0.91067195, 1.5855575)
+size = Vector3(4.169922, 2.0858307, 1.58564)
+
+[node name="kachkarGuess" type="CSGBox3D" parent="." unique_id=289375614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.941061, 0.90951514, -3.653853)
+use_collision = true
+size = Vector3(1.5, 2, 0.3)
+
+[node name="Stairs" parent="." unique_id=1301923489 instance=ExtResource("2_3ibg6")]
+transform = Transform3D(-1, 0, -3.019916e-08, 0, 1, 0, 1.509958e-07, 0, -0.2, -31.705507, -1.0431185, 2.5618603)
