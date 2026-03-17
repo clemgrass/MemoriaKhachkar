@@ -26,20 +26,20 @@ operation = 2
 mesh = SubResource("CapsuleMesh_7p2nh")
 
 [node name="door" type="CSGBox3D" parent="walls" unique_id=1094990622]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 0.23461914, 15.247758)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 0.59729004, 15.247758)
 operation = 2
-size = Vector3(1.6234741, 4.4692383, 4.086426)
+size = Vector3(1.6234741, 5.19458, 4.086426)
 
 [node name="connect" type="CSGBox3D" parent="." unique_id=314439774]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 0.25854492, 15.631669)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 2.72052, 15.631669)
 operation = 2
 use_collision = true
-size = Vector3(2, 4.51709, 3.3186035)
+size = Vector3(4.6228027, 9.44104, 3.3186035)
 
 [node name="door" type="CSGBox3D" parent="connect" unique_id=1755019943]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96946716, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2264061, 0)
 operation = 2
-size = Vector3(1.6234741, 2.4588318, 4.086426)
+size = Vector3(1.6234741, 2.9886932, 4.086426)
 
 [node name="floor" type="CSGCylinder3D" parent="." unique_id=2017231352]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)

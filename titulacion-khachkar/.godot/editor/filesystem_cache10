@@ -1,14 +1,14 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773661673
+::res://::1773748563
 export_presets.cfg::TextFile::-1::1773335394::0::1::::<><><>0<>0<><>::
 ::res://MainMenu/::1773157339
-::res://Museum/::1773663101
-museum.tscn::PackedScene::2148373344252418662::1773664048::0::1::::<><><>0<>0<><>::uid://tm0w8xnnstuw::::res://Museum/Room_0/room0.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://bn4sys00qptlt::::res://Museum/Entrance/arches.tscn<>uid://cxf1diuhvtr1y::::res://Museum/Walls/westWall.tscn<>uid://bibtoqpefc6mg::::res://Museum/Walls/eastWall.tscn<>uid://cdryhpln0dniq::::res://Museum/Walls/southWall.tscn<>uid://d4by5ptehcr8m::::res://Museum/Walls/roof.tscn<>uid://dblecjbfmq0xi::::res://Museum/Entrance/door.tscn<>uid://qrdi8mvcket::::res://Museum/Room_Khachkar/khachkarRoom.tscn<>uid://wnffdeqjb6pw::::res://Museum/Entrance/Khachkar/fountainKhachkar.tscn<>uid://cl50nx7wocr2b::::res://Museum/Second_Floor/LevelFloor.tscn
-::res://Museum/Entrance/::1773335005
+::res://Museum/::1773683891
+museum.tscn::PackedScene::2148373344252418662::1773683891::0::1::::<><><>0<>0<><>::uid://tm0w8xnnstuw::::res://Museum/Room_0/room0.tscn<>uid://bxtmjm6r5qugq::::res://Museum/Room_1/room1.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://bn4sys00qptlt::::res://Museum/Entrance/arches.tscn<>uid://bwmd81jay1cl7::::res://Museum/Room_2/room2.tscn<>uid://cxf1diuhvtr1y::::res://Museum/Walls/westWall.tscn<>uid://bibtoqpefc6mg::::res://Museum/Walls/eastWall.tscn<>uid://cdryhpln0dniq::::res://Museum/Walls/southWall.tscn<>uid://d4by5ptehcr8m::::res://Museum/Walls/roof.tscn<>uid://dblecjbfmq0xi::::res://Museum/Entrance/door.tscn<>uid://qrdi8mvcket::::res://Museum/Room_Khachkar/khachkarRoom.tscn<>uid://wnffdeqjb6pw::::res://Museum/Entrance/Khachkar/fountainKhachkar.tscn<>uid://cl50nx7wocr2b::::res://Museum/Second_Floor/LevelFloor.tscn
+::res://Museum/Entrance/::1773677206
 arches.tscn::PackedScene::3359879355977061293::1773335005::0::1::::<><><>0<>0<><>::uid://21wv6auhe5yl::::res://Museum/Entrance/Textures/entranceWall.tres<>uid://xjf54rsshvxd::::res://Museum/Entrance/Textures/entranceWallWhiter.tres
 door.gd::GDScript::8492758482825407815::1773250145::0::1::::<>Node3D<><>0<>0<><>::
 door.tscn::PackedScene::7252405964069696154::1773250790::0::1::::<><><>0<>0<><>::uid://ds87qycfv74gx::::res://Museum/Entrance/door.gd<>uid://cahhyu3r2wcbn::::res://Museum/Entrance/Textures/mainDoorTexture.tres
-stairs.tscn::PackedScene::3651895338357976004::1773160494::0::1::::<><><>0<>0<><>::
+stairs.tscn::PackedScene::3651895338357976004::1773677206::0::1::::<><><>0<>0<><>::
 ::res://Museum/Entrance/Khachkar/::1773328670
 fountainKhachkar.tscn::PackedScene::1571304149261183912::1773328670::0::1::::<><><>0<>0<><>::uid://dxtvh8walkv0n::::res://Museum/Entrance/Khachkar/Khachkar0.glb
 Khachkar0.glb::PackedScene::8814117956757983539::1773323766::1773327791::1::::<><><>0<>0<>6a457af492a322805475990f3d3c0416<>res://.godot/imported/Khachkar0.glb-6936e49b26d42edeb60416cc17cb117e.scn::uid://c2xh6k2i8luul::::res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg
@@ -38,8 +38,12 @@ square_concrete_pavers_nor_gl_4k.jpg::CompressedTexture2D::2391730927170232934::
 rough_pine_door_arm_4k.jpg::CompressedTexture2D::8939170382024321627::1773248413::1773329300::1::::<><><>0<>0<>515018081f52d5659616373bcb59463f<>res://.godot/imported/rough_pine_door_arm_4k.jpg-a34ecb7a7f6ff0b2c7d903b0e9b89f9f.s3tc.ctex::
 rough_pine_door_diff_4k.jpg::CompressedTexture2D::221927648734620640::1773248413::1773329300::1::::<><><>0<>0<>300a2fc21e1f3ae38166bd81a69288e7<>res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.s3tc.ctex::
 rough_pine_door_nor_gl_4k.jpg::CompressedTexture2D::137082807682571428::1773248413::1773329301::1::::<><><>0<>0<>118ed3cc8bb311a790e3eeca6e14b682<>res://.godot/imported/rough_pine_door_nor_gl_4k.jpg-8c1a80938221dd23e26dc302ac955a73.s3tc.ctex::
-::res://Museum/Room_0/::1773241257
-room0.tscn::PackedScene::1359919543866221258::1773241257::0::1::::<><><>0<>0<><>::
+::res://Museum/Room_0/::1773677835
+room0.tscn::PackedScene::1359919543866221258::1773677835::0::1::::<><><>0<>0<><>::
+::res://Museum/Room_1/::1773681262
+room1.tscn::PackedScene::4040732619735606380::1773681262::0::1::::<><><>0<>0<><>::uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn
+::res://Museum/Room_2/::1773685229
+room2.tscn::PackedScene::3955590238499131950::1773685229::0::1::::<><><>0<>0<><>::
 ::res://Museum/Room_Khachkar/::1773327682
 khachkarRoom.tscn::PackedScene::34068062062426339::1773327682::0::1::::<><><>0<>0<><>::uid://cpdd2nd82lq4l::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb<>uid://ccg5kbdyir1ef::::res://Museum/Room_Khachkar/Khachkar_Models/khachkar1.glb<>uid://c4niqt1qil88u::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3.glb<>uid://2fi6ish7yvri::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb<>uid://b3q7ckmb77pja::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb<>uid://byjwqn76w4uhv::::res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb
 ::res://Museum/Room_Khachkar/Khachkar_Models/::1773327790
@@ -55,24 +59,29 @@ Khachkar4.glb::PackedScene::1905962210905416254::1773322775::1773322779::1::::<>
 Khachkar4_uv_map (4).jpg::CompressedTexture2D::8977370809249007191::1773322776::1773322779::1::::<><><>0<>0<>c0a3a7067acd52709a09aa2883aba2d0<>res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.s3tc.ctex::
 Khachkar5.glb::PackedScene::4386685408839928846::1773322897::1773322901::1::::<><><>0<>0<>908e6748d746346350c8b4db639c6611<>res://.godot/imported/Khachkar5.glb-33753c7a990448d522bd581048483a1d.scn::uid://bvcfucxbs2q4a::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5_uv_map (5).jpg
 Khachkar5_uv_map (5).jpg::CompressedTexture2D::3864854597089602930::1773322899::1773322901::1::::<><><>0<>0<>7512e97a6c9d1b976956f9db005ebfe1<>res://.godot/imported/Khachkar5_uv_map (5).jpg-eddbbd77bad311048119c71fc8983f97.s3tc.ctex::
-::res://Museum/Second_Floor/::1773663089
-LevelFloor.tscn::PackedScene::5608392378655458699::1773664080::0::1::::<><><>0<>0<><>::uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn
-::res://Museum/Second_Floor/Rail/::0
-Rail.tscn::PackedScene::6712618334876225300::1773664604::0::1::::<><><>0<>0<><>::
-::res://Museum/Walls/::1773247543
-eastWall.tscn::PackedScene::2951175298262858042::1773242871::0::1::::<><><>0<>0<><>::
+::res://Museum/Second_Floor/::1773677720
+LevelFloor.tscn::PackedScene::5608392378655458699::1773677720::0::1::::<><><>0<>0<><>::uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://c2vv3w2c2cgym::::res://Museum/Second_Floor/Rail/Rail.tscn<>uid://da7if7oypv7we::::res://Museum/Second_Floor/Rail/Conection.tscn<>uid://cpwl6rpa2acm2::::res://Museum/Second_Floor/Rail/Rings.tscn<>uid://40kq2rab20dq::::res://Museum/Second_Floor/Rail/FloorDetail.tscn<>uid://bce1howo16h1i::::res://Museum/Second_Floor/Rail/Pilar.tscn<>uid://dwn5w7tk45bbq::::res://Museum/Second_Floor/Rail/Cross.tscn
+::res://Museum/Second_Floor/Rail/::1773673175
+Conection.tscn::PackedScene::7225818507606696968::1773670351::0::1::::<><><>0<>0<><>::uid://cpwl6rpa2acm2::::res://Museum/Second_Floor/Rail/Rings.tscn<>uid://40kq2rab20dq::::res://Museum/Second_Floor/Rail/FloorDetail.tscn
+Cross.tscn::PackedScene::8732116029760471158::1773669806::0::1::::<><><>0<>0<><>::
+FloorDetail.tscn::PackedScene::2087723096379132034::1773667032::0::1::::<><><>0<>0<><>::
+Pilar.tscn::PackedScene::2536647794339334512::1773667493::0::1::::<><><>0<>0<><>::
+Rail.tscn::PackedScene::6712618334876225300::1773673175::0::1::::<><><>0<>0<><>::uid://bce1howo16h1i::::res://Museum/Second_Floor/Rail/Pilar.tscn<>uid://cpwl6rpa2acm2::::res://Museum/Second_Floor/Rail/Rings.tscn<>uid://40kq2rab20dq::::res://Museum/Second_Floor/Rail/FloorDetail.tscn<>uid://dwn5w7tk45bbq::::res://Museum/Second_Floor/Rail/Cross.tscn
+Rings.tscn::PackedScene::5871814495182588331::1773666493::0::1::::<><><>0<>0<><>::
+::res://Museum/Walls/::1773683870
+eastWall.tscn::PackedScene::2951175298262858042::1773681049::0::1::::<><><>0<>0<><>::
 roof.tscn::PackedScene::9198314493372575602::1773247543::0::1::::<><><>0<>0<><>::
 southWall.tscn::PackedScene::5019972833970347740::1773242976::0::1::::<><><>0<>0<><>::
-westWall.tscn::PackedScene::6399091110454656408::1773242868::0::1::::<><><>0<>0<><>::
-::res://Player/::1773250346
-playerController.tscn::PackedScene::97915239036222750::1773157814::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd
+westWall.tscn::PackedScene::6399091110454656408::1773683870::0::1::::<><><>0<>0<><>::
+::res://Player/::1773673891
+playerController.tscn::PackedScene::97915239036222750::1773673891::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd
 player_controller.gd::GDScript::1453498772295999128::1773250346::0::1::::<>CharacterBody3D<><>0<>0<><>::
 ::res://Terrain/::1773333801
 forest.tscn::PackedScene::779681386874002360::1773332358::0::1::::<><><>0<>0<><>::
 ground.tscn::PackedScene::7528478573426929336::1773333801::0::1::::<><><>0<>0<><>::
 outsideWorld.tscn::PackedScene::4935957687484782425::1773331834::0::1::::<><><>0<>0<><>::uid://dfi37bfo4i2ym::::res://Terrain/ground.tscn<>uid://ldxid0e2pwlc::::res://Terrain/forest.tscn
 ::res://Terrain/Textures/::1773333642
-::res://World/::1773663026
+::res://World/::1773684028
 kloppenheim_02_4k.hdr::CompressedTexture2D::7499523753382504561::1773332902::1773333195::1::::<><><>0<>0<>37dcd1e4756b29725da48af1e9531c2e<>res://.godot/imported/kloppenheim_02_4k.hdr-2abe4fd63980e1204e22979c11bf39a6.bptc.ctex::
-MainGame.tscn::PackedScene::8407380535072764980::1773663930::0::1::::<><><>0<>0<><>::uid://cybidrcp1cm8u::::res://World/qwantani_moon_noon_puresky_4k.hdr<>uid://5uxnoy7o0w4m::::res://Museum/museum.tscn<>uid://bnowdbcs0lak::::res://Player/playerController.tscn<>uid://cclarcjb2ap10::::res://Terrain/outsideWorld.tscn
+MainGame.tscn::PackedScene::8407380535072764980::1773684028::0::1::::<><><>0<>0<><>::uid://cybidrcp1cm8u::::res://World/qwantani_moon_noon_puresky_4k.hdr<>uid://5uxnoy7o0w4m::::res://Museum/museum.tscn<>uid://bnowdbcs0lak::::res://Player/playerController.tscn<>uid://cclarcjb2ap10::::res://Terrain/outsideWorld.tscn
 qwantani_moon_noon_puresky_4k.hdr::CompressedTexture2D::6459929982479816502::1773333523::1773333528::1::::<><><>0<>0<>ded4df08318c8f2273509e8444b64021<>res://.godot/imported/qwantani_moon_noon_puresky_4k.hdr-1b2a78f767c2381f9c8f3448ed03f5f7.bptc.ctex::
