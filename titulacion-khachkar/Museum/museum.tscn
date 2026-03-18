@@ -154,7 +154,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 5.518, 0)
 
 [node name="Roof" parent="." unique_id=2143347187 instance=ExtResource("7_x3da8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.199726, 10.233034, 0)
-visible = false
 
 [node name="Door" parent="." unique_id=586879168 instance=ExtResource("8_yfuot")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.92633, 2.9660282, -0.06474739)
@@ -167,7 +166,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.19842, -1.35238, -0.173458
 
 [node name="LevelFloor" parent="." unique_id=532701115 instance=ExtResource("11_44psb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.04411, 0, 0)
-visible = false
 
 [node name="Reception" parent="." unique_id=1530775575 instance=ExtResource("17_5cig3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.540485, -0.30912352, 0)

@@ -20,7 +20,6 @@ size = Vector3(0.1, 2.5, 1.541)
 
 [node name="top" type="CSGBox3D" parent="." unique_id=1094142331]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6088474, 3, 0)
-visible = false
 size = Vector3(5.2, 0.1, 10)
 
 [node name="eastWall" type="CSGBox3D" parent="." unique_id=603811062]
