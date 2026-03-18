@@ -4,3 +4,7 @@ res://Museum/Entrance/stool.tscn
 res://Museum/Room_Complisonist/roomComplete.tscn
 res://Museum/Final_Room/finalRoom.tscn
 res://Museum/Room_Complisonist/crowbar.tscn
+res://Museum/Final_Room/big_computer.tscn
+res://Museum/Final_Room/record_system.tscn
+res://Museum/Final_Room/cassette.tscn
+res://World/MainGame.tscn

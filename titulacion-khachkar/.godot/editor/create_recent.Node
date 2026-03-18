@@ -1,9 +1,9 @@
-CSGCylinder3D
 CSGBox3D
 Node3D
+CSGCylinder3D
+CSGMesh3D
 CSGSphere3D
 SpotLight3D
-CSGMesh3D
 CSGPolygon3D
 OmniLight3D
 LightmapGI

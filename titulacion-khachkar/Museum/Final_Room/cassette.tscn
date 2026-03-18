@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ql4vhvfgykw6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cv7k8"]
+albedo_color = Color(0.23921569, 0.23529412, 0.25882354, 1)
+
+[node name="cassette" type="Node3D" unique_id=532262655]
+
+[node name="box" type="CSGBox3D" parent="." unique_id=1184583196]
+size = Vector3(0.02, 0.08, 0.17)
+material = SubResource("StandardMaterial3D_cv7k8")
+
+[node name="d1" type="CSGCylinder3D" parent="box" unique_id=418837135]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.00058697164, 0.00065942056, -0.041329198)
+operation = 2
+radius = 0.01
+height = 0.037109375
+sides = 36
+
+[node name="d2" type="CSGCylinder3D" parent="box" unique_id=1948117453]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.001, 0.001, 0.041)
+operation = 2
+radius = 0.01
+height = 0.037109375
+sides = 36

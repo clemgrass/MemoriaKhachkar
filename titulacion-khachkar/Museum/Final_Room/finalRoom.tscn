@@ -1,7 +1,1295 @@
 [gd_scene format=3 uid="uid://c1dtxjvi6eowg"]
 
+[ext_resource type="Texture2D" uid="uid://dfrd7bk805l1" path="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_diff_4k.jpg" id="1_bvney"]
+[ext_resource type="PackedScene" uid="uid://bg8twqns67ucr" path="res://Museum/Final_Room/big_computer.tscn" id="2_ndaak"]
+[ext_resource type="PackedScene" uid="uid://cbhh7562eqne7" path="res://Museum/Final_Room/record_system.tscn" id="3_xofrs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndaak"]
+albedo_texture = ExtResource("1_bvney")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xofrs"]
+albedo_texture = ExtResource("1_bvney")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ywwh"]
+albedo_color = Color(0.5294118, 0.40784314, 0.15294118, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38g0y"]
+albedo_color = Color(0.39215687, 0.29803923, 0.09411765, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dff6b"]
+albedo_color = Color(0.4862745, 0.47843137, 0.4509804, 1)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5kgpq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h76fy"]
+
 [node name="FinalRoom" type="Node3D" unique_id=909443158]
 
 [node name="northWall" type="CSGBox3D" parent="." unique_id=351852132]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
+use_collision = true
 size = Vector3(0.1, 6.6, 10)
+
+[node name="dDoor" type="CSGBox3D" parent="northWall" unique_id=1474660902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.05, 0)
+material_override = SubResource("StandardMaterial3D_ndaak")
+operation = 2
+size = Vector3(1.5, 2.5, 1.5410156)
+
+[node name="door" type="CSGBox3D" parent="." unique_id=2051688005]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
+material_override = SubResource("StandardMaterial3D_xofrs")
+size = Vector3(0.1, 2.5, 1.541)
+
+[node name="top" type="CSGBox3D" parent="." unique_id=2021890269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6088474, 3, 1.0976563)
+size = Vector3(5.2, 0.1, 7.8046875)
+
+[node name="eastWall" type="CSGBox3D" parent="." unique_id=503898219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6151316, 1.5072327, -2.7629824)
+use_collision = true
+size = Vector3(5.2, 3.0144653, 0.1)
+
+[node name="westWall" type="CSGBox3D" parent="." unique_id=646535383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6151316, 1.5072327, 2.6900694)
+use_collision = true
+size = Vector3(5.2, 3.0144653, 0.1)
+
+[node name="southWall" type="CSGBox3D" parent="." unique_id=1388574552]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.2661557, 1.5072327, -0.03267193)
+visible = false
+use_collision = true
+size = Vector3(5.4495363, 3.0144653, 0.1)
+
+[node name="cabinets" type="Node3D" parent="." unique_id=2034479543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4884878, 0, 2.0982265)
+
+[node name="body" type="CSGBox3D" parent="cabinets" unique_id=22128599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3104882, 1.4746461, -4.038727)
+use_collision = true
+size = Vector3(3.2597656, 2.5126953, 0.7407837)
+material = SubResource("StandardMaterial3D_2ywwh")
+
+[node name="d1" type="CSGBox3D" parent="cabinets/body" unique_id=1370495651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6362262, 0.80447984, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/body" unique_id=69656273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6362262, -7.1525574e-07, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d3" type="CSGBox3D" parent="cabinets/body" unique_id=1888987679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6362262, -0.80234736, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d4" type="CSGBox3D" parent="cabinets/body" unique_id=565899207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6335931, 0.80447984, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d5" type="CSGBox3D" parent="cabinets/body" unique_id=1864921888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6335931, -7.1525574e-07, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d6" type="CSGBox3D" parent="cabinets/body" unique_id=1499645343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6335931, -0.80234736, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="c1" type="CSGBox3D" parent="cabinets" unique_id=2045792974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.51, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c1" unique_id=946709724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c1/handle" unique_id=792769056]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c1/handle" unique_id=1535411173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c1/handle" unique_id=1713414840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c1" unique_id=110206499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c1/id" unique_id=12806580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c2" type="CSGBox3D" parent="cabinets" unique_id=1037155826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.51, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c2" unique_id=158551318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c2/handle" unique_id=867705539]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c2/handle" unique_id=8785391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c2/handle" unique_id=771494653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c2" unique_id=1483227368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c2/id" unique_id=1998301291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c3" type="CSGBox3D" parent="cabinets" unique_id=1123698172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.51, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c3" unique_id=1094172966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c3/handle" unique_id=2099497779]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c3/handle" unique_id=386676713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c3/handle" unique_id=1899933256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c3" unique_id=998869396]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c3/id" unique_id=362648518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c4" type="CSGBox3D" parent="cabinets" unique_id=1099214285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c4" unique_id=467362372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c4/handle" unique_id=1865398924]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c4/handle" unique_id=132536286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c4/handle" unique_id=920938021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c4" unique_id=669165455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c4/id" unique_id=46323707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c5" type="CSGBox3D" parent="cabinets" unique_id=735956673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c5" unique_id=1632709431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c5/handle" unique_id=1635512665]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c5/handle" unique_id=1358697023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c5/handle" unique_id=1894984844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c5" unique_id=2141978184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c5/id" unique_id=2123415192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c6" type="CSGBox3D" parent="cabinets" unique_id=1862108295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c6" unique_id=2028251060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c6/handle" unique_id=1612308413]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c6/handle" unique_id=518892019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c6/handle" unique_id=1052769979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c6" unique_id=1381624810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c6/id" unique_id=1004592470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c7" type="CSGBox3D" parent="cabinets" unique_id=814110967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c7" unique_id=550594775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c7/handle" unique_id=762824096]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c7/handle" unique_id=1611420047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c7/handle" unique_id=1956738147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c7" unique_id=1400098684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c7/id" unique_id=1162725928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c8" type="CSGBox3D" parent="cabinets" unique_id=1864369552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c8" unique_id=455759930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c8/handle" unique_id=1795095708]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c8/handle" unique_id=165788545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c8/handle" unique_id=286997193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c8" unique_id=1023993688]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c8/id" unique_id=1117446870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c9" type="CSGBox3D" parent="cabinets" unique_id=2113540542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c9" unique_id=1456561962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c9/handle" unique_id=2014094922]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c9/handle" unique_id=292976215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c9/handle" unique_id=1564546453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c9" unique_id=2147179706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c9/id" unique_id=991293262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c10" type="CSGBox3D" parent="cabinets" unique_id=1937416594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c10" unique_id=401595317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c10/handle" unique_id=1078135419]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c10/handle" unique_id=1601032036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c10/handle" unique_id=1743780798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c10" unique_id=624016077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c10/id" unique_id=866039214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c11" type="CSGBox3D" parent="cabinets" unique_id=320262657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c11" unique_id=994143125]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c11/handle" unique_id=1614520282]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c11/handle" unique_id=1247174954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c11/handle" unique_id=935115051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c11" unique_id=1422168739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c11/id" unique_id=910364475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c12" type="CSGBox3D" parent="cabinets" unique_id=1658899511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets/c12" unique_id=688090777]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets/c12/handle" unique_id=889033031]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c12/handle" unique_id=1302744095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/c12/handle" unique_id=1604826329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets/c12" unique_id=1458794606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/c12/id" unique_id=1204152168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="legs" type="Node3D" parent="cabinets" unique_id=1803010043]
+
+[node name="l1" type="CSGBox3D" parent="cabinets/legs" unique_id=1726884704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8821344, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/legs/l1" unique_id=550531304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/legs/l1" unique_id=955996460]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets/legs/l1" unique_id=1993141111]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets/legs/l1" unique_id=1221633664]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets/legs/l1" unique_id=1868905959]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l2" type="CSGBox3D" parent="cabinets/legs" unique_id=1780291960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1096144, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/legs/l2" unique_id=1518712993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/legs/l2" unique_id=1491057767]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets/legs/l2" unique_id=1582259478]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets/legs/l2" unique_id=116824271]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets/legs/l2" unique_id=1797911361]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l3" type="CSGBox3D" parent="cabinets/legs" unique_id=762844505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.308324, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/legs/l3" unique_id=1662009627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/legs/l3" unique_id=1952879644]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets/legs/l3" unique_id=1004082416]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets/legs/l3" unique_id=858895487]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets/legs/l3" unique_id=1817282041]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l4" type="CSGBox3D" parent="cabinets/legs" unique_id=1379324798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.509892, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/legs/l4" unique_id=1185842124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/legs/l4" unique_id=1571779168]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets/legs/l4" unique_id=1083057141]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets/legs/l4" unique_id=885427264]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets/legs/l4" unique_id=1354497436]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l5" type="CSGBox3D" parent="cabinets/legs" unique_id=48720951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7562687, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets/legs/l5" unique_id=1779384299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets/legs/l5" unique_id=210963280]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets/legs/l5" unique_id=2042693107]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets/legs/l5" unique_id=275327961]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets/legs/l5" unique_id=2012717854]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="cabinets2" type="Node3D" parent="." unique_id=2108353532]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -5.1519604, 0, -2.1023784)
+
+[node name="body" type="CSGBox3D" parent="cabinets2" unique_id=955568652]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3104882, 1.4746461, -4.038727)
+use_collision = true
+size = Vector3(3.2597656, 2.5126953, 0.7407837)
+material = SubResource("StandardMaterial3D_2ywwh")
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/body" unique_id=1501321670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6362262, 0.80447984, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/body" unique_id=2117856611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6362262, -7.1525574e-07, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d3" type="CSGBox3D" parent="cabinets2/body" unique_id=1737901125]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6362262, -0.80234736, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d4" type="CSGBox3D" parent="cabinets2/body" unique_id=1080654246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6335931, 0.80447984, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d5" type="CSGBox3D" parent="cabinets2/body" unique_id=2027135520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6335931, -7.1525574e-07, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="d6" type="CSGBox3D" parent="cabinets2/body" unique_id=1142619561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6335931, -0.80234736, 0.0031375885)
+operation = 2
+size = Vector3(0.05444336, 0.729126, 0.6538086)
+
+[node name="c1" type="CSGBox3D" parent="cabinets2" unique_id=710898607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.51, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+material = SubResource("StandardMaterial3D_38g0y")
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c1" unique_id=257719536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+material = SubResource("StandardMaterial3D_dff6b")
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c1/handle" unique_id=1060823348]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c1/handle" unique_id=613554336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+material = SubResource("StandardMaterial3D_dff6b")
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c1/handle" unique_id=1116000742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+material = SubResource("StandardMaterial3D_dff6b")
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c1" unique_id=1008956967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+material = SubResource("StandardMaterial3D_5kgpq")
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c1/id" unique_id=1252194418]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c2" type="CSGBox3D" parent="cabinets2" unique_id=2043163233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.51, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c2" unique_id=1795791630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c2/handle" unique_id=815723645]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c2/handle" unique_id=2058887515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c2/handle" unique_id=1224530231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c2" unique_id=1786269287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c2/id" unique_id=1582456275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c3" type="CSGBox3D" parent="cabinets2" unique_id=1575056428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.51, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c3" unique_id=199951179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c3/handle" unique_id=1065167119]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c3/handle" unique_id=2031633898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c3/handle" unique_id=355737481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c3" unique_id=1376438941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c3/id" unique_id=1351092301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c4" type="CSGBox3D" parent="cabinets2" unique_id=1489341782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c4" unique_id=2069973450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c4/handle" unique_id=142029884]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c4/handle" unique_id=636164581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c4/handle" unique_id=1833072726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c4" unique_id=1969914343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c4/id" unique_id=1890842053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c5" type="CSGBox3D" parent="cabinets2" unique_id=1495353477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c5" unique_id=2122539248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c5/handle" unique_id=2025100954]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c5/handle" unique_id=562332757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c5/handle" unique_id=1471205932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c5" unique_id=1025472100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c5/id" unique_id=397789120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c6" type="CSGBox3D" parent="cabinets2" unique_id=180812773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c6" unique_id=879385645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c6/handle" unique_id=384152487]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c6/handle" unique_id=661037131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c6/handle" unique_id=994806554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c6" unique_id=184814656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c6/id" unique_id=1465208208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c7" type="CSGBox3D" parent="cabinets2" unique_id=1312632723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c7" unique_id=1286280788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c7/handle" unique_id=2127492290]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c7/handle" unique_id=1488291159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c7/handle" unique_id=1169034997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c7" unique_id=483161141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c7/id" unique_id=466106084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c8" type="CSGBox3D" parent="cabinets2" unique_id=1393282412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c8" unique_id=799175370]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c8/handle" unique_id=904378001]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c8/handle" unique_id=620997346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c8/handle" unique_id=1334146022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c8" unique_id=1167465414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c8/id" unique_id=472128675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c9" type="CSGBox3D" parent="cabinets2" unique_id=563229292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c9" unique_id=1297950194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c9/handle" unique_id=1170774190]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c9/handle" unique_id=1857983480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c9/handle" unique_id=43617102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c9" unique_id=1545944876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c9/id" unique_id=288918255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c10" type="CSGBox3D" parent="cabinets2" unique_id=888222515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11, 0.675, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c10" unique_id=2099512465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c10/handle" unique_id=1035821064]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c10/handle" unique_id=644070688]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c10/handle" unique_id=198729208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c10" unique_id=693557484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c10/id" unique_id=1116136667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c11" type="CSGBox3D" parent="cabinets2" unique_id=690846227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11, 1.475, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c11" unique_id=1795592968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c11/handle" unique_id=1213387717]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c11/handle" unique_id=1966663233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c11/handle" unique_id=1739887792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c11" unique_id=1772655048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c11/id" unique_id=53812208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="c12" type="CSGBox3D" parent="cabinets2" unique_id=192835797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11, 2.275, -4)
+size = Vector3(0.75, 0.75, 0.75)
+
+[node name="handle" type="CSGCylinder3D" parent="cabinets2/c12" unique_id=1957872174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07894069, 0.3742087)
+radius = 0.1
+height = 0.05078125
+sides = 36
+
+[node name="dhandle" type="CSGCylinder3D" parent="cabinets2/c12/handle" unique_id=1347089161]
+operation = 2
+radius = 0.09
+height = 0.05078125
+sides = 36
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c12/handle" unique_id=1149543789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0943985, -0.0043107867, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/c12/handle" unique_id=117874637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.094, -0.004, 0)
+size = Vector3(0.02734375, 0.08618164, 0.033203125)
+
+[node name="id" type="CSGBox3D" parent="cabinets2/c12" unique_id=895328261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1791808, 0.37866235)
+size = Vector3(0.33984375, 0.18359375, 0.013916016)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/c12/id" unique_id=824294522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0067641735)
+operation = 2
+size = Vector3(0.3076172, 0.15820313, 0.0031738281)
+
+[node name="legs" type="Node3D" parent="cabinets2" unique_id=254521715]
+
+[node name="l1" type="CSGBox3D" parent="cabinets2/legs" unique_id=199361384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8821344, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+material = SubResource("StandardMaterial3D_h76fy")
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/legs/l1" unique_id=1041405657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/legs/l1" unique_id=1973018129]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets2/legs/l1" unique_id=1531743204]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets2/legs/l1" unique_id=2042742691]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets2/legs/l1" unique_id=978582744]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l2" type="CSGBox3D" parent="cabinets2/legs" unique_id=1991154352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1096144, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/legs/l2" unique_id=1442520126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/legs/l2" unique_id=1353979551]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets2/legs/l2" unique_id=1113880326]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets2/legs/l2" unique_id=524942029]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets2/legs/l2" unique_id=1180606072]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l3" type="CSGBox3D" parent="cabinets2/legs" unique_id=1833697842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.308324, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/legs/l3" unique_id=216948485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/legs/l3" unique_id=440414334]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets2/legs/l3" unique_id=1922207024]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets2/legs/l3" unique_id=1066862143]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets2/legs/l3" unique_id=1618026238]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l4" type="CSGBox3D" parent="cabinets2/legs" unique_id=1668202854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.509892, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/legs/l4" unique_id=2015583889]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/legs/l4" unique_id=1713673126]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets2/legs/l4" unique_id=58127589]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets2/legs/l4" unique_id=485810706]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets2/legs/l4" unique_id=514298343]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="l5" type="CSGBox3D" parent="cabinets2/legs" unique_id=1708348682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7562687, 0.111694336, -4.039113)
+size = Vector3(0.08959961, 0.22485352, 0.70755005)
+
+[node name="d1" type="CSGBox3D" parent="cabinets2/legs/l5" unique_id=279568738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021522522, 0)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.56274414)
+
+[node name="d2" type="CSGBox3D" parent="cabinets2/legs/l5" unique_id=1480917674]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, 0.25173974)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d3" type="CSGBox3D" parent="cabinets2/legs/l5" unique_id=1363413522]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, 0.38339758)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d4" type="CSGBox3D" parent="cabinets2/legs/l5" unique_id=1419273875]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, -0.024132483, -0.384408)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="d5" type="CSGBox3D" parent="cabinets2/legs/l5" unique_id=770095150]
+transform = Transform3D(1, 0, 0, 0, 0.9975641, -0.06975647, 0, 0.06975647, 0.9975641, 0, -0.024132483, -0.2527504)
+operation = 2
+size = Vector3(0.17382813, 0.20277405, 0.071899414)
+
+[node name="security" type="Node3D" parent="." unique_id=1217447206]
+
+[node name="support" type="CSGBox3D" parent="security" unique_id=1350590074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.367, 0.5, 0)
+size = Vector3(1.5111084, 1, 3.8759766)
+
+[node name="ds1" type="CSGBox3D" parent="security/support" unique_id=165221227]
+transform = Transform3D(0.76604444, 0, 0.6427876, 0, 1, 0, -0.6427876, 0, 0.76604444, 0.9040737, 0.045944214, -1.948832)
+operation = 2
+size = Vector3(0.8815136, 1.0918884, 1.851162)
+
+[node name="ds2" type="CSGBox3D" parent="security/support" unique_id=252066833]
+transform = Transform3D(0.57357645, 0, -0.81915206, 0, 1, 0, 0.81915206, 0, 0.57357645, -0.39429998, 0.045944214, -1.9071556)
+operation = 2
+size = Vector3(0.8815136, 1.0918884, 1.851162)
+
+[node name="ds3" type="CSGBox3D" parent="security/support" unique_id=914948343]
+transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, 0.93130326, 0.045944214, 1.8842621)
+operation = 2
+size = Vector3(0.8815136, 1.0918884, 1.851162)
+
+[node name="ds4" type="CSGBox3D" parent="security/support" unique_id=1855228626]
+transform = Transform3D(0.57357645, 0, 0.81915206, 0, 1, 0, -0.81915206, 0, 0.57357645, -0.35540152, 0.045944214, 1.9755522)
+operation = 2
+size = Vector3(0.9222021, 1.0918884, 1.851162)
+
+[node name="ds5" type="CSGBox3D" parent="security/support" unique_id=777062883]
+transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, 0.704792, -0.062049866, 1.1977082)
+operation = 2
+size = Vector3(2.1111658, 0.87590027, 1.090498)
+
+[node name="ds6" type="CSGBox3D" parent="security/support" unique_id=1147014884]
+transform = Transform3D(0.7660444, 0, 0.6427875, 0, 1, 0, -0.6427875, 0, 0.7660444, 0.71881866, -0.062049866, -1.2203147)
+operation = 2
+size = Vector3(2.0745447, 0.87590027, 1.090498)
+
+[node name="ds7" type="CSGBox3D" parent="security/support" unique_id=157274521]
+transform = Transform3D(0.76604444, 0, -0.6427876, 0, 1, 0, 0.6427876, 0, 0.76604444, 0.92774177, 0.0370903, 1.0136833)
+operation = 2
+size = Vector3(0.58213305, 1.0741806, 0.87006897)
+
+[node name="ds8" type="CSGBox3D" parent="security/support" unique_id=1278851545]
+transform = Transform3D(0.7660444, 0, 0.6427875, 0, 1, 0, -0.6427875, 0, 0.7660444, 0.92774177, 0.0370903, -1.0186772)
+operation = 2
+size = Vector3(0.58213305, 1.0741806, 0.87006897)
+
+[node name="ds9" type="CSGBox3D" parent="security/support" unique_id=235249808]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.18404007, -0.062049866, -0.018155318)
+operation = 2
+size = Vector3(1.2823894, 0.87590027, 1.9094901)
+
+[node name="ds10" type="CSGBox3D" parent="security/support" unique_id=1135007731]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.6254461, 0.45038033, -0.002823568)
+operation = 2
+size = Vector3(0.3995769, 0.23124313, 2.32404)
+
+[node name="bigComputer" parent="security" unique_id=2004590989 instance=ExtResource("2_ndaak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.813421, 1.0041765, 0)
+
+[node name="recordSystem" parent="security" unique_id=595650689 instance=ExtResource("3_xofrs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1331406, 0.99781585, 0.066318184)
