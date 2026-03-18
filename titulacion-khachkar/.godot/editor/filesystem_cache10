@@ -1,19 +1,21 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773762817
+::res://::1773832606
 export_presets.cfg::TextFile::-1::1773335394::0::1::::<><><>0<>0<><>::
 ::res://MainMenu/::1773157339
-::res://Museum/::1773762817
-museum.tscn::PackedScene::2148373344252418662::1773762569::0::1::::<><><>0<>0<><>::uid://tm0w8xnnstuw::::res://Museum/Room_0/room0.tscn<>uid://bxtmjm6r5qugq::::res://Museum/Room_1/room1.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://bn4sys00qptlt::::res://Museum/Entrance/arches.tscn<>uid://bwmd81jay1cl7::::res://Museum/Room_2/room2.tscn<>uid://cxf1diuhvtr1y::::res://Museum/Walls/westWall.tscn<>uid://mac6iyu8fd5r::::res://Museum/Room_3/room3.tscn<>uid://bi4n7s8nok62p::::res://Museum/Room_4/room4.tscn<>uid://bibtoqpefc6mg::::res://Museum/Walls/eastWall.tscn<>uid://cdryhpln0dniq::::res://Museum/Walls/southWall.tscn<>uid://d4by5ptehcr8m::::res://Museum/Walls/roof.tscn<>uid://dblecjbfmq0xi::::res://Museum/Entrance/door.tscn<>uid://qrdi8mvcket::::res://Museum/Room_Khachkar/khachkarRoom.tscn<>uid://wnffdeqjb6pw::::res://Museum/Entrance/Khachkar/fountainKhachkar.tscn<>uid://cl50nx7wocr2b::::res://Museum/Second_Floor/LevelFloor.tscn
-::res://Museum/Entrance/::1773762817
+::res://Museum/::1773833834
+museum.tscn::PackedScene::2148373344252418662::1773833834::0::1::::<><><>0<>0<><>::uid://tm0w8xnnstuw::::res://Museum/Room_0/room0.tscn<>uid://bxtmjm6r5qugq::::res://Museum/Room_1/room1.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn<>uid://bn4sys00qptlt::::res://Museum/Entrance/arches.tscn<>uid://bwmd81jay1cl7::::res://Museum/Room_2/room2.tscn<>uid://cxf1diuhvtr1y::::res://Museum/Walls/westWall.tscn<>uid://mac6iyu8fd5r::::res://Museum/Room_3/room3.tscn<>uid://bi4n7s8nok62p::::res://Museum/Room_4/room4.tscn<>uid://bibtoqpefc6mg::::res://Museum/Walls/eastWall.tscn<>uid://ciw15l1g0ltj8::::res://Museum/Room_5/room5.tscn<>uid://cdryhpln0dniq::::res://Museum/Walls/southWall.tscn<>uid://d4by5ptehcr8m::::res://Museum/Walls/roof.tscn<>uid://dblecjbfmq0xi::::res://Museum/Entrance/door.tscn<>uid://qrdi8mvcket::::res://Museum/Room_Khachkar/khachkarRoom.tscn<>uid://wnffdeqjb6pw::::res://Museum/Entrance/Khachkar/fountainKhachkar.tscn<>uid://cl50nx7wocr2b::::res://Museum/Second_Floor/LevelFloor.tscn<>uid://b4mvcnpm6e0t1::::res://Museum/Entrance/reception.tscn
+::res://Museum/Entrance/::1773836346
 arches.tscn::PackedScene::3359879355977061293::1773335005::0::1::::<><><>0<>0<><>::uid://21wv6auhe5yl::::res://Museum/Entrance/Textures/entranceWall.tres<>uid://xjf54rsshvxd::::res://Museum/Entrance/Textures/entranceWallWhiter.tres
 door.gd::GDScript::8492758482825407815::1773250145::0::1::::<>Node3D<><>0<>0<><>::
 door.tscn::PackedScene::7252405964069696154::1773250790::0::1::::<><><>0<>0<><>::uid://ds87qycfv74gx::::res://Museum/Entrance/door.gd<>uid://cahhyu3r2wcbn::::res://Museum/Entrance/Textures/mainDoorTexture.tres
+reception.tscn::PackedScene::4447949017243119444::1773835305::0::1::::<><><>0<>0<><>::uid://dp24x38eog6ja::::res://Museum/Entrance/stool.tscn
+stool.tscn::PackedScene::8269636292892515070::1773836346::0::1::::<><><>0<>0<><>::
 stairs.tscn::PackedScene::3651895338357976004::1773677206::0::1::::<><><>0<>0<><>::
 ::res://Museum/Entrance/Khachkar/::1773328670
 fountainKhachkar.tscn::PackedScene::1571304149261183912::1773328670::0::1::::<><><>0<>0<><>::uid://dxtvh8walkv0n::::res://Museum/Entrance/Khachkar/Khachkar0.glb
 Khachkar0.glb::PackedScene::8814117956757983539::1773323766::1773327791::1::::<><><>0<>0<>6a457af492a322805475990f3d3c0416<>res://.godot/imported/Khachkar0.glb-6936e49b26d42edeb60416cc17cb117e.scn::uid://c2xh6k2i8luul::::res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg
 Khachkar0_uv_map (2).jpg::CompressedTexture2D::6715901779868127659::1773323806::1773327790::1::::<><><>0<>0<>49319bdb92b17a9aece8436895831d1b<>res://.godot/imported/Khachkar0_uv_map (2).jpg-abb34bf4e50acff1c431b3f2c0f5df9a.s3tc.ctex::
-::res://Museum/Entrance/Textures/::1773335005
+::res://Museum/Entrance/Textures/::1773836464
 concrete_wall_001_4k.gltf::PackedScene::6814181448862377182::1773334052::1773334072::1::::<><><>0<>0<>2727bb7f30dc67193fd6ad6b2073ab4f<>res://.godot/imported/concrete_wall_001_4k.gltf-d87245a6eb9a5f031592d08befa2035c.scn::uid://dluku7iidubai::::res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg<>uid://de1pp06wwcprv::::res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg<>uid://da6lbcnywusw5::::res://Museum/Entrance/Textures/textures/concrete_wall_001_nor_gl_4k.jpg
 concrete_wall_003_4k.gltf::PackedScene::2613041396992385559::1773334491::1773334497::1::::<><><>0<>0<>8426346935ddf627eb1c0ea071fd89cd<>res://.godot/imported/concrete_wall_003_4k.gltf-50cce457f006897ab1f18811fd7d98c4.scn::uid://72moo8ic2dtx::::res://Museum/Entrance/Textures/textures/concrete_wall_003_diff_4k.jpg<>uid://uyd8rkjha1wg::::res://Museum/Entrance/Textures/textures/concrete_wall_003_rough_4k.jpg<>uid://523fpo6kpkdj::::res://Museum/Entrance/Textures/textures/concrete_wall_003_nor_gl_4k.jpg
 entranceWall.tres::StandardMaterial3D::1950147504487403587::1773334231::0::1::::<><><>0<>0<><>::uid://dluku7iidubai::::res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg<>uid://da6lbcnywusw5::::res://Museum/Entrance/Textures/textures/concrete_wall_001_nor_gl_4k.jpg<>uid://de1pp06wwcprv::::res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg
@@ -21,7 +23,8 @@ entranceWallWhiter.tres::StandardMaterial3D::1633281512523283133::1773335005::0:
 interlocking_concrete_pavers_4k.gltf::PackedScene::4253303879172837501::1773334061::1773334075::1::::<><><>0<>0<>bddf35a8bcae9b7933d06aa5239c0b29<>res://.godot/imported/interlocking_concrete_pavers_4k.gltf-91cf7b2325d631fc0c14741666d04126.scn::uid://bw4rvc3k3jjjo::::res://Museum/Entrance/Textures/textures/interlocking_concrete_pavers_diff_4k.jpg<>uid://c35oq8a4dvcuj::::res://Museum/Entrance/Textures/textures/interlocking_concrete_pavers_arm_4k.jpg<>uid://de6r5kvrxkuio::::res://Museum/Entrance/Textures/textures/interlocking_concrete_pavers_nor_gl_4k.jpg
 mainDoorTexture.tres::StandardMaterial3D::4787760984198580151::1773329300::0::1::::<><><>0<>0<><>::uid://dfrd7bk805l1::::res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_diff_4k.jpg<>uid://d0mg3hwyo61et::::res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_arm_4k.jpg<>uid://b7ny7j3ygaqu::::res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_nor_gl_4k.jpg
 square_concrete_pavers_4k.gltf::PackedScene::2264491034753377922::1773334477::1773334500::1::::<><><>0<>0<>d10256d4d510d24e8f4dd15272c8dca0<>res://.godot/imported/square_concrete_pavers_4k.gltf-680deb1cd080e083ab93d1168229423b.scn::uid://kdelhpv3qi6m::::res://Museum/Entrance/Textures/textures/square_concrete_pavers_diff_4k.jpg<>uid://yo3tgi2f0swh::::res://Museum/Entrance/Textures/textures/square_concrete_pavers_arm_4k.jpg<>uid://bactpur7lomvm::::res://Museum/Entrance/Textures/textures/square_concrete_pavers_nor_gl_4k.jpg
-::res://Museum/Entrance/Textures/textures/::1773334500
+wood_table_4k.gltf::PackedScene::5082413934062289661::1773836464::1773836470::1::::<><><>0<>0<>4653876412b4f53b0554525f6e1feb36<>res://.godot/imported/wood_table_4k.gltf-1f7bedcd0648cbda07ffb3b02b0bae70.scn::uid://c6capd78klpum::::res://Museum/Entrance/Textures/textures/wood_table_diff_4k.jpg<>uid://kt3cp72sfstr::::res://Museum/Entrance/Textures/textures/wood_table_arm_4k.jpg<>uid://5krme5rcij8::::res://Museum/Entrance/Textures/textures/wood_table_nor_gl_4k.jpg
+::res://Museum/Entrance/Textures/textures/::1773836464
 concrete_wall_001_diff_4k.jpg::CompressedTexture2D::7973271465458537052::1773334052::1773334075::1::::<><><>0<>0<>7d03ca56b96682a74f3a7ea9cfaadb62<>res://.godot/imported/concrete_wall_001_diff_4k.jpg-d09b3f621f90abee634d444b6f21e7e9.s3tc.ctex::
 concrete_wall_001_nor_gl_4k.jpg::CompressedTexture2D::7223927560419307154::1773334052::1773334075::1::::<><><>0<>0<>e1ab06da282103d8db00dbdf0f21d4b2<>res://.godot/imported/concrete_wall_001_nor_gl_4k.jpg-db78df1b79f7cacdd11ef54bfb57ed1c.s3tc.ctex::
 concrete_wall_001_rough_4k.jpg::CompressedTexture2D::7494630151038823043::1773334052::1773334075::1::::<><><>0<>0<>be4664a621e9b2c9fb2080167d7d19c0<>res://.godot/imported/concrete_wall_001_rough_4k.jpg-e7c8b4ec74bdc526b4f4a17cc89eb173.s3tc.ctex::
@@ -34,11 +37,13 @@ interlocking_concrete_pavers_nor_gl_4k.jpg::CompressedTexture2D::750509945717941
 square_concrete_pavers_arm_4k.jpg::CompressedTexture2D::1715167870484246579::1773334477::1773334500::1::::<><><>0<>0<>fd890b5f78a3421558682767d311e5fe<>res://.godot/imported/square_concrete_pavers_arm_4k.jpg-b9af6a7754c4cbc831e4b5a12c33f09b.s3tc.ctex::
 square_concrete_pavers_diff_4k.jpg::CompressedTexture2D::708344473174240618::1773334477::1773334500::1::::<><><>0<>0<>44c5a2b5fa03aed5b10cd3947e08adb4<>res://.godot/imported/square_concrete_pavers_diff_4k.jpg-47760b68777c765a3f1f4f873db4fa75.s3tc.ctex::
 square_concrete_pavers_nor_gl_4k.jpg::CompressedTexture2D::2391730927170232934::1773334477::1773334500::1::::<><><>0<>0<>2790ab344d65e503e2e56ee31c05a6b5<>res://.godot/imported/square_concrete_pavers_nor_gl_4k.jpg-dcb87c42c103e2c8d3ff9192d64ac5e7.s3tc.ctex::
+wood_table_arm_4k.jpg::CompressedTexture2D::742816099627752327::1773836464::1773836471::1::::<><><>0<>0<>d2e815f507fe195c3b48d18a64f05665<>res://.godot/imported/wood_table_arm_4k.jpg-13af1a79ed0bbbb42c3324a60000b9fa.s3tc.ctex::
+wood_table_diff_4k.jpg::CompressedTexture2D::6952851271098873480::1773836464::1773836471::1::::<><><>0<>0<>58193d276f6b662a29be728702f23756<>res://.godot/imported/wood_table_diff_4k.jpg-91228ba1ac5b66d071b459a3eaee01d7.s3tc.ctex::
+wood_table_nor_gl_4k.jpg::CompressedTexture2D::62569498891129171::1773836464::1773836471::1::::<><><>0<>0<>1b8bdf899364a03352f5fa33b858ccbb<>res://.godot/imported/wood_table_nor_gl_4k.jpg-7716abc4ce80f192059d338335f183b5.s3tc.ctex::
 ::res://Museum/Entrance/Textures/texturesDoor/::1773329301
 rough_pine_door_arm_4k.jpg::CompressedTexture2D::8939170382024321627::1773248413::1773329300::1::::<><><>0<>0<>515018081f52d5659616373bcb59463f<>res://.godot/imported/rough_pine_door_arm_4k.jpg-a34ecb7a7f6ff0b2c7d903b0e9b89f9f.s3tc.ctex::
 rough_pine_door_diff_4k.jpg::CompressedTexture2D::221927648734620640::1773248413::1773329300::1::::<><><>0<>0<>300a2fc21e1f3ae38166bd81a69288e7<>res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.s3tc.ctex::
 rough_pine_door_nor_gl_4k.jpg::CompressedTexture2D::137082807682571428::1773248413::1773329301::1::::<><><>0<>0<>118ed3cc8bb311a790e3eeca6e14b682<>res://.godot/imported/rough_pine_door_nor_gl_4k.jpg-8c1a80938221dd23e26dc302ac955a73.s3tc.ctex::
-::res://Museum/room5/::1773762800
 ::res://Museum/Room_0/::1773677835
 room0.tscn::PackedScene::1359919543866221258::1773677835::0::1::::<><><>0<>0<><>::
 ::res://Museum/Room_1/::1773681262
@@ -51,8 +56,10 @@ room3.tscn::PackedScene::842443375468089041::1773754604::0::1::::<><><>0<>0<><>:
 ::res://Museum/Room_4/::1773759617
 piano.tscn::PackedScene::7899751745993170825::1773759586::0::1::::<><><>0<>0<><>::
 room4.tscn::PackedScene::3008645850984661681::1773759617::0::1::::<><><>0<>0<><>::uid://dksx00gunoe3b::::res://Museum/Room_4/piano.tscn<>uid://bsbaghf3cl3p5::::res://Museum/Entrance/stairs.tscn
-::res://Museum/Room_Khachkar/::1773327682
-khachkarRoom.tscn::PackedScene::34068062062426339::1773327682::0::1::::<><><>0<>0<><>::uid://cpdd2nd82lq4l::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb<>uid://ccg5kbdyir1ef::::res://Museum/Room_Khachkar/Khachkar_Models/khachkar1.glb<>uid://c4niqt1qil88u::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3.glb<>uid://2fi6ish7yvri::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb<>uid://b3q7ckmb77pja::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb<>uid://byjwqn76w4uhv::::res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb
+::res://Museum/Room_5/::1773765133
+room5.tscn::PackedScene::5381401260937093191::1773765133::0::1::::<><><>0<>0<><>::
+::res://Museum/Room_Khachkar/::1773766873
+khachkarRoom.tscn::PackedScene::34068062062426339::1773766873::0::1::::<><><>0<>0<><>::uid://cpdd2nd82lq4l::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb<>uid://ccg5kbdyir1ef::::res://Museum/Room_Khachkar/Khachkar_Models/khachkar1.glb<>uid://c4niqt1qil88u::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3.glb<>uid://2fi6ish7yvri::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb<>uid://b3q7ckmb77pja::::res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb<>uid://byjwqn76w4uhv::::res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb
 ::res://Museum/Room_Khachkar/Khachkar_Models/::1773327790
 Kachkar6.glb::PackedScene::4090897411012110715::1773323474::1773323484::1::::<><><>0<>0<>75fb9e27f8a89913c2d854d33ee94699<>res://.godot/imported/Kachkar6.glb-f6815f5677812dd49585b041c60e2756.scn::uid://cwsefljjupr4r::::res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6_uv_map (1).jpg
 Kachkar6_uv_map (1).jpg::CompressedTexture2D::6354407116032927943::1773323478::1773323484::1::::<><><>0<>0<>a245f0d742c1be7ac27f4d30acd2e4a5<>res://.godot/imported/Kachkar6_uv_map (1).jpg-208da25476ddbeec7fe764f31f670c9e.s3tc.ctex::
@@ -75,11 +82,11 @@ FloorDetail.tscn::PackedScene::2087723096379132034::1773667032::0::1::::<><><>0<
 Pilar.tscn::PackedScene::2536647794339334512::1773667493::0::1::::<><><>0<>0<><>::
 Rail.tscn::PackedScene::6712618334876225300::1773673175::0::1::::<><><>0<>0<><>::uid://bce1howo16h1i::::res://Museum/Second_Floor/Rail/Pilar.tscn<>uid://cpwl6rpa2acm2::::res://Museum/Second_Floor/Rail/Rings.tscn<>uid://40kq2rab20dq::::res://Museum/Second_Floor/Rail/FloorDetail.tscn<>uid://dwn5w7tk45bbq::::res://Museum/Second_Floor/Rail/Cross.tscn
 Rings.tscn::PackedScene::5871814495182588331::1773666493::0::1::::<><><>0<>0<><>::
-::res://Museum/Walls/::1773762554
-eastWall.tscn::PackedScene::2951175298262858042::1773751479::0::1::::<><><>0<>0<><>::
+::res://Museum/Walls/::1773764798
+eastWall.tscn::PackedScene::2951175298262858042::1773764798::0::1::::<><><>0<>0<><>::
 roof.tscn::PackedScene::9198314493372575602::1773762554::0::1::::<><><>0<>0<><>::
 southWall.tscn::PackedScene::5019972833970347740::1773242976::0::1::::<><><>0<>0<><>::
-westWall.tscn::PackedScene::6399091110454656408::1773759790::0::1::::<><><>0<>0<><>::
+westWall.tscn::PackedScene::6399091110454656408::1773764742::0::1::::<><><>0<>0<><>::
 ::res://Player/::1773673891
 playerController.tscn::PackedScene::97915239036222750::1773673891::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd
 player_controller.gd::GDScript::1453498772295999128::1773250346::0::1::::<>CharacterBody3D<><>0<>0<><>::

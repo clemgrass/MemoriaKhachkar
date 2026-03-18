@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dp24x38eog6ja"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_deasl"]
+albedo_color = Color(0.03529412, 0.03529412, 0.03529412, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hf71s"]
+albedo_color = Color(0.05882353, 0.05882353, 0.05490196, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a3tn4"]
+albedo_color = Color(0.5529412, 0.44313726, 0.30588236, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r0fa1"]
+albedo_color = Color(0.050980393, 0.047058824, 0.05490196, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p25ob"]
+albedo_color = Color(0.14117648, 0.14117648, 0.14117648, 1)
+
+[node name="stool1" type="CSGCylinder3D" unique_id=615094907]
+use_collision = true
+height = 1.3
+sides = 16
+material = SubResource("StandardMaterial3D_deasl")
+
+[node name="dDown" type="CSGBox3D" parent="." unique_id=1704005019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+operation = 2
+size = Vector3(1, 2, 1)
+
+[node name="leg1" type="CSGCylinder3D" parent="." unique_id=360462045]
+transform = Transform3D(1, 0, 0, 0, 0.9947619, -0.10221961, 0, 0.10221961, 0.9947619, -0.0014380217, -0.13980912, -0.51371545)
+radius = 0.04
+height = 1.3
+sides = 36
+material = SubResource("StandardMaterial3D_hf71s")
+
+[node name="sock" type="CSGCylinder3D" parent="leg1" unique_id=1452630805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.60061073, -2.9802322e-08)
+radius = 0.04638672
+height = 0.10063475
+sides = 36
+material = SubResource("StandardMaterial3D_a3tn4")
+
+[node name="leg2" type="CSGCylinder3D" parent="." unique_id=103503550]
+transform = Transform3D(1, 0, 0, 0, 0.9947028, 0.10279253, 0, -0.10279253, 0.9947028, -0.001, -0.14, 0.514)
+radius = 0.04
+height = 1.3
+sides = 36
+material = SubResource("StandardMaterial3D_hf71s")
+
+[node name="sock" type="CSGCylinder3D" parent="leg2" unique_id=1490719935]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.60061073, -2.9802322e-08)
+radius = 0.04638672
+height = 0.10063475
+sides = 36
+material = SubResource("StandardMaterial3D_a3tn4")
+
+[node name="leg3" type="CSGCylinder3D" parent="." unique_id=884854147]
+transform = Transform3D(-4.371139e-08, -0.10279253, 0.9947028, 0, 0.9947028, 0.10279253, -1, 4.493204e-09, -4.347984e-08, 0.514, -0.14, 0)
+radius = 0.04
+height = 1.3
+sides = 36
+material = SubResource("StandardMaterial3D_hf71s")
+
+[node name="sock" type="CSGCylinder3D" parent="leg3" unique_id=1594939174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.60061073, -2.9802322e-08)
+radius = 0.04638672
+height = 0.10063475
+sides = 36
+material = SubResource("StandardMaterial3D_a3tn4")
+
+[node name="leg4" type="CSGCylinder3D" parent="." unique_id=654390978]
+transform = Transform3D(-4.371139e-08, 0.10279253, -0.9947028, 0, 0.9947028, 0.10279253, 1, 4.493204e-09, -4.347984e-08, -0.514, -0.14, 0)
+radius = 0.04
+height = 1.3
+sides = 36
+material = SubResource("StandardMaterial3D_hf71s")
+
+[node name="sock" type="CSGCylinder3D" parent="leg4" unique_id=104644191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.60061073, -2.9802322e-08)
+radius = 0.04638672
+height = 0.10063475
+sides = 36
+material = SubResource("StandardMaterial3D_a3tn4")
+
+[node name="d1" type="CSGCylinder3D" parent="." unique_id=336175839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50904465, 0)
+radius = 0.515625
+height = 0.068359375
+sides = 36
+material = SubResource("StandardMaterial3D_r0fa1")
+
+[node name="dd1" type="CSGCylinder3D" parent="d1" unique_id=940702904]
+operation = 2
+radius = 0.48535156
+height = 0.15
+sides = 36
+
+[node name="cushion" type="CSGSphere3D" parent="." unique_id=1170037678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5845336, 0)
+radius = 1.3075204
+radial_segments = 36
+rings = 36
+material = SubResource("StandardMaterial3D_p25ob")
+
+[node name="dCush" type="CSGBox3D" parent="cushion" unique_id=558915600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051696777, -0.04611206, 0)
+operation = 2
+size = Vector3(2.8094482, 2.5421753, 2.8164063)

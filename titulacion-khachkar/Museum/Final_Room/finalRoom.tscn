@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c1dtxjvi6eowg"]
+
+[node name="FinalRoom" type="Node3D" unique_id=909443158]
+
+[node name="northWall" type="CSGBox3D" parent="." unique_id=351852132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
+size = Vector3(0.1, 6.6, 10)

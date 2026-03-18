@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b1lvcmtjoytdh"]
+
+[node name="RoomComplete" type="Node3D" unique_id=4710292]
+
+[node name="northWall" type="CSGBox3D" parent="." unique_id=1739560170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
+use_collision = true
+size = Vector3(0.1, 6.6, 10)
+
+[node name="top" type="CSGBox3D" parent="." unique_id=1094142331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6088474, 3, 0)
+size = Vector3(5.2, 0.1, 10)
