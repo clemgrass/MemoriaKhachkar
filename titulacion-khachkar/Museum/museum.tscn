@@ -154,6 +154,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 5.518, 0)
 
 [node name="Roof" parent="." unique_id=2143347187 instance=ExtResource("7_x3da8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.199726, 10.233034, 0)
+visible = false
 
 [node name="Door" parent="." unique_id=586879168 instance=ExtResource("8_yfuot")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.92633, 2.9660282, -0.06474739)
@@ -166,6 +167,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.19842, -1.35238, -0.173458
 
 [node name="LevelFloor" parent="." unique_id=532701115 instance=ExtResource("11_44psb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.04411, 0, 0)
+visible = false
 
 [node name="Reception" parent="." unique_id=1530775575 instance=ExtResource("17_5cig3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.540485, -0.30912352, 0)
@@ -190,6 +192,12 @@ omni_range = 15.0
 
 [node name="RoomComplete" parent="." unique_id=4710292 instance=ExtResource("18_yhcug")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.61533, 0.05014789, -10.003506)
+
+[node name="l1" type="OmniLight3D" parent="RoomComplete" unique_id=1835129987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4204369, 1.4845439, -0.16633797)
+light_color = Color(1, 0.8745098, 0.6862745, 1)
+light_energy = 3.0
+omni_range = 15.0
 
 [node name="FinalRoom" parent="." unique_id=909443158 instance=ExtResource("19_uyxyj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.61566, 0.049993344, 9.9525795)
