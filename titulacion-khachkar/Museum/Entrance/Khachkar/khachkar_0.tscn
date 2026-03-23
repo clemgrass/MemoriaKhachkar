@@ -87,7 +87,7 @@ transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="piece1" type="StaticBody3D" parent="." index="2" unique_id=306081693]
+[node name="piece1" type="RigidBody3D" parent="." index="2" unique_id=1309479973 groups=["p0_piece"]]
 transform = Transform3D(0.9555309, 0, 0.29489097, 0, 1, 0, -0.29489097, 0, 0.9555309, -0.68248844, 0.12192165, 0.4324243)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece1" index="0" unique_id=1482944598]
@@ -113,7 +113,7 @@ transform = Transform3D(0.83792835, -0.54578024, -2.6383361e-08, 0.54578024, 0.8
 operation = 2
 size = Vector3(3.8105106, 3.061592, 1.3833008)
 
-[node name="piece2" type="StaticBody3D" parent="." index="4" unique_id=665414584]
+[node name="piece2" type="RigidBody3D" parent="." index="4" unique_id=2040134615 groups=["p0_piece"]]
 transform = Transform3D(0.80279666, 0, -0.5962529, 0, 1, 0, 0.5962529, 0, 0.80279666, -0.44111958, 0.14698769, 0.17359154)
 
 [node name="k2" type="CSGMesh3D" parent="piece2" index="0" unique_id=339988067]
@@ -159,7 +159,7 @@ transform = Transform3D(0.6678716, -0.7442765, -5.4108213e-08, 0.7442765, 0.6678
 operation = 1
 size = Vector3(3.8105106, 3.061592, 1.3833008)
 
-[node name="piece3" type="StaticBody3D" parent="." index="6" unique_id=1524797103]
+[node name="piece3" type="RigidBody3D" parent="." index="6" unique_id=537389585 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2323517, 0.11593659, 0.27010095)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece3" index="0" unique_id=1431278206]
@@ -205,7 +205,7 @@ transform = Transform3D(0.99997747, 0.0067194225, 1.4239276e-11, -0.0067194225, 
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="piece4" type="StaticBody3D" parent="." index="8" unique_id=944283368]
+[node name="piece4" type="RigidBody3D" parent="." index="8" unique_id=1830685693 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9274381, 0.16440575, 0.31390738)
 
 [node name="k4" type="CSGMesh3D" parent="piece4" index="0" unique_id=244293576]
@@ -251,7 +251,7 @@ transform = Transform3D(1, 0, 3.3196557e-11, 0, 1, 0, -3.3196557e-11, 0, 1, 0.47
 operation = 1
 size = Vector3(0.87002945, 0.6319132, 1.3413086)
 
-[node name="piece5" type="StaticBody3D" parent="." index="10" unique_id=1303030263]
+[node name="piece5" type="RigidBody3D" parent="." index="10" unique_id=32265765 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6158621, 0.15954456, -0.55019933)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece5" index="0" unique_id=1720000475]
@@ -297,7 +297,7 @@ transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="piece6" type="StaticBody3D" parent="." index="12" unique_id=1840327103]
+[node name="piece6" type="RigidBody3D" parent="." index="12" unique_id=1481474840 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3716581, 0.09334533, -0.2865148)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece6" index="0" unique_id=1998202832]

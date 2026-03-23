@@ -1,5 +1,4 @@
-res://Museum/Entrance/Khachkar/khachkar_0.tscn
-res://Museum/Entrance/Khachkar/puzzle_0.tscn
-res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
 res://Player/playerController.tscn
-res://World/MainGame.tscn
+res://Player/player_controller.gd
+res://Museum/Entrance/Khachkar/khachkar_0.tscn
+res://Museum/Entrance/Khachkar/pickable.gd

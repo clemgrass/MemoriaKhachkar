@@ -1,3 +1,4 @@
+RigidBody3D
 RayCast3D
 CollisionShape3D
 StaticBody3D
@@ -11,5 +12,3 @@ CSGTorus3D
 CSGPolygon3D
 Sprite3D
 CSGSphere3D
-OmniLight3D
-LightmapGI
