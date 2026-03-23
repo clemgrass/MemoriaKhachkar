@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774274502
+::res://::1774277578
 export_presets.cfg::TextFile::-1::1773946247::0::1::::<><><>0<>0<><>::
 ::res://MainMenu/::1773157339
 ::res://Museum/::1773946164
@@ -11,10 +11,12 @@ door.tscn::PackedScene::7252405964069696154::1773945363::0::1::::<><><>0<>0<><>:
 reception.tscn::PackedScene::4447949017243119444::1773941056::0::1::::<><><>0<>0<><>::uid://c6capd78klpum::::res://Museum/Entrance/Textures/textures/wood_table_diff_4k.jpg<>uid://dp24x38eog6ja::::res://Museum/Entrance/stool.tscn<>uid://bd0n6qf5pam7v::::res://Museum/Entrance/Textures/Marble016_4K-JPG_Color.jpg<>uid://c3bljggc76c46::::res://Museum/Entrance/Textures/Marble016_4K-JPG_Displacement.jpg<>uid://cooayj7hq2y0p::::res://Museum/Entrance/Textures/Marble016_4K-JPG_NormalGL.jpg<>uid://bpv1coat4vq6s::::res://Museum/Entrance/Textures/Marble016_4K-JPG_Roughness.jpg<>res://Museum/Entrance/Textures/Marble016_4K-JPG.tres
 stairs.tscn::PackedScene::3651895338357976004::1773927887::0::1::::<><><>0<>0<><>::uid://c7sdx6yx1dqx2::::res://Museum/Entrance/Textures/textures/textures/long_white_tiles_diff_4k.jpg
 stool.tscn::PackedScene::8269636292892515070::1773836346::0::1::::<><><>0<>0<><>::
-::res://Museum/Entrance/Khachkar/::1773943771
-fountainKhachkar.tscn::PackedScene::1571304149261183912::1773943771::0::1::::<><><>0<>0<><>::uid://dxtvh8walkv0n::::res://Museum/Entrance/Khachkar/Khachkar0.glb<>res://Museum/Entrance/Textures/Marble016_4K-JPG.tres
+::res://Museum/Entrance/Khachkar/::1774275403
+fountainKhachkar.tscn::PackedScene::1571304149261183912::1774274807::0::1::::<><><>0<>0<><>::uid://dxtvh8walkv0n::::res://Museum/Entrance/Khachkar/Khachkar0.glb<>uid://bjrak7jjgi0d::::res://Museum/Entrance/Textures/Marble016_4K-JPG.tres<>uid://orl6uece320g::::res://Museum/Entrance/Khachkar/puzzle_0.tscn
 Khachkar0.glb::PackedScene::8814117956757983539::1773323766::1773327791::1::::<><><>0<>0<>6a457af492a322805475990f3d3c0416<>res://.godot/imported/Khachkar0.glb-6936e49b26d42edeb60416cc17cb117e.scn::uid://c2xh6k2i8luul::::res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg
 Khachkar0_uv_map (2).jpg::CompressedTexture2D::6715901779868127659::1773323806::1773327790::1::::<><><>0<>0<>49319bdb92b17a9aece8436895831d1b<>res://.godot/imported/Khachkar0_uv_map (2).jpg-abb34bf4e50acff1c431b3f2c0f5df9a.s3tc.ctex::
+khachkar_0.tscn::PackedScene::2723444670097487871::1774275403::0::1::::<><><>0<>0<><>::uid://dxtvh8walkv0n::::res://Museum/Entrance/Khachkar/Khachkar0.glb<>uid://c2xh6k2i8luul::::res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg
+puzzle_0.tscn::PackedScene::1018462536026521764::1774275019::0::1::::<><><>0<>0<><>::uid://be2i0aur00gwd::::res://Museum/Entrance/Khachkar/khachkar_0.tscn
 ::res://Museum/Entrance/Textures/::1773943771
 concrete_wall_001_4k.gltf::PackedScene::6814181448862377182::1773334052::1773334072::1::::<><><>0<>0<>2727bb7f30dc67193fd6ad6b2073ab4f<>res://.godot/imported/concrete_wall_001_4k.gltf-d87245a6eb9a5f031592d08befa2035c.scn::uid://dluku7iidubai::::res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg<>uid://de1pp06wwcprv::::res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg<>uid://da6lbcnywusw5::::res://Museum/Entrance/Textures/textures/concrete_wall_001_nor_gl_4k.jpg
 concrete_wall_003_4k.gltf::PackedScene::2613041396992385559::1773334491::1773334497::1::::<><><>0<>0<>8426346935ddf627eb1c0ea071fd89cd<>res://.godot/imported/concrete_wall_003_4k.gltf-50cce457f006897ab1f18811fd7d98c4.scn::uid://72moo8ic2dtx::::res://Museum/Entrance/Textures/textures/concrete_wall_003_diff_4k.jpg<>uid://uyd8rkjha1wg::::res://Museum/Entrance/Textures/textures/concrete_wall_003_rough_4k.jpg<>uid://523fpo6kpkdj::::res://Museum/Entrance/Textures/textures/concrete_wall_003_nor_gl_4k.jpg
