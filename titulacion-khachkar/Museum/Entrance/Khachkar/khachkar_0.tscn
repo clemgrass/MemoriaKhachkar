@@ -43,6 +43,24 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_rcuef")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_plxay"]
+size = Vector3(0.09689331, 0.09118652, 0.18185425)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bougs"]
+size = Vector3(0.269104, 0.08673096, 0.28731918)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_idoy2"]
+size = Vector3(0.26184082, 0.08581543, 0.23242188)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7bhwv"]
+size = Vector3(0.19708252, 0.08035278, 0.26116943)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pgkyr"]
+size = Vector3(0.1352539, 0.078125, 0.32421875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nxwjy"]
+size = Vector3(0.22817993, 0.079315186, 0.27574158)
+
 [node name="Khachkar0" unique_id=1115336005 instance=ExtResource("1_h1vmh")]
 
 [node name="ShapeIndexedFaceSet_002" parent="." index="0" unique_id=384073985]
@@ -51,7 +69,6 @@ visible = false
 
 [node name="base" type="CSGMesh3D" parent="." index="1" unique_id=1606959705]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
-visible = false
 mesh = SubResource("ArrayMesh_plxay")
 
 [node name="d1" type="CSGBox3D" parent="base" index="0" unique_id=239270218]
@@ -69,36 +86,258 @@ transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="k1" type="CSGMesh3D" parent="." index="2" unique_id=874891449]
-transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
+[node name="piece1" type="StaticBody3D" parent="." index="2" unique_id=306081693]
+transform = Transform3D(0.9555309, 0, 0.29489097, 0, 1, 0, -0.29489097, 0, 0.9555309, -0.68248844, 0.12192165, 0.4324243)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piece1" index="0" unique_id=1482944598]
+transform = Transform3D(0.79205537, 0, 0.61044943, 0, 1, 0, -0.61044943, 0, 0.79205537, -0.004967034, -0.001987569, -0.0052592605)
+shape = SubResource("BoxShape3D_plxay")
+
+[node name="k1" type="CSGMesh3D" parent="piece1" index="1" unique_id=874891449]
+transform = Transform3D(-0.02783423, -0.31878722, -1.3934631e-08, -1.1245986e-22, -1.3987645e-08, 0.32, -0.31878722, 0.02783423, 1.2166725e-09, 0.20531553, 0.04509438, -0.22572218)
 mesh = SubResource("ArrayMesh_plxay")
 
-[node name="d1" type="CSGBox3D" parent="k1" index="0" unique_id=1475436818]
+[node name="d1" type="CSGBox3D" parent="piece1/k1" index="0" unique_id=1475436818]
 transform = Transform3D(0.83792835, -0.54578024, -2.6383361e-08, 0.54578024, 0.83792835, 8.892065e-08, -2.6417965e-08, -8.8907505e-08, 1, 0.660848, -0.45117784, -0.19165051)
 operation = 2
 size = Vector3(3.8105106, 3.061592, 1.3833008)
 
-[node name="k2" type="CSGMesh3D" parent="." index="3" unique_id=339988067]
+[node name="k1Static" type="CSGMesh3D" parent="." index="3" unique_id=112258759]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
 
-[node name="k3" type="CSGMesh3D" parent="." index="4" unique_id=1251673909]
+[node name="d1" type="CSGBox3D" parent="k1Static" index="0" unique_id=1513072690]
+transform = Transform3D(0.83792835, -0.54578024, -2.6383361e-08, 0.54578024, 0.83792835, 8.892065e-08, -2.6417965e-08, -8.8907505e-08, 1, 0.660848, -0.45117784, -0.19165051)
+operation = 2
+size = Vector3(3.8105106, 3.061592, 1.3833008)
+
+[node name="piece2" type="StaticBody3D" parent="." index="4" unique_id=665414584]
+transform = Transform3D(0.80279666, 0, -0.5962529, 0, 1, 0, 0.5962529, 0, 0.80279666, -0.44111958, 0.14698769, 0.17359154)
+
+[node name="k2" type="CSGMesh3D" parent="piece2" index="0" unique_id=339988067]
+transform = Transform3D(0.12277852, -0.29550877, -1.2917099e-08, -8.4428034e-23, -1.3987645e-08, 0.32, -0.29550877, -0.12277852, -5.36682e-09, 0.115032196, 0.050986186, -0.1071077)
+mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d4" type="CSGBox3D" parent="piece2/k2" index="0" unique_id=1008457225]
+transform = Transform3D(1, 0, 8.895995e-12, 0, 1, 0, -8.895995e-12, 0, 1, 1.1806726, -0.15850234, -0.26684564)
+operation = 2
+size = Vector3(2.3550415, 2.5274048, 1.2397461)
+
+[node name="d6" type="CSGBox3D" parent="piece2/k2" index="1" unique_id=1172811368]
+transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658399, -4.2226674e-08, -5.578457e-09, 4.2224265e-08, 1, -0.503703, 0.43924177, -1.7881393e-07)
+operation = 1
+size = Vector3(1.2291641, 1.3664856, 1)
+
+[node name="d1" type="CSGBox3D" parent="piece2/k2/d6" index="0" unique_id=1012523058]
+transform = Transform3D(0.6678716, -0.7442765, -5.4108213e-08, 0.7442765, 0.6678716, 1.212683e-07, -5.4118786e-08, -1.2125982e-07, 1, 1.3555126, -0.55822194, -0.1916503)
+operation = 1
+size = Vector3(3.8105106, 3.061592, 1.3833008)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piece2" index="1" unique_id=1532185109]
+transform = Transform3D(0.45069057, 0, 0.8926803, 0, 1, 0, -0.8926803, 0, 0.45069057, -0.0104085505, 0.0025683343, 0.0015360117)
+shape = SubResource("BoxShape3D_bougs")
+
+[node name="k2Static" type="CSGMesh3D" parent="." index="5" unique_id=1408183503]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
 
-[node name="k4" type="CSGMesh3D" parent="." index="5" unique_id=244293576]
+[node name="d4" type="CSGBox3D" parent="k2Static" index="0" unique_id=1067647087]
+transform = Transform3D(1, 0, 8.895995e-12, 0, 1, 0, -8.895995e-12, 0, 1, 1.1806726, -0.15850234, -0.26684564)
+operation = 2
+size = Vector3(2.3550415, 2.5274048, 1.2397461)
+
+[node name="d6" type="CSGBox3D" parent="k2Static" index="1" unique_id=1797036637]
+transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658399, -4.2226674e-08, -5.578457e-09, 4.2224265e-08, 1, -0.503703, 0.43924177, -1.7881393e-07)
+operation = 1
+size = Vector3(1.2291641, 1.3664856, 1)
+
+[node name="d1" type="CSGBox3D" parent="k2Static/d6" index="0" unique_id=1675498512]
+transform = Transform3D(0.6678716, -0.7442765, -5.4108213e-08, 0.7442765, 0.6678716, 1.212683e-07, -5.4118786e-08, -1.2125982e-07, 1, 1.3555126, -0.55822194, -0.1916503)
+operation = 1
+size = Vector3(3.8105106, 3.061592, 1.3833008)
+
+[node name="piece3" type="StaticBody3D" parent="." index="6" unique_id=1524797103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2323517, 0.11593659, 0.27010095)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piece3" index="0" unique_id=1431278206]
+transform = Transform3D(0.9169696, 0, -0.39895713, 0, 1, 0, 0.39895713, 0, 0.9169696, -0.0031933784, 0.00021331012, 0.0031003952)
+shape = SubResource("BoxShape3D_idoy2")
+
+[node name="k3" type="CSGMesh3D" parent="piece3" index="1" unique_id=1251673909]
+transform = Transform3D(-0.29248202, -0.129824, -5.6747878e-09, -1.4494803e-22, -1.3987645e-08, 0.32, -0.129824, 0.29248202, 1.27847954e-08, 0.21182549, 0.048131064, -0.113906816)
+mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d4" type="CSGBox3D" parent="piece3/k3" index="0" unique_id=1971804312]
+transform = Transform3D(0.9999999, -1.4551912e-09, 2.1131541e-11, 1.4551915e-09, 0.9999999, 3.469447e-16, -2.111733e-11, -2.370807e-16, 1, 0.5499431, -0.60594356, -0.17065445)
+operation = 2
+size = Vector3(3.466446, 1.7111969, 1.3413086)
+
+[node name="d5" type="CSGBox3D" parent="piece3/k3" index="1" unique_id=222756225]
+transform = Transform3D(0.99990565, -0.013735416, -5.3574922e-12, 0.013735416, 0.99990565, 2.2327387e-09, -2.0236257e-11, -2.231158e-09, 1, 1.5884011, 0.45583797, 1.7881393e-07)
+operation = 2
+size = Vector3(1.3733673, 1.3664856, 1)
+
+[node name="d6" type="CSGBox3D" parent="piece3/k3" index="2" unique_id=1546264275]
+transform = Transform3D(0.99997747, 0.0067194225, 1.4239276e-11, -0.0067194225, 0.99997747, -1.0978413e-09, -1.679723e-11, 1.0998534e-09, 1, -0.5911211, 0.43924177, -1.7881393e-07)
+operation = 2
+size = Vector3(1.2291641, 1.3664856, 1)
+
+[node name="k3Static" type="CSGMesh3D" parent="." index="7" unique_id=617370075]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
 
-[node name="k5" type="CSGMesh3D" parent="." index="6" unique_id=2104893804]
+[node name="d4" type="CSGBox3D" parent="k3Static" index="0" unique_id=229609788]
+transform = Transform3D(1, 0, 2.1088908e-11, 0, 1, 0, -2.1088908e-11, 0, 1, 0.5499429, -0.6059436, -0.17065442)
+operation = 2
+size = Vector3(3.466446, 1.7111969, 1.3413086)
+
+[node name="d5" type="CSGBox3D" parent="k3Static" index="1" unique_id=1597691991]
+transform = Transform3D(0.99990565, -0.013735416, -5.3574922e-12, 0.013735416, 0.99990565, 2.2327387e-09, -2.0236257e-11, -2.231158e-09, 1, 1.5884011, 0.45583797, 1.7881393e-07)
+operation = 2
+size = Vector3(1.3733673, 1.3664856, 1)
+
+[node name="d6" type="CSGBox3D" parent="k3Static" index="2" unique_id=58836193]
+transform = Transform3D(0.99997747, 0.0067194225, 1.4239276e-11, -0.0067194225, 0.99997747, -1.0978413e-09, -1.679723e-11, 1.0998534e-09, 1, -0.5911211, 0.43924177, -1.7881393e-07)
+operation = 2
+size = Vector3(1.2291641, 1.3664856, 1)
+
+[node name="piece4" type="StaticBody3D" parent="." index="8" unique_id=944283368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9274381, 0.16440575, 0.31390738)
+
+[node name="k4" type="CSGMesh3D" parent="piece4" index="0" unique_id=244293576]
+transform = Transform3D(0.039081328, 0.31760454, 1.3882936e-08, -1.1796399e-22, -1.3987645e-08, 0.32, 0.31760454, -0.039081328, -1.7082991e-09, -0.006111264, 0.048309967, -0.15771325)
+mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d5" type="CSGBox3D" parent="piece4/k4" index="0" unique_id=661134017]
+transform = Transform3D(0.9999997, 0.0005932903, 1.3770318e-11, -0.0005932903, 0.9999997, -1.01799125e-10, -9.094947e-12, 1.03221e-10, 1, 1.5698847, -0.17749107, -0.15405256)
+operation = 2
+size = Vector3(1.3580627, 2.633438, 1.3081055)
+
+[node name="d6" type="CSGBox3D" parent="piece4/k4" index="1" unique_id=1373791115]
+transform = Transform3D(1, 0.00033155084, 1.794831e-11, -0.00033155084, 1, -5.7009952e-11, -1.3173462e-11, 5.9134614e-11, 1, -0.54433525, -0.12390864, -0.072754085)
+operation = 2
+size = Vector3(1.1482735, 2.492813, 1.1455078)
+
+[node name="d7" type="CSGBox3D" parent="piece4/k4" index="2" unique_id=327077282]
+transform = Transform3D(1, 0, 3.3196557e-11, 0, 1, 0, -3.3196557e-11, 0, 1, 0.4751916, -0.06630182, -0.17065442)
+operation = 1
+size = Vector3(0.87002945, 0.6319132, 1.3413086)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piece4" index="1" unique_id=1127313812]
+transform = Transform3D(0.993633, 0, 0.112665616, 0, 1, 0, -0.112665616, 0, 0.993633, -0.008446991, -0.0002669543, -0.004426807)
+shape = SubResource("BoxShape3D_7bhwv")
+
+[node name="k4Static" type="CSGMesh3D" parent="." index="9" unique_id=1454253525]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
 
-[node name="k6" type="CSGMesh3D" parent="." index="7" unique_id=227759965]
+[node name="d5" type="CSGBox3D" parent="k4Static" index="0" unique_id=2075971668]
+transform = Transform3D(0.9999997, 0.0005932903, 1.3770318e-11, -0.0005932903, 0.9999997, -1.01799125e-10, -9.094947e-12, 1.03221e-10, 1, 1.5698847, -0.17749107, -0.15405256)
+operation = 2
+size = Vector3(1.3580627, 2.633438, 1.3081055)
+
+[node name="d6" type="CSGBox3D" parent="k4Static" index="1" unique_id=382302631]
+transform = Transform3D(1, 0.00033155084, 1.794831e-11, -0.00033155084, 1, -5.7009952e-11, -1.3173462e-11, 5.9134614e-11, 1, -0.54433525, -0.12390864, -0.072754085)
+operation = 2
+size = Vector3(1.1482735, 2.492813, 1.1455078)
+
+[node name="d7" type="CSGBox3D" parent="k4Static" index="2" unique_id=628324117]
+transform = Transform3D(1, 0, 3.3196557e-11, 0, 1, 0, -3.3196557e-11, 0, 1, 0.4751916, -0.06630182, -0.17065442)
+operation = 1
+size = Vector3(0.87002945, 0.6319132, 1.3413086)
+
+[node name="piece5" type="StaticBody3D" parent="." index="10" unique_id=1303030263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6158621, 0.15954456, -0.55019933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piece5" index="0" unique_id=1720000475]
+transform = Transform3D(0.7453596, 0, -0.6666626, 0, 1, 0, 0.6666626, 0, 0.7453596, 0.00958848, -0.00817737, -0.026921272)
+shape = SubResource("BoxShape3D_pgkyr")
+
+[node name="k5" type="CSGMesh3D" parent="piece5" index="1" unique_id=2104893804]
+transform = Transform3D(0.21319047, -0.23864165, -1.0431361e-08, -1.1596856e-22, -1.3987645e-08, 0.32, -0.23864165, -0.21319047, -9.3188515e-09, -0.115724266, 0.039903462, 0.4778951)
+mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d4" type="CSGBox3D" parent="piece5/k5" index="0" unique_id=1704971755]
+transform = Transform3D(1, 0, 3.2684966e-12, 0, 1, 0, -3.2684966e-12, 0, 1, 0.4455959, 0.36246336, 5.9604645e-08)
+operation = 2
+size = Vector3(0.8848877, 1.4854736, 1)
+
+[node name="d5" type="CSGBox3D" parent="piece5/k5" index="1" unique_id=483266525]
+transform = Transform3D(0.96343887, -0.26792794, -5.930204e-09, 0.26792794, 0.96343887, 4.364861e-08, -5.9736323e-09, -4.3638742e-08, 1, 0.5874805, -0.7856442, -0.1853025)
+operation = 2
+size = Vector3(3.5711212, 2.0371265, 1.3706055)
+
+[node name="d6" type="CSGBox3D" parent="piece5/k5" index="2" unique_id=378026661]
+transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658399, -4.2226674e-08, -5.578457e-09, 4.2224265e-08, 1, -0.503703, 0.43924177, -1.7881393e-07)
+operation = 2
+size = Vector3(1.2291641, 1.3664856, 1)
+
+[node name="k5Static" type="CSGMesh3D" parent="." index="11" unique_id=1419044505]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d4" type="CSGBox3D" parent="k5Static" index="0" unique_id=414906393]
+transform = Transform3D(1, 0, 3.2684966e-12, 0, 1, 0, -3.2684966e-12, 0, 1, 0.4455959, 0.36246336, 5.9604645e-08)
+operation = 2
+size = Vector3(0.8848877, 1.4854736, 1)
+
+[node name="d5" type="CSGBox3D" parent="k5Static" index="1" unique_id=384682469]
+transform = Transform3D(0.96343887, -0.26792794, -5.930204e-09, 0.26792794, 0.96343887, 4.364861e-08, -5.9736323e-09, -4.3638742e-08, 1, 0.5874805, -0.7856442, -0.1853025)
+operation = 2
+size = Vector3(3.5711212, 2.0371265, 1.3706055)
+
+[node name="d6" type="CSGBox3D" parent="k5Static" index="2" unique_id=1036175780]
+transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658399, -4.2226674e-08, -5.578457e-09, 4.2224265e-08, 1, -0.503703, 0.43924177, -1.7881393e-07)
+operation = 2
+size = Vector3(1.2291641, 1.3664856, 1)
+
+[node name="piece6" type="StaticBody3D" parent="." index="12" unique_id=1840327103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3716581, 0.09334533, -0.2865148)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piece6" index="0" unique_id=1998202832]
+transform = Transform3D(0.9274452, 0, 0.37395924, 0, 1, 0, -0.37395924, 0, 0.9274452, -0.008364707, -0.004310295, -0.0040649474)
+shape = SubResource("BoxShape3D_nxwjy")
+
+[node name="k6" type="CSGMesh3D" parent="piece6" index="1" unique_id=227759965]
+transform = Transform3D(-0.038316272, -0.31769773, -1.3887011e-08, -1.169692e-22, -1.3987645e-08, 0.32, -0.31769773, 0.038316272, 1.6748575e-09, 0.09117192, 0.047135398, 0.4427089)
+mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d4" type="CSGBox3D" parent="piece6/k6" index="0" unique_id=1813028247]
+transform = Transform3D(1, 0, 7.545964e-12, 0, 1, 0, -7.545964e-12, 0, 1, -0.12785992, -0.16069949, -0.17553705)
+operation = 2
+size = Vector3(2.0317993, 2.5317993, 1.3510742)
+
+[node name="d5" type="CSGBox3D" parent="piece6/k6" index="1" unique_id=451381863]
+transform = Transform3D(0.96343887, -0.26792794, -5.9367125e-09, 0.26792794, 0.96343887, 4.364861e-08, -5.968431e-09, -4.3641087e-08, 1, 1.4772466, 0.14480948, 1.7881393e-07)
+operation = 1
+size = Vector3(1.3580627, 0.7206049, 1)
+
+[node name="d6" type="CSGBox3D" parent="piece6/k6" index="2" unique_id=1013761778]
+transform = Transform3D(1, 0.00033155084, 1.84599e-11, -0.00033155084, 1, -5.7009952e-11, -1.3685053e-11, 5.9134614e-11, 1, 1.3820437, -1.1625043, -0.0886229)
+operation = 2
+size = Vector3(1.2291641, 1.3664856, 1.1772461)
+
+[node name="k6Static" type="CSGMesh3D" parent="." index="13" unique_id=12402628]
+transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
+visible = false
+mesh = SubResource("ArrayMesh_plxay")
+
+[node name="d4" type="CSGBox3D" parent="k6Static" index="0" unique_id=1556824934]
+transform = Transform3D(1, 0, 7.545964e-12, 0, 1, 0, -7.545964e-12, 0, 1, -0.12785992, -0.16069949, -0.17553705)
+operation = 2
+size = Vector3(2.0317993, 2.5317993, 1.3510742)
+
+[node name="d5" type="CSGBox3D" parent="k6Static" index="1" unique_id=1041734257]
+transform = Transform3D(0.96343887, -0.26792794, -5.9367125e-09, 0.26792794, 0.96343887, 4.364861e-08, -5.968431e-09, -4.3641087e-08, 1, 1.4772466, 0.14480948, 1.7881393e-07)
+operation = 1
+size = Vector3(1.3580627, 0.7206049, 1)
+
+[node name="d6" type="CSGBox3D" parent="k6Static" index="2" unique_id=1658174658]
+transform = Transform3D(1, 0.00033155084, 1.84599e-11, -0.00033155084, 1, -5.7009952e-11, -1.3685053e-11, 5.9134614e-11, 1, 1.3820437, -1.1625043, -0.0886229)
+operation = 2
+size = Vector3(1.2291641, 1.3664856, 1.1772461)

@@ -1,3 +1,5 @@
+CollisionShape3D
+StaticBody3D
 CSGBox3D
 CSGMesh3D
 Node3D
@@ -10,5 +12,3 @@ Sprite3D
 CSGSphere3D
 OmniLight3D
 LightmapGI
-VoxelGI
-MultiMeshInstance3D
