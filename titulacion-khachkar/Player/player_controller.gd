@@ -81,28 +81,9 @@ func _physics_process(delta: float) -> void:
 		velocity.y = 0
 	
 	move_and_slide()
-
-
-func _process(delta):
-	handle_interactions()
 		
-func handle_interactions():
-	if not raycast.is_colliding():
-		return
-	var collider = raycast.get_collider()
-	if collider.is_in_group("p0_piece"):
-		#collider.material_override.albedo_color = Color.RED
-		print("Looking at piece: ", collider.name)
-		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-			interact_with_piece(collider)
-	else:
-		pass
-		#collider.material_override.albedo_color = Color.WHITE
 			
-func interact_with_piece(piece: Node):
-	print("Interacting with piece: ", piece.name)
-	if piece.has_method("pickup"):
-		piece.pickup()
+
 
 func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed
