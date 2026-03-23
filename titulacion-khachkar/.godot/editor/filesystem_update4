@@ -1,10 +1,3 @@
-res://Museum/Entrance/reception.tscn
-res://Museum/museum.tscn
-res://Museum/Entrance/stool.tscn
-res://Museum/Room_Complisonist/roomComplete.tscn
-res://Museum/Final_Room/finalRoom.tscn
-res://Museum/Room_Complisonist/crowbar.tscn
-res://Museum/Final_Room/big_computer.tscn
-res://Museum/Final_Room/record_system.tscn
-res://Museum/Final_Room/cassette.tscn
-res://World/MainGame.tscn
+res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
+res://Museum/Entrance/Khachkar/puzzle_0.tscn
+res://Museum/Entrance/Khachkar/khachkar_0.tscn
