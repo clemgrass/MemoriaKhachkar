@@ -1,15 +1,89 @@
 [gd_scene format=3 uid="uid://bn4sys00qptlt"]
 
 [ext_resource type="Material" uid="uid://21wv6auhe5yl" path="res://Museum/Entrance/Textures/entranceWall.tres" id="1_72jvf"]
-[ext_resource type="Material" uid="uid://xjf54rsshvxd" path="res://Museum/Entrance/Textures/entranceWallWhiter.tres" id="2_x13fh"]
+[ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="1_x13fh"]
+[ext_resource type="Texture2D" uid="uid://72moo8ic2dtx" path="res://Museum/Entrance/Textures/textures/concrete_wall_003_diff_4k.jpg" id="2_c3t8t"]
+[ext_resource type="Texture2D" uid="uid://da6lbcnywusw5" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_nor_gl_4k.jpg" id="4_yrk1u"]
+[ext_resource type="Texture2D" uid="uid://de1pp06wwcprv" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg" id="5_ahp73"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x13fh"]
+albedo_texture = ExtResource("1_x13fh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mn81"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dq00d"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bv4ve"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0pqw6"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mhau"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ehf5l"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmh6d"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g8t2n"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c3aak"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_la6mm"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cxlpu"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0aoy"]
+albedo_texture = ExtResource("2_c3t8t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6sc4"]
+albedo_texture = ExtResource("1_x13fh")
+metallic = 1.0
+metallic_texture = ExtResource("4_yrk1u")
+roughness_texture = ExtResource("5_ahp73")
+uv1_scale = Vector3(1, 0.1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dh3iw"]
+albedo_texture = ExtResource("1_x13fh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h5wlr"]
+albedo_texture = ExtResource("1_x13fh")
+uv1_scale = Vector3(0.8, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yut0b"]
+albedo_texture = ExtResource("1_x13fh")
+metallic = 1.0
+metallic_texture = ExtResource("4_yrk1u")
+roughness_texture = ExtResource("5_ahp73")
+uv1_scale = Vector3(1, 0.1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d1xej"]
+albedo_texture = ExtResource("1_x13fh")
+metallic = 1.0
+metallic_texture = ExtResource("4_yrk1u")
+roughness_texture = ExtResource("5_ahp73")
+uv1_scale = Vector3(1, 0.1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c3t8t"]
+albedo_texture = ExtResource("1_x13fh")
+uv1_scale = Vector3(0.07, 1, 6)
 
 [node name="Arches" type="Node3D" unique_id=973585447]
 
 [node name="mainWall" type="CSGBox3D" parent="." unique_id=1321584526]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0014948845, 0, 0.0039606094)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0014948845, 0, -0.0019598007)
+material_override = SubResource("StandardMaterial3D_x13fh")
 use_collision = true
-size = Vector3(1, 11, 30)
-material = ExtResource("1_72jvf")
+size = Vector3(1, 11, 29.98816)
 
 [node name="mainArch" type="CSGCylinder3D" parent="mainWall" unique_id=140649599]
 transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, -0.262, 0)
@@ -71,30 +145,6 @@ radius = 4.5
 height = 0.63964844
 sides = 36
 
-[node name="mainArchDetail5" type="CSGCylinder3D" parent="mainWall" unique_id=1776139851]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04891467, -2.7734382, 4.3745985)
-radius = 0.2
-height = 5.463623
-sides = 64
-material = ExtResource("2_x13fh")
-
-[node name="mainArchDetail6" type="CSGBox3D" parent="mainWall" unique_id=283348679]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058060467, -0.22442216, 4.371082)
-size = Vector3(0.4, 0.4, 0.4)
-material = ExtResource("2_x13fh")
-
-[node name="mainArchDetail7" type="CSGCylinder3D" parent="mainWall" unique_id=1917804055]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049, -2.773, -4.375)
-radius = 0.2
-height = 5.463623
-sides = 64
-material = ExtResource("2_x13fh")
-
-[node name="mainArchDetail8" type="CSGBox3D" parent="mainWall" unique_id=1840945134]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058, -0.224, -4.371)
-size = Vector3(0.4, 0.4, 0.4)
-material = ExtResource("2_x13fh")
-
 [node name="leftArchDetail1" type="CSGBox3D" parent="mainWall" unique_id=1520782656]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, -3.133, 11)
 operation = 2
@@ -118,30 +168,6 @@ operation = 2
 radius = 2.5
 height = 0.64
 sides = 36
-
-[node name="leftArchDetail5" type="CSGCylinder3D" parent="mainWall" unique_id=1147807828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049, -2.773, 13.375)
-radius = 0.2
-height = 5.463623
-sides = 64
-material = ExtResource("2_x13fh")
-
-[node name="leftArchDetail6" type="CSGBox3D" parent="mainWall" unique_id=1773694401]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058, -0.224, 13.375)
-size = Vector3(0.4, 0.4, 0.4)
-material = ExtResource("2_x13fh")
-
-[node name="leftArchDetail7" type="CSGCylinder3D" parent="mainWall" unique_id=1069720633]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049, -2.773, 8.625)
-radius = 0.2
-height = 5.463623
-sides = 64
-material = ExtResource("2_x13fh")
-
-[node name="leftArchDetail8" type="CSGBox3D" parent="mainWall" unique_id=115372965]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058, -0.224, 8.625)
-size = Vector3(0.4, 0.4, 0.4)
-material = ExtResource("2_x13fh")
 
 [node name="rigtArchDetail1" type="CSGBox3D" parent="mainWall" unique_id=370702757]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, -3.133, -11)
@@ -167,36 +193,11 @@ radius = 2.5
 height = 0.64
 sides = 36
 
-[node name="rightArchDetail5" type="CSGCylinder3D" parent="mainWall" unique_id=1028635154]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049, -2.773, -13.375)
-radius = 0.2
-height = 5.463623
-sides = 64
-material = ExtResource("2_x13fh")
-
-[node name="rightArchDetail6" type="CSGBox3D" parent="mainWall" unique_id=2026065976]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058, -0.224, -13.375)
-size = Vector3(0.4, 0.4, 0.4)
-material = ExtResource("2_x13fh")
-
-[node name="rightArchDetail7" type="CSGCylinder3D" parent="mainWall" unique_id=891654867]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049, -2.773, -8.625)
-radius = 0.2
-height = 5.463623
-sides = 64
-material = ExtResource("2_x13fh")
-
-[node name="rightArchDetail8" type="CSGBox3D" parent="mainWall" unique_id=1526857516]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058, -0.224, -8.625)
-size = Vector3(0.4, 0.4, 0.4)
-material = ExtResource("2_x13fh")
-
 [node name="leftTopDetail1" type="CSGCylinder3D" parent="mainWall" unique_id=2033000980]
 transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0, 4, 11)
 operation = 2
 radius = 0.6
 sides = 6
-material = ExtResource("2_x13fh")
 
 [node name="leftTopDetail2" type="CSGCylinder3D" parent="mainWall" unique_id=961172754]
 transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0.55, 4, 11)
@@ -204,7 +205,6 @@ operation = 2
 radius = 0.8
 height = 1.0
 sides = 6
-material = ExtResource("2_x13fh")
 
 [node name="leftTopDetail3" type="CSGCylinder3D" parent="mainWall" unique_id=680641006]
 transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0.8, 4, 11)
@@ -212,14 +212,12 @@ operation = 2
 radius = 1.0
 height = 1.0
 sides = 6
-material = ExtResource("2_x13fh")
 
 [node name="rightTopDetail1" type="CSGCylinder3D" parent="mainWall" unique_id=666140978]
 transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0, 4, -11)
 operation = 2
 radius = 0.6
 sides = 6
-material = ExtResource("2_x13fh")
 
 [node name="rightTopDetail2" type="CSGCylinder3D" parent="mainWall" unique_id=1192052763]
 transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0.55, 4, -11)
@@ -227,15 +225,87 @@ operation = 2
 radius = 0.8
 height = 1.0
 sides = 6
-material = ExtResource("2_x13fh")
 
 [node name="rightTopDetail3" type="CSGCylinder3D" parent="mainWall" unique_id=1841449899]
-transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0.8, 4, -11)
+transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, -0.5, 0.5, -2.1855694e-08, 0.8660254, 0.50336915, 4, -11)
 operation = 2
 radius = 1.0
-height = 1.0
+height = 0.40673828
 sides = 6
-material = ExtResource("2_x13fh")
+
+[node name="detailsMainWall" type="Node3D" parent="." unique_id=1220342421]
+
+[node name="mainArchDetail5" type="CSGCylinder3D" parent="detailsMainWall" unique_id=1776139851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050409555, -2.7734382, 4.378559)
+material_override = SubResource("StandardMaterial3D_3mn81")
+radius = 0.2
+height = 5.463623
+sides = 64
+
+[node name="mainArchDetail6" type="CSGBox3D" parent="detailsMainWall" unique_id=283348679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05955535, -0.22442216, 4.3750424)
+size = Vector3(0.4, 0.4, 0.4)
+material = SubResource("StandardMaterial3D_dq00d")
+
+[node name="mainArchDetail7" type="CSGCylinder3D" parent="detailsMainWall" unique_id=1917804055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050494883, -2.773, -4.3710394)
+material_override = SubResource("StandardMaterial3D_bv4ve")
+radius = 0.2
+height = 5.463623
+sides = 64
+
+[node name="mainArchDetail8" type="CSGBox3D" parent="detailsMainWall" unique_id=1840945134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059494883, -0.224, -4.367039)
+size = Vector3(0.4, 0.4, 0.4)
+material = SubResource("StandardMaterial3D_0pqw6")
+
+[node name="leftArchDetail5" type="CSGCylinder3D" parent="detailsMainWall" unique_id=1147807828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050494883, -2.773, 13.378961)
+material_override = SubResource("StandardMaterial3D_3mhau")
+radius = 0.2
+height = 5.463623
+sides = 64
+
+[node name="leftArchDetail6" type="CSGBox3D" parent="detailsMainWall" unique_id=1773694401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059494883, -0.224, 13.378961)
+size = Vector3(0.4, 0.4, 0.4)
+material = SubResource("StandardMaterial3D_ehf5l")
+
+[node name="leftArchDetail7" type="CSGCylinder3D" parent="detailsMainWall" unique_id=1069720633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050494883, -2.773, 8.628961)
+material_override = SubResource("StandardMaterial3D_dmh6d")
+radius = 0.2
+height = 5.463623
+sides = 64
+
+[node name="leftArchDetail8" type="CSGBox3D" parent="detailsMainWall" unique_id=115372965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059494883, -0.224, 8.628961)
+size = Vector3(0.4, 0.4, 0.4)
+material = SubResource("StandardMaterial3D_g8t2n")
+
+[node name="rightArchDetail5" type="CSGCylinder3D" parent="detailsMainWall" unique_id=1028635154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050494883, -2.773, -13.371039)
+material_override = SubResource("StandardMaterial3D_c3aak")
+radius = 0.2
+height = 5.463623
+sides = 64
+
+[node name="rightArchDetail6" type="CSGBox3D" parent="detailsMainWall" unique_id=2026065976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059494883, -0.224, -13.371039)
+size = Vector3(0.4, 0.4, 0.4)
+material = SubResource("StandardMaterial3D_la6mm")
+
+[node name="rightArchDetail7" type="CSGCylinder3D" parent="detailsMainWall" unique_id=891654867]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050494883, -2.773, -8.621039)
+material_override = SubResource("StandardMaterial3D_cxlpu")
+radius = 0.2
+height = 5.463623
+sides = 64
+
+[node name="rightArchDetail8" type="CSGBox3D" parent="detailsMainWall" unique_id=1526857516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059494883, -0.224, -8.621039)
+size = Vector3(0.4, 0.4, 0.4)
+material = SubResource("StandardMaterial3D_a0aoy")
 
 [node name="topWall" type="CSGBox3D" parent="." unique_id=1440750540]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5200806, 0)
@@ -250,21 +320,21 @@ size = Vector3(1, 1, 14.970963)
 transform = Transform3D(1, 0, 0, 0, 0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, 0.8707862, -7.432349)
 size = Vector3(1, 1, 14.925575)
 
-[node name="leftWall" type="CSGBox3D" parent="." unique_id=1252133764]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4959927, 0.0020961761, 14.797086)
-material_override = ExtResource("1_72jvf")
-use_collision = true
-size = Vector3(4, 11, 0.4)
-material = ExtResource("1_72jvf")
+[node name="leftWallTop" type="CSGBox3D" parent="." unique_id=1552665983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4998379, 6.522096, 14.797086)
+material_override = SubResource("StandardMaterial3D_o6sc4")
+size = Vector3(4.4923096, 2.04, 1.5)
 
-[node name="leftWallTop" type="CSGBox3D" parent="leftWall" unique_id=1552665983]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.52, 0)
-size = Vector3(4.5, 2.04, 1.5)
-
-[node name="drenaje" type="CSGCylinder3D" parent="leftWall/leftWallTop" unique_id=1644164431]
+[node name="drenaje" type="CSGCylinder3D" parent="leftWallTop" unique_id=1644164431]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5746543, -0.9461756, 0)
 operation = 2
 radius = 0.1
+
+[node name="leftWall" type="CSGBox3D" parent="." unique_id=1252133764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4959927, 0.0020961761, 14.797086)
+material_override = SubResource("StandardMaterial3D_dh3iw")
+use_collision = true
+size = Vector3(4, 11, 0.4)
 
 [node name="hole" type="CSGBox3D" parent="leftWall" unique_id=373214759]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3143406, -3.0296478, -0.0007324219)
@@ -292,19 +362,9 @@ size = Vector3(3, 0.1, 0.6)
 
 [node name="rightWall" type="CSGBox3D" parent="." unique_id=1312038075]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.496, 0.002, -14.797)
-material_override = ExtResource("1_72jvf")
+material_override = SubResource("StandardMaterial3D_h5wlr")
 use_collision = true
 size = Vector3(4, 11, 0.4)
-material = ExtResource("1_72jvf")
-
-[node name="rightWallTop" type="CSGBox3D" parent="rightWall" unique_id=2102233470]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.52, 0)
-size = Vector3(4.5, 2.04, 1.5)
-
-[node name="drenaje" type="CSGCylinder3D" parent="rightWall/rightWallTop" unique_id=1510744080]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5746543, -0.9461756, 0)
-operation = 2
-radius = 0.1
 
 [node name="hole" type="CSGBox3D" parent="rightWall" unique_id=693420036]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3143406, -3.0296478, -0.0007324219)
@@ -330,14 +390,24 @@ height = 0.4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3202356, -5.05, 0)
 size = Vector3(3, 0.1, 0.6)
 
+[node name="rightWallTop" type="CSGBox3D" parent="." unique_id=2102233470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.496, 6.522, -14.797)
+material_override = SubResource("StandardMaterial3D_yut0b")
+size = Vector3(4.5, 2.04, 1.5)
+
+[node name="drenaje" type="CSGCylinder3D" parent="rightWallTop" unique_id=1510744080]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5746543, -0.9461756, 0)
+operation = 2
+radius = 0.1
+
 [node name="roofWall" type="CSGBox3D" parent="." unique_id=1269360741]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8182102, 5.3707795, 0)
-material_override = ExtResource("1_72jvf")
+material_override = SubResource("StandardMaterial3D_d1xej")
 size = Vector3(3.459961, 0.3, 30)
 
 [node name="entranceWall" type="CSGBox3D" parent="." unique_id=441450037]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5650234, 0.009, 0.002105713)
-material_override = ExtResource("1_72jvf")
+material_override = SubResource("StandardMaterial3D_c3t8t")
 use_collision = true
 size = Vector3(0.35147706, 11.018433, 30)
 

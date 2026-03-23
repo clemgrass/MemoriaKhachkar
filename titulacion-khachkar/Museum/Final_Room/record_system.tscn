@@ -49,6 +49,7 @@ albedo_color = Color(0.53333336, 0.5294118, 0.52156866, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd46s"]
 albedo_color = Color(0.4862745, 0.47843137, 0.45882353, 1)
+metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kryrh"]
 albedo_color = Color(0.8784314, 0.8156863, 0.8117647, 1)
@@ -372,8 +373,8 @@ size = Vector3(0.09008789, 0.038658142, 0.66796875)
 material = SubResource("StandardMaterial3D_4yvd8")
 
 [node name="d2" type="CSGBox3D" parent="box" unique_id=1901280424]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02986145, -0.06023264, -0.010211945)
-size = Vector3(0.1354065, 0.063072205, 0.27441406)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.031974792, -0.06023264, -0.01021193)
+size = Vector3(0.13117981, 0.063072205, 0.27441406)
 material = SubResource("StandardMaterial3D_sd46s")
 
 [node name="d3" type="CSGBox3D" parent="box/d2" unique_id=137548288]

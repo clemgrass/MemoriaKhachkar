@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bpvv2f4yciiqy"]
+
+[ext_resource type="Texture2D" uid="uid://bjh3v5u47ywja" path="res://Museum/Room_4/Concrete046_4K-JPG_Color.jpg" id="Color"]
+[ext_resource type="Texture2D" uid="uid://px34j831borm" path="res://Museum/Room_4/Concrete046_4K-JPG_Displacement.jpg" id="Displacement"]
+[ext_resource type="Texture2D" uid="uid://d3cs3ul1v3k6u" path="res://Museum/Room_4/Concrete046_4K-JPG_NormalGL.jpg" id="NormalGL"]
+[ext_resource type="Texture2D" uid="uid://uutjvhs3a6pc" path="res://Museum/Room_4/Concrete046_4K-JPG_Roughness.jpg" id="Roughness"]
+
+[resource]
+albedo_texture = ExtResource("Color")
+roughness_texture = ExtResource("Roughness")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("NormalGL")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("Displacement")
+uv1_scale = Vector3(0.52, 1.375, 1.15)
+uv1_offset = Vector3(0, 0, -0.19)

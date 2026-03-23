@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bkdn2iam5dx31"]
+
+[ext_resource type="Texture2D" uid="uid://bjyo2rykvkg0r" path="res://Museum/Second_Floor/Marble013_4K-JPG_Color.jpg" id="Color"]
+[ext_resource type="Texture2D" uid="uid://uoe6ykjb2rj4" path="res://Museum/Second_Floor/Marble013_4K-JPG_Displacement.jpg" id="Displacement"]
+[ext_resource type="Texture2D" uid="uid://ckhavysrvqi62" path="res://Museum/Second_Floor/Marble013_4K-JPG_NormalGL.jpg" id="NormalGL"]
+[ext_resource type="Texture2D" uid="uid://uqg1gvlt5kfi" path="res://Museum/Second_Floor/Marble013_4K-JPG_Roughness.jpg" id="Roughness"]
+
+[resource]
+albedo_texture = ExtResource("Color")
+roughness_texture = ExtResource("Roughness")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("NormalGL")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("Displacement")
+uv1_triplanar = true

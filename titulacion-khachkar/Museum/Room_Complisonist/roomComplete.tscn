@@ -1,11 +1,32 @@
 [gd_scene format=3 uid="uid://b1lvcmtjoytdh"]
 
+[ext_resource type="Material" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="1_gyors"]
 [ext_resource type="PackedScene" uid="uid://g5de8nu46712" path="res://Museum/Room_Complisonist/crowbar.tscn" id="1_sa6oq"]
+[ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="2_4ncj8"]
+[ext_resource type="Texture2D" uid="uid://dfrd7bk805l1" path="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_diff_4k.jpg" id="3_4ncj8"]
+[ext_resource type="Texture2D" uid="uid://d0lcnpt7ecntj" path="res://Museum/Room_Complisonist/textures/synthetic_wood_diff_4k.jpg" id="3_glbuj"]
+[ext_resource type="Texture2D" uid="uid://di6xouwdmx0rv" path="res://Museum/Room_Complisonist/textures/synthetic_wood_nor_gl_4k.jpg" id="4_4g6p8"]
+[ext_resource type="Texture2D" uid="uid://i0uvep2cd5i5" path="res://Museum/Room_Complisonist/textures/synthetic_wood_rough_4k.jpg" id="5_2sslb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_re7d6"]
+albedo_texture = ExtResource("2_4ncj8")
+uv1_scale = Vector3(-0.83, 0.895, 6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_li8xj"]
+albedo_texture = ExtResource("3_glbuj")
+roughness_texture = ExtResource("5_2sslb")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_4g6p8")
+uv1_scale = Vector3(1.76, 0.555, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6qg4"]
+albedo_texture = ExtResource("3_4ncj8")
 
 [node name="RoomComplete" type="Node3D" unique_id=4710292]
 
 [node name="northWall" type="CSGBox3D" parent="." unique_id=1739560170]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
+material_override = ExtResource("1_gyors")
 use_collision = true
 size = Vector3(0.1, 6.6, 10)
 
@@ -14,43 +35,51 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.05, 0)
 operation = 2
 size = Vector3(1.5, 2.5, 1.5410156)
 
-[node name="Door" type="CSGBox3D" parent="northWall" unique_id=1658417178]
-transform = Transform3D(0.42261824, 0, -0.9063078, 0, 1, 0, 0.9063078, 0, 0.42261824, 0.6707423, -2.05, 0.39937565)
-size = Vector3(0.1, 2.5, 1.541)
-
 [node name="top" type="CSGBox3D" parent="." unique_id=1094142331]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6088474, 3, 0)
+material_override = SubResource("StandardMaterial3D_re7d6")
 size = Vector3(5.2, 0.1, 10)
 
 [node name="eastWall" type="CSGBox3D" parent="." unique_id=603811062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6151316, 1.5072327, 4.949284)
+material_override = SubResource("StandardMaterial3D_re7d6")
 use_collision = true
 size = Vector3(5.2, 3.0144653, 0.1)
 
 [node name="collectionSpace1" type="CSGBox3D" parent="." unique_id=103922211]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45181143, 1, 3.270008)
+material_override = SubResource("StandardMaterial3D_li8xj")
 use_collision = true
 size = Vector3(0.8005066, 0.1, 3.2762985)
 
 [node name="collectionSpace2" type="CSGBox3D" parent="." unique_id=1906498206]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.0334766, 1, 4.503721)
+material_override = SubResource("StandardMaterial3D_li8xj")
 use_collision = true
 size = Vector3(0.8005066, 0.1, 4.3625445)
 
 [node name="collectionSpace3" type="CSGBox3D" parent="." unique_id=1819055060]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45181143, 1, -3.4146862)
+material_override = SubResource("StandardMaterial3D_li8xj")
 use_collision = true
 size = Vector3(0.8005066, 0.1, 3.1695776)
 
 [node name="collectionSpace4" type="CSGBox3D" parent="." unique_id=1814311060]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.033, 1, -4.599)
+material_override = SubResource("StandardMaterial3D_li8xj")
 use_collision = true
 size = Vector3(0.8005066, 0.1, 4.3625445)
 
 [node name="collectionSpace5" type="CSGBox3D" parent="." unique_id=1021618894]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8151274, 1, -0.04766369)
+material_override = SubResource("StandardMaterial3D_li8xj")
 use_collision = true
 size = Vector3(0.8005066, 0.1, 8.303639)
 
 [node name="Crowbar" parent="." unique_id=769933709 instance=ExtResource("1_sa6oq")]
 transform = Transform3D(0.3563629, 0, -0.9343476, 0, 1, 0, 0.9343476, 0, 0.3563629, -0.48834753, 1.109099, -2.5909872)
+
+[node name="Door" type="CSGBox3D" parent="." unique_id=1658417178]
+transform = Transform3D(0.42261824, 0, -0.9063078, 0, 1, 0, 0.9063078, 0, 0.42261824, 0.6707423, 1.25, 0.39937565)
+material_override = SubResource("StandardMaterial3D_v6qg4")
+size = Vector3(0.1, 2.5, 1.541)

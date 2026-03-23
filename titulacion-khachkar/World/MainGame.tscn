@@ -34,4 +34,4 @@ transform = Transform3D(-0.6953986, 0, 0.7186242, 0, 1, 0, -0.7186242, 0, -0.695
 sprint_speed = 5.6
 
 [node name="OutsideWorld" parent="." unique_id=1986257652 instance=ExtResource("3_rlvo1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0455875, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7907693, 0)

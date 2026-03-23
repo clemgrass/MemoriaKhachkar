@@ -1,19 +1,72 @@
 [gd_scene format=3 uid="uid://qrdi8mvcket"]
 
+[ext_resource type="Texture2D" uid="uid://clu33jykr5i40" path="res://Museum/Room_5/Marble012_4K-JPG_Color.jpg" id="1_sfs07"]
 [ext_resource type="PackedScene" uid="uid://cpdd2nd82lq4l" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb" id="2_ewkbf"]
+[ext_resource type="Texture2D" uid="uid://cf54e4hvuhegi" path="res://Museum/Room_5/Marble012_4K-JPG_Displacement.jpg" id="2_i3le6"]
 [ext_resource type="PackedScene" uid="uid://ccg5kbdyir1ef" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar1.glb" id="2_smiyn"]
+[ext_resource type="Texture2D" uid="uid://diy8c5ruqlq4f" path="res://Museum/Room_5/Marble012_4K-JPG_NormalGL.jpg" id="3_mvpba"]
 [ext_resource type="PackedScene" uid="uid://c4niqt1qil88u" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar3.glb" id="3_smiyn"]
+[ext_resource type="Texture2D" uid="uid://d1b1oglltknd3" path="res://Museum/Room_5/Marble012_4K-JPG_Roughness.jpg" id="4_bon7a"]
 [ext_resource type="PackedScene" uid="uid://2fi6ish7yvri" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb" id="4_yutx4"]
+[ext_resource type="Material" uid="uid://ds8g4drlj1ly4" path="res://Museum/Room_5/Marble012_4K-JPG.tres" id="5_d50lt"]
 [ext_resource type="PackedScene" uid="uid://b3q7ckmb77pja" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb" id="5_ebdpw"]
 [ext_resource type="PackedScene" uid="uid://byjwqn76w4uhv" path="res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb" id="6_sfs07"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5rc1"]
+albedo_texture = ExtResource("1_sfs07")
+roughness_texture = ExtResource("4_bon7a")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_mvpba")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_i3le6")
+uv1_scale = Vector3(2.09, 0.165, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2i8m2"]
+albedo_texture = ExtResource("1_sfs07")
+roughness_texture = ExtResource("4_bon7a")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_mvpba")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_i3le6")
+uv1_scale = Vector3(2.09, 0.165, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6unu5"]
+albedo_texture = ExtResource("1_sfs07")
+roughness_texture = ExtResource("4_bon7a")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_mvpba")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_i3le6")
+uv1_scale = Vector3(2.09, 0.165, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5umqg"]
+albedo_texture = ExtResource("1_sfs07")
+roughness_texture = ExtResource("4_bon7a")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_mvpba")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_i3le6")
+uv1_scale = Vector3(2.09, 0.165, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nttmd"]
+albedo_color = Color(0, 0, 0, 1)
 
 [node name="KhachkarRoom" type="Node3D" unique_id=2080924142]
 
 [node name="outerWall" type="CSGCylinder3D" parent="." unique_id=1415458490]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5289428, 0)
+material_override = SubResource("StandardMaterial3D_a5rc1")
 use_collision = true
 radius = 7.5
-height = 5.1
+height = 5.1578856
 sides = 64
 
 [node name="dInner" type="CSGCylinder3D" parent="outerWall" unique_id=2130463356]
@@ -24,10 +77,10 @@ height = 5.0446777
 sides = 64
 
 [node name="sEntrance" type="CSGCylinder3D" parent="outerWall" unique_id=1190723856]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.28, -1.325, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.28, -1.4182618, 0)
 operation = 2
 radius = 1.0
-height = 2.5
+height = 2.6865234
 
 [node name="dNorth" type="CSGBox3D" parent="outerWall" unique_id=284315714]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0075684, 0, 0)
@@ -35,10 +88,11 @@ operation = 2
 size = Vector3(8.015137, 6.650635, 17.170898)
 
 [node name="outerWall2" type="CSGCylinder3D" parent="." unique_id=1652206997]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2.5282228, 0)
+material_override = SubResource("StandardMaterial3D_2i8m2")
 use_collision = true
 radius = 7.5
-height = 5.1
+height = 5.1564455
 sides = 64
 
 [node name="dInner" type="CSGCylinder3D" parent="outerWall2" unique_id=2083623292]
@@ -49,10 +103,10 @@ height = 5.0446777
 sides = 64
 
 [node name="nEntrance" type="CSGCylinder3D" parent="outerWall2" unique_id=1931236557]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.280494, -1.324994, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2804947, -1.4341248, 0)
 operation = 2
 radius = 1.0
-height = 2.5
+height = 2.7182617
 
 [node name="dSouth" type="CSGBox3D" parent="outerWall2" unique_id=1239529459]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
@@ -60,16 +114,18 @@ operation = 2
 size = Vector3(10, 6.650635, 17.170898)
 
 [node name="outerWall3" type="CSGBox3D" parent="." unique_id=639238560]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 0)
-size = Vector3(10, 5.1, 15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5289552, 0)
+material_override = ExtResource("5_d50lt")
+size = Vector3(10, 5.1579103, 15)
 
 [node name="dWall" type="CSGBox3D" parent="outerWall3" unique_id=216302878]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11337876, -0.006286621)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.48271465, -0.006286621)
 operation = 2
-size = Vector3(10, 4.8732424, 14.378052)
+size = Vector3(10, 5.611914, 14.378052)
 
 [node name="innerWall" type="CSGCylinder3D" parent="." unique_id=1575733786]
 transform = Transform3D(0.56568545, 0, 0.56568545, 0, 1, 0, -0.56568545, 0, 0.56568545, 0, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_6unu5")
 use_collision = true
 radius = 7.5
 height = 5.1
@@ -101,6 +157,7 @@ size = Vector3(15.655884, 7.908203, 8.712524)
 
 [node name="innerWall2" type="CSGCylinder3D" parent="." unique_id=1713628605]
 transform = Transform3D(0.56568545, 0, 0.56568545, 0, 1, 0, -0.56568545, 0, 0.56568545, 10, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_5umqg")
 use_collision = true
 radius = 7.5
 height = 5.1
@@ -119,20 +176,8 @@ operation = 2
 radius = 1.0
 height = 2.5
 
-[node name="sEntrance" type="CSGCylinder3D" parent="innerWall2" unique_id=1450243337]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.28, -1.325, 0)
-operation = 2
-radius = 1.0
-height = 2.5
-
 [node name="wEntrance" type="CSGCylinder3D" parent="innerWall2" unique_id=1556978280]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.325, 7.276478)
-operation = 2
-radius = 1.0
-height = 2.5
-
-[node name="eEntrance" type="CSGCylinder3D" parent="innerWall2" unique_id=1650176875]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.325, -7.276)
 operation = 2
 radius = 1.0
 height = 2.5
@@ -144,6 +189,7 @@ size = Vector3(15.655884, 7.908203, 8.712524)
 
 [node name="innerWall3" type="CSGBox3D" parent="." unique_id=628166156]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 0)
+material_override = ExtResource("5_d50lt")
 size = Vector3(10, 5.1, 11.999023)
 
 [node name="dWall" type="CSGBox3D" parent="innerWall3" unique_id=1825146272]
@@ -151,95 +197,85 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2611451, -0.006286621)
 operation = 2
 size = Vector3(10, 5.62229, 11.54126)
 
-[node name="khachkar1" parent="." unique_id=497236083 instance=ExtResource("2_smiyn")]
-transform = Transform3D(-0.0012741089, 0, 0.99999917, 0, 1, 0, -0.99999917, 0, -0.0012741089, 2.101512, 0, 4.5889554)
-
-[node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("2_ewkbf")]
-transform = Transform3D(0.0008203089, 0, -0.99999964, 0, 1, 0, 0.99999964, 0, 0.0008203089, 1.8082379, 0, -4.824079)
-
-[node name="Khachkar3" parent="." unique_id=960770345 instance=ExtResource("3_smiyn")]
-transform = Transform3D(-0.00038400292, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -0.00038400292, 5.910207, 0, 4.773118)
-
-[node name="Khachkar4" parent="." unique_id=1903476150 instance=ExtResource("4_yutx4")]
-transform = Transform3D(0.999997, 0, 0.0024434626, 0, 1, 0, -0.0024434626, 0, 0.999997, 5.530097, 0, -3.682302)
-
-[node name="Khachkar5" parent="." unique_id=1741839314 instance=ExtResource("5_ebdpw")]
-transform = Transform3D(0.0007678196, 0, 0.9999997, 0, 1, 0, -0.9999997, 0, 0.0007678196, 9.730123, 0, 4.6749372)
-
-[node name="Kachkar6" parent="." unique_id=2029568894 instance=ExtResource("6_sfs07")]
-transform = Transform3D(0.0017107166, 0, -1.9999993, 0, 2, 0, 1.9999993, 0, 0.0017107166, 4.288189, 0.34876776, -4.9300046)
-
-[node name="lightK4" type="SpotLight3D" parent="." unique_id=140907907]
-transform = Transform3D(0.6149428, 0.7885294, -0.008174494, -0.6928398, 0.5452107, 0.4719305, 0.37658784, -0.2845466, 0.88159794, 5.5615025, 2.617868, -2.2691422)
-light_indirect_energy = 0.0
-shadow_enabled = true
-spot_angle = 24.675339
-
 [node name="lightK1" type="SpotLight3D" parent="." unique_id=1916639401]
-transform = Transform3D(-0.6247889, -0.78064257, -0.015365511, -0.6925785, 0.5450054, 0.47255078, -0.36051893, 0.3058863, -0.88116956, 1.8835924, 2.617868, 2.1797824)
+transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 1.9420576, 2.617868, 1.4694642)
+light_energy = 3.0
 light_indirect_energy = 0.0
 shadow_enabled = true
-spot_angle = 24.675339
+spot_range = 5.717404
+spot_angle = 32.705063
 
-[node name="lightK2" type="SpotLight3D" parent="." unique_id=805467525]
-transform = Transform3D(0.52284306, 0.8522003, 0.019743547, -0.7401494, 0.44236404, 0.5064514, 0.4228643, -0.2794078, 0.8620424, 1.9426172, 2.617868, -2.5346913)
+[node name="khachkar1" parent="lightK1" unique_id=497236083 instance=ExtResource("2_smiyn")]
+transform = Transform3D(0.2909655, -1.5345414, -1.249208, -0.26819852, 1.2204044, -1.5616276, 1.9604608, 0.39470774, -0.028233146, 1.8843141, -1.7920623, -3.9832883)
+
+[node name="lightK2" type="SpotLight3D" parent="." unique_id=1160923728]
+transform = Transform3D(0.62251467, 0.78260815, 0, -0.7671682, 0.6102332, 0.19765735, 0.15468824, -0.12304459, 0.9802712, 1.9420576, 2.617868, -0.99886763)
+light_energy = 3.0
 light_indirect_energy = 0.0
 shadow_enabled = true
-spot_angle = 24.675339
+spot_range = 5.717404
+spot_angle = 32.705063
 
-[node name="lightK6" type="SpotLight3D" parent="." unique_id=729583014]
-transform = Transform3D(0.6061854, 0.7953232, 0.0006149709, -0.73676, 0.56125784, 0.37706038, 0.2995397, -0.22902155, 0.92618865, 9.020922, 3.455391, -0.7111304)
+[node name="Khachkar2" parent="lightK2" unique_id=61044468 instance=ExtResource("2_ewkbf")]
+transform = Transform3D(0.31039768, -1.5343362, -1.2447749, -0.24480504, 1.2204663, -1.5654174, 1.9605415, 0.3953146, 0.0016083396, 1.6576269, -1.4895281, -4.3507395)
+
+[node name="lightK3" type="SpotLight3D" parent="." unique_id=1386856131]
+transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 5.741802, 2.617868, 1.1899415)
+light_energy = 3.0
 light_indirect_energy = 0.0
 shadow_enabled = true
-spot_range = 6.79169
-spot_angle = 24.675339
+spot_range = 5.717404
+spot_angle = 32.705063
 
-[node name="lightK3" type="SpotLight3D" parent="." unique_id=1437353111]
-transform = Transform3D(-0.48365897, -0.875234, 0.0062800045, -0.78600866, 0.4374867, 0.4368018, -0.38505122, 0.20632696, -0.8995359, 5.866392, 2.387557, 2.7439895)
+[node name="Khachkar3" parent="lightK3" unique_id=960770345 instance=ExtResource("3_smiyn")]
+transform = Transform3D(0.2898534, -1.5345416, -1.2494664, -0.2695885, 1.2204045, -1.5613885, 1.9604353, 0.3947078, -0.02997821, 1.9324362, -1.6802304, -4.1723256)
+
+[node name="lightK4" type="SpotLight3D" parent="." unique_id=15557646]
+transform = Transform3D(0.6225147, 0.78260815, 1.1698804e-08, -0.7671682, 0.6102332, 0.19765736, 0.15468825, -0.1230446, 0.9802712, 6.2359805, 2.617868, -1.1598448)
+light_energy = 2.0
 light_indirect_energy = 0.0
 shadow_enabled = true
-spot_range = 5.015871
-spot_angle = 21.480513
+spot_range = 5.717404
+spot_angle = 32.705063
 
-[node name="lightK5" type="SpotLight3D" parent="." unique_id=46246365]
-transform = Transform3D(-0.4832102, -0.8656626, -0.13090551, -0.8586614, 0.43939927, 0.263873, -0.17090522, 0.23990965, -0.95563316, 9.40258, 1.8508298, 2.1910813)
+[node name="Khachkar4" parent="lightK4" unique_id=1903476150 instance=ExtResource("4_yutx4")]
+transform = Transform3D(1.2442696, -1.5343362, 0.31241772, 1.5658128, 1.2204664, -0.24226394, -0.0047904965, 0.3953147, 1.9605364, 2.1100266, -1.6122103, -1.833961)
+
+[node name="lightK5" type="SpotLight3D" parent="." unique_id=1247751707]
+transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 9.3561535, 2.617868, 1.2540892)
+light_energy = 3.0
 light_indirect_energy = 0.0
 shadow_enabled = true
-spot_range = 5.026371
-spot_angle = 21.480513
+spot_range = 5.717404
+spot_angle = 32.705063
 
-[node name="protectionWindow1" type="CSGBox3D" parent="." unique_id=132046370]
-transform = Transform3D(0.01186794, 0, 0.99992967, 0, 1, 0, -0.99992967, 0, 0.01186794, 2.0057745, 0.9888655, 4.572489)
-visible = false
-use_collision = true
-size = Vector3(1, 2.3214111, 1.3969116)
+[node name="Khachkar5" parent="lightK5" unique_id=1741839314 instance=ExtResource("5_ebdpw")]
+transform = Transform3D(0.2884141, -1.5345416, -1.2497995, -0.27138674, 1.2204045, -1.561077, 1.9603994, 0.3947078, -0.03223622, 1.7494502, -1.800569, -3.9962952)
 
-[node name="protectionWindow2" type="CSGBox3D" parent="." unique_id=1980076310]
-transform = Transform3D(0.032998264, 0, -0.9994556, 0, 1, 0, 0.9994556, 0, 0.032998264, 1.8697056, 1.0303236, -4.8450236)
-visible = false
-use_collision = true
-size = Vector3(1.0922852, 2.763031, 1.490448)
+[node name="lightK6" type="SpotLight3D" parent="." unique_id=1678764267]
+transform = Transform3D(0.62251467, 0.78260815, 9.276191e-09, -0.7671682, 0.6102332, 0.19765733, 0.15468824, -0.12304459, 0.9802712, 9.174454, 2.617868, -1.1598448)
+light_energy = 2.0
+light_indirect_energy = 0.0
+shadow_enabled = true
+spot_range = 5.717404
+spot_angle = 41.025345
 
-[node name="protectionWindow3" type="CSGBox3D" parent="." unique_id=1025943490]
-transform = Transform3D(-0.0042584836, 0, 0.9999908, 0, 1, 0, -0.9999908, 0, -0.0042584836, 5.8299847, 1.0625656, 4.6866393)
-visible = false
-use_collision = true
-size = Vector3(1, 2.468811, 1.3969116)
+[node name="Kachkar6" parent="lightK6" unique_id=2029568894 instance=ExtResource("6_sfs07")]
+transform = Transform3D(0.46566203, -2.3015044, -1.8671463, -0.3671253, 1.8306994, -2.3481393, 2.9408123, 0.5929719, 0.0025155777, -3.1805525, -6.7676888, -4.062951)
 
-[node name="protectionWindow4" type="CSGBox3D" parent="." unique_id=941857953]
-transform = Transform3D(0.0020245314, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.0020245314, 5.539111, 1.0697066, -4.9122605)
-visible = false
-use_collision = true
-size = Vector3(0.8656616, 2.4830933, 1.3969116)
+[node name="blackRoof" type="CSGBox3D" parent="." unique_id=903293028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9949493, 4.903414, 0)
+material_override = SubResource("StandardMaterial3D_nttmd")
+size = Vector3(11, 0.6499268, 15.000244)
 
-[node name="protectionWindow5" type="CSGBox3D" parent="." unique_id=1846456214]
-transform = Transform3D(-0.034254096, 0, 0.99941313, 0, 1, 0, -0.99941313, 0, -0.034254096, 9.614258, 0.964604, 4.5477114)
-visible = false
-use_collision = true
-size = Vector3(1, 2.2728882, 1.3828659)
+[node name="south" type="CSGCylinder3D" parent="blackRoof" unique_id=984894411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.0023126602, 0)
+radius = 7.538574
+height = 0.64195555
+sides = 36
 
-[node name="protectionWindow6" type="CSGBox3D" parent="." unique_id=1873406907]
-transform = Transform3D(0.0032813037, 0, -0.9999946, 0, 1, 0, 0.9999946, 0, 0.0032813037, 9.2590275, 1.6736494, -4.797861)
-visible = false
-use_collision = true
-size = Vector3(0.6973877, 3.690979, 1.3969116)
+[node name="north" type="CSGCylinder3D" parent="blackRoof" unique_id=1626307626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9972744, 0.00014638901, 0)
+radius = 7.539
+height = 0.6461914
+sides = 36

@@ -1,8 +1,15 @@
 [gd_scene format=3 uid="uid://cxf1diuhvtr1y"]
 
+[ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="1_bjw3p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bjw3p"]
+albedo_texture = ExtResource("1_bjw3p")
+uv1_scale = Vector3(15, 1, 1)
+
 [node name="WestWall" type="Node3D" unique_id=237330063]
 
 [node name="wall" type="CSGBox3D" parent="." unique_id=1050235058]
+material_override = SubResource("StandardMaterial3D_bjw3p")
 use_collision = true
 size = Vector3(75.8, 11, 0.4)
 

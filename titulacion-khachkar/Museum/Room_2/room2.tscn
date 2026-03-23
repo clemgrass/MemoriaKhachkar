@@ -1,24 +1,63 @@
 [gd_scene format=3 uid="uid://bwmd81jay1cl7"]
 
+[ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="1_77c2k"]
+[ext_resource type="Texture2D" uid="uid://xoa4c2pmmxwb" path="res://Museum/Room_0/textures/floor_tiles_02_diff_4k.jpg" id="1_p5acx"]
+[ext_resource type="Texture2D" uid="uid://blyiuxxdlh28q" path="res://Museum/Room_2/Metal048A_4K-JPG_Color.jpg" id="1_ykgkh"]
+[ext_resource type="Texture2D" uid="uid://dhlhcvesr88aw" path="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg" id="2_77c2k"]
+[ext_resource type="Texture2D" uid="uid://cmn0j3mja2yut" path="res://Museum/Room_2/Metal048A_4K-JPG_Metalness.jpg" id="2_fu4yr"]
+[ext_resource type="Texture2D" uid="uid://bug5axg4a4hok" path="res://Museum/Room_2/Metal048A_4K-JPG_Roughness.jpg" id="3_g0o56"]
+[ext_resource type="Texture2D" uid="uid://d21amkealwwoe" path="res://Museum/Room_0/textures/floor_tiles_02_rough_4k.jpg" id="3_gnjai"]
+[ext_resource type="PackedScene" uid="uid://cpdd2nd82lq4l" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb" id="8_fu4yr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_detsc"]
+albedo_texture = ExtResource("1_ykgkh")
+metallic = 1.0
+metallic_texture = ExtResource("2_fu4yr")
+roughness_texture = ExtResource("3_g0o56")
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_by3m2"]
-radius = 15.0
+radius = 14.8
 height = 40.0
 radial_segments = 9
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_7p2nh"]
-radius = 14.0
+radius = 13.8
 height = 40.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnjai"]
+albedo_texture = ExtResource("1_77c2k")
+uv1_scale = Vector3(1.11, 0.355, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uf2u5"]
+albedo_texture = ExtResource("1_p5acx")
+metallic = 1.0
+metallic_texture = ExtResource("2_77c2k")
+roughness_texture = ExtResource("3_gnjai")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykgkh"]
+albedo_texture = ExtResource("1_77c2k")
+uv1_scale = Vector3(15, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fu4yr"]
+transparency = 1
+albedo_color = Color(1, 1, 0, 0.03529412)
+metallic = 0.1
+roughness = 0.1
+refraction_enabled = true
+refraction_scale = 0.01
 
 [node name="Room2" type="Node3D" unique_id=897654918]
 
 [node name="walls" type="CSGMesh3D" parent="." unique_id=342677882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.34865665)
+material_override = SubResource("StandardMaterial3D_detsc")
 use_collision = true
 mesh = SubResource("CapsuleMesh_by3m2")
 
 [node name="dbot" type="CSGBox3D" parent="walls" unique_id=500679820]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.371094, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.6980286, 0)
 operation = 2
-size = Vector3(40.1416, 20.742188, 32.083984)
+size = Vector3(40.1416, 28.088318, 32.083984)
 
 [node name="dtop" type="CSGMesh3D" parent="walls" unique_id=966377472]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0024790764, 0, 0.0024795532)
@@ -32,6 +71,7 @@ size = Vector3(1.6234741, 5.19458, 4.086426)
 
 [node name="connect" type="CSGBox3D" parent="." unique_id=314439774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 2.72052, 15.631669)
+material_override = SubResource("StandardMaterial3D_gnjai")
 operation = 2
 use_collision = true
 size = Vector3(4.6228027, 9.44104, 3.3186035)
@@ -43,18 +83,21 @@ size = Vector3(1.6234741, 2.9886932, 4.086426)
 
 [node name="floor" type="CSGCylinder3D" parent="." unique_id=2017231352]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+material_override = SubResource("StandardMaterial3D_uf2u5")
 use_collision = true
-radius = 15.0
+radius = 14.942383
 sides = 64
 
 [node name="Ramp" type="CSGCylinder3D" parent="." unique_id=323851568]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1987305, 0)
+material_override = SubResource("StandardMaterial3D_ykgkh")
 use_collision = true
 radius = 15.0
 height = 8.397461
 sides = 64
 
 [node name="dRamp" type="CSGCylinder3D" parent="Ramp" unique_id=926251945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009961963, -0.009165287, 0.0018582344)
 operation = 2
 use_collision = true
 radius = 10.0
@@ -67,9 +110,33 @@ operation = 2
 size = Vector3(4.6484375, 9.381195, 6.7783203)
 
 [node name="rampCarving" type="CSGCylinder3D" parent="Ramp" unique_id=2007215321]
-transform = Transform3D(1, 0, 0, 0, 0.97437006, -0.22495104, 0, 0.22495104, 0.97437006, 0, 2.6824942, 0.30563152)
+transform = Transform3D(1, 0, 0, 0, 0.97437006, -0.22495104, 0, 0.22495104, 0.97437006, 0, 3.537189, 0.5029534)
 operation = 2
 use_collision = true
 radius = 13.5
-height = 6.8643384
+height = 8.618692
 sides = 64
+
+[node name="windows" type="CSGMesh3D" parent="." unique_id=196532816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.34865665)
+material_override = SubResource("StandardMaterial3D_fu4yr")
+mesh = SubResource("CapsuleMesh_7p2nh")
+
+[node name="door" type="CSGBox3D" parent="windows" unique_id=116058674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.062385082, 0.59729004, 15.245278)
+operation = 2
+size = Vector3(1.6234741, 5.19458, 4.086426)
+
+[node name="dbot" type="CSGBox3D" parent="windows" unique_id=939850168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024790764, -6.6980286, -0.0024795532)
+operation = 2
+size = Vector3(40.1416, 28.088318, 32.083984)
+
+[node name="dwin" type="CSGMesh3D" parent="windows" unique_id=1058585135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024790764, 0, -0.0024795532)
+operation = 2
+use_collision = true
+mesh = SubResource("CapsuleMesh_by3m2")
+
+[node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("8_fu4yr")]
+transform = Transform3D(-2.3765352, -1.2918389, -1.2973945, -1.104881, 2.7070677, -0.67158186, 1.4599034, -0.054190412, -2.620257, 0, 7.340502, 0.63051844)

@@ -2,14 +2,64 @@
 
 [ext_resource type="Texture2D" uid="uid://c6capd78klpum" path="res://Museum/Entrance/Textures/textures/wood_table_diff_4k.jpg" id="1_pgnou"]
 [ext_resource type="PackedScene" uid="uid://dp24x38eog6ja" path="res://Museum/Entrance/stool.tscn" id="1_rsyme"]
+[ext_resource type="Texture2D" uid="uid://bd0n6qf5pam7v" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_Color.jpg" id="1_slddd"]
+[ext_resource type="Texture2D" uid="uid://c3bljggc76c46" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_Displacement.jpg" id="2_wcxr0"]
+[ext_resource type="Texture2D" uid="uid://cooayj7hq2y0p" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_NormalGL.jpg" id="3_liuco"]
+[ext_resource type="Texture2D" uid="uid://bpv1coat4vq6s" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_Roughness.jpg" id="4_xrdb0"]
+[ext_resource type="Material" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="5_b01th"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdy8m"]
+albedo_texture = ExtResource("1_slddd")
+roughness_texture = ExtResource("4_xrdb0")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_liuco")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_wcxr0")
+uv1_scale = Vector3(1, 1.605, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pgnou"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(0.105, 0.29, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ocgx"]
 albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(0.105, 0.29, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1of7"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(0.105, 0.29, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b8b0"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(0.01, 0.19, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgtb2"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(0.01, 0.19, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slddd"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(0.01, 0.19, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wcxr0"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(4.835, 0.26, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_liuco"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(1.095, 0.155, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xrdb0"]
+albedo_texture = ExtResource("1_pgnou")
+uv1_scale = Vector3(1.095, 0.155, 1)
 
 [node name="Reception" type="Node3D" unique_id=1530775575]
 
 [node name="southWall" type="CSGBox3D" parent="." unique_id=1717813146]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+material_override = SubResource("StandardMaterial3D_sdy8m")
 use_collision = true
 size = Vector3(0.2, 7, 30)
 
@@ -25,57 +75,21 @@ size = Vector3(1.5, 4.5914307, 2.9785156)
 
 [node name="eastWall" type="CSGBox3D" parent="." unique_id=841951231]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.0973334, 3.5, 11.929414)
+material_override = ExtResource("5_b01th")
 use_collision = true
 size = Vector3(0.2, 7, 12)
 
 [node name="westWall" type="CSGBox3D" parent="." unique_id=429936065]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.097, 3.5, -11.929)
+material_override = ExtResource("5_b01th")
 use_collision = true
 size = Vector3(0.2, 7, 12)
 
 [node name="desk" type="CSGBox3D" parent="." unique_id=1099358735]
-transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 1, 5.084, 1.0213132, 0)
-material_override = SubResource("StandardMaterial3D_0ocgx")
+transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 1, 5.084, 1.0226804, 0)
+material_override = SubResource("StandardMaterial3D_pgnou")
 use_collision = true
-size = Vector3(1, 1.5, 11.280273)
-
-[node name="westSide" type="CSGBox3D" parent="desk" unique_id=486500961]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.1936309, 0, -6.621801)
-size = Vector3(1, 1.5, 3.787)
-
-[node name="d1" type="CSGBox3D" parent="desk/westSide" unique_id=923542190]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.47850657, 0.073287606, 1.2919524)
-operation = 2
-size = Vector3(0.053588867, 1, 0.75)
-
-[node name="d2" type="CSGBox3D" parent="desk/westSide" unique_id=957970185]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.4738984, 0.073287606, 0.29645896)
-operation = 2
-size = Vector3(0.053588867, 1, 0.75)
-
-[node name="d3" type="CSGBox3D" parent="desk/westSide" unique_id=1787689896]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.4746127, 0.073287606, -0.70539594)
-operation = 2
-size = Vector3(0.053588867, 1, 0.75)
-
-[node name="eastSide" type="CSGBox3D" parent="desk" unique_id=590510040]
-transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.1936309, 0, 6.632633)
-size = Vector3(1, 1.5, 3.787)
-
-[node name="d1" type="CSGBox3D" parent="desk/eastSide" unique_id=2088683791]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.4829626, 0.073287606, 0.70473003)
-operation = 2
-size = Vector3(0.053588867, 1, 0.75)
-
-[node name="d2" type="CSGBox3D" parent="desk/eastSide" unique_id=421319390]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.47835445, 0.073287606, -0.2907629)
-operation = 2
-size = Vector3(0.053588867, 1, 0.75)
-
-[node name="d3" type="CSGBox3D" parent="desk/eastSide" unique_id=233830559]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.47906876, 0.073287606, -1.2926183)
-operation = 2
-size = Vector3(0.053588867, 1, 0.75)
+size = Vector3(1, 1.4399414, 11.280273)
 
 [node name="d1" type="CSGBox3D" parent="desk" unique_id=877271219]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47320557, 0.073287606, 0)
@@ -132,54 +146,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47320557, 0.073287606, -5)
 operation = 2
 size = Vector3(0.053588867, 1, 0.75)
 
-[node name="deskDownD" type="CSGBox3D" parent="desk" unique_id=892860659]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0002808571, -0.65, 0)
-size = Vector3(1.13, 0.2, 11.28)
-
-[node name="westSide" type="CSGBox3D" parent="desk/deskDownD" unique_id=1588495645]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.1976736, 0, -6.614113)
-size = Vector3(1.1134107, 0.2, 3.8682182)
-
-[node name="eastSide" type="CSGBox3D" parent="desk/deskDownD" unique_id=2081291762]
-transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.1966412, 0, 6.6230817)
-size = Vector3(1.0956458, 0.2, 3.8774686)
-
-[node name="deskDownD2" type="CSGBox3D" parent="desk" unique_id=1768562817]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0002808571, -0.72449565, 0)
-size = Vector3(1.185791, 0.05, 11.28)
-
-[node name="westSide" type="CSGBox3D" parent="desk/deskDownD2" unique_id=433897826]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.203512, 0, -6.6223683)
-size = Vector3(1.1518555, 0.05, 3.927217)
-
-[node name="eastSide" type="CSGBox3D" parent="desk/deskDownD2" unique_id=23850050]
-transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.2054129, 0, 6.6339245)
-size = Vector3(1.1330566, 0.05, 3.9471493)
-
-[node name="deskupD" type="CSGBox3D" parent="desk" unique_id=364971304]
-transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 0.0002808571, 0.6985916, 0)
-size = Vector3(1.13, 0.1, 11.28)
-
-[node name="westSide" type="CSGBox3D" parent="desk/deskupD" unique_id=1194329243]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.1976736, 0, -6.614113)
-size = Vector3(1.113, 0.1, 3.868)
-
-[node name="eastSide" type="CSGBox3D" parent="desk/deskupD" unique_id=739608901]
-transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.1966412, 0, 6.6230817)
-size = Vector3(1.096, 0.1, 3.877)
-
-[node name="deskUpD" type="CSGBox3D" parent="desk" unique_id=85035149]
-transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 0.0002808571, 0.72335494, 0)
-size = Vector3(1.185791, 0.05, 11.28)
-
-[node name="westSide" type="CSGBox3D" parent="desk/deskUpD" unique_id=1718715647]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.203512, 0, -6.6223683)
-size = Vector3(1.1518555, 0.05, 3.927217)
-
-[node name="eastSide" type="CSGBox3D" parent="desk/deskUpD" unique_id=305301771]
-transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.2054129, 0, 6.6339245)
-size = Vector3(1.1330566, 0.05, 3.9471493)
-
 [node name="stool1" parent="." unique_id=615094907 instance=ExtResource("1_rsyme")]
 transform = Transform3D(1, 0, 0, 0, 0.7, 0, 0, 0, 1, 11.189, 0.97226524, 10.915)
 
@@ -190,3 +156,97 @@ transform = Transform3D(1, 0, 0, 0, 0.7, 0, 0, 0, 1, 11.189, 0.97226524, -10.915
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.260255, -0.039978027, 0)
 visible = false
 size = Vector3(17.4729, 0.92004395, 28.552734)
+
+[node name="westSide" type="CSGBox3D" parent="." unique_id=486500961]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.8, 0, -0.70710677, 0, 0.70710677, 3.8903692, 1.0030026, -6.621801)
+material_override = SubResource("StandardMaterial3D_0ocgx")
+size = Vector3(1, 1.4542236, 3.787)
+
+[node name="d1" type="CSGBox3D" parent="westSide" unique_id=923542190]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.47850657, 0.073287606, 1.2919524)
+operation = 2
+size = Vector3(0.053588867, 1, 0.75)
+
+[node name="d2" type="CSGBox3D" parent="westSide" unique_id=957970185]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.4738984, 0.073287606, 0.29645896)
+operation = 2
+size = Vector3(0.053588867, 1, 0.75)
+
+[node name="d3" type="CSGBox3D" parent="westSide" unique_id=1787689896]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.4746127, 0.073287606, -0.70539594)
+operation = 2
+size = Vector3(0.053588867, 1, 0.75)
+
+[node name="eastSide" type="CSGBox3D" parent="." unique_id=590510040]
+transform = Transform3D(0.7071067, 0, -0.7071067, 0, 0.8, 0, 0.7071067, 0, 0.7071067, 3.8903692, 1.0112058, 6.632633)
+material_override = SubResource("StandardMaterial3D_r1of7")
+size = Vector3(1, 1.4747314, 3.787)
+
+[node name="d1" type="CSGBox3D" parent="eastSide" unique_id=2088683791]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.4829626, 0.073287606, 0.70473003)
+operation = 2
+size = Vector3(0.053588867, 1, 0.75)
+
+[node name="d2" type="CSGBox3D" parent="eastSide" unique_id=421319390]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.47835445, 0.073287606, -0.2907629)
+operation = 2
+size = Vector3(0.053588867, 1, 0.75)
+
+[node name="d3" type="CSGBox3D" parent="eastSide" unique_id=233830559]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.47906876, 0.073287606, -1.2926183)
+operation = 2
+size = Vector3(0.053588867, 1, 0.75)
+
+[node name="deskDownD" type="CSGBox3D" parent="." unique_id=892860659]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 1, 5.084281, 0.5013132, 0)
+material_override = SubResource("StandardMaterial3D_4b8b0")
+size = Vector3(1.13, 0.2, 11.28)
+
+[node name="westSide" type="CSGBox3D" parent="deskDownD" unique_id=1588495645]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.1976736, 0, -6.614113)
+size = Vector3(1.1134107, 0.2, 3.8682182)
+
+[node name="eastSide" type="CSGBox3D" parent="deskDownD" unique_id=2081291762]
+transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.1966412, 0, 6.6230817)
+size = Vector3(1.0956458, 0.2, 3.8774686)
+
+[node name="deskDownD2" type="CSGBox3D" parent="." unique_id=1768562817]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 1, 5.084281, 0.44171667, 0)
+material_override = SubResource("StandardMaterial3D_bgtb2")
+size = Vector3(1.185791, 0.05, 11.28)
+
+[node name="westSide" type="CSGBox3D" parent="deskDownD2" unique_id=433897826]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.203512, 0, -6.6223683)
+size = Vector3(1.1518555, 0.05, 3.927217)
+
+[node name="eastSide" type="CSGBox3D" parent="deskDownD2" unique_id=23850050]
+transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.2054129, 0, 6.6339245)
+size = Vector3(1.1330566, 0.05, 3.9471493)
+
+[node name="deskupD" type="CSGBox3D" parent="." unique_id=364971304]
+transform = Transform3D(1, 0, 0, 0, -0.8, -6.9938224e-08, 0, 8.742278e-08, -1, 5.084281, 1.5785458, 1.7928518e-10)
+material_override = SubResource("StandardMaterial3D_slddd")
+size = Vector3(1.13, 0.095898435, 11.28)
+
+[node name="westSide" type="CSGBox3D" parent="deskupD" unique_id=1194329243]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -1.1976736, 0, -6.614113)
+size = Vector3(1.113, 0.1, 3.868)
+
+[node name="eastSide" type="CSGBox3D" parent="deskupD" unique_id=739608901]
+transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, -1.1966412, 0, 6.6230817)
+size = Vector3(1.096, 0.1, 3.877)
+
+[node name="deskUpD" type="CSGBox3D" parent="." unique_id=85035149]
+transform = Transform3D(1, 0, 0, 0, -0.8, -6.9938224e-08, 0, 8.742278e-08, -1, 5.084281, 1.5999972, 0)
+material_override = SubResource("StandardMaterial3D_wcxr0")
+size = Vector3(1.185791, 0.05, 11.28)
+
+[node name="westSide2" type="CSGBox3D" parent="." unique_id=1718715647]
+transform = Transform3D(0.70710677, 0, 0.70710677, 4.9453792e-08, -0.8, -4.9453792e-08, 0.70710677, 8.742278e-08, -0.70710677, 3.880769, 1.599568, 6.6223683)
+material_override = SubResource("StandardMaterial3D_liuco")
+size = Vector3(1.1518555, 0.04892578, 3.927217)
+
+[node name="eastSide2" type="CSGBox3D" parent="." unique_id=305301771]
+transform = Transform3D(0.7071067, 0, -0.7071067, -4.945379e-08, -0.8, -4.945379e-08, -0.7071067, 8.742278e-08, -0.7071067, 3.878868, 1.5997623, -6.6339245)
+material_override = SubResource("StandardMaterial3D_xrdb0")
+size = Vector3(1.1330566, 0.04941406, 3.9471493)

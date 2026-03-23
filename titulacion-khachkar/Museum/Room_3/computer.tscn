@@ -35,6 +35,7 @@ albedo_color = Color(0.85882354, 0.8117647, 0.65882355, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4asgb"]
 albedo_color = Color(0.29411766, 0.3882353, 0.3372549, 1)
+metallic = 1.0
 
 [node name="Computer" type="Node3D" unique_id=1572788278]
 

@@ -1,7 +1,52 @@
 [gd_scene format=3 uid="uid://bg8twqns67ucr"]
 
+[ext_resource type="Texture2D" uid="uid://d2qguh0xixbi5" path="res://Museum/Room_1/textures/textures/concrete_tile_facade_diff_4k.jpg" id="1_qifov"]
+[ext_resource type="Texture2D" uid="uid://o3g2yhrr2l4a" path="res://Museum/Room_1/textures/textures/concrete_tile_facade_arm_4k.jpg" id="2_ekl28"]
+[ext_resource type="Texture2D" uid="uid://8lhbyslg6nts" path="res://Museum/Room_1/textures/textures/concrete_tile_facade_nor_gl_4k.jpg" id="3_7e8y0"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lfic"]
-albedo_color = Color(0.49411765, 0.45882353, 0.4117647, 1)
+albedo_texture = ExtResource("1_qifov")
+metallic = 1.0
+metallic_texture = ExtResource("2_ekl28")
+roughness_texture = ExtResource("3_7e8y0")
+uv1_scale = Vector3(-0.32, 0.155, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huo1m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bafur"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7hkkw"]
+albedo_texture = ExtResource("1_qifov")
+metallic = 1.0
+metallic_texture = ExtResource("2_ekl28")
+roughness_texture = ExtResource("3_7e8y0")
+uv1_scale = Vector3(-0.32, 0.155, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7my1"]
+albedo_texture = ExtResource("1_qifov")
+metallic = 1.0
+metallic_texture = ExtResource("2_ekl28")
+roughness_texture = ExtResource("3_7e8y0")
+uv1_scale = Vector3(-0.32, 0.155, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ga8kd"]
+albedo_color = Color(0.47843137, 0.44313726, 0.37254903, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xcdc3"]
+albedo_color = Color(0.48235294, 0.4509804, 0.38431373, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvmqg"]
+albedo_color = Color(0.4745098, 0.4392157, 0.36862746, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1v4wv"]
+albedo_color = Color(0.019607844, 0.019607844, 0.011764706, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kk21m"]
+albedo_color = Color(0.02745098, 0.02745098, 0.019607844, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kvtes"]
+albedo_color = Color(0.015686275, 0.015686275, 0.007843138, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_coxdq"]
 albedo_color = Color(0.48235294, 0.4392157, 0.36862746, 1)
@@ -27,11 +72,6 @@ albedo_color = Color(0.16470589, 0.15294118, 0.1254902, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mrotl"]
 albedo_color = Color(0.7058824, 0.64705884, 0.53333336, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huo1m"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bafur"]
-albedo_color = Color(0, 0, 0, 1)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5tkey"]
 albedo_color = Color(0.09803922, 0.09411765, 0.07450981, 1)
 
@@ -45,9 +85,6 @@ albedo_color = Color(0.09803922, 0.09411765, 0.07450981, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_12uye"]
 albedo_color = Color(0.03137255, 0.03137255, 0.023529412, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1v4wv"]
-albedo_color = Color(0.019607844, 0.019607844, 0.011764706, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bodss"]
 albedo_color = Color(0.19215687, 0.15686275, 0.12156863, 1)
@@ -73,27 +110,12 @@ albedo_color = Color(0.15294118, 0.13333334, 0.10980392, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_67lfv"]
 albedo_color = Color(0.27450982, 0.25882354, 0.24313726, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kvtes"]
-albedo_color = Color(0.015686275, 0.015686275, 0.007843138, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ga8kd"]
-albedo_color = Color(0.47843137, 0.44313726, 0.37254903, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xcdc3"]
-albedo_color = Color(0.48235294, 0.4509804, 0.38431373, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fvmqg"]
-albedo_color = Color(0.4745098, 0.4392157, 0.36862746, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kk21m"]
-albedo_color = Color(0.02745098, 0.02745098, 0.019607844, 1)
-
 [node name="bigComputer" type="Node3D" unique_id=2004590989]
 
 [node name="mainframe1" type="CSGBox3D" parent="." unique_id=536520049]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00043678284, 0.9499512, 0)
+material_override = SubResource("StandardMaterial3D_1lfic")
 size = Vector3(0.50087357, 1.8999023, 2)
-material = SubResource("StandardMaterial3D_1lfic")
 
 [node name="d1" type="CSGBox3D" parent="mainframe1" unique_id=1904359025]
 transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.28857946, -0.6293448, 0)
@@ -114,273 +136,6 @@ size = Vector3(0.16397509, 0.63, 2)
 transform = Transform3D(0.99026805, 0.1391731, 0, -0.1391731, 0.99026805, 0, 0, 0, 1, -0.098241635, 0.644889, 0.36161345)
 operation = 2
 size = Vector3(1.0418701, 0.45977783, 0.734108)
-
-[node name="Tellies" type="Node3D" parent="mainframe1" unique_id=668658938]
-
-[node name="telly1" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=339664673]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14658356, 0, 0)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly1" unique_id=1442098530]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly1" unique_id=2139114075]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly1" unique_id=1912496112]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly1" unique_id=547111705]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly1" unique_id=340286828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
-
-[node name="telly2" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=475571975]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14658356, 0, 0.6579786)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly2" unique_id=120005186]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly2" unique_id=337841626]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly2" unique_id=1051833231]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly2" unique_id=1926891045]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly2" unique_id=1074019902]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
-
-[node name="telly3" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=1072201354]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.147, 0, -0.658)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly3" unique_id=2050921366]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly3" unique_id=249372801]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly3" unique_id=694068202]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly3" unique_id=1765709223]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly3" unique_id=561541548]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
-
-[node name="screen1" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=228738589]
-transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.11806145, -0.58822614, 0)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_ekl28")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/screen1" unique_id=508066154]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -2.9802322e-08, 0.07812545, 0)
-operation = 2
-size = Vector3(0.20906067, 0.28710938, 0.35351563)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/screen1" unique_id=828281972]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.009784758, 0.07812551, 0)
-size = Vector3(0.18949127, 0.28710938, 0.35351563)
-material = SubResource("StandardMaterial3D_7e8y0")
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/screen1" unique_id=1299400176]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.007841155, 0.07812551, 0)
-size = Vector3(0.19337845, 0.24975586, 0.30444336)
-material = SubResource("StandardMaterial3D_hxvv2")
-
-[node name="screen2" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=1206482118]
-transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.11806145, -0.58822614, -0.65797853)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_ekl28")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/screen2" unique_id=1283328726]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -2.9802322e-08, 0.07812545, 0)
-operation = 2
-size = Vector3(0.20906067, 0.28710938, 0.35351563)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/screen2" unique_id=1533168376]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.007841155, 0.07812551, 0)
-size = Vector3(0.19337845, 0.25878906, 0.33398438)
-material = SubResource("StandardMaterial3D_hxvv2")
-
-[node name="screen3" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=2100611715]
-transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.118, -0.588, 0.658)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_ekl28")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/screen3" unique_id=1756693425]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -2.9802322e-08, 0.07812545, 0)
-operation = 2
-size = Vector3(0.20906067, 0.28710938, 0.35351563)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/screen3" unique_id=1387994240]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.009784758, 0.07812551, 0)
-size = Vector3(0.18949127, 0.28710938, 0.35351563)
-material = SubResource("StandardMaterial3D_mrotl")
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/screen3" unique_id=1777485867]
-transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.007841155, 0.07812551, 0)
-size = Vector3(0.19337845, 0.24975586, 0.30444336)
-material = SubResource("StandardMaterial3D_hxvv2")
-
-[node name="telly4" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=2061937001]
-transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.19318315, 0.6057106, 0.18798417)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly4" unique_id=1999003559]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly4" unique_id=1561283576]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly4" unique_id=1066398360]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly4" unique_id=507516229]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly4" unique_id=58028061]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
-
-[node name="telly5" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=1876842881]
-transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.19318315, 0.6057106, 0.540072)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly5" unique_id=48737577]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly5" unique_id=1093480950]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly5" unique_id=1192361256]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly5" unique_id=48816759]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly5" unique_id=1719873363]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
-
-[node name="telly6" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=1669747337]
-transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.13872752, 0.6039299, -0.58096766)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly6" unique_id=32775530]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly6" unique_id=672319571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly6" unique_id=1376397397]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly6" unique_id=490516895]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly6" unique_id=1245975108]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
-
-[node name="telly7" type="CSGBox3D" parent="mainframe1/Tellies" unique_id=1243942686]
-transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.13872752, 0.6039299, -0.22887982)
-size = Vector3(0.20906067, 0.5, 0.6)
-material = SubResource("StandardMaterial3D_coxdq")
-
-[node name="d1" type="CSGBox3D" parent="mainframe1/Tellies/telly7" unique_id=1415978906]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
-operation = 2
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-
-[node name="d2" type="CSGBox3D" parent="mainframe1/Tellies/telly7" unique_id=368899642]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
-operation = 2
-size = Vector3(0.030548096, 0.083496094, 0.638916)
-
-[node name="d3" type="CSGBox3D" parent="mainframe1/Tellies/telly7" unique_id=627668208]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
-size = Vector3(0.046447754, 0.3671875, 0.5185547)
-material = SubResource("StandardMaterial3D_sseuo")
-
-[node name="d4" type="CSGBox3D" parent="mainframe1/Tellies/telly7" unique_id=1140995717]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
-size = Vector3(0.017227173, 0.037719727, 0.31866455)
-material = SubResource("StandardMaterial3D_5bcy7")
-
-[node name="d5" type="CSGBox3D" parent="mainframe1/Tellies/telly7" unique_id=1476351097]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
-size = Vector3(0.0025787354, 0.07348633, 0.59854126)
-material = SubResource("StandardMaterial3D_qifov")
 
 [node name="d5" type="CSGBox3D" parent="mainframe1" unique_id=428035405]
 transform = Transform3D(0.99026805, 0.1391731, 0, -0.1391731, 0.99026805, 0, 0, 0, 1, -0.098241635, 0.644889, -0.3874966)
@@ -410,8 +165,8 @@ material = SubResource("StandardMaterial3D_bafur")
 
 [node name="mainframe2" type="CSGBox3D" parent="." unique_id=76021831]
 transform = Transform3D(0.6427876, 0, 0.7660443, 0, 1, 0, -0.7660443, 0, 0.6427876, 0.17804706, 0.9499512, 1.2591484)
+material_override = SubResource("StandardMaterial3D_7hkkw")
 size = Vector3(0.50087357, 1.8999023, 1)
-material = SubResource("StandardMaterial3D_1lfic")
 
 [node name="d1" type="CSGBox3D" parent="mainframe2" unique_id=503374564]
 transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.28857946, -0.6293448, 0)
@@ -428,403 +183,10 @@ transform = Transform3D(0.990268, 0.13917309, 0, -0.13917309, 0.990268, 0, 0, 0,
 operation = 2
 size = Vector3(0.16397509, 0.63, 2)
 
-[node name="d4" type="CSGBox3D" parent="mainframe2" unique_id=1631385678]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0053709745, 0, 0.16308594)
-size = Vector3(0.36621094, 0.5048828, 0.578125)
-material = SubResource("StandardMaterial3D_5tkey")
-
-[node name="buttons" type="Node3D" parent="mainframe2/d4" unique_id=1480975730]
-
-[node name="b1" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=174621544]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.19578046, 0.16212392)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b2" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1310332724]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.16528332, 0.16212392)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b3" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=807088792]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.13600302, 0.16212392)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b4" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1046193907]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351878, -0.108603716, 0.1617868)
-size = Vector3(0.038085938, 0.015975952, 0.08003807)
-material = SubResource("StandardMaterial3D_ve7e5")
-
-[node name="b5" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=3837849]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17341793, -0.19578046, 0.19156659)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b6" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=988316912]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17341793, -0.16528332, 0.19156659)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b7" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1199207210]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17341793, -0.13600302, 0.19156659)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b8" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=950635830]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17672563, -0.19578046, 0.13307977)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b9" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1441090571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17672563, -0.16528332, 0.13307977)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b10" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1563903108]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17672563, -0.13600302, 0.13307977)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b11" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1740367805]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.22880948, 0.16212392)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b12" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=101925111]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.19578046, 0.043575287)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b13" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1479144219]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.16528332, 0.043575287)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b14" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1567130683]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.13600302, 0.043575287)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b15" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1329921620]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981423, -0.108603716, 0.0432384)
-size = Vector3(0.038085938, 0.015975952, 0.08003807)
-material = SubResource("StandardMaterial3D_ve7e5")
-
-[node name="b16" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1962218946]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16971338, -0.19578046, 0.073018074)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b17" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=549248325]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16971338, -0.16528332, 0.073018074)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b18" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1627657110]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16971338, -0.13600302, 0.073018074)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b19" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=844124117]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17302108, -0.19578046, 0.014531374)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b20" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=271847906]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17302108, -0.16528332, 0.014531374)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b21" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=701335816]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17302108, -0.13600302, 0.014531374)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b22" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=589830451]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.22880948, 0.043575287)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b23" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1705947906]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.19578046, -0.08735132)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b24" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=699520345]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.16528332, -0.08735132)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b25" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=644044780]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.13600302, -0.08735132)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b26" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=128114894]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17024696, -0.108603716, -0.08768821)
-size = Vector3(0.038085938, 0.015975952, 0.08003807)
-material = SubResource("StandardMaterial3D_ve7e5")
-
-[node name="b27" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=297199527]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17014623, -0.19578046, -0.057908535)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b28" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=615270204]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17014623, -0.16528332, -0.057908535)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b29" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1168362054]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17014623, -0.13600302, -0.057908535)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b30" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=50068585]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17345375, -0.19578046, -0.11639553)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b31" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=247988939]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17345375, -0.16528332, -0.11639553)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b32" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1303288606]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17345375, -0.13600302, -0.11639553)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b33" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1023398831]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.22880948, -0.08735132)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b34" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=198168377]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1662057, -0.19578046, -0.18563318)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b35" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1004542836]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1662057, -0.16528332, -0.18563318)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b36" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=2023066420]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1662057, -0.13600302, -0.18563318)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b37" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=2045429042]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1694122, -0.19578046, -0.21467745)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b38" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=441027588]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1694122, -0.16528332, -0.21467745)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b39" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=236654758]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1694122, -0.13600302, -0.21467745)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b40" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=2011272616]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16620564, -0.105543554, -0.18563324)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b41" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=2029098954]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16941214, -0.105543554, -0.21467745)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b42" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1900406585]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16620559, -0.22817707, -0.1856333)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b43" type="CSGBox3D" parent="mainframe2/d4/buttons" unique_id=1684363719]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16941208, -0.22817707, -0.21467757)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="d8" type="CSGBox3D" parent="mainframe2/d4" unique_id=922544377]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.18445706, 0.08646011, 0.021314621)
-size = Vector3(0.05407715, 0.53149414, 0.54785156)
-material = SubResource("StandardMaterial3D_12uye")
-
-[node name="d8" type="CSGBox3D" parent="mainframe2/d4/d8" unique_id=400900168]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015075564, 0, 1.1920929e-07)
-operation = 2
-size = Vector3(0.084228516, 0.5, 0.5)
-
-[node name="sc1" type="CSGBox3D" parent="mainframe2/d4" unique_id=1163805045]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.18189353, 0.08646011, 0.02131474)
-size = Vector3(0.048950195, 0.5, 0.5)
-material = SubResource("StandardMaterial3D_1v4wv")
-
-[node name="d5" type="CSGBox3D" parent="mainframe2" unique_id=1185370546]
-transform = Transform3D(0.9902682, 0.1391731, 0, -0.1391731, 0.99026805, 0, -2.9802322e-08, -1.4901161e-08, 1, 0.04637903, 0.74821377, 0.18515849)
-size = Vector3(0.37695313, 0.30517578, 0.578125)
-material = SubResource("StandardMaterial3D_bodss")
-
-[node name="d1" type="CSGBox3D" parent="mainframe2/d5" unique_id=304938298]
-transform = Transform3D(1, 5.2154064e-08, -2.9802322e-08, -7.450581e-09, 1, 2.2351742e-08, 0, 2.2351742e-08, 1, 0.15595812, 0.026507497, 0.10479128)
-size = Vector3(0.0703125, 0.114990234, 0.28759766)
-material = SubResource("StandardMaterial3D_tibp4")
-
-[node name="d1" type="CSGCylinder3D" parent="mainframe2/d5/d1" unique_id=1563993810]
-transform = Transform3D(0.02050531, 0.9986624, -0.047464073, -0.77056336, 0.046034303, 0.63569885, 0.6370336, 0.023538947, 0.77047646, 0.0031200647, -0.0021494627, 0.053819537)
-radius = 0.053710938
-height = 0.07449341
-sides = 36
-material = SubResource("StandardMaterial3D_37s1w")
-
-[node name="d6" type="CSGBox3D" parent="mainframe2" unique_id=1651417701]
-transform = Transform3D(0.9902682, 0.1391731, 0, -0.1391731, 0.99026805, 0, -2.9802322e-08, -1.4901161e-08, 1, 0.011279941, 0.4984709, 0.18515849)
-size = Vector3(0.37695313, 0.20019531, 0.578125)
-material = SubResource("StandardMaterial3D_l4j2e")
-
-[node name="buttons" type="Node3D" parent="mainframe2/d6" unique_id=1717690843]
-
-[node name="b44" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=2089126690]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18041646, 0.022669673, 0.08498895)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b45" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=713499932]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18041968, 0.022520423, 0.115486264)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b46" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=305478340]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18042302, 0.02237618, 0.14476585)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b47" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1914853908]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.17482471, 0.05134976, 0.08513105)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b48" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1833368512]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.17482805, 0.05120051, 0.11562705)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b49" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1249588698]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.1748324, 0.051056504, 0.14490736)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b50" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=726088337]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18042678, 0.022227168, 0.17522562)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b51" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=377532420]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.17483544, 0.050907254, 0.17536616)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b52" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=545918341]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18041265, 0.022829413, 0.052593112)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b53" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=514094933]
-transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.1748215, 0.051509023, 0.052734256)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b54" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1395618785]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19041133, -0.048447013, 0.08498895)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b55" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1659635717]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19041455, -0.048596263, 0.11548638)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b56" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1043012430]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19041783, -0.048740506, 0.14476585)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b57" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1910535038]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18481952, -0.019766808, 0.08513105)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_dnhsr")
-
-[node name="b58" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1409029361]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18482286, -0.019916177, 0.11562717)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_tpfl8")
-
-[node name="b59" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1597904941]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18482721, -0.020060182, 0.14490736)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b60" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1457306000]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19042158, -0.048889518, 0.17522562)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b61" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=1449337024]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18483037, -0.020209432, 0.17536628)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b62" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=2018172035]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19040757, -0.04828739, 0.052593112)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="b63" type="CSGBox3D" parent="mainframe2/d6/buttons" unique_id=318616103]
-transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18481636, -0.019607782, 0.052734256)
-size = Vector3(0.038085938, 0.021942139, 0.021850586)
-material = SubResource("StandardMaterial3D_gbetb")
-
-[node name="d1" type="CSGBox3D" parent="mainframe2/d6" unique_id=1387319177]
-transform = Transform3D(1, 5.2154064e-08, -2.9802322e-08, -7.450581e-09, 1, 2.2351742e-08, 0, 2.2351742e-08, 1, 0.15846336, -0.008541346, -0.1566819)
-size = Vector3(0.0703125, 0.114990234, 0.12011719)
-material = SubResource("StandardMaterial3D_c1ux6")
-
-[node name="d1" type="CSGCylinder3D" parent="mainframe2/d6/d1" unique_id=1745127049]
-transform = Transform3D(0.02050531, 0.9986625, -0.047464073, -0.77056336, 0.04603438, 0.63569885, 0.6370336, 0.023539007, 0.77047646, 0.0015920997, -0.0023641586, -0.0005996227)
-radius = 0.053710938
-height = 0.07449341
-sides = 36
-material = SubResource("StandardMaterial3D_tor3l")
-
-[node name="d7" type="CSGBox3D" parent="mainframe2" unique_id=594565634]
-transform = Transform3D(0.9902682, -0.1391731, 0, 0.1391731, 0.99026805, 0, -2.9802322e-08, 1.4901161e-08, 1, 0.032835484, -0.6672241, 0.18317497)
-size = Vector3(0.36853027, 0.5048828, 0.578125)
-material = SubResource("StandardMaterial3D_vcrym")
-
-[node name="d9" type="CSGBox3D" parent="mainframe2/d7" unique_id=1994631981]
-transform = Transform3D(0.5, -3.7252903e-09, -1.4901161e-08, 3.7252903e-09, 0.5, 7.450581e-09, 0, -1.4901161e-08, 0.5, 0.20914155, 0.077649355, 0.0038473606)
-size = Vector3(0.05407715, 0.53149414, 0.63842773)
-material = SubResource("StandardMaterial3D_67lfv")
-
-[node name="d8" type="CSGBox3D" parent="mainframe2/d7/d9" unique_id=1076004653]
-transform = Transform3D(1, 2.2351742e-08, -2.9802322e-08, 0, 1, 7.450581e-09, 0, 7.450581e-09, 1, 0.015075445, -1.1920929e-07, 2.3841858e-07)
-operation = 2
-size = Vector3(0.084228516, 0.5, 0.5)
-
-[node name="sc3" type="CSGBox3D" parent="mainframe2/d7" unique_id=86255414]
-transform = Transform3D(0.5, -1.1175871e-08, -1.4901161e-08, -3.7252903e-09, 0.5, 1.1175871e-08, 0, -1.8626451e-08, 0.5, 0.16770184, 0.07796806, 0.014299512)
-size = Vector3(0.08898926, 0.5, 0.5493164)
-material = SubResource("StandardMaterial3D_kvtes")
-
 [node name="mainframe3" type="CSGBox3D" parent="." unique_id=50874782]
 transform = Transform3D(0.6427876, 0, -0.7660443, 0, 1, 0, 0.7660443, 0, 0.6427876, 0.178, 0.95, -1.259)
+material_override = SubResource("StandardMaterial3D_i7my1")
 size = Vector3(0.50087357, 1.8999023, 1)
-material = SubResource("StandardMaterial3D_1lfic")
 
 [node name="d1" type="CSGBox3D" parent="mainframe3" unique_id=279978433]
 transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.28857946, -0.6293448, 0)
@@ -902,4 +264,665 @@ material = SubResource("StandardMaterial3D_kk21m")
 [node name="sc3" type="CSGBox3D" parent="mainframe3/screens" unique_id=661517579]
 transform = Transform3D(0.9902682, -0.1391731, 0, 0.1391731, 0.99026805, 0, 2.9802322e-08, -1.4901161e-08, 1, -0.00936842, -0.63663554, 0)
 size = Vector3(0.08898926, 0.5, 0.5)
+material = SubResource("StandardMaterial3D_kvtes")
+
+[node name="Tellies" type="Node3D" parent="." unique_id=668658938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00043678284, 0.9499512, 0)
+
+[node name="telly1" type="CSGBox3D" parent="Tellies" unique_id=339664673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14658356, 0, 0)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly1" unique_id=1442098530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly1" unique_id=2139114075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly1" unique_id=1912496112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly1" unique_id=547111705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly1" unique_id=340286828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="telly2" type="CSGBox3D" parent="Tellies" unique_id=475571975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14658356, 0, 0.6579786)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly2" unique_id=120005186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly2" unique_id=337841626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly2" unique_id=1051833231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly2" unique_id=1926891045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly2" unique_id=1074019902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="telly3" type="CSGBox3D" parent="Tellies" unique_id=1072201354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.147, 0, -0.658)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly3" unique_id=2050921366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly3" unique_id=249372801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly3" unique_id=694068202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly3" unique_id=1765709223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly3" unique_id=561541548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="screen1" type="CSGBox3D" parent="Tellies" unique_id=228738589]
+transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.11806145, -0.58822614, 0)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_ekl28")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/screen1" unique_id=508066154]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -2.9802322e-08, 0.07812545, 0)
+operation = 2
+size = Vector3(0.20906067, 0.28710938, 0.35351563)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/screen1" unique_id=828281972]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.009784758, 0.07812551, 0)
+size = Vector3(0.18949127, 0.28710938, 0.35351563)
+material = SubResource("StandardMaterial3D_7e8y0")
+
+[node name="d3" type="CSGBox3D" parent="Tellies/screen1" unique_id=1299400176]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.007841155, 0.07812551, 0)
+size = Vector3(0.19337845, 0.24975586, 0.30444336)
+material = SubResource("StandardMaterial3D_hxvv2")
+
+[node name="screen2" type="CSGBox3D" parent="Tellies" unique_id=1206482118]
+transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.11806145, -0.58822614, -0.65797853)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_ekl28")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/screen2" unique_id=1283328726]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -2.9802322e-08, 0.07812545, 0)
+operation = 2
+size = Vector3(0.20906067, 0.28710938, 0.35351563)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/screen2" unique_id=1533168376]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.007841155, 0.07812551, 0)
+size = Vector3(0.19337845, 0.25878906, 0.33398438)
+material = SubResource("StandardMaterial3D_hxvv2")
+
+[node name="screen3" type="CSGBox3D" parent="Tellies" unique_id=2100611715]
+transform = Transform3D(0.99026805, -0.1391731, 0, 0.1391731, 0.99026805, 0, 0, 0, 1, 0.118, -0.588, 0.658)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_ekl28")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/screen3" unique_id=1756693425]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -2.9802322e-08, 0.07812545, 0)
+operation = 2
+size = Vector3(0.20906067, 0.28710938, 0.35351563)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/screen3" unique_id=1387994240]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.009784758, 0.07812551, 0)
+size = Vector3(0.18949127, 0.28710938, 0.35351563)
+material = SubResource("StandardMaterial3D_mrotl")
+
+[node name="d3" type="CSGBox3D" parent="Tellies/screen3" unique_id=1777485867]
+transform = Transform3D(1.0000031, -5.811453e-07, 0, 5.811453e-07, 1.0000031, 0, 0, 0, 1, -0.007841155, 0.07812551, 0)
+size = Vector3(0.19337845, 0.24975586, 0.30444336)
+material = SubResource("StandardMaterial3D_hxvv2")
+
+[node name="telly4" type="CSGBox3D" parent="Tellies" unique_id=2061937001]
+transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.19318315, 0.6057106, 0.18798417)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly4" unique_id=1999003559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly4" unique_id=1561283576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly4" unique_id=1066398360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly4" unique_id=507516229]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly4" unique_id=58028061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="telly5" type="CSGBox3D" parent="Tellies" unique_id=1876842881]
+transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.19318315, 0.6057106, 0.540072)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly5" unique_id=48737577]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly5" unique_id=1093480950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly5" unique_id=1192361256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly5" unique_id=48816759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly5" unique_id=1719873363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="telly6" type="CSGBox3D" parent="Tellies" unique_id=1669747337]
+transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.13872752, 0.6039299, -0.58096766)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly6" unique_id=32775530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly6" unique_id=672319571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly6" unique_id=1376397397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly6" unique_id=490516895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly6" unique_id=1245975108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="telly7" type="CSGBox3D" parent="Tellies" unique_id=1243942686]
+transform = Transform3D(0.49513403, 0.06958655, 0, -0.06958655, 0.49513403, 0, 0, 0, 0.5, 0.13872752, 0.6039299, -0.22887982)
+size = Vector3(0.20906067, 0.5, 0.6)
+material = SubResource("StandardMaterial3D_coxdq")
+
+[node name="d1" type="CSGBox3D" parent="Tellies/telly7" unique_id=1415978906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.084625244, 0.045684814, 0)
+operation = 2
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+
+[node name="d2" type="CSGBox3D" parent="Tellies/telly7" unique_id=368899642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09257507, -0.21897292, -0.0020751953)
+operation = 2
+size = Vector3(0.030548096, 0.083496094, 0.638916)
+
+[node name="d3" type="CSGBox3D" parent="Tellies/telly7" unique_id=627668208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06050557, 0.045684814, 0)
+size = Vector3(0.046447754, 0.3671875, 0.5185547)
+material = SubResource("StandardMaterial3D_sseuo")
+
+[node name="d4" type="CSGBox3D" parent="Tellies/telly7" unique_id=1140995717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08591461, -0.19608474, -0.10428893)
+size = Vector3(0.017227173, 0.037719727, 0.31866455)
+material = SubResource("StandardMaterial3D_5bcy7")
+
+[node name="d5" type="CSGBox3D" parent="Tellies/telly7" unique_id=1476351097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07859039, -0.21396804, 0.00010681152)
+size = Vector3(0.0025787354, 0.07348633, 0.59854126)
+material = SubResource("StandardMaterial3D_qifov")
+
+[node name="d4" type="CSGBox3D" parent="." unique_id=1631385678]
+transform = Transform3D(0.6427876, 0, 0.7660443, 0, 1, 0, -0.7660443, 0, 0.6427876, 0.2995257, 0.9499512, 1.3680924)
+size = Vector3(0.36621094, 0.5048828, 0.578125)
+material = SubResource("StandardMaterial3D_5tkey")
+
+[node name="buttons" type="Node3D" parent="d4" unique_id=1480975730]
+
+[node name="b1" type="CSGBox3D" parent="d4/buttons" unique_id=174621544]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.19578046, 0.16212392)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b2" type="CSGBox3D" parent="d4/buttons" unique_id=1310332724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.16528332, 0.16212392)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b3" type="CSGBox3D" parent="d4/buttons" unique_id=807088792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.13600302, 0.16212392)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b4" type="CSGBox3D" parent="d4/buttons" unique_id=1046193907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351878, -0.108603716, 0.1617868)
+size = Vector3(0.038085938, 0.015975952, 0.08003807)
+material = SubResource("StandardMaterial3D_ve7e5")
+
+[node name="b5" type="CSGBox3D" parent="d4/buttons" unique_id=3837849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17341793, -0.19578046, 0.19156659)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b6" type="CSGBox3D" parent="d4/buttons" unique_id=988316912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17341793, -0.16528332, 0.19156659)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b7" type="CSGBox3D" parent="d4/buttons" unique_id=1199207210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17341793, -0.13600302, 0.19156659)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b8" type="CSGBox3D" parent="d4/buttons" unique_id=950635830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17672563, -0.19578046, 0.13307977)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b9" type="CSGBox3D" parent="d4/buttons" unique_id=1441090571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17672563, -0.16528332, 0.13307977)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b10" type="CSGBox3D" parent="d4/buttons" unique_id=1563903108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17672563, -0.13600302, 0.13307977)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b11" type="CSGBox3D" parent="d4/buttons" unique_id=1740367805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17351913, -0.22880948, 0.16212392)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b12" type="CSGBox3D" parent="d4/buttons" unique_id=101925111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.19578046, 0.043575287)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b13" type="CSGBox3D" parent="d4/buttons" unique_id=1479144219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.16528332, 0.043575287)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b14" type="CSGBox3D" parent="d4/buttons" unique_id=1567130683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.13600302, 0.043575287)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b15" type="CSGBox3D" parent="d4/buttons" unique_id=1329921620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981423, -0.108603716, 0.0432384)
+size = Vector3(0.038085938, 0.015975952, 0.08003807)
+material = SubResource("StandardMaterial3D_ve7e5")
+
+[node name="b16" type="CSGBox3D" parent="d4/buttons" unique_id=1962218946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16971338, -0.19578046, 0.073018074)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b17" type="CSGBox3D" parent="d4/buttons" unique_id=549248325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16971338, -0.16528332, 0.073018074)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b18" type="CSGBox3D" parent="d4/buttons" unique_id=1627657110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16971338, -0.13600302, 0.073018074)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b19" type="CSGBox3D" parent="d4/buttons" unique_id=844124117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17302108, -0.19578046, 0.014531374)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b20" type="CSGBox3D" parent="d4/buttons" unique_id=271847906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17302108, -0.16528332, 0.014531374)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b21" type="CSGBox3D" parent="d4/buttons" unique_id=701335816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17302108, -0.13600302, 0.014531374)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b22" type="CSGBox3D" parent="d4/buttons" unique_id=589830451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16981459, -0.22880948, 0.043575287)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b23" type="CSGBox3D" parent="d4/buttons" unique_id=1705947906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.19578046, -0.08735132)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b24" type="CSGBox3D" parent="d4/buttons" unique_id=699520345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.16528332, -0.08735132)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b25" type="CSGBox3D" parent="d4/buttons" unique_id=644044780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.13600302, -0.08735132)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b26" type="CSGBox3D" parent="d4/buttons" unique_id=128114894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17024696, -0.108603716, -0.08768821)
+size = Vector3(0.038085938, 0.015975952, 0.08003807)
+material = SubResource("StandardMaterial3D_ve7e5")
+
+[node name="b27" type="CSGBox3D" parent="d4/buttons" unique_id=297199527]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17014623, -0.19578046, -0.057908535)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b28" type="CSGBox3D" parent="d4/buttons" unique_id=615270204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17014623, -0.16528332, -0.057908535)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b29" type="CSGBox3D" parent="d4/buttons" unique_id=1168362054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17014623, -0.13600302, -0.057908535)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b30" type="CSGBox3D" parent="d4/buttons" unique_id=50068585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17345375, -0.19578046, -0.11639553)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b31" type="CSGBox3D" parent="d4/buttons" unique_id=247988939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17345375, -0.16528332, -0.11639553)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b32" type="CSGBox3D" parent="d4/buttons" unique_id=1303288606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17345375, -0.13600302, -0.11639553)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b33" type="CSGBox3D" parent="d4/buttons" unique_id=1023398831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1702472, -0.22880948, -0.08735132)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b34" type="CSGBox3D" parent="d4/buttons" unique_id=198168377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1662057, -0.19578046, -0.18563318)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b35" type="CSGBox3D" parent="d4/buttons" unique_id=1004542836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1662057, -0.16528332, -0.18563318)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b36" type="CSGBox3D" parent="d4/buttons" unique_id=2023066420]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1662057, -0.13600302, -0.18563318)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b37" type="CSGBox3D" parent="d4/buttons" unique_id=2045429042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1694122, -0.19578046, -0.21467745)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b38" type="CSGBox3D" parent="d4/buttons" unique_id=441027588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1694122, -0.16528332, -0.21467745)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b39" type="CSGBox3D" parent="d4/buttons" unique_id=236654758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1694122, -0.13600302, -0.21467745)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b40" type="CSGBox3D" parent="d4/buttons" unique_id=2011272616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16620564, -0.105543554, -0.18563324)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b41" type="CSGBox3D" parent="d4/buttons" unique_id=2029098954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16941214, -0.105543554, -0.21467745)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b42" type="CSGBox3D" parent="d4/buttons" unique_id=1900406585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16620559, -0.22817707, -0.1856333)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b43" type="CSGBox3D" parent="d4/buttons" unique_id=1684363719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16941208, -0.22817707, -0.21467757)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="d8" type="CSGBox3D" parent="d4" unique_id=922544377]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.18445706, 0.08646011, 0.021314621)
+size = Vector3(0.05407715, 0.53149414, 0.54785156)
+material = SubResource("StandardMaterial3D_12uye")
+
+[node name="d8" type="CSGBox3D" parent="d4/d8" unique_id=400900168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015075564, 0, 1.1920929e-07)
+operation = 2
+size = Vector3(0.084228516, 0.5, 0.5)
+
+[node name="sc1" type="CSGBox3D" parent="d4" unique_id=1163805045]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.18189353, 0.08646011, 0.02131474)
+size = Vector3(0.048950195, 0.5, 0.5)
+material = SubResource("StandardMaterial3D_1v4wv")
+
+[node name="d5" type="CSGBox3D" parent="." unique_id=1185370546]
+transform = Transform3D(0.63653207, 0.08945873, 0.7660443, -0.1391731, 0.99026805, 0, -0.7585893, -0.10661277, 0.6427876, 0.34969854, 1.6981649, 1.3426375)
+size = Vector3(0.37695313, 0.30517578, 0.578125)
+material = SubResource("StandardMaterial3D_bodss")
+
+[node name="d1" type="CSGBox3D" parent="d5" unique_id=304938298]
+transform = Transform3D(1, 5.2154064e-08, -2.9802322e-08, -7.450581e-09, 1, 2.2351742e-08, 0, 2.2351742e-08, 1, 0.15595812, 0.026507497, 0.10479128)
+size = Vector3(0.0703125, 0.114990234, 0.28759766)
+material = SubResource("StandardMaterial3D_tibp4")
+
+[node name="d1" type="CSGCylinder3D" parent="d5/d1" unique_id=1563993810]
+transform = Transform3D(0.02050531, 0.9986624, -0.047464073, -0.77056336, 0.046034303, 0.63569885, 0.6370336, 0.023538947, 0.77047646, 0.0031200647, -0.0021494627, 0.053819537)
+radius = 0.053710938
+height = 0.07449341
+sides = 36
+material = SubResource("StandardMaterial3D_37s1w")
+
+[node name="d6" type="CSGBox3D" parent="." unique_id=1651417701]
+transform = Transform3D(0.63653207, 0.08945873, 0.7660443, -0.1391731, 0.99026805, 0, -0.7585893, -0.10661277, 0.6427876, 0.3271373, 1.4484221, 1.369525)
+size = Vector3(0.37695313, 0.20019531, 0.578125)
+material = SubResource("StandardMaterial3D_l4j2e")
+
+[node name="buttons" type="Node3D" parent="d6" unique_id=1717690843]
+
+[node name="b44" type="CSGBox3D" parent="d6/buttons" unique_id=2089126690]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18041646, 0.022669673, 0.08498895)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b45" type="CSGBox3D" parent="d6/buttons" unique_id=713499932]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18041968, 0.022520423, 0.115486264)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b46" type="CSGBox3D" parent="d6/buttons" unique_id=305478340]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18042302, 0.02237618, 0.14476585)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b47" type="CSGBox3D" parent="d6/buttons" unique_id=1914853908]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.17482471, 0.05134976, 0.08513105)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b48" type="CSGBox3D" parent="d6/buttons" unique_id=1833368512]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.17482805, 0.05120051, 0.11562705)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b49" type="CSGBox3D" parent="d6/buttons" unique_id=1249588698]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.1748324, 0.051056504, 0.14490736)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b50" type="CSGBox3D" parent="d6/buttons" unique_id=726088337]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18042678, 0.022227168, 0.17522562)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b51" type="CSGBox3D" parent="d6/buttons" unique_id=377532420]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.17483544, 0.050907254, 0.17536616)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b52" type="CSGBox3D" parent="d6/buttons" unique_id=545918341]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18041265, 0.022829413, 0.052593112)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b53" type="CSGBox3D" parent="d6/buttons" unique_id=514094933]
+transform = Transform3D(0.9545969, 0.00011360645, 0.29789993, 0.2978968, -0.0049030483, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.1748215, 0.051509023, 0.052734256)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b54" type="CSGBox3D" parent="d6/buttons" unique_id=1395618785]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19041133, -0.048447013, 0.08498895)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b55" type="CSGBox3D" parent="d6/buttons" unique_id=1659635717]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19041455, -0.048596263, 0.11548638)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b56" type="CSGBox3D" parent="d6/buttons" unique_id=1043012430]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19041783, -0.048740506, 0.14476585)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b57" type="CSGBox3D" parent="d6/buttons" unique_id=1910535038]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18481952, -0.019766808, 0.08513105)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_dnhsr")
+
+[node name="b58" type="CSGBox3D" parent="d6/buttons" unique_id=1409029361]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18482286, -0.019916177, 0.11562717)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_tpfl8")
+
+[node name="b59" type="CSGBox3D" parent="d6/buttons" unique_id=1597904941]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18482721, -0.020060182, 0.14490736)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b60" type="CSGBox3D" parent="d6/buttons" unique_id=1457306000]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19042158, -0.048889518, 0.17522562)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b61" type="CSGBox3D" parent="d6/buttons" unique_id=1449337024]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18483037, -0.020209432, 0.17536628)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b62" type="CSGBox3D" parent="d6/buttons" unique_id=2018172035]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.19040757, -0.04828739, 0.052593112)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="b63" type="CSGBox3D" parent="d6/buttons" unique_id=318616103]
+transform = Transform3D(0.9545969, 0.00011357665, 0.2978999, 0.2978968, -0.0049030557, -0.95458543, 0.001351893, 0.999988, -0.0047143176, 0.18481636, -0.019607782, 0.052734256)
+size = Vector3(0.038085938, 0.021942139, 0.021850586)
+material = SubResource("StandardMaterial3D_gbetb")
+
+[node name="d1" type="CSGBox3D" parent="d6" unique_id=1387319177]
+transform = Transform3D(1, 5.2154064e-08, -2.9802322e-08, -7.450581e-09, 1, 2.2351742e-08, 0, 2.2351742e-08, 1, 0.15846336, -0.008541346, -0.1566819)
+size = Vector3(0.0703125, 0.114990234, 0.12011719)
+material = SubResource("StandardMaterial3D_c1ux6")
+
+[node name="d1" type="CSGCylinder3D" parent="d6/d1" unique_id=1745127049]
+transform = Transform3D(0.02050531, 0.9986625, -0.047464073, -0.77056336, 0.04603438, 0.63569885, 0.6370336, 0.023539007, 0.77047646, 0.0015920997, -0.0023641586, -0.0005996227)
+radius = 0.053710938
+height = 0.07449341
+sides = 36
+material = SubResource("StandardMaterial3D_tor3l")
+
+[node name="d7" type="CSGBox3D" parent="." unique_id=594565634]
+transform = Transform3D(0.63653207, -0.08945873, 0.7660443, 0.1391731, 0.99026805, 0, -0.7585893, 0.10661277, 0.6427876, 0.33947343, 0.28272706, 1.3517375)
+size = Vector3(0.36853027, 0.5048828, 0.578125)
+material = SubResource("StandardMaterial3D_vcrym")
+
+[node name="d9" type="CSGBox3D" parent="d7" unique_id=1994631981]
+transform = Transform3D(0.5, -3.7252903e-09, -1.4901161e-08, 3.7252903e-09, 0.5, 7.450581e-09, 0, -1.4901161e-08, 0.5, 0.20914155, 0.077649355, 0.0038473606)
+size = Vector3(0.05407715, 0.53149414, 0.63842773)
+material = SubResource("StandardMaterial3D_67lfv")
+
+[node name="d8" type="CSGBox3D" parent="d7/d9" unique_id=1076004653]
+transform = Transform3D(1, 2.2351742e-08, -2.9802322e-08, 0, 1, 7.450581e-09, 0, 7.450581e-09, 1, 0.015075445, -1.1920929e-07, 2.3841858e-07)
+operation = 2
+size = Vector3(0.084228516, 0.5, 0.5)
+
+[node name="sc3" type="CSGBox3D" parent="d7" unique_id=86255414]
+transform = Transform3D(0.5, -1.1175871e-08, -1.4901161e-08, -3.7252903e-09, 0.5, 1.1175871e-08, 0, -1.8626451e-08, 0.5, 0.16770184, 0.07796806, 0.014299512)
+size = Vector3(0.08898926, 0.5, 0.5493164)
 material = SubResource("StandardMaterial3D_kvtes")

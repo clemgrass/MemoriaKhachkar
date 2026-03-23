@@ -1,31 +1,53 @@
 [gd_scene format=3 uid="uid://bce1howo16h1i"]
 
+[ext_resource type="Material" uid="uid://ed5jsrnhcdnl" path="res://Museum/Second_Floor/Marble022_4K-JPG.tres" id="1_rdoh4"]
+[ext_resource type="Texture2D" uid="uid://bsvcnsnoon7j4" path="res://Museum/Second_Floor/Marble022_4K-JPG_Color.jpg" id="2_3sikt"]
+[ext_resource type="Texture2D" uid="uid://dw71igpqcpcwb" path="res://Museum/Second_Floor/Marble022_4K-JPG_Displacement.jpg" id="3_141f6"]
+[ext_resource type="Texture2D" uid="uid://h77f3txlbtq" path="res://Museum/Second_Floor/Marble022_4K-JPG_NormalGL.jpg" id="4_07bsv"]
+[ext_resource type="Texture2D" uid="uid://dbfwvos8tnjuo" path="res://Museum/Second_Floor/Marble022_4K-JPG_Roughness.jpg" id="5_821b6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r0l16"]
+albedo_texture = ExtResource("2_3sikt")
+roughness_texture = ExtResource("5_821b6")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("4_07bsv")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_141f6")
+uv1_triplanar = true
+
 [node name="Pilar" type="Node3D" unique_id=1878544974]
 
 [node name="p1" type="CSGCylinder3D" parent="." unique_id=1382835825]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.038, 0)
+material_override = ExtResource("1_rdoh4")
 radius = 0.25
 height = 0.075
 sides = 36
 
 [node name="p2" type="CSGCylinder3D" parent="." unique_id=1787450590]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.113, 0)
+material_override = ExtResource("1_rdoh4")
 radius = 0.125
 height = 0.075
 sides = 36
 
 [node name="p3" type="CSGBox3D" parent="." unique_id=981788222]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+material_override = SubResource("StandardMaterial3D_r0l16")
 size = Vector3(0.1, 0.2, 0.1)
 
 [node name="p4" type="CSGCylinder3D" parent="." unique_id=1441209651]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38738063, 0)
+material_override = ExtResource("1_rdoh4")
 radius = 0.125
 height = 0.075
 sides = 36
 
 [node name="p5" type="CSGCylinder3D" parent="." unique_id=1911354716]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4620205, 0)
+material_override = ExtResource("1_rdoh4")
 radius = 0.25
 height = 0.075
 sides = 36

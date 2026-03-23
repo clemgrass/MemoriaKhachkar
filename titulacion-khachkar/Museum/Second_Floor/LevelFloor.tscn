@@ -1,12 +1,30 @@
 [gd_scene format=3 uid="uid://cl50nx7wocr2b"]
 
 [ext_resource type="PackedScene" uid="uid://bsbaghf3cl3p5" path="res://Museum/Entrance/stairs.tscn" id="1_j4nf5"]
+[ext_resource type="Texture2D" uid="uid://xoa4c2pmmxwb" path="res://Museum/Room_0/textures/floor_tiles_02_diff_4k.jpg" id="2_mdd8s"]
 [ext_resource type="PackedScene" uid="uid://c2vv3w2c2cgym" path="res://Museum/Second_Floor/Rail/Rail.tscn" id="2_xipgr"]
+[ext_resource type="Texture2D" uid="uid://dhlhcvesr88aw" path="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg" id="3_hkmw8"]
 [ext_resource type="PackedScene" uid="uid://da7if7oypv7we" path="res://Museum/Second_Floor/Rail/Conection.tscn" id="3_hw7hd"]
 [ext_resource type="PackedScene" uid="uid://cpwl6rpa2acm2" path="res://Museum/Second_Floor/Rail/Rings.tscn" id="4_ikl06"]
+[ext_resource type="Texture2D" uid="uid://d21amkealwwoe" path="res://Museum/Room_0/textures/floor_tiles_02_rough_4k.jpg" id="4_l6gbl"]
 [ext_resource type="PackedScene" uid="uid://40kq2rab20dq" path="res://Museum/Second_Floor/Rail/FloorDetail.tscn" id="5_4ilnc"]
 [ext_resource type="PackedScene" uid="uid://bce1howo16h1i" path="res://Museum/Second_Floor/Rail/Pilar.tscn" id="6_uaoq7"]
 [ext_resource type="PackedScene" uid="uid://dwn5w7tk45bbq" path="res://Museum/Second_Floor/Rail/Cross.tscn" id="7_uaoq7"]
+[ext_resource type="PackedScene" uid="uid://byjwqn76w4uhv" path="res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb" id="11_hkmw8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxt4c"]
+albedo_texture = ExtResource("2_mdd8s")
+metallic = 1.0
+metallic_texture = ExtResource("3_hkmw8")
+roughness_texture = ExtResource("4_l6gbl")
+uv1_scale = Vector3(17.946, 7.485, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mdd8s"]
+albedo_texture = ExtResource("2_mdd8s")
+metallic = 1.0
+metallic_texture = ExtResource("3_hkmw8")
+roughness_texture = ExtResource("4_l6gbl")
+uv1_scale = Vector3(5.006, 34.015, 1)
 
 [node name="LevelFloor" type="Node3D" unique_id=532701115]
 
@@ -55,21 +73,25 @@ size = Vector3(2.1069336, 5.500062, 10)
 
 [node name="floorSouth" type="CSGBox3D" parent="." unique_id=1557088053]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.21737, 6.7, 0)
+material_override = SubResource("StandardMaterial3D_mxt4c")
 use_collision = true
 size = Vector3(5.3912354, 0.1, 30)
 
 [node name="floorLeft" type="CSGBox3D" parent="." unique_id=1248026288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.978516, 6.7, 13.5)
+material_override = SubResource("StandardMaterial3D_mdd8s")
 use_collision = true
 size = Vector3(55, 0.1, 3)
 
 [node name="floorNorth" type="CSGBox3D" parent="." unique_id=1480909245]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.164837, 6.7, 0)
+material_override = SubResource("StandardMaterial3D_mxt4c")
 use_collision = true
 size = Vector3(15.372345, 0.1, 30)
 
 [node name="floorRight" type="CSGBox3D" parent="." unique_id=721780364]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.979, 6.7, -13.5)
+material_override = SubResource("StandardMaterial3D_mdd8s")
 use_collision = true
 size = Vector3(55, 0.1, 3)
 
@@ -294,3 +316,6 @@ transform = Transform3D(-0.00038401684, 0, -0.99999994, 0, 2, 0, 0.99999994, 0, 
 
 [node name="PilarRight" parent="railsSouth" unique_id=452784008 instance=ExtResource("6_uaoq7")]
 transform = Transform3D(-0.99999994, 0, 0.0003840049, 0, 2, 0, -0.0003840049, 0, -0.99999994, -12.787728, 6.75, -5.5942044)
+
+[node name="Kachkar6" parent="." unique_id=2029568894 instance=ExtResource("11_hkmw8")]
+transform = Transform3D(-4.371139e-08, -3.3, 0, 1, -1.4424758e-07, 0, 0, 0, 3.3, 49.477, 6.622, 8.201)

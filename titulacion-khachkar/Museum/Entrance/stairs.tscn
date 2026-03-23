@@ -1,58 +1,126 @@
 [gd_scene format=3 uid="uid://bsbaghf3cl3p5"]
 
+[ext_resource type="Texture2D" uid="uid://c7sdx6yx1dqx2" path="res://Museum/Entrance/Textures/textures/textures/long_white_tiles_diff_4k.jpg" id="1_2nray"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qr160"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.5, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54e8e"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.464, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pf8gi"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.429, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w4xts"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.393, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixxmn"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.357, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gqedc"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.321, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8vt0"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.179, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4r0sn"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.142, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u8xvq"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.107, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_di5uc"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.071, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ohueb"]
+albedo_texture = ExtResource("1_2nray")
+uv1_scale = Vector3(0.335, 0.035, 1)
+uv1_offset = Vector3(0.05, 0.13, 0)
+
 [node name="Stairs" type="Node3D" unique_id=1301923489]
 
 [node name="stair1" type="CSGBox3D" parent="." unique_id=419954365]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.25, 0, 0)
+material_override = SubResource("StandardMaterial3D_qr160")
 use_collision = true
 size = Vector3(7, 0.1, 10)
 
 [node name="stair2" type="CSGBox3D" parent="." unique_id=1316446811]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.500061, 0.1, 0)
+material_override = SubResource("StandardMaterial3D_54e8e")
 use_collision = true
 size = Vector3(6.500122, 0.1, 10)
 
 [node name="stair3" type="CSGBox3D" parent="." unique_id=142731227]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.75, 0.2, 0)
+material_override = SubResource("StandardMaterial3D_pf8gi")
 use_collision = true
 size = Vector3(6, 0.1, 10)
 
 [node name="stair4" type="CSGBox3D" parent="." unique_id=1849332950]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.000244, 0.3, 0)
+material_override = SubResource("StandardMaterial3D_w4xts")
 use_collision = true
 size = Vector3(5.5004883, 0.1, 10)
 
 [node name="stair5" type="CSGBox3D" parent="." unique_id=1770019443]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.25, 0.4, 0)
+material_override = SubResource("StandardMaterial3D_ixxmn")
 use_collision = true
 size = Vector3(5, 0.1, 10)
 
 [node name="stair6" type="CSGBox3D" parent="." unique_id=1362046658]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.5, 0)
+material_override = SubResource("StandardMaterial3D_gqedc")
 use_collision = true
 size = Vector3(4.5, 0.1, 10)
 
 [node name="stair7" type="CSGBox3D" parent="." unique_id=1818918870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.499817, 0.6, 0)
+material_override = SubResource("StandardMaterial3D_j8vt0")
 use_collision = true
 size = Vector3(2.4996338, 0.1, 10)
 
 [node name="stair8" type="CSGBox3D" parent="." unique_id=2019025176]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.75, 0.7, 0)
+material_override = SubResource("StandardMaterial3D_4r0sn")
 use_collision = true
 size = Vector3(2, 0.1, 10)
 
 [node name="stair9" type="CSGBox3D" parent="." unique_id=1495849287]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.000122, 0.8, 0)
+material_override = SubResource("StandardMaterial3D_u8xvq")
 use_collision = true
 size = Vector3(1.5002441, 0.1, 10)
 
 [node name="stair10" type="CSGBox3D" parent="." unique_id=448371216]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.25, 0.9, 0)
+material_override = SubResource("StandardMaterial3D_di5uc")
 use_collision = true
 size = Vector3(1, 0.1, 10)
 
 [node name="stair11" type="CSGBox3D" parent="." unique_id=1391323035]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 1, 0)
+material_override = SubResource("StandardMaterial3D_ohueb")
 use_collision = true
 size = Vector3(0.5, 0.1, 10)

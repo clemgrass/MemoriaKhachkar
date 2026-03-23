@@ -1,13 +1,18 @@
 [gd_scene format=3 uid="uid://dwn5w7tk45bbq"]
 
+[ext_resource type="Material" uid="uid://ds8g4drlj1ly4" path="res://Museum/Room_5/Marble012_4K-JPG.tres" id="1_toehy"]
+[ext_resource type="Material" path="res://Museum/Second_Floor/Marble013_4K-JPG.tres" id="2_f5tos"]
+
 [node name="Cross" type="Node3D" unique_id=1984412013]
 
 [node name="top" type="CSGBox3D" parent="." unique_id=650513724]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.47833803, 0)
+material_override = ExtResource("1_toehy")
 size = Vector3(1, 0.016676025, 0.5)
 
 [node name="circle" type="CSGCylinder3D" parent="." unique_id=2115490101]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.13, 0)
+material_override = ExtResource("2_f5tos")
 radius = 0.07
 height = 0.03
 sides = 32
@@ -56,6 +61,7 @@ sides = 32
 
 [node name="d4" type="CSGCylinder3D" parent="circle" unique_id=2040240663]
 transform = Transform3D(1.9106853e-16, 4.371139e-08, 0.45, 0, 1, -1.9670125e-08, -0.1, 0, 8.5980843e-16, -0.03, 0, 0)
+material_override = ExtResource("2_f5tos")
 radius = 0.07
 height = 0.03
 sides = 32
@@ -68,7 +74,8 @@ sides = 32
 
 [node name="verticalCross" type="CSGBox3D" parent="." unique_id=830276920]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335, 0)
-size = Vector3(0.07, 0.27, 0.03)
+material_override = ExtResource("2_f5tos")
+size = Vector3(0.07, 0.27, 0.031)
 
 [node name="d1" type="CSGCylinder3D" parent="verticalCross" unique_id=966166803]
 transform = Transform3D(1.9106853e-15, -4.371139e-08, -0.99999994, -0.99999994, -4.371139e-08, 0, -4.3711385e-08, 1, -4.3711385e-08, -0.046284825, 0.112811476, 0)
@@ -120,6 +127,7 @@ size = Vector3(0.13875487, 0.05, 0.031)
 
 [node name="horizontalCross" type="CSGBox3D" parent="." unique_id=645741009]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38, 0)
+material_override = ExtResource("2_f5tos")
 size = Vector3(0.25, 0.09, 0.03)
 
 [node name="d1" type="CSGCylinder3D" parent="horizontalCross" unique_id=142202980]
