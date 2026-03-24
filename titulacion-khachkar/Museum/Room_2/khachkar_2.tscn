@@ -1,0 +1,80 @@
+[gd_scene format=4 uid="uid://dnwn0mrryxx2i"]
+
+[ext_resource type="PackedScene" uid="uid://cpdd2nd82lq4l" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb" id="1_u3j43"]
+[ext_resource type="Texture2D" uid="uid://jwdgqqmf13yu" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2_uv_map (1).jpg" id="2_2qbpj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jjn48"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efq7i"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("2_2qbpj")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_75cbv"]
+_surfaces = [{
+"aabb": AABB(-0.30941036, -0.0023155862, -0.7771072, 0.7822397, 2.2360933, 1.321487),
+"format": 34896613377,
+"index_count": 66,
+"index_data": PackedByteArray("CAAJAAoACAALAAkACgAJAAwACwAIAA0ACgANAAgACQALAA4ACwANAA4ACQAOAAwACgAPAA0ADgANAA8ACgAMAA8ADgAPAAwAAAABAAIAAgABAAMAAgADAAQAAAAFAAEABQADAAEABgAFAAAABAADAAcABAAHAAYABQAHAAMABgAHAAUA"),
+"lods": [0.8078813, PackedByteArray("AAABAAIAAgABAAMAAgADAAQAAAAFAAEABQADAAEABgAFAAAABAADAAcABAAHAAYABQAHAAMABgAHAAUA")],
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("g1yFOQ7NAAAXlf7/Ds0AABeVhTkOzQAAF5X//wg8AAAXlYU5CDwAAINc/v8OzQAAg1yFOQg8AACDXP//CDwAAAAAAAD+/wAA//+FOf//AAD//wAA/v8AAAAAhTn+/wAA/v+FOQAAAAAAAAAAAAAAAAAAhTkAAAAA/v8AAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_si84w"]
+resource_name = "Khachkar2_ShapeIndexedFaceSet_001"
+_surfaces = [{
+"aabb": AABB(-0.30941036, -0.0023155862, -0.7771072, 0.7822397, 2.2360933, 1.321487),
+"attribute_data": PackedByteArray("MpTQ03j3ZdiHlBHc7/Zr0juUZdQ18cLZoZbC2ZTradEi2Q+7Sv/hhEr/D7si2eGE95CAucmuyYBqsnS5jo/kgBa5xtMX2lTYxblm2W/f19J23GuyqP8EpdT+U7NL3R2kj/9TpYjbcLNn3GeksP5dtP//KKXK2z2zqdw7pCD/K7T9+6e7ddysxHXcp7v9+6zEWzj//1s4//9bOP//Wzj//yD7ubqP23fEj9u5uiD7d8Q="),
+"format": 34896613399,
+"index_count": 66,
+"index_data": PackedByteArray("FAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkAAAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
+"lods": [0.8078813, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA")],
+"material": SubResource("StandardMaterial3D_efq7i"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.7477571, 1.9458, 0, 0),
+"vertex_count": 44,
+"vertex_data": PackedByteArray("g1yFOQ7NPr4Xlf7/Ds3+vheVhTkOzTC+g1z+/w7NDL8XlYU5CDz//4Nc//8IPP//g1yFOQg8//8Xlf//CDz//4NchTkIPP+/g1z+/w7N/7+DXIU5Ds3/v4Nc//8IPP+/F5WFOQ7N/78Xlf//CDz/vxeVhTkIPP+/F5X+/w7N/7+DXP7/Ds1S1BeV//8IPGXUF5X+/w7NTtSDXP//CDxp1AAAAAD+/6aB//+FOf//poH//wAA/v+mgQAAhTn+/6aBAACFOf7/AMAAAAAAAAAAwAAAhTkAAADAAAAAAP7/AMAAAIU5AAD///7/AAAAAP///v+FOQAA//8AAAAAAAD/////AAD+/////v+FOQAA///+/wAAAAD/////hTn///////8AAP7//78AAAAAAAD/vwAAAAD+//+//v8AAAAA/7///4U5//9U1QAAhTkAAFTV/v+FOQAAVNUAAIU5/v9U1f/////////////////////svxHA7b4Qwf+//7/bviPB/3/+//9/////f/7//3/+/yiAUgA8gHoAHYA8AEeAjwDz1ecr5tXPK/XV7Cvk1cor/////////////////////+uCiP7rgoj+64KI/uuCiP59goD9fYKA/X2CgP19goD9/7//f/+//3//v/9//7//fwAA/38AAP9/AAD/fwAA/3+qqqqqqqqqqqqqqqqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_75cbv")
+
+[node name="Khachkar2" unique_id=61044468 instance=ExtResource("1_u3j43")]
+
+[node name="b1" type="CSGBox3D" parent="ShapeIndexedFaceSet_001" parent_id_path=PackedInt32Array(1367173300) index="0" unique_id=1792824027]
+material = SubResource("StandardMaterial3D_jjn48")
+
+[node name="ShapeIndexedFaceSet_002" type="MeshInstance3D" parent="." index="1" unique_id=419858729]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")
+
+[node name="ShapeIndexedFaceSet_003" type="MeshInstance3D" parent="." index="2" unique_id=1894928334]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")
+
+[node name="ShapeIndexedFaceSet_004" type="MeshInstance3D" parent="." index="3" unique_id=1717698737]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")
+
+[node name="ShapeIndexedFaceSet_005" type="MeshInstance3D" parent="." index="4" unique_id=608485084]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")
+
+[node name="ShapeIndexedFaceSet_006" type="MeshInstance3D" parent="." index="5" unique_id=1213293583]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")
+
+[node name="ShapeIndexedFaceSet_007" type="MeshInstance3D" parent="." index="6" unique_id=314605064]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")
+
+[node name="ShapeIndexedFaceSet_008" type="MeshInstance3D" parent="." index="7" unique_id=1884084985]
+visible = false
+mesh = SubResource("ArrayMesh_si84w")

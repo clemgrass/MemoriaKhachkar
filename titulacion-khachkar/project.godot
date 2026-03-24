@@ -22,6 +22,8 @@ window/size/viewport_height=1080
 [global_group]
 
 p0_piece=""
+p1_buttons=""
+khachkars=""
 
 [input]
 

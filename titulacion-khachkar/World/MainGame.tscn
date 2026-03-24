@@ -30,7 +30,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_ma34m")]
-transform = Transform3D(-0.6953986, 0, 0.7186242, 0, 1, 0, -0.7186242, 0, -0.6953986, 61.699284, 1.0154171, -15.532893)
+transform = Transform3D(-0.6953986, 0, 0.7186242, 0, 1, 0, -0.7186242, 0, -0.6953986, 1.5525055, 1.3927627, 12.450008)
 sprint_speed = 5.6
 
 [node name="OutsideWorld" parent="." unique_id=1986257652 instance=ExtResource("3_rlvo1")]

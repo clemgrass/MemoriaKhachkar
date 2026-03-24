@@ -18,14 +18,17 @@ extends CharacterBody3D
 @export var input_back : String = "ui_down"
 @export var input_jump : String = "ui_accept"
 @export var input_sprint : String = "sprint"
+@export var input_left_click : String = "click_left"
 
 var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
 
 @onready var head: Node3D = $Head
-@onready var collider: CollisionShape3D = $Collider
+@onready var collider_player: CollisionShape3D = $Collider
 @onready var raycast = $Head/Camera3D/RayCast3D
+@onready var crosshair_normal = $Head/Camera3D/normal
+@onready var crosshair_pick = $Head/Camera3D/pick
 
 """
 Practice code 
@@ -79,11 +82,32 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = 0
 		velocity.y = 0
-	
+		
+	if raycast.is_colliding():
+		var collider = raycast.get_collider()
+		if collider != null: 
+			if collider.is_in_group("p0_piece"):
+				crosshair(true)
+			elif collider.is_in_group("p1_buttons"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.pressed_button()
+			elif collider.is_in_group("khachkars"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.khachkar_photo()
+			else:
+				crosshair(false)
+				
 	move_and_slide()
 		
-			
-
+func crosshair(wich: bool):
+	if wich:
+		crosshair_normal.visible = false
+		crosshair_pick.visible = true
+	else:
+		crosshair_normal.visible = true
+		crosshair_pick.visible = false
 
 func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed

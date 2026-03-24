@@ -7,13 +7,22 @@
 [ext_resource type="Texture2D" uid="uid://dladw1p2wab13" path="res://Museum/Room_1/textures/rosewood_veneer1_diff_4k.jpg" id="5_3ijcg"]
 [ext_resource type="Texture2D" uid="uid://bli0s4pjssdxg" path="res://Museum/Room_1/textures/rosewood_veneer1_arm_4k.jpg" id="6_kyex5"]
 [ext_resource type="Texture2D" uid="uid://bvom48l1u3k2l" path="res://Museum/Room_1/textures/rosewood_veneer1_nor_gl_4k.jpg" id="7_ptr4f"]
-[ext_resource type="PackedScene" uid="uid://ccg5kbdyir1ef" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar1.glb" id="8_ctif1"]
 [ext_resource type="Texture2D" uid="uid://dp7icdo8opnnx" path="res://Museum/Room_1/textures/textures/beige_wall_001_diff_4k.jpg" id="9_lsj64"]
 [ext_resource type="Texture2D" uid="uid://bu1wura77ke10" path="res://Museum/Room_1/textures/textures/beige_wall_001_nor_gl_4k.jpg" id="10_pkwqe"]
 [ext_resource type="Texture2D" uid="uid://cml53tgso8n5j" path="res://Museum/Room_1/textures/textures/beige_wall_001_rough_4k.jpg" id="11_2gpor"]
 [ext_resource type="Texture2D" uid="uid://d2qguh0xixbi5" path="res://Museum/Room_1/textures/textures/concrete_tile_facade_diff_4k.jpg" id="12_hdf4b"]
 [ext_resource type="Texture2D" uid="uid://o3g2yhrr2l4a" path="res://Museum/Room_1/textures/textures/concrete_tile_facade_arm_4k.jpg" id="13_rlq7v"]
 [ext_resource type="Texture2D" uid="uid://8lhbyslg6nts" path="res://Museum/Room_1/textures/textures/concrete_tile_facade_nor_gl_4k.jpg" id="14_dubdv"]
+[ext_resource type="PackedScene" uid="uid://ctpvpiqjm7kj3" path="res://Museum/Room_1/khachkar_1.tscn" id="14_lsj64"]
+[ext_resource type="Script" uid="uid://onjvt5vtf85c" path="res://Museum/Room_1/puzzle_1.gd" id="15_2gpor"]
+[ext_resource type="Script" uid="uid://ducxkaoc11cfo" path="res://Museum/Room_1/collision_khachkar_1.gd" id="15_3b8qd"]
+[ext_resource type="Texture2D" uid="uid://cdsr5ermhw2ho" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar1_khachkar1_uv_map.jpg" id="15_pkwqe"]
+[ext_resource type="Script" uid="uid://cjfnutode8nv0" path="res://Museum/Room_1/button_1p_1.gd" id="17_hdf4b"]
+[ext_resource type="Script" uid="uid://dsay2bbilt214" path="res://Museum/Room_1/button_1p_2.gd" id="18_rlq7v"]
+[ext_resource type="Script" uid="uid://xi5n4bucotkp" path="res://Museum/Room_1/button_2p_1.gd" id="19_oesj3"]
+[ext_resource type="Script" uid="uid://ddnvrm6hlp8md" path="res://Museum/Room_1/button_2p_2.gd" id="20_iives"]
+[ext_resource type="Script" uid="uid://7k1vyb22xscc" path="res://Museum/Room_1/button_3p_1.gd" id="21_mnmk2"]
+[ext_resource type="Script" uid="uid://e21docvpow22" path="res://Museum/Room_1/button_3p_2.gd" id="22_3b8qd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bkfji"]
 albedo_texture = ExtResource("2_mwtes")
@@ -65,6 +74,72 @@ metallic_texture = ExtResource("13_rlq7v")
 roughness_texture = ExtResource("14_dubdv")
 uv1_scale = Vector3(0.295, 0.2, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2fat"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("15_pkwqe")
+roughness = 0.5
+uv1_scale = Vector3(-0.26, 0.425, 0.265)
+uv1_offset = Vector3(-0.647, 0.015, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hdf4b"]
+albedo_texture = ExtResource("12_hdf4b")
+metallic = 1.0
+metallic_texture = ExtResource("13_rlq7v")
+roughness_texture = ExtResource("14_dubdv")
+uv1_scale = Vector3(-0.16, -0.108, -0.542)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rlq7v"]
+albedo_texture = ExtResource("12_hdf4b")
+metallic = 1.0
+metallic_texture = ExtResource("13_rlq7v")
+roughness_texture = ExtResource("14_dubdv")
+uv1_scale = Vector3(-0.16, -0.108, -0.542)
+uv1_offset = Vector3(0, 0.105, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1jjld"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7xu5"]
+transparency = 1
+albedo_color = Color(0.5019608, 1, 0.11764706, 0.5058824)
+
+[sub_resource type="Animation" id="Animation_mnmk2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../windows:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3b8qd"]
+resource_name = "windows_down"
+length = 10.633333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../windows:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10.566667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -3.7569475, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_elsen"]
+_data = {
+&"RESET": SubResource("Animation_mnmk2"),
+&"windows_down": SubResource("Animation_3b8qd")
+}
+
 [node name="Room1" type="Node3D" unique_id=541123252]
 
 [node name="Stairs" parent="." unique_id=1301923489 instance=ExtResource("1_472g3")]
@@ -96,9 +171,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0703125, 0.35717773)
 operation = 2
 use_collision = true
 size = Vector3(10, 4.859375, 14.706543)
-
-[node name="khachkar1" parent="." unique_id=497236083 instance=ExtResource("8_ctif1")]
-transform = Transform3D(-7.430936e-08, 0, -1.7, 0, 1.7, 0, 1.7, 0, -7.430936e-08, -0.1087656, -0.42115048, -4.0405145)
 
 [node name="windows" type="Node3D" parent="." unique_id=1752044162]
 
@@ -185,3 +257,456 @@ transform = Transform3D(1.7999544, 0, 0, 0, 1, 0, 0, 0, 0.99997467, 0.02389735, 
 material_override = SubResource("StandardMaterial3D_elsen")
 use_collision = true
 size = Vector3(1.7490845, 2.7, 0.17808227)
+
+[node name="khachkar_1" parent="." unique_id=300804034 instance=ExtResource("14_lsj64")]
+transform = Transform3D(-7.430936e-08, 0, -1.7, 0, 1.7, 0, 1.7, 0, -7.430936e-08, -0.1087656, -0.42115048, -4.0405145)
+
+[node name="collisionKhachkar1" type="CSGBox3D" parent="khachkar_1" unique_id=1852169217 groups=["khachkars"]]
+transform = Transform3D(1.0000002, 0, 3.5527137e-15, 0, 1.0000002, 0, -3.5527137e-15, 0, 1.0000002, 0.08105469, 1.147633, -0.11611945)
+visible = false
+size = Vector3(0.8378906, 1.7948608, 1.335022)
+script = ExtResource("15_3b8qd")
+
+[node name="puzzle1" type="Node3D" parent="." unique_id=14321137]
+script = ExtResource("15_2gpor")
+
+[node name="part1" type="Node3D" parent="puzzle1" unique_id=1471187485]
+transform = Transform3D(-7.430936e-08, 0, -1.7, 0, 1.7, 0, 1.7, 0, -7.430936e-08, 0.025903493, 2.8322527, -8.65972)
+
+[node name="photo1" type="CSGBox3D" parent="puzzle1/part1" unique_id=1867714694]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.5480047, -0.17433453)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 1.1025274, 1.533)
+
+[node name="sector" type="CSGBox3D" parent="puzzle1/part1/photo1" unique_id=702909070]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020629883, -0.18685755, 0.51311696)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo2" type="CSGBox3D" parent="puzzle1/part1" unique_id=932565857]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347847, -0.5475966, 0.1993146)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector2" type="CSGBox3D" parent="puzzle1/part1/photo2" unique_id=554266766]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, 0.513)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo3" type="CSGBox3D" parent="puzzle1/part1" unique_id=1227599341]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.04076649, -0.1745224)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector3" type="CSGBox3D" parent="puzzle1/part1/photo3" unique_id=1301679579]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, -0.187, 0.005)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo4" type="CSGBox3D" parent="puzzle1/part1" unique_id=1285709803]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347847, -0.040944237, 0.19942951)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector4" type="CSGBox3D" parent="puzzle1/part1/photo4" unique_id=979310386]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, 0.005)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo5" type="CSGBox3D" parent="puzzle1/part1" unique_id=18601253]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347895, 0.46762905, 0.19877052)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector5" type="CSGBox3D" parent="puzzle1/part1/photo5" unique_id=398196537]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, -0.503)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo6" type="CSGBox3D" parent="puzzle1/part1" unique_id=2124359883]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, 0.4679875, -0.17429543)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector6" type="CSGBox3D" parent="puzzle1/part1/photo6" unique_id=1270111235]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, -0.187, -0.503)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo7" type="CSGBox3D" parent="puzzle1/part1" unique_id=2017068639]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, 0.11642634, 0.021966457)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector7" type="CSGBox3D" parent="puzzle1/part1/photo7" unique_id=1196176844]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.009021342, -0.1522249)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo8" type="CSGBox3D" parent="puzzle1/part1" unique_id=753551469]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.2024256, 0.021312714)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector8" type="CSGBox3D" parent="puzzle1/part1/photo8" unique_id=1109924683]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.008624874, 0.16759944)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo9" type="CSGBox3D" parent="puzzle1/part1" unique_id=221317816]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.5390394, 0.02079773)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector9" type="CSGBox3D" parent="puzzle1/part1/photo9" unique_id=1089174569]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.009019472, 0.5046185)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="button1p1" type="CSGBox3D" parent="puzzle1/part1" unique_id=507040437 groups=["p1_buttons"]]
+transform = Transform3D(-4.628269e-08, 0.41594523, 0.41594523, 0, 0.41594523, -0.41594523, -1.0588237, -1.8181545e-08, -1.8181545e-08, 0.26109362, -0.41440713, -0.075060315)
+material_override = SubResource("StandardMaterial3D_hdf4b")
+use_collision = true
+size = Vector3(0.12212372, 0.03414917, 0.20623064)
+script = ExtResource("17_hdf4b")
+
+[node name="d1" type="CSGBox3D" parent="puzzle1/part1/button1p1" unique_id=432789026]
+transform = Transform3D(0.7071067, 6.352747e-22, -0.70710665, 0, 0.99999964, 0, 0.7071066, 0, 0.7071066, -0.039348915, -0.012237549, -0.0876379)
+operation = 2
+size = Vector3(0.12212372, 0.17287445, 0.20623064)
+
+[node name="d2" type="CSGBox3D" parent="puzzle1/part1/button1p1" unique_id=905588205]
+transform = Transform3D(0.70710665, 6.352747e-22, 0.7071066, 0, 0.99999964, 0, -0.7071066, 0, 0.7071066, -0.039348915, -0.016841412, 0.07714033)
+operation = 2
+size = Vector3(0.12212372, 0.17994308, 0.20623064)
+
+[node name="button1p2" type="CSGBox3D" parent="puzzle1/part1" unique_id=1649485440 groups=["p1_buttons"]]
+transform = Transform3D(-1.9170905e-08, -0.41594523, 0.41594523, -6.545356e-08, -0.41594523, -0.41594523, 1.0588237, -3.324363e-08, -1.8181543e-08, 0.26109362, -0.41440713, -0.22257693)
+material_override = SubResource("StandardMaterial3D_rlq7v")
+use_collision = true
+size = Vector3(0.12212372, 0.03414917, 0.20623064)
+script = ExtResource("18_rlq7v")
+
+[node name="d1" type="CSGBox3D" parent="puzzle1/part1/button1p2" unique_id=1499954200]
+transform = Transform3D(0.7071067, 6.352747e-22, -0.70710665, 0, 0.99999964, 0, 0.7071066, 0, 0.7071066, -0.039348915, -0.012237549, -0.0876379)
+operation = 2
+size = Vector3(0.12212372, 0.17287445, 0.20623064)
+
+[node name="d2" type="CSGBox3D" parent="puzzle1/part1/button1p2" unique_id=401916151]
+transform = Transform3D(0.70710665, 6.352747e-22, 0.7071066, 0, 0.99999964, 0, -0.7071066, 0, 0.7071066, -0.039348915, -0.016841412, 0.07714033)
+operation = 2
+size = Vector3(0.12212372, 0.17994308, 0.20623064)
+
+[node name="hint" type="CSGBox3D" parent="puzzle1/part1" unique_id=25038518]
+transform = Transform3D(-6.950112e-09, 0.06293252, 0.06293252, 0, 0.06293252, -0.06293252, -0.15900004, -2.7508678e-09, -2.7508678e-09, 0.26196337, -0.4199555, 0.16962901)
+size = Vector3(0.749, 0.133, 1.533)
+material = SubResource("StandardMaterial3D_1jjld")
+
+[node name="h1" type="CSGBox3D" parent="puzzle1/part1/hint" unique_id=64873845]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0.1886795, 0.11686039, -9.536743e-07)
+size = Vector3(0.375, 0.09449414, 0.508)
+material = SubResource("StandardMaterial3D_q7xu5")
+
+[node name="part2" type="Node3D" parent="puzzle1" unique_id=521825945]
+transform = Transform3D(-0.23659423, 0, -1.6834557, 0, 1.7, 0, 1.6834557, 0, -0.23659423, 2.3861377, 2.8322527, -8.571679)
+
+[node name="photo1" type="CSGBox3D" parent="puzzle1/part2" unique_id=1721962465]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.5480047, -0.17433453)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 1.1025274, 1.533)
+
+[node name="sector" type="CSGBox3D" parent="puzzle1/part2/photo1" unique_id=1592810305]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020629883, -0.18685755, 0.51311696)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo2" type="CSGBox3D" parent="puzzle1/part2" unique_id=247863068]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347847, -0.5475966, 0.1993146)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector2" type="CSGBox3D" parent="puzzle1/part2/photo2" unique_id=1887415194]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, 0.513)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo3" type="CSGBox3D" parent="puzzle1/part2" unique_id=137184091]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.04076649, -0.1745224)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector3" type="CSGBox3D" parent="puzzle1/part2/photo3" unique_id=1071994154]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, -0.187, 0.005)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo4" type="CSGBox3D" parent="puzzle1/part2" unique_id=64458650]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347847, -0.040944237, 0.19942951)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector4" type="CSGBox3D" parent="puzzle1/part2/photo4" unique_id=666301076]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, 0.005)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo5" type="CSGBox3D" parent="puzzle1/part2" unique_id=1011212187]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347895, 0.46762905, 0.19877052)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector5" type="CSGBox3D" parent="puzzle1/part2/photo5" unique_id=2067268272]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, -0.503)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo6" type="CSGBox3D" parent="puzzle1/part2" unique_id=213721091]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, 0.4679875, -0.17429543)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector6" type="CSGBox3D" parent="puzzle1/part2/photo6" unique_id=1566775291]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, -0.187, -0.503)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo7" type="CSGBox3D" parent="puzzle1/part2" unique_id=1290977132]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, 0.11642634, 0.021966457)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector7" type="CSGBox3D" parent="puzzle1/part2/photo7" unique_id=850493619]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.009021342, -0.1522249)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo8" type="CSGBox3D" parent="puzzle1/part2" unique_id=1216308073]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.2024256, 0.021312714)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector8" type="CSGBox3D" parent="puzzle1/part2/photo8" unique_id=728658255]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.008624874, 0.16759944)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo9" type="CSGBox3D" parent="puzzle1/part2" unique_id=803236974]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.5390394, 0.02079773)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector9" type="CSGBox3D" parent="puzzle1/part2/photo9" unique_id=389580181]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.009019472, 0.5046185)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="button2p1" type="CSGBox3D" parent="puzzle1/part2" unique_id=386263929 groups=["p1_buttons"]]
+transform = Transform3D(-4.4703484e-08, 0.41594526, 0.41594526, 0, 0.4159452, -0.4159452, -1.0588238, -1.4901161e-08, -1.4901161e-08, 0.28213072, -0.42195046, -0.07801664)
+material_override = SubResource("StandardMaterial3D_hdf4b")
+use_collision = true
+size = Vector3(0.12212372, 0.03414917, 0.20623064)
+script = ExtResource("19_oesj3")
+
+[node name="d1" type="CSGBox3D" parent="puzzle1/part2/button2p1" unique_id=851620415]
+transform = Transform3D(0.7071067, 6.352747e-22, -0.70710665, 0, 0.99999964, 0, 0.7071066, 0, 0.7071066, -0.039348915, -0.012237549, -0.0876379)
+operation = 2
+size = Vector3(0.12212372, 0.17287445, 0.20623064)
+
+[node name="d2" type="CSGBox3D" parent="puzzle1/part2/button2p1" unique_id=705944265]
+transform = Transform3D(0.70710665, 6.352747e-22, 0.7071066, 0, 0.99999964, 0, -0.7071066, 0, 0.7071066, -0.039348915, -0.016841412, 0.07714033)
+operation = 2
+size = Vector3(0.12212372, 0.17994308, 0.20623064)
+
+[node name="button2p2" type="CSGBox3D" parent="puzzle1/part2" unique_id=418604084 groups=["p1_buttons"]]
+transform = Transform3D(-4.4703484e-08, -0.41594538, 0.41594526, -6.5453555e-08, -0.4159452, -0.4159452, 1.058824, -3.3527613e-08, -1.4901161e-08, 0.28212786, -0.42195046, -0.22553301)
+material_override = SubResource("StandardMaterial3D_rlq7v")
+use_collision = true
+size = Vector3(0.12212372, 0.03414917, 0.20623064)
+script = ExtResource("20_iives")
+
+[node name="d1" type="CSGBox3D" parent="puzzle1/part2/button2p2" unique_id=2090956670]
+transform = Transform3D(0.7071067, 6.352747e-22, -0.70710665, 0, 0.99999964, 0, 0.7071066, 0, 0.7071066, -0.039348915, -0.012237549, -0.0876379)
+operation = 2
+size = Vector3(0.12212372, 0.17287445, 0.20623064)
+
+[node name="d2" type="CSGBox3D" parent="puzzle1/part2/button2p2" unique_id=1269805244]
+transform = Transform3D(0.70710665, 6.352747e-22, 0.7071066, 0, 0.99999964, 0, -0.7071066, 0, 0.7071066, -0.039348915, -0.016841412, 0.07714033)
+operation = 2
+size = Vector3(0.12212372, 0.17994308, 0.20623064)
+
+[node name="hint" type="CSGBox3D" parent="puzzle1/part2" unique_id=2030496186]
+transform = Transform3D(-1.8626451e-09, 0.06293252, 0.06293252, 0, 0.06293251, -0.06293251, -0.15900007, -2.7939677e-09, -2.7939677e-09, 0.2864313, -0.43002343, 0.16619062)
+size = Vector3(0.749, 0.133, 1.533)
+material = SubResource("StandardMaterial3D_1jjld")
+
+[node name="h1" type="CSGBox3D" parent="puzzle1/part2/hint" unique_id=461262514]
+transform = Transform3D(1, -3.7252903e-09, -3.7252903e-09, 0, 1, -8.940697e-08, 0, -8.940697e-08, 1, -0.18459702, 0.11889839, -0.50829697)
+size = Vector3(0.375, 0.09449414, 0.508)
+material = SubResource("StandardMaterial3D_q7xu5")
+
+[node name="part3" type="Node3D" parent="puzzle1" unique_id=2110035615]
+transform = Transform3D(0.23659429, 0, -1.6834557, 0, 1.7, 0, 1.6834557, 0, 0.23659429, -2.3089454, 2.8322527, -8.625907)
+
+[node name="photo1" type="CSGBox3D" parent="puzzle1/part3" unique_id=200136986]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.5480047, -0.17433453)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 1.1025274, 1.533)
+
+[node name="sector" type="CSGBox3D" parent="puzzle1/part3/photo1" unique_id=990591350]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020629883, -0.18685755, 0.51311696)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo2" type="CSGBox3D" parent="puzzle1/part3" unique_id=326975357]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347847, -0.5475966, 0.1993146)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector2" type="CSGBox3D" parent="puzzle1/part3/photo2" unique_id=1531103528]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, 0.513)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo3" type="CSGBox3D" parent="puzzle1/part3" unique_id=1028594055]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.04076649, -0.1745224)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector3" type="CSGBox3D" parent="puzzle1/part3/photo3" unique_id=955788800]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, -0.187, 0.005)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo4" type="CSGBox3D" parent="puzzle1/part3" unique_id=1421805229]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347847, -0.040944237, 0.19942951)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector4" type="CSGBox3D" parent="puzzle1/part3/photo4" unique_id=1187416958]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, 0.005)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo5" type="CSGBox3D" parent="puzzle1/part3" unique_id=1156989353]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347895, 0.46762905, 0.19877052)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector5" type="CSGBox3D" parent="puzzle1/part3/photo5" unique_id=313892608]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, 0.187, -0.503)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo6" type="CSGBox3D" parent="puzzle1/part3" unique_id=727069449]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, 0.4679875, -0.17429543)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector6" type="CSGBox3D" parent="puzzle1/part3/photo6" unique_id=509882554]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.021, -0.187, -0.503)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo7" type="CSGBox3D" parent="puzzle1/part3" unique_id=1229381380]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, 0.11642634, 0.021966457)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector7" type="CSGBox3D" parent="puzzle1/part3/photo7" unique_id=294409523]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.009021342, -0.1522249)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo8" type="CSGBox3D" parent="puzzle1/part3" unique_id=748122365]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.2024256, 0.021312714)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector8" type="CSGBox3D" parent="puzzle1/part3/photo8" unique_id=1077569016]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.008624874, 0.16759944)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="photo9" type="CSGBox3D" parent="puzzle1/part3" unique_id=811167852]
+transform = Transform3D(1.0000002, -3.5527137e-15, -2.1175824e-22, 0, -4.3711402e-08, 1.0000002, -3.5527137e-15, -1.0000002, -4.3711402e-08, 0.06347656, -0.5390394, 0.02079773)
+visible = false
+material_override = SubResource("StandardMaterial3D_h2fat")
+size = Vector3(0.168, 0.749, 1.533)
+
+[node name="sector9" type="CSGBox3D" parent="puzzle1/part3/photo9" unique_id=2061869676]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.020999998, 0.009019472, 0.5046185)
+operation = 1
+size = Vector3(0.26831055, 0.508, 0.375)
+
+[node name="button3p1" type="CSGBox3D" parent="puzzle1/part3" unique_id=2124841610 groups=["p1_buttons"]]
+transform = Transform3D(-4.4703484e-08, 0.41594526, 0.41594526, 0, 0.4159452, -0.4159452, -1.0588238, -1.4901161e-08, -1.4901161e-08, 0.28213072, -0.42195046, -0.07801664)
+material_override = SubResource("StandardMaterial3D_hdf4b")
+use_collision = true
+size = Vector3(0.12212372, 0.03414917, 0.20623064)
+script = ExtResource("21_mnmk2")
+
+[node name="d1" type="CSGBox3D" parent="puzzle1/part3/button3p1" unique_id=1639490045]
+transform = Transform3D(0.7071067, 6.352747e-22, -0.70710665, 0, 0.99999964, 0, 0.7071066, 0, 0.7071066, -0.039348915, -0.012237549, -0.0876379)
+operation = 2
+size = Vector3(0.12212372, 0.17287445, 0.20623064)
+
+[node name="d2" type="CSGBox3D" parent="puzzle1/part3/button3p1" unique_id=2013034751]
+transform = Transform3D(0.70710665, 6.352747e-22, 0.7071066, 0, 0.99999964, 0, -0.7071066, 0, 0.7071066, -0.039348915, -0.016841412, 0.07714033)
+operation = 2
+size = Vector3(0.12212372, 0.17994308, 0.20623064)
+
+[node name="button3p2" type="CSGBox3D" parent="puzzle1/part3" unique_id=2021476764 groups=["p1_buttons"]]
+transform = Transform3D(-4.4703484e-08, -0.41594538, 0.41594526, -6.5453555e-08, -0.4159452, -0.4159452, 1.058824, -3.3527613e-08, -1.4901161e-08, 0.28212786, -0.42195046, -0.22553301)
+material_override = SubResource("StandardMaterial3D_rlq7v")
+use_collision = true
+size = Vector3(0.12212372, 0.03414917, 0.20623064)
+script = ExtResource("22_3b8qd")
+
+[node name="d1" type="CSGBox3D" parent="puzzle1/part3/button3p2" unique_id=1710781217]
+transform = Transform3D(0.7071067, 6.352747e-22, -0.70710665, 0, 0.99999964, 0, 0.7071066, 0, 0.7071066, -0.039348915, -0.012237549, -0.0876379)
+operation = 2
+size = Vector3(0.12212372, 0.17287445, 0.20623064)
+
+[node name="d2" type="CSGBox3D" parent="puzzle1/part3/button3p2" unique_id=1099990760]
+transform = Transform3D(0.70710665, 6.352747e-22, 0.7071066, 0, 0.99999964, 0, -0.7071066, 0, 0.7071066, -0.039348915, -0.016841412, 0.07714033)
+operation = 2
+size = Vector3(0.12212372, 0.17994308, 0.20623064)
+
+[node name="hint" type="CSGBox3D" parent="puzzle1/part3" unique_id=1961751577]
+transform = Transform3D(-2.2351742e-08, 0.06293252, 0.06293252, 0, 0.06293251, -0.06293251, -0.15900007, -1.0244548e-08, -1.0244548e-08, 0.29897022, -0.4280554, 0.16795331)
+size = Vector3(0.749, 0.133, 1.533)
+material = SubResource("StandardMaterial3D_1jjld")
+
+[node name="h1" type="CSGBox3D" parent="puzzle1/part3/hint" unique_id=776514607]
+transform = Transform3D(1.0000004, 1.4901161e-08, -3.7252903e-09, -1.4901161e-08, 1.0000002, -8.940697e-08, -1.4901161e-08, -8.940697e-08, 1.0000002, 0.008656502, 0.12112236, 0.012958527)
+size = Vector3(0.375, 0.09449414, 0.508)
+material = SubResource("StandardMaterial3D_q7xu5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="puzzle1" unique_id=1460580645]
+libraries/ = SubResource("AnimationLibrary_elsen")
