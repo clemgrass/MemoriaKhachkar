@@ -1,5 +1,6 @@
 CSGBox3D
 CSGMesh3D
+MeshInstance3D
 CollisionShape3D
 AnimationPlayer
 Sprite3D
@@ -11,4 +12,3 @@ SpotLight3D
 DirectionalLight3D
 CSGCylinder3D
 CSGTorus3D
-CSGPolygon3D
