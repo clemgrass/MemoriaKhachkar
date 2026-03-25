@@ -25,6 +25,7 @@ var look_rotation : Vector2
 var move_speed : float = 0.0
 
 @onready var head: Node3D = $Head
+@onready var player_camera = $Head/Camera3D
 @onready var collider_player: CollisionShape3D = $Collider
 @onready var raycast = $Head/Camera3D/RayCast3D
 @onready var crosshair_normal = $Head/Camera3D/normal
@@ -33,6 +34,11 @@ var move_speed : float = 0.0
 """
 Practice code 
 """
+enum PlayerState { NORMAL, TERMINAL }
+var state : PlayerState = PlayerState.NORMAL
+var current_terminal: Node = null
+
+var has_crowbar: bool = false
 """
 Practice code 
 """
@@ -53,6 +59,24 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _physics_process(delta: float) -> void:
+	match state:
+		PlayerState.NORMAL:
+			_normal_movement(delta)
+		PlayerState.TERMINAL:
+			velocity = Vector3.ZERO
+			
+			if Input.is_action_just_pressed("enter"):
+				if current_terminal and current_terminal.terminal_input:
+					var text = current_terminal.terminal_input.text  
+					var answer = current_terminal.answer(text)
+					if answer:
+						exit_terminal()
+					else:
+						_on_terminal_text_entered(text) 
+			
+			move_and_slide()
+
+func _normal_movement(delta):
 	if has_gravity:
 		if not is_on_floor():
 			velocity += get_gravity() * delta
@@ -97,15 +121,67 @@ func _physics_process(delta: float) -> void:
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.pressed_button()
+			elif collider.is_in_group("p3_computer"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					enter_terminal(collider)
+			elif collider.is_in_group("p6_crowbar"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.grab_crowbar()
+					$Head/Camera3D/Crowbar.visible = true
+					has_crowbar = true
 			elif collider.is_in_group("khachkars"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.khachkar_photo()
 			else:
 				crosshair(false)
+		else:
+			crosshair(false)
 				
 	move_and_slide()
+
+func enter_terminal(terminal_node):
+	state = PlayerState.TERMINAL
+	can_move = false
+	can_jump = false
+	current_terminal = terminal_node
+	
+	player_camera.current = false
+	terminal_node.terminal_camera.current = true
+	
+	terminal_node.terminal_input.show()
+	terminal_node.terminal_input.grab_focus()
+	capture_mouse()
+
+func exit_terminal():
+	if current_terminal == null:
+		return
 		
+	current_terminal.terminal_camera.current = false
+	player_camera.current = true
+	
+	current_terminal.terminal_input.hide()
+	state = PlayerState.NORMAL
+	can_move = true
+	can_jump = true
+	current_terminal = null
+	capture_mouse()
+
+func _on_terminal_text_entered(text: String):
+	if current_terminal == null:
+		return
+
+	var command = text.strip_edges().to_lower()
+	
+	print(text)
+	current_terminal.terminal_input.text = ""
+
+	if command == "esc":
+		exit_terminal()
+		return
+
 func crosshair(wich: bool):
 	if wich:
 		crosshair_normal.visible = false

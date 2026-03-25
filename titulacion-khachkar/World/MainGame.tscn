@@ -30,22 +30,8 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" parent="." unique_id=1779176938 instance=ExtResource("2_ma34m")]
-transform = Transform3D(-0.6953986, 0, 0.7186242, 0, 1, 0, -0.7186242, 0, -0.6953986, 16.371607, 1.3927627, -23.29005)
-can_move = true
-has_gravity = true
-can_jump = true
-can_sprint = true
-look_speed = 0.002
-base_speed = 2.8
-jump_velocity = 4.5
+transform = Transform3D(-0.6953986, 0, 0.7186242, 0, 1, 0, -0.7186242, 0, -0.6953986, -27.812109, 1.437849, -5.3497)
 sprint_speed = 5.6
-input_left = "ui_left"
-input_right = "ui_right"
-input_forward = "ui_up"
-input_back = "ui_down"
-input_jump = "ui_accept"
-input_sprint = "sprint"
-input_left_click = "click_left"
 
 [node name="OutsideWorld" parent="." unique_id=1986257652 instance=ExtResource("3_rlvo1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7907693, 0)

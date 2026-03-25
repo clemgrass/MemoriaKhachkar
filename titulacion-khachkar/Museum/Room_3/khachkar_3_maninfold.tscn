@@ -1,0 +1,217 @@
+[gd_scene format=4 uid="uid://dhpan4fkkihl1"]
+
+[ext_resource type="PackedScene" uid="uid://00c5mkoyuvxs" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar3maninfold.glb" id="1_0t81n"]
+[ext_resource type="Texture2D" uid="uid://bwtcehk3ccfqk" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar3maninfold_khachkar3_uv_map.jpg" id="2_a0a1s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xr3ev"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("2_a0a1s")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gjl86"]
+_surfaces = [{
+"aabb": AABB(-1.4438688, 0.0021975636, -6.086925, 2.9901922, 11.392647, 6.087083),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("CAAJAAoACAALAAkACgAJAAwACwAIAA0ACgANAAgACQALAA4ACwANAA4ACQAOAAwACgAPAA0ADgANAA8ACgAMAA8ADgAPAAwAAAABAAIAAAADAAEAAgABAAQAAwAEAAEAAgAFAAAABQADAAAAAgAEAAYAAgAGAAUAAwAHAAQABgAEAAcABQAHAAMABgAHAAUA"),
+"lods": [3.6257834, PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAwAEAAEAAgAFAAAABQADAAAAAgAEAAYAAgAGAAUAAwAHAAQABgAEAAcABQAHAAMABgAHAAUA")],
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("8DKwOYNcAADwMv7/F5UAAPAysDkXlQAA8DL+/4NcAAD2w///F5UAAPbDsDmDXAAA9sOwOReVAAD2w///g1wAAAAAAAAAAAAAAACwOf7/AAAAAAAA/v8AAAAAsDkAAAAA/v+wOf//AAD//wAAAAAAAP//sDkAAAAA/v8AAP//AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jga4j"]
+resource_name = "khachkar3maninfold_ShapeIndexedFaceSet_001"
+_surfaces = [{
+"aabb": AABB(-1.4438688, 0.0021975636, -6.086925, 2.9901922, 11.392647, 6.087083),
+"attribute_data": PackedByteArray("Mac40v//ztYoqPjWhP/T0OSnTM9k+ivYX6kr2Fv10c/txni5DulJgw7peLntxkmDU4yRtSOsKYFhrV+2R415gDHILtK35b3WzcjP137qP9FTjJG1X6kr2A7peLlhrV+2jNZLogf25JRK9TKjStf8k/H1M5W31VCjf9ZGlCr1PKRV9giV89Udo7rWGpSO9Quk6O6nu7TSrMS00qe76O6sxOo////qP///6j///+o///8j7rm65tF3xObRuboj7nfE"),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("GAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AAAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"lods": [3.6257834, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": SubResource("StandardMaterial3D_xr3ev"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.9538915, 1.9458, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("8DKwOYNcI9XwMv7/F5WR1PAysDkXlTTV8DL+/4Ncf9T2w7A5F5Va1fbD//+DXIjV9sOwOYNcVNX2w///F5WO1fbDsDmDXP//8DL+/4Nc///wMrA5g1z///bD//+DXP//8DKwOReVJYP2w///F5XKgvbDsDkXlTOD8DL+/xeVvILwMv7/g1w0wPbD//8XlTLA8DL+/xeVOcD2w///g1wuwPAysDkXlQDA9sOwOYNcAMDwMrA5g1zXJvbDsDkXlQDAAAAAAAAAAcAAALA5/v8BwAAAAAD+/wHAAACwOQAAAcAAALA5AAD/////AAAAAP////+wOQAA//8AAAAAAAD/////sDkAAAHA/v8AAP//AcD+/7A5//8BwP//AAAAAAHAAAAAAP7////+/7A5//////7/AAD/////AACwOf7///8AAAAA/v//v///AAAAAP+/AAAAAAAA/7/+/wAA////vwAAsDn+//////+wOQAA///+/7A5/////wAAsDkAAP//GNVy1WXUy9Ut1WfVUNTW1aMqrSprKskqqiqqKmUqzSr/f/7//3/+//9/////f/7//////////////////////+/vB4gp8OqHRu9biNXwlIcwAV+CMAFfgrxZIVMwAV+CUYNW/lGDVv5Rg1b+UYNW/kmDtfxJg7X8SYO1/EmDtfy+fKABvnygAb58oAG+fKAB/3//f/9//3//f/9//3//fwAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_gjl86")
+
+[node name="khachkar3maninfold" unique_id=579800720 instance=ExtResource("1_0t81n")]
+
+[node name="ShapeIndexedFaceSet_001" parent="." index="0" unique_id=191579133]
+visible = false
+
+[node name="k3p1" type="CSGMesh3D" parent="." index="1" unique_id=1326391102]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p1" index="0" unique_id=1940101652]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p1" index="1" unique_id=1161660288]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128202, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 10.294481, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p2" type="CSGMesh3D" parent="." index="2" unique_id=2040017868]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p2" index="0" unique_id=976994498]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p2" index="1" unique_id=1412778378]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128201, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 10.293997, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p3" type="CSGMesh3D" parent="." index="3" unique_id=682413564]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p3" index="0" unique_id=1979174238]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p3" index="1" unique_id=95490052]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128199, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 10.293996, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p4" type="CSGMesh3D" parent="." index="4" unique_id=298845003]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p4" index="0" unique_id=822060354]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p4" index="1" unique_id=1000338010]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1282005, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 8.099009, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p5" type="CSGMesh3D" parent="." index="5" unique_id=812934970]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p5" index="0" unique_id=2067795187]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p5" index="1" unique_id=1477898130]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281996, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 8.098523, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p6" type="CSGMesh3D" parent="." index="6" unique_id=700865298]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p6" index="0" unique_id=659997837]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p6" index="1" unique_id=727862004]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281977, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 8.098523, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p7" type="CSGMesh3D" parent="." index="7" unique_id=1131644155]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p7" index="0" unique_id=2123013445]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p7" index="1" unique_id=1376150935]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281996, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 5.896744, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p8" type="CSGMesh3D" parent="." index="8" unique_id=340103704]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p8" index="0" unique_id=1105379746]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p8" index="1" unique_id=332243789]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281986, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 5.896259, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p9" type="CSGMesh3D" parent="." index="9" unique_id=153512637]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p9" index="0" unique_id=489000875]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p9" index="1" unique_id=1097315598]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281967, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 5.896259, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p10" type="CSGMesh3D" parent="." index="10" unique_id=1565876286]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p10" index="0" unique_id=1444692676]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p10" index="1" unique_id=1980074985]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281986, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 3.7371972, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p11" type="CSGMesh3D" parent="." index="11" unique_id=1476327884]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p11" index="0" unique_id=141887022]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p11" index="1" unique_id=1756874772]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281977, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 3.7367117, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
+[node name="k3p12" type="CSGMesh3D" parent="." index="12" unique_id=791359122]
+transform = Transform3D(-1.9233012e-08, 0, 0.13, 0, 0.195, 0, -0.44, 0, -5.6824803e-09, 0.47594452, 0, -0.085)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="k3p12" index="0" unique_id=1611002414]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="k3p12" index="1" unique_id=914640317]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128196, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 3.7367117, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)

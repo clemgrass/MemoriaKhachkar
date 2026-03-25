@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://uyc6a0144gf5" path="res://Player/player_controller.gd" id="1_3ehtj"]
 [ext_resource type="Texture2D" uid="uid://j7nv0wdgspik" path="res://Player/PNG/White Retina/crosshair002.png" id="2_i6w0m"]
 [ext_resource type="Texture2D" uid="uid://b575dpb28nak1" path="res://Player/PNG/White Retina/crosshair007.png" id="2_ob6mk"]
+[ext_resource type="PackedScene" uid="uid://g5de8nu46712" path="res://Museum/Room_Complisonist/crowbar.tscn" id="4_qphhv"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_2i3gr"]
 
@@ -10,21 +11,7 @@
 
 [node name="PlayerController" type="CharacterBody3D" unique_id=1779176938]
 script = ExtResource("1_3ehtj")
-can_move = null
-has_gravity = null
-can_jump = null
-can_sprint = null
-look_speed = null
-base_speed = null
-jump_velocity = null
 sprint_speed = 3.8
-input_left = null
-input_right = null
-input_forward = null
-input_back = null
-input_jump = null
-input_sprint = null
-input_left_click = null
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=969291666]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.73888963, 0)
@@ -39,6 +26,7 @@ shape = SubResource("CapsuleShape3D_t46ri")
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=294614914]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0055063963, -0.016380817)
+current = true
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=738494105]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
@@ -54,3 +42,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.264)
 visible = false
 pixel_size = 0.0001
 texture = ExtResource("2_ob6mk")
+
+[node name="Crowbar" parent="Head/Camera3D" unique_id=769933709 instance=ExtResource("4_qphhv")]
+transform = Transform3D(0.25712344, -0.18885085, 0.24949528, 0.3124851, 0.17179017, -0.19200572, -0.016297257, 0.3144018, 0.25477618, 0.03, -0.214, -0.321)
+visible = false

@@ -149,6 +149,12 @@ light_color = Color(1, 0.8745098, 0.6862745, 1)
 light_energy = 3.0
 omni_range = 15.0
 
+[node name="SpotLight3D8" type="SpotLight3D" parent="Room3" unique_id=1071941857]
+transform = Transform3D(0.39868474, -0.91691333, -0.01790205, 0.00839968, 0.023170607, -0.99969625, 0.9170496, 0.39841324, 0.016939545, 0.65657616, 1.1949911, 0.71819496)
+light_energy = 7.0
+spot_range = 50.631817
+spot_angle = 62.36648
+
 [node name="Room4" parent="." unique_id=830062090 instance=ExtResource("5_28ihr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.184, 0.05, -22.561335)
 
