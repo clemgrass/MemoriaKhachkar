@@ -1,58 +1,12 @@
-[gd_scene format=4 uid="uid://bwmd81jay1cl7"]
+[gd_scene format=4 uid="uid://787lf1x0xq6f"]
 
-[ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="1_77c2k"]
-[ext_resource type="Texture2D" uid="uid://xoa4c2pmmxwb" path="res://Museum/Room_0/textures/floor_tiles_02_diff_4k.jpg" id="1_p5acx"]
-[ext_resource type="Texture2D" uid="uid://blyiuxxdlh28q" path="res://Museum/Room_2/Metal048A_4K-JPG_Color.jpg" id="1_ykgkh"]
-[ext_resource type="Texture2D" uid="uid://dhlhcvesr88aw" path="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg" id="2_77c2k"]
-[ext_resource type="Texture2D" uid="uid://cmn0j3mja2yut" path="res://Museum/Room_2/Metal048A_4K-JPG_Metalness.jpg" id="2_fu4yr"]
-[ext_resource type="Texture2D" uid="uid://bug5axg4a4hok" path="res://Museum/Room_2/Metal048A_4K-JPG_Roughness.jpg" id="3_g0o56"]
-[ext_resource type="Texture2D" uid="uid://d21amkealwwoe" path="res://Museum/Room_0/textures/floor_tiles_02_rough_4k.jpg" id="3_gnjai"]
-[ext_resource type="Texture2D" uid="uid://d0tdvhminnv4f" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar2maninfold_khachkar2_uv_map.jpg" id="8_fu4yr"]
-[ext_resource type="Script" uid="uid://djqto51nik6i3" path="res://Museum/Room_2/highlight_collision.gd" id="9_g0o56"]
-[ext_resource type="PackedScene" uid="uid://dnwn0mrryxx2i" path="res://Museum/Room_2/khachkar_2.tscn" id="10_detsc"]
-[ext_resource type="Script" uid="uid://cedao80hchjyg" path="res://Museum/Room_2/collision_khachkar_2.gd" id="11_xuv8c"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_detsc"]
-albedo_texture = ExtResource("1_ykgkh")
-metallic = 1.0
-metallic_texture = ExtResource("2_fu4yr")
-roughness_texture = ExtResource("3_g0o56")
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_by3m2"]
-radius = 14.8
-height = 40.0
-radial_segments = 9
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_7p2nh"]
-radius = 13.8
-height = 40.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnjai"]
-albedo_texture = ExtResource("1_77c2k")
-uv1_scale = Vector3(1.11, 0.355, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uf2u5"]
-albedo_texture = ExtResource("1_p5acx")
-metallic = 1.0
-metallic_texture = ExtResource("2_77c2k")
-roughness_texture = ExtResource("3_gnjai")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykgkh"]
-albedo_texture = ExtResource("1_77c2k")
-uv1_scale = Vector3(15, 1, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fu4yr"]
-transparency = 1
-albedo_color = Color(1, 1, 0, 0.03529412)
-metallic = 0.1
-roughness = 0.1
-refraction_enabled = true
-refraction_scale = 0.01
+[ext_resource type="PackedScene" uid="uid://5h334jskgnuq" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar2maninfold.glb" id="1_oavxu"]
+[ext_resource type="Texture2D" uid="uid://d0tdvhminnv4f" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar2maninfold_khachkar2_uv_map.jpg" id="2_jgea6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd7ib"]
 resource_name = "Material.001"
 cull_mode = 2
-albedo_texture = ExtResource("8_fu4yr")
+albedo_texture = ExtResource("2_jgea6")
 roughness = 0.5
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k76og"]
@@ -89,2132 +43,2045 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k76og")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_fu4yr"]
-size = Vector3(1.2992554, 3.231079, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oavxu"]
+transparency = 1
+albedo_color = Color(0.78431374, 0.60784316, 0, 0.7529412)
 
-[node name="Room2" type="Node3D" unique_id=897654918]
+[sub_resource type="BoxShape3D" id="BoxShape3D_jgea6"]
+size = Vector3(0.085510254, 0.6176758, 0.541626)
 
-[node name="walls" type="CSGMesh3D" parent="." unique_id=342677882]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.34865665)
-material_override = SubResource("StandardMaterial3D_detsc")
-use_collision = true
-mesh = SubResource("CapsuleMesh_by3m2")
+[node name="khachkar2maninfold" unique_id=1513360567 instance=ExtResource("1_oavxu")]
 
-[node name="dbot" type="CSGBox3D" parent="walls" unique_id=500679820]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.6980286, 0)
+[node name="ShapeIndexedFaceSet_001" parent="." index="0" unique_id=831881975]
+visible = false
+
+[node name="k2p1" type="CSGMesh3D" parent="." index="1" unique_id=1972452381]
+transform = Transform3D(-4.218149e-08, 0, 0.013, 0, 0.434, 0, -0.965, 0, -5.6824806e-10, 0, 0.023, -0.089)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p1" index="0" unique_id=103314912]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2266785, -3.3430176)
+visible = false
 operation = 2
-size = Vector3(40.1416, 28.088318, 32.083984)
+size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="dtop" type="CSGMesh3D" parent="walls" unique_id=966377472]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0024790764, 0, 0.0024795532)
+[node name="d2" type="CSGBox3D" parent="k2p1" index="1" unique_id=1238484591]
+transform = Transform3D(1.0000001, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.235344, -3.3430176)
 operation = 2
-mesh = SubResource("CapsuleMesh_7p2nh")
+size = Vector3(0.99313354, 2.6723633, 7.686035)
 
-[node name="door" type="CSGBox3D" parent="walls" unique_id=1094990622]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 0.59729004, 15.247758)
+[node name="d3" type="CSGBox3D" parent="k2p1" index="2" unique_id=1491413294]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
-size = Vector3(1.6234741, 5.19458, 4.086426)
+size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="connect" type="CSGBox3D" parent="." unique_id=314439774]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059906006, 2.72052, 15.631669)
-material_override = SubResource("StandardMaterial3D_gnjai")
+[node name="d4" type="CSGBox3D" parent="k2p1" index="3" unique_id=1405853178]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
-use_collision = true
-size = Vector3(4.6228027, 9.44104, 3.3186035)
+size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="door" type="CSGBox3D" parent="connect" unique_id=1755019943]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2264061, 0)
+[node name="d5" type="CSGBox3D" parent="k2p1" index="4" unique_id=1812719356]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
-size = Vector3(1.6234741, 2.9886932, 4.086426)
+size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="floor" type="CSGCylinder3D" parent="." unique_id=2017231352]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
-material_override = SubResource("StandardMaterial3D_uf2u5")
-use_collision = true
-radius = 14.942383
-sides = 64
-
-[node name="Ramp" type="CSGCylinder3D" parent="." unique_id=323851568]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1987305, 0)
-material_override = SubResource("StandardMaterial3D_ykgkh")
-use_collision = true
-radius = 15.0
-height = 8.397461
-sides = 64
-
-[node name="dRamp" type="CSGCylinder3D" parent="Ramp" unique_id=926251945]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009961963, -0.009165287, 0.0018582344)
+[node name="d6" type="CSGBox3D" parent="k2p1" index="5" unique_id=511028917]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
-use_collision = true
-radius = 10.0
-height = 8.5
-sides = 64
+size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="dEntrance" type="CSGBox3D" parent="Ramp" unique_id=384742143]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.089660645, 0.34394836, 12.16024)
+[node name="d7" type="CSGBox3D" parent="k2p1" index="6" unique_id=909626364]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
-size = Vector3(4.6484375, 9.381195, 6.7783203)
+size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="rampCarving" type="CSGCylinder3D" parent="Ramp" unique_id=2007215321]
-transform = Transform3D(1, 0, 0, 0, 0.97437006, -0.22495104, 0, 0.22495104, 0.97437006, 0, 3.537189, 0.5029534)
+[node name="d8" type="CSGBox3D" parent="k2p1" index="7" unique_id=921338577]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
-use_collision = true
-radius = 13.5
-height = 8.618692
-sides = 64
+size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="windows" type="CSGMesh3D" parent="." unique_id=196532816]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.34865665)
-material_override = SubResource("StandardMaterial3D_fu4yr")
-mesh = SubResource("CapsuleMesh_7p2nh")
-
-[node name="door" type="CSGBox3D" parent="windows" unique_id=116058674]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.062385082, 0.59729004, 15.245278)
+[node name="d9" type="CSGBox3D" parent="k2p1" index="8" unique_id=1211475396]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
-size = Vector3(1.6234741, 5.19458, 4.086426)
+size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="dbot" type="CSGBox3D" parent="windows" unique_id=939850168]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024790764, -6.6980286, -0.0024795532)
+[node name="k2p2" type="CSGMesh3D" parent="." index="2" unique_id=1308314978]
+transform = Transform3D(-5.4857793e-08, 0, 0.013, 0, 0.569, 0, -1.255, 0, -5.6824806e-10, -2.004, -0.427, -0.124)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p2" index="0" unique_id=277151888]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2543876, -3.343018)
 operation = 2
-size = Vector3(40.1416, 28.088318, 32.083984)
+size = Vector3(2.2423096, 2.7104492, 7.686035)
 
-[node name="dwin" type="CSGMesh3D" parent="windows" unique_id=1058585135]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024790764, 0, -0.0024795532)
+[node name="d2" type="CSGBox3D" parent="k2p2" index="1" unique_id=989660228]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9999164, 0, -1.4210855e-13, 0, 1, -0.99526215, 1.2266778, -3.3430176)
+visible = false
 operation = 2
-use_collision = true
-mesh = SubResource("CapsuleMesh_by3m2")
+size = Vector3(0.99313354, 2.6550293, 7.686035)
 
-[node name="khachkar2maninfold" type="Node3D" parent="." unique_id=1513360567]
-transform = Transform3D(-0.8665425, -0.45015457, 0.21555665, -0.45739806, 0.88908076, 0.017949129, -0.19972712, -0.08304158, -0.9763265, -5.3889627, 6.064646, 1.6797333)
+[node name="d3" type="CSGBox3D" parent="k2p2" index="2" unique_id=1519985150]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="distractors" type="Node3D" parent="khachkar2maninfold" unique_id=565840074]
+[node name="d4" type="CSGBox3D" parent="k2p2" index="3" unique_id=1785139915]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="k2p1" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=934531823]
+[node name="d5" type="CSGBox3D" parent="k2p2" index="4" unique_id=264043637]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p2" index="5" unique_id=852454778]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p2" index="6" unique_id=1077768568]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p2" index="7" unique_id=1106491452]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p2" index="8" unique_id=384948153]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="k2p3" type="CSGMesh3D" parent="." index="3" unique_id=1160696971]
+transform = Transform3D(-6.749038e-08, 0, 0.013, 0, 0.694, 0, -1.544, 0, -5.6824806e-10, -2.432, -0.927, -0.074)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p3" index="0" unique_id=1254546951]
+transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2519461, -3.3430176)
+operation = 2
+size = Vector3(2.2423096, 2.7055664, 7.686035)
+
+[node name="d2" type="CSGBox3D" parent="k2p3" index="1" unique_id=1430488863]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2599391, -3.3430176)
+operation = 2
+size = Vector3(0.99313354, 2.7215576, 7.686035)
+
+[node name="d3" type="CSGBox3D" parent="k2p3" index="2" unique_id=514591579]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+visible = false
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
+
+[node name="d4" type="CSGBox3D" parent="k2p3" index="3" unique_id=545574377]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
+
+[node name="d5" type="CSGBox3D" parent="k2p3" index="4" unique_id=960235461]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p3" index="5" unique_id=788302634]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p3" index="6" unique_id=107892327]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p3" index="7" unique_id=1997991120]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p3" index="8" unique_id=533363960]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="k2p4" type="CSGMesh3D" parent="." index="4" unique_id=1885128140]
+transform = Transform3D(-7.7325446e-08, 0, 0.013, 0, 0.827, 0, -1.769, 0, -5.6824806e-10, -4.102, -1.397, -0.059)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p4" index="0" unique_id=319701162]
+transform = Transform3D(1.0000002, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2687303, -3.3430195)
+operation = 2
+size = Vector3(2.2423096, 2.7391357, 7.686035)
+
+[node name="d2" type="CSGBox3D" parent="k2p4" index="1" unique_id=128868921]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.9999163, 0, -1.4210855e-13, 0, 1, -0.9952622, 1.259756, -3.3430195)
+operation = 2
+size = Vector3(0.99313354, 2.7211914, 7.686035)
+
+[node name="d3" type="CSGBox3D" parent="k2p4" index="2" unique_id=87589584]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
+
+[node name="d4" type="CSGBox3D" parent="k2p4" index="3" unique_id=207413355]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+visible = false
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
+
+[node name="d5" type="CSGBox3D" parent="k2p4" index="4" unique_id=1944993925]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+visible = false
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p4" index="5" unique_id=1616011170]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p4" index="6" unique_id=599365269]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p4" index="7" unique_id=194638175]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p4" index="8" unique_id=1917151301]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="k2p5" type="CSGMesh3D" parent="." index="5" unique_id=1706085544]
+transform = Transform3D(-9.1356796e-08, 0, 0.013, 0, 0.959, 0, -2.09, 0, -5.6824806e-10, -6.024, -1.807, -0.069)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p5" index="0" unique_id=902837325]
+transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2357724, -3.3430138)
+operation = 2
+size = Vector3(2.2423096, 2.6732178, 7.686035)
+
+[node name="d2" type="CSGBox3D" parent="k2p5" index="1" unique_id=530928225]
+transform = Transform3D(1, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2518221, -3.3430138)
+operation = 2
+size = Vector3(0.99313354, 2.7053223, 7.686035)
+
+[node name="d3" type="CSGBox3D" parent="k2p5" index="2" unique_id=1362410623]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
+
+[node name="d4" type="CSGBox3D" parent="k2p5" index="3" unique_id=879236350]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
+
+[node name="d5" type="CSGBox3D" parent="k2p5" index="4" unique_id=247590461]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p5" index="5" unique_id=1754159565]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+visible = false
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p5" index="6" unique_id=1584295969]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p5" index="7" unique_id=776562709]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p5" index="8" unique_id=1305138015]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="k2p6" type="CSGMesh3D" parent="." index="6" unique_id=1795597562]
+transform = Transform3D(-1.0586898e-07, 0, 0.013, 0, 1.089, 0, -2.422, 0, -5.6824806e-10, -8.133, -2.157, -0.089)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p6" index="0" unique_id=14211590]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.6211546, 1.2675798, -3.3430138)
+operation = 2
+size = Vector3(2.2423096, 2.6550293, 7.686035)
+
+[node name="d2" type="CSGBox3D" parent="k2p6" index="1" unique_id=67531106]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2446206, -3.3430138)
+operation = 2
+size = Vector3(0.99313354, 2.690918, 7.686035)
+
+[node name="d3" type="CSGBox3D" parent="k2p6" index="2" unique_id=2104708659]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
+
+[node name="d4" type="CSGBox3D" parent="k2p6" index="3" unique_id=873773332]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
+
+[node name="d5" type="CSGBox3D" parent="k2p6" index="4" unique_id=1053473987]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p6" index="5" unique_id=694627057]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p6" index="6" unique_id=1721262690]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+visible = false
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p6" index="7" unique_id=2096305227]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p6" index="8" unique_id=841459878]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="k2p7" type="CSGMesh3D" parent="." index="7" unique_id=2069659114]
+transform = Transform3D(-1.1854528e-07, 0, 0.013, 0, 1.22, 0, -2.712, 0, -5.6824806e-10, -10.07, -2.592, -0.089)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p7" index="0" unique_id=1131977623]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2288755, -3.3430176)
+operation = 2
+size = Vector3(2.2423096, 2.6594238, 7.686035)
+
+[node name="d2" type="CSGBox3D" parent="k2p7" index="1" unique_id=1252298571]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2357712, -3.3430176)
+operation = 2
+size = Vector3(0.99313354, 2.6732178, 7.686035)
+
+[node name="d3" type="CSGBox3D" parent="k2p7" index="2" unique_id=997979250]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
+
+[node name="d4" type="CSGBox3D" parent="k2p7" index="3" unique_id=1165095622]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
+
+[node name="d5" type="CSGBox3D" parent="k2p7" index="4" unique_id=1000047271]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p7" index="5" unique_id=568548799]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p7" index="6" unique_id=439403700]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p7" index="7" unique_id=1433643817]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+visible = false
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p7" index="8" unique_id=690700880]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="k2p8" type="CSGMesh3D" parent="." index="8" unique_id=254213305]
+transform = Transform3D(-1.3117787e-07, 0, 0.013, 0, 1.36, 0, -3.001, 0, -5.6824806e-10, -12.048, -3.052, -0.119)
+mesh = SubResource("ArrayMesh_35ddn")
+
+[node name="d1" type="CSGBox3D" parent="k2p8" index="0" unique_id=450436656]
+transform = Transform3D(1.000001, 0, 0, 0, 0.9999725, 0, -1.2789769e-13, 0, 1, 0.6155704, 1.230241, -3.3430176)
+operation = 2
+size = Vector3(2.253479, 2.6621552, 7.686035)
+
+[node name="d2" type="CSGBox3D" parent="k2p8" index="1" unique_id=645767331]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2377241, -3.3430176)
+operation = 2
+size = Vector3(0.99313354, 2.677124, 7.686035)
+
+[node name="d3" type="CSGBox3D" parent="k2p8" index="2" unique_id=141920686]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
+operation = 2
+size = Vector3(1.1984787, 3.486145, 7.686035)
+
+[node name="d4" type="CSGBox3D" parent="k2p8" index="3" unique_id=1840315646]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.29786634, 3.486145, 7.686035)
+
+[node name="d5" type="CSGBox3D" parent="k2p8" index="4" unique_id=1615136926]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+operation = 2
+size = Vector3(0.30811286, 3.486145, 7.686035)
+
+[node name="d6" type="CSGBox3D" parent="k2p8" index="5" unique_id=1032083434]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 1.57761, 7.686035)
+
+[node name="d7" type="CSGBox3D" parent="k2p8" index="6" unique_id=1043824092]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
+operation = 2
+size = Vector3(1.729063, 2.2985196, 7.686035)
+
+[node name="d8" type="CSGBox3D" parent="k2p8" index="7" unique_id=914319616]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
+operation = 2
+size = Vector3(1.2292776, 1.4799784, 7.686035)
+
+[node name="d9" type="CSGBox3D" parent="k2p8" index="8" unique_id=1293904343]
+transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+visible = false
+operation = 2
+size = Vector3(0.4958228, 1.4799784, 7.686035)
+
+[node name="Camera3D" type="Camera3D" parent="." index="9" unique_id=2104778812]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.6295347, 1.5, 0)
+
+[node name="distractors" type="Node3D" parent="." index="10" unique_id=565840074]
+
+[node name="k2p1" type="CSGMesh3D" parent="distractors" index="0" unique_id=934531823]
 transform = Transform3D(0.8673288, 0, 0.0056990287, 0, 0.434, 0, -0.42304325, 0, 0.011684223, -9.456, 0.023, 6.124)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=1119625791]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p1" index="0" unique_id=1119625791]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2266785, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=56867746]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p1" index="1" unique_id=56867746]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.235344, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6723633, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=409987569]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p1" index="2" unique_id=409987569]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=530469218]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p1" index="3" unique_id=530469218]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=1288720893]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p1" index="4" unique_id=1288720893]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=1178862705]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p1" index="5" unique_id=1178862705]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=1373485383]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p1" index="6" unique_id=1373485383]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=1057593027]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p1" index="7" unique_id=1057593027]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p1" unique_id=1825908370]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p1" index="8" unique_id=1825908370]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p2" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1997887885]
+[node name="k2p2" type="CSGMesh3D" parent="distractors" index="1" unique_id=1997887885]
 transform = Transform3D(1.1279769, 0, 0.0056990287, 0, 0.569, 0, -0.5501755, 0, 0.011684224, -3.228, -0.427, -4.559)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=596658710]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p2" index="0" unique_id=596658710]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2543876, -3.343018)
 operation = 2
 size = Vector3(2.2423096, 2.7104492, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=1261888113]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p2" index="1" unique_id=1261888113]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999164, 0, -1.4210855e-13, 0, 1, -0.99526215, 1.2266778, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.99313354, 2.6550293, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=1791406727]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p2" index="2" unique_id=1791406727]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=1486697924]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p2" index="3" unique_id=1486697924]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=2137244442]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p2" index="4" unique_id=2137244442]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=1564176580]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p2" index="5" unique_id=1564176580]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=192312318]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p2" index="6" unique_id=192312318]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=762395215]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p2" index="7" unique_id=762395215]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p2" unique_id=2095546832]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p2" index="8" unique_id=2095546832]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p3" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=813822772]
+[node name="k2p3" type="CSGMesh3D" parent="distractors" index="2" unique_id=813822772]
 transform = Transform3D(1.3877264, 0, 0.0056990297, 0, 0.694, 0, -0.6768694, 0, 0.011684225, -5.892, -1.597, 3.029)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1600802953]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p3" index="0" unique_id=1600802953]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2519461, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.7055664, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1732704872]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p3" index="1" unique_id=1732704872]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2599391, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.7215576, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1921792371]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p3" index="2" unique_id=1921792371]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1299362951]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p3" index="3" unique_id=1299362951]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1775177935]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p3" index="4" unique_id=1775177935]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=2012339371]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p3" index="5" unique_id=2012339371]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1468382242]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p3" index="6" unique_id=1468382242]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=1564448452]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p3" index="7" unique_id=1564448452]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p3" unique_id=940106544]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p3" index="8" unique_id=940106544]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p4" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=868886001]
+[node name="k2p4" type="CSGMesh3D" parent="distractors" index="3" unique_id=868886001]
 transform = Transform3D(1.5899532, 0, 0.0056990287, 0, 0.82699996, 0, -0.7755062, 0, 0.011684222, -13.37624, -5.542, 6.482)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=414565013]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p4" index="0" unique_id=414565013]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2687303, -3.3430195)
 operation = 2
 size = Vector3(2.2423096, 2.7391357, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=1734230863]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p4" index="1" unique_id=1734230863]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999163, 0, -1.4210855e-13, 0, 1, -0.9952622, 1.259756, -3.3430195)
 operation = 2
 size = Vector3(0.99313354, 2.7211914, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=541584947]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p4" index="2" unique_id=541584947]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=1851405689]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p4" index="3" unique_id=1851405689]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=953093540]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p4" index="4" unique_id=953093540]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=1260786075]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p4" index="5" unique_id=1260786075]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=577280029]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p4" index="6" unique_id=577280029]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=515138894]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p4" index="7" unique_id=515138894]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p4" unique_id=666769631]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p4" index="8" unique_id=666769631]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p5" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1850868741]
+[node name="k2p5" type="CSGMesh3D" parent="distractors" index="4" unique_id=1850868741]
 transform = Transform3D(1.8784634, 0, 0.0056990287, 0, 0.959, 0, -0.91622835, 0, 0.011684223, -9.421, -4.302, -4.647)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=359415802]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p5" index="0" unique_id=359415802]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2357724, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6732178, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=1994401197]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p5" index="1" unique_id=1994401197]
 transform = Transform3D(1, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2518221, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.7053223, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=86081217]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p5" index="2" unique_id=86081217]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=1552981045]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p5" index="3" unique_id=1552981045]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=1338965318]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p5" index="4" unique_id=1338965318]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=2020946575]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p5" index="5" unique_id=2020946575]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=1449175094]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p5" index="6" unique_id=1449175094]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=1380582917]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p5" index="7" unique_id=1380582917]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p5" unique_id=63638355]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p5" index="8" unique_id=63638355]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p6" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1721637033]
+[node name="k2p6" type="CSGMesh3D" parent="distractors" index="5" unique_id=1721637033]
 transform = Transform3D(2.176861, 0, 0.0056990297, 0, 1.089, 0, -1.0617728, 0, 0.011684223, -4.57, -4.922, 5.032)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=1999055167]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p6" index="0" unique_id=1999055167]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.6211546, 1.2675798, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=318560953]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p6" index="1" unique_id=318560953]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2446206, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.690918, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=1240557926]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p6" index="2" unique_id=1240557926]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=1335553401]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p6" index="3" unique_id=1335553401]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=1446237413]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p6" index="4" unique_id=1446237413]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=833775553]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p6" index="5" unique_id=833775553]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=810005227]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p6" index="6" unique_id=810005227]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=826209068]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p6" index="7" unique_id=826209068]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p6" unique_id=1939105814]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p6" index="8" unique_id=1939105814]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p7" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=2120479738]
+[node name="k2p7" type="CSGMesh3D" parent="distractors" index="6" unique_id=2120479738]
 transform = Transform3D(2.437509, 0, 0.0056990297, 0, 1.22, 0, -1.1889051, 0, 0.011684224, -2.077, -3.332, -5.519)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=2105973429]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p7" index="0" unique_id=2105973429]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2288755, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.6594238, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=360461620]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p7" index="1" unique_id=360461620]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2357712, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6732178, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=738770161]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p7" index="2" unique_id=738770161]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=1209046336]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p7" index="3" unique_id=1209046336]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=1459871761]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p7" index="4" unique_id=1459871761]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=1475969816]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p7" index="5" unique_id=1475969816]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=1791865619]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p7" index="6" unique_id=1791865619]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=612519064]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p7" index="7" unique_id=612519064]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p7" unique_id=729965597]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p7" index="8" unique_id=729965597]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p8" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=753765603]
+[node name="k2p8" type="CSGMesh3D" parent="distractors" index="7" unique_id=753765603]
 transform = Transform3D(2.6972585, 0, 0.0056990297, 0, 1.36, 0, -1.3155991, 0, 0.011684225, -6.023, -1.337, -5.915)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=1957640974]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p8" index="0" unique_id=1957640974]
 transform = Transform3D(1.000001, 0, 0, 0, 0.9999725, 0, -1.2789769e-13, 0, 1, 0.6155704, 1.230241, -3.3430176)
 operation = 2
 size = Vector3(2.253479, 2.6621552, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=1594617048]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p8" index="1" unique_id=1594617048]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2377241, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.677124, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=1434438278]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p8" index="2" unique_id=1434438278]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=462743754]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p8" index="3" unique_id=462743754]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=1709787053]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p8" index="4" unique_id=1709787053]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=737422546]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p8" index="5" unique_id=737422546]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=1048424508]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p8" index="6" unique_id=1048424508]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=683626496]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p8" index="7" unique_id=683626496]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p8" unique_id=1138168078]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p8" index="8" unique_id=1138168078]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p9" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1137641749]
+[node name="k2p9" type="CSGMesh3D" parent="distractors" index="8" unique_id=1137641749]
 transform = Transform3D(-0.67702144, -0.03170985, 0.009214902, 0.049598567, -0.43284002, -0.0006750833, 0.6858623, 0, 0.009144938, -3.611, 3.299, -5.988)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=1361526996]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p9" index="0" unique_id=1361526996]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2266785, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=337889009]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p9" index="1" unique_id=337889009]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.235344, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6723633, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=565609450]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p9" index="2" unique_id=565609450]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=2069761103]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p9" index="3" unique_id=2069761103]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=1620689451]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p9" index="4" unique_id=1620689451]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=896335327]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p9" index="5" unique_id=896335327]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=991922369]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p9" index="6" unique_id=991922369]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=1811011692]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p9" index="7" unique_id=1811011692]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p9" unique_id=1267600956]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p9" index="8" unique_id=1267600956]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p10" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1841482963]
+[node name="k2p10" type="CSGMesh3D" parent="distractors" index="9" unique_id=1841482963]
 transform = Transform3D(-0.8804786, -0.041573513, 0.009214902, 0.06450384, -0.56747925, -0.00067508337, 0.8919763, 0, 0.009144938, -15.801296, 4.462551, -0.16995192)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=2063119433]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p10" index="0" unique_id=2063119433]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2543876, -3.343018)
 operation = 2
 size = Vector3(2.2423096, 2.7104492, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=892010783]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p10" index="1" unique_id=892010783]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999164, 0, -1.4210855e-13, 0, 1, -0.99526215, 1.2266778, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.99313354, 2.6550293, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=1392610107]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p10" index="2" unique_id=1392610107]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=362546310]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p10" index="3" unique_id=362546310]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=495902954]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p10" index="4" unique_id=495902954]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=389164776]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p10" index="5" unique_id=389164776]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=1854797534]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p10" index="6" unique_id=1854797534]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=1861906683]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p10" index="7" unique_id=1861906683]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p10" unique_id=456068373]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p10" index="8" unique_id=456068373]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p11" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=517047963]
+[node name="k2p11" type="CSGMesh3D" parent="distractors" index="10" unique_id=517047963]
 transform = Transform3D(-1.0832343, -0.033536475, 0.0092148995, 0.07935782, -0.45777318, -0.00067508325, 1.0973796, 2.3938714e-08, 0.009144938, -7.696, 3.012, -0.035)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=452789162]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p11" index="0" unique_id=452789162]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2519461, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.7055664, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=1642214766]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p11" index="1" unique_id=1642214766]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2599391, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.7215576, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=1511135429]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p11" index="2" unique_id=1511135429]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=1126292384]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p11" index="3" unique_id=1126292384]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=1039519792]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p11" index="4" unique_id=1039519792]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=2098181427]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p11" index="5" unique_id=2098181427]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=1527750704]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p11" index="6" unique_id=1527750704]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=289464386]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p11" index="7" unique_id=289464386]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p11" unique_id=398880660]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p11" index="8" unique_id=398880660]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p12" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1137267092]
+[node name="k2p12" type="CSGMesh3D" parent="distractors" index="11" unique_id=1137267092]
 transform = Transform3D(-1.2410889, -0.06042406, 0.0092148995, 0.09092214, -0.8247897, -0.0006750833, 1.2572958, 0, 0.009144937, -0.775, 10.345, -6.875)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=1823019080]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p12" index="0" unique_id=1823019080]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2687303, -3.3430195)
 operation = 2
 size = Vector3(2.2423096, 2.7391357, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=364205493]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p12" index="1" unique_id=364205493]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999163, 0, -1.4210855e-13, 0, 1, -0.9952622, 1.259756, -3.3430195)
 operation = 2
 size = Vector3(0.99313354, 2.7211914, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=1180901890]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p12" index="2" unique_id=1180901890]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=1370355897]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p12" index="3" unique_id=1370355897]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=1439758501]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p12" index="4" unique_id=1439758501]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=1794026668]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p12" index="5" unique_id=1794026668]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=71276603]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p12" index="6" unique_id=71276603]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=2141203459]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p12" index="7" unique_id=2141203459]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p12" unique_id=208674036]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p12" index="8" unique_id=208674036]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p13" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=703133066]
+[node name="k2p13" type="CSGMesh3D" parent="distractors" index="12" unique_id=703133066]
 transform = Transform3D(-1.4662948, -0.07006853, 0.0092148995, 0.10742071, -0.95643693, -0.0006750833, 1.4854424, 0, 0.009144936, -12.618668, 8.188, -3.574)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=32771497]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p13" index="0" unique_id=32771497]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2357724, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6732178, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=1055466030]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p13" index="1" unique_id=1055466030]
 transform = Transform3D(1, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2518221, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.7053223, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=1063419928]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p13" index="2" unique_id=1063419928]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=967887201]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p13" index="3" unique_id=967887201]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=619572189]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p13" index="4" unique_id=619572189]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=1750949520]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p13" index="5" unique_id=1750949520]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=223244048]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p13" index="6" unique_id=223244048]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=639581495]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p13" index="7" unique_id=639581495]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p13" unique_id=1860347005]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p13" index="8" unique_id=1860347005]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p14" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1157810984]
+[node name="k2p14" type="CSGMesh3D" parent="distractors" index="13" unique_id=1157810984]
 transform = Transform3D(-1.6992185, -0.079566866, 0.0092149, 0.124484666, -1.0860893, -0.00067508325, 1.7214082, 0, 0.009144938, -5.983, 12.84, 4.125)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=109486953]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p14" index="0" unique_id=109486953]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.6211546, 1.2675798, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=2028605444]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p14" index="1" unique_id=2028605444]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2446206, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.690918, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=1284233085]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p14" index="2" unique_id=1284233085]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=198607293]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p14" index="3" unique_id=198607293]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=1873540886]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p14" index="4" unique_id=1873540886]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=476522568]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p14" index="5" unique_id=476522568]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=170474359]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p14" index="6" unique_id=170474359]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=1405669143]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p14" index="7" unique_id=1405669143]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p14" unique_id=1546542477]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p14" index="8" unique_id=1546542477]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p15" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1538785472]
+[node name="k2p15" type="CSGMesh3D" parent="distractors" index="14" unique_id=1538785472]
 transform = Transform3D(-1.9026756, -0.08913827, 0.009214901, 0.13938995, -1.216739, -0.0006750833, 1.927522, 0, 0.009144937, -12.120968, 7.453, 0.592)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=1813323439]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p15" index="0" unique_id=1813323439]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2288755, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.6594238, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=167873040]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p15" index="1" unique_id=167873040]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2357712, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6732178, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=2069305071]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p15" index="2" unique_id=2069305071]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=965258381]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p15" index="3" unique_id=965258381]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=683832885]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p15" index="4" unique_id=683832885]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=1112379174]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p15" index="5" unique_id=1112379174]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=865900810]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p15" index="6" unique_id=865900810]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=1752771427]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p15" index="7" unique_id=1752771427]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p15" unique_id=1850106015]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p15" index="8" unique_id=1850106015]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p16" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=278257435]
+[node name="k2p16" type="CSGMesh3D" parent="distractors" index="15" unique_id=278257435]
 transform = Transform3D(-2.1054318, -0.09936726, 0.009214901, 0.15424386, -1.3563651, -0.0006750834, 2.1329255, 0, 0.009144939, -16.122, 5.398, 6.348)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=642184118]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p16" index="0" unique_id=642184118]
 transform = Transform3D(1.000001, 0, 0, 0, 0.9999725, 0, -1.2789769e-13, 0, 1, 0.6155704, 1.230241, -3.3430176)
 operation = 2
 size = Vector3(2.253479, 2.6621552, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=1397800207]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p16" index="1" unique_id=1397800207]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2377241, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.677124, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=1467519187]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p16" index="2" unique_id=1467519187]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=1051052857]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p16" index="3" unique_id=1051052857]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=1823842287]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p16" index="4" unique_id=1823842287]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=525798366]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p16" index="5" unique_id=525798366]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=1888973191]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p16" index="6" unique_id=1888973191]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=844155704]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p16" index="7" unique_id=844155704]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p16" unique_id=1786335013]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p16" index="8" unique_id=1786335013]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p17" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1318581312]
+[node name="k2p17" type="CSGMesh3D" parent="distractors" index="16" unique_id=1318581312]
 transform = Transform3D(-0.6430042, 0.23043922, -0.0068059103, -0.3501199, -0.36640534, -0.0051280186, -0.62863874, -0.03163592, 0.009817487, -7.896096, 2.0288625, 5.2499533)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=1643386630]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p17" index="0" unique_id=1643386630]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2266785, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=1369364459]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p17" index="1" unique_id=1369364459]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.235344, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6723633, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=1578986793]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p17" index="2" unique_id=1578986793]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=514728405]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p17" index="3" unique_id=514728405]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=605100743]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p17" index="4" unique_id=605100743]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=1641666262]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p17" index="5" unique_id=1641666262]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=1778075800]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p17" index="6" unique_id=1778075800]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=761542997]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p17" index="7" unique_id=761542997]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p17" unique_id=1340035867]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p17" index="8" unique_id=1340035867]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p18" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1861608832]
+[node name="k2p18" type="CSGMesh3D" parent="distractors" index="17" unique_id=1861608832]
 transform = Transform3D(-0.83623874, 0.30211967, -0.006805911, -0.45533735, -0.48037946, -0.0051280195, -0.8175562, -0.041476596, 0.009817486, -9.320912, -0.55042315, -1.1077847)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=816198105]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p18" index="0" unique_id=816198105]
 transform = Transform3D(1, 1.4901161e-08, 0, 5.2154064e-08, 0.9999725, 4.656613e-10, 3.8146973e-06, 1.66893e-06, 1, -3.1843805, 7.9428697, -291.99368)
 operation = 2
 size = Vector3(2.2423096, 2.7104492, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=1799873455]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p18" index="1" unique_id=1799873455]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999164, 0, -1.4210855e-13, 0, 1, -0.99526215, 1.2266778, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.99313354, 2.6550293, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=212517130]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p18" index="2" unique_id=212517130]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=654086932]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p18" index="3" unique_id=654086932]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=1648848152]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p18" index="4" unique_id=1648848152]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=1723191030]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p18" index="5" unique_id=1723191030]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=2136546645]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p18" index="6" unique_id=2136546645]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=2065039634]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p18" index="7" unique_id=2065039634]
 transform = Transform3D(0.99999976, 2.0489097e-08, 0, 2.9802322e-08, 0.9998214, 4.656613e-10, 3.8146973e-06, 1.9073486e-06, 1, 0.24714088, 3.1674852, -0.5744629)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p18" unique_id=409293365]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p18" index="8" unique_id=409293365]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p19" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1408314056]
+[node name="k2p19" type="CSGMesh3D" parent="distractors" index="18" unique_id=1408314056]
 transform = Transform3D(-1.0288068, 0.24371341, -0.006805911, -0.5601917, -0.3875118, -0.0051280195, -1.0058222, -0.0334583, 0.009817484, -12.988943, -1.5498838, 1.5807188)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=1648725513]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p19" index="0" unique_id=1648725513]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2519461, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.7055664, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=1706510293]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p19" index="1" unique_id=1706510293]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2599391, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.7215576, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=1940154921]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p19" index="2" unique_id=1940154921]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=351598306]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p19" index="3" unique_id=351598306]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=1636932397]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p19" index="4" unique_id=1636932397]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=2090309814]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p19" index="5" unique_id=2090309814]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=1060714512]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p19" index="6" unique_id=1060714512]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=235165478]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p19" index="7" unique_id=235165478]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p19" unique_id=1660901521]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p19" index="8" unique_id=1660901521]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p20" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1572152820]
+[node name="k2p20" type="CSGMesh3D" parent="distractors" index="19" unique_id=1572152820]
 transform = Transform3D(-1.1787299, 0.43910885, -0.006805909, -0.641826, -0.6981965, -0.0051280186, -1.1523958, -0.060283203, 0.009817483, -10.76699, 8.553215, 8.018812)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=2045793105]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p20" index="0" unique_id=2045793105]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2687303, -3.3430195)
 operation = 2
 size = Vector3(2.2423096, 2.7391357, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=790854708]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p20" index="1" unique_id=790854708]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999163, 0, -1.4210855e-13, 0, 1, -0.9952622, 1.259756, -3.3430195)
 operation = 2
 size = Vector3(0.99313354, 2.7211914, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=97769742]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p20" index="2" unique_id=97769742]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=1246147121]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p20" index="3" unique_id=1246147121]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=1168675417]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p20" index="4" unique_id=1168675417]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=1362791952]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p20" index="5" unique_id=1362791952]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=1853116119]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p20" index="6" unique_id=1853116119]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=2026150774]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p20" index="7" unique_id=2026150774]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p20" unique_id=804874530]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p20" index="8" unique_id=804874530]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p21" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=433801578]
+[node name="k2p21" type="CSGMesh3D" parent="distractors" index="20" unique_id=433801578]
 transform = Transform3D(-1.39262, 0.50919634, -0.0068059075, -0.7582906, -0.80963784, -0.0051280186, -1.3615075, -0.069905184, 0.009817482, -13.070534, 4.5321536, -3.5719805)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=1761426039]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p21" index="0" unique_id=1761426039]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2357724, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6732178, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=1836107294]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p21" index="1" unique_id=1836107294]
 transform = Transform3D(1, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2518221, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.7053223, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=702821392]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p21" index="2" unique_id=702821392]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=318274036]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p21" index="3" unique_id=318274036]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=1901886683]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p21" index="4" unique_id=1901886683]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=527902580]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p21" index="5" unique_id=527902580]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=401199752]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p21" index="6" unique_id=401199752]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=1811743944]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p21" index="7" unique_id=1811743944]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p21" unique_id=1333848364]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p21" index="8" unique_id=1333848364]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p22" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1506722941]
+[node name="k2p22" type="CSGMesh3D" parent="distractors" index="21" unique_id=1506722941]
 transform = Transform3D(-1.6138407, 0.57822186, -0.00680591, -0.87874675, -0.9193903, -0.005128019, -1.5777856, -0.079381384, 0.009817484, -15.307751, 4.578941, 3.5736105)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=793399706]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p22" index="0" unique_id=793399706]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.6211546, 1.2675798, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=543339565]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p22" index="1" unique_id=543339565]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2446206, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.690918, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=1176927252]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p22" index="2" unique_id=1176927252]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=1706990005]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p22" index="3" unique_id=1706990005]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=1344524180]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p22" index="4" unique_id=1344524180]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=1722066704]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p22" index="5" unique_id=1722066704]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=761916160]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p22" index="6" unique_id=761916160]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=315134094]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p22" index="7" unique_id=315134094]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p22" unique_id=787710529]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p22" index="8" unique_id=787710529]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p23" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1967265651]
+[node name="k2p23" type="CSGMesh3D" parent="distractors" index="22" unique_id=1967265651]
 transform = Transform3D(-1.8070754, 0.64777845, -0.0068059107, -0.98396415, -1.0299875, -0.005128019, -1.7667027, -0.08893049, 0.009817485, -7.214244, 1.526182, -3.5005946)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=868619581]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p23" index="0" unique_id=868619581]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2288755, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.6594238, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=68661278]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p23" index="1" unique_id=68661278]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2357712, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6732178, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=1622222768]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p23" index="2" unique_id=1622222768]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=1430653031]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p23" index="3" unique_id=1430653031]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=1163032960]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p23" index="4" unique_id=1163032960]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=1685868216]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p23" index="5" unique_id=1685868216]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=1151237967]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p23" index="6" unique_id=1151237967]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=110813633]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p23" index="7" unique_id=110813633]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p23" unique_id=68237239]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p23" index="8" unique_id=68237239]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p24" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1224329592]
+[node name="k2p24" type="CSGMesh3D" parent="distractors" index="23" unique_id=1224329592]
 transform = Transform3D(-1.9996436, 0.7221138, -0.0068059126, -1.0888187, -1.1481829, -0.005128021, -1.9549694, -0.09913564, 0.009817486, -8.439548, 0.26493096, 6.441282)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=213898461]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p24" index="0" unique_id=213898461]
 transform = Transform3D(1.000001, 0, 0, 0, 0.9999725, 0, -1.2789769e-13, 0, 1, 0.6155704, 1.230241, -3.3430176)
 operation = 2
 size = Vector3(2.253479, 2.6621552, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=1557423750]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p24" index="1" unique_id=1557423750]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2377241, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.677124, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=709027515]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p24" index="2" unique_id=709027515]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=188780434]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p24" index="3" unique_id=188780434]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=982033972]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p24" index="4" unique_id=982033972]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=496685540]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p24" index="5" unique_id=496685540]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=1932192971]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p24" index="6" unique_id=1932192971]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=1654876478]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p24" index="7" unique_id=1654876478]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p24" unique_id=626619018]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p24" index="8" unique_id=626619018]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p25" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1305832700]
+[node name="k2p25" type="CSGMesh3D" parent="distractors" index="24" unique_id=1305832700]
 transform = Transform3D(-0.059661657, -0.16143382, -0.012040399, -0.023907663, 0.40285873, -0.004824838, 0.96285707, 0, -0.00086586137, -10.355526, -2.1682901, 4.280406)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=836266550]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p25" index="0" unique_id=836266550]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2266785, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=964578255]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p25" index="1" unique_id=964578255]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.235344, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6723633, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=488037208]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p25" index="2" unique_id=488037208]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=1041171729]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p25" index="3" unique_id=1041171729]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=1277793019]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p25" index="4" unique_id=1277793019]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=904218833]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p25" index="5" unique_id=904218833]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=1792309501]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p25" index="6" unique_id=1792309501]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=543162589]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p25" index="7" unique_id=543162589]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p25" unique_id=146133203]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p25" index="8" unique_id=146133203]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p26" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1336331420]
+[node name="k2p26" type="CSGMesh3D" parent="distractors" index="25" unique_id=1336331420]
 transform = Transform3D(-0.07759108, -0.21164942, -0.012040399, -0.031092355, 0.5281719, -0.0048248377, 1.2522131, 0, -0.0008658616, -9.962311, -1.8431004, 3.1924443)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=795642144]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p26" index="0" unique_id=795642144]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2543876, -3.343018)
 operation = 2
 size = Vector3(2.2423096, 2.7104492, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=1376731864]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p26" index="1" unique_id=1376731864]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999164, 0, -1.4210855e-13, 0, 1, -0.99526215, 1.2266778, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.99313354, 2.6550293, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=536054119]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p26" index="2" unique_id=536054119]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=1977448893]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p26" index="3" unique_id=1977448893]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=1762718308]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p26" index="4" unique_id=1762718308]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=389087166]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p26" index="5" unique_id=389087166]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=6503715]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p26" index="6" unique_id=6503715]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=546795762]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p26" index="7" unique_id=546795762]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p26" unique_id=477873562]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p26" index="8" unique_id=477873562]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p27" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1160381759]
+[node name="k2p27" type="CSGMesh3D" parent="distractors" index="26" unique_id=1160381759]
 transform = Transform3D(-0.095458664, -0.25814533, -0.012040402, -0.03825227, 0.64420265, -0.0048248386, 1.5405717, 0, -0.00086586154, -9.376829, -2.1471362, 3.2012644)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=1241527671]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p27" index="0" unique_id=1241527671]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2519461, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.7055664, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=107665604]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p27" index="1" unique_id=107665604]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2599391, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.7215576, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=1677913626]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p27" index="2" unique_id=1677913626]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=26518130]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p27" index="3" unique_id=26518130]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=1424383545]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p27" index="4" unique_id=1424383545]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=794598137]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p27" index="5" unique_id=794598137]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=1567288689]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p27" index="6" unique_id=1567288689]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=1915878989]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p27" index="7" unique_id=1915878989]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p27" unique_id=113810761]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p27" index="8" unique_id=113810761]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p28" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1417555931]
+[node name="k2p28" type="CSGMesh3D" parent="distractors" index="27" unique_id=1417555931]
 transform = Transform3D(-0.10936941, -0.30761698, -0.012040399, -0.043826587, 0.7676592, -0.004824837, 1.7650715, 0, -0.0008658613, -7.6543484, -1.9632338, 5.4948325)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=668853065]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p28" index="0" unique_id=668853065]
 transform = Transform3D(1.0000002, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2687303, -3.3430195)
 operation = 2
 size = Vector3(2.2423096, 2.7391357, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=882249871]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p28" index="1" unique_id=882249871]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999163, 0, -1.4210855e-13, 0, 1, -0.9952622, 1.259756, -3.3430195)
 operation = 2
 size = Vector3(0.99313354, 2.7211914, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=1449113775]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p28" index="2" unique_id=1449113775]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=1412187713]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p28" index="3" unique_id=1412187713]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=2027973019]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p28" index="4" unique_id=2027973019]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 visible = false
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=1601981444]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p28" index="5" unique_id=1601981444]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=1007663655]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p28" index="6" unique_id=1007663655]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=1504342014]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p28" index="7" unique_id=1504342014]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p28" unique_id=330989917]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p28" index="8" unique_id=330989917]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p29" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=234323073]
+[node name="k2p29" type="CSGMesh3D" parent="distractors" index="28" unique_id=234323073]
 transform = Transform3D(-0.1292154, -0.3567167, -0.012040399, -0.051779293, 0.89018774, -0.0048248377, 2.0853589, 0, -0.00086586137, -5.722333, -2.957236, 4.6616774)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1635343340]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p29" index="0" unique_id=1635343340]
 transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2357724, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6732178, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1850384466]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p29" index="1" unique_id=1850384466]
 transform = Transform3D(1, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2518221, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.7053223, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1377640734]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p29" index="2" unique_id=1377640734]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1461384265]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p29" index="3" unique_id=1461384265]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1052042182]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p29" index="4" unique_id=1052042182]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=461377520]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p29" index="5" unique_id=461377520]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1626753621]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p29" index="6" unique_id=1626753621]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=1213734937]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p29" index="7" unique_id=1213734937]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p29" unique_id=901100319]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p29" index="8" unique_id=901100319]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p30" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1126804692]
+[node name="k2p30" type="CSGMesh3D" parent="distractors" index="29" unique_id=1126804692]
 transform = Transform3D(-0.1497415, -0.4050724, -0.012040401, -0.060004517, 1.0108595, -0.0048248377, 2.4166212, 0, -0.00086586125, -3.6400576, -1.1733732, 3.966704)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=784517417]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p30" index="0" unique_id=784517417]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.6211546, 1.2675798, -3.3430138)
 operation = 2
 size = Vector3(2.2423096, 2.6550293, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=1687699642]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p30" index="1" unique_id=1687699642]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2446206, -3.3430138)
 operation = 2
 size = Vector3(0.99313354, 2.690918, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=1202795526]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p30" index="2" unique_id=1202795526]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=1006656719]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p30" index="3" unique_id=1006656719]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=829281152]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p30" index="4" unique_id=829281152]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=1669792327]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p30" index="5" unique_id=1669792327]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=1787134146]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p30" index="6" unique_id=1787134146]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=124350248]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p30" index="7" unique_id=124350248]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p30" unique_id=1118185244]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p30" index="8" unique_id=1118185244]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p31" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=538246415]
+[node name="k2p31" type="CSGMesh3D" parent="distractors" index="30" unique_id=538246415]
 transform = Transform3D(-0.16767092, -0.45380017, -0.012040402, -0.067189224, 1.1324601, -0.004824839, 2.7059777, 0, -0.0008658616, -1.6842327, -0.8582595, 6.697132)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=723700785]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p31" index="0" unique_id=723700785]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2288755, -3.3430176)
 operation = 2
 size = Vector3(2.2423096, 2.6594238, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=295272986]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p31" index="1" unique_id=295272986]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2357712, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.6732178, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=544528784]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p31" index="2" unique_id=544528784]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=374249627]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p31" index="3" unique_id=374249627]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=1741483755]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p31" index="4" unique_id=1741483755]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=1081162410]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p31" index="5" unique_id=1081162410]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=1166472072]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p31" index="6" unique_id=1166472072]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=843383952]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p31" index="7" unique_id=843383952]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 visible = false
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p31" unique_id=668000652]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p31" index="8" unique_id=668000652]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="k2p32" type="CSGMesh3D" parent="khachkar2maninfold/distractors" unique_id=1082453782]
+[node name="k2p32" type="CSGMesh3D" parent="distractors" index="31" unique_id=1082453782]
 transform = Transform3D(-0.18553849, -0.5058756, -0.012040402, -0.07434913, 1.2624142, -0.004824838, 2.9943361, 0, -0.00086586154, 0.31701136, -2.4427447, 5.1127934)
 mesh = SubResource("ArrayMesh_35ddn")
 
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=1416114878]
+[node name="d1" type="CSGBox3D" parent="distractors/k2p32" index="0" unique_id=1416114878]
 transform = Transform3D(1.000001, 0, 0, 0, 0.9999725, 0, -1.2789769e-13, 0, 1, 0.6155704, 1.230241, -3.3430176)
 operation = 2
 size = Vector3(2.253479, 2.6621552, 7.686035)
 
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=163168361]
+[node name="d2" type="CSGBox3D" parent="distractors/k2p32" index="1" unique_id=163168361]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2377241, -3.3430176)
 operation = 2
 size = Vector3(0.99313354, 2.677124, 7.686035)
 
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=2012539120]
+[node name="d3" type="CSGBox3D" parent="distractors/k2p32" index="2" unique_id=2012539120]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
 operation = 2
 size = Vector3(1.1984787, 3.486145, 7.686035)
 
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=979096315]
+[node name="d4" type="CSGBox3D" parent="distractors/k2p32" index="3" unique_id=979096315]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.29786634, 3.486145, 7.686035)
 
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=599483887]
+[node name="d5" type="CSGBox3D" parent="distractors/k2p32" index="4" unique_id=599483887]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
 operation = 2
 size = Vector3(0.30811286, 3.486145, 7.686035)
 
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=828311285]
+[node name="d6" type="CSGBox3D" parent="distractors/k2p32" index="5" unique_id=828311285]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 1.57761, 7.686035)
 
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=1892228915]
+[node name="d7" type="CSGBox3D" parent="distractors/k2p32" index="6" unique_id=1892228915]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
 operation = 2
 size = Vector3(1.729063, 2.2985196, 7.686035)
 
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=1678782982]
+[node name="d8" type="CSGBox3D" parent="distractors/k2p32" index="7" unique_id=1678782982]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
 operation = 2
 size = Vector3(1.2292776, 1.4799784, 7.686035)
 
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/distractors/k2p32" unique_id=1616442902]
+[node name="d9" type="CSGBox3D" parent="distractors/k2p32" index="8" unique_id=1616442902]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
 visible = false
 operation = 2
 size = Vector3(0.4958228, 1.4799784, 7.686035)
 
-[node name="detect" type="CSGBox3D" parent="khachkar2maninfold" unique_id=1266513515 groups=["p2_highlight"]]
-transform = Transform3D(1, -1.6763806e-08, 1.4901161e-08, -5.5879354e-09, 1, 0, 0, 0, 1, 5.0640373, 1.79355, -0.033324957)
-visible = false
-use_collision = true
-size = Vector3(0.203125, 0.77319336, 0.375)
-script = ExtResource("9_g0o56")
+[node name="highlight" type="CSGBox3D" parent="." index="11" unique_id=619773789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0640383, 1.7935488, -0.033325195)
+size = Vector3(0.001, 1.367, 0.753)
+material = SubResource("StandardMaterial3D_oavxu")
 
-[node name="khachkar2" type="Node3D" parent="khachkar2maninfold" unique_id=947221559]
-
-[node name="k2p1" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=1972452381]
-transform = Transform3D(-4.4703484e-08, 7.450581e-09, 0.013000001, 7.450581e-09, 0.434, 5.0931703e-10, -0.965, 3.7252903e-09, -4.656613e-10, 1.1920929e-07, 0.022999763, -0.08899999)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=103314912]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2266785, -3.3430176)
-visible = false
-operation = 2
-size = Vector3(2.2423096, 2.6550293, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=1238484591]
-transform = Transform3D(1.0000001, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.235344, -3.3430176)
-operation = 2
-size = Vector3(0.99313354, 2.6723633, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=1491413294]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=1405853178]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=1812719356]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=511028917]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=909626364]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=921338577]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p1" unique_id=1211475396]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="k2p2" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=1308314978]
-transform = Transform3D(-7.4505806e-08, -6.519258e-09, 0.013000001, 0, 0.56900007, 5.0931703e-10, -1.2550001, 0, -4.656613e-10, -2.0040002, -0.42700005, -0.12400031)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=277151888]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2543876, -3.343018)
-operation = 2
-size = Vector3(2.2423096, 2.7104492, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=989660228]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9999164, 0, -1.4210855e-13, 0, 1, -0.99526215, 1.2266778, -3.3430176)
-visible = false
-operation = 2
-size = Vector3(0.99313354, 2.6550293, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=1519985150]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=1785139915]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=264043637]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=852454778]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=1077768568]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=1106491452]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p2" unique_id=384948153]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="k2p3" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=1160696971]
-transform = Transform3D(-1.1920929e-07, 1.6763806e-08, 0.013000001, 0, 0.694, 5.0931703e-10, -1.544, 0, -4.656613e-10, -2.4320004, -0.9269991, -0.07399988)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=1254546951]
-transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2519461, -3.3430176)
-operation = 2
-size = Vector3(2.2423096, 2.7055664, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=1430488863]
-transform = Transform3D(1.0000002, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2599391, -3.3430176)
-operation = 2
-size = Vector3(0.99313354, 2.7215576, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=514591579]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-visible = false
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=545574377]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=960235461]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=788302634]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=107892327]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=1997991120]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p3" unique_id=533363960]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="k2p4" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=1885128140]
-transform = Transform3D(-1.1920929e-07, 1.8626451e-09, 0.013000001, 0, 0.827, 5.0931703e-10, -1.7690002, 0, -4.656613e-10, -4.102, -1.3969998, -0.059000015)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=319701162]
-transform = Transform3D(1.0000002, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2687303, -3.3430195)
-operation = 2
-size = Vector3(2.2423096, 2.7391357, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=128868921]
-transform = Transform3D(0.99999976, 0, 0, 0, 0.9999163, 0, -1.4210855e-13, 0, 1, -0.9952622, 1.259756, -3.3430195)
-operation = 2
-size = Vector3(0.99313354, 2.7211914, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=87589584]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=207413355]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-visible = false
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=1944993925]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-visible = false
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=1616011170]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=599365269]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=194638175]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p4" unique_id=1917151301]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
+[node name="d1" type="CSGBox3D" parent="highlight" index="0" unique_id=883786735]
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 0.435, 0.002, 0.04, 0.023)
 operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
+size = Vector3(0.01953125, 1, 1)
 
-[node name="k2p5" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=1706085544]
-transform = Transform3D(-1.1920929e-07, -2.9802322e-08, 0.013000001, 1.4901161e-08, 0.95900005, 5.0931703e-10, -2.09, 7.450581e-09, -4.656613e-10, -6.024001, -1.8069997, -0.069000006)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=902837325]
-transform = Transform3D(1.0000001, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115467, 1.2357724, -3.3430138)
-operation = 2
-size = Vector3(2.2423096, 2.6732178, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=530928225]
-transform = Transform3D(1, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2518221, -3.3430138)
-operation = 2
-size = Vector3(0.99313354, 2.7053223, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=1362410623]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=879236350]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=247590461]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=1754159565]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-visible = false
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=1584295969]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=776562709]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p5" unique_id=1305138015]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="k2p6" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=1795597562]
-transform = Transform3D(-1.7881393e-07, -6.146729e-08, 0.013000001, 0, 1.089, 5.0931703e-10, -2.4220002, 7.450581e-09, -4.656613e-10, -8.133, -2.1569996, -0.08899999)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=14211590]
-transform = Transform3D(0.99999976, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.6211546, 1.2675798, -3.3430138)
-operation = 2
-size = Vector3(2.2423096, 2.6550293, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=67531106]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2446206, -3.3430138)
-operation = 2
-size = Vector3(0.99313354, 2.690918, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=2104708659]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=873773332]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=1053473987]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=694627057]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=1721262690]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-visible = false
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=2096305227]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p6" unique_id=841459878]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="k2p7" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=2069659114]
-transform = Transform3D(-1.7881393e-07, 1.3038516e-08, 0.013000001, 1.4901161e-08, 1.22, 5.0931703e-10, -2.712, 0, -4.656613e-10, -10.070001, -2.591999, -0.08899999)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=1131977623]
-transform = Transform3D(0.9999999, 0, 0, 0, 0.9999725, 0, -1.4210855e-13, 0, 1, 0.62115455, 1.2288755, -3.3430176)
-operation = 2
-size = Vector3(2.2423096, 2.6594238, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=1252298571]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.9952624, 1.2357712, -3.3430176)
-operation = 2
-size = Vector3(0.99313354, 2.6732178, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=997979250]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=1165095622]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=1000047271]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=568548799]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=439403700]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=1433643817]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-visible = false
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p7" unique_id=690700880]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="k2p8" type="CSGMesh3D" parent="khachkar2maninfold/khachkar2" unique_id=254213305]
-transform = Transform3D(-1.7881393e-07, 1.6763806e-08, 0.013000001, 1.4901161e-08, 1.36, 5.0931703e-10, -3.001, 7.450581e-09, -4.656613e-10, -12.048001, -3.051999, -0.11899972)
-mesh = SubResource("ArrayMesh_35ddn")
-
-[node name="d1" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=450436656]
-transform = Transform3D(1.000001, 0, 0, 0, 0.9999725, 0, -1.2789769e-13, 0, 1, 0.6155704, 1.230241, -3.3430176)
-operation = 2
-size = Vector3(2.253479, 2.6621552, 7.686035)
-
-[node name="d2" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=645767331]
-transform = Transform3D(0.9999999, 0, 0, 0, 0.9999162, 0, -1.4210855e-13, 0, 1, -0.99526227, 1.2377241, -3.3430176)
-operation = 2
-size = Vector3(0.99313354, 2.677124, 7.686035)
-
-[node name="d3" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=141920686]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998976, 0, -1.4210855e-13, 0, 1, -0.006212145, 8.070264, -3.3430173)
-operation = 2
-size = Vector3(1.1984787, 3.486145, 7.686035)
-
-[node name="d4" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=1840315646]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998823, 0, -1.4210855e-13, 0, 1, -0.7508924, 8.070263, -3.343017)
-operation = 2
-size = Vector3(0.29786634, 3.486145, 7.686035)
-
-[node name="d5" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=1615136926]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998782, 0, -1.4210855e-13, 0, 1, 0.74643266, 8.070263, -3.343017)
+[node name="d2" type="CSGBox3D" parent="highlight" index="1" unique_id=1714350902]
+transform = Transform3D(1, 0, 0, 0, 0.925, 0, 0, 0, 0.695, 0.001999855, -0.5109205, -0.0016748048)
 operation = 2
-size = Vector3(0.30811286, 3.486145, 7.686035)
-
-[node name="d6" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=1032083434]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998597, 0, -1.4210855e-13, 0, 1, 0.0018149614, 10.601438, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 1.57761, 7.686035)
-
-[node name="d7" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=1043824092]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998514, 0, -1.4210855e-13, 0, 1, 0.0018149614, 5.180726, -3.3430173)
-operation = 2
-size = Vector3(1.729063, 2.2985196, 7.686035)
-
-[node name="d8" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=914319616]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.9998213, 0, -1.4210855e-13, 0, 1, 0.2517076, 3.2934277, -3.3430173)
-operation = 2
-size = Vector3(1.2292776, 1.4799784, 7.686035)
-
-[node name="d9" type="CSGBox3D" parent="khachkar2maninfold/khachkar2/k2p8" unique_id=1293904343]
-transform = Transform3D(0.9999997, 0, 0, 0, 0.99980366, 0, -1.4210855e-13, 0, 1, -0.6104684, 3.2934258, -3.3430176)
-visible = false
-operation = 2
-size = Vector3(0.4958228, 1.4799784, 7.686035)
-
-[node name="areaVisual" type="Area3D" parent="." unique_id=987089473]
-transform = Transform3D(0.9999999, -0.00017880923, 0.00046200774, 0.00017919777, 0.99999964, -0.00084248837, -0.00046185715, 0.0008425709, 0.9999995, -12.272181, 2.9138327, 0.14572863)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="areaVisual" unique_id=2032404640]
-transform = Transform3D(1, 6.363621e-11, 9.8661985e-09, -1.4210855e-13, 1, -2.0023435e-08, 0, 2.0023435e-08, 1, 0.10134888, 0.9382937, -1.4901161e-08)
-shape = SubResource("BoxShape3D_fu4yr")
+size = Vector3(0.072265625, 0.29638672, 1)
 
-[node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("10_detsc")]
-transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0, 0, 0)
+[node name="Area3D" type="Area3D" parent="highlight" index="2" unique_id=1781963223]
 
-[node name="collisionKhachkar" type="CSGBox3D" parent="Khachkar2" unique_id=1418113770 groups=["khachkars"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06384277, 1.1148772, -0.12084961)
-visible = false
-size = Vector3(0.8342285, 2.244995, 1.3149414)
-script = ExtResource("11_xuv8c")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="highlight/Area3D" index="0" unique_id=181439912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0043029785, 0.009521484, 0.004211426)
+shape = SubResource("BoxShape3D_jgea6")

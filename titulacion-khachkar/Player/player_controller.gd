@@ -85,10 +85,15 @@ func _physics_process(delta: float) -> void:
 		
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
+		#print(collider)
 		if collider != null: 
 			if collider.is_in_group("p0_piece"):
 				crosshair(true)
 			elif collider.is_in_group("p1_buttons"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.pressed_button()
+			elif collider.is_in_group("p2_highlight"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.pressed_button()
