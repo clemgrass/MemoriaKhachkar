@@ -2212,6 +2212,7 @@ shape = SubResource("BoxShape3D_fu4yr")
 
 [node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("10_detsc")]
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0, 0, 0)
+visible = false
 
 [node name="collisionKhachkar" type="CSGBox3D" parent="Khachkar2" unique_id=1418113770 groups=["khachkars"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06384277, 1.1148772, -0.12084961)

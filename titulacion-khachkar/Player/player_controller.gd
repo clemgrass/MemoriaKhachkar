@@ -131,10 +131,16 @@ func _normal_movement(delta):
 					collider.grab_crowbar()
 					$Head/Camera3D/Crowbar.visible = true
 					has_crowbar = true
+			elif collider.is_in_group("p4_piano"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.play_note()
 			elif collider.is_in_group("khachkars"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
-					collider.khachkar_photo()
+					collider.khachkar_photo(has_crowbar)
+					if has_crowbar:
+						$Head/Camera3D/Crowbar.visible = false
 			else:
 				crosshair(false)
 		else:

@@ -8,8 +8,17 @@
 [ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="4_mthpl"]
 [ext_resource type="Texture2D" uid="uid://bjru0xtp3tv15" path="res://Museum/Walls/textures/blue_metal_plate_diff_4k.jpg" id="5_fv5p0"]
 [ext_resource type="Material" uid="uid://bpvv2f4yciiqy" path="res://Museum/Room_4/Concrete046_4K-JPG.tres" id="6_mthpl"]
+[ext_resource type="Script" uid="uid://b8tlxsvvm3uol" path="res://Museum/Room_4/playPiano.gd" id="7_4pvmq"]
 [ext_resource type="PackedScene" uid="uid://2fi6ish7yvri" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4.glb" id="8_fgtqw"]
 [ext_resource type="Material" path="res://Museum/Room_4/Tiles082_4K-JPG.tres" id="8_fv5p0"]
+[ext_resource type="AudioStream" uid="uid://fypn4pqovlr7" path="res://Museum/Room_4/316899__jaz_the_man_2__do-stretched.wav" id="8_t4xif"]
+[ext_resource type="AudioStream" uid="uid://lqhuehd2g1xf" path="res://Museum/Room_4/316909__jaz_the_man_2__re-stretched.wav" id="9_bk62l"]
+[ext_resource type="AudioStream" uid="uid://blk3h3eme4syg" path="res://Museum/Room_4/316907__jaz_the_man_2__mi-stretched.wav" id="10_755wm"]
+[ext_resource type="AudioStream" uid="uid://d1xof3mnbynqk" path="res://Museum/Room_4/316905__jaz_the_man_2__fa-stretched.wav" id="11_o70lk"]
+[ext_resource type="AudioStream" uid="uid://55pbv76lcolo" path="res://Museum/Room_4/316911__jaz_the_man_2__sol-stretched.wav" id="12_2no8f"]
+[ext_resource type="AudioStream" uid="uid://dx7fl4qb4rpj0" path="res://Museum/Room_4/316903__jaz_the_man_2__la-stretched.wav" id="13_8c8di"]
+[ext_resource type="AudioStream" uid="uid://dbodclng0bs6y" path="res://Museum/Room_4/316910__jaz_the_man_2__si-stretched.wav" id="14_l2x0o"]
+[ext_resource type="AudioStream" uid="uid://yqtgrihiup05" path="res://Museum/Room_4/316900__jaz_the_man_2__do-stretched-octave.wav" id="15_linen"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cswak"]
 albedo_texture = ExtResource("1_ffaql")
@@ -33,6 +42,32 @@ uv1_scale = Vector3(15, 1, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6mmmx"]
 albedo_texture = ExtResource("4_mthpl")
 uv1_scale = Vector3(15, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01u1m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qovr4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqcd8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xaux"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n2c8e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bos4f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ad18"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tav2g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s8kdh"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76vt3"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywyu2"]
+albedo_color = Color(0, 0, 0, 1)
+metallic = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ffaql"]
 transparency = 1
@@ -201,8 +236,164 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51049805, -0.120372355, -0.
 operation = 2
 size = Vector3(8.105957, 0.85736084, 7.3193054)
 
-[node name="Piano" parent="." unique_id=1816672050 instance=ExtResource("1_adgbp")]
+[node name="Piano" type="Node3D" parent="." unique_id=1816672050]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.019968, -0.01648748, 3.4828877)
+
+[node name="do" type="CSGBox3D" parent="Piano" unique_id=1340022106 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_01u1m")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316899JazTheMan2DoStretched" type="AudioStreamPlayer" parent="Piano/do" unique_id=394328264]
+stream = ExtResource("8_t4xif")
+
+[node name="re" type="CSGBox3D" parent="Piano" unique_id=870091014 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_qovr4")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316909JazTheMan2ReStretched" type="AudioStreamPlayer" parent="Piano/re" unique_id=799543976]
+stream = ExtResource("9_bk62l")
+
+[node name="mi" type="CSGBox3D" parent="Piano" unique_id=1809325527 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_uqcd8")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316907JazTheMan2MiStretched" type="AudioStreamPlayer" parent="Piano/mi" unique_id=1982236896]
+stream = ExtResource("10_755wm")
+
+[node name="fa" type="CSGBox3D" parent="Piano" unique_id=1797185445 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_4xaux")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316905JazTheMan2FaStretched" type="AudioStreamPlayer" parent="Piano/fa" unique_id=1849704803]
+stream = ExtResource("11_o70lk")
+
+[node name="sol" type="CSGBox3D" parent="Piano" unique_id=1115610915 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_n2c8e")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316911JazTheMan2SolStretched" type="AudioStreamPlayer" parent="Piano/sol" unique_id=1743048248]
+stream = ExtResource("12_2no8f")
+
+[node name="la" type="CSGBox3D" parent="Piano" unique_id=1391788093 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_bos4f")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316903JazTheMan2LaStretched" type="AudioStreamPlayer" parent="Piano/la" unique_id=1192272017]
+stream = ExtResource("13_8c8di")
+
+[node name="si" type="CSGBox3D" parent="Piano" unique_id=904380596 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_4ad18")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316910JazTheMan2SiStretched" type="AudioStreamPlayer" parent="Piano/si" unique_id=1928580862]
+stream = ExtResource("14_l2x0o")
+
+[node name="do8" type="CSGBox3D" parent="Piano" unique_id=1279415035 groups=["p4_piano"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0)
+material_override = SubResource("StandardMaterial3D_tav2g")
+use_collision = true
+size = Vector3(1, 0.1, 4)
+script = ExtResource("7_4pvmq")
+
+[node name="316900JazTheMan2DoStretchedOctave" type="AudioStreamPlayer" parent="Piano/do8" unique_id=844856225]
+stream = ExtResource("15_linen")
+
+[node name="do#" type="CSGBox3D" parent="Piano" unique_id=730897369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+size = Vector3(0.5, 0.2, 2)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="re#" type="CSGBox3D" parent="Piano" unique_id=761064566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
+size = Vector3(0.5, 0.2, 2)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="fa#" type="CSGBox3D" parent="Piano" unique_id=879272043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
+size = Vector3(0.5, 0.2, 2)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="sol#" type="CSGBox3D" parent="Piano" unique_id=629907862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+size = Vector3(0.5, 0.2, 2)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="la#" type="CSGBox3D" parent="Piano" unique_id=906839855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
+size = Vector3(0.5, 0.2, 2)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit1" type="CSGBox3D" parent="Piano" unique_id=1208147085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.034155272, 0.90786743)
+size = Vector3(0.005, 0.042, 2.184)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit2" type="CSGBox3D" parent="Piano" unique_id=1267858562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.034, 0.908)
+size = Vector3(0.005, 0.042, 2.184)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit3" type="CSGBox3D" parent="Piano" unique_id=1625893064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.034, 0)
+size = Vector3(0.005, 0.042, 4)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit4" type="CSGBox3D" parent="Piano" unique_id=1988219577]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.034, 0.908)
+size = Vector3(0.005, 0.042, 2.184)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit5" type="CSGBox3D" parent="Piano" unique_id=1964082335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.034, 0.908)
+size = Vector3(0.005, 0.042, 2.184)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit6" type="CSGBox3D" parent="Piano" unique_id=624332998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.034, 0.908)
+size = Vector3(0.005, 0.042, 2.184)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="slit7" type="CSGBox3D" parent="Piano" unique_id=612649945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.034, 0)
+size = Vector3(0.005, 0.042, 4)
+material = SubResource("StandardMaterial3D_s8kdh")
+
+[node name="d1Red" type="CSGBox3D" parent="Piano" unique_id=1272263461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.019189453, -2.05)
+size = Vector3(8, 0.1383789, 0.1)
+material = SubResource("StandardMaterial3D_76vt3")
+
+[node name="d1Black" type="CSGBox3D" parent="Piano" unique_id=224006064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.99823, 0.09501342, -2.1907592)
+size = Vector3(8.016968, 0.29002684, 0.38151854)
+material = SubResource("StandardMaterial3D_ywyu2")
+
+[node name="dred" type="CSGBox3D" parent="Piano/d1Black" unique_id=1134093846]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07582396, 0.17484117)
+operation = 2
+size = Vector3(8, 0.1383789, 0.16816406)
+material = SubResource("StandardMaterial3D_76vt3")
 
 [node name="gameStation" type="CSGBox3D" parent="." unique_id=1049687046]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6659236, -0.109313965, -4.0377502)
