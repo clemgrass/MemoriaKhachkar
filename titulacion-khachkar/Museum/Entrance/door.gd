@@ -3,7 +3,7 @@ extends Node3D
 
 var opened = false
 
-func open_door():
+func _on_puzzle_solved():
 	if opened:
 		return
 	opened = true

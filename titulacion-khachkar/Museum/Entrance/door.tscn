@@ -78,7 +78,7 @@ _data = {
 &"open": SubResource("Animation_alksk")
 }
 
-[node name="Door" type="Node3D" unique_id=586879168]
+[node name="Door" type="Node3D" unique_id=586879168 groups=["door"]]
 script = ExtResource("1_alksk")
 
 [node name="leftDoor" type="CSGBox3D" parent="." unique_id=1610157107]
@@ -93,12 +93,14 @@ material_override = SubResource("StandardMaterial3D_oqaxm")
 radius = 0.13
 height = 0.043426514
 sides = 36
+material = SubResource("StandardMaterial3D_oqaxm")
 
 [node name="dhan" type="CSGBox3D" parent="leftDoor/handleleft" unique_id=1991924753]
 transform = Transform3D(1, -2.344791e-12, 0, 2.344791e-12, 1, 0, 0, 0, 1, -0.07411194, 0, 0)
 material_override = ExtResource("6_oxufm")
 operation = 2
 size = Vector3(0.15127563, 0.14257813, 0.32910156)
+material = SubResource("StandardMaterial3D_oqaxm")
 
 [node name="dhancircle" type="CSGCylinder3D" parent="leftDoor/handleleft" unique_id=81770415]
 transform = Transform3D(0.9999999, 0, 0, 2.9802322e-08, 1.0000001, 0, 0, 0, 1.0000001, 1.1920929e-07, -0.030338317, -0.00040090084)
@@ -106,14 +108,17 @@ operation = 2
 radius = 0.1
 height = 0.15319061
 sides = 36
+material = SubResource("StandardMaterial3D_oqaxm")
 
 [node name="dhan2" type="CSGBox3D" parent="leftDoor/handleleft" unique_id=1947363758]
 transform = Transform3D(0.9670813, 0.25446698, 0, -0.25446683, 0.96708137, 0, 0, 0, 1, -0.017693758, -0.01676336, 0.11505258)
 size = Vector3(0.02961731, 0.107910156, 0.044799805)
+material = SubResource("StandardMaterial3D_oqaxm")
 
 [node name="dhan3" type="CSGBox3D" parent="leftDoor/handleleft" unique_id=141657701]
 transform = Transform3D(0.9670813, 0.25446698, 0, -0.25446683, 0.96708137, 0, 0, 0, 1, -0.017693758, -0.01676336, -0.11370492)
 size = Vector3(0.02961731, 0.107910156, 0.044799805)
+material = SubResource("StandardMaterial3D_oqaxm")
 
 [node name="handlhandleleft" type="CSGCylinder3D" parent="leftDoor" unique_id=1039151705]
 transform = Transform3D(-4.3703334e-08, 0.99981594, -0.019197345, -0.9999999, -4.371139e-08, 0, -8.391421e-10, 0.019197345, 0.99981594, 0.182351, -2, -1.1457667)

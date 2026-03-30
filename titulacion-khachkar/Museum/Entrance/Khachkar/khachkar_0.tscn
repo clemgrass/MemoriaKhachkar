@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dxtvh8walkv0n" path="res://Museum/Entrance/Khachkar/Khachkar0.glb" id="1_h1vmh"]
 [ext_resource type="Texture2D" uid="uid://c2xh6k2i8luul" path="res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg" id="2_bougs"]
+[ext_resource type="Script" uid="uid://dscsj1f8d4kbc" path="res://Museum/Entrance/Khachkar/puzzle_0.gd" id="2_idoy2"]
+[ext_resource type="Script" uid="uid://cke0a8cuimc21" path="res://Museum/Entrance/Khachkar/snapZone.gd" id="3_plxay"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdtfu"]
 resource_name = "Shape.001"
@@ -46,6 +48,9 @@ shadow_mesh = SubResource("ArrayMesh_rcuef")
 [sub_resource type="BoxShape3D" id="BoxShape3D_plxay"]
 size = Vector3(0.09689331, 0.09118652, 0.18185425)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_8xwts"]
+size = Vector3(0.0625, 0.20475769, 0.22998047)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_bougs"]
 size = Vector3(0.269104, 0.08673096, 0.28731918)
 
@@ -61,8 +66,9 @@ size = Vector3(0.1352539, 0.078125, 0.32421875)
 [sub_resource type="BoxShape3D" id="BoxShape3D_nxwjy"]
 size = Vector3(0.22817993, 0.079315186, 0.27574158)
 
-[node name="Khachkar0" unique_id=1115336005 instance=ExtResource("1_h1vmh")]
+[node name="Khachkar0" unique_id=1115336005 groups=["puzzle0"] instance=ExtResource("1_h1vmh")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+script = ExtResource("2_idoy2")
 
 [node name="ShapeIndexedFaceSet_002" parent="." index="0" unique_id=384073985]
 transform = Transform3D(-3.859886e-08, 0, 0.32379067, 0, 0.32379067, 0, -0.32379067, 0, -3.859886e-08, 0.17945874, 0.42647216, 0.15619414)
@@ -113,7 +119,15 @@ transform = Transform3D(0.83792835, -0.54578024, -2.6383361e-08, 0.54578024, 0.8
 operation = 2
 size = Vector3(3.8105106, 3.061592, 1.3833008)
 
-[node name="piece2" type="RigidBody3D" parent="." index="4" unique_id=2040134615 groups=["p0_piece"]]
+[node name="k1Area" type="Area3D" parent="." index="4" unique_id=54609053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12942764, 0.21277742, 0)
+script = ExtResource("3_plxay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="k1Area" index="0" unique_id=1255947696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44688982, 0.3398654)
+shape = SubResource("BoxShape3D_8xwts")
+
+[node name="piece2" type="RigidBody3D" parent="." index="5" unique_id=2040134615 groups=["p0_piece"]]
 transform = Transform3D(0.80279666, 0, -0.5962529, 0, 1, 0, 0.5962529, 0, 0.80279666, -0.44111958, 0.14698769, 0.17359154)
 
 [node name="k2" type="CSGMesh3D" parent="piece2" index="0" unique_id=339988067]
@@ -139,7 +153,7 @@ size = Vector3(3.8105106, 3.061592, 1.3833008)
 transform = Transform3D(0.45069057, 0, 0.8926803, 0, 1, 0, -0.8926803, 0, 0.45069057, -0.0104085505, 0.0025683343, 0.0015360117)
 shape = SubResource("BoxShape3D_bougs")
 
-[node name="k2Static" type="CSGMesh3D" parent="." index="5" unique_id=1408183503]
+[node name="k2Static" type="CSGMesh3D" parent="." index="6" unique_id=1408183503]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
@@ -159,7 +173,15 @@ transform = Transform3D(0.6678716, -0.7442765, -5.4108213e-08, 0.7442765, 0.6678
 operation = 1
 size = Vector3(3.8105106, 3.061592, 1.3833008)
 
-[node name="piece3" type="RigidBody3D" parent="." index="6" unique_id=537389585 groups=["p0_piece"]]
+[node name="k2Area" type="Area3D" parent="." index="7" unique_id=134221948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12942764, 0, 0)
+script = ExtResource("3_plxay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="k2Area" index="0" unique_id=918195860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44688982, 0.31003886)
+shape = SubResource("BoxShape3D_8xwts")
+
+[node name="piece3" type="RigidBody3D" parent="." index="8" unique_id=537389585 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2323517, 0.11593659, 0.27010095)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece3" index="0" unique_id=1431278206]
@@ -185,7 +207,7 @@ transform = Transform3D(0.99997747, 0.0067194225, 1.4239276e-11, -0.0067194225, 
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="k3Static" type="CSGMesh3D" parent="." index="7" unique_id=617370075]
+[node name="k3Static" type="CSGMesh3D" parent="." index="9" unique_id=617370075]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
@@ -205,7 +227,15 @@ transform = Transform3D(0.99997747, 0.0067194225, 1.4239276e-11, -0.0067194225, 
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="piece4" type="RigidBody3D" parent="." index="8" unique_id=1830685693 groups=["p0_piece"]]
+[node name="k3Area" type="Area3D" parent="." index="10" unique_id=301231773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12942764, 0.16272679, -0.29900384)
+script = ExtResource("3_plxay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="k3Area" index="0" unique_id=138611235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44688982, 0.31003886)
+shape = SubResource("BoxShape3D_8xwts")
+
+[node name="piece4" type="RigidBody3D" parent="." index="11" unique_id=1830685693 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9274381, 0.16440575, 0.31390738)
 
 [node name="k4" type="CSGMesh3D" parent="piece4" index="0" unique_id=244293576]
@@ -231,7 +261,7 @@ size = Vector3(0.87002945, 0.6319132, 1.3413086)
 transform = Transform3D(0.993633, 0, 0.112665616, 0, 1, 0, -0.112665616, 0, 0.993633, -0.008446991, -0.0002669543, -0.004426807)
 shape = SubResource("BoxShape3D_7bhwv")
 
-[node name="k4Static" type="CSGMesh3D" parent="." index="9" unique_id=1454253525]
+[node name="k4Static" type="CSGMesh3D" parent="." index="12" unique_id=1454253525]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
@@ -251,7 +281,15 @@ transform = Transform3D(1, 0, 3.3196557e-11, 0, 1, 0, -3.3196557e-11, 0, 1, 0.47
 operation = 1
 size = Vector3(0.87002945, 0.6319132, 1.3413086)
 
-[node name="piece5" type="RigidBody3D" parent="." index="10" unique_id=32265765 groups=["p0_piece"]]
+[node name="k4Area" type="Area3D" parent="." index="13" unique_id=180963731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12942764, -0.05363003, -0.29900384)
+script = ExtResource("3_plxay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="k4Area" index="0" unique_id=1765097360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44688982, 0.31003886)
+shape = SubResource("BoxShape3D_8xwts")
+
+[node name="piece5" type="RigidBody3D" parent="." index="14" unique_id=32265765 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6158621, 0.15954456, -0.55019933)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece5" index="0" unique_id=1720000475]
@@ -277,7 +315,7 @@ transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="k5Static" type="CSGMesh3D" parent="." index="11" unique_id=1419044505]
+[node name="k5Static" type="CSGMesh3D" parent="." index="15" unique_id=1419044505]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
@@ -297,7 +335,15 @@ transform = Transform3D(0.9658399, 0.25913927, -5.54887e-09, -0.25913927, 0.9658
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1)
 
-[node name="piece6" type="RigidBody3D" parent="." index="12" unique_id=1481474840 groups=["p0_piece"]]
+[node name="k5Area" type="Area3D" parent="." index="16" unique_id=538836281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12942764, 0.19974315, -0.5719752)
+script = ExtResource("3_plxay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="k5Area" index="0" unique_id=1466326243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44688982, 0.31003886)
+shape = SubResource("BoxShape3D_8xwts")
+
+[node name="piece6" type="RigidBody3D" parent="." index="17" unique_id=1481474840 groups=["p0_piece"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3716581, 0.09334533, -0.2865148)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piece6" index="0" unique_id=1998202832]
@@ -323,7 +369,7 @@ transform = Transform3D(1, 0.00033155084, 1.84599e-11, -0.00033155084, 1, -5.700
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1.1772461)
 
-[node name="k6Static" type="CSGMesh3D" parent="." index="13" unique_id=12402628]
+[node name="k6Static" type="CSGMesh3D" parent="." index="18" unique_id=12402628]
 transform = Transform3D(-5.2134617e-08, 0, 0.32, 0, 0.32, 0, -0.32, 0, -5.2134617e-08, 0.17945874, 0.42647216, 0.15619414)
 visible = false
 mesh = SubResource("ArrayMesh_plxay")
@@ -342,3 +388,24 @@ size = Vector3(1.3580627, 0.7206049, 1)
 transform = Transform3D(1, 0.00033155084, 1.84599e-11, -0.00033155084, 1, -5.7009952e-11, -1.3685053e-11, 5.9134614e-11, 1, 1.3820437, -1.1625043, -0.0886229)
 operation = 2
 size = Vector3(1.2291641, 1.3664856, 1.1772461)
+
+[node name="k6Area" type="Area3D" parent="." index="19" unique_id=1882084617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12942764, -0.024233103, -0.5929729)
+script = ExtResource("3_plxay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="k6Area" index="0" unique_id=183605590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44688982, 0.31003886)
+shape = SubResource("BoxShape3D_8xwts")
+
+[connection signal="body_entered" from="k1Area" to="k1Area" method="_on_body_entered"]
+[connection signal="body_exited" from="k1Area" to="k1Area" method="_on_body_exited"]
+[connection signal="body_entered" from="k2Area" to="k2Area" method="_on_body_entered"]
+[connection signal="body_exited" from="k2Area" to="k2Area" method="_on_body_exited"]
+[connection signal="body_entered" from="k3Area" to="k3Area" method="_on_body_entered"]
+[connection signal="body_exited" from="k3Area" to="k3Area" method="_on_body_exited"]
+[connection signal="body_entered" from="k4Area" to="k4Area" method="_on_body_entered"]
+[connection signal="body_exited" from="k4Area" to="k4Area" method="_on_body_exited"]
+[connection signal="body_entered" from="k5Area" to="k5Area" method="_on_body_entered"]
+[connection signal="body_exited" from="k5Area" to="k5Area" method="_on_body_exited"]
+[connection signal="body_entered" from="k6Area" to="k6Area" method="_on_body_entered"]
+[connection signal="body_exited" from="k6Area" to="k6Area" method="_on_body_exited"]

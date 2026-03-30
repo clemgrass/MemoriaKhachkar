@@ -31,14 +31,19 @@ var move_speed : float = 0.0
 @onready var crosshair_normal = $Head/Camera3D/normal
 @onready var crosshair_pick = $Head/Camera3D/pick
 
-"""
-Practice code 
-"""
+
 enum PlayerState { NORMAL, TERMINAL }
 var state : PlayerState = PlayerState.NORMAL
 var current_terminal: Node = null
 
 var has_crowbar: bool = false
+
+"""
+Practice code 
+"""
+var grabbed_object: RigidBody3D = null
+var grab_distance := 1.5
+var just_released := false
 """
 Practice code 
 """
@@ -84,10 +89,6 @@ func _normal_movement(delta):
 	if can_jump:
 		if Input.is_action_just_pressed(input_jump) and is_on_floor():
 			velocity.y = jump_velocity
-			
-			#Abre puerta, esto debe quedar introducido en el lograr el puzzle 0
-			var door = get_node("/root/MainGame/Museum/Door")
-			door.open_door()
 
 	if can_sprint and Input.is_action_pressed(input_sprint):
 			move_speed = sprint_speed
@@ -107,12 +108,22 @@ func _normal_movement(delta):
 		velocity.x = 0
 		velocity.y = 0
 		
+	if grabbed_object:
+		var target_position = raycast.global_transform.origin + raycast.global_transform.basis.y * -grab_distance
+		var direction = target_position - grabbed_object.global_transform.origin
+		grabbed_object.linear_velocity = direction * 10.0
+		
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
 		#print(collider)
 		if collider != null: 
 			if collider.is_in_group("p0_piece"):
 				crosshair(true)
+				if not grabbed_object and not just_released:
+					if Input.is_action_just_pressed(input_left_click):	
+						grabbed_object = collider
+				if grabbed_object and not grabbed_object.visible:
+					grabbed_object = null
 			elif collider.is_in_group("p1_buttons"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
@@ -147,7 +158,14 @@ func _normal_movement(delta):
 			crosshair(false)
 				
 	move_and_slide()
+	
+	just_released = false
 
+func _input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed(input_left_click) and grabbed_object:
+		grabbed_object = null
+		just_released = true
+		
 func enter_terminal(terminal_node):
 	state = PlayerState.TERMINAL
 	can_move = false

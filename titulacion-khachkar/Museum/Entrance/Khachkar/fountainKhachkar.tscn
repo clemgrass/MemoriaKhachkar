@@ -50,10 +50,10 @@ height = 2.1420898
 sides = 36
 
 [node name="inisWall" type="CSGBox3D" parent="." unique_id=1563319244]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07967055, 2.2322807, -0.010284424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07887709, 1.2625542, -0.061836243)
 visible = false
 use_collision = true
-size = Vector3(1.1079102, 2.4941406, 3.9172974)
+size = Vector3(0.6575928, 0.5546875, 2.8560333)
 
 [node name="Puzzle0" parent="." unique_id=1607004877 instance=ExtResource("3_j7p5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.41414523, 0.76253474, -0.051136255)
