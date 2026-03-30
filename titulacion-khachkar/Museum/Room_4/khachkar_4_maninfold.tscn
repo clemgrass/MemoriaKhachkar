@@ -1,0 +1,184 @@
+[gd_scene format=4 uid="uid://d3fnikoxss3kf"]
+
+[ext_resource type="PackedScene" uid="uid://bp0q4sjav6khp" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar4maninfold.glb" id="1_jjrmj"]
+[ext_resource type="Texture2D" uid="uid://lp2ducjhu61d" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar4maninfold_khachkar4_uv_map.jpg" id="2_vontl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ulnfo"]
+resource_name = "Material.002"
+cull_mode = 2
+albedo_texture = ExtResource("2_vontl")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_klry7"]
+_surfaces = [{
+"aabb": AABB(-1.1212906, -1.4413373, -1.8888086, 2.2854393, 10.824476, 3.7076406),
+"format": 34896613377,
+"index_count": 348,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAwAAAAUAAgAFAAAAAQADAAYAAwAFAAYAAQAGAAQAAgAHAAUABgAFAAcAAgAEAAcABgAHAAQACAAJAAoACQALAAoAEQAIAAoACAAMAAkAEQAKACEAIQAKAAsAEAAIABEADwAMAAgAEAAPAAgADQAJAAwADwANAAwACQANACIACQAiACMAIgANACQADwAkAA0AIgAOACMADgAiACQAJQAJACMAIwAOACUACwAJACUAJgAOACQAJQAOACcADgAmACcAJAAnACYACwAlACcADwAnACQAJwAPAAsAKAALAA8AKAAPABAAIQALACgAEwAoABAAEgAhACgAEgAoABMAKQAhABIAKQARACEAKgAQABEAKgARACkAEwAQACoAKwApABIALAASABMAKwASACwALQATACoALAATAC0ALgAqACkALgApACsALQAqAC4ALwArACwAFgAsAC0ALwAsABYAMAAtAC4AFgAtADAAMQAuACsAMQArAC8AMAAuADEAMgAvABYAMwAWADAAMgAWADMANAAwADEAMwAwADQANQAxAC8ANQAvADIANAAxADUANgAyADMANwAzADQANgAzADcAOAA0ADUANwA0ADgAOQA1ADIAOQAyADYAOAA1ADkAOgA2ADcAOwA3ADgAOgA3ADsAPAA4ADkAOwA4ADwAPQA5ADYAPQA2ADoAPAA5AD0AFAA6ADsAGAA7ADwAFAA7ABgAFwA8AD0AGAA8ABcAFQA9ADoAFQA6ABQAFwA9ABUAGQAUABgAHAAYABcAGQAYABwAGwAXABUAHAAXABsAGgAVABQAGgAUABkAGwAVABoAHgAZABwAHQAbABoAIAAaABkAHQAaACAAIAAZAB4AHwAbAB0AHwAdACAAHwAcABsAHwAgAB4AHgAcAB8A"),
+"lods": [0.8344917, PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAwAAAAUAAgAFAAAAAQADAAYAAwAFAAYAAQAGAAQAAgAHAAUABgAFAAcAAgAEAAcABgAHAAQACAAJAAoACQALAAoACAAMAAkADQAJAAwACQANAA4ACwAJAA4ADwANAAwADwAOAA0ADwAMAAgADgAPAAsAEAAPAAgACwAPABAAEQAIAAoAEAAIABEAEgAKAAsAEQAKABIAEwALABAAEgALABMAEAARABQAFAARABIAEwAQABUAFQAQABQAFgASABMAFAASABYAFwATABUAFgATABcAFAAWABgAGAAWABcAGQAUABgAGgAVABQAGgAUABkAGwAXABUAGwAVABoAHAAYABcAHAAXABsAGQAYABwAHQAbABoAHgAZABwAHwAcABsAHgAcAB8AHwAbAB0AIAAZAB4AHwAgAB4AIAAaABkAHwAdACAAHQAaACAA")],
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 62,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAALw5//8AAAAAAAD//wAAAAC8OQAAAAD+/7w5//8AAP//AAAAAAAA/v+8OQAAAAD+/wAA//8AAEUHsvkYZAAARQf8/73iAABFB7L5veIAALzzsvm94gAARQf8/1+QAAC88/z/X5AAALnw//+74gAAvPOy+RhkAADG6Zn2cVcAAPcRmfZxVwAAIRmg8hvCAACb4qDyG8IAAGAc69nESwAAXd/r2cRLAABgHK7qjrkAAF3f69lCsQAAYBzr2UKxAACbHs3YxEsAAFnczdjESwAAWdzN2KaoAACbHs3YpqgAAFncvDmmqAAAmx68OcRLAACbHrw5pqgAAFncvDnESwAA9xGZ9rLSAABw3/z/X9QAAGfQ/P+94gAAvPP8/9vDAABr4Gj+veIAALzzTf4t1AAAvPPN/L3iAADG6Zn2stIAACEZoPKhUAAAm+Kg8qFQAADaG6fuOU0AANobp+5bvQAA4t+n7lu9AADi36fuOU0AAGAcrurESwAAXd+u6o65AABd367qxEsAAGActubESwAAYBy25ou5AABd37bmi7kAAF3ftubESwAAYBy94sRLAABgHL3i9LYAAF3fveL0tgAAXd+94sRLAABgHMTexEsAAGAcxN5LtAAAXd/E3ku0AABd38TexEsAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_y2a6a"]
+resource_name = "khachkar4maninfold_ShapeIndexedFaceSet_001"
+_surfaces = [{
+"aabb": AABB(-1.1212906, -1.4413373, -1.8888086, 2.2854393, 10.824476, 3.7076406),
+"attribute_data": PackedByteArray("f8u43LTufM+07rjcf8t8z5/uyM+cyq7dnMrIz5/urt0P753P28p93dvKnc8P733dCcup3fDvvM/w76ndCcu8z4Y+h/yGPof8hj6H/IY+h/yPiIvvj4QM5nqItuaZg2bshtB4i3D4c4Xx+ZSLvM8khEGEdOZjiczv1Ids5gaEaeyZ0KyP8fmUi6T5U46G0HiLSNApkdj5R5AThieCOroxhPWFiIQ6uuSBRop7lA23QZKxtjmU6olsks7OGpmW+t2YxfpsmQfHoc3//1vN/s5vmEjQKZHY+UeQe57Y6dWd3/S0nhT1X5zR6Xyc4PSNm4XpvZxk6SqbT/UiigeJ9YWIhJu6MYQStx2J1Ids5mOJzO8ljPHwZ45o6NWd3/RfnNHpGovW73qItuYmjcvoj4iL7yqbT/XmkYHpjZuF6fP4Vs4A4IrcAOBWzvP4itwL+2jyvZxk6dj6e+p8nOD0xvmx5rSeFPVM+g31e57Y6cmIbs+xtjmUM7mRz0aKe5TqiWyS6okfjA23QZIStx2JIooHif9/////f////3////9////80muF2c8ChybWNoQWhnHma4RM6U2FyeeZ0KyPpPlTjue2eIL7su6BOroPg2/6t5clzzuXXPq+loXPQZZJ+raVv8/ZlFz6oZTlz9+TY4iUhli4f4YzixfoZ4rv52yZYukymVL1nZaZ6deWHvVBlH7pVpTp9OaRgen8kX30/JF99ImPMentj9bz7Y/W8yaNy+iJjzHpG40S8huNEvJniu/nGovW70ObHfWjmZHpCJkj9WaXWOnMlij1KJUg6feTwPTtkibp7ZIm6SCRNPT3k8D0rZDS6K2Q0ujcjurzIJE09GeOaOgljPHw3I7q8zOLF+jlz9+TKPqXk1z6oZQs0DaTLNA2k9v5KpIo+peTMdBbkjHQW5Lb+SqSSreRkMyJe5DMiXuQSrcyj0q3kZDMidqOzInajmm3vo1KtzKP6ol9jeqJfY1pt0uMabe+jeqJH4xKt4KKabdLjEaKmIpGipiKSreCili4f4ZjiJSG+7LugTq65IHntniC57Z4gjq6D4NNhcnnFoZx5muETOn80muF2c8Ch/zSa4W8zySEJtY2hA=="),
+"format": 34896613399,
+"index_count": 348,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGQAYAGgAaAAYAGkAGQBoAGoAawAdAB4AHQBrAGwAbABrAG0AHQBsAB8AbgAhAG8AbgAjACEAJgAnACgAJwAmAHAAcAAmAHEAJwBwAHIAKgArACwAKgAtACsALgAvADAAMQAuADAAMQAwADIALgAzAC8AMwBzAC8AMwB0AHMAdAB1AHMAdAB2AHUAdgB3AHUAdgB4AHcAeAB5AHcAeAB6AHkANgA3ADgANgA5ADcAOgA7ADwAOgA9ADsAewBAAHwAewA/AEAAJAAiACUAJAAgACIAfQBDAEQAfQBCAEMASABJAH4ASABLAEkATwBQAFEATwBSAFAAUwBUAFUAUwBWAFQAVwBYAFkAVwBaAFgAWwBcAF0AWwBeAFwATAB/AE4ATACAAH8AgACBAH8AgACCAIEAggCDAIEAggCEAIMAhACFAIMAhACGAIUAhwCIAE0AhwCJAIgAigCLAIwAigCNAIsAjgCPAEoAjgCQAI8ARwCRAEYARwCSAJEAkgCTAJEAkgCUAJMAlACVAJMAlACWAJUAlgCXAJUAlgCYAJcAmQCaAJsAmQCcAJoAnQCeAJ8AnQCgAJ4ARQChAKIARQCjAKEApAClAKYApACnAKUAqACpAKoAqACrAKkArAA1AK0ArAA0ADUAXwCuAGEAXwCvAK4AsACxALIAsACzALEAtAC1ALYAtAC3ALUAuAC5ALoAuABgALkAuwC8AL0AuwC+ALwAvwBiAMAAvwBjAGIAPgDBAEEAPgDCAMEAwwDEAMUAxgApAMcAHADIAMkAyAAcAMoAGwDLAMwAzQDOAM8AZABlAGYAZABnAGUA"),
+"lods": [0.8344917, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGQAYABsAHAAdAB4AHQAcAB8AIAAhACIAIAAjACEAJAAgACIAJAAiACUAJgAnACgAJwAmACkAKgArACwAKgAtACsALgAvADAAMQAuADAAMQAwADIALgAzAC8AMwA0AC8ANAA1AC8ANgA3ADgANgA5ADcAOgA7ADwAOgA9ADsAPgA/AEAAPgBAAEEAQgBDAEQARQBCAEQARQBEAEYARwBFAEYASABJAEoASABLAEkATABIAEoATABKAE0ATABNAE4ATwBQAFEATwBSAFAAUwBUAFUAUwBWAFQAVwBYAFkAVwBaAFgAWwBcAF0AWwBeAFwAXwBgAGEAYABiAGEAYABjAGIAZABlAGYAZABnAGUA")],
+"material": SubResource("StandardMaterial3D_ulnfo"),
+"name": "Material.002",
+"primitive": 3,
+"uv_scale": Vector4(1.9122837, 2, 0, 0),
+"vertex_count": 208,
+"vertex_data": PackedByteArray("AAAAAAAA/78AALw5////vwAAAAD///+/AAC8OQAA/78AALw5AAD/////AAAAAP///v+8OQAA//8AAAAAAAD///7/vDkAAP+//v8AAP///7/+/7w5////v///AAAAAP+/AAAAAP//AID+/7w5//8AgP7/AAD//wCAAAC8Of//AIAAAAAA////v///AAAAAP+/AAAAAAAA/7/+/wAA////v0UHsvkYZBLURQf8/73iPsxFB7L5veIky0UH/P9fkNTZvPP8/1+Qnf5FB/z/veLD/kUH/P9fkLX/ufD//7vief658P//u+IFMbzzsvkYZJwnvPOy+b3iRSu88/z/X5BBHLzzsvkYZET+RQf8/1+QJf1FB7L5GGTr/rzz/P9fkM7/xumZ9nFXTv73EZn2cVf9/kUH/P+94rqAvPOy+b3iWoBFB7L5veK8gLnw//+74gmAmx7N2KaoQrFd3+vZQrFCsVnczdimqEKxYBzr2UKxQrFZ3M3YxEv//2Ac69nES///mx7N2MRL//9Z3Lw5xEv//5sevDnES///Xd/r2cRL///G6Zn2cVc3//cRmfZxV9L/WdzN2KaoUDdd3+vZxEt/ElnczdjES8ERXd/r2UKxkTebHs3YxEvi32Ac69lCsajpmx7N2KaopOpgHOvZxEun3yEZoPIbwiSnRQey+b3iFau887L5veIUq5vioPIbwiSnvPOy+b3ijgy887L5GGRCE8bpmfZxV4kTm+Kg8hvCrTJd3+vZxEs9Ll3f69lCsRcs9xGZ9nFXl9NFB7L5veL+xSEZoPIbwnrXRQey+RhktdVgHOvZxEvC1WAcruqOuQbWYBzr2UKxcNgAALw5//////7/vDkAAP///v+8Of////8AALw5AAD//5sevDnES+TUmx7N2KaoItabHrw5pqiv1JsezdjES1jWWdy8Oaao1ipZ3M3YxEvPK1ncvDnES6wqWdzN2Kao+SubHrw5pqgygFnczdimqIiAWdy8OaaoXoCbHs3YpqizgGAc69lCsZuIYByu6o65foBd3+vZQrGeiJvioPIbwtaPIRmg8hvC1o+bHrw5pqj/v1ncvDnES/+/mx68OcRL/79Z3Lw5pqj/v3Df/P9f1OH9vPP8/9vDz/tn0Pz/veLR/Lzzzfy94qYtvPP8/9vDcjW8803+LdTmCLzzsvkYZGr/RQey+RhkYPxr4Gj+veKIgGfQ/P+94pmAvPPN/L3iAIBgHMTexEv//13fxN7ES///YBy94sRL//9d373ixEv//2ActubES///Xd+25sRL//9gHK7qxEv//13frurES///9xGZ9rLSFavG6Zn2stIUq8bpmfay0tMM9xGZ9rLSf8RgHMTeS7TF22AcxN7ES/DTYBy94vS2udpgHL3ixEvE0WActuaLubfWYBy25sRLy89gHK7qjrn81GAcrurES63NYByu6sRLB8zaG6fuW70c1dobp+45TWLL2hun7jlNecIhGaDyG8J30dobp+5bvSzTIRmg8qFQ1sEhGaDyoVA6wPcRmfay0mfT9xGZ9nFXBsBd38TexEuSLF3fxN5LtOYrXd+94sRLGitd373i9LbmK13ftubESygnXd+25ou5Mytd367qxEuNI13fruqOuRgrXd+u6o65uCri36fuOU31Il3frurES2Qi4t+n7lu9Lyvi36fuW72UKJvioPKhUFso4t+n7jlNVyib4qDyG8KXKMbpmfZxV68Fm+Kg8qFQBQTG6Zn2stKdM13frurES9r/2hun7jlN0f9gHK7qxEvR/+Lfp+45Tdr/4t+n7jlN4v8hGaDyoVDc/9obp+45Tdf/m+Kg8qFQ3v+b4qDyoVBA/yEZoPKhUOD/Xd/E3ku0nYhgHMTeS7SbiGAcxN5LtDiJXd+94vS2MIld38TeS7QwiWAcveL0tjmJYBy94vS2+ohd37bmi7n/iF3fveL0tv+IYBy25ou5+ohgHLbmi7mBgF3fruqOua6AXd+25ou5sYBgHK7qjrnnjOLfp+5bveiMXd+u6o656YzaG6fuW73ojNobp+5bvdaP4t+n7lu91o/G6Zn2stIkp/cRmfay0iSnZ9D8/73imIC58P//u+KYgGvgaP694piAa+Bo/r3iCYC88838veIJgLzzTf4t1AUxvPPN/L3iBTG88/z/28MFMXDf/P9f1Hn+vPP8/9vDef5w3/z/X9TG/rnw//+74sb+Z9D8/73ixv7/f////3////9/////f////3////9/////f////3/+//9/AAD/fwAA/38AAP9/AAD/f////3////9/////f///AAD/fwAA/38AAP9/AAD/fxtWN6zcW7i33ly9ucJShaWDgT2/WoFRv1CA1r/XwL4BZa+DWHCs4lhLqpdUO7J3ZPytzgMNtqoEDa1kAlKAi8ztrbgD9Kw+Av9//3//f/9//3//f1rg7F4EAZV/jQFcf5YBWX/9AJh/TYGx/gaC+P0NgfH+IH8g/65+rv45gsX9K56QAwCczwCLfLYqG6SGV46kF1joe8Qq6EAci7I9jH+JPmN+/kBhi9AAt3+KA7F+LAGQf1YA+4C5pAJZfqAPVE+g2VMKkes5YKjCUMipkVM5PECN1kHypYZFG5eGOy6KElUlqr9TpKiGUw2n/3//v/9//7//f/+//3//v5lVMqvZVLOpuVVzq7lUc6mPqh9V9ansU6iqUlXbqbhT//////9//3///////3//fz8Al4IPADr2rAdDfx0Cpn9YABuCAAD/fwAA/38AAP9/AAD/f06C174+wn4Eb4NHvsaojVGNohxFXbu8dtaz+QDGtt8F/3//f/9//3//f///44Ib/fuCA/3rghP9T4Ov/NCDLfwjhNr7t4RG+5iEZftcA8J+4wCrf46k0FjIQhyquVFzozBWYaxHUo6knFc4r4JUBKkBWQKyilUVq6RaSbWpWty2SVS+qTtbB7h0YCLMd1FWqX5QEqcZYvTPQllj0kJHUZxoW9jYeqn1Uuepz1NlqsxU56nQU7GsY1lWqq1Unq4+XWeqz1RxqRZU2a2pXCSuPF0mqYVTx6XKUe2lDFLvpRBSxaXGUQWximfysdxotY8EOEyDVvUNhKD0G4ST9D6DY/UCkQ0BRoHJ7nSBoO4kkTQBCp5nA82bjQDgBlZ/VABwgykBaItwAFCEYgDFgzUB4osaARqLUQFIjVUBb40WAfGKDwBz9g8Ay/gPAOr4JAKzf4oA7oOaAF6ElAKkf00A1oFtApl/QgDCgPwAqH97htB8e4bQfHuG0Hxa4OxeWuDsXmWvg1hlr4NYZa+DWNfAvgHXwL4BQoFkv0KBZL9CgWS/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_klry7")
+
+[node name="khachkar4maninfold" unique_id=1237616134 instance=ExtResource("1_jjrmj")]
+
+[node name="ShapeIndexedFaceSet_001" parent="." index="0" unique_id=1666909634]
+visible = false
+
+[node name="do" type="CSGMesh3D" parent="." index="1" unique_id=371835918]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="do" index="0" unique_id=1928752102]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.038560085, 1.9678742, -0.19377375)
+operation = 2
+size = Vector3(1.1860352, 2.4237366, 0.7052002)
+
+[node name="re" type="CSGMesh3D" parent="." index="2" unique_id=587808328]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="re" index="0" unique_id=1768335944]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.01403404, 1.7892102, -0.19377375)
+operation = 1
+size = Vector3(0.5142822, 0.34044266, 0.7052002)
+
+[node name="mi" type="CSGMesh3D" parent="." index="3" unique_id=1724853551]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="mi" index="0" unique_id=1773333065]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.004105583, 8.702469, -0.19377375)
+operation = 2
+size = Vector3(1.0155808, 0.38933492, 0.7052002)
+
+[node name="d2" type="CSGBox3D" parent="mi" index="1" unique_id=1526511178]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.64249545, 7.5383368, -0.19377375)
+operation = 2
+size = Vector3(0.28953972, 0.43229467, 0.7052002)
+
+[node name="d3" type="CSGBox3D" parent="mi" index="2" unique_id=811083089]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.64790404, 7.5383368, -0.19377375)
+operation = 2
+size = Vector3(0.28953972, 0.43229467, 0.7052002)
+
+[node name="d4" type="CSGBox3D" parent="mi" index="3" unique_id=1943473579]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.8746403, 2.0645223, -0.19377375)
+operation = 2
+size = Vector3(0.6437961, 1.5613621, 0.7052002)
+
+[node name="d5" type="CSGBox3D" parent="mi" index="4" unique_id=1169138952]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.84034234, 2.0645223, -0.19377375)
+operation = 2
+size = Vector3(0.6437961, 1.5613621, 0.7052002)
+
+[node name="d6" type="CSGBox3D" parent="mi" index="5" unique_id=1815402360]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.15767972, 0.8431395, -0.19377375)
+operation = 2
+size = Vector3(0.6437961, 1.0483813, 0.7052002)
+
+[node name="fa" type="CSGMesh3D" parent="." index="4" unique_id=293681449]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="fa" index="0" unique_id=87399680]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.0022311844, 3.0121403, -0.19377375)
+operation = 1
+size = Vector3(0.23599243, 0.16355062, 0.7052002)
+
+[node name="sol" type="CSGMesh3D" parent="." index="5" unique_id=8729038]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="sol" index="0" unique_id=290693739]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.004105583, 7.702282, -0.19377375)
+operation = 2
+size = Vector3(1.0155808, 0.80941355, 0.7052002)
+
+[node name="d4" type="CSGBox3D" parent="sol" index="1" unique_id=1377988146]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.018379647, 2.0645223, -0.19377375)
+operation = 2
+size = Vector3(0.18031293, 1.5613621, 0.7052002)
+
+[node name="d5" type="CSGBox3D" parent="sol" index="2" unique_id=1672623003]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.9265702, 2.0645223, -0.19377375)
+operation = 2
+size = Vector3(0.332763, 1.5613621, 0.7052002)
+
+[node name="d6" type="CSGBox3D" parent="sol" index="3" unique_id=335162592]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.09170836, 0.3597498, -0.19377375)
+operation = 2
+size = Vector3(0.7058092, 0.84535766, 0.7052002)
+
+[node name="d7" type="CSGBox3D" parent="sol" index="4" unique_id=1773950808]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.92994255, 2.0645223, -0.19377375)
+operation = 2
+size = Vector3(0.332763, 1.5613621, 0.7052002)
+
+[node name="la" type="CSGMesh3D" parent="." index="6" unique_id=1427724883]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="la" index="0" unique_id=528236360]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.70837253, 3.2099047, -0.19377375)
+operation = 1
+size = Vector3(0.1287384, 0.9362473, 0.7052002)
+
+[node name="la2" type="CSGMesh3D" parent="." index="7" unique_id=1176148790]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="la2" index="0" unique_id=1147365472]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.70203847, 3.2099047, -0.19377375)
+operation = 1
+size = Vector3(0.1287384, 0.9362473, 0.7052002)
+
+[node name="si" type="CSGMesh3D" parent="." index="8" unique_id=1588064177]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="si" index="0" unique_id=1250135766]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, -0.60262007, 7.12533, -0.19377375)
+operation = 1
+size = Vector3(0.23555374, 0.24718839, 0.7052002)
+
+[node name="si2" type="CSGMesh3D" parent="." index="9" unique_id=1323821814]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="si2" index="0" unique_id=317555433]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.59251916, 7.12533, -0.19377375)
+operation = 1
+size = Vector3(0.23555374, 0.24718839, 0.7052002)
+
+[node name="do2" type="CSGMesh3D" parent="." index="10" unique_id=702305681]
+transform = Transform3D(0.47, 0, 0, 0, 0.21, 0, 0, 0, 0.135, -0.010646582, 0.2954461, -1.0566857)
+mesh = SubResource("ArrayMesh_y2a6a")
+
+[node name="d1" type="CSGBox3D" parent="do2" index="0" unique_id=2092941759]
+transform = Transform3D(2.1276596, 0, 0, 0, 4.7619042, 0, 0, 0, 7.407404, 0.038560085, 5.527005, -0.19377375)
+operation = 2
+size = Vector3(1.1860352, 1.9116592, 0.7052002)

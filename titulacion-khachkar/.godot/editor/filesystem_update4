@@ -8,3 +8,9 @@ res://World/MainGame.tscn
 res://World/main_game.gd
 res://Museum/Entrance/door.gd
 res://Museum/Entrance/door.tscn
+res://Museum/Room_4/room4.tscn
+res://Player/playerController.tscn
+res://khachkar_4_maninfold.tscn
+res://Museum/Room_4/puzzle_4.gd
+res://Museum/Room_4/playPiano.gd
+res://Museum/Room_4/collision_khachkar_4.gd

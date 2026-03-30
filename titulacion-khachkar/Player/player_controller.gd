@@ -30,7 +30,7 @@ var move_speed : float = 0.0
 @onready var raycast = $Head/Camera3D/RayCast3D
 @onready var crosshair_normal = $Head/Camera3D/normal
 @onready var crosshair_pick = $Head/Camera3D/pick
-
+@onready var crosshair_pick_piano = $Head/Camera3D/pick_piano
 
 enum PlayerState { NORMAL, TERMINAL }
 var state : PlayerState = PlayerState.NORMAL
@@ -143,7 +143,7 @@ func _normal_movement(delta):
 					$Head/Camera3D/Crowbar.visible = true
 					has_crowbar = true
 			elif collider.is_in_group("p4_piano"):
-				crosshair(true)
+				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.play_note()
 			elif collider.is_in_group("khachkars"):
@@ -156,6 +156,8 @@ func _normal_movement(delta):
 				crosshair(false)
 		else:
 			crosshair(false)
+	else:
+		crosshair(false)
 				
 	move_and_slide()
 	
@@ -213,6 +215,16 @@ func crosshair(wich: bool):
 	else:
 		crosshair_normal.visible = true
 		crosshair_pick.visible = false
+		crosshair_pick_piano.visible = false
+
+func crosshair_piano(wich: bool):
+	if wich:
+		crosshair_normal.visible = false
+		crosshair_pick_piano.visible = true
+	else:
+		crosshair_normal.visible = true
+		crosshair_pick.visible = false
+		crosshair_pick_piano.visible = false
 
 func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed

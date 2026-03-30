@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsb23ca6s8p8"
-path.s3tc="res://.godot/imported/crosshair007.png-292184de85826103f77ac72ca44dda44.s3tc.ctex"
+uid="uid://lp2ducjhu61d"
+path.s3tc="res://.godot/imported/khachkar4maninfold_khachkar4_uv_map.jpg-86b9a0b20c2df0677103b188fb865eac.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "44b8b4bc2287631832b4323d8abd9485"
+}
 
 [deps]
 
-source_file="res://Player/PNG/Black/crosshair007.png"
-dest_files=["res://.godot/imported/crosshair007.png-292184de85826103f77ac72ca44dda44.s3tc.ctex"]
+source_file="res://Museum/Room_Khachkar/Khachkar_Models/khachkar4maninfold_khachkar4_uv_map.jpg"
+dest_files=["res://.godot/imported/khachkar4maninfold_khachkar4_uv_map.jpg-86b9a0b20c2df0677103b188fb865eac.s3tc.ctex"]
 
 [params]
 

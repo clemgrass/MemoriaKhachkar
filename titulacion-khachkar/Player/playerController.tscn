@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://j7nv0wdgspik" path="res://Player/PNG/White Retina/crosshair002.png" id="2_i6w0m"]
 [ext_resource type="Texture2D" uid="uid://b575dpb28nak1" path="res://Player/PNG/White Retina/crosshair007.png" id="2_ob6mk"]
 [ext_resource type="PackedScene" uid="uid://g5de8nu46712" path="res://Museum/Room_Complisonist/crowbar.tscn" id="4_qphhv"]
+[ext_resource type="Texture2D" uid="uid://bsb23ca6s8p8" path="res://Player/PNG/Black/crosshair007.png" id="4_spgtu"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_2i3gr"]
 
@@ -30,6 +31,7 @@ current = true
 
 [node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=738494105]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+visible = false
 target_position = Vector3(0, -2.5, 0)
 
 [node name="normal" type="Sprite3D" parent="Head/Camera3D" unique_id=1812411787]
@@ -42,6 +44,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.264)
 visible = false
 pixel_size = 0.0001
 texture = ExtResource("2_ob6mk")
+
+[node name="pick_piano" type="Sprite3D" parent="Head/Camera3D" unique_id=1670145301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.264)
+visible = false
+pixel_size = 0.0002
+texture = ExtResource("4_spgtu")
 
 [node name="Crowbar" parent="Head/Camera3D" unique_id=769933709 instance=ExtResource("4_qphhv")]
 transform = Transform3D(0.25712344, -0.18885085, 0.24949528, 0.3124851, 0.17179017, -0.19200572, -0.016297257, 0.3144018, 0.25477618, 0.03, -0.214, -0.321)
