@@ -870,7 +870,7 @@ material = SubResource("StandardMaterial3D_ffaql")
 [node name="Khachkar4" parent="." unique_id=1903476150 instance=ExtResource("8_fgtqw")]
 transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -9.439728, -0.5269646, -3.5463247)
 
-[node name="khachkar_collision" type="CSGBox3D" parent="Khachkar4" unique_id=312610289 groups=["khachkars"]]
+[node name="collisionKhachkar4" type="CSGBox3D" parent="Khachkar4" unique_id=312610289 groups=["khachkars"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00033521652, 1.2861327, -1.0554795)
 visible = false
 size = Vector3(1.0524292, 2.0175781, 0.45703125)

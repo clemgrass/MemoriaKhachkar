@@ -978,7 +978,7 @@ size = Vector3(9.9, 0.446, 9.946582)
 [node name="Khachkar3" parent="." unique_id=960770345 instance=ExtResource("11_ksjbm")]
 transform = Transform3D(-1.7, 0, -2.5669289e-07, 0, 1.7, 0, 2.5669289e-07, 0, -1.7, 3.4401188, -0.20263529, -2.5704627)
 
-[node name="collision_khachkar" type="CSGBox3D" parent="Khachkar3" unique_id=2021950929 groups=["khachkars"]]
+[node name="collisionKhachkar3" type="CSGBox3D" parent="Khachkar3" unique_id=2021950929 groups=["khachkars"]]
 transform = Transform3D(1.0000002, 0, 5.684342e-14, 0, 1.0000002, 0, -5.684342e-14, 0, 1.0000002, 0.08407593, 1.2926807, -0.124510884)
 visible = false
 size = Vector3(0.7149048, 1.8568115, 1.2041016)

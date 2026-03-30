@@ -2214,7 +2214,7 @@ shape = SubResource("BoxShape3D_fu4yr")
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 0, 0, 0)
 visible = false
 
-[node name="collisionKhachkar" type="CSGBox3D" parent="Khachkar2" unique_id=1418113770 groups=["khachkars"]]
+[node name="collisionKhachkar2" type="CSGBox3D" parent="Khachkar2" unique_id=1418113770 groups=["khachkars"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06384277, 1.1148772, -0.12084961)
 visible = false
 size = Vector3(0.8342285, 2.244995, 1.3149414)

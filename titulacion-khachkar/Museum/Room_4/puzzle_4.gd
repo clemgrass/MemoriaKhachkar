@@ -28,6 +28,7 @@ func note_played(note: String):
 		pos_correct = 0
 	
 	if pos_correct == correct_notes.size():
-		$Khachkar4/khachkar_collision.use_collision = true
+		$windowsProtect/KhachkarWinProtect5.visible = false
+		$Khachkar4/collisionKhachkar4.use_collision = true
 		$gameStation/AnimationPlayer.play("windows_down")
 		

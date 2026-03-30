@@ -9,5 +9,5 @@ func pressed_button():
 		if body.name == "PlayerController":
 			$"../khachkar2".visible = false
 			$"../../Khachkar2".visible = true
-			$"../../Khachkar2/collisionKhachkar".use_collision= true
+			$"../../Khachkar2/collisionKhachkar2".use_collision= true
 			return

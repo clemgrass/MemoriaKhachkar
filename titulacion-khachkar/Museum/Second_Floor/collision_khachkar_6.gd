@@ -1,5 +1,6 @@
 extends CSGBox3D
 
+signal puzzle_solved
 
 func khachkar_photo(allowed: bool):
 	#Photo for the album 
@@ -10,5 +11,8 @@ func khachkar_photo(allowed: bool):
 	if allowed:
 		$"..".visible = false
 		self.use_collision = false
+		emit_signal("puzzle_solved", 6)
 	else:
 		pass
+	
+	

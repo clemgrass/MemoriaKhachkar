@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://qrdi8mvcket"]
 
+[ext_resource type="Script" uid="uid://csm71klj4hafg" path="res://Museum/Room_Khachkar/khachkar_room.gd" id="1_i3le6"]
 [ext_resource type="Texture2D" uid="uid://clu33jykr5i40" path="res://Museum/Room_5/Marble012_4K-JPG_Color.jpg" id="1_sfs07"]
 [ext_resource type="PackedScene" uid="uid://cpdd2nd82lq4l" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar2.glb" id="2_ewkbf"]
 [ext_resource type="Texture2D" uid="uid://cf54e4hvuhegi" path="res://Museum/Room_5/Marble012_4K-JPG_Displacement.jpg" id="2_i3le6"]
@@ -59,7 +60,8 @@ uv1_scale = Vector3(2.09, 0.165, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nttmd"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="KhachkarRoom" type="Node3D" unique_id=2080924142]
+[node name="KhachkarRoom" type="Node3D" unique_id=2080924142 groups=["room_khachkars"]]
+script = ExtResource("1_i3le6")
 
 [node name="outerWall" type="CSGCylinder3D" parent="." unique_id=1415458490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5289428, 0)
@@ -207,6 +209,7 @@ spot_angle = 32.705063
 
 [node name="khachkar1" parent="lightK1" unique_id=497236083 instance=ExtResource("2_smiyn")]
 transform = Transform3D(0.2909655, -1.5345414, -1.249208, -0.26819852, 1.2204044, -1.5616276, 1.9604608, 0.39470774, -0.028233146, 1.8843141, -1.7920623, -3.9832883)
+visible = false
 
 [node name="lightK2" type="SpotLight3D" parent="." unique_id=1160923728]
 transform = Transform3D(0.62251467, 0.78260815, 0, -0.7671682, 0.6102332, 0.19765735, 0.15468824, -0.12304459, 0.9802712, 1.9420576, 2.617868, -0.99886763)
@@ -218,6 +221,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar2" parent="lightK2" unique_id=61044468 instance=ExtResource("2_ewkbf")]
 transform = Transform3D(0.31039768, -1.5343362, -1.2447749, -0.24480504, 1.2204663, -1.5654174, 1.9605415, 0.3953146, 0.0016083396, 1.6576269, -1.4895281, -4.3507395)
+visible = false
 
 [node name="lightK3" type="SpotLight3D" parent="." unique_id=1386856131]
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 5.741802, 2.617868, 1.1899415)
@@ -229,6 +233,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar3" parent="lightK3" unique_id=960770345 instance=ExtResource("3_smiyn")]
 transform = Transform3D(0.2898534, -1.5345416, -1.2494664, -0.2695885, 1.2204045, -1.5613885, 1.9604353, 0.3947078, -0.02997821, 1.9324362, -1.6802304, -4.1723256)
+visible = false
 
 [node name="lightK4" type="SpotLight3D" parent="." unique_id=15557646]
 transform = Transform3D(0.6225147, 0.78260815, 1.1698804e-08, -0.7671682, 0.6102332, 0.19765736, 0.15468825, -0.1230446, 0.9802712, 6.2359805, 2.617868, -1.1598448)
@@ -240,6 +245,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar4" parent="lightK4" unique_id=1903476150 instance=ExtResource("4_yutx4")]
 transform = Transform3D(1.2442696, -1.5343362, 0.31241772, 1.5658128, 1.2204664, -0.24226394, -0.0047904965, 0.3953147, 1.9605364, 2.1100266, -1.6122103, -1.833961)
+visible = false
 
 [node name="lightK5" type="SpotLight3D" parent="." unique_id=1247751707]
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 9.3561535, 2.617868, 1.2540892)
@@ -251,6 +257,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar5" parent="lightK5" unique_id=1741839314 instance=ExtResource("5_ebdpw")]
 transform = Transform3D(0.2884141, -1.5345416, -1.2497995, -0.27138674, 1.2204045, -1.561077, 1.9603994, 0.3947078, -0.03223622, 1.7494502, -1.800569, -3.9962952)
+visible = false
 
 [node name="lightK6" type="SpotLight3D" parent="." unique_id=1678764267]
 transform = Transform3D(0.62251467, 0.78260815, 9.276191e-09, -0.7671682, 0.6102332, 0.19765733, 0.15468824, -0.12304459, 0.9802712, 9.174454, 2.617868, -1.1598448)
@@ -262,6 +269,7 @@ spot_angle = 41.025345
 
 [node name="Kachkar6" parent="lightK6" unique_id=2029568894 instance=ExtResource("6_sfs07")]
 transform = Transform3D(0.46566203, -2.3015044, -1.8671463, -0.3671253, 1.8306994, -2.3481393, 2.9408123, 0.5929719, 0.0025155777, -3.1805525, -6.7676888, -4.062951)
+visible = false
 
 [node name="blackRoof" type="CSGBox3D" parent="." unique_id=903293028]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9949493, 4.903414, 0)

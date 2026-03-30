@@ -14,7 +14,7 @@ func answer(text) -> bool:
 		self.use_collision = false
 		#TODO cosas con el khachkar
 		$"../../windows/KhachkarWinProtect5".visible = false
-		$"../../Khachkar3/collision_khachkar".use_collision = true
+		$"../../Khachkar3/collisionKhachkar3".use_collision = true
 		$"../../AnimationPlayer".play("windows_r3")
 		return true
 	else:

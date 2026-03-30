@@ -14,3 +14,16 @@ res://khachkar_4_maninfold.tscn
 res://Museum/Room_4/puzzle_4.gd
 res://Museum/Room_4/playPiano.gd
 res://Museum/Room_4/collision_khachkar_4.gd
+res://Museum/Room_1/room1.tscn
+res://Museum/Room_1/collision_khachkar_1.gd
+res://Museum/Room_2/room2.tscn
+res://Museum/Room_3/room3.tscn
+res://Museum/Second_Floor/LevelFloor.tscn
+res://Museum/Room_Khachkar/khachkarRoom.tscn
+res://Museum/Room_Khachkar/khachkar_room.gd
+res://Museum/Room_2/collision_khachkar_2.gd
+res://Museum/Room_3/collision_khachkar_3.gd
+res://Museum/Second_Floor/collision_khachkar_6.gd
+res://Museum/Room_1/puzzle_1.gd
+res://Museum/Room_3/screen.gd
+res://Museum/Room_2/highlight_collision.gd
