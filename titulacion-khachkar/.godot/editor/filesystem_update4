@@ -13,3 +13,8 @@ res://World/main_game.gd
 res://Museum/Room_Khachkar/khachkarRoom.tscn
 res://Museum/Final_Room/final_door.gd
 res://Museum/Room_3/screen.gd
+res://Museum/Final_Room/ending_animation.gd
+res://MainMenu/credits.tscn
+res://MainMenu/credits.gd
+res://Museum/Entrance/reception.tscn
+res://Museum/Entrance/door.tscn

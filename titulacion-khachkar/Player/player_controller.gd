@@ -32,7 +32,7 @@ var move_speed : float = 0.0
 @onready var crosshair_pick = $Head/Camera3D/pick
 @onready var crosshair_pick_piano = $Head/Camera3D/pick_piano
 
-enum PlayerState { NORMAL, TERMINAL }
+enum PlayerState { NORMAL, TERMINAL, ENDING }
 var state : PlayerState = PlayerState.NORMAL
 var current_terminal: Node = null
 
@@ -81,6 +81,8 @@ func _physics_process(delta: float) -> void:
 						_on_terminal_text_entered(text) 
 			
 			move_and_slide()
+		PlayerState.ENDING:
+			return
 
 func _normal_movement(delta):
 	if has_gravity:
@@ -155,6 +157,12 @@ func _normal_movement(delta):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.country_wrong_highlight()
+			elif collider.is_in_group("ending"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					state = PlayerState.ENDING
+					player_camera.current = false
+					collider.grand_final()
 			elif collider.is_in_group("khachkars"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c3bljggc76c46" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_Displacement.jpg" id="2_wcxr0"]
 [ext_resource type="Texture2D" uid="uid://cooayj7hq2y0p" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_NormalGL.jpg" id="3_liuco"]
 [ext_resource type="Texture2D" uid="uid://bpv1coat4vq6s" path="res://Museum/Entrance/Textures/Marble016_4K-JPG_Roughness.jpg" id="4_xrdb0"]
-[ext_resource type="Material" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="5_b01th"]
+[ext_resource type="Material" uid="uid://bjrak7jjgi0d" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="5_b01th"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdy8m"]
 albedo_texture = ExtResource("1_slddd")
@@ -72,6 +72,11 @@ size = Vector3(1.5, 4.5914307, 2.9785156)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.659, 13.519)
 operation = 2
 size = Vector3(1.5, 4.5914307, 2.9785156)
+
+[node name="destruction" type="CSGPolygon3D" parent="southWall" unique_id=232730893]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.528755, -2.8224726, 0.11915691)
+operation = 2
+polygon = PackedVector2Array(1.1386317, 2.0615745, 1.7956371, 2.2077348, 1.5369169, 1.535597, 2.2272363, 0.87528765, 1.3524069, -0.66189814, -1.5394019, -0.46444392, -2.0310967, 1.030161, -1.7794672, 1.9887592, -2.3021379, 2.703238, -1.3182585, 2.7065072, -0.73349345, 3.2666395, -0.081165306, 2.9179344, 0.26141995, 3.5831866, 0.45609346, 2.8282554, 1.2747899, 3.1851053)
 
 [node name="eastWall" type="CSGBox3D" parent="." unique_id=841951231]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.0973334, 3.5, 11.929414)

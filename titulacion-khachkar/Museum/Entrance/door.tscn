@@ -43,6 +43,30 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("rightDoor:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -1.41)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("rightDoor:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_alksk"]
 resource_name = "open"
@@ -70,6 +94,30 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, -0.6492625, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("rightDoor:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, -1.41), Vector3(-0.8374107, 0, -1.6962038)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("rightDoor:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.64612085, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_btcr1"]
@@ -128,45 +176,49 @@ sides = 36
 material = SubResource("StandardMaterial3D_45hlv")
 
 [node name="rightDoor" type="CSGBox3D" parent="." unique_id=448544399]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.41)
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, 0, 0, -1.41)
 use_collision = true
 size = Vector3(0.351, 6.47, 2.827)
 material = ExtResource("1_rh4by")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1921387980]
-libraries/ = SubResource("AnimationLibrary_btcr1")
+[node name="handlhandleright" type="CSGCylinder3D" parent="rightDoor" unique_id=9426721]
+transform = Transform3D(-4.3710735e-08, 1, 0, -0.99999994, -4.3710738e-08, 0, 0, 0, 1, 0.177, -2, 1.055)
+radius = 0.1616211
+height = 0.01499939
+sides = 36
+material = SubResource("StandardMaterial3D_45hlv")
 
-[node name="handleright" type="CSGCylinder3D" parent="." unique_id=634882155]
-transform = Transform3D(0.26760826, 0.9635277, 0, -0.96352774, 0.2676083, 0, 0, 0, 0.9999999, 0.192, -2, -0.355)
+[node name="handleright" type="CSGCylinder3D" parent="rightDoor" unique_id=634882155]
+transform = Transform3D(0.26760826, 0.9635277, 0, -0.96352774, 0.2676083, 0, 0, 0, 0.9999999, 0.192, -2, 1.055)
 material_override = SubResource("StandardMaterial3D_oqaxm")
 radius = 0.13
 height = 0.043426514
 sides = 36
+material = SubResource("StandardMaterial3D_oqaxm")
 
-[node name="dhan" type="CSGBox3D" parent="handleright" unique_id=323585469]
+[node name="dhan" type="CSGBox3D" parent="rightDoor/handleright" unique_id=323585469]
 transform = Transform3D(1, -2.344791e-12, 0, 2.344791e-12, 1, 0, 0, 0, 1, -0.07411194, 0, 0)
 material_override = ExtResource("6_oxufm")
 operation = 2
 size = Vector3(0.15127563, 0.14257813, 0.32910156)
+material = SubResource("StandardMaterial3D_oqaxm")
 
-[node name="dhancircle" type="CSGCylinder3D" parent="handleright" unique_id=809906737]
+[node name="dhancircle" type="CSGCylinder3D" parent="rightDoor/handleright" unique_id=809906737]
 transform = Transform3D(0.9999999, 0, 0, 2.9802322e-08, 1.0000001, 0, 0, 0, 1.0000001, 1.1920929e-07, -0.030338317, -0.00040090084)
 operation = 2
 radius = 0.1
 height = 0.15319061
 sides = 36
 
-[node name="dhan2" type="CSGBox3D" parent="handleright" unique_id=1602496664]
+[node name="dhan2" type="CSGBox3D" parent="rightDoor/handleright" unique_id=1602496664]
 transform = Transform3D(0.9670813, 0.25446698, 0, -0.25446683, 0.96708137, 0, 0, 0, 1, -0.017693758, -0.01676336, 0.11505258)
 size = Vector3(0.02961731, 0.107910156, 0.044799805)
+material = SubResource("StandardMaterial3D_oqaxm")
 
-[node name="dhan3" type="CSGBox3D" parent="handleright" unique_id=1818657480]
+[node name="dhan3" type="CSGBox3D" parent="rightDoor/handleright" unique_id=1818657480]
 transform = Transform3D(0.9670813, 0.25446698, 0, -0.25446683, 0.96708137, 0, 0, 0, 1, -0.017693758, -0.01676336, -0.11370492)
 size = Vector3(0.02961731, 0.107910156, 0.044799805)
+material = SubResource("StandardMaterial3D_oqaxm")
 
-[node name="handlhandleright" type="CSGCylinder3D" parent="." unique_id=9426721]
-transform = Transform3D(-4.3710735e-08, 1, 0, -0.99999994, -4.3710738e-08, 0, 0, 0, 1, 0.177, -2, -0.355)
-radius = 0.1616211
-height = 0.01499939
-sides = 36
-material = SubResource("StandardMaterial3D_45hlv")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1921387980]
+libraries/ = SubResource("AnimationLibrary_btcr1")

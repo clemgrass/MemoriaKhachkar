@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dnr408vl4cw7c"]
+
+[ext_resource type="Script" uid="uid://dkmn7ytdumpon" path="res://MainMenu/credits.gd" id="1_kvwo3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kvwo3"]
+font_size = 40
+
+[node name="Credits" type="Node2D" unique_id=1608221327]
+script = ExtResource("1_kvwo3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1042274572]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=486031644]
+offset_right = 1921.0
+offset_bottom = 1078.0
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer" unique_id=1663293433]
+layout_mode = 2
+text = "Game created by
+Clemente Grass Briones"
+label_settings = SubResource("LabelSettings_kvwo3")
+horizontal_alignment = 1
+vertical_alignment = 1
