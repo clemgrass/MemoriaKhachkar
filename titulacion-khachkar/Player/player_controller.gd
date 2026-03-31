@@ -38,12 +38,13 @@ var current_terminal: Node = null
 
 var has_crowbar: bool = false
 
-"""
-Practice code 
-"""
 var grabbed_object: RigidBody3D = null
 var grab_distance := 1.5
 var just_released := false
+"""
+Practice code 
+"""
+
 """
 Practice code 
 """
@@ -146,6 +147,14 @@ func _normal_movement(delta):
 				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.play_note()
+			elif collider.is_in_group("countries"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.country_click_highlight()
+			elif collider.is_in_group("wrong_countries"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					collider.country_wrong_highlight()
 			elif collider.is_in_group("khachkars"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
@@ -178,6 +187,7 @@ func enter_terminal(terminal_node):
 	terminal_node.terminal_camera.current = true
 	
 	terminal_node.terminal_input.show()
+	terminal_node.terminal_instructions.show()
 	terminal_node.terminal_input.grab_focus()
 	capture_mouse()
 
@@ -189,6 +199,7 @@ func exit_terminal():
 	player_camera.current = true
 	
 	current_terminal.terminal_input.hide()
+	current_terminal.terminal_instructions.hide()
 	state = PlayerState.NORMAL
 	can_move = true
 	can_jump = true

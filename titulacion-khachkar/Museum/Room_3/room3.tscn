@@ -76,7 +76,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qjoxe"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_jga4j"]
 resource_name = "khachkar3maninfold_ShapeIndexedFaceSet_001"
 _surfaces = [{
 "aabb": AABB(-1.4438688, 0.0021975636, -6.086925, 2.9901922, 11.392647, 6.087083),
@@ -95,7 +95,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gjl86")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jga4j"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_qjoxe"]
 resource_name = "khachkar3maninfold_ShapeIndexedFaceSet_001"
 _surfaces = [{
 "aabb": AABB(-1.4438688, 0.0021975636, -6.086925, 2.9901922, 11.392647, 6.087083),
@@ -150,6 +150,9 @@ albedo_color = Color(0.85882354, 0.8117647, 0.65882355, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4asgb"]
 albedo_color = Color(0.29411766, 0.3882353, 0.3372549, 1)
 metallic = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_y3u5u"]
+font_color = Color(3.706068e-06, 0.7640518, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wq37y"]
 albedo_texture = ExtResource("8_r5nff")
@@ -285,7 +288,7 @@ sides = 36
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.383, -1.655, -0.614)
 
 [node name="let1" type="CSGBox3D" parent="supportLights/Letters" unique_id=2052773703]
-transform = Transform3D(0.8571673, -0.5150381, 0, 0.5150381, 0.8571673, 0, 0, 0, 1, -1.128, 5.631, -0.635)
+transform = Transform3D(0.84050035, 0.54181087, 0, -0.54181087, 0.84050035, 0, 0, 0, 1, 2.346781, 5.6456766, -0.635)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let1" unique_id=304298297]
@@ -297,8 +300,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "AR"
 
+[node name="k3p1" type="CSGMesh3D" parent="supportLights/Letters/let1" unique_id=1326391102]
+transform = Transform3D(-2.592058e-08, -0.19494417, 0.0031103864, -1.5507897e-08, -0.0046655983, -0.1299628, 0.4399999, -1.1648675e-08, -4.3973296e-09, 1.7561524, -0.45376945, 0.2454409)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let1/k3p1" unique_id=1940101652]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let1/k3p1" unique_id=1161660288]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128202, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 10.294481, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let2" type="CSGBox3D" parent="supportLights/Letters" unique_id=2003584413]
-transform = Transform3D(0.8571673, -0.5150381, 0, 0.5150381, 0.8571673, 0, 0, 0, 1, -1.128, 5.631, 0.678)
+transform = Transform3D(0.9803987, -0.19702427, 0, 0.19702427, 0.9803987, 0, 0, 0, 1, -0.0052092075, 6.034618, 0.678)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let2" unique_id=1755482267]
@@ -310,8 +327,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "ME"
 
+[node name="k3p2" type="CSGMesh3D" parent="supportLights/Letters/let2" unique_id=2040017868]
+transform = Transform3D(4.151782e-09, -0.19494416, 0.0031103604, -1.4179255e-08, -0.004665546, -0.12996277, 0.44000006, 1.689118e-09, -4.2174744e-09, 1.7593539, -0.4499476, -0.0065241456)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let2/k3p2" unique_id=976994498]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let2/k3p2" unique_id=1412778378]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128201, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 10.293997, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let3" type="CSGBox3D" parent="supportLights/Letters" unique_id=686888158]
-transform = Transform3D(0.8571673, -0.5150381, 0, 0.5150381, 0.8571673, 0, 0, 0, 1, -1.128, 5.631, 1.986)
+transform = Transform3D(0.9800082, 0.19895746, 0, -0.19895746, 0.9800082, 0, 0, 0, 1, 1.2019751, 6.056633, 1.986)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let3" unique_id=1143410340]
@@ -323,8 +354,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "NI"
 
+[node name="k3p3" type="CSGMesh3D" parent="supportLights/Letters/let3" unique_id=682413564]
+transform = Transform3D(4.151782e-09, -0.19494416, 0.0031103604, -1.4179255e-08, -0.004665546, -0.12996277, 0.44000006, 1.689118e-09, -4.2174744e-09, 1.7555177, -0.447397, -0.24518716)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let3/k3p3" unique_id=1979174238]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let3/k3p3" unique_id=95490052]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128199, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 10.293996, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let4" type="CSGBox3D" parent="supportLights/Letters" unique_id=832897155]
-transform = Transform3D(0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, 0, 0, 0, 1, -0.005, 6.047, -0.635)
+transform = Transform3D(0.8775063, -0.47956508, 0, 0.47956508, 0.8775063, 0, 0, 0, 1, -1.1204542, 5.625036, -0.635)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let4" unique_id=380159357]
@@ -336,8 +381,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "A"
 
+[node name="k3p4" type="CSGMesh3D" parent="supportLights/Letters/let4" unique_id=298845003]
+transform = Transform3D(-3.7996237e-08, -0.19494449, 0.0031013414, -2.0145203e-08, -0.0046520047, -0.12996298, 0.43999997, -1.7047435e-08, -5.6824807e-09, 1.3211002, -0.47073245, 0.17923918)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let4/k3p4" unique_id=822060354]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let4/k3p4" unique_id=1000338010]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1282005, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 8.099009, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let5" type="CSGBox3D" parent="supportLights/Letters" unique_id=1277367129]
-transform = Transform3D(0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, 0, 0, 0, 1, -0.005, 6.047, 0.6784204)
+transform = Transform3D(0.8582889, 0.5131668, 0, -0.5131668, 0.8582889, 0, 0, 0, 1, 2.3359826, 5.6323743, 0.6784204)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let5" unique_id=1607958288]
@@ -349,8 +408,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "N"
 
+[node name="k3p5" type="CSGMesh3D" parent="supportLights/Letters/let5" unique_id=812934970]
+transform = Transform3D(-1.0069752e-07, -0.19494452, 0.0031013824, -1.653567e-08, -0.0046520755, -0.12996301, 0.44, -4.478943e-08, -4.1743706e-09, 1.3211002, -0.47073245, 0.0037811995)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let5/k3p5" unique_id=2067795187]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let5/k3p5" unique_id=1477898130]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281996, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 8.098523, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let6" type="CSGBox3D" parent="supportLights/Letters" unique_id=13754980]
-transform = Transform3D(0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, 0, 0, 0, 1, -0.005, 6.047, 1.9797003)
+transform = Transform3D(0.8720009, -0.48950422, 0, 0.48950422, 0.8720009, 0, 0, 0, 1, -1.1241218, 5.6250353, 1.9797003)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let6" unique_id=1710171002]
@@ -362,8 +435,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "\" \""
 
+[node name="k3p6" type="CSGMesh3D" parent="supportLights/Letters/let6" unique_id=700865298]
+transform = Transform3D(-1.0069752e-07, -0.19494452, 0.0031013824, -1.653567e-08, -0.0046520755, -0.12996301, 0.44, -4.478943e-08, -4.1743706e-09, 1.3211002, -0.47073245, -0.24130857)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let6/k3p6" unique_id=659997837]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let6/k3p6" unique_id=727862004]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281977, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 8.098523, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let7" type="CSGBox3D" parent="supportLights/Letters" unique_id=1245329190]
-transform = Transform3D(0.98480767, 0.17364816, 0, -0.17364816, 0.98480767, 0, 0, 0, 1, 1.2080138, 6.0432243, -0.635)
+transform = Transform3D(0.97517645, -0.22142938, 0, 0.22142938, 0.97517645, 0, 0, 0, 1, -0.0028390884, 6.039555, -0.635)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let7" unique_id=281119075]
@@ -375,8 +462,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "KH"
 
+[node name="k3p7" type="CSGMesh3D" parent="supportLights/Letters/let7" unique_id=1131644155]
+transform = Transform3D(-3.8144286e-08, -0.19497362, 0.0021394994, -1.9863473e-08, -0.003209252, -0.12998241, 0.44, -1.704744e-08, -5.6824807e-09, 0.8826662, -0.47285557, 0.25201365)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let7/k3p7" unique_id=2123013445]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let7/k3p7" unique_id=1376150935]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281996, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 5.896744, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let8" type="CSGBox3D" parent="supportLights/Letters" unique_id=1895929384]
-transform = Transform3D(0.98480767, 0.17364816, 0, -0.17364816, 0.98480767, 0, 0, 0, 1, 1.2080138, 6.0432243, 0.6937381)
+transform = Transform3D(0.8478445, -0.5302449, -6.857261e-10, 0.5302449, 0.8478445, -1.0928216e-08, 6.376019e-09, 8.901825e-09, 1, -1.1182916, 5.617591, 0.6937381)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let8" unique_id=639078561]
@@ -388,8 +489,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "AC"
 
+[node name="k3p8" type="CSGMesh3D" parent="supportLights/Letters/let8" unique_id=340103704]
+transform = Transform3D(-3.8144286e-08, -0.19497362, 0.0021394994, -1.9863473e-08, -0.003209252, -0.12998241, 0.44, -1.704744e-08, -5.6824807e-09, 0.8826662, -0.47285557, -0.011944532)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let8/k3p8" unique_id=1105379746]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let8/k3p8" unique_id=332243789]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281986, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 5.896259, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let9" type="CSGBox3D" parent="supportLights/Letters" unique_id=674424882]
-transform = Transform3D(0.98480767, 0.17364816, 0, -0.17364816, 0.98480767, 0, 0, 0, 1, 1.2080138, 6.0432243, 1.9991863)
+transform = Transform3D(0.9748195, -0.22299488, 0, 0.22299488, 0.9748195, 0, 0, 0, 1, -0.006508827, 6.0468936, 1.9991863)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let9" unique_id=581708229]
@@ -401,8 +516,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "HK"
 
+[node name="k3p9" type="CSGMesh3D" parent="supportLights/Letters/let9" unique_id=153512637]
+transform = Transform3D(-3.8144286e-08, -0.19497362, 0.0021394994, -1.9863473e-08, -0.003209252, -0.12998241, 0.44, -1.704744e-08, -5.6824807e-09, 0.8826662, -0.47285557, -0.25348473)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let9/k3p9" unique_id=489000875]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let9/k3p9" unique_id=1097315598]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281967, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 5.896259, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let10" type="CSGBox3D" parent="supportLights/Letters" unique_id=1982658022]
-transform = Transform3D(0.8571672, 0.515038, 0, -0.515038, 0.8571672, 0, 0, 0, 1, 2.3370388, 5.6326065, -0.635)
+transform = Transform3D(0.9885545, 0.150864, 0, -0.150864, 0.9885545, 0, 0, 0, 1, 1.2069095, 6.047232, -0.635)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let10" unique_id=1073747798]
@@ -414,8 +543,22 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "AR"
 
+[node name="k3p10" type="CSGMesh3D" parent="supportLights/Letters/let10" unique_id=1565876286]
+transform = Transform3D(-3.8380048e-08, -0.19499809, 0.00057857484, -1.9404022e-08, -0.0008678809, -0.1299987, 0.44, -1.7047439e-08, -5.682481e-09, 0.45803916, -0.47609186, 0.24750906)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let10/k3p10" unique_id=1444692676]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let10/k3p10" unique_id=1980074985]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281986, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 3.7371972, -3.6611118)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
+
 [node name="let11" type="CSGBox3D" parent="supportLights/Letters" unique_id=1114289641]
-transform = Transform3D(0.8571672, 0.515038, 0, -0.515038, 0.8571672, 0, 0, 0, 1, 2.3370388, 5.6326065, 0.69148266)
+transform = Transform3D(0.9831751, 0.18266451, 0, -0.18266451, 0.9831751, 0, 0, 0, 1, 1.2069091, 6.0325537, 0.69148266)
 size = Vector3(1, 0.2, 0.5)
 
 [node name="divet" type="CSGBox3D" parent="supportLights/Letters/let11" unique_id=715255517]
@@ -427,6 +570,20 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "S
 "
+
+[node name="k3p11" type="CSGMesh3D" parent="supportLights/Letters/let11" unique_id=1476327884]
+transform = Transform3D(-3.8380048e-08, -0.19499809, 0.00057857484, -1.9404022e-08, -0.0008678809, -0.1299987, 0.44, -1.7047439e-08, -5.682481e-09, 0.45803916, -0.47609186, -0.019708574)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let11/k3p11" unique_id=141887022]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let11/k3p11" unique_id=1756874772]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281977, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 3.7367117, -3.661)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
 
 [node name="let12" type="CSGBox3D" parent="supportLights/Letters" unique_id=1224097375]
 transform = Transform3D(0.8571672, 0.515038, 0, -0.515038, 0.8571672, 0, 0, 0, 1, 2.3370388, 5.6326065, 2.0096529)
@@ -440,6 +597,20 @@ size = Vector3(0.05, 0.15007325, 0.54318845)
 [node name="ar" type="Label3D" parent="supportLights/Letters/let12" unique_id=1458175988]
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986795, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
 text = "!"
+
+[node name="k3p12" type="CSGMesh3D" parent="supportLights/Letters/let12" unique_id=791359122]
+transform = Transform3D(-3.8380048e-08, -0.19499809, 0.00057857484, -1.9404022e-08, -0.0008678809, -0.1299987, 0.44, -1.7047439e-08, -5.682481e-09, 0.45803916, -0.47609186, -0.26779878)
+mesh = SubResource("ArrayMesh_jga4j")
+
+[node name="d1" type="CSGBox3D" parent="supportLights/Letters/let12/k3p12" unique_id=1611002414]
+transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
+operation = 2
+size = Vector3(3.2001953, 2.638916, 11.944824)
+
+[node name="s1" type="CSGBox3D" parent="supportLights/Letters/let12/k3p12" unique_id=914640317]
+transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128196, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 3.7367117, -3.6609988)
+operation = 1
+size = Vector3(1, 0.429, 0.244)
 
 [node name="let13" type="CSGBox3D" parent="supportLights/Letters" unique_id=409795078]
 transform = Transform3D(0.6427875, 0.7660443, 0, -0.7660443, 0.6427875, 0, 0, 0, 1, 3.2370908, 4.854237, -0.635)
@@ -478,174 +649,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4992213, 1.3764485, -0.614
 transform = Transform3D(-5.2683422e-08, 0, 0.12850815, 0, 0.19644012, 0, -0.44194052, 0, -1.5319367e-08, 0.47280902, -0.0046266913, -0.09372425)
 visible = false
 mesh = SubResource("ArrayMesh_qjoxe")
-
-[node name="k3p1" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=1326391102]
-transform = Transform3D(-1.4231117e-08, -0.16469681, 0.06960191, -2.6642947e-08, -0.10440287, -0.10979789, 0.4399999, -1.1648675e-08, -4.3973296e-09, 0.72724634, 3.1150806, -0.3895591)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p1" unique_id=1940101652]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p1" unique_id=1161660288]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128202, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 10.294481, -3.6611118)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p2" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=2040017868]
-transform = Transform3D(1.0861628e-08, -0.16469683, 0.06960188, -1.0015668e-08, -0.10440282, -0.10979789, 0.44000006, 1.689118e-09, -4.2174744e-09, 0.7280221, 3.1200054, 0.6714758)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p2" unique_id=976994498]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p2" unique_id=1412778378]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128201, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 10.293997, -3.661)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p3" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=682413564]
-transform = Transform3D(1.0861628e-08, -0.16469683, 0.06960188, -1.0015668e-08, -0.10440282, -0.10979789, 0.44000006, 1.689118e-09, -4.2174744e-09, 0.72342026, 3.1202161, 1.7408128)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p3" unique_id=1979174238]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p3" unique_id=95490052]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128199, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 10.293996, -3.6609988)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p4" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=298845003]
-transform = Transform3D(-3.392081e-08, -0.19117501, 0.025622059, -2.6437126e-08, -0.03843308, -0.12745, 0.43999997, -1.7047435e-08, -5.6824807e-09, 1.4939929, 2.781377, -0.4557608)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p4" unique_id=822060354]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p4" unique_id=1000338010]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1282005, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 8.099009, -3.6611118)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p5" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=812934970]
-transform = Transform3D(-9.6296304e-08, -0.19117503, 0.025622103, -3.3770394e-08, -0.038433157, -0.12745002, 0.44, -4.478943e-08, -4.1743706e-09, 1.4939929, 2.781377, 0.6822016)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p5" unique_id=2067795187]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p5" unique_id=1477898130]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281996, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 8.098523, -3.661)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p6" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=700865298]
-transform = Transform3D(-9.6296304e-08, -0.19117503, 0.025622103, -3.3770394e-08, -0.038433157, -0.12745002, 0.44, -4.478943e-08, -4.1743706e-09, 1.4939929, 2.781377, 1.7383918)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p6" unique_id=659997837]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p6" unique_id=727862004]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281977, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 8.098523, -3.6609988)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p7" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=1131644155]
-transform = Transform3D(-4.1014037e-08, -0.19256878, -0.020464212, -1.2938014e-08, 0.030696312, -0.1283792, 0.44, -1.704744e-08, -5.6824807e-09, 2.111381, 2.3928304, -0.38298634)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p7" unique_id=2123013445]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p7" unique_id=1376150935]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281996, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 5.896744, -3.6611118)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p8" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=340103704]
-transform = Transform3D(-4.1014037e-08, -0.19256878, -0.020464212, -1.2938014e-08, 0.030696312, -0.1283792, 0.44, -1.704744e-08, -5.6824807e-09, 2.111381, 2.3928304, 0.6817936)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p8" unique_id=1105379746]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p8" unique_id=332243789]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281986, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 5.896259, -3.661)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p9" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=153512637]
-transform = Transform3D(-4.1014037e-08, -0.19256878, -0.020464212, -1.2938014e-08, 0.030696312, -0.1283792, 0.44, -1.704744e-08, -5.6824807e-09, 2.111381, 2.3928304, 1.7457016)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p9" unique_id=489000875]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p9" unique_id=1097315598]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281967, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 5.896259, -3.6609988)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p10" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=1565876286]
-transform = Transform3D(-4.2891926e-08, -0.16759296, -0.066458344, 3.1346934e-09, 0.09968752, -0.111728616, 0.44, -1.7047439e-08, -5.682481e-09, 2.6006708, 1.9571598, -0.38749093)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p10" unique_id=1444692676]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p10" unique_id=1980074985]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281986, 0, 7.692308, 0, -3.3624147e-07, -0.55616, 3.7371972, -3.6611118)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p11" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=1476327884]
-transform = Transform3D(-4.2891926e-08, -0.16759296, -0.066458344, 3.1346934e-09, 0.09968752, -0.111728616, 0.44, -1.7047439e-08, -5.682481e-09, 2.6006708, 1.9571598, 0.6717741)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p11" unique_id=141887022]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p11" unique_id=1756874772]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.1281977, 0, 7.692308, 0, -3.3624147e-07, -0.002417177, 3.7367117, -3.661)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
-
-[node name="k3p12" type="CSGMesh3D" parent="supportLights/khachkar3maninfold" unique_id=791359122]
-transform = Transform3D(-4.2891926e-08, -0.16759296, -0.066458344, 3.1346934e-09, 0.09968752, -0.111728616, 0.44, -1.7047439e-08, -5.682481e-09, 2.6006708, 1.9571598, 1.7418541)
-mesh = SubResource("ArrayMesh_jga4j")
-
-[node name="d1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p12" unique_id=1611002414]
-transform = Transform3D(1, 0, 0, 0, 0.99997675, 0, 0, 0, 1, 4.4703484e-08, 1.2492424, -5.472412)
-operation = 2
-size = Vector3(3.2001953, 2.638916, 11.944824)
-
-[node name="s1" type="CSGBox3D" parent="supportLights/khachkar3maninfold/k3p12" unique_id=914640317]
-transform = Transform3D(-9.9344064e-08, 0, -2.2727273, 0, 5.128196, 0, 7.692308, 0, -3.3624147e-07, 0.5496735, 3.7367117, -3.6609988)
-operation = 1
-size = Vector3(1, 0.429, 0.244)
 
 [node name="Computer" type="Node3D" parent="." unique_id=1572788278]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.4146824, 2.043388, 0.7299094)
@@ -965,6 +968,18 @@ middle_mouse_paste_enabled = false
 selecting_enabled = false
 deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
+
+[node name="Label" type="Label" parent="Computer/screen/CanvasLayer" unique_id=338344696]
+offset_left = -623.0
+offset_top = 165.0
+offset_right = 1295.0
+offset_bottom = 225.0
+scale = Vector2(1.665, 1.665)
+text = "Escribir \"esc\" y apretar enter para salir de la pantalla
+
+Introduzca la contraseña secreta:"
+label_settings = SubResource("LabelSettings_y3u5u")
+horizontal_alignment = 1
 
 [node name="Camera3D" type="Camera3D" parent="Computer/screen" unique_id=1554659200]
 transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, 0.5473504, 0, -1.1920929e-07)

@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://c1dtxjvi6eowg"]
 
-[ext_resource type="Material" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="1_2ywwh"]
+[ext_resource type="Material" uid="uid://bjrak7jjgi0d" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="1_2ywwh"]
 [ext_resource type="Texture2D" uid="uid://dfrd7bk805l1" path="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_diff_4k.jpg" id="1_bvney"]
 [ext_resource type="PackedScene" uid="uid://bg8twqns67ucr" path="res://Museum/Final_Room/big_computer.tscn" id="2_ndaak"]
 [ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="3_38g0y"]
+[ext_resource type="Texture2D" uid="uid://bjru0xtp3tv15" path="res://Museum/Walls/textures/blue_metal_plate_diff_4k.jpg" id="3_f8anl"]
 [ext_resource type="PackedScene" uid="uid://cbhh7562eqne7" path="res://Museum/Final_Room/record_system.tscn" id="3_xofrs"]
+[ext_resource type="Script" uid="uid://dvt05jj73744t" path="res://Museum/Final_Room/final_door.gd" id="4_s0x04"]
 [ext_resource type="Texture2D" uid="uid://bivamo1gykqjf" path="res://Museum/Final_Room/textures/wood_cabinet_worn_long_diff_4k.jpg" id="4_yo6lj"]
 [ext_resource type="Texture2D" uid="uid://f4fw3xady7i2" path="res://Museum/Final_Room/textures/wood_cabinet_worn_long_nor_gl_4k.jpg" id="5_f8anl"]
 [ext_resource type="Texture2D" uid="uid://b7hbetbyl8dj6" path="res://Museum/Final_Room/textures/wood_cabinet_worn_long_rough_4k.jpg" id="6_s0x04"]
@@ -16,8 +18,11 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndaak"]
 albedo_texture = ExtResource("1_bvney")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xofrs"]
-albedo_texture = ExtResource("1_bvney")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s0x04"]
+albedo_texture = ExtResource("3_f8anl")
+metallic = 0.3
+uv1_scale = Vector3(0.585, 1.065, 1)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4d5r"]
 albedo_texture = ExtResource("3_38g0y")
@@ -103,10 +108,12 @@ material_override = SubResource("StandardMaterial3D_ndaak")
 operation = 2
 size = Vector3(1.5, 2.5, 1.5410156)
 
-[node name="door" type="CSGBox3D" parent="." unique_id=2051688005]
+[node name="door" type="CSGBox3D" parent="." unique_id=2051688005 groups=["final_door"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
-material_override = SubResource("StandardMaterial3D_xofrs")
+material_override = SubResource("StandardMaterial3D_s0x04")
+use_collision = true
 size = Vector3(0.1, 2.5, 1.541)
+script = ExtResource("4_s0x04")
 
 [node name="top" type="CSGBox3D" parent="." unique_id=2021890269]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6088474, 3, -0.031311035)

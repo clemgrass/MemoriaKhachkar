@@ -31,6 +31,9 @@ p4_piano=""
 door=""
 puzzle0=""
 room_khachkars=""
+countries=""
+wrong_countries=""
+final_door=""
 
 [input]
 

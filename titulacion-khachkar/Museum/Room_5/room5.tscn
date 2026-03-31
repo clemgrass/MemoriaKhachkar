@@ -1,16 +1,22 @@
-[gd_scene format=3 uid="uid://ciw15l1g0ltj8"]
+[gd_scene format=4 uid="uid://ciw15l1g0ltj8"]
 
-[ext_resource type="Texture2D" uid="uid://ba5v8xdxnvrqf" path="res://Museum/Room_5/world-political-mw7-miller.png" id="1_bf162"]
 [ext_resource type="Texture2D" uid="uid://xoa4c2pmmxwb" path="res://Museum/Room_0/textures/floor_tiles_02_diff_4k.jpg" id="1_gugcy"]
+[ext_resource type="Script" uid="uid://cfls8dbv70tte" path="res://Museum/Room_5/puzzle_5.gd" id="1_os5sa"]
 [ext_resource type="Texture2D" uid="uid://dhlhcvesr88aw" path="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg" id="2_hkw87"]
 [ext_resource type="Material" uid="uid://bpvv2f4yciiqy" path="res://Museum/Room_4/Concrete046_4K-JPG.tres" id="2_u8e0v"]
 [ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="3_7d2qp"]
 [ext_resource type="Texture2D" uid="uid://d21amkealwwoe" path="res://Museum/Room_0/textures/floor_tiles_02_rough_4k.jpg" id="3_8aotp"]
 [ext_resource type="Material" uid="uid://ds8g4drlj1ly4" path="res://Museum/Room_5/Marble012_4K-JPG.tres" id="3_rhmn8"]
 [ext_resource type="PackedScene" uid="uid://b3q7ckmb77pja" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb" id="7_u8e0v"]
+[ext_resource type="Texture2D" uid="uid://vsh6h54yae8c" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar5maninfold_khachkar5_uv_map.jpg" id="8_7d2qp"]
+[ext_resource type="Script" uid="uid://bjqa18cdsuel0" path="res://Museum/Room_5/collision_khachkar_5.gd" id="9_83co1"]
+[ext_resource type="Script" uid="uid://cr7xx528j04s" path="res://Museum/Room_5/country_highlight.gd" id="9_rhmn8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhmn8"]
 albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rhmn8"]
+load_path = "res://.godot/imported/world-political-mw7-miller.png-8518976d8221cc0dce6e9562b87a067e.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4wqjv"]
 transparency = 1
@@ -39,10 +45,172 @@ metallic_texture = ExtResource("2_hkw87")
 roughness_texture = ExtResource("3_8aotp")
 uv1_scale = Vector3(5.701, 11.82, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsflx"]
-albedo_color = Color(0, 0, 0, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gvdye"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("8_7d2qp")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_v7nvv"]
+_surfaces = [{
+"aabb": AABB(-1.4430434, -1.4413372, -2.99129, 2.9901922, 10.248062, 6.087083),
+"format": 34896613377,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAwAAAAUAAgAFAAAAAQADAAYAAwAFAAYAAQAGAAQAAgAHAAUABgAFAAcAAgAEAAcABgAHAAQACAAJAAoACAALAAkACgAJAAwACwAMAAkACgANAAgADQALAAgACgAMAA4ACgAOAA0ACwAPAAwADgAMAA8ADQAPAAsADgAPAA0A"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAPw8/v8AAAAAAAD+/wAAAAD8PAAAAAD+//w8//8AAP//AAAAAAAA///8PAAAAAD+/wAA//8AAPAy/DyDXAAA8DL+/xeVAADwMvw8F5UAAPAy/v+DXAAA9sP//xeVAAD2w/w8g1wAAPbD/DwXlQAA9sP//4NcAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l1vq4"]
+resource_name = "khachkar5maninfold_ShapeIndexedFaceSet_001"
+_surfaces = [{
+"aabb": AABB(-1.4430434, -1.4413372, -2.99129, 2.9901922, 10.248062, 6.087083),
+"attribute_data": PackedByteArray("G5a04dZ/ncrqlYnKB4DI4VKAqsq3l0nihIBe4oWXlsoLgGHKZpcf4j2AM+I0l0zKXLjTuWyPGcVsj9O5XLgZxZY1//+WNf//ljX//5Y1//+lt7e5qY7lxamOt7mlt+XFg4wu8yfypf69i9767vL19oKXv9CW9TzXgpc815b1v9Bd2Lq6//94jv//urpd2HiO8ZCNuTy0S4OGtPm4Y49Lg7myE/X22X79JLJr/IvaJvbxkI25gpc81///urqGtPm4"),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": SubResource("StandardMaterial3D_gvdye"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.6826487, 1.9458, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("AAAAAAAAhtUAAPw8/v+G1QAAAAD+/4bVAAD8PAAAhtUAAPw8AAD/////AAAAAP/////8PAAA//8AAAAAAAD//////DwAAIfV/v8AAP//h9X+//w8//+H1f//AAAAAIfVAAAAAP7////+//w8//////7/AAD/////AAD8PP7///8AAAAA/v//v///AAAAAP+/AAAAAAAA/7/+/wAA////vwAA/Dz+///////8PAAA///+//w8/////wAA/DwAAP//8DL8PINcWNfwMv7/F5VY1/Ay/DwXlVjX8DL+/4NcWNf2w/w8F5VU1fbD//+DXFTV9sP8PINcVNX2w///F5VU1fbD/DyDXP//8DL+/4Nc///wMvw8g1z///bD//+DXP//8DL8PBeVvoH2w///F5VFgPbD/DwXlQSC8DL+/xeVAIDwMv7/g1wiwPbD//8XlSLA8DL+/xeVIsD2w///g1wiwPAy/DwXlf+/9sP8PINc/7/wMvw8g1xuKfbD/DwXlf+/N1VuqjdVbqo3VW6qN1VuqiHAIUAhwCFAIcAhQCHAIUDIqpJVyKqSVciqklXIqpJV/3//f/9//3//f/9//3//fwAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/s9cl1LPXJdSz1yXUs9cl1KoqqiqqKqoqqiqqKqoqqir/f/7//3/+//9/////f/7//3//f/9//3//f/9//3///1f5sHJX+bByV/mwclf5sHLpAQp/6QEKf8xWmVTpAQp/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_v7nvv")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vpjio"]
+resource_name = "khachkar5maninfold_ShapeIndexedFaceSet_001"
+_surfaces = [{
+"aabb": AABB(-1.4430434, -1.4413372, -2.99129, 2.9901922, 10.248062, 6.087083),
+"attribute_data": PackedByteArray("G5a04dZ/ncrqlYnKB4DI4VKAqsq3l0nihIBe4oWXlsoLgGHKZpcf4j2AM+I0l0zKXLjTuWyPGcVsj9O5XLgZxZY1//+WNf//ljX//5Y1//+lt7e5qY7lxamOt7mlt+XFg4wu8yfypf69i9767vL19oKXv9CW9TzXgpc815b1v9Bd2Lq6//94jv//urpd2HiO8ZCNuTy0S4OGtPm4Y49Lg7myE/X22X79JLJr/IvaJvbxkI25gpc81///urqGtPm4"),
+"format": 34896613399,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": SubResource("StandardMaterial3D_gvdye"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.6826487, 1.9458, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("AAAAAAAAhtUAAPw8/v+G1QAAAAD+/4bVAAD8PAAAhtUAAPw8AAD/////AAAAAP/////8PAAA//8AAAAAAAD//////DwAAIfV/v8AAP//h9X+//w8//+H1f//AAAAAIfVAAAAAP7////+//w8//////7/AAD/////AAD8PP7///8AAAAA/v//v///AAAAAP+/AAAAAAAA/7/+/wAA////vwAA/Dz+///////8PAAA///+//w8/////wAA/DwAAP//8DL8PINcWNfwMv7/F5VY1/Ay/DwXlVjX8DL+/4NcWNf2w/w8F5VU1fbD//+DXFTV9sP8PINcVNX2w///F5VU1fbD/DyDXP//8DL+/4Nc///wMvw8g1z///bD//+DXP//8DL8PBeVvoH2w///F5VFgPbD/DwXlQSC8DL+/xeVAIDwMv7/g1wiwPbD//8XlSLA8DL+/xeVIsD2w///g1wiwPAy/DwXlf+/9sP8PINc/7/wMvw8g1xuKfbD/DwXlf+/N1VuqjdVbqo3VW6qN1VuqiHAIUAhwCFAIcAhQCHAIUDIqpJVyKqSVciqklXIqpJV/3//f/9//3//f/9//3//fwAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/s9cl1LPXJdSz1yXUs9cl1KoqqiqqKqoqqiqqKqoqqir/f/7//3/+//9/////f/7//3//f/9//3//f/9//3///1f5sHJX+bByV/mwclf5sHLpAQp/6QEKf8xWmVTpAQp/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_v7nvv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7d2qp"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_os5sa"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o36uw"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m411c"]
+albedo_color = Color(1, 1, 1, 0)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h03dy"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgg33"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u6mhr"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xafed"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7j2xw"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ade31"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gdvb4"]
+albedo_color = Color(1, 1, 1, 0.5882353)
+metallic = 1.0
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_rhmn8"]
+albedo_color = Color(0.84313726, 0.8862745, 0.96862745, 1)
+
+[sub_resource type="Animation" id="Animation_83co1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Khachkar5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.8265743, 4.3589497, 3.6434047)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Khachkar5:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -1.5707964)]
+}
+
+[sub_resource type="Animation" id="Animation_os5sa"]
+resource_name = "khachkar_fall"
+length = 10.066667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Khachkar5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10.066667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.8265743, 4.3589497, 3.6434047), Vector3(1.7657065, -0.020128936, 3.6218498)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Khachkar5:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10.066667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, -1.5707964), Vector3(0, 0, -2.9802319e-08)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_83co1"]
+_data = {
+&"RESET": SubResource("Animation_83co1"),
+&"khachkar_fall": SubResource("Animation_os5sa")
+}
 
 [node name="Room5" type="Node3D" unique_id=342335966]
+script = ExtResource("1_os5sa")
 
 [node name="floor" type="Node3D" parent="." unique_id=531956678]
 
@@ -58,8 +226,9 @@ use_collision = true
 size = Vector3(20, 0.1, 30)
 
 [node name="Sprite3D" type="Sprite3D" parent="floor" unique_id=1763260845]
-transform = Transform3D(-3.4969112e-08, 0.8, 3.4969112e-08, 0, -3.4969112e-08, 0.8, 0.8, 3.4969112e-08, 1.5285484e-15, -0.9473305, -0.22176573, 0)
-texture = ExtResource("1_bf162")
+transform = Transform3D(-3.4969112e-08, 0.8, 3.4969112e-08, 0, -3.4969112e-08, 0.8, 0.8, 3.4969112e-08, 1.5285484e-15, -0.9414787, -0.07062718, 0.0007753372)
+modulate = Color(0.97, 0.97, 0.97, 1)
+texture = SubResource("CompressedTexture2D_rhmn8")
 
 [node name="roof" type="Node3D" parent="." unique_id=1149570501]
 transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0, 4, 0)
@@ -73,6 +242,11 @@ size = Vector3(20, 0.2, 30)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
 material_override = SubResource("StandardMaterial3D_4wqjv")
 size = Vector3(20, 0.1, 30)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="roof/roofWindow" unique_id=121586175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8797915, -0.31530762, 3.515644)
+operation = 2
+size = Vector3(2.81633, 0.84106445, 1.9487457)
 
 [node name="pilar1" type="CSGCylinder3D" parent="." unique_id=951203614]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.686406, 2.0073242, -13.286951)
@@ -193,25 +367,211 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1206207, -0.017382812, 0)
 operation = 2
 size = Vector3(26.131561, 0.21835938, 30)
 
-[node name="fKhachkar" type="CSGBox3D" parent="." unique_id=175013595]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0828657, 4.2458706, -5.7860303)
-size = Vector3(1, 0.24914551, 1)
-material = SubResource("StandardMaterial3D_qsflx")
-
-[node name="fKhachkar2" type="CSGBox3D" parent="." unique_id=130395611]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7116895, 4.249085, 10.61603)
-size = Vector3(1, 0.24914551, 1)
-material = SubResource("StandardMaterial3D_qsflx")
-
-[node name="fKhachkar4" type="CSGBox3D" parent="." unique_id=1852669963]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8165526, 4.249085, -5.6899347)
-size = Vector3(1, 0.24914551, 1)
-material = SubResource("StandardMaterial3D_qsflx")
-
-[node name="fKhachkar5" type="CSGBox3D" parent="." unique_id=2122543993]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.866951, 4.2458153, 1.2040696)
-size = Vector3(1, 0.24914551, 1)
-material = SubResource("StandardMaterial3D_qsflx")
-
 [node name="Khachkar5" parent="." unique_id=1741839314 instance=ExtResource("7_u8e0v")]
-transform = Transform3D(-2.1855694e-08, 1, 0, -0.5, -4.371139e-08, 0, 0, 0, 1, 0.8265743, 4.3589497, 3.6434047)
+transform = Transform3D(-2.1855696e-08, 1.0000001, 0, -0.50000006, -4.3711392e-08, 0, 0, 0, 1, 0.8265743, 4.3589497, 3.6434047)
+visible = false
+
+[node name="collisionKhachkar5" type="CSGBox3D" parent="Khachkar5" unique_id=1499464625 groups=["khachkars"]]
+transform = Transform3D(-8.742278e-08, -2, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.10985756, 1.0271969, -0.11972952)
+visible = false
+size = Vector3(2.02063, 0.27886963, 1.3114014)
+script = ExtResource("9_83co1")
+
+[node name="khachkar5maninfold" type="Node3D" parent="." unique_id=380762512]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="ShapeIndexedFaceSet_001" type="MeshInstance3D" parent="khachkar5maninfold" unique_id=1178109030]
+transform = Transform3D(-5.2683422e-08, 0, 0.12850815, 0, 0.19644012, 0, -0.44194052, 0, -1.5319367e-08, 0.0749947, 0.3036999, -0.09335947)
+visible = false
+mesh = SubResource("ArrayMesh_l1vq4")
+
+[node name="k1" type="CSGMesh3D" parent="khachkar5maninfold" unique_id=1530642902]
+transform = Transform3D(-1.9670125e-08, 0, 0.13, 0, 0.195, 0, -0.45, 0, -5.6824803e-09, -4.2080154, 0.25592238, -8.009623)
+mesh = SubResource("ArrayMesh_vpjio")
+
+[node name="d1" type="CSGBox3D" parent="khachkar5maninfold/k1" unique_id=1884457036]
+transform = Transform3D(-9.71351e-08, -1.6315354, -1.5087019, 0, 3.4816198, -3.7650743, 7.6922035, -2.4686955e-07, -2.2828398e-07, 0.9294071, 1.6546446, -0.56325823)
+operation = 2
+size = Vector3(1, 1.939331, 2.4471436)
+
+[node name="k2" type="CSGMesh3D" parent="khachkar5maninfold" unique_id=498030949]
+transform = Transform3D(-1.9670125e-08, 0, 0.13, 0, 0.195, 0, -0.45, 0, -5.6824803e-09, -4.2131486, -4.9249506, 11.34534)
+mesh = SubResource("ArrayMesh_vpjio")
+
+[node name="d1" type="CSGBox3D" parent="khachkar5maninfold/k2" unique_id=819041719]
+transform = Transform3D(-9.713204e-08, -1.6314679, -1.5086344, 0, 3.481464, -3.7649002, 7.6919603, -2.4686963e-07, -2.2828398e-07, -0.5092579, 7.8274302, -0.5632581)
+operation = 2
+size = Vector3(1, 0.6455364, 1.5586548)
+
+[node name="d2" type="CSGBox3D" parent="khachkar5maninfold/k2" unique_id=348272415]
+transform = Transform3D(-9.7131114e-08, -1.6314477, -1.5086142, 0, 3.4814172, -3.7648482, 7.6918874, -2.4686966e-07, -2.28284e-07, 0.3668751, 0.33660722, -0.563258)
+operation = 2
+size = Vector3(1, 1.4010692, 2.2861633)
+
+[node name="k3" type="CSGMesh3D" parent="khachkar5maninfold" unique_id=1089072091]
+transform = Transform3D(-1.9670125e-08, 0, 0.06, 0, 0.195, 0, -0.45, 0, -2.6226832e-09, -4.290149, 3.848322, 6.9627767)
+mesh = SubResource("ArrayMesh_vpjio")
+
+[node name="d1" type="CSGBox3D" parent="khachkar5maninfold/k3" unique_id=1696073829]
+transform = Transform3D(-9.7130176e-08, -1.6314269, -1.5085934, 0, 3.4813695, -3.7647948, 7.691813, -2.4686952e-07, -2.2828398e-07, -0.6292072, 6.552711, -0.5632581)
+operation = 2
+size = Vector3(1, 0.90381575, 1.9969788)
+
+[node name="d2" type="CSGBox3D" parent="khachkar5maninfold/k3" unique_id=795101346]
+transform = Transform3D(-9.7128655e-08, -1.6313936, -1.5085601, 0, 3.4812925, -3.7647092, 7.691693, -2.468696e-07, -2.28284e-07, 0.5255767, -0.0020530224, -0.563258)
+operation = 2
+size = Vector3(1, 1.206516, 2.2861633)
+
+[node name="k4" type="CSGMesh3D" parent="khachkar5maninfold" unique_id=886107976]
+transform = Transform3D(-2.8312417e-08, 9.355006e-11, 0.065, 0.32604513, 0.13439941, 2.9415852e-09, -0.31015247, 0.14128622, -2.8412401e-09, -4.3004165, -4.525793, -6.0219913)
+mesh = SubResource("ArrayMesh_vpjio")
+
+[node name="d1" type="CSGBox3D" parent="khachkar5maninfold/k4" unique_id=1212261643]
+transform = Transform3D(-9.7129345e-08, -1.6314088, -1.5085753, 0, 3.4813278, -3.7647483, 7.6917477, -2.4686955e-07, -2.2828397e-07, -0.68282807, 5.6656656, -0.5632581)
+operation = 2
+size = Vector3(1, 1.1032751, 2.2837677)
+
+[node name="d2" type="CSGBox3D" parent="khachkar5maninfold/k4" unique_id=663711970]
+transform = Transform3D(-9.712631e-08, -1.631342, -1.5085086, 0, 3.4811735, -3.764577, 7.6915073, -2.4686958e-07, -2.2828401e-07, 0.7659333, -0.5149592, -0.56325793)
+operation = 2
+size = Vector3(1, 0.91185176, 2.2861633)
+
+[node name="k5" type="CSGMesh3D" parent="khachkar5maninfold" unique_id=1358330823]
+transform = Transform3D(-1.9670125e-08, 0, 0.055, 0, 0.195, 0, -0.45, 0, -2.4041265e-09, -4.3055496, 2.3494534, 0.12825921)
+mesh = SubResource("ArrayMesh_vpjio")
+
+[node name="d2" type="CSGBox3D" parent="khachkar5maninfold/k5" unique_id=1100311594]
+transform = Transform3D(-9.712631e-08, -1.631342, -1.5085086, 0, 3.4811735, -3.764577, 7.6915073, -2.4686958e-07, -2.2828401e-07, 0.7659333, -0.5149592, -0.56325793)
+operation = 1
+size = Vector3(1, 0.91185176, 2.2861633)
+
+[node name="countriesMesh" type="Node3D" parent="." unique_id=64165763]
+
+[node name="USA" type="Node3D" parent="countriesMesh" unique_id=1928089251]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4990183, 0.03350377, -7.938406)
+
+[node name="USAColl" type="CSGPolygon3D" parent="countriesMesh/USA" unique_id=350292912 groups=["countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, 0, 0.01110743, 0)
+use_collision = true
+polygon = PackedVector2Array(0.79907393, -2.3760257, 0.93113565, -2.443943, 0.9613211, -2.5646849, 0.8284607, -2.5871, 0.7338548, -2.637703, 0.6368079, -2.3950853, 0.53329086, -2.356267, 0.4411149, -2.3105536, 0.3634777, -2.0938158, 0.22437692, -2.0711713, -0.1411668, -1.9353051, -0.44201243, -1.5374122, -0.89813346, -1.6344595, -0.99194545, -1.5859361, -0.78491205, -1.4047818, -0.63287175, -1.3853722, -0.5617038, -1.1039357, -0.6652204, -0.47636557, -0.8172609, -0.27580166, -0.9337172, -0.27903652, -0.89813346, -0.15611029, -0.62963665, 0.018574238, -0.6661235, 0.2226839, -0.37272787, 1.2518234, -0.23689318, 1.4518032, 0.30588126, 1.8114986, 0.8783817, 1.785635, 1.0564907, 1.8534927, 1.1432741, 1.6535139, 1.1319544, -0.43683195, 1.0544302, -0.8119931, 1.0468843, -1.0572505, 0.9110496, -1.2836418, 0.77144146, -1.4383426, 0.6205139, -1.4572086, 0.45826697, -1.3855181, 0.4658134, -1.570404, 0.5978749, -1.728878)
+depth = 0.1
+material = SubResource("StandardMaterial3D_7d2qp")
+script = ExtResource("9_rhmn8")
+
+[node name="Chile" type="Node3D" parent="countriesMesh" unique_id=1016543997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9186316, 0, -5.4711356)
+
+[node name="ChileColl" type="CSGPolygon3D" parent="countriesMesh/Chile" unique_id=1375815651 groups=["countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, 0, 0.040934578, 0)
+use_collision = true
+polygon = PackedVector2Array(1.2537055, -0.07977438, 1.4385004, -0.0652132, 1.5584235, -0.16471386, 1.9900758, 0.003900528, 1.9496086, 0.06460142, 1.5213284, 0.074718475, 1.1436334, 0.12193012, 1.0736189, 0.16365862, 0.6782584, 0.16548014, 0.35145378, 0.3227744, -0.20970249, 0.37561083, -0.7836132, 0.49221468, -1.1607547, 0.4102273, -1.3465924, 0.1915946, -1.4604287, -0.11907244, -1.3656878, -0.058948517, -1.1215482, -0.058948517, -1.0723553, 0.19794464, -0.94117594, 0.24349308, -0.884696, 0.32001448, -0.53852797, 0.18883514, -0.33811474, 0.13964272, -0.22151089, 0.18519115, -0.09215307, 0.19247913, 0.25219345, 0.13417673, 0.6530194, 0.028504372, 0.86983013, 0.08134079, 1.1103258, 0.019394875)
+depth = 0.1
+material = SubResource("StandardMaterial3D_os5sa")
+script = ExtResource("9_rhmn8")
+
+[node name="France" type="Node3D" parent="countriesMesh" unique_id=553416179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2830534, 0.03579259, 0.25385106)
+
+[node name="FranceColl" type="CSGPolygon3D" parent="countriesMesh/France" unique_id=832394925 groups=["countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, 0, 0.01110743, 0)
+use_collision = true
+polygon = PackedVector2Array(-0.1741724, -0.117283344, -0.16747642, 0.007260263, -0.25586224, 0.084932685, -0.18756413, 0.42642337, 0.05080986, 0.38223046, 0.2690959, 0.6447096, 0.32668066, 0.65810144, 0.3320372, 0.42240584, 0.42711878, 0.44249353, 0.39096117, 0.29384464, 0.44184995, 0.27777448, 0.4806862, 0.17867523, 0.5556803, 0.1800144, 0.5744288, 0.11305541, 0.49273872, -0.014166534, 0.39497876, -0.196295, 0.35748172, -0.3342304, 0.22624207, -0.28066322, 0.15258741, -0.17888567, 0.04143548, -0.22709605, -0.13533616, -0.27932408, -0.20765185, -0.18290317)
+depth = 0.1
+material = SubResource("StandardMaterial3D_o36uw")
+script = ExtResource("9_rhmn8")
+
+[node name="Russia" type="Node3D" parent="countriesMesh" unique_id=1920295811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5432162, 0.045166872, 7.28734)
+
+[node name="RussiaColl" type="CSGPolygon3D" parent="countriesMesh/Russia" unique_id=1562562684 groups=["countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, 0, 0.01110743, 0)
+use_collision = true
+polygon = PackedVector2Array(-0.20566082, -5.3162565, -0.65903497, -4.897788, -1.5250995, -3.0814943, -1.1322877, -3.2316866, -0.87811637, -3.0930471, -0.7625835, -2.7580032, -0.4853053, -2.550043, -0.38132524, -2.1572332, -0.6470516, -1.9261675, -0.70481753, -1.6026754, -0.6591079, -0.9276495, -0.6126609, -0.23067713, -0.84372663, 0.57805204, -0.4393618, 1.1095018, -0.20829606, 1.7911453, -0.2776158, 2.519001, -0.65887403, 2.7038536, -0.56644773, 3.281517, -0.90945625, 3.7270448, -1.1528893, 3.6022074, -1.4837084, 3.6708682, -1.4088058, 4.2139106, -1.2028241, 4.313781, -0.8158283, 4.1764593, -0.58162165, 4.6337028, 0.044055462, 5.0861616, 0.7043662, 4.830123, 1.364676, 4.991832, 2.5909672, 2.0676007, 2.082241, 1.0290046, 2.5808434, -0.4398489, 2.5404153, -1.4370527, 2.0687647, -1.9087029, 2.0418139, -2.6768188, 2.4766817, -3.541296, 1.7085652, -5.117957, 1.5027981, -6.717759, 0.85612154, -6.7208834, 0.2911291, -6.0325594)
+depth = 0.1
+material = SubResource("StandardMaterial3D_m411c")
+script = ExtResource("9_rhmn8")
+
+[node name="Australia" type="Node3D" parent="countriesMesh" unique_id=2077121379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5835342, 0.040905796, 10.483264)
+
+[node name="AustraliaColl" type="CSGPolygon3D" parent="countriesMesh/Australia" unique_id=1771042727 groups=["countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, 0, 0.01110743, 0)
+use_collision = true
+polygon = PackedVector2Array(0.9551418, 0.64784336, 0.6936281, 0.9781761, 0.45505428, 1.2855692, 0.23483181, 1.6663704, -0.14138079, 1.6434307, -0.4166584, 1.5287313, -0.572649, 1.5241442, -0.7286396, 1.5057917, -0.7974596, 1.3222733, -0.6368809, 0.7808943, -0.49006605, 0.5056162, -0.76075554, -0.054115295, -0.81581116, -0.2881012, -1.0452094, -0.44867992, -1.3755426, -0.7790127, -1.5820007, -0.9166517, -1.3571911, -1.1460505, -0.48547792, -1.4305038, 0.01919794, -1.435092, 0.5101099, -1.0588789, 0.77162385, -0.84324455, 1.2258317, -0.5909071, 0.70739245, -0.4624443, 0.82209134, -0.12293434, 0.9367907, -0.06329155, 1.1203086, -0.1321106, 1.1570127, 0.20281029, 1.0285499, 0.40926933)
+depth = 0.1
+material = SubResource("StandardMaterial3D_h03dy")
+script = ExtResource("9_rhmn8")
+
+[node name="Armenia" type="Node3D" parent="countriesMesh" unique_id=2050809936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.272137, 0.044314638, 3.6305928)
+
+[node name="ArmeniaColl" type="CSGPolygon3D" parent="countriesMesh/Armenia" unique_id=791613423 groups=["countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, 0, 0.01110743, 0)
+visible = false
+polygon = PackedVector2Array(0.47157335, 0.052110195, 0.4134972, 0.054078817, 0.40857553, 0.08164024, 0.43613708, 0.10034275, 0.4686203, 0.115107775, 0.4627776, 0.1435988, 0.48344874, 0.17903495, 0.5011668, 0.20265913, 0.5051042, 0.23809528, 0.5198693, 0.2656567, 0.55333686, 0.2755003, 0.57892966, 0.26664114, 0.60839653, 0.2873671, 0.6143024, 0.26374292, 0.6182399, 0.2292912, 0.6251302, 0.19877648, 0.6211928, 0.15940309, 0.59756875, 0.12691975, 0.57197595, 0.13479447, 0.5434301, 0.10821748, 0.5129155, 0.09246802, 0.49224448, 0.08656192)
+depth = 0.1
+material = SubResource("StandardMaterial3D_bgg33")
+script = ExtResource("9_rhmn8")
+
+[node name="Madagascar" type="Node3D" parent="countriesMesh" unique_id=1600229169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2301092, 0.03579259, 3.6951632)
+
+[node name="MadagascarColl" type="CSGPolygon3D" parent="countriesMesh/Madagascar" unique_id=1218329506 groups=["wrong_countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, -0.9263544, 0.01110743, -0.07437897)
+use_collision = true
+polygon = PackedVector2Array(0.6561377, -0.02218914, 0.6277385, 0.03866625, 0.5926788, 0.09367299, 0.60890675, 0.17481351, 0.6628995, 0.24422216, 0.74809694, 0.26856446, 0.8562844, 0.30102062, 0.9448199, 0.25817847, 1.0478511, 0.3004949, 1.2575941, 0.30785418, 1.353266, 0.24161983, 1.4235301, 0.03335333, 1.5614688, -0.07889104, 1.6858845, -0.17355514, 1.6231637, -0.2160132, 1.4285023, -0.2724905, 1.3054302, -0.27353764, 1.172961, -0.27169776, 1.0920076, -0.22570157, 0.9908161, -0.1778655, 0.9025035, -0.1373887, 0.7773938, -0.1005919)
+depth = 0.1
+material = SubResource("StandardMaterial3D_u6mhr")
+script = ExtResource("9_rhmn8")
+
+[node name="Uruguay" type="Node3D" parent="countriesMesh" unique_id=908373420]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.097246, 0.03579259, -4.3275275)
+
+[node name="UruguayColl" type="CSGPolygon3D" parent="countriesMesh/Uruguay" unique_id=1861024302 groups=["wrong_countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, -0.9263544, 0.01110743, -0.07437897)
+use_collision = true
+polygon = PackedVector2Array(1.7223802, -0.15531874, 1.6800637, -0.1258812, 1.6653452, -0.050446987, 1.6635051, 0.02314663, 1.6837435, 0.08938122, 1.7242203, 0.16297531, 1.7720561, 0.21265078, 1.9229236, 0.18321323, 2.0627522, 0.15377569, 2.0645921, 0.06362343, 2.007557, 0.0047483444, 1.9321227, -0.14243937, 1.871408, -0.17923641, 1.762857, -0.17739677)
+depth = 0.1
+material = SubResource("StandardMaterial3D_xafed")
+script = ExtResource("9_rhmn8")
+
+[node name="Nigeria" type="Node3D" parent="countriesMesh" unique_id=534396002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6508734, 0.03579259, -0.13233232)
+
+[node name="NigeriaColl" type="CSGPolygon3D" parent="countriesMesh/Nigeria" unique_id=1286729018 groups=["wrong_countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, -0.9263544, 0.01110743, -0.07437897)
+use_collision = true
+polygon = PackedVector2Array(1.650212, -1.0857865, 1.5710987, -1.04347, 1.6189348, -0.96435666, 1.5214227, -0.86868453, 1.4275905, -0.8300477, 1.4147116, -0.6239848, 1.5168546, -0.5508111, 1.5702101, -0.38154513, 1.7197983, -0.37003887, 1.8753407, -0.46723834, 1.9599738, -0.44148043, 2.0814037, -0.48379695, 2.138439, -0.57578933, 2.077724, -0.711938, 2.066685, -0.90328217, 2.0916746, -1.1366973, 2.0677564, -1.2581273, 1.9996822, -1.2894046)
+depth = 0.1
+material = SubResource("StandardMaterial3D_7j2xw")
+script = ExtResource("9_rhmn8")
+
+[node name="India" type="Node3D" parent="countriesMesh" unique_id=1889983856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6508734, 0.03579259, 4.1764665)
+
+[node name="InidaColl" type="CSGPolygon3D" parent="countriesMesh/India" unique_id=1120232142 groups=["wrong_countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, -0.9263544, 0.01110743, -0.07437897)
+use_collision = true
+polygon = PackedVector2Array(1.6883218, -1.890089, 2.3421643, -1.5733838, 2.720167, -1.5223026, 2.7179725, -1.3076062, 2.9699745, -1.2020378, 2.9767854, -1.3893366, 3.1198134, -1.3791203, 3.2219763, -1.2905793, 3.6600227, -1.7255893, 3.8609433, -1.65067, 3.939268, -1.8958611, 3.7247262, -2.0354838, 3.5782928, -1.9809971, 3.4999678, -2.1580796, 3.3603451, -2.08316, 3.2309387, -2.389649, 3.157967, -2.7220354, 2.8106134, -2.793549, 2.4646971, -2.4002132, 2.2978308, -2.1107516, 1.8756204, -2.09101)
+depth = 0.1
+material = SubResource("StandardMaterial3D_ade31")
+script = ExtResource("9_rhmn8")
+
+[node name="NewZealand" type="Node3D" parent="countriesMesh" unique_id=1856038580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.097246, 0.03579259, 13.416245)
+
+[node name="NewZealandColl" type="CSGPolygon3D" parent="countriesMesh/NewZealand" unique_id=1532779812 groups=["wrong_countries"]]
+transform = Transform3D(0.99999994, 0, 6.0078897e-09, -6.0078897e-09, 4.3296538e-08, 1, 0, -0.9999999, 4.329654e-08, -0.9263544, 0.01110743, -0.07437897)
+use_collision = true
+polygon = PackedVector2Array(1.4050221, -0.5530758, 1.0591307, -0.40588856, 0.8696265, -0.15934849, 0.6267667, 0.063272476, 0.5071764, 0.28221512, 0.6396456, 0.39444542, 0.7150793, 0.3742075, 0.7941928, 0.28037453, 0.87146616, 0.1331873, 1.1216855, -0.050797462, 1.4068618, -0.24766159, 1.6865187, -0.08943462, 1.6809993, -0.181427, 1.4436588, -0.3746109)
+depth = 0.1
+material = SubResource("StandardMaterial3D_gdvb4")
+script = ExtResource("9_rhmn8")
+
+[node name="dLetters" type="CSGBox3D" parent="countriesMesh/NewZealand" unique_id=1583150725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2973938, -0.12817529, -0.08686733)
+size = Vector3(0.16485596, 0.04724121, 0.5551758)
+material = SubResource("ORMMaterial3D_rhmn8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1462694822]
+libraries/ = SubResource("AnimationLibrary_83co1")

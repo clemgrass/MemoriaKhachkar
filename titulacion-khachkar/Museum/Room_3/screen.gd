@@ -2,12 +2,13 @@ extends CSGBox3D
 
 @onready var terminal_camera: Camera3D = $Camera3D
 @onready var terminal_input: LineEdit = $CanvasLayer/LineEdit
+@onready var terminal_instructions: Label = $CanvasLayer/Label
 
 var solution = "armenian khachkars!"
 
 func _ready():
 	terminal_input.hide()
-
+	terminal_instructions.hide()
 
 func answer(text) -> bool:
 	if text == solution:
