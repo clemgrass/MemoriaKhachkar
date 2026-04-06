@@ -5,10 +5,127 @@
 [ext_resource type="Texture2D" uid="uid://b575dpb28nak1" path="res://Player/PNG/White Retina/crosshair007.png" id="2_ob6mk"]
 [ext_resource type="PackedScene" uid="uid://g5de8nu46712" path="res://Museum/Room_Complisonist/crowbar.tscn" id="4_qphhv"]
 [ext_resource type="Texture2D" uid="uid://bsb23ca6s8p8" path="res://Player/PNG/Black/crosshair007.png" id="4_spgtu"]
+[ext_resource type="Script" uid="uid://qkx48dpsuqbs" path="res://Player/Album/album.gd" id="6_b4ak7"]
+[ext_resource type="Texture2D" uid="uid://c1fp3wn05eyl6" path="res://Player/Album/heather-green-SJ8aL5n8vOw-unsplash.jpg" id="7_woph4"]
+[ext_resource type="Texture2D" uid="uid://bpbsit5bb7nke" path="res://Player/Album/olga-thelavart-vS3idIiYxX0-unsplash.jpg" id="8_5ttyy"]
+[ext_resource type="Texture2D" uid="uid://bstsoo2f5c4lw" path="res://Player/Album/Photos/khachkar0_pa.png" id="9_ffims"]
+[ext_resource type="Texture2D" uid="uid://dluogp5fp0enu" path="res://Player/Album/Photos/khachkar1_pa.png" id="10_erdax"]
+[ext_resource type="Texture2D" uid="uid://basep5qpo3b2v" path="res://Player/Album/Photos/khachkar2_pa.png" id="11_yx5qg"]
+[ext_resource type="Texture2D" uid="uid://bsbhp5s1vftf8" path="res://Player/Album/Photos/khachkar3_pa.png" id="12_4f3o6"]
+[ext_resource type="Texture2D" uid="uid://c3pmc8fy8bo5i" path="res://Player/Album/Photos/khachkar4_pa.png" id="13_heig0"]
+[ext_resource type="Texture2D" uid="uid://ccx7imudr87yj" path="res://Player/Album/Photos/khachkar5_pa.png" id="14_hci5v"]
+[ext_resource type="Texture2D" uid="uid://2aookvrniqcu" path="res://Player/Album/Photos/khachkar6_pa.png" id="15_w5tpw"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_2i3gr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t46ri"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbuub"]
+albedo_texture = ExtResource("7_woph4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_een4a"]
+albedo_texture = ExtResource("8_5ttyy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7m0u0"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xes3d"]
+albedo_color = Color(0.89059, 0.89059, 0.8905901, 1)
+albedo_texture = ExtResource("7_woph4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wr8je"]
+albedo_color = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+albedo_texture = ExtResource("8_5ttyy")
+
+[sub_resource type="Animation" id="Animation_0mu5q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Camera3D/Album:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.051, -0.708)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head/Camera3D/Album:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 1.4433873)]
+}
+
+[sub_resource type="Animation" id="Animation_kjbsb"]
+resource_name = "album_close"
+length = 0.26666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Camera3D/Album:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.16666667, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.001, -0.093), Vector3(0, -0.161, -0.093)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head/Camera3D/Album:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_h8xto"]
+resource_name = "album_open"
+length = 0.6666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head/Camera3D/Album:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.33333334, 0.5975715),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, -0.161, -0.093), Vector3(0, 0.004, -0.093), Vector3(0, -0.004, -0.093), Vector3(0, 0.001, -0.093)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head/Camera3D/Album:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.26666668, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 1.4433873), Vector3(0, 1.5707964, 1.4433873)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cylip"]
+_data = {
+&"RESET": SubResource("Animation_0mu5q"),
+&"album_close": SubResource("Animation_kjbsb"),
+&"album_open": SubResource("Animation_h8xto")
+}
 
 [node name="PlayerController" type="CharacterBody3D" unique_id=1779176938]
 script = ExtResource("1_3ehtj")
@@ -54,3 +171,181 @@ texture = ExtResource("4_spgtu")
 [node name="Crowbar" parent="Head/Camera3D" unique_id=769933709 instance=ExtResource("4_qphhv")]
 transform = Transform3D(0.25712344, -0.18885085, 0.24949528, 0.3124851, 0.17179017, -0.19200572, -0.016297257, 0.3144018, 0.25477618, 0.03, -0.214, -0.321)
 visible = false
+
+[node name="Album" type="Node3D" parent="Head/Camera3D" unique_id=241600932 groups=["album"]]
+transform = Transform3D(-7.77584e-10, 6.0699916e-09, 0.14, 0.13886522, 0.01778905, 0, -0.01778905, 0.13886522, -6.119594e-09, 0, -0.051, -0.708)
+visible = false
+script = ExtResource("6_b4ak7")
+
+[node name="leftSide" type="Node3D" parent="Head/Camera3D/Album" unique_id=1789037069]
+transform = Transform3D(1, 0, 0, 0, 0.9962402, -0.08663412, 0, 0.08663412, 0.9962402, 0, 0, -0.008367162)
+
+[node name="leftCover" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=1903565565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.4)
+material_override = SubResource("StandardMaterial3D_rbuub")
+size = Vector3(1, 0.064, 0.7)
+
+[node name="paper1" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=761962807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.034593403, -0.352417)
+material_override = SubResource("StandardMaterial3D_een4a")
+size = Vector3(0.9169922, 0.017578125, 0.6984863)
+
+[node name="paper2" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=599455123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.047718875, -0.34521484)
+material_override = SubResource("StandardMaterial3D_een4a")
+size = Vector3(0.9169922, 0.017578125, 0.68066406)
+
+[node name="paper3" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=2100466538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.059952997, -0.33532715)
+material_override = SubResource("StandardMaterial3D_een4a")
+size = Vector3(0.9169922, 0.017578125, 0.6652832)
+
+[node name="holder1" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=614400161]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, -0.1960642, 0.06923176, -0.17052284)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.22070313, 0.001, 0.25585938)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide/holder1" unique_id=959406236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
+operation = 2
+size = Vector3(0.2861328, 0.057617188, 0.24316406)
+
+[node name="holder2" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=537197228]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, -0.1960642, 0.069407426, -0.47254607)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.22070313, 0.001, 0.25585938)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide/holder2" unique_id=1609156256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
+operation = 2
+size = Vector3(0.2861328, 0.057617188, 0.24316406)
+
+[node name="holder3" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide" unique_id=114038163]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, 0.18355477, 0.068828605, -0.32974136)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.24987793, 0.001, 0.4746704)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/leftSide/holder3" unique_id=1404979851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.033203125, 0, 0)
+operation = 2
+size = Vector3(0.29907227, 0.057617188, 0.46069336)
+
+[node name="rightSide" type="Node3D" parent="Head/Camera3D/Album" unique_id=1554130837]
+transform = Transform3D(1, 0, 0, 0, 0.9961947, 0.08715574, 0, -0.08715574, 0.9961947, 0, 0, 0.008)
+
+[node name="paper1" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=1983125507]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.0789025e-10, 0.034593403, 0.3511129)
+material_override = SubResource("StandardMaterial3D_een4a")
+size = Vector3(0.9169922, 0.017578125, 0.6984863)
+
+[node name="paper2" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=858419671]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.8258455e-11, 0.047718875, 0.34391075)
+material_override = SubResource("StandardMaterial3D_een4a")
+size = Vector3(0.9169922, 0.017578125, 0.68066406)
+
+[node name="paper3" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=617347813]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.861513e-10, 0.059952997, 0.33402306)
+material_override = SubResource("StandardMaterial3D_een4a")
+size = Vector3(0.9169922, 0.017578125, 0.6652832)
+
+[node name="rightCover" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=164325550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4)
+material_override = SubResource("StandardMaterial3D_rbuub")
+size = Vector3(1, 0.064, 0.7)
+
+[node name="holder4" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=1095532111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.196, 0.06938682, 0.17069702)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.22070313, 0.001, 0.25585938)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide/holder4" unique_id=196280055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
+operation = 2
+size = Vector3(0.2861328, 0.057617188, 0.24316406)
+
+[node name="holder5" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=100345029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.196, 0.069054, 0.47281766)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.22070313, 0.001, 0.25585938)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide/holder5" unique_id=1148842706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
+operation = 2
+size = Vector3(0.2861328, 0.057617188, 0.24316406)
+
+[node name="holder6" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=1719430909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17015044, 0.06938682, 0.17069702)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.22070313, 0.001, 0.25585938)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide/holder6" unique_id=1768099264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
+operation = 2
+size = Vector3(0.2861328, 0.057617188, 0.24316406)
+
+[node name="holder7" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide" unique_id=414513089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17015044, 0.069054, 0.47281766)
+material_override = SubResource("StandardMaterial3D_7m0u0")
+size = Vector3(0.22070313, 0.001, 0.25585938)
+
+[node name="dH" type="CSGBox3D" parent="Head/Camera3D/Album/rightSide/holder7" unique_id=273783356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
+operation = 2
+size = Vector3(0.2861328, 0.057617188, 0.24316406)
+
+[node name="middle" type="Node3D" parent="Head/Camera3D/Album" unique_id=693097324]
+
+[node name="split" type="CSGBox3D" parent="Head/Camera3D/Album/middle" unique_id=1014945612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00054052845, -0.0002745688)
+material_override = SubResource("StandardMaterial3D_xes3d")
+size = Vector3(1, 0.06508106, 0.123437494)
+
+[node name="paperUnion" type="CSGBox3D" parent="Head/Camera3D/Album/middle" unique_id=1651436662]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.074346e-09, 0.04460317, -0.0010268986)
+material_override = SubResource("StandardMaterial3D_wr8je")
+size = Vector3(0.9121094, 0.037597656, 0.034729004)
+
+[node name="photok0" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=1856397171]
+transform = Transform3D(-1.7484558e-09, 0.038, -2.3207005e-17, -0.003486246, -1.4476922e-10, 0.034866814, 0.039847784, 1.6547121e-09, 0.0030504654, 0.20311782, 0.097522564, -0.33012772)
+visible = false
+shaded = true
+texture = ExtResource("9_ffims")
+
+[node name="photok1" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=651091392]
+transform = Transform3D(-1.3113416e-09, 0.03, -2.7753169e-18, -0.0026146634, -1.1429056e-10, 0.029885842, 0.029885842, 1.3063516e-09, 0.0026146634, -0.18257928, 0.0833744, -0.17155024)
+visible = false
+shaded = true
+texture = ExtResource("10_erdax")
+
+[node name="photok2" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=1207398466]
+transform = Transform3D(-1.3113417e-09, 0.03, -1.29528245e-17, -0.0026146846, -1.1429149e-10, 0.02988584, 0.02988584, 1.3063516e-09, 0.0026146846, -0.17901358, 0.110265195, -0.47306082)
+visible = false
+shaded = true
+texture = ExtResource("11_yx5qg")
+
+[node name="photok3" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=111444545]
+transform = Transform3D(-4.715052e-09, 0.029, 2.2858113e-10, 0.002527508, 1.9082154e-10, 0.029885842, 0.028889647, 4.716368e-09, -0.0026146634, -0.1763548, 0.084149264, 0.172)
+visible = false
+shaded = true
+texture = ExtResource("12_4f3o6")
+
+[node name="photok4" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=1710273689]
+transform = Transform3D(-1.6173214e-09, 0.037, 0, 0.0032247633, 1.4095888e-10, 0.029885842, 0.036859207, 1.611167e-09, -0.002614673, -0.16276887, 0.11, 0.473)
+visible = false
+shaded = true
+texture = ExtResource("13_heig0")
+
+[node name="photok5" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=409067733]
+transform = Transform3D(-1.3103308e-08, 0.049, 6.711709e-10, 0.005055057, 3.2242523e-10, 0.050805926, 0.05777929, 1.1084114e-08, -0.0044449638, 0.19525605, 0.084149264, 0.172)
+visible = false
+shaded = true
+texture = ExtResource("14_hci5v")
+
+[node name="photok6" type="Sprite3D" parent="Head/Camera3D/Album" unique_id=293190573]
+transform = Transform3D(-3.576936e-09, 0.022, 1.3714979e-10, 0.0019174354, 1.4476234e-10, 0.017931502, 0.021916283, 3.5779344e-09, -0.0015688107, 0.1616993, 0.11, 0.473)
+visible = false
+shaded = true
+texture = ExtResource("15_w5tpw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1718975483]
+libraries/ = SubResource("AnimationLibrary_cylip")

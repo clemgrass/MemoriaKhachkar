@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775048141
-export_presets.cfg::TextFile::-1::1774461906::0::1::::<><><>0<>0<><>::
+::res://::1775492009
+export_presets.cfg::TextFile::-1::1775139418::0::1::::<><><>0<>0<><>::
 ::res://MainMenu/::1774973989
 credits.gd::GDScript::7886770776894474853::1774973526::0::1::::<>Node2D<><>0<>0<><>::
 credits.tscn::PackedScene::8108618644080686234::1774973989::0::1::::<><><>0<>0<><>::uid://dkmn7ytdumpon::::res://MainMenu/credits.gd
@@ -244,20 +244,22 @@ westWall.tscn::PackedScene::6399091110454656408::1773925956::0::1::::<><><>0<>0<
 blue_metal_plate_arm_4k.jpg::CompressedTexture2D::5102840690479163941::1773926839::1773926845::1::::<><><>0<>0<>56c4de87a7bc7fee749d5a45e35dbf87<>res://.godot/imported/blue_metal_plate_arm_4k.jpg-68e7a37317a7c646b6615c96a87510c8.s3tc.ctex::
 blue_metal_plate_diff_4k.jpg::CompressedTexture2D::3054474921065418334::1773926839::1773926845::1::::<><><>0<>0<>d14b41750492ad83bc5d346d304ccc9a<>res://.godot/imported/blue_metal_plate_diff_4k.jpg-64deba5f4824432d0d5d0575c334cc33.s3tc.ctex::
 blue_metal_plate_nor_gl_4k.jpg::CompressedTexture2D::5229290386749224565::1773926839::1773926845::1::::<><><>0<>0<>82647911109af150f45f6a059b80787c<>res://.godot/imported/blue_metal_plate_nor_gl_4k.jpg-ac3939c635dfb6a30050bc8eb5878b1e.s3tc.ctex::
-::res://Player/::1775061907
-playerController.tscn::PackedScene::97915239036222750::1775061907::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd<>uid://j7nv0wdgspik::::res://Player/PNG/White Retina/crosshair002.png<>uid://b575dpb28nak1::::res://Player/PNG/White Retina/crosshair007.png<>uid://g5de8nu46712::::res://Museum/Room_Complisonist/crowbar.tscn<>uid://bsb23ca6s8p8::::res://Player/PNG/Black/crosshair007.png
-player_controller.gd::GDScript::1453498772295999128::1774972960::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://Player/::1775494743
+playerController.tscn::PackedScene::97915239036222750::1775494743::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd<>uid://j7nv0wdgspik::::res://Player/PNG/White Retina/crosshair002.png<>uid://b575dpb28nak1::::res://Player/PNG/White Retina/crosshair007.png<>uid://g5de8nu46712::::res://Museum/Room_Complisonist/crowbar.tscn<>uid://bsb23ca6s8p8::::res://Player/PNG/Black/crosshair007.png<>uid://x7tjrpw0itcv::::res://Player/Album/album.tscn
+player_controller.gd::GDScript::1453498772295999128::1775494713::0::1::::<>CharacterBody3D<><>0<>0<><>::
 Preview.png::CompressedTexture2D::8102950515812567257::1774361239::1774361244::1::::<><><>0<>0<>365e92dad5ac373f1dbce47f01167da9<>res://.godot/imported/Preview.png-fdd15dc5f675f3f27c3944af0d49417f.ctex::
-::res://Player/Album/::1775062598
-khachkar_album2.glb::PackedScene::4713486352723154236::1775062583::1775062614::1::::<><><>0<>0<>8f57c81b355c9464a5253cae16171627<>res://.godot/imported/khachkar_album2.glb-6c221ee0a3559bf59a9ae5da3f758ac1.scn::uid://ckkut2k1r7ln0::::res://Player/Album/khachkar_album2_heather-green-SJ8aL5n8vOw-unsplash.jpg<>uid://d3ev7f0m3oun5::::res://Player/Album/khachkar_album2_olga-thelavart-vS3idIiYxX0-unsplash.jpg
-khachkar_album3.glb::PackedScene::7749169204020867917::1775062598::1775062629::1::::<><><>0<>0<>400efb83be7dc983375410f685912def<>res://.godot/imported/khachkar_album3.glb-4ce3654e9ecec295e2c77d0591682600.scn::uid://c3u0vqvvxqu6k::::res://Player/Album/khachkar_album3_heather-green-SJ8aL5n8vOw-unsplash.jpg<>uid://cffvu1w74mbxj::::res://Player/Album/khachkar_album3_olga-thelavart-vS3idIiYxX0-unsplash.jpg
-khachkar_album.glb::PackedScene::5837245687450223543::1775062447::1775062474::1::::<><><>0<>0<>41ab5c392cd49de2fed03c217ec205b8<>res://.godot/imported/khachkar_album.glb-58c497688d87188289111a48bb899968.scn::uid://rgl01sxg6emh::::res://Player/Album/khachkar_album_heather-green-SJ8aL5n8vOw-unsplash.jpg<>uid://cs20nwlp2uyx3::::res://Player/Album/khachkar_album_olga-thelavart-vS3idIiYxX0-unsplash.jpg
-khachkar_album_heather-green-SJ8aL5n8vOw-unsplash.jpg::CompressedTexture2D::1206310534606802151::1775062459::1775062475::1::::<><><>0<>0<>b17ecb29abba04bc2c612cce5950871a<>res://.godot/imported/khachkar_album_heather-green-SJ8aL5n8vOw-unsplash.jpg-0d1b6f6a4251bcac93826d0369f705fc.s3tc.ctex::
-khachkar_album_olga-thelavart-vS3idIiYxX0-unsplash.jpg::CompressedTexture2D::6093521065595303034::1775062467::1775062474::1::::<><><>0<>0<>4e9f7ce0dd9e5deb299d6686f395ae57<>res://.godot/imported/khachkar_album_olga-thelavart-vS3idIiYxX0-unsplash.jpg-c15f2719dd4ec036a0e036f8ed45fe55.s3tc.ctex::
-khachkar_album2_heather-green-SJ8aL5n8vOw-unsplash.jpg::CompressedTexture2D::5496623286030453711::1775062599::1775062630::1::::<><><>0<>0<>dd97d336888562e825d4cd057de36b82<>res://.godot/imported/khachkar_album2_heather-green-SJ8aL5n8vOw-unsplash.jpg-b052b1fee819120d2b49aa7097f2b405.s3tc.ctex::
-khachkar_album2_olga-thelavart-vS3idIiYxX0-unsplash.jpg::CompressedTexture2D::9134139688033578904::1775062607::1775062630::1::::<><><>0<>0<>9132538a62a1eaea5f58a68577517efe<>res://.godot/imported/khachkar_album2_olga-thelavart-vS3idIiYxX0-unsplash.jpg-12110f02410dd39645bb4ccfd49376ba.s3tc.ctex::
-khachkar_album3_heather-green-SJ8aL5n8vOw-unsplash.jpg::CompressedTexture2D::6780972844623496520::1775062615::1775062630::1::::<><><>0<>0<>9ce808d6cd448ac89fbb7d3022b1f900<>res://.godot/imported/khachkar_album3_heather-green-SJ8aL5n8vOw-unsplash.jpg-ca71082533bbb04a82900bf062d15ae5.s3tc.ctex::
-khachkar_album3_olga-thelavart-vS3idIiYxX0-unsplash.jpg::CompressedTexture2D::5135419648158818379::1775062622::1775062630::1::::<><><>0<>0<>9adf5db12552404a9b45548c0b4e984a<>res://.godot/imported/khachkar_album3_olga-thelavart-vS3idIiYxX0-unsplash.jpg-4273f1d8602b26c46970ebd4dc245dad.s3tc.ctex::
+::res://Player/Album/::1775494956
+album.tscn::PackedScene::1681574103914707445::1775494956::0::1::::<><><>0<>0<><>::uid://c1fp3wn05eyl6::::res://Player/Album/heather-green-SJ8aL5n8vOw-unsplash.jpg<>uid://bpbsit5bb7nke::::res://Player/Album/olga-thelavart-vS3idIiYxX0-unsplash.jpg<>uid://dluogp5fp0enu::::res://Player/Album/Photos/khachkar1_pa.png
+heather-green-SJ8aL5n8vOw-unsplash.jpg::CompressedTexture2D::6609035124638498645::1775490280::1775490304::1::::<><><>0<>0<>1b7e5827e2f06ee1239d34f98b282c27<>res://.godot/imported/heather-green-SJ8aL5n8vOw-unsplash.jpg-9827e323657c03f3e02f1a8ff5c5e9b8.s3tc.ctex::
+olga-thelavart-vS3idIiYxX0-unsplash.jpg::CompressedTexture2D::3442425952574512188::1775490280::1775490379::1::::<><><>0<>0<>4dbf3d2c059820d83706637becb683a3<>res://.godot/imported/olga-thelavart-vS3idIiYxX0-unsplash.jpg-da28d3bebd23942f371ccc771cc18534.s3tc.ctex::
+::res://Player/Album/Photos/::1775495079
+khachkar0_pa.png::CompressedTexture2D::3690161730793285584::1775493609::1775495079::1::::<><><>0<>0<>f19770afcbba53bb7d51eb230408e9a2<>res://.godot/imported/khachkar0_pa.png-89df1226f63ca5fbeb9953004242909f.s3tc.ctex::
+khachkar1_pa.png::CompressedTexture2D::7973488473283609270::1775493747::1775494759::1::::<><><>0<>0<>e15c99bee73d219092d5b3595f945b81<>res://.godot/imported/khachkar1_pa.png-dba05d4186838efc4285004f585862df.s3tc.ctex::
+khachkar2_pa.png::CompressedTexture2D::2423850739264533967::1775493676::1775494984::1::::<><><>0<>0<>e79034bc11dda1e24412075099d1c775<>res://.godot/imported/khachkar2_pa.png-60af8d88c126c6cdf950539c0fb7e2a0.s3tc.ctex::
+khachkar3_pa.png::CompressedTexture2D::3652337657506269007::1775493821::1775495198::1::::<><><>0<>0<>1f6d6d6cf36992cb8231a8d6cf1a2188<>res://.godot/imported/khachkar3_pa.png-88035a5451db394ee267014bbd00a846.s3tc.ctex::
+khachkar4_pa.png::CompressedTexture2D::6769828573192195476::1775493938::1775495229::1::::<><><>0<>0<>5beef043931d208228eecb38a4fc2fd8<>res://.godot/imported/khachkar4_pa.png-d20c226e1fc2ee09e6d1019bf274e78a.s3tc.ctex::
+khachkar5_pa.png::CompressedTexture2D::4962657634462056625::1775494079::1775495296::1::::<><><>0<>0<>9f7bda7b1d86eb51304a430219c9c275<>res://.godot/imported/khachkar5_pa.png-d2936873a0f24ec8b4d2b35e7326d33b.s3tc.ctex::
+khachkar6_pa.png::CompressedTexture2D::1895974375704775176::1775494025::1775495299::1::::<><><>0<>0<>97435aff7665641b17764d38bdb40d00<>res://.godot/imported/khachkar6_pa.png-1d6ca6be15a34de3f36438b9955ba995.s3tc.ctex::
 ::res://Player/PNG/::1774361239
 ::res://Player/PNG/Black/::1774878814
 crosshair001.png::CompressedTexture2D::4710277996865190732::1774361237::1774361244::1::::<><><>0<>0<>489510660ded4ccdcf3f761f5a32f0a8<>res://.godot/imported/crosshair001.png-2c6584e32d34d379c54c02450ac64678.ctex::

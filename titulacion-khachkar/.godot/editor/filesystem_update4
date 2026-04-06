@@ -1,2 +1,13 @@
 res://Player/Album/album.tscn
 res://Player/playerController.tscn
+res://Player/player_controller.gd
+res://World/main_game.gd
+res://Player/Album/album.gd
+res://Museum/Entrance/Khachkar/puzzle_0.gd
+res://Museum/Entrance/door.gd
+res://Museum/Second_Floor/LevelFloor.tscn
+res://Museum/Second_Floor/Rail/Pilar.tscn
+res://Museum/Second_Floor/Rail/Rail.tscn
+res://Museum/Second_Floor/Rail/Rings.tscn
+res://Museum/Second_Floor/Rail/Cross.tscn
+res://Museum/Second_Floor/Rail/FloorDetail.tscn

@@ -9,7 +9,6 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0
 material_override = ExtResource("1_377fo")
 radius = 0.03
 height = 0.01
-sides = 36
 
 [node name="dr" type="CSGCylinder3D" parent="r1" unique_id=886133790]
 operation = 2
@@ -22,7 +21,6 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.0
 material_override = ExtResource("1_377fo")
 radius = 0.03
 height = 0.01
-sides = 36
 
 [node name="dr" type="CSGCylinder3D" parent="r2" unique_id=251259735]
 operation = 2
@@ -35,7 +33,6 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.03
 material_override = ExtResource("1_377fo")
 radius = 0.03
 height = 0.01
-sides = 36
 
 [node name="dr" type="CSGCylinder3D" parent="r3" unique_id=1031612367]
 operation = 2
@@ -48,7 +45,6 @@ transform = Transform3D(0.2, 0, 0, 0, -4.371139e-08, -0.2, 0, 1, -8.742278e-09, 
 material_override = ExtResource("1_377fo")
 radius = 0.045
 height = 0.01
-sides = 36
 
 [node name="dr" type="CSGCylinder3D" parent="r4" unique_id=532190672]
 operation = 2

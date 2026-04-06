@@ -9,7 +9,7 @@ func puzzle_state():
 		if not piece:
 			return 
 	print("Solved")
-	emit_signal("puzzle0_solved")
+	emit_signal("puzzle0_solved", 0)
 
 func change_place(piece: int):
 	pieces_placed[piece] = true

@@ -24,14 +24,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.038, 0)
 material_override = ExtResource("1_rdoh4")
 radius = 0.25
 height = 0.075
-sides = 36
+sides = 6
 
 [node name="p2" type="CSGCylinder3D" parent="." unique_id=1787450590]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.113, 0)
 material_override = ExtResource("1_rdoh4")
 radius = 0.125
 height = 0.075
-sides = 36
 
 [node name="p3" type="CSGBox3D" parent="." unique_id=981788222]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
@@ -43,11 +42,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38738063, 0)
 material_override = ExtResource("1_rdoh4")
 radius = 0.125
 height = 0.075
-sides = 36
 
 [node name="p5" type="CSGCylinder3D" parent="." unique_id=1911354716]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4620205, 0)
 material_override = ExtResource("1_rdoh4")
 radius = 0.25
 height = 0.075
-sides = 36
+sides = 6

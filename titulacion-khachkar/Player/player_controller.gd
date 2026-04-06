@@ -19,6 +19,7 @@ extends CharacterBody3D
 @export var input_jump : String = "ui_accept"
 @export var input_sprint : String = "sprint"
 @export var input_left_click : String = "click_left"
+@export var album_open_close : String = "album"
 
 var mouse_captured : bool = false
 var look_rotation : Vector2
@@ -31,8 +32,10 @@ var move_speed : float = 0.0
 @onready var crosshair_normal = $Head/Camera3D/normal
 @onready var crosshair_pick = $Head/Camera3D/pick
 @onready var crosshair_pick_piano = $Head/Camera3D/pick_piano
+@onready var album_obj = $Head/Camera3D/Album
+@onready var animation_player = $AnimationPlayer
 
-enum PlayerState { NORMAL, TERMINAL, ENDING }
+enum PlayerState { NORMAL, TERMINAL, ALBUM, ENDING }
 var state : PlayerState = PlayerState.NORMAL
 var current_terminal: Node = null
 
@@ -81,6 +84,14 @@ func _physics_process(delta: float) -> void:
 						_on_terminal_text_entered(text) 
 			
 			move_and_slide()
+		PlayerState.ALBUM:
+			velocity = Vector3.ZERO
+			if Input.is_action_just_pressed("album"):
+				state = PlayerState.NORMAL
+				animation_player.play("album_close")
+				await animation_player.animation_finished
+				album_obj.visible = false
+
 		PlayerState.ENDING:
 			return
 
@@ -115,6 +126,12 @@ func _normal_movement(delta):
 		var target_position = raycast.global_transform.origin + raycast.global_transform.basis.y * -grab_distance
 		var direction = target_position - grabbed_object.global_transform.origin
 		grabbed_object.linear_velocity = direction * 10.0
+	
+	if Input.is_action_just_pressed(album_open_close):
+		state = PlayerState.ALBUM
+		album_obj.visible = true
+		animation_player.play("album_open")
+		await animation_player.animation_finished
 		
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
@@ -167,7 +184,7 @@ func _normal_movement(delta):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.khachkar_photo(has_crowbar)
-					if has_crowbar:
+					if has_crowbar and collider.name == "collisionKhachkar6":
 						$Head/Camera3D/Crowbar.visible = false
 			else:
 				crosshair(false)

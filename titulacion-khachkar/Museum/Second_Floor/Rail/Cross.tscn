@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dwn5w7tk45bbq"]
 
 [ext_resource type="Material" uid="uid://ds8g4drlj1ly4" path="res://Museum/Room_5/Marble012_4K-JPG.tres" id="1_toehy"]
-[ext_resource type="Material" path="res://Museum/Second_Floor/Marble013_4K-JPG.tres" id="2_f5tos"]
+[ext_resource type="Material" uid="uid://bkdn2iam5dx31" path="res://Museum/Second_Floor/Marble013_4K-JPG.tres" id="2_f5tos"]
 
 [node name="Cross" type="Node3D" unique_id=1984412013]
 

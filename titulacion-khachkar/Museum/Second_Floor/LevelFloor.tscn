@@ -27,6 +27,21 @@ metallic_texture = ExtResource("3_hkmw8")
 roughness_texture = ExtResource("4_l6gbl")
 uv1_scale = Vector3(5.006, 34.015, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_mxt4c"]
+size = Vector3(55.623047, 0.85791016, 0.48394775)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dr7s0"]
+size = Vector3(55.960693, 0.85791016, 0.48394775)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m4o0v"]
+size = Vector3(24.083008, 0.85791016, 0.48394775)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m03mk"]
+size = Vector3(6.9078217, 0.85791016, 0.48394775)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6gbl"]
+size = Vector3(6.9078217, 0.85791016, 0.48394775)
+
 [node name="LevelFloor" type="Node3D" unique_id=532701115]
 
 [node name="StairsMiddle" parent="." unique_id=1301923489 instance=ExtResource("1_j4nf5")]
@@ -152,6 +167,14 @@ transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 36.58947, 6.7483582, -12.2603
 [node name="Conection9" parent="railsRight" unique_id=312413588 instance=ExtResource("3_hw7hd")]
 transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 41.672775, 6.7483582, -12.260356)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="railsRight" unique_id=125663557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.451063, 7.1650047, -12.331608)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="railsRight/StaticBody3D" unique_id=631946089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.53907967, 0.006401539, 0.07822037)
+shape = SubResource("BoxShape3D_mxt4c")
+debug_color = Color(0.9484592, 4.6205523e-06, 0.58056855, 0.41960785)
+
 [node name="railsLeft" type="Node3D" parent="." unique_id=45698456]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24.56074)
 
@@ -209,6 +232,14 @@ transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 36.58947, 6.7483582, -12.2603
 [node name="Conection9" parent="railsLeft" unique_id=716351114 instance=ExtResource("3_hw7hd")]
 transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 41.672775, 6.7483582, -12.260356)
 
+[node name="StaticBody" type="StaticBody3D" parent="railsLeft" unique_id=516158707]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.027859, 7.245869, -12.531208)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="railsLeft/StaticBody" unique_id=743497485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8841248, -0.07446289, 0.250885)
+shape = SubResource("BoxShape3D_dr7s0")
+debug_color = Color(0.9484592, 4.6205523e-06, 0.58056855, 0.41960785)
+
 [node name="railsNorth" type="Node3D" parent="." unique_id=167785791]
 
 [node name="RingsRightCon" parent="railsNorth" unique_id=1133316389 instance=ExtResource("4_ikl06")]
@@ -261,6 +292,14 @@ transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 42.524273, 6.7483582, -12.260
 
 [node name="FloorDetailRight2" parent="railsNorth" unique_id=1917047490 instance=ExtResource("5_4ilnc")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 2, 0, 1, 0, -4.371139e-08, 42.777515, 6.7483582, -11.996175)
+
+[node name="staticBody" type="StaticBody3D" parent="railsNorth" unique_id=1474034527]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 42.95645, 7.245869, 0.040984154)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="railsNorth/staticBody" unique_id=403545835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.021912567, -0.07446289, 0.16778946)
+shape = SubResource("BoxShape3D_m4o0v")
+debug_color = Color(0.9484592, 4.6205523e-06, 0.58056855, 0.41960785)
 
 [node name="railsSouth" type="Node3D" parent="." unique_id=1151257348]
 
@@ -317,6 +356,22 @@ transform = Transform3D(-0.00038401684, 0, -0.99999994, 0, 2, 0, 0.99999994, 0, 
 
 [node name="PilarRight" parent="railsSouth" unique_id=452784008 instance=ExtResource("6_uaoq7")]
 transform = Transform3D(-0.99999994, 0, 0.0003840049, 0, 2, 0, -0.0003840049, 0, -0.99999994, -12.787728, 6.75, -5.5942044)
+
+[node name="staticBody1" type="StaticBody3D" parent="railsSouth" unique_id=948654688]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.546387, 7.245869, -12.504272)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="railsSouth/staticBody1" unique_id=82953165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9693823, -0.07446289, 0.2508793)
+shape = SubResource("BoxShape3D_m03mk")
+debug_color = Color(0.9484592, 4.6205523e-06, 0.58056855, 0.41960785)
+
+[node name="staticBody2" type="StaticBody3D" parent="railsSouth" unique_id=1591145263]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -12.546387, 7.245869, 4.568425)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="railsSouth/staticBody2" unique_id=1737922852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9693823, -0.07446289, 0.2508793)
+shape = SubResource("BoxShape3D_l6gbl")
+debug_color = Color(0.9484592, 4.6205523e-06, 0.58056855, 0.41960785)
 
 [node name="Kachkar6" parent="." unique_id=2029568894 instance=ExtResource("11_hkmw8")]
 transform = Transform3D(-4.371139e-08, -3.3, 0, 1, -1.4424758e-07, 0, 0, 0, 3.3, 49.477, 6.7579274, 8.201)
