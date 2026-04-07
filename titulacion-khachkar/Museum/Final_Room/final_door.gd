@@ -1,4 +1,4 @@
-extends CSGBox3D
+extends Node3D
 
 
 func _on_all_solved():
