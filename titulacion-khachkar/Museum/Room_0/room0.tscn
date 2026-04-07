@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://tm0w8xnnstuw"]
+[gd_scene format=4 uid="uid://tm0w8xnnstuw"]
 
 [ext_resource type="Texture2D" uid="uid://xoa4c2pmmxwb" path="res://Museum/Room_0/textures/floor_tiles_02_diff_4k.jpg" id="1_52qta"]
 [ext_resource type="Texture2D" uid="uid://dhlhcvesr88aw" path="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg" id="2_gykib"]
@@ -11,10 +11,32 @@ metallic_texture = ExtResource("2_gykib")
 roughness_texture = ExtResource("3_4ajqb")
 uv1_scale = Vector3(17.91, 63.605, 1)
 
+[sub_resource type="ArrayMesh" id="ArrayMesh_52qta"]
+lightmap_size_hint = Vector2i(1938, 1282)
+_surfaces = [{
+"aabb": AABB(-40, -0.73764646, -15, 80, 1.4752929, 30),
+"attribute_data": PackedByteArray("AACAPwAAgD+0LXs/OPNfPwAAgD8AAAAAtC17Pw3gzz4AAAAAAAAAAMTRdj8N4M8+AACAPwAAgD8oryE9MQXzPgAAgD8AAAAA2pZdPzEF8z4AAAAAAAAAANqWXT/KhXE/AACAPwAAgD9MWX4/ceZ/PwAAgD8AAAAATFl+P3pPeT8AAAAAAAAAAJF1Kz56T3k/AAAAAAAAgD/E0XY/OPNfPwAAgD8AAIA/GO9/Pycfcj8AAIA/AAAAABjvfz8etng/AAAAAAAAAAC/zDE+HrZ4PwAAAAAAAAAA0IxTP4M58D4AAAAAAACAP+ZDhzmDOfA+AACAPwAAgD/mQ4c5AnvMOQAAAAAAAIA/KK8hPcqFcT8AAAAAAACAP7/MMT4nH3I/AACAPwAAgD/uqnE/e0tDPgAAgD8AAAAA7qpxPxHWKD8AAAAAAAAAAP5ObT8R1ig/AAAAAAAAgD+RdSs+ceZ/PwAAgD8AAAAA0IxTPwJ7zDkAAAAAAACAP/5ObT97S0M+"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgAAgAJAAAACgALAAwADQAOAA8ABQAQAAMADAARAAoAEgATABQACAAVAAYADwAWAA0AFAAXABIA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAgwmbWPL8AAHBBAAAgwmbWPL8AAHDBAAAgwmbWPD8AAHDBAAAgQmbWPL8AAHDBAAAgwmbWPL8AAHDBAAAgwmbWPL8AAHBBAAAgwmbWPD8AAHDBAAAgwmbWPL8AAHDBAAAgQmbWPL8AAHDBAAAgwmbWPD8AAHBBAAAgwmbWPL8AAHBBAAAgwmbWPD8AAHBBAAAgQmbWPD8AAHBBAAAgQmbWPD8AAHBBAAAgwmbWPD8AAHBBAAAgwmbWPD8AAHDBAAAgQmbWPL8AAHBBAAAgQmbWPL8AAHBBAAAgQmbWPL8AAHDBAAAgQmbWPL8AAHBBAAAgQmbWPD8AAHBBAAAgQmbWPD8AAHDBAAAgQmbWPD8AAHDBAAAgQmbWPD8AAHDBAAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_52qta"]
+size = Vector3(80.001755, 1.4628906, 30.001343)
+
 [node name="Room0" type="Node3D" unique_id=307174438]
 
-[node name="floor" type="CSGBox3D" parent="." unique_id=2061786099]
+[node name="floor_mesh" type="MeshInstance3D" parent="." unique_id=1315071865]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019264221, -0.6876465, -0.06696391)
 material_override = SubResource("StandardMaterial3D_cr6dn")
-use_collision = true
-size = Vector3(80, 1.4752929, 30)
+mesh = SubResource("ArrayMesh_52qta")
+
+[node name="floor" type="StaticBody3D" parent="." unique_id=1216273423]
+
+[node name="floor_coll" type="CollisionShape3D" parent="floor" unique_id=526608604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0031356812, -0.68847656, -0.0647583)
+shape = SubResource("BoxShape3D_52qta")

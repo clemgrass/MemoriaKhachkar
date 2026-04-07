@@ -1,32 +1,38 @@
 [gd_scene format=3 uid="uid://dr1ulgoec785u"]
 
-[ext_resource type="Texture2D" uid="uid://cybidrcp1cm8u" path="res://World/qwantani_moon_noon_puresky_4k.hdr" id="1_afcvc"]
 [ext_resource type="PackedScene" uid="uid://5uxnoy7o0w4m" path="res://Museum/museum.tscn" id="1_h8g3x"]
 [ext_resource type="Script" uid="uid://dnisr3dfoji4g" path="res://World/main_game.gd" id="1_kmhrd"]
 [ext_resource type="PackedScene" uid="uid://bnowdbcs0lak" path="res://Player/playerController.tscn" id="2_ma34m"]
 [ext_resource type="PackedScene" uid="uid://cclarcjb2ap10" path="res://Terrain/outsideWorld.tscn" id="3_rlvo1"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kmhrd"]
-panorama = ExtResource("1_afcvc")
-energy_multiplier = 0.3
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_afcvc"]
+sky_top_color = Color(0.23098785, 0.4009148, 0.43838903, 1)
+sky_horizon_color = Color(0.07306064, 0.121729515, 0.22820953, 1)
+ground_bottom_color = Color(0.16003212, 0.14061245, 0.3357743, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 
-[sub_resource type="Sky" id="Sky_pwprq"]
-sky_material = SubResource("PanoramaSkyMaterial_kmhrd")
+[sub_resource type="Sky" id="Sky_kmhrd"]
+sky_material = SubResource("ProceduralSkyMaterial_afcvc")
 
-[sub_resource type="Environment" id="Environment_tfyxx"]
-background_mode = 2
-sky = SubResource("Sky_pwprq")
-sky_rotation = Vector3(0, 1.8849556, 0)
+[sub_resource type="Environment" id="Environment_pwprq"]
+background_mode = 1
+background_energy_multiplier = 0.6
+sky = SubResource("Sky_kmhrd")
+ambient_light_source = 3
+tonemap_mode = 2
+fog_enabled = true
+fog_mode = 1
+fog_density = 0.2
+fog_height = 0.01
+fog_height_density = 0.04
+fog_depth_curve = 0.73204273
+fog_depth_begin = 5.0
 
 [node name="MainGame" type="Node3D" unique_id=517629617]
 script = ExtResource("1_kmhrd")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=902214904]
-environment = SubResource("Environment_tfyxx")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=8777766]
-transform = Transform3D(-6.920299e-08, 0.7477981, 0.66392606, 1.00250055e-07, -0.66392606, 0.7477981, 1, 1.183085e-07, -2.902113e-08, 0, 0, 0)
-shadow_enabled = true
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1404930934]
+environment = SubResource("Environment_pwprq")
 
 [node name="Museum" parent="." unique_id=1748015087 instance=ExtResource("1_h8g3x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
@@ -37,3 +43,8 @@ sprint_speed = 5.6
 
 [node name="OutsideWorld" parent="." unique_id=1986257652 instance=ExtResource("3_rlvo1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7907693, 0)
+
+[node name="lights" type="Node3D" parent="." unique_id=941124974]
+
+[node name="LightmapGI" type="LightmapGI" parent="lights" unique_id=181886594]
+generate_probes_subdiv = 1

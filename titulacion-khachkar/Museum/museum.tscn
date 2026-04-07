@@ -24,166 +24,20 @@
 
 [node name="Room0" parent="." unique_id=307174438 instance=ExtResource("1_gh3s1")]
 
-[node name="Lights" type="Node3D" parent="Room0" unique_id=1078111465]
-
-[node name="l1" type="OmniLight3D" parent="Room0/Lights" unique_id=786455727]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.148605, 20.588757, -6.1392393)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l2" type="OmniLight3D" parent="Room0/Lights" unique_id=626647846]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.294258, 20.588757, -6.1392393)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l3" type="OmniLight3D" parent="Room0/Lights" unique_id=1628941802]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.560089, 20.588757, -6.1392393)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l4" type="OmniLight3D" parent="Room0/Lights" unique_id=1091790099]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.264793, 20.588757, -6.1392393)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l5" type="OmniLight3D" parent="Room0/Lights" unique_id=383545533]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.148605, 20.588757, 4.859126)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l6" type="OmniLight3D" parent="Room0/Lights" unique_id=1426054999]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99498, 20.588757, 4.859126)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l7" type="OmniLight3D" parent="Room0/Lights" unique_id=4121218]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.709732, 20.588757, 4.859126)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
-[node name="l8" type="OmniLight3D" parent="Room0/Lights" unique_id=871782973]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.339615, 20.588757, 4.859126)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 28.0
-
 [node name="Room1" parent="." unique_id=541123252 instance=ExtResource("2_2j5jp")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.049836576, 19.94091)
-
-[node name="l1" type="OmniLight3D" parent="Room1" unique_id=663100233]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47368452, 3.8523645, -1.9146137)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
 
 [node name="Room2" parent="." unique_id=897654918 instance=ExtResource("3_o17lx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.358395, 0, -32.37526)
 
-[node name="l1" type="OmniLight3D" parent="Room2" unique_id=288218043]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4736843, 2.9169757, -1.9146118)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="Room2" unique_id=54824880]
-transform = Transform3D(0.45772466, 0.62376493, -0.63356566, -0.40594447, -0.4873632, -0.77310175, -0.79101026, 0.6110602, 0.030135846, -9.843553, 2.3317683, 1.1533928)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
-[node name="SpotLight3D3" type="SpotLight3D" parent="Room2" unique_id=1360308296]
-transform = Transform3D(-0.72119933, 0.6861007, 0.095589764, 0.31087226, 0.44386834, -0.84044, -0.6190557, -0.57640857, -0.5334073, 0.6016903, 2.3317683, -9.724384)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="Room2" unique_id=2016149213]
-transform = Transform3D(-0.9225584, -0.07173109, -0.37913123, 0.31087226, 0.44386837, -0.84044, 0.2285701, -0.89321655, -0.3871953, -7.1114054, 2.3317683, -6.84219)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
-[node name="SpotLight3D5" type="SpotLight3D" parent="Room2" unique_id=545332563]
-transform = Transform3D(-0.42631805, 0.85543084, 0.29409376, 0.31087232, 0.4438683, -0.84044, -0.8494771, -0.26686907, -0.45515883, 7.0172005, 2.3317683, -6.84219)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
-[node name="SpotLight3D6" type="SpotLight3D" parent="Room2" unique_id=1279139325]
-transform = Transform3D(0.95043755, -0.1403438, 0.2774386, 0.31087232, 0.4438683, -0.84044, -0.0051956475, 0.88503367, 0.4654981, 4.755047, 0.10708189, 8.578022)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
-[node name="SpotLight3D7" type="SpotLight3D" parent="Room2" unique_id=682307569]
-transform = Transform3D(0.28132892, -0.887602, -0.36471486, 0.3108723, 0.44386828, -0.8404399, 0.9078615, 0.12306027, 0.4008038, -4.8579426, 0.10708189, 8.578022)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
-[node name="SpotLight3D8" type="SpotLight3D" parent="Room2" unique_id=2137716433]
-transform = Transform3D(0.39868474, -0.9169133, -0.017902056, 0.9046209, 0.39639774, -0.15662031, 0.15070358, 0.046247553, 0.9874967, -0.061172485, 0.10708189, 9.948263)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 35.012486
-
 [node name="Room3" parent="." unique_id=1363301032 instance=ExtResource("4_wmfod")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.876568, -0.4462552, 19.927616)
-
-[node name="l1" type="OmniLight3D" parent="Room3" unique_id=1480070200]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4736843, 4.855202, 0.1023922)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="SpotLight3D8" type="SpotLight3D" parent="Room3" unique_id=1071941857]
-transform = Transform3D(0.39868474, -0.91691333, -0.01790205, 0.00839968, 0.023170607, -0.99969625, 0.9170496, 0.39841324, 0.016939545, 0.65657616, 1.1949911, 0.71819496)
-light_energy = 7.0
-spot_range = 50.631817
-spot_angle = 62.36648
 
 [node name="Room4" parent="." unique_id=830062090 instance=ExtResource("5_28ihr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.184, 0.05, -22.561335)
 
-[node name="l1" type="OmniLight3D" parent="Room4" unique_id=284568571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.276285, 3.591808, 2.9666595)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
 [node name="Room5" parent="." unique_id=342335966 instance=ExtResource("6_5l4ao")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.157475, 6.739397, 0)
-
-[node name="l1" type="OmniLight3D" parent="Room5" unique_id=1483512959]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6383934, 1.6430998, -12.418419)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="l2" type="OmniLight3D" parent="Room5" unique_id=1370956829]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6879463, 2.5530539, 12.74821)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="l3" type="OmniLight3D" parent="Room5" unique_id=1726710542]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6197624, 2.104929, 11.284743)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="l4" type="OmniLight3D" parent="Room5" unique_id=1590236605]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.414051, 2.9772434, -10.785605)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
 
 [node name="StairsOutside" parent="." unique_id=1301923489 instance=ExtResource("2_hn60f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.75, -1, 0)
@@ -218,38 +72,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.04411, 0, 0)
 [node name="Reception" parent="." unique_id=1530775575 instance=ExtResource("17_5cig3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.540485, -0.30912352, 0)
 
-[node name="l1" type="OmniLight3D" parent="Reception" unique_id=1181746502]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.526161, 3.508525, -5.444537)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="l2" type="OmniLight3D" parent="Reception" unique_id=738861175]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.526161, 3.508525, 6.0996776)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
-[node name="l3" type="OmniLight3D" parent="Reception" unique_id=426240586]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.439398, 3.508525, 0.2512269)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
 [node name="RoomComplete" parent="." unique_id=4710292 instance=ExtResource("18_yhcug")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.61533, 0.05014789, -10.003506)
 
-[node name="l1" type="OmniLight3D" parent="RoomComplete" unique_id=1835129987]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4204369, 1.4845439, -0.16633797)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
-
 [node name="FinalRoom" parent="." unique_id=909443158 instance=ExtResource("19_uyxyj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.61566, 0.049993344, 9.9525795)
-
-[node name="l1" type="OmniLight3D" parent="FinalRoom" unique_id=427813700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5148582, 1.9309144, -0.16633797)
-light_color = Color(1, 0.8745098, 0.6862745, 1)
-light_energy = 3.0
-omni_range = 15.0
