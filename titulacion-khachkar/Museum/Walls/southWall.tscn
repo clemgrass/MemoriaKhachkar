@@ -1,13 +1,35 @@
-[gd_scene format=3 uid="uid://cdryhpln0dniq"]
+[gd_scene format=4 uid="uid://cdryhpln0dniq"]
 
 [ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="1_1fcha"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1fcha"]
+lightmap_size_hint = Vector2i(482, 622)
+_surfaces = [{
+"aabb": AABB(-0.2, -5.5, -15.058, 0.4, 11, 30.116),
+"attribute_data": PackedByteArray("AACAPwAAgD82nWw/9dp6PwAAgD8AAAAANp1sP0kR7TsAAAAAAAAAABh57j5JEe07AACAPwAAgD+3lHQ/CLpSOgAAgD8AAAAAalx5Pwi6UjoAAAAAAAAAAGpceT+BNXk/AACAPwAAgD8EvH8/ZSMTPwAAgD8AAAAABLx/P2O4YD4AAAAAAAAAAFH0ej9juGA+AAAAAAAAgD8Yee4+9dp6PwAAgD8AAIA/cfYYPFHLfz8AAIA/AAAAAAeJ7z5Ry38/AAAAAAAAAAAHie8+DBd8PwAAAAAAAAAA0PxyP90lfj8AAAAAAACAPx01bj/dJX4/AACAPwAAgD8dNW4/VqGkPAAAAAAAAIA/t5R0P4E1eT8AAAAAAACAP3H2GDwMF3w/AACAPwAAgD9LSes+CLpSOgAAgD8AAAAAS0nrPoE1eT8AAAAAAAAAAIH3hzqBNXk/AAAAAAAAgD9R9Ho/ZSMTPwAAgD8AAAAA0PxyP1ahpDwAAAAAAACAP4H3hzoIulI6"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgAAgAJAAAACgALAAwADQAOAA8ABQAQAAMADAARAAoAEgATABQACAAVAAYADwAWAA0AFAAXABIA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("zcxMvgAAsMCR7XBBzcxMvgAAsMCR7XDBzcxMvgAAsECR7XDBzcxMPgAAsMCR7XDBzcxMvgAAsMCR7XDBzcxMvgAAsMCR7XBBzcxMvgAAsECR7XDBzcxMvgAAsMCR7XDBzcxMPgAAsMCR7XDBzcxMvgAAsECR7XBBzcxMvgAAsMCR7XBBzcxMvgAAsECR7XBBzcxMPgAAsECR7XBBzcxMPgAAsECR7XBBzcxMvgAAsECR7XBBzcxMvgAAsECR7XDBzcxMPgAAsMCR7XBBzcxMPgAAsMCR7XBBzcxMPgAAsMCR7XDBzcxMPgAAsMCR7XBBzcxMPgAAsECR7XBBzcxMPgAAsECR7XDBzcxMPgAAsECR7XDBzcxMPgAAsECR7XDBAAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
+}]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qb0ab"]
 albedo_texture = ExtResource("1_1fcha")
 uv1_scale = Vector3(0.08, 1, 6)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_1fcha"]
+size = Vector3(0.40063477, 11.012695, 30.114258)
+
 [node name="SouthWall" type="Node3D" unique_id=1256002170]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1889702798]
-material_override = SubResource("StandardMaterial3D_qb0ab")
-size = Vector3(0.4, 11, 30.116)
+[node name="southWallB" type="StaticBody3D" parent="." unique_id=1110588847]
+
+[node name="swMesh" type="MeshInstance3D" parent="southWallB" unique_id=1730415171]
+mesh = SubResource("ArrayMesh_1fcha")
+surface_material_override/0 = SubResource("StandardMaterial3D_qb0ab")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="southWallB" unique_id=1521065847]
+shape = SubResource("BoxShape3D_1fcha")

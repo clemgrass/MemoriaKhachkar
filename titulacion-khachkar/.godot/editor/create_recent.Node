@@ -1,7 +1,8 @@
+Node3D
 CollisionShape3D
 StaticBody3D
+CSGBox3D
 LightmapGI
-Node3D
 ReflectionProbe
 WorldEnvironment
 Area3D
@@ -9,6 +10,5 @@ Sprite3D
 SpotLight3D
 DirectionalLight3D
 AnimationPlayer
-CSGBox3D
 AnimationTree
 BoneAttachment3D
