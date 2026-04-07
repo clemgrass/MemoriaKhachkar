@@ -367,16 +367,19 @@ size = Vector3(2.4062958, 0.50183105, 0.59950256)
 size = Vector3(2.4062958, 0.50183105, 0.59950256)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0pqw6"]
-size = Vector3(0.72413254, 5.4319763, 0.59950256)
+size = Vector3(0.72413254, 6.2804413, 0.5176468)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3mhau"]
-size = Vector3(0.72413254, 5.4319763, 0.59950256)
+size = Vector3(0.72413254, 6.3068085, 0.59950256)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ehf5l"]
-size = Vector3(0.72413254, 6.278, 11.596626)
+size = Vector3(0.36780357, 6.278, 11.596626)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dmh6d"]
-size = Vector3(0.72413254, 6.278, 11.596626)
+size = Vector3(0.36511803, 6.278, 11.596626)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g8t2n"]
+size = Vector3(0.72413254, 6.6339626, 30.00194)
 
 [node name="Arches" type="Node3D" unique_id=973585447]
 
@@ -476,7 +479,7 @@ mesh = SubResource("ArrayMesh_yut0b")
 surface_material_override/0 = SubResource("StandardMaterial3D_d1xej")
 
 [node name="entranceWallMesh" type="MeshInstance3D" parent="entrance/meshes" unique_id=512913566]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5650234, 0.009, 0.002105713)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5650234, 0.03836411, 0.002105713)
 mesh = SubResource("ArrayMesh_d1xej")
 surface_material_override/0 = SubResource("StandardMaterial3D_c3t8t")
 
@@ -505,17 +508,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8107376, -5.246155, -14.79
 shape = SubResource("BoxShape3D_bv4ve")
 
 [node name="coll7" type="CollisionShape3D" parent="entrance" unique_id=793350651]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, -2.7810822, 14.7987995)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, -2.3568497, 14.757872)
 shape = SubResource("BoxShape3D_0pqw6")
 
 [node name="coll8" type="CollisionShape3D" parent="entrance" unique_id=667187674]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, -2.7810822, -14.72197)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, -2.343666, -14.72197)
 shape = SubResource("BoxShape3D_3mhau")
 
 [node name="coll9" type="CollisionShape3D" parent="entrance" unique_id=270683146]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, -2.3580704, -8.62819)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5575, -2.3580704, -8.62819)
 shape = SubResource("BoxShape3D_ehf5l")
 
 [node name="coll10" type="CollisionShape3D" parent="entrance" unique_id=1885864675]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, -2.3580704, 8.63009)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5588427, -2.3580704, 8.63009)
 shape = SubResource("BoxShape3D_dmh6d")
+
+[node name="coll11" type="CollisionShape3D" parent="entrance" unique_id=729322026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, 4.1330023, -0.011993408)
+shape = SubResource("BoxShape3D_g8t2n")
