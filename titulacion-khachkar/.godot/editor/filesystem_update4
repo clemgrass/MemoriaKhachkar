@@ -11,3 +11,9 @@ res://Museum/Entrance/arches.tscn
 res://Museum/Entrance/stairs.tscn
 res://Museum/Entrance/reception.tscn
 res://Museum/Entrance/stool.tscn
+res://Museum/Second_Floor/LevelFloor.tscn
+res://Museum/Second_Floor/Rail/Pilar.tscn
+res://Museum/Second_Floor/Rail/Rings.tscn
+res://Museum/Second_Floor/Rail/FloorDetail.tscn
+res://Museum/Second_Floor/Rail/Cross.tscn
+res://Museum/Second_Floor/collision_khachkar_6.gd

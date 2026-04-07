@@ -1,15 +1,43 @@
-[gd_scene format=3 uid="uid://40kq2rab20dq"]
+[gd_scene format=4 uid="uid://40kq2rab20dq"]
 
 [ext_resource type="Material" uid="uid://ds8g4drlj1ly4" path="res://Museum/Room_5/Marble012_4K-JPG.tres" id="1_tpbdn"]
 
+[sub_resource type="ArrayMesh" id="ArrayMesh_tpbdn"]
+lightmap_size_hint = Vector2i(34, 30)
+_surfaces = [{
+"aabb": AABB(-0.5196533, -0.015, -0.24, 1.0393066, 0.03, 0.48),
+"attribute_data": PackedByteArray("AACAPwAAgD88PHw/vLt7PwAAgD8AAAAAPDx8P83MDD8AAAAAAAAAALW0dD/NzAw/AACAPwAAgD/x8HA8zcwMPwAAgD8AAAAA4uEhP83MDD8AAAAAAAAAAOLhIT+8u3s/AACAPwAAgD8eHl4/d3c3PwAAgD8AAAAAl5ZWP3d3Nz8AAAAAAAAAAJeWVj+JiIg8AAAAAAAAgD+1tHQ/vLt7PwAAgD8AAIA/eHg4P3d3Nz8AAIA/AAAAAAAAQD93dzc/AAAAAAAAAAAAAEA/iYiIPAAAAAAAAAAA4uEhP2Zm5j4AAAAAAACAP/HwcDxmZuY+AACAPwAAgD/x8HA8iYiIPAAAAAAAAIA/8fBwPLy7ez8AAAAAAACAP3h4OD+JiIg8AACAPwAAgD88PHw/iYiIPAAAgD8AAAAAPDx8P2Zm5j4AAAAAAAAAALW0dD9mZuY+AAAAAAAAgD8eHl4/iYiIPAAAgD8AAAAA4uEhP4mIiDwAAAAAAACAP7W0dD+JiIg8"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgAAgAJAAAACgALAAwADQAOAA8ABQAQAAMADAARAAoAEgATABQACAAVAAYADwAWAA0AFAAXABIA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAgFv4/CdbyPwnU+AAgFv4/CdbyPwnW+AAgFv4/CdTyPwnW+AAgFP4/CdbyPwnW+AAgFv4/CdbyPwnW+AAgFv4/CdbyPwnU+AAgFv4/CdTyPwnW+AAgFv4/CdbyPwnW+AAgFP4/CdbyPwnW+AAgFv4/CdTyPwnU+AAgFv4/CdbyPwnU+AAgFv4/CdTyPwnU+AAgFP4/CdTyPwnU+AAgFP4/CdTyPwnU+AAgFv4/CdTyPwnU+AAgFv4/CdTyPwnW+AAgFP4/CdbyPwnU+AAgFP4/CdbyPwnU+AAgFP4/CdbyPwnW+AAgFP4/CdbyPwnU+AAgFP4/CdTyPwnU+AAgFP4/CdTyPwnW+AAgFP4/CdTyPwnW+AAgFP4/CdTyPwnW+AAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
+}]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jjm14"]
+lightmap_size_hint = Vector2i(26, 22)
+_surfaces = [{
+"aabb": AABB(-0.51867676, -0.015, -0.12, 1.0373535, 0.03, 0.24),
+"attribute_data": PackedByteArray("AACAPwAAgD+xE3s/RhcdPwAAgD8AAAAAsRN7P3TRxT4AAAAAAAAAABQ7cT900cU+AACAPwAAgD/ZiZ08dNHFPgAAgD8AAAAAO7FTP3TRxT4AAAAAAAAAADuxUz9GFx0/AACAPwAAgD87sVM/jC56PwAAgD8AAAAAO7FTP6OLbj8AAAAAAAAAANmJnTyji24/AAAAAAAAgD8UO3E/RhcdPwAAgD8AAIA/O7FTPwAAQD8AAIA/AAAAADuxUz/poks/AAAAAAAAAADZiZ086aJLPwAAAAAAAAAAO7FTPwAAgD4AAAAAAACAP9mJnTwAAIA+AACAPwAAgD/ZiZ08jC66PAAAAAAAAIA/2YmdPEYXHT8AAAAAAACAP9mJnTwAAEA/AACAPwAAgD+xE3s/jC66PAAAgD8AAAAAsRN7PwAAgD4AAAAAAAAAABQ7cT8AAIA+AAAAAAAAgD/ZiZ08jC56PwAAgD8AAAAAO7FTP4wuujwAAAAAAACAPxQ7cT+MLro8"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgAAgAJAAAACgALAAwADQAOAA8ABQAQAAMADAARAAoAEgATABQACAAVAAYADwAWAA0AFAAXABIA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AMgEv4/CdbyPwvU9AMgEv4/CdbyPwvW9AMgEv4/CdTyPwvW9AMgEP4/CdbyPwvW9AMgEv4/CdbyPwvW9AMgEv4/CdbyPwvU9AMgEv4/CdTyPwvW9AMgEv4/CdbyPwvW9AMgEP4/CdbyPwvW9AMgEv4/CdTyPwvU9AMgEv4/CdbyPwvU9AMgEv4/CdTyPwvU9AMgEP4/CdTyPwvU9AMgEP4/CdTyPwvU9AMgEv4/CdTyPwvU9AMgEv4/CdTyPwvW9AMgEP4/CdbyPwvU9AMgEP4/CdbyPwvU9AMgEP4/CdbyPwvW9AMgEP4/CdbyPwvU9AMgEP4/CdTyPwvU9AMgEP4/CdTyPwvW9AMgEP4/CdTyPwvW9AMgEP4/CdTyPwvW9AAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
+}]
+
 [node name="FloorDetail" type="Node3D" unique_id=488259784]
 
-[node name="fd1" type="CSGBox3D" parent="." unique_id=1056063323]
+[node name="fdMesh" type="MeshInstance3D" parent="." unique_id=174431054]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, 0)
-material_override = ExtResource("1_tpbdn")
-size = Vector3(1.0393066, 0.03, 0.48)
+mesh = SubResource("ArrayMesh_tpbdn")
+surface_material_override/0 = ExtResource("1_tpbdn")
 
-[node name="fd2" type="CSGBox3D" parent="." unique_id=1169303058]
+[node name="fdMesh2" type="MeshInstance3D" parent="." unique_id=255926731]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045, 0)
-material_override = ExtResource("1_tpbdn")
-size = Vector3(1.0373535, 0.03, 0.24)
+mesh = SubResource("ArrayMesh_jjm14")
+surface_material_override/0 = ExtResource("1_tpbdn")

@@ -1,4 +1,4 @@
-extends CSGBox3D
+extends Node3D
 
 signal puzzle_solved
 
@@ -10,7 +10,7 @@ func khachkar_photo(allowed: bool):
 	#disappears khachkar
 	if allowed:
 		$"..".visible = false
-		self.use_collision = false
+		$collisionKhachkar.disabled = true
 		emit_signal("puzzle_solved", 6)
 	else:
 		pass
