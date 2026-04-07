@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dhlhcvesr88aw" path="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg" id="2_gykib"]
 [ext_resource type="Texture2D" uid="uid://d21amkealwwoe" path="res://Museum/Room_0/textures/floor_tiles_02_rough_4k.jpg" id="3_4ajqb"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_52qta"]
+size = Vector3(80.001755, 1.4628906, 30.001343)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cr6dn"]
 albedo_texture = ExtResource("1_52qta")
 metallic = 1.0
@@ -25,18 +28,15 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAgwmbWPL8AAHBBAAAgwmbWPL8AAHDBAAAgwmbWPD8AAHDBAAAgQmbWPL8AAHDBAAAgwmbWPL8AAHDBAAAgwmbWPL8AAHBBAAAgwmbWPD8AAHDBAAAgwmbWPL8AAHDBAAAgQmbWPL8AAHDBAAAgwmbWPD8AAHBBAAAgwmbWPL8AAHBBAAAgwmbWPD8AAHBBAAAgQmbWPD8AAHBBAAAgQmbWPD8AAHBBAAAgwmbWPD8AAHBBAAAgwmbWPD8AAHDBAAAgQmbWPL8AAHBBAAAgQmbWPL8AAHBBAAAgQmbWPL8AAHDBAAAgQmbWPL8AAHBBAAAgQmbWPD8AAHBBAAAgQmbWPD8AAHDBAAAgQmbWPD8AAHDBAAAgQmbWPD8AAHDBAAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
 }]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_52qta"]
-size = Vector3(80.001755, 1.4628906, 30.001343)
-
 [node name="Room0" type="Node3D" unique_id=307174438]
-
-[node name="floor_mesh" type="MeshInstance3D" parent="." unique_id=1315071865]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019264221, -0.6876465, -0.06696391)
-material_override = SubResource("StandardMaterial3D_cr6dn")
-mesh = SubResource("ArrayMesh_52qta")
 
 [node name="floor" type="StaticBody3D" parent="." unique_id=1216273423]
 
 [node name="floor_coll" type="CollisionShape3D" parent="floor" unique_id=526608604]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0031356812, -0.68847656, -0.0647583)
 shape = SubResource("BoxShape3D_52qta")
+
+[node name="floor_mesh" type="MeshInstance3D" parent="floor" unique_id=1315071865]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019264221, -0.6876465, -0.06696391)
+material_override = SubResource("StandardMaterial3D_cr6dn")
+mesh = SubResource("ArrayMesh_52qta")

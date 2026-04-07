@@ -2,3 +2,5 @@ res://Museum/museum.tscn
 res://World/MainGame.tscn
 res://Museum/Room_0/room0.tscn
 res://Museum/Final_Room/finalRoom.tscn
+res://Museum/Entrance/door.tscn
+res://Museum/Walls/roof.tscn
