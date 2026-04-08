@@ -79,6 +79,7 @@ func _physics_process(delta: float) -> void:
 					var text = current_terminal.terminal_input.text  
 					var answer = current_terminal.answer(text)
 					if answer:
+						current_terminal.khackharSolution()
 						exit_terminal()
 					else:
 						_on_terminal_text_entered(text) 

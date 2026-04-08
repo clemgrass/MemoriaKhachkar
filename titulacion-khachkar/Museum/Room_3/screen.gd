@@ -13,10 +13,12 @@ func _ready():
 func answer(text) -> bool:
 	if text == solution:
 		self.use_collision = false
-		#TODO cosas con el khachkar
-		$"../../windows/KhachkarWinProtect5".visible = false
-		$"../../Khachkar3/collisionKhachkar3".use_collision = true
-		$"../../AnimationPlayer".play("windows_r3")
 		return true
 	else:
 		return false
+		
+func khackharSolution() -> void:
+	$"../../windows/KhachkarWinProtect5".visible = false
+	$"../../AnimationPlayer".play("windows_r3")
+	await $"../../AnimationPlayer".animation_finished
+	$"../../Khachkar3/collisionKhachkar3/khachkarColl".disabled = false

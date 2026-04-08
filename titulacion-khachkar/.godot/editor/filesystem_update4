@@ -5,3 +5,7 @@ res://Museum/Room_4/room4.tscn
 res://Museum/Room_4/piano.tscn
 res://Museum/Room_4/collision_khachkar_4.gd
 res://Museum/Room_4/puzzle_4.gd
+res://Museum/Room_3/room3.tscn
+res://Museum/Room_3/collision_khachkar_3.gd
+res://Museum/Room_3/screen.gd
+res://Player/player_controller.gd
