@@ -17,3 +17,7 @@ res://Museum/Room_1/collision_khachkar_1.gd
 res://Museum/Room_1/puzzle_1.gd
 res://Museum/Final_Room/finalRoom.tscn
 res://Museum/Final_Room/ending_animation.gd
+res://Terrain/ground.tscn
+res://Terrain/outsideWorld.tscn
+res://Museum/museum.tscn
+res://World/MainGame.tscn
