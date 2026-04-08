@@ -1,14 +1,14 @@
+Node3D
+SpotLight3D
 StaticBody3D
 CollisionShape3D
 AnimationPlayer
 CollisionPolygon3D
 CSGBox3D
-Node3D
 LightmapGI
 ReflectionProbe
 WorldEnvironment
 Area3D
 Sprite3D
-SpotLight3D
 DirectionalLight3D
 AnimationTree

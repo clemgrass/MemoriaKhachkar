@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dscsj1f8d4kbc" path="res://Museum/Entrance/Khachkar/puzzle_0.gd" id="2_e6ru3"]
 [ext_resource type="Texture2D" uid="uid://c2xh6k2i8luul" path="res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg" id="3_o62cf"]
 [ext_resource type="Script" uid="uid://cke0a8cuimc21" path="res://Museum/Entrance/Khachkar/snapZone.gd" id="4_vu3v5"]
+[ext_resource type="LightmapGIData" uid="uid://bmafvokpgqah6" path="res://World/lights/fountainKhachkar.lmbake" id="5_o62cf"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e6ru3"]
 lightmap_size_hint = Vector2i(386, 282)
@@ -590,6 +591,22 @@ shape = SubResource("BoxShape3D_d2twf")
 [node name="coll7" type="CollisionShape3D" parent="fountainB" unique_id=1515228000]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06494737, 1.7777067, -0.018005371)
 shape = SubResource("BoxShape3D_e6ru3")
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1568388308]
+generate_probes_subdiv = 1
+light_data = ExtResource("5_o62cf")
+
+[node name="lights" type="Node3D" parent="." unique_id=894445293]
+
+[node name="l1" type="SpotLight3D" parent="lights" unique_id=1862658278]
+transform = Transform3D(0.16775535, 0.83914, 0.51739955, -0.61237246, 0.5, -0.6123725, -0.772566, -0.21411242, 0.59774387, 2.5425062, 0.45608187, 2.454366)
+spot_range = 6.074004
+spot_angle = 29.982702
+
+[node name="l2" type="SpotLight3D" parent="lights" unique_id=1748725256]
+transform = Transform3D(-0.7803755, -0.25831324, 0.5694633, -0.61237234, 0.5, -0.61237264, -0.12654772, -0.8266041, -0.54837155, 2.5425062, 0.45608187, -2.7840436)
+spot_range = 5.795278
+spot_angle = 29.982702
 
 [connection signal="body_entered" from="Puzzle0/Khachkar0/k1Area" to="Puzzle0/Khachkar0/k1Area" method="_on_body_entered"]
 [connection signal="body_exited" from="Puzzle0/Khachkar0/k1Area" to="Puzzle0/Khachkar0/k1Area" method="_on_body_exited"]
