@@ -701,7 +701,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../ending/Camera3D:position")
+tracks/0/path = NodePath("../Camera3D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -710,6 +710,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector3(1.1031766, 0.39999998, 0.009)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.78539824, 1.8325958, -4.3711385e-08)]
+}
 
 [sub_resource type="Animation" id="Animation_5000v"]
 resource_name = "camera_ending"
@@ -717,14 +729,26 @@ length = 60.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../ending/Camera3D:position")
+tracks/0/path = NodePath("../Camera3D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 9.98, 20.010174, 25.110214, 59.909035),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 9.99, 20.009544, 25.119543, 50.6, 59.908348),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(1.1031766, 0.39999998, 0.009), Vector3(4.1948776, 0.39999998, 0.009), Vector3(20.777924, 0.39999998, 0.009), Vector3(20.778, 0.4, -10), Vector3(122, 0.4, -10)]
+"values": [Vector3(-3.0046277, 1.7810128, 0.009), Vector3(4.211, 1.781, 0.009), Vector3(20.777, 1.781, 0.009), Vector3(20.805, 1.781, -10), Vector3(109.927, 1.781, -10), Vector3(121.998, 22.63883, -21.220425)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(50.6, 59.908348),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 0), Vector3(-0.29670596, 1.8325957, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1ees7"]
@@ -734,6 +758,9 @@ _data = {
 }
 
 [node name="FinalRoom" type="Node3D" unique_id=909443158]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1933467520]
+transform = Transform3D(-0.25881913, -0.6830127, 0.6830126, -3.0908613e-08, 0.7071067, 0.7071068, -0.9659258, 0.18301275, -0.18301277, 1.1031766, 0.39999998, 0.009)
 
 [node name="northWallMesh" type="MeshInstance3D" parent="." unique_id=284040060]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
@@ -750,6 +777,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_s0x04")
 [node name="door" type="CollisionShape3D" parent="door2" unique_id=526428066 groups=["final_door"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2441406, 0)
 shape = SubResource("BoxShape3D_s0x04")
+disabled = true
 script = ExtResource("4_s0x04")
 
 [node name="topMesh" type="MeshInstance3D" parent="." unique_id=203962474]
@@ -980,11 +1008,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.232562, 1.3625158, 0.06787
 shape = SubResource("BoxShape3D_7yh7v")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ending" unique_id=1904866447]
-root_node = NodePath("")
 libraries/ = SubResource("AnimationLibrary_1ees7")
-
-[node name="Camera3D" type="Camera3D" parent="ending" unique_id=1933467520]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.053844, 1.7286667, 0.014667209)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="ending" unique_id=823351529]
 

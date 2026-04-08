@@ -2,7 +2,7 @@ extends Node3D
 
 
 func grand_final():
-	$Camera3D.current = true
+	$"../Camera3D".current = true
 	$AnimationPlayer.play("camera_ending")
 	await $AnimationPlayer.animation_finished
 	var tween = create_tween()
