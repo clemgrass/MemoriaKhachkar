@@ -9,3 +9,7 @@ res://Museum/Room_3/room3.tscn
 res://Museum/Room_3/collision_khachkar_3.gd
 res://Museum/Room_3/screen.gd
 res://Player/player_controller.gd
+res://Museum/Room_2/room2.tscn
+res://Museum/Room_2/collision_khachkar_2.gd
+res://Museum/Room_2/highlight_collision.gd
+res://Museum/Room_1/room1.tscn

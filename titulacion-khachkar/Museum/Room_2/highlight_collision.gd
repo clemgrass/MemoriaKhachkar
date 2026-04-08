@@ -9,5 +9,6 @@ func pressed_button():
 		if body.name == "PlayerController":
 			$"../khachkar2".visible = false
 			$"../../Khachkar2".visible = true
-			$"../../Khachkar2/collisionKhachkar2".use_collision= true
+			$"../../AnimationPlayer".play("khachkar_pos")
+			$"../../Khachkar2/collisionKhachkar2/khachkarColl".disabled = false
 			return
