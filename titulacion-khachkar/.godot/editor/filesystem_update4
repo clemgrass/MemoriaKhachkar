@@ -13,3 +13,5 @@ res://Museum/Room_2/room2.tscn
 res://Museum/Room_2/collision_khachkar_2.gd
 res://Museum/Room_2/highlight_collision.gd
 res://Museum/Room_1/room1.tscn
+res://Museum/Room_1/collision_khachkar_1.gd
+res://Museum/Room_1/puzzle_1.gd

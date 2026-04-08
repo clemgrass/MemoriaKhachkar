@@ -24,7 +24,7 @@ func check_solution():
 	if curr_solution[0] == puzzle_solution[0] and curr_solution[1] == puzzle_solution[1] and curr_solution[2] == puzzle_solution[2]:
 		solved = true
 		$"../windows/KhachkarWinProtect5".visible = false
-		$"../khachkar_1/collisionKhachkar1".use_collision = true
+		$"../khachkar_1/collisionKhachkar1/khachkarColl".disabled = false
 		$AnimationPlayer.play("windows_down")
 
 func part1_photos(next: int) -> void:

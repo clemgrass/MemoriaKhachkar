@@ -1,6 +1,6 @@
-AnimationPlayer
 CollisionShape3D
 StaticBody3D
+AnimationPlayer
 CollisionPolygon3D
 CSGBox3D
 Node3D
