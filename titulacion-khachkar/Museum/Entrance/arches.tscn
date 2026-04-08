@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://72moo8ic2dtx" path="res://Museum/Entrance/Textures/textures/concrete_wall_003_diff_4k.jpg" id="2_c3t8t"]
 [ext_resource type="Texture2D" uid="uid://da6lbcnywusw5" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_nor_gl_4k.jpg" id="4_yrk1u"]
 [ext_resource type="Texture2D" uid="uid://de1pp06wwcprv" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg" id="5_ahp73"]
+[ext_resource type="LightmapGIData" uid="uid://b55pxcffbt1lw" path="res://World/lights/arches.lmbake" id="6_yrk1u"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_c3t8t"]
 lightmap_size_hint = Vector2i(674, 650)
@@ -526,3 +527,88 @@ shape = SubResource("BoxShape3D_dmh6d")
 [node name="coll11" type="CollisionShape3D" parent="entrance" unique_id=729322026]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3793354, 4.1330023, -0.011993408)
 shape = SubResource("BoxShape3D_g8t2n")
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1244247997]
+light_data = ExtResource("6_yrk1u")
+
+[node name="lights" type="Node3D" parent="." unique_id=765659209]
+
+[node name="l1" type="SpotLight3D" parent="lights" unique_id=1833853979]
+transform = Transform3D(-0.16018546, 0.608706, 0.77705693, 0.122896865, 0.7933958, -0.59617066, -0.9794064, 0, -0.20189853, -0.43187112, -5.549341, 11.302702)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="l2" type="SpotLight3D" parent="lights" unique_id=1407445122]
+transform = Transform3D(-0.16018546, 0.608706, 0.77705693, 0.122896865, 0.7933958, -0.59617066, -0.9794064, 0, -0.20189853, -0.432, -5.549, -11.303)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="l3" type="SpotLight3D" parent="lights" unique_id=1594715520]
+transform = Transform3D(0.41253147, 0.5055237, 0.7578019, 0.12289686, 0.7933959, -0.5961706, -0.9026152, 0.3390706, 0.2651735, -0.43187112, -5.549341, 5.023357)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="l4" type="SpotLight3D" parent="lights" unique_id=1141471284]
+transform = Transform3D(-0.084833175, 0.6069242, 0.79021925, 0.12289684, 0.7933959, -0.5961705, -0.98878694, 0.04654041, -0.14189535, -0.43187112, -5.549341, -4.875691)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="ol1" type="OmniLight3D" parent="lights" unique_id=839619924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1128201, -5.4459696, 13.800704)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol2" type="OmniLight3D" parent="lights" unique_id=1495074903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1128201, -5.4459696, 9.011959)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol3" type="OmniLight3D" parent="lights" unique_id=28153319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1128201, -5.4459696, 6.372651)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol4" type="OmniLight3D" parent="lights" unique_id=1208481161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1128201, -5.4459696, 3.9832768)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol5" type="OmniLight3D" parent="lights" unique_id=1576418950]
+transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, -2.1128201, -5.44597, -13.886642)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol6" type="OmniLight3D" parent="lights" unique_id=1323687193]
+transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, -2.1128201, -5.4459696, -9.0978985)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol7" type="OmniLight3D" parent="lights" unique_id=1690746263]
+transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, -2.1128201, -5.4459696, -6.45859)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="ol8" type="OmniLight3D" parent="lights" unique_id=1937123251]
+transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, -2.1128201, -5.445969, -4.0692153)
+light_bake_mode = 1
+omni_range = 1.8951427
+
+[node name="l5" type="SpotLight3D" parent="lights" unique_id=238120384]
+transform = Transform3D(0.21636824, 0.8109359, 0.54366153, 0.11980693, 0.53058976, -0.8391191, -0.9689329, 0.2466931, 0.017647048, 2.8501887, -6.8308754, 11.302702)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="l6" type="SpotLight3D" parent="lights" unique_id=2051842610]
+transform = Transform3D(0.08555436, 0.8325813, 0.5472558, 0.14153063, 0.5335438, -0.8338465, -0.98623, 0.14879265, -0.072188735, 2.850132, -6.830515, -11.3029995)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="l7" type="SpotLight3D" parent="lights" unique_id=865127741]
+transform = Transform3D(-0.14513549, 0.7338027, 0.6636785, 0.036627386, 0.6743059, -0.7375431, -0.9887335, -0.08273497, -0.12474312, 2.8501887, -6.8308754, 5.023357)
+light_bake_mode = 1
+spot_range = 15.244019
+
+[node name="l8" type="SpotLight3D" parent="lights" unique_id=915862693]
+transform = Transform3D(0.4366967, 0.6342785, 0.63795525, 0.1375546, 0.6537295, -0.7441214, -0.8890302, 0.41270885, 0.1982335, 2.8501887, -6.8308754, -4.875691)
+light_bake_mode = 1
+spot_range = 15.244019

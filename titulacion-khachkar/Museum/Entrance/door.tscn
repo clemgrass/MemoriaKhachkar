@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://blyiuxxdlh28q" path="res://Museum/Room_2/Metal048A_4K-JPG_Color.jpg" id="3_44big"]
 [ext_resource type="Texture2D" uid="uid://cmn0j3mja2yut" path="res://Museum/Room_2/Metal048A_4K-JPG_Metalness.jpg" id="4_ccb6c"]
 [ext_resource type="Texture2D" uid="uid://bug5axg4a4hok" path="res://Museum/Room_2/Metal048A_4K-JPG_Roughness.jpg" id="5_oxpls"]
+[ext_resource type="LightmapGIData" uid="uid://jwqbamipctbt" path="res://World/lights/door.lmbake" id="6_44big"]
 
 [sub_resource type="Animation" id="Animation_rh4by"]
 length = 3.0
@@ -194,3 +195,21 @@ mesh = SubResource("ArrayMesh_44big")
 [node name="eightDoorColl" type="CollisionShape3D" parent="rightDoor" unique_id=917241298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009979248, 0.007751465, 1.4228363)
 shape = SubResource("BoxShape3D_yep6o")
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1497036843]
+light_data = ExtResource("6_44big")
+
+[node name="lights" type="Node3D" parent="." unique_id=681328649]
+
+[node name="l1" type="SpotLight3D" parent="lights" unique_id=635652103]
+transform = Transform3D(0.80988383, 0.26701105, 0.5222962, 0.12289686, 0.79339594, -0.5961706, -0.57357174, 0.5470175, 0.6097437, 2.8693867, -3.1513233, 3.791811)
+light_energy = 10.03
+spot_range = 10.582542
+
+[node name="l2" type="SpotLight3D" parent="lights" unique_id=1861879016]
+transform = Transform3D(-0.5203191, 0.5630516, 0.64206, 0.12289687, 0.793396, -0.59617066, -0.8450826, -0.23129182, -0.48201638, 2.8693867, -3.1513233, -4.611103)
+light_energy = 9.42
+spot_range = 15.244019
+
+[node name="ol1" type="OmniLight3D" parent="lights" unique_id=2064410026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.849512, -3.2943175, 0)

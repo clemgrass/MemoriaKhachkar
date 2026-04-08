@@ -22,3 +22,9 @@ res://Terrain/outsideWorld.tscn
 res://Museum/museum.tscn
 res://World/MainGame.tscn
 res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
+res://Museum/Entrance/arches.tscn
+res://Museum/Entrance/door.tscn
+res://World/lights/arches.exr
+res://World/lights/arches.lmbake
+res://World/lights/door.exr
+res://World/lights/door.lmbake
