@@ -37,8 +37,8 @@ func check_solution():
 
 func solved_puzzle():
 	$AnimationPlayer.play("khachkar_fall")
-	await get_tree().create_timer(11.0).timeout
-	$Khachkar5/collisionKhachkar5.use_collision = true
+	await $AnimationPlayer.animation_finished
+	$Khachkar5/collisionKhachkar5/khachkarColl.disabled = false
 	
 	
 	
