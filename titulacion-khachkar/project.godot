@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="TitulacionKhachkar"
-run/main_scene="uid://dr1ulgoec785u"
+run/main_scene="uid://wwl5jcexndpr"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
 [display]
