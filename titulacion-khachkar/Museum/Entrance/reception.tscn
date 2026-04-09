@@ -514,3 +514,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_liuco")
 transform = Transform3D(0.7071067, 0, -0.7071067, -4.945379e-08, -0.8, -4.945379e-08, -0.7071067, 8.742278e-08, -0.7071067, 3.878868, 1.5997623, -6.6339245)
 mesh = SubResource("ArrayMesh_lf60x")
 surface_material_override/0 = SubResource("StandardMaterial3D_xrdb0")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1942134021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.947323, 3, -7.534561)
+omni_range = 9.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=504284728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.635257, 3, 7.7774563)
+omni_range = 9.0

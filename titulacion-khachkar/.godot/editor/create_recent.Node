@@ -1,6 +1,6 @@
-LightmapGI
-SpotLight3D
 OmniLight3D
+SpotLight3D
+LightmapGI
 CollisionShape3D
 DirectionalLight3D
 Node3D

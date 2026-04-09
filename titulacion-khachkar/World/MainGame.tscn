@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dnisr3dfoji4g" path="res://World/main_game.gd" id="1_kmhrd"]
 [ext_resource type="PackedScene" uid="uid://bnowdbcs0lak" path="res://Player/playerController.tscn" id="2_ma34m"]
 [ext_resource type="PackedScene" uid="uid://cclarcjb2ap10" path="res://Terrain/outsideWorld.tscn" id="3_rlvo1"]
+[ext_resource type="LightmapGIData" uid="uid://bgnw5gj7if3yq" path="res://World/lights/gameBakedLights.lmbake" id="5_kmhrd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_afcvc"]
 sky_top_color = Color(0.23098785, 0.4009148, 0.43838903, 1)
@@ -43,3 +44,6 @@ sprint_speed = 5.6
 
 [node name="OutsideWorld" parent="." unique_id=1986257652 instance=ExtResource("3_rlvo1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7907693, 0)
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1106804151]
+light_data = ExtResource("5_kmhrd")

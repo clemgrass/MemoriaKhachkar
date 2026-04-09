@@ -15,3 +15,10 @@ res://Museum/Final_Room/finalRoom.tscn
 res://Museum/Room_5/puzzle_5.gd
 res://Museum/Room_5/country_highlight.gd
 res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
+res://World/MainGame.tscn
+res://Museum/Room_0/room0.tscn
+res://Museum/Entrance/stairs.tscn
+res://Museum/Walls/westWall.tscn
+res://Museum/Entrance/reception.tscn
+res://World/lights/gameBakedLights.exr
+res://World/lights/gameBakedLights.lmbake
