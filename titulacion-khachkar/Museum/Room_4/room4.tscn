@@ -1987,3 +1987,19 @@ shape = SubResource("BoxShape3D_glpuk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1637130211]
 libraries/ = SubResource("AnimationLibrary_o70lk")
+
+[node name="ol1" type="OmniLight3D" parent="." unique_id=1841980606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.099528, 2.8444164, 3.564836)
+omni_range = 6.344161
+
+[node name="l1" type="SpotLight3D" parent="." unique_id=1736617867]
+transform = Transform3D(0.9976961, 0.06686697, -0.01146041, -0.05976965, 0.9462691, 0.31780872, 0.032095537, -0.3163915, 0.94808567, -9.704161, 6.023626, 7.8682966)
+light_energy = 4.0
+spot_range = 34.605156
+spot_angle = 11.88
+
+[node name="l2" type="SpotLight3D" parent="." unique_id=829882826]
+transform = Transform3D(0.9976961, 0.06686698, -0.011460404, -0.060876895, 0.95695674, 0.28377447, 0.029942254, -0.28242302, 0.95882267, -6.0098553, 6.023626, 7.8682966)
+light_energy = 5.0
+spot_range = 34.605156
+spot_angle = 11.88

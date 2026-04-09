@@ -265,46 +265,68 @@ shadow_mesh = SubResource("ArrayMesh_v7nvv")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7d2qp"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_os5sa"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o36uw"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m411c"]
 albedo_color = Color(1, 1, 1, 0)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.90359825, 0.90359825, 0.9035982, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h03dy"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgg33"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u6mhr"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xafed"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7j2xw"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ade31"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gdvb4"]
 albedo_color = Color(1, 1, 1, 0.5882353)
 metallic = 1.0
+emission_enabled = true
+emission = Color(0.9019608, 0.9019608, 0.9019608, 1)
 
 [sub_resource type="ORMMaterial3D" id="ORMMaterial3D_rhmn8"]
 albedo_color = Color(0.84313726, 0.8862745, 0.96862745, 1)
@@ -381,6 +403,9 @@ data = PackedVector3Array(-10.001221, -2.5949707, -0.046142578, -10.001221, 2.59
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_o4o38"]
 data = PackedVector3Array(-15.084427, -2.5949707, 0.046142578, -15.084427, -2.5949707, -0.046142578, -15.084427, 2.5949707, -0.046142578, 15.084427, -2.5949707, -0.046142578, -15.084427, -2.5949707, -0.046142578, -15.084427, -2.5949707, 0.046142578, -15.084427, 2.5949707, -0.046142578, -15.084427, -2.5949707, -0.046142578, 15.084427, -2.5949707, -0.046142578, -15.084427, 2.5949707, -0.046142578, -15.084427, 2.5949707, 0.046142578, -15.084427, -2.5949707, 0.046142578, -15.084427, -2.5949707, 0.046142578, -15.084427, 2.5949707, 0.046142578, 15.084427, 2.5949707, 0.046142578, 15.084427, 2.5949707, 0.046142578, -15.084427, 2.5949707, 0.046142578, -15.084427, 2.5949707, -0.046142578, -15.084427, -2.5949707, 0.046142578, 15.084427, -2.5949707, 0.046142578, 15.084427, -2.5949707, -0.046142578, 15.084427, 2.5949707, 0.046142578, 15.084427, -2.5949707, 0.046142578, -15.084427, -2.5949707, 0.046142578, 15.084427, -2.5949707, -0.046142578, 15.084427, -2.5949707, 0.046142578, 15.084427, 2.5949707, 0.046142578, 15.084427, -2.5949707, -0.046142578, 15.084427, 2.5949707, -0.046142578, -15.084427, 2.5949707, -0.046142578, -15.084427, 2.5949707, -0.046142578, 15.084427, 2.5949707, -0.046142578, 15.084427, 2.5949707, 0.046142578, 15.084427, 2.5949707, 0.046142578, 15.084427, 2.5949707, -0.046142578, 15.084427, -2.5949707, -0.046142578)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_akdfo"]
+size = Vector3(0.33483887, 4.685425, 0.41796875)
 
 [node name="Room5" type="Node3D" unique_id=342335966]
 script = ExtResource("1_os5sa")
@@ -683,3 +708,19 @@ shape = SubResource("ConcavePolygonShape3D_gdvb4")
 [node name="CSGBakedCollisionShape3D3" type="CollisionShape3D" parent="room5B" unique_id=1501251717]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.000617, 1.995, 0.00012874603)
 shape = SubResource("ConcavePolygonShape3D_o4o38")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="room5B" unique_id=404355224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.681941, 1.8427124, 13.290353)
+shape = SubResource("BoxShape3D_akdfo")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="room5B" unique_id=1192759169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6927567, 1.8427124, 13.290353)
+shape = SubResource("BoxShape3D_akdfo")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="room5B" unique_id=872659650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.681941, 1.8427124, -13.2823715)
+shape = SubResource("BoxShape3D_akdfo")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="room5B" unique_id=886919078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6927567, 1.8427124, -13.2823715)
+shape = SubResource("BoxShape3D_akdfo")

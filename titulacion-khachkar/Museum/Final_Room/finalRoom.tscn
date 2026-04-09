@@ -760,7 +760,7 @@ _data = {
 [node name="FinalRoom" type="Node3D" unique_id=909443158]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1933467520]
-transform = Transform3D(-0.25881913, -0.6830127, 0.6830126, -3.0908613e-08, 0.7071067, 0.7071068, -0.9659258, 0.18301275, -0.18301277, 1.1031766, 0.39999998, 0.009)
+transform = Transform3D(-0.25881913, -0.6830127, 0.68301255, -3.0908613e-08, 0.7071067, 0.70710677, -0.9659258, 0.18301275, -0.18301275, 1.1031766, 0.39999998, 0.009)
 
 [node name="northWallMesh" type="MeshInstance3D" parent="." unique_id=284040060]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
@@ -1017,3 +1017,8 @@ offset_right = 40.0
 offset_bottom = 40.0
 color = Color(0, 0, 0, 0)
 metadata/_edit_use_anchors_ = true
+
+[node name="l1" type="SpotLight3D" parent="." unique_id=2038682899]
+transform = Transform3D(-0.016598398, -0.93767107, 0.3471275, -0.015466338, 0.3473746, 0.9375989, -0.9997426, 0.010193848, -0.0202682, -3.7111347, 2.6570663, 0)
+light_energy = 1.5
+spot_angle = 23.32482

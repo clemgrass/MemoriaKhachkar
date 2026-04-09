@@ -1,9 +1,10 @@
-OmniLight3D
-Node3D
 LightmapGI
 SpotLight3D
-StaticBody3D
+OmniLight3D
 CollisionShape3D
+DirectionalLight3D
+Node3D
+StaticBody3D
 AnimationPlayer
 CollisionPolygon3D
 CSGBox3D
@@ -11,4 +12,3 @@ ReflectionProbe
 WorldEnvironment
 Area3D
 Sprite3D
-DirectionalLight3D

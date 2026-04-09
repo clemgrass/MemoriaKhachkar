@@ -10,6 +10,7 @@ func reset_colors():
 	for country in countries:
 		var mat = country.material
 		mat.albedo_color = Color(1,1,1)
+		mat.emission = Color(1,1,1)
 	for i in range(solution.size()):
 		solution[i] = false
 	print(solution)

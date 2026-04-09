@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://dscsj1f8d4kbc" path="res://Museum/Entrance/Khachkar/puzzle_0.gd" id="2_e6ru3"]
 [ext_resource type="Texture2D" uid="uid://c2xh6k2i8luul" path="res://Museum/Entrance/Khachkar/Khachkar0_uv_map (2).jpg" id="3_o62cf"]
 [ext_resource type="Script" uid="uid://cke0a8cuimc21" path="res://Museum/Entrance/Khachkar/snapZone.gd" id="4_vu3v5"]
-[ext_resource type="LightmapGIData" uid="uid://bmafvokpgqah6" path="res://World/lights/fountainKhachkar.lmbake" id="5_o62cf"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e6ru3"]
 lightmap_size_hint = Vector2i(386, 282)
@@ -591,10 +590,6 @@ shape = SubResource("BoxShape3D_d2twf")
 [node name="coll7" type="CollisionShape3D" parent="fountainB" unique_id=1515228000]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06494737, 1.7777067, -0.018005371)
 shape = SubResource("BoxShape3D_e6ru3")
-
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1568388308]
-generate_probes_subdiv = 1
-light_data = ExtResource("5_o62cf")
 
 [node name="lights" type="Node3D" parent="." unique_id=894445293]
 

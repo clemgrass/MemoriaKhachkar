@@ -1401,7 +1401,7 @@ transform = Transform3D(1, 6.363621e-11, 9.8661985e-09, -1.4210855e-13, 1, -2.00
 shape = SubResource("BoxShape3D_fu4yr")
 
 [node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("10_detsc")]
-transform = Transform3D(-1.6904017, -0.91653174, 0.55001014, -0.9382435, 1.7653111, 0.058098983, -0.51209426, -0.20891643, -1.9220077, -6.644971, 5.4783225, 1.4228711)
+transform = Transform3D(-1.6904014, -0.91653174, 0.55001014, -0.9382434, 1.7653111, 0.058098983, -0.5120942, -0.20891643, -1.9220077, -6.644971, 5.4783225, 1.4228711)
 visible = false
 
 [node name="collisionKhachkar2" type="StaticBody3D" parent="Khachkar2" unique_id=2037283573 groups=["khachkars"]]
@@ -1428,3 +1428,53 @@ shape = SubResource("ConcavePolygonShape3D_s8yro")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=71835489]
 libraries/ = SubResource("AnimationLibrary_m131q")
+
+[node name="l1" type="SpotLight3D" parent="." unique_id=2066010138]
+transform = Transform3D(-1, 0, -8.742278e-08, 6.181724e-08, 0.70710677, -0.70710677, 6.181724e-08, -0.70710677, -0.70710677, 0, 0, -9.654996)
+light_bake_mode = 1
+spot_range = 21.34595
+spot_angle = 22.75183
+
+[node name="l2" type="SpotLight3D" parent="." unique_id=204985372]
+transform = Transform3D(1, 6.181724e-08, 1.4924002e-07, 6.181724e-08, 0.7071068, -0.7071068, -1.4924001e-07, 0.7071068, 0.7071068, 0, 0, 13.608533)
+light_bake_mode = 1
+spot_range = 21.34595
+spot_angle = 22.75183
+
+[node name="l3" type="SpotLight3D" parent="." unique_id=52346877]
+transform = Transform3D(-0.7071068, 0.49999994, 0.49999994, 0, 0.70710677, -0.70710677, -0.7071067, -0.5, -0.5, 6.8497887, 0, -6.6589265)
+light_bake_mode = 1
+spot_range = 21.34595
+spot_angle = 37.776726
+
+[node name="l4" type="SpotLight3D" parent="." unique_id=974283905]
+transform = Transform3D(-0.71325046, -0.4956177, -0.4956177, 0, 0.70710677, -0.70710677, 0.70090926, -0.5043442, -0.5043442, -7.253704, 0, -6.6589265)
+light_bake_mode = 1
+spot_range = 21.34595
+spot_angle = 37.776726
+
+[node name="l6" type="SpotLight3D" parent="." unique_id=1357030006]
+transform = Transform3D(0.7071068, -0.5, -0.49999997, 0, 0.7071068, -0.7071068, 0.70710677, 0.50000006, 0.5, -7.1190653, 0, 6.3272123)
+light_bake_mode = 1
+spot_range = 21.34595
+spot_angle = 37.776726
+
+[node name="l7" type="SpotLight3D" parent="." unique_id=1635849037]
+transform = Transform3D(0.7132505, 0.49561766, 0.49561766, 0, 0.70710677, -0.70710677, -0.7009092, 0.5043443, 0.5043443, 6.9844275, 0, 6.3272133)
+light_bake_mode = 1
+spot_range = 21.34595
+spot_angle = 37.776726
+
+[node name="l8" type="SpotLight3D" parent="." unique_id=1197235369]
+transform = Transform3D(-0.29025984, -0.58582395, -0.7566767, 0.07779053, 0.7736573, -0.62881076, 0.9537809, -0.24138077, -0.17899008, -12.074911, 4.2039366, 0.37509793)
+light_energy = 1.5
+light_bake_mode = 1
+spot_range = 18.239393
+spot_angle = 30.883446
+
+[node name="l9" type="SpotLight3D" parent="." unique_id=1648084383]
+transform = Transform3D(0.2902599, 0.58582395, 0.7566767, 0.07779054, 0.7736574, -0.6288108, -0.95378083, 0.24138086, 0.17899014, 11.857699, 4.2039366, 0.37509793)
+light_energy = 1.5
+light_bake_mode = 1
+spot_range = 18.239393
+spot_angle = 30.883446

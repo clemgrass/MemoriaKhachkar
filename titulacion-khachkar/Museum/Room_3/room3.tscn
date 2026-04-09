@@ -1789,3 +1789,14 @@ shape = SubResource("BoxShape3D_xf5vq")
 [node name="CSGBakedCollisionShape3D4" type="CollisionShape3D" parent="room3B" unique_id=1076851653]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2769165, -0.023291111)
 shape = SubResource("ConcavePolygonShape3D_cwavx")
+
+[node name="ol1" type="OmniLight3D" parent="." unique_id=1237509246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49894452, 2.8104196, 0.37707043)
+light_bake_mode = 1
+omni_range = 3.0178826
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=951766415]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 2.1121926, -2.9540405)
+light_energy = 1.5
+spot_range = 4.9673986
+spot_angle = 35.07509

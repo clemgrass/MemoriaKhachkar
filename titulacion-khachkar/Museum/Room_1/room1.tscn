@@ -893,3 +893,28 @@ shape = SubResource("ConcavePolygonShape3D_q7xu5")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="room1B" unique_id=1708786106]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03627014, 2.3402271, -8.508593)
 shape = SubResource("BoxShape3D_jx7bv")
+
+[node name="l1" type="SpotLight3D" parent="." unique_id=402105175]
+transform = Transform3D(1, 0, 0, 0, 0.7922577, -0.61018664, 0, 0.61018664, 0.7922577, 0, 0.26, 0)
+light_bake_mode = 1
+spot_range = 5.2227116
+
+[node name="l2" type="SpotLight3D" parent="." unique_id=1647964882]
+transform = Transform3D(1, 0, 0, 0, 0.9889306, 0.148379, 0, -0.148379, 0.9889306, 0, 2.9478457, 0)
+light_bake_mode = 1
+spot_range = 5.2227116
+
+[node name="l3" type="SpotLight3D" parent="." unique_id=297918597]
+transform = Transform3D(1, 0, 0, 0, 0.9889306, 0.148379, 0, -0.148379, 0.9889306, 0, 2.9478457, -6.783228)
+light_bake_mode = 1
+spot_range = 2.6923013
+
+[node name="l4" type="SpotLight3D" parent="." unique_id=327948427]
+transform = Transform3D(0.98324865, 0.027045019, -0.18025225, 0.016459396, 0.9717158, 0.23557958, 0.18152519, -0.2346001, 0.954993, 1.908497, 2.9478457, -6.783228)
+light_bake_mode = 1
+spot_range = 2.461269
+
+[node name="l5" type="SpotLight3D" parent="." unique_id=1027930870]
+transform = Transform3D(0.87115383, -0.0728556, 0.485575, 0, 0.9889306, 0.148379, -0.4910102, -0.12926093, 0.8615107, -1.675725, 2.9237533, -6.783228)
+light_bake_mode = 1
+spot_range = 2.6923013
