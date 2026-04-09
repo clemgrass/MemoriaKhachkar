@@ -22,3 +22,4 @@ func _ready() -> void:
 	
 	puzzle.puzzle0_solved.connect(door._on_puzzle_solved)
 	puzzle.puzzle0_solved.connect(album._on_puzzle_solved)
+	

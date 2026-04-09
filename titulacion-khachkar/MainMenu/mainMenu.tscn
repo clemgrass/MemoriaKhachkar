@@ -1,0 +1,297 @@
+[gd_scene format=3 uid="uid://wwl5jcexndpr"]
+
+[ext_resource type="FontFile" uid="uid://dnyfat4280h82" path="res://MainMenu/LibreBaskerville-Italic-VariableFont_wght.ttf" id="1_f0et7"]
+[ext_resource type="FontFile" uid="uid://bo1li5jeb38e2" path="res://MainMenu/LibreBaskerville-VariableFont_wght.ttf" id="2_ch7cu"]
+[ext_resource type="Texture2D" uid="uid://bcd4pl58ebgx1" path="res://MainMenu/Texturelabs_Paper_290XL.jpg" id="2_f0et7"]
+[ext_resource type="Texture2D" uid="uid://qnnpaucf6jh7" path="res://MainMenu/newspaper_photo.png" id="3_ch7cu"]
+[ext_resource type="Script" uid="uid://cesawxaidogle" path="res://MainMenu/button.gd" id="3_qjfgb"]
+[ext_resource type="Script" uid="uid://bnt7wvf0kjmft" path="res://MainMenu/quit.gd" id="4_qjfgb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fvnh7"]
+font = ExtResource("1_f0et7")
+font_size = 213
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xvtlb"]
+font = ExtResource("1_f0et7")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xvtlb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c824c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjfgb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ch7cu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i10pk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgvx8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Animation" id="Animation_ch7cu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/Play:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Quit:theme_override_colors/font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/Title:label_settings:font_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/SubTitle:label_settings:font_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qjfgb"]
+resource_name = "start_game"
+length = 6.0666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.0333333, 6.0333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(2, 2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.0333333, 6.0333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(-805, -364)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/Play:theme_override_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.23333335, 1.94),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Quit:theme_override_colors/font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.76666665, 1.94),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/Title:label_settings:font_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.3333334, 1.94),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/SubTitle:label_settings:font_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.93333334, 1.94),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c824c"]
+_data = {
+&"RESET": SubResource("Animation_ch7cu"),
+&"start_game": SubResource("Animation_qjfgb")
+}
+
+[node name="MainMenu" type="Control" unique_id=20530609]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 139.0
+offset_top = 79.0
+offset_right = 139.0
+offset_bottom = 79.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node2D" type="Node2D" parent="." unique_id=634715872]
+
+[node name="Title" type="Label" parent="Node2D" unique_id=707826521]
+offset_left = -863.26526
+offset_top = -522.449
+offset_right = 1206.7347
+offset_bottom = -257.44897
+text = "The Legacy Times"
+label_settings = SubResource("LabelSettings_fvnh7")
+
+[node name="SubTitle" type="Label" parent="Node2D" unique_id=261725841]
+offset_left = -1059.1836
+offset_top = -233.67343
+offset_right = 1010.8164
+offset_bottom = -152.67343
+text = "Khachkar"
+label_settings = SubResource("LabelSettings_xvtlb")
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="Node2D" unique_id=448516433]
+z_index = 4
+offset_left = -736.7345
+offset_top = -75.51016
+offset_right = -596.7345
+offset_bottom = 5.489868
+scale = Vector2(1.000001, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.2231029, 0.2231029, 0.22310287, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ch7cu")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_xvtlb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c824c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjfgb")
+action_mode = 0
+text = "Play"
+script = ExtResource("3_qjfgb")
+
+[node name="Quit" type="Button" parent="Node2D" unique_id=48466373]
+z_index = 4
+offset_left = -722.449
+offset_top = 225.5102
+offset_right = -572.449
+offset_bottom = 306.5102
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ch7cu")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_ch7cu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i10pk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bgvx8")
+action_mode = 0
+text = "Quit"
+script = ExtResource("4_qjfgb")
+
+[node name="MainImage" type="TextureRect" parent="Node2D" unique_id=924791559]
+offset_left = -76.53058
+offset_top = -86.73468
+offset_right = 1839.4695
+offset_bottom = 989.2653
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 10
+size_flags_vertical = 4
+texture = ExtResource("3_ch7cu")
+
+[node name="TextureRect" type="TextureRect" parent="Node2D" unique_id=1068816087]
+z_index = -1
+offset_left = -1031.6326
+offset_top = -609.18365
+offset_right = 1049.3674
+offset_bottom = 629.81635
+mouse_filter = 2
+texture = ExtResource("2_f0et7")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1240265653]
+libraries/ = SubResource("AnimationLibrary_c824c")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=283122894]
+
+[connection signal="mouse_entered" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_exited"]
+[connection signal="pressed" from="Node2D/Play" to="Node2D/Play" method="_on_pressed"]
+[connection signal="mouse_entered" from="Node2D/Quit" to="Node2D/Quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/Quit" to="Node2D/Quit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Node2D/Quit" to="Node2D/Quit" method="_on_pressed"]
