@@ -368,86 +368,88 @@ visible = false
 shaded = true
 texture = ExtResource("15_w5tpw")
 
-[node name="camera" type="Node3D" parent="Head/Camera3D" unique_id=884101305]
-transform = Transform3D(0.11, 0, 0, 0, 0.145, 0, 0, 0, 1, -0.165, -0.105, 1.24)
-visible = false
+[node name="pivot_camera" type="Node3D" parent="Head/Camera3D" unique_id=1389624058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0011634883, -0.18292694)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=1553038325]
+[node name="camera" type="Node3D" parent="Head/Camera3D/pivot_camera" unique_id=884101305]
+transform = Transform3D(0.11, 0, 0, 0, 0.145, 0, 0, 0, 1, -0.165, -0.10383651, 1.422927)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=1553038325]
 transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, 0, 0, -1.4216805)
 mesh = SubResource("PlaneMesh_b4ak7")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D" unique_id=1756677375]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D" unique_id=1756677375]
 transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982346, -0.0003196001, 0.8830776)
 mesh = SubResource("PlaneMesh_b4ak7")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=48729693]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=48729693]
 transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 3.01, 0, -1.422)
 mesh = SubResource("PlaneMesh_5ttyy")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D3" unique_id=1888305672]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D3" unique_id=1888305672]
 transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
 mesh = SubResource("PlaneMesh_ffims")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=662626119]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=662626119]
 transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, 0, 1.49, -1.4216805)
 mesh = SubResource("PlaneMesh_erdax")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D2" unique_id=45631286]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D2" unique_id=45631286]
 transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452604, -1.110223e-16, 0.99999994, -9.13568e-09, 0.13876934, 0, -1.1525022e-07, 18.982346, 0.00036779046, 0.8830776)
 mesh = SubResource("PlaneMesh_yx5qg")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=144269579]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=144269579]
 transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 3.01, 1.49, -1.422)
 mesh = SubResource("PlaneMesh_4f3o6")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D4" unique_id=1435462708]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D4" unique_id=1435462708]
 transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
 mesh = SubResource("PlaneMesh_heig0")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=292216872]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=292216872]
 transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, 1.145, 0.62, -1.4216805)
 mesh = SubResource("PlaneMesh_b4ak7")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D5" unique_id=1704868313]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D5" unique_id=1704868313]
 transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.537, 0, 0.868)
 mesh = SubResource("PlaneMesh_b4ak7")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=1316690586]
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=1316690586]
 transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 1.855, 0.62, -1.422)
 mesh = SubResource("PlaneMesh_5ttyy")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D6" unique_id=1650180807]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D6" unique_id=1650180807]
 transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.367, 0, 0.859)
 mesh = SubResource("PlaneMesh_ffims")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=101333069]
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=101333069]
 transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, 1.145, 0.77, -1.4216805)
 mesh = SubResource("PlaneMesh_erdax")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D7" unique_id=1069737924]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D7" unique_id=1069737924]
 transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.432, 0, 0.873)
 mesh = SubResource("PlaneMesh_yx5qg")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=943545474]
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera" unique_id=943545474]
 transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 1.855, 0.77, -1.422)
 mesh = SubResource("PlaneMesh_4f3o6")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D8" unique_id=2079506680]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/pivot_camera/camera/MeshInstance3D8" unique_id=2079506680]
 transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.637, 0, 0.859)
 mesh = SubResource("PlaneMesh_heig0")
 surface_material_override/0 = SubResource("StandardMaterial3D_woph4")

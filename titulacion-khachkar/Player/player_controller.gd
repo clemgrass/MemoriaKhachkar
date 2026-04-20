@@ -19,6 +19,7 @@ extends CharacterBody3D
 @export var input_jump : String = "ui_accept"
 @export var input_sprint : String = "sprint"
 @export var input_left_click : String = "click_left"
+@export var input_right_click : String = "click_right"
 @export var album_open_close : String = "album"
 @export var open_close_camera : String = "camera"
 
@@ -35,9 +36,9 @@ var move_speed : float = 0.0
 @onready var crosshair_pick_piano = $Head/Camera3D/pick_piano
 @onready var album_obj = $Head/Camera3D/Album
 @onready var animation_player = $AnimationPlayer
-@onready var analog_camera = $Head/Camera3D/camera
+@onready var analog_camera = $Head/Camera3D/pivot_camera
 
-enum PlayerState { NORMAL, TERMINAL, ALBUM, ENDING }
+enum PlayerState { NORMAL, TERMINAL, ALBUM, CAMERA, ENDING }
 var state : PlayerState = PlayerState.NORMAL
 var current_terminal: Node = null
 
@@ -49,7 +50,12 @@ var just_released := false
 """
 Practice code 
 """
+@export var min_fov: float = 30.0  
+@export var max_fov: float = 75.0   
+@export var zoom_speed: float = 50.0
 
+var target_fov: float
+var default_fov: float
 """
 Practice code 
 """
@@ -58,6 +64,8 @@ func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
 	look_rotation.x = head.rotation.x
+	target_fov = player_camera.fov
+	default_fov = player_camera.fov
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mouse_captured = true
 
@@ -96,7 +104,31 @@ func _physics_process(delta: float) -> void:
 				animation_player.play("album_close")
 				await animation_player.animation_finished
 				album_obj.visible = false
-
+		PlayerState.CAMERA:
+			crosshair_normal.visible = false
+			crosshair_pick.visible = false
+			crosshair_pick_piano.visible = false
+			velocity = Vector3.ZERO
+			
+			if Input.is_action_pressed(input_left_click):
+				target_fov -= zoom_speed * delta
+			elif Input.is_action_pressed(input_right_click):
+				target_fov += zoom_speed * delta
+			
+			target_fov = clamp(target_fov, min_fov, max_fov)
+			player_camera.fov = lerp(player_camera.fov, target_fov, 10 * delta)
+			
+			var zoom_factor = player_camera.fov / default_fov
+			zoom_factor = clamp(zoom_factor, min_fov / default_fov, max_fov / default_fov)
+			analog_camera.scale = Vector3.ONE * zoom_factor
+			
+			if Input.is_action_just_pressed(open_close_camera):
+				player_camera.fov = default_fov
+				analog_camera.scale = Vector3.ONE
+				state = PlayerState.NORMAL
+				analog_camera.visible = false
+				crosshair_normal.visible = true
+		
 		PlayerState.ENDING:
 			return
 
@@ -139,6 +171,7 @@ func _normal_movement(delta):
 		await animation_player.animation_finished
 	
 	if Input.is_action_just_pressed(open_close_camera):
+		state = PlayerState.CAMERA
 		analog_camera.visible = true
 		
 	if raycast.is_colliding():
