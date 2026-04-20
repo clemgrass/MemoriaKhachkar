@@ -482,6 +482,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_bf162")
 
 [node name="Khachkar5" parent="." unique_id=1741839314 instance=ExtResource("7_u8e0v")]
 transform = Transform3D(-2.1855696e-08, 1.0000001, 0, -0.50000006, -4.3711392e-08, 0, 0, 0, 1, 0.8265743, 4.3589497, 3.6434047)
+visible = false
 
 [node name="collisionKhachkar5" type="StaticBody3D" parent="Khachkar5" unique_id=619272094 groups=["khachkars"]]
 transform = Transform3D(1, 7.1054274e-15, 0, -1.7763568e-15, 1, 0, 0, 0, 1, 0, 0, 0)

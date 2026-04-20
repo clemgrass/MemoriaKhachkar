@@ -27,6 +27,8 @@ func check_solution():
 	for sol in solution:
 		if not sol:
 			return
+	for country in countries:
+		country.use_collision = false
 	$countriesMesh/Armenia/ArmeniaColl.visible = true
 	$countriesMesh/Armenia/ArmeniaColl.use_collision = true
 	$khachkar5maninfold/k1.visible = false
