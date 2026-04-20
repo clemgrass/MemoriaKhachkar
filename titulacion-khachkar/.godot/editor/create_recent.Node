@@ -1,3 +1,4 @@
+Label3D
 OmniLight3D
 SpotLight3D
 Node3D
@@ -12,4 +13,3 @@ Button
 VBoxContainer
 HBoxContainer
 Label
-Control

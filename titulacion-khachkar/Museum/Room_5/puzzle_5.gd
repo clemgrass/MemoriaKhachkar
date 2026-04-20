@@ -31,6 +31,7 @@ func check_solution():
 		country.use_collision = false
 	$countriesMesh/Armenia/ArmeniaColl.visible = true
 	$countriesMesh/Armenia/ArmeniaColl.use_collision = true
+	$countriesMesh/Armenia/Label3D.visible = true
 	$khachkar5maninfold/k1.visible = false
 	$khachkar5maninfold/k2.visible = false
 	$khachkar5maninfold/k3.visible = false
