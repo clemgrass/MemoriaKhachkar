@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dwn5w7tk45bbq" path="res://Museum/Second_Floor/Rail/Cross.tscn" id="7_uaoq7"]
 [ext_resource type="PackedScene" uid="uid://byjwqn76w4uhv" path="res://Museum/Room_Khachkar/Khachkar_Models/Kachkar6.glb" id="11_hkmw8"]
 [ext_resource type="Script" uid="uid://8lejywy3sqi2" path="res://Museum/Second_Floor/collision_khachkar_6.gd" id="12_l6gbl"]
+[ext_resource type="Material" uid="uid://bjrak7jjgi0d" path="res://Museum/Entrance/Textures/Marble016_4K-JPG.tres" id="13_mxt4c"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2nray"]
 lightmap_size_hint = Vector2i(286, 234)
@@ -373,6 +374,12 @@ size = Vector3(15.380062, 0.100177765, 29.944016)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qfkph"]
 size = Vector3(5.388389, 0.100177765, 29.944016)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qp8v0"]
+size = Vector3(0.26989746, 6.7873535, 19.892822)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nir6r"]
+material = ExtResource("13_mxt4c")
 
 [node name="LevelFloor" type="Node3D" unique_id=532701115]
 
@@ -1335,6 +1342,10 @@ shape = SubResource("BoxShape3D_05bvt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2186985, 6.7023883, 0.012514114)
 shape = SubResource("BoxShape3D_qfkph")
 
+[node name="coll5" type="CollisionShape3D" parent="lfB" unique_id=1499580644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.618808, 3.3179932, 4.9278564)
+shape = SubResource("BoxShape3D_qp8v0")
+
 [node name="l1" type="SpotLight3D" parent="." unique_id=618419082]
 transform = Transform3D(-0.3536469, -0.5608764, 0.7485663, 0.4140596, 0.6237323, 0.6629575, -0.83874226, 0.544404, 0.011655265, 53.006115, 10.596102, 0.11037946)
 light_energy = 2.0
@@ -1354,15 +1365,33 @@ spot_range = 16.334002
 spot_angle = 25.29067
 
 [node name="ol1" type="OmniLight3D" parent="." unique_id=1968351962]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 13, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 13, -8.304719)
 light_energy = 4.0
 omni_range = 16.296993
 
 [node name="ol2" type="OmniLight3D" parent="." unique_id=1559809896]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.80494, 13, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.80494, 13, -8.304719)
 light_energy = 4.0
 omni_range = 16.227705
 
 [node name="ol3" type="OmniLight3D" parent="." unique_id=1969065126]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.254852, 13, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.254852, 13, -8.304719)
 omni_range = 16.360617
+
+[node name="ol4" type="OmniLight3D" parent="." unique_id=254093441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 13, 8.241328)
+light_energy = 4.0
+omni_range = 16.296993
+
+[node name="ol5" type="OmniLight3D" parent="." unique_id=1588190086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.80494, 13, 8.241328)
+light_energy = 4.0
+omni_range = 16.227705
+
+[node name="ol6" type="OmniLight3D" parent="." unique_id=1224257688]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.254852, 13, 8.241328)
+omni_range = 16.360617
+
+[node name="wall behind stairs" type="MeshInstance3D" parent="." unique_id=1484350834]
+transform = Transform3D(0.254, 0, 0, 0, 7.093, 0, 0, 0, 19.866, -12.65, 3.134, 4.932)
+mesh = SubResource("BoxMesh_nir6r")

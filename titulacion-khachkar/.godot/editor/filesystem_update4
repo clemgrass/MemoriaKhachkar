@@ -15,3 +15,8 @@ res://Museum/Room_2/room2.tscn
 res://Museum/Room_3/room3.tscn
 res://Museum/Room_3/letters_coll.gd
 res://Museum/Room_3/screen.gd
+res://Museum/Second_Floor/LevelFloor.tscn
+res://Museum/museum.tscn
+res://Museum/Final_Room/finalRoom.tscn
+res://Museum/Room_0/room0.tscn
+res://World/no_fog_zone.gd
