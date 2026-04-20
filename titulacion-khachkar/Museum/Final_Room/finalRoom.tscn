@@ -775,6 +775,12 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="PlaneMesh" id="PlaneMesh_5000v"]
 material = SubResource("StandardMaterial3D_iipbm")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5000v"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1ees7"]
+material = SubResource("StandardMaterial3D_5000v")
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_fprjd"]
 _surfaces = [{
 "aabb": AABB(-11.724225, -5.453595, -1.3608398, 13.47821, 7.270612, 2.7216797),
@@ -789,7 +795,11 @@ _surfaces = [{
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slx47"]
 albedo_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5kq2"]
+albedo_color = Color(0, 0, 0, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_s0x04"]
+material = SubResource("StandardMaterial3D_g5kq2")
 
 [node name="FinalRoom" type="Node3D" unique_id=909443158]
 
@@ -1116,16 +1126,16 @@ mesh = SubResource("ArrayMesh_g5kq2")
 surface_material_override/0 = SubResource("StandardMaterial3D_einxp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=848472970]
-transform = Transform3D(5.4465184e-15, -4.3711402e-08, -6.7710423, -2.8505573, -4.3711402e-08, 0, -1.2460181e-07, 1.0000004, -2.9597166e-07, 6.8715005, 2.0699606, -1.1475091)
+transform = Transform3D(5.4465184e-15, -4.3711402e-08, -6.7710423, -2.8505573, -4.3711402e-08, 0, -1.2460181e-07, 1.0000004, -2.9597166e-07, 6.776, 2.07, -0.773)
 mesh = SubResource("PlaneMesh_5000v")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1141009169]
-transform = Transform3D(-1.6339554e-14, 1.3113421e-07, 6.7710423, -2.8505576, -4.3711406e-08, 0, 1.246018e-07, -1.0000004, 8.87915e-07, 6.8715005, 2.0699606, 1.1960039)
+transform = Transform3D(-1.6339554e-14, 1.3113421e-07, 6.7710423, -2.8505576, -4.3711406e-08, 0, 1.246018e-07, -1.0000004, 8.87915e-07, 6.772, 2.07, 0.771)
 mesh = SubResource("PlaneMesh_5000v")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=201149827]
-transform = Transform3D(-1.6339554e-14, 1.311342e-07, 5.1199746, 2.4920365e-07, -1.0000002, 6.714036e-07, 2.8505576, 8.74228e-08, 4.341123e-14, 4.8882446, 2.9903708, 0.26738483)
-mesh = SubResource("PlaneMesh_5000v")
+transform = Transform3D(-1.6339554e-14, 7.316327e-08, 10.380727, 2.4920365e-07, -0.55792683, 1.361268e-06, 2.8505576, 4.8775515e-08, 8.801609e-14, 5.391264, 2.6939087, 0.26738483)
+mesh = SubResource("BoxMesh_1ees7")
 
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=739589838]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.678476, 4.812112, 0)
