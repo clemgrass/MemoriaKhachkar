@@ -1,8 +1,10 @@
 res://MainMenu/mainMenu.tscn
-res://World/MainGame.tscn
-res://MainMenu/b&w.gdshader
-res://MainMenu/font_theme.tres
 res://MainMenu/button.gd
+res://Museum/Entrance/reception.tscn
+res://World/lights/gameBakedLights.exr
+res://World/lights/gameBakedLights.lmbake
+res://World/MainGame.tscn
+res://Museum/Room_4/room4.tscn
+res://Museum/Room_4/puzzle_4.gd
+res://Player/playerController.tscn
 res://Player/player_controller.gd
-res://MainMenu/quit.gd
-res://World/main_game.gd

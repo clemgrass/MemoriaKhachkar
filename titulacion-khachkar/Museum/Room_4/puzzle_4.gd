@@ -20,7 +20,7 @@ func note_played(note: String):
 		pos_correct += 1
 	else:
 		glow_mat.albedo_color = Color(1, 0, 0, alpha)
-		await get_tree().create_timer(2.0).timeout
+		await get_tree().create_timer(0.5).timeout
 		for glow in glows:
 			var mat = glow.material
 			mat.albedo_color = Color(1, 1, 1, alpha)

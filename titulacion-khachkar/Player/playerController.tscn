@@ -37,6 +37,27 @@ albedo_texture = ExtResource("7_woph4")
 albedo_color = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
 albedo_texture = ExtResource("8_5ttyy")
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_b4ak7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_woph4"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5ttyy"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ffims"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_erdax"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yx5qg"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4f3o6"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_heig0"]
+
 [sub_resource type="Animation" id="Animation_0mu5q"]
 length = 0.001
 tracks/0/type = "value"
@@ -346,6 +367,90 @@ transform = Transform3D(-3.576936e-09, 0.022, 1.3714979e-10, 0.0019174354, 1.447
 visible = false
 shaded = true
 texture = ExtResource("15_w5tpw")
+
+[node name="camera" type="Node3D" parent="Head/Camera3D" unique_id=884101305]
+transform = Transform3D(0.11, 0, 0, 0, 0.145, 0, 0, 0, 1, -0.165, -0.105, 1.24)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=1553038325]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, 0, 0, -1.4216805)
+mesh = SubResource("PlaneMesh_b4ak7")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D" unique_id=1756677375]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982346, -0.0003196001, 0.8830776)
+mesh = SubResource("PlaneMesh_b4ak7")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=48729693]
+transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 3.01, 0, -1.422)
+mesh = SubResource("PlaneMesh_5ttyy")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D3" unique_id=1888305672]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
+mesh = SubResource("PlaneMesh_ffims")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=662626119]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, 0, 1.49, -1.4216805)
+mesh = SubResource("PlaneMesh_erdax")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D2" unique_id=45631286]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452604, -1.110223e-16, 0.99999994, -9.13568e-09, 0.13876934, 0, -1.1525022e-07, 18.982346, 0.00036779046, 0.8830776)
+mesh = SubResource("PlaneMesh_yx5qg")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=144269579]
+transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 3.01, 1.49, -1.422)
+mesh = SubResource("PlaneMesh_4f3o6")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D4" unique_id=1435462708]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
+mesh = SubResource("PlaneMesh_heig0")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=292216872]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, 1.145, 0.62, -1.4216805)
+mesh = SubResource("PlaneMesh_b4ak7")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D5" unique_id=1704868313]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.537, 0, 0.868)
+mesh = SubResource("PlaneMesh_b4ak7")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=1316690586]
+transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 1.855, 0.62, -1.422)
+mesh = SubResource("PlaneMesh_5ttyy")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D6" unique_id=1650180807]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.367, 0, 0.859)
+mesh = SubResource("PlaneMesh_ffims")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=101333069]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, 1.145, 0.77, -1.4216805)
+mesh = SubResource("PlaneMesh_erdax")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D7" unique_id=1069737924]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.432, 0, 0.873)
+mesh = SubResource("PlaneMesh_yx5qg")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Head/Camera3D/camera" unique_id=943545474]
+transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 1.855, 0.77, -1.422)
+mesh = SubResource("PlaneMesh_4f3o6")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Head/Camera3D/camera/MeshInstance3D8" unique_id=2079506680]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.637, 0, 0.859)
+mesh = SubResource("PlaneMesh_heig0")
+surface_material_override/0 = SubResource("StandardMaterial3D_woph4")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1718975483]
 libraries/ = SubResource("AnimationLibrary_cylip")

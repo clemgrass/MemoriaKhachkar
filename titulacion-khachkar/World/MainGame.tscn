@@ -26,13 +26,13 @@ sky_horizon_color = Color(0.07306064, 0.121729515, 0.22820953, 1)
 ground_bottom_color = Color(0.16003212, 0.14061245, 0.3357743, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 
-[sub_resource type="Sky" id="Sky_kmhrd"]
+[sub_resource type="Sky" id="Sky_24doq"]
 sky_material = SubResource("ProceduralSkyMaterial_afcvc")
 
 [sub_resource type="Environment" id="Environment_pwprq"]
 background_mode = 1
 background_energy_multiplier = 0.6
-sky = SubResource("Sky_kmhrd")
+sky = SubResource("Sky_24doq")
 ambient_light_source = 3
 tonemap_mode = 2
 fog_enabled = true
@@ -63,6 +63,27 @@ albedo_texture = ExtResource("9_at42o")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wr8je"]
 albedo_color = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
 albedo_texture = ExtResource("10_n5prf")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_24doq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v11vh"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nv86x"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_oq660"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4cdp1"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hp332"]
+flip_faces = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_at42o"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_n5prf"]
 
 [sub_resource type="Animation" id="Animation_0mu5q"]
 length = 0.001
@@ -383,6 +404,90 @@ transform = Transform3D(-3.576936e-09, 0.022, 1.3714979e-10, 0.0019174354, 1.447
 visible = false
 shaded = true
 texture = ExtResource("17_umsqh")
+
+[node name="camera" type="Node3D" parent="PlayerController/Head/Camera3D" unique_id=2129375964]
+transform = Transform3D(0.11, 0, 0, 0, 0.145, 0, 0, 0, 1, -0.165, -0.105, 1.24)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=155488325]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, -0.5, 0, -1.4216805)
+mesh = SubResource("PlaneMesh_24doq")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D" unique_id=1099967445]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982346, -0.0003196001, 0.8830776)
+mesh = SubResource("PlaneMesh_24doq")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=850861581]
+transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 3.51, 0, -1.422)
+mesh = SubResource("PlaneMesh_nv86x")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D3" unique_id=1891976790]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
+mesh = SubResource("PlaneMesh_oq660")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=380063739]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, -0.5, 1.49, -1.4216805)
+mesh = SubResource("PlaneMesh_4cdp1")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D2" unique_id=1684914793]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452604, -1.110223e-16, 0.99999994, -9.13568e-09, 0.13876934, 0, -1.1525022e-07, 18.982346, 0.00036779046, 0.8830776)
+mesh = SubResource("PlaneMesh_hp332")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=853605706]
+transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 3.51, 1.49, -1.422)
+mesh = SubResource("PlaneMesh_at42o")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D4" unique_id=1462363821]
+transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
+mesh = SubResource("PlaneMesh_n5prf")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=384891241]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, 1.145, 0.62, -1.4216805)
+mesh = SubResource("PlaneMesh_24doq")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D5" unique_id=172683686]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.537, 0, 0.868)
+mesh = SubResource("PlaneMesh_24doq")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=1195933680]
+transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 1.855, 0.62, -1.422)
+mesh = SubResource("PlaneMesh_nv86x")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D6" unique_id=460024678]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.367, 0, 0.859)
+mesh = SubResource("PlaneMesh_oq660")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=1759230223]
+transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, 1.145, 0.77, -1.4216805)
+mesh = SubResource("PlaneMesh_4cdp1")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D7" unique_id=468478940]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.432, 0, 0.873)
+mesh = SubResource("PlaneMesh_hp332")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera" unique_id=23419970]
+transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 1.855, 0.77, -1.422)
+mesh = SubResource("PlaneMesh_at42o")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/camera/MeshInstance3D8" unique_id=978495240]
+transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.637, 0, 0.859)
+mesh = SubResource("PlaneMesh_n5prf")
+surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerController" unique_id=1718975483]
 libraries/ = SubResource("AnimationLibrary_cylip")

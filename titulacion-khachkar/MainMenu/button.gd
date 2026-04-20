@@ -12,6 +12,8 @@ func _on_mouse_exited() -> void:
 
 
 func _on_pressed() -> void:
+	self.disabled = true
+	self.visible = false
 	$"../../AnimationPlayer".play("start_game")
 	
 	ResourceLoader.load_threaded_request(scene_path)

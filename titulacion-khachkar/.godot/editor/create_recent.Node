@@ -1,3 +1,6 @@
+MeshInstance3D
+Node3D
+CSGCylinder3D
 Node2D
 Camera2D
 AnimationPlayer
@@ -10,6 +13,3 @@ Label
 Control
 OmniLight3D
 SpotLight3D
-LightmapGI
-CollisionShape3D
-DirectionalLight3D

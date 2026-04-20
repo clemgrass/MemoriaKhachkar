@@ -20,6 +20,7 @@ extends CharacterBody3D
 @export var input_sprint : String = "sprint"
 @export var input_left_click : String = "click_left"
 @export var album_open_close : String = "album"
+@export var open_close_camera : String = "camera"
 
 var mouse_captured : bool = false
 var look_rotation : Vector2
@@ -34,6 +35,7 @@ var move_speed : float = 0.0
 @onready var crosshair_pick_piano = $Head/Camera3D/pick_piano
 @onready var album_obj = $Head/Camera3D/Album
 @onready var animation_player = $AnimationPlayer
+@onready var analog_camera = $Head/Camera3D/camera
 
 enum PlayerState { NORMAL, TERMINAL, ALBUM, ENDING }
 var state : PlayerState = PlayerState.NORMAL
@@ -135,6 +137,9 @@ func _normal_movement(delta):
 		album_obj.visible = true
 		animation_player.play("album_open")
 		await animation_player.animation_finished
+	
+	if Input.is_action_just_pressed(open_close_camera):
+		analog_camera.visible = true
 		
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
