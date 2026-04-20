@@ -366,44 +366,41 @@ size = Vector3(0.9121094, 0.037597656, 0.034729004)
 [node name="photok0" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1856397171]
 transform = Transform3D(-1.7484558e-09, 0.038, -2.3207005e-17, -0.003486246, -1.4476922e-10, 0.034866814, 0.039847784, 1.6547121e-09, 0.0030504654, 0.20311782, 0.097522564, -0.33012772)
 visible = false
-shaded = true
 texture = ExtResource("11_mxvto")
 
 [node name="photok1" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=651091392]
 transform = Transform3D(-1.3113416e-09, 0.03, -2.7753169e-18, -0.0026146634, -1.1429056e-10, 0.029885842, 0.029885842, 1.3063516e-09, 0.0026146634, -0.18257928, 0.0833744, -0.17155024)
 visible = false
-shaded = true
 texture = ExtResource("12_7fbxh")
 
 [node name="photok2" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1207398466]
 transform = Transform3D(-1.3113417e-09, 0.03, -1.29528245e-17, -0.0026146846, -1.1429149e-10, 0.02988584, 0.02988584, 1.3063516e-09, 0.0026146846, -0.17901358, 0.110265195, -0.47306082)
 visible = false
-shaded = true
 texture = ExtResource("13_5vpuc")
 
 [node name="photok3" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=111444545]
 transform = Transform3D(-4.715052e-09, 0.029, 2.2858113e-10, 0.002527508, 1.9082154e-10, 0.029885842, 0.028889647, 4.716368e-09, -0.0026146634, -0.1763548, 0.084149264, 0.172)
 visible = false
-shaded = true
 texture = ExtResource("14_0wtps")
 
 [node name="photok4" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1710273689]
 transform = Transform3D(-1.6173214e-09, 0.037, 0, 0.0032247633, 1.4095888e-10, 0.029885842, 0.036859207, 1.611167e-09, -0.002614673, -0.16276887, 0.11, 0.473)
 visible = false
-shaded = true
 texture = ExtResource("15_3ovrp")
 
 [node name="photok5" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=409067733]
 transform = Transform3D(-1.3103308e-08, 0.049, 6.711709e-10, 0.005055057, 3.2242523e-10, 0.050805926, 0.05777929, 1.1084114e-08, -0.0044449638, 0.19525605, 0.084149264, 0.172)
 visible = false
-shaded = true
 texture = ExtResource("16_4pkn8")
 
 [node name="photok6" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=293190573]
 transform = Transform3D(-3.576936e-09, 0.022, 1.3714979e-10, 0.0019174354, 1.4476234e-10, 0.017931502, 0.021916283, 3.5779344e-09, -0.0015688107, 0.1616993, 0.11, 0.473)
 visible = false
-shaded = true
 texture = ExtResource("17_umsqh")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="PlayerController/Head/Camera3D/Album" unique_id=514469139]
+transform = Transform3D(7.142857, -1.4901161e-08, 0, -1.4901161e-08, 7.1428576, 2.3841858e-07, -2.9802322e-08, 0, 7.1428556, -0.06046295, 0.9316406, -0.04963684)
+omni_range = 0.16293268
 
 [node name="pivot_camera" type="Node3D" parent="PlayerController/Head/Camera3D" unique_id=116345526]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0011634883, -0.18292694)

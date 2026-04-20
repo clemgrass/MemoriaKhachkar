@@ -47,15 +47,17 @@ var has_crowbar: bool = false
 var grabbed_object: RigidBody3D = null
 var grab_distance := 1.5
 var just_released := false
-"""
-Practice code 
-"""
-@export var min_fov: float = 30.0  
+
+@export var min_fov: float = 15.0  
 @export var max_fov: float = 75.0   
 @export var zoom_speed: float = 50.0
 
 var target_fov: float
 var default_fov: float
+
+"""
+Practice code 
+"""
 """
 Practice code 
 """
