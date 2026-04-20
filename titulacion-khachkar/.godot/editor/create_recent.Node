@@ -1,8 +1,11 @@
+CollisionShape3D
+StaticBody3D
 Label3D
+Label
+MeshInstance3D
+Node3D
 OmniLight3D
 SpotLight3D
-Node3D
-MeshInstance3D
 CSGCylinder3D
 Node2D
 Camera2D
@@ -10,6 +13,3 @@ AnimationPlayer
 TextureRect
 ColorRect
 Button
-VBoxContainer
-HBoxContainer
-Label

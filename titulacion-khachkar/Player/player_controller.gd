@@ -58,6 +58,7 @@ var default_fov: float
 """
 Practice code 
 """
+@onready var sequence_p3 = [true, false, false, false, false, false, false, false, false, false, false, false, false]
 """
 Practice code 
 """
@@ -90,7 +91,7 @@ func _physics_process(delta: float) -> void:
 			
 			if Input.is_action_just_pressed("enter"):
 				if current_terminal and current_terminal.terminal_input:
-					var text = current_terminal.terminal_input.text  
+					var text = current_terminal.terminal_input.text.to_lower()  
 					var answer = current_terminal.answer(text)
 					if answer:
 						current_terminal.khackharSolution()
@@ -209,12 +210,16 @@ func _normal_movement(delta):
 				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.play_note()
-			elif collider.is_in_group("countries"):
+			elif collider.is_in_group("letters"):
 				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					sequence_p3 = collider.on_click_letter(sequence_p3)
+			elif collider.is_in_group("countries"):
+				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.country_click_highlight()
 			elif collider.is_in_group("wrong_countries"):
-				crosshair(true)
+				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.country_wrong_highlight()
 			elif collider.is_in_group("ending"):

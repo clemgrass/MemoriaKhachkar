@@ -12,3 +12,6 @@ res://Museum/Room_5/room5.tscn
 res://Museum/Room_5/puzzle_5.gd
 res://Museum/Entrance/door.tscn
 res://Museum/Room_2/room2.tscn
+res://Museum/Room_3/room3.tscn
+res://Museum/Room_3/letters_coll.gd
+res://Museum/Room_3/screen.gd

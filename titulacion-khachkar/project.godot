@@ -39,6 +39,7 @@ wrong_countries=""
 final_door=""
 ending=""
 album=""
+letters=""
 
 [input]
 

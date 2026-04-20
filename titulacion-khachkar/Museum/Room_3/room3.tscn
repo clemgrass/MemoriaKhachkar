@@ -19,6 +19,7 @@
 [ext_resource type="Script" uid="uid://bfstre4nxtuub" path="res://Museum/Room_3/screen.gd" id="13_8sceb"]
 [ext_resource type="Script" uid="uid://d0sc1smotwcka" path="res://Museum/Room_3/collision_khachkar_3.gd" id="18_2xvkb"]
 [ext_resource type="Texture2D" uid="uid://bwtcehk3ccfqk" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar3maninfold_khachkar3_uv_map.jpg" id="19_y3u5u"]
+[ext_resource type="Script" uid="uid://dqslknocxs2i" path="res://Museum/Room_3/letters_coll.gd" id="20_jo10s"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_y3u5u"]
 lightmap_size_hint = Vector2i(826, 662)
@@ -1357,6 +1358,16 @@ size = Vector3(2.22583, 0.8800049, 3.5234623)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_cwavx"]
 data = PackedVector3Array(-4.95, -0.223, 4.973291, -4.95, -0.223, -4.973291, -4.95, 0.223, -4.973291, 4.95, -0.223, -4.973291, -4.95, -0.223, -4.973291, -4.95, -0.223, 4.973291, -4.95, 0.223, -4.973291, -4.95, -0.223, -4.973291, 4.95, -0.223, -4.973291, -4.95, 0.223, -4.973291, -4.95, 0.223, 4.973291, -4.95, -0.223, 4.973291, -4.95, -0.223, 4.973291, -4.95, 0.223, 4.973291, 4.95, 0.223, 4.973291, 4.95, 0.223, 4.973291, -4.95, 0.223, 4.973291, -4.95, 0.223, -4.973291, -4.95, -0.223, 4.973291, 4.95, -0.223, 4.973291, 4.95, -0.223, -4.973291, 4.95, 0.223, 4.973291, 4.95, -0.223, 4.973291, -4.95, -0.223, 4.973291, 4.95, -0.223, -4.973291, 4.95, -0.223, 4.973291, 4.95, 0.223, 4.973291, 4.95, -0.223, -4.973291, 4.95, 0.223, -4.973291, -4.95, 0.223, -4.973291, -4.95, 0.223, -4.973291, 4.95, 0.223, -4.973291, 4.95, 0.223, 4.973291, 4.95, 0.223, 4.973291, 4.95, 0.223, -4.973291, 4.95, -0.223, -4.973291)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3u5u"]
+albedo_color = Color(0.11764706, 0.18039216, 0.16078432, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jo10s"]
+lightmap_size_hint = Vector2i(12, 12)
+material = SubResource("StandardMaterial3D_y3u5u")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jo10s"]
+size = Vector3(0.67333984, 1, 0.5527344)
+
 [node name="Room3" type="Node3D" unique_id=1363301032]
 
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=52772724]
@@ -1398,7 +1409,7 @@ mesh = SubResource("ArrayMesh_3w2jx")
 
 [node name="ar" type="Label3D" parent="Letters/let" unique_id=1781861732]
 transform = Transform3D(-0.027846377, -0.9996104, -0.0020987093, 0.030166432, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.1124239, 0.0104705095)
-text = "AR"
+text = "Ar"
 
 [node name="let1" type="MeshInstance3D" parent="Letters" unique_id=582717282]
 transform = Transform3D(0.9803987, -0.19702427, 0, 0.19702427, 0.9803987, 0, 0, 0, 1, -0.0052092075, 6.034618, 0.678)
@@ -1406,7 +1417,7 @@ mesh = SubResource("ArrayMesh_fl78s")
 
 [node name="me" type="Label3D" parent="Letters/let1" unique_id=1849898272]
 transform = Transform3D(-0.027846377, -0.9996103, -0.0020986646, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.11242437, 0.0104705095)
-text = "ME"
+text = "me"
 
 [node name="let2" type="MeshInstance3D" parent="Letters" unique_id=1272010815]
 transform = Transform3D(0.9800082, 0.19895746, 0, -0.19895746, 0.9800082, 0, 0, 0, 1, 1.2019751, 6.056633, 1.986)
@@ -1414,7 +1425,7 @@ mesh = SubResource("ArrayMesh_moxb6")
 
 [node name="ni" type="Label3D" parent="Letters/let2" unique_id=971702399]
 transform = Transform3D(-0.027846377, -0.9996103, -0.0020986646, 0.03016643, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.2776345, -0.1124239, 0.0104705095)
-text = "NI"
+text = "ni"
 
 [node name="let3" type="MeshInstance3D" parent="Letters" unique_id=1595852267]
 transform = Transform3D(0.8775063, -0.47956508, 0, 0.47956508, 0.8775063, 0, 0, 0, 1, -1.1204542, 5.625036, -0.635)
@@ -1422,7 +1433,7 @@ mesh = SubResource("ArrayMesh_fkogx")
 
 [node name="a" type="Label3D" parent="Letters/let3" unique_id=348136099]
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020987093, 0.030166429, 0.0012581944, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.112424135, 0.0104705095)
-text = "A"
+text = "a"
 
 [node name="let4" type="MeshInstance3D" parent="Letters" unique_id=1481476637]
 transform = Transform3D(0.8582889, 0.5131668, 0, -0.5131668, 0.8582889, 0, 0, 0, 1, 2.3359826, 5.6323743, 0.6784204)
@@ -1430,7 +1441,7 @@ mesh = SubResource("ArrayMesh_xk37c")
 
 [node name="n" type="Label3D" parent="Letters/let4" unique_id=284396326]
 transform = Transform3D(-0.027846377, -0.9996103, -0.0020986497, 0.030166432, 0.0012581944, -0.9995446, 0.9991571, -0.02789714, 0.030119803, 0.27763474, -0.1124239, 0.0104705095)
-text = "N"
+text = "n"
 
 [node name="let5" type="MeshInstance3D" parent="Letters" unique_id=120751082]
 transform = Transform3D(0.8720009, -0.48950422, 0, 0.48950422, 0.8720009, 0, 0, 0, 1, -1.1241218, 5.6250353, 1.9797003)
@@ -1446,7 +1457,7 @@ mesh = SubResource("ArrayMesh_2a3rp")
 
 [node name="kh" type="Label3D" parent="Letters/let6" unique_id=1282922167]
 transform = Transform3D(-0.027846375, -0.9996103, -0.0020986795, 0.03016643, 0.0012581944, -0.9995448, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.11242437, 0.0104705095)
-text = "KH"
+text = "Kh"
 
 [node name="let7" type="MeshInstance3D" parent="Letters" unique_id=2025459806]
 transform = Transform3D(0.8478445, -0.5302449, -6.857261e-10, 0.5302449, 0.8478445, -1.0928216e-08, 6.376019e-09, 8.901825e-09, 1, -1.1182916, 5.617591, 0.6937381)
@@ -1454,7 +1465,7 @@ mesh = SubResource("ArrayMesh_0lwvg")
 
 [node name="ac" type="Label3D" parent="Letters/let7" unique_id=1323426962]
 transform = Transform3D(-0.027846381, -0.9996104, -0.0020986793, 0.030166429, 0.0012581644, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763486, -0.1124239, 0.0104705095)
-text = "AC"
+text = "ac"
 
 [node name="let8" type="MeshInstance3D" parent="Letters" unique_id=1251146725]
 transform = Transform3D(0.9748195, -0.22299488, 0, 0.22299488, 0.9748195, 0, 0, 0, 1, -0.006508827, 6.0468936, 1.9991863)
@@ -1462,7 +1473,7 @@ mesh = SubResource("ArrayMesh_a4fnk")
 
 [node name="HK" type="Label3D" parent="Letters/let8" unique_id=368507436]
 transform = Transform3D(-0.027846377, -0.99961036, -0.0020986944, 0.03016643, 0.0012582093, -0.9995447, 0.9991571, -0.02789714, 0.030119803, 0.2776345, -0.1124239, 0.010470629)
-text = "HK"
+text = "hk"
 
 [node name="let9" type="MeshInstance3D" parent="Letters" unique_id=1711222926]
 transform = Transform3D(0.9885545, 0.150864, 0, -0.150864, 0.9885545, 0, 0, 0, 1, 1.2069095, 6.047232, -0.635)
@@ -1470,15 +1481,15 @@ mesh = SubResource("ArrayMesh_1w46v")
 
 [node name="ar" type="Label3D" parent="Letters/let9" unique_id=1904282368]
 transform = Transform3D(-0.027846375, -0.99961036, -0.0020986795, 0.03016643, 0.0012582093, -0.99954474, 0.9991571, -0.02789714, 0.030119803, 0.27763462, -0.1124239, 0.0104705095)
-text = "AR"
+text = "ar"
 
 [node name="let10" type="MeshInstance3D" parent="Letters" unique_id=1454575807]
 transform = Transform3D(0.9831751, 0.18266451, 0, -0.18266451, 0.9831751, 0, 0, 0, 1, 1.2069091, 6.0325537, 0.69148266)
 mesh = SubResource("ArrayMesh_6o6hs")
 
-[node name="ar" type="Label3D" parent="Letters/let10" unique_id=1451891088]
+[node name="s" type="Label3D" parent="Letters/let10" unique_id=1451891088]
 transform = Transform3D(-0.027846381, -0.9996104, -0.0020986795, 0.030166432, 0.0012581944, -0.99954486, 0.9991571, -0.02789714, 0.030119803, 0.27763474, -0.1124239, 0.0104705095)
-text = "S
+text = "s
 "
 
 [node name="let11" type="MeshInstance3D" parent="Letters" unique_id=1259194941]
@@ -1693,8 +1704,10 @@ script = ExtResource("13_8sceb")
 [node name="CanvasLayer" type="CanvasLayer" parent="Computer/screen" unique_id=53350835]
 
 [node name="LineEdit" type="LineEdit" parent="Computer/screen/CanvasLayer" unique_id=1247916123]
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = -331.0
+offset_top = -276.0
+offset_right = 2386.0
+offset_bottom = 1325.0
 alignment = 1
 max_length = 32
 keep_editing_on_text_submit = true
@@ -1793,10 +1806,191 @@ shape = SubResource("ConcavePolygonShape3D_cwavx")
 [node name="ol1" type="OmniLight3D" parent="." unique_id=1237509246]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49894452, 2.8104196, 0.37707043)
 light_bake_mode = 1
-omni_range = 3.0178826
+omni_range = 3.6963782
+
+[node name="ol2" type="OmniLight3D" parent="." unique_id=262673296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1763573, 5.3604817, -3.5669293)
+light_bake_mode = 1
+omni_range = 7.0330977
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=951766415]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 2.1121926, -2.9540405)
 light_energy = 1.5
 spot_range = 4.9673986
 spot_angle = 35.07509
+
+[node name="feedback" type="Node3D" parent="." unique_id=1959296549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3797235, 3.1896963, 0.61616653)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="feedback" unique_id=2124720377]
+transform = Transform3D(-1.1146404e-08, -1, 0, 0.255, -4.371139e-08, 0, 0, 0, 1.165, -0.109466314, 0, 0.08481741)
+mesh = SubResource("PlaneMesh_jo10s")
+
+[node name="tColl" type="StaticBody3D" parent="feedback" unique_id=1074832255 groups=["letters"]]
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl" unique_id=1001165383]
+transform = Transform3D(0.47959566, -0.87748957, 0, 0.87748957, 0.47959566, 0, 0, 0, 1, -0.9735346, 0.78216696, -1.2263944)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl1" type="StaticBody3D" parent="feedback" unique_id=1396822831 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl1" unique_id=282868381]
+transform = Transform3D(-0.1896781, -0.98184633, 0, 0.98184633, -0.1896781, 0, 0, 0, 1, -0.2734118, 0.26615095, -1.2263944)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl2" type="StaticBody3D" parent="feedback" unique_id=704112467 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl2" unique_id=732521470]
+transform = Transform3D(0.18336803, -0.9830444, 0, 0.9830444, 0.18336803, 0, 0, 0, 1, 0.934741, 0.26615095, 0.10469675)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl3" type="StaticBody3D" parent="feedback" unique_id=1824933692 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl3" unique_id=336093347]
+transform = Transform3D(-0.5244318, -0.85145247, 0, 0.85145247, -0.5244318, 0, 0, 0, 1, -1.436374, -0.1449995, -2.6143456)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl4" type="StaticBody3D" parent="feedback" unique_id=1420919600 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl4" unique_id=1089830789]
+transform = Transform3D(0.5028691, -0.8643626, 0, 0.8643626, 0.5028691, 0, 0, 0, 1, 2.0923765, -0.1367302, -1.2263944)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl5" type="StaticBody3D" parent="feedback" unique_id=28603314 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl5" unique_id=14240298]
+transform = Transform3D(-0.50277853, -0.8644152, 0, 0.8644152, -0.50277853, 0, 0, 0, 1, -1.4461305, -0.10986948, 0.054924488)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl6" type="StaticBody3D" parent="feedback" unique_id=558299894 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl6" unique_id=784889777]
+transform = Transform3D(-0.1896781, -0.98184633, 0, 0.98184633, -0.1896781, 0, 0, 0, 1, -0.2734118, 0.26615095, -2.5450754)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl7" type="StaticBody3D" parent="feedback" unique_id=1772323426 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl7" unique_id=1855574156]
+transform = Transform3D(-0.52447635, -0.85142505, 0, 0.85142505, -0.52447635, 0, 0, 0, 1, -1.4480517, -0.076738834, -1.2263944)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl8" type="StaticBody3D" parent="feedback" unique_id=1934269347 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl8" unique_id=605342759]
+transform = Transform3D(-0.1896781, -0.98184633, 0, 0.98184633, -0.1896781, 0, 0, 0, 1, -0.2734118, 0.26615095, 0.0834595)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl9" type="StaticBody3D" parent="feedback" unique_id=459790373 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl9" unique_id=561168189]
+transform = Transform3D(0.11528389, -0.99333256, 0, 0.99333256, 0.11528389, 0, 0, 0, 1, 0.93586123, 0.36328888, -2.5446327)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl10" type="StaticBody3D" parent="feedback" unique_id=907900375 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl10" unique_id=1354892626]
+transform = Transform3D(0.15493453, -0.98792475, 0, 0.98792475, 0.15493453, 0, 0, 0, 1, 0.94136, 0.26615095, -1.2263944)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="tColl11" type="StaticBody3D" parent="feedback" unique_id=29768412 groups=["letters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0015302, 1.0091772, 1.2893467)
+script = ExtResource("20_jo10s")
+
+[node name="coll" type="CollisionShape3D" parent="feedback/tColl11" unique_id=916957084]
+transform = Transform3D(0.51696664, -0.85600555, 0, 0.85600555, 0.51696664, 0, 0, 0, 1, 2.1101816, -0.11565113, 0.09381056)
+shape = SubResource("BoxShape3D_jo10s")
+
+[node name="t1" type="Label3D" parent="feedback" unique_id=2002065133]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, -0.75176716)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "Ar"
+
+[node name="t2" type="Label3D" parent="feedback" unique_id=1181868938]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, -0.52862465)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "me"
+
+[node name="t3" type="Label3D" parent="feedback" unique_id=640434766]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, -0.31900048)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "ni"
+
+[node name="t4" type="Label3D" parent="feedback" unique_id=235724038]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, -0.19101799)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "a"
+
+[node name="t5" type="Label3D" parent="feedback" unique_id=1560241786]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, -0.09764713)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "n"
+
+[node name="t6" type="Label3D" parent="feedback" unique_id=1177777402]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 0.047473133)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "    "
+
+[node name="t7" type="Label3D" parent="feedback" unique_id=2071998953]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 0.2352199)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "Kh"
+
+[node name="t8" type="Label3D" parent="feedback" unique_id=2103366949]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 0.4264322)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "ac"
+
+[node name="t9" type="Label3D" parent="feedback" unique_id=474410187]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 0.6298993)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "hk"
+
+[node name="t10" type="Label3D" parent="feedback" unique_id=904817443]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 0.8169783)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "ar
+"
+
+[node name="t11" type="Label3D" parent="feedback" unique_id=1632992159]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 0.9468704)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "s
+"
+
+[node name="t12" type="Label3D" parent="feedback" unique_id=935488244]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2656455, 0, 1.0291307)
+visible = false
+modulate = Color(0.58407724, 0.99999994, 0.45337272, 1)
+text = "!"
