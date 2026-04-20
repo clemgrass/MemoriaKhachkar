@@ -1157,6 +1157,30 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector3(-0.029053578, 2.862877, -0.48852038)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("khachkar2maninfold/distractors:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("khachkar2maninfold/distractors:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_2upeq"]
 resource_name = "khachkar_pos"
@@ -1184,6 +1208,30 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(-0.029053578, 2.862877, -0.48852038), Vector3(0, -1.5707964, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("khachkar2maninfold/distractors:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3.02),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(0.001, 0.001, 0.001)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("khachkar2maninfold/distractors:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3.07, 3.38),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(4.8092833, -9.3481865, -0.18872404)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m131q"]
@@ -1223,6 +1271,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_fu4yr")
 transform = Transform3D(-0.8665425, -0.45015457, 0.21555665, -0.45739806, 0.88908076, 0.017949129, -0.19972712, -0.08304158, -0.9763265, -5.3889627, 6.064646, 1.6797333)
 
 [node name="distractors" type="Node3D" parent="khachkar2maninfold" unique_id=565840074]
+transform = Transform3D(1, 0, 0, 0, 1, -1.4552101e-08, 0, 1.4552101e-08, 1, 0, 0, 0)
 
 [node name="CSGBakedMeshInstance3D32" type="MeshInstance3D" parent="khachkar2maninfold/distractors" unique_id=1557361627]
 transform = Transform3D(0.8673288, 0, 0.0056990287, 0, 0.434, 0, -0.42304325, 0, 0.011684223, -9.456, 0.023, 6.124)
@@ -1401,7 +1450,7 @@ transform = Transform3D(1, 6.363621e-11, 9.8661985e-09, -1.4210855e-13, 1, -2.00
 shape = SubResource("BoxShape3D_fu4yr")
 
 [node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("10_detsc")]
-transform = Transform3D(-1.6904014, -0.91653174, 0.55001014, -0.9382434, 1.7653111, 0.058098983, -0.5120942, -0.20891643, -1.9220077, -6.644971, 5.4783225, 1.4228711)
+transform = Transform3D(-1.6904014, -0.91653174, 0.55001014, -0.9382433, 1.7653111, 0.058098983, -0.5120942, -0.20891643, -1.9220077, -6.644971, 5.4783225, 1.4228711)
 visible = false
 
 [node name="collisionKhachkar2" type="StaticBody3D" parent="Khachkar2" unique_id=2037283573 groups=["khachkars"]]
