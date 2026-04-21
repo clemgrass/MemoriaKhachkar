@@ -55,10 +55,11 @@ var just_released := false
 var target_fov: float
 var default_fov: float
 
+@onready var sequence_p3 = [true, false, false, false, false, false, false, false, false, false, false, false, false]
 """
 Practice code 
 """
-@onready var sequence_p3 = [true, false, false, false, false, false, false, false, false, false, false, false, false]
+
 """
 Practice code 
 """

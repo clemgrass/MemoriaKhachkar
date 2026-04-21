@@ -1,5 +1,6 @@
 extends Node3D
 
+@onready var pause_menu = $UI/PauseMenu
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,3 +24,23 @@ func _ready() -> void:
 	puzzle.puzzle0_solved.connect(door._on_puzzle_solved)
 	puzzle.puzzle0_solved.connect(album._on_puzzle_solved)
 	
+	await get_tree().create_timer(16.0).timeout
+	$UI/KeyBindings.visible = false
+	
+
+func _input(event):
+	if Input.is_key_pressed(KEY_ESCAPE):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		$UI/KeyBindings.visible = true
+		toggle_pause()
+
+func toggle_pause():
+	get_tree().paused = !get_tree().paused
+	pause_menu.visible = get_tree().paused
+
+
+func _on_button_pressed() -> void:
+	$UI/KeyBindings.visible = false
+	$UI/PauseMenu.visible = false
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	get_tree().paused = false

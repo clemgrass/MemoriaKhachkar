@@ -19,6 +19,16 @@
 [ext_resource type="Texture2D" uid="uid://ccx7imudr87yj" path="res://Player/Album/Photos/khachkar5_pa.png" id="16_4pkn8"]
 [ext_resource type="Texture2D" uid="uid://2aookvrniqcu" path="res://Player/Album/Photos/khachkar6_pa.png" id="17_umsqh"]
 [ext_resource type="Material" uid="uid://0q61kot8t24v" path="res://Terrain/Textures/Ground003_4K-JPG.tres" id="18_24doq"]
+[ext_resource type="Texture2D" uid="uid://byptx3femarou" path="res://Player/UI/Keyboard & Mouse/Light/A_Key_Light.png" id="20_5vpuc"]
+[ext_resource type="Texture2D" uid="uid://0gl11x3lcnn3" path="res://Player/UI/Keyboard & Mouse/Light/D_Key_Light.png" id="21_0wtps"]
+[ext_resource type="Texture2D" uid="uid://plnqvec253k6" path="res://Player/UI/Keyboard & Mouse/Light/S_Key_Light.png" id="22_3ovrp"]
+[ext_resource type="Texture2D" uid="uid://b8vfudlkx1lxu" path="res://Player/UI/Keyboard & Mouse/Light/W_Key_Light.png" id="23_4pkn8"]
+[ext_resource type="Texture2D" uid="uid://dk2l35045idge" path="res://Player/UI/Keyboard & Mouse/Light/E_Key_Light.png" id="24_umsqh"]
+[ext_resource type="Texture2D" uid="uid://c835e1u864rhv" path="res://Player/UI/Keyboard & Mouse/Light/Q_Key_Light.png" id="25_1yr47"]
+[ext_resource type="Texture2D" uid="uid://21ol622htmpt" path="res://Player/UI/Keyboard & Mouse/Light/Shift_Key_Light.png" id="26_xaylg"]
+[ext_resource type="Texture2D" uid="uid://dg82sgdr7aemu" path="res://Player/UI/Keyboard & Mouse/Light/Space_Key_Light.png" id="27_onmfn"]
+[ext_resource type="Texture2D" uid="uid://ylry8nphu04a" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Left_Key_Light.png" id="28_8ja0g"]
+[ext_resource type="Texture2D" uid="uid://ctoatenju0k3x" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Right_Key_Light.png" id="29_nqjgh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_afcvc"]
 sky_top_color = Color(0.23098785, 0.4009148, 0.43838903, 1)
@@ -557,3 +567,143 @@ debug_color = Color(0.29095587, 0.62489116, 0.23617184, 0.41960785)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1106804151]
 light_data = ExtResource("5_kmhrd")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=380086807]
+
+[node name="KeyBindings" type="Control" parent="UI" unique_id=597080493]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 274.0
+offset_top = 358.0
+offset_right = 314.0
+offset_bottom = 398.0
+pivot_offset = Vector2(10, 10)
+
+[node name="mov" type="Label" parent="UI/KeyBindings" unique_id=1079398531]
+layout_mode = 0
+offset_left = -112.0
+offset_top = -139.0
+offset_right = -28.0
+offset_bottom = -116.0
+text = "Movement"
+
+[node name="AKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=1059545258]
+position = Vector2(-75, 0)
+texture = ExtResource("20_5vpuc")
+
+[node name="DKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=1409294659]
+position = Vector2(75, 0)
+texture = ExtResource("21_0wtps")
+
+[node name="SKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=2069486360]
+texture = ExtResource("22_3ovrp")
+
+[node name="WKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=2122711434]
+position = Vector2(0, -75)
+texture = ExtResource("23_4pkn8")
+
+[node name="album" type="Label" parent="UI/KeyBindings" unique_id=275554784]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 50.0
+offset_right = -28.0
+offset_bottom = 73.0
+text = "Album"
+
+[node name="EKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=1417584532]
+position = Vector2(-50, 108)
+texture = ExtResource("24_umsqh")
+
+[node name="camera" type="Label" parent="UI/KeyBindings" unique_id=1574303820]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 145.0
+offset_right = -28.0
+offset_bottom = 168.0
+text = "Camera"
+
+[node name="QKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=1678652788]
+position = Vector2(-50, 206)
+texture = ExtResource("25_1yr47")
+
+[node name="sprint" type="Label" parent="UI/KeyBindings" unique_id=761427206]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 249.0
+offset_right = -28.0
+offset_bottom = 272.0
+text = "Sprint"
+
+[node name="ShiftKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=1649417519]
+position = Vector2(-50, 302)
+texture = ExtResource("26_xaylg")
+
+[node name="jump" type="Label" parent="UI/KeyBindings" unique_id=1502946025]
+layout_mode = 0
+offset_top = 247.0
+offset_right = 84.0
+offset_bottom = 270.0
+text = "Jump"
+
+[node name="SpaceKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=1377231554]
+position = Vector2(71, 307.00003)
+scale = Vector2(1.13, 1.09)
+texture = ExtResource("27_onmfn")
+
+[node name="interact" type="Label" parent="UI/KeyBindings" unique_id=173242856]
+layout_mode = 0
+offset_top = 50.0
+offset_right = 84.0
+offset_bottom = 73.0
+text = "Interact"
+
+[node name="MouseLeftKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=617392600]
+position = Vector2(50.000004, 110.00001)
+scale = Vector2(0.78, 0.73)
+texture = ExtResource("28_8ja0g")
+
+[node name="zoomIn" type="Label" parent="UI/KeyBindings" unique_id=2138473700]
+layout_mode = 0
+offset_top = 145.0
+offset_right = 84.0
+offset_bottom = 168.0
+text = "Zoom In"
+
+[node name="zoomOut" type="Label" parent="UI/KeyBindings" unique_id=1989393360]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 145.0
+offset_right = 168.0
+offset_bottom = 168.0
+text = "Zoom Out"
+
+[node name="MouseLeftKeyLight2" type="Sprite2D" parent="UI/KeyBindings" unique_id=2040845021]
+position = Vector2(40, 210.00002)
+scale = Vector2(0.78, 0.73)
+texture = ExtResource("28_8ja0g")
+
+[node name="MouseRightKeyLight" type="Sprite2D" parent="UI/KeyBindings" unique_id=742214243]
+position = Vector2(125, 209)
+scale = Vector2(0.78, 0.72)
+texture = ExtResource("29_nqjgh")
+
+[node name="PauseMenu" type="ColorRect" parent="UI" unique_id=529241388]
+process_mode = 2
+visible = false
+offset_left = -23.99997
+offset_top = -18.00003
+offset_right = 6.109083
+offset_bottom = 11.940918
+scale = Vector2(65.72774, 37.674156)
+color = Color(0.28118688, 0.28118688, 0.28118694, 0.23529412)
+
+[node name="Button" type="Button" parent="UI/PauseMenu" unique_id=655435152]
+process_priority = 2
+layout_mode = 0
+offset_left = 11.319421
+offset_top = -0.61049724
+offset_right = 30.31942
+offset_bottom = 30.389503
+text = "B"
+
+[connection signal="pressed" from="UI/PauseMenu/Button" to="." method="_on_button_pressed"]
