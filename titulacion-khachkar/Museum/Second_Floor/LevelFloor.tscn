@@ -378,6 +378,9 @@ size = Vector3(5.388389, 0.100177765, 29.944016)
 [sub_resource type="BoxShape3D" id="BoxShape3D_qp8v0"]
 size = Vector3(0.26989746, 6.7873535, 19.892822)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_nir6r"]
+size = Vector3(11.88385, 0.32348633, 10.004852)
+
 [sub_resource type="BoxMesh" id="BoxMesh_nir6r"]
 material = ExtResource("13_mxt4c")
 
@@ -1345,6 +1348,10 @@ shape = SubResource("BoxShape3D_qfkph")
 [node name="coll5" type="CollisionShape3D" parent="lfB" unique_id=1499580644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.618808, 3.3179932, 4.9278564)
 shape = SubResource("BoxShape3D_qp8v0")
+
+[node name="coll6" type="CollisionShape3D" parent="lfB" unique_id=1189409390]
+transform = Transform3D(0.88353693, 0.46836168, 0, -0.46836168, 0.88353693, 0, 0, 0, 1, -7.1881123, 2.9251995, 0.00038146973)
+shape = SubResource("BoxShape3D_nir6r")
 
 [node name="l1" type="SpotLight3D" parent="." unique_id=618419082]
 transform = Transform3D(-0.3536469, -0.5608764, 0.7485663, 0.4140596, 0.6237323, 0.6629575, -0.83874226, 0.544404, 0.011655265, 53.006115, 10.596102, 0.11037946)

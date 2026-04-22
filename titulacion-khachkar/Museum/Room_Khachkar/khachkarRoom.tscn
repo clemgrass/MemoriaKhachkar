@@ -224,6 +224,7 @@ spot_angle = 32.705063
 
 [node name="khachkar1" parent="lightK1" unique_id=497236083 instance=ExtResource("2_smiyn")]
 transform = Transform3D(0.2909655, -1.5345414, -1.249208, -0.26819852, 1.2204044, -1.5616276, 1.9604608, 0.39470774, -0.028233146, 1.8843141, -1.7920623, -3.9832883)
+visible = false
 
 [node name="windows1" type="Node3D" parent="lightK1" unique_id=193938737]
 transform = Transform3D(-0.6247888, -0.7672708, -0.14468679, -0.78064245, 0.61020225, 0.13509405, -0.015365524, 0.1973539, -0.9802118, 0.93389297, -0.49343655, -7.2968516)
@@ -302,6 +303,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar2" parent="lightK2" unique_id=61044468 instance=ExtResource("2_ewkbf")]
 transform = Transform3D(0.31039768, -1.5343362, -1.2447749, -0.24480504, 1.2204663, -1.5654174, 1.9605415, 0.3953146, 0.0016083396, 1.6576269, -1.4895281, -4.3507395)
+visible = false
 
 [node name="windows2" type="Node3D" parent="lightK2" unique_id=1014320981]
 transform = Transform3D(0.6225146, -0.9666318, 0.15468822, 0.7826081, 0.7688937, -0.12304458, 0, 0.2490482, 0.9802711, 1.8277352, -1.5639503, -0.5117565)
@@ -380,6 +382,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar3" parent="lightK3" unique_id=960770345 instance=ExtResource("3_smiyn")]
 transform = Transform3D(0.2898534, -1.5345416, -1.2494664, -0.2695885, 1.2204045, -1.5613885, 1.9604353, 0.3947078, -0.02997821, 1.9324362, -1.6802304, -4.1723256)
+visible = false
 
 [node name="windows3" type="Node3D" parent="lightK3" unique_id=1283932330]
 transform = Transform3D(-0.6247888, -0.96676123, -0.14468679, -0.78064245, 0.76885486, 0.13509405, -0.015365524, 0.24866591, -0.9802118, 0.8588939, -0.47592306, -7.642581)
@@ -458,6 +461,7 @@ spot_angle = 32.705063
 
 [node name="Khachkar4" parent="lightK4" unique_id=1903476150 instance=ExtResource("4_yutx4")]
 transform = Transform3D(1.2442696, -1.5343362, 0.31241772, 1.5658128, 1.2204664, -0.24226394, -0.0047904965, 0.3953147, 1.9605364, 2.1100266, -1.6122103, -1.833961)
+visible = false
 
 [node name="windows4" type="Node3D" parent="lightK4" unique_id=2007540045]
 transform = Transform3D(0.6225146, -0.9666318, 0.15468822, 0.7826081, 0.76889384, -0.12304461, 7.4505797e-09, 0.24904825, 0.9802711, 1.829813, -1.6097956, -0.3621515)
@@ -568,6 +572,7 @@ font_size = 141
 
 [node name="Khachkar5" parent="lightK5" unique_id=1741839314 instance=ExtResource("5_ebdpw")]
 transform = Transform3D(0.2884141, -1.5345416, -1.2497995, -0.27138674, 1.2204045, -1.561077, 1.9603994, 0.3947078, -0.03223622, 1.7494502, -1.800569, -3.9962952)
+visible = false
 
 [node name="windows5" type="Node3D" parent="lightK5" unique_id=1798690115]
 transform = Transform3D(-0.6247888, -0.96676123, -0.14468679, -0.78064245, 0.76885486, 0.13509405, -0.015365524, 0.24866591, -0.9802118, 0.8737416, -0.45834208, -7.6392126)
@@ -612,6 +617,7 @@ spot_angle = 41.025345
 
 [node name="Kachkar6" parent="lightK6" unique_id=2029568894 instance=ExtResource("6_sfs07")]
 transform = Transform3D(0.46566203, -2.3015044, -1.8671463, -0.3671253, 1.8306994, -2.3481393, 2.9408123, 0.5929719, 0.0025155777, -3.1805525, -6.7676888, -4.062951)
+visible = false
 
 [node name="windows6" type="Node3D" parent="lightK6" unique_id=486324062]
 transform = Transform3D(0.4295351, -1.0740353, 0.15468822, 0.5399996, 0.85432637, -0.12304458, 0, 0.27672023, 0.9802711, 1.9561193, -1.458158, -0.3408876)

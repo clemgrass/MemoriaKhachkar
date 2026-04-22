@@ -11,3 +11,4 @@ res://Player/playerController.tscn
 res://Museum/Room_Khachkar/khachkarRoom.tscn
 res://World/lights/gameBakedLights.exr
 res://World/lights/gameBakedLights.lmbake
+res://Museum/Second_Floor/LevelFloor.tscn
