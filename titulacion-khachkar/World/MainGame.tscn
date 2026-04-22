@@ -613,9 +613,7 @@ pixel_size = 0.2
 texture = ExtResource("19_0wtps")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1106804151]
-quality = 0
-texel_scale = 0.4
-max_texture_size = 4096
+visible = false
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=380086807]
 

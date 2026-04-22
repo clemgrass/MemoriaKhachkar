@@ -1163,9 +1163,3 @@ surface_material_override/0 = SubResource("StandardMaterial3D_slx47")
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=406222943]
 transform = Transform3D(3.6398203, 0, 0, 0, 1, 0, 0, 0, 4.9004965, -2.9327464, 0, 0)
 mesh = SubResource("PlaneMesh_s0x04")
-
-[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1843331603]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 11.864624, 8.798866, 0.045800447)
-light_energy = 5.0
-light_bake_mode = 1
-spot_angle = 46.40202
