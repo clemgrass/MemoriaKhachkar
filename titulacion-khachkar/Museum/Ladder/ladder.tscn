@@ -10,11 +10,15 @@ albedo_color = Color(0.7882353, 0, 0, 1)
 metallic = 1.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_iu5dn"]
+lightmap_size_hint = Vector2i(5, 59)
 material = SubResource("StandardMaterial3D_vjm7g")
+add_uv2 = true
 size = Vector3(0.075, 5.28, 0.115)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7vy63"]
+lightmap_size_hint = Vector2i(5, 53)
 material = SubResource("StandardMaterial3D_vjm7g")
+add_uv2 = true
 size = Vector3(0.075, 4.725, 0.115)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2rbjo"]
@@ -22,7 +26,9 @@ albedo_color = Color(0.45882353, 0, 0, 1)
 metallic = 1.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_a78xm"]
+lightmap_size_hint = Vector2i(5, 13)
 material = SubResource("StandardMaterial3D_2rbjo")
+add_uv2 = true
 size = Vector3(-0.015, 0.71, 0.115)
 
 [node name="Ladder" type="Node3D" unique_id=1112118908]
@@ -97,6 +103,7 @@ mesh = SubResource("BoxMesh_a78xm")
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1629141631]
 transform = Transform3D(-4.3711157e-08, -0.0032462925, -0.99999475, -1.419016e-10, 0.99999475, -0.0032462925, 1, 1.6514567e-15, -4.371139e-08, -4.140401, 0.71999943, 0.05173862)
 light_energy = 2.0
+light_bake_mode = 1
 spot_range = 15.48698
 spot_angle = 41.945076
 

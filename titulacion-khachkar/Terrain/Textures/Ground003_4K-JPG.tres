@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cf3he2tt58jgy" path="res://Terrain/Textures/Ground003_4K-JPG_Roughness.jpg" id="Roughness"]
 
 [resource]
+albedo_color = Color(0.64957225, 0.6776926, 0.71988904, 1)
 albedo_texture = ExtResource("Color")
 roughness_texture = ExtResource("Roughness")
 roughness_texture_channel = 4

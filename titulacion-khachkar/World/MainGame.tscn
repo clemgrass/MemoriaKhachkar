@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://dnisr3dfoji4g" path="res://World/main_game.gd" id="1_kmhrd"]
 [ext_resource type="Script" uid="uid://uyc6a0144gf5" path="res://Player/player_controller.gd" id="3_24doq"]
 [ext_resource type="Texture2D" uid="uid://j7nv0wdgspik" path="res://Player/PNG/White Retina/crosshair002.png" id="4_v11vh"]
-[ext_resource type="LightmapGIData" uid="uid://bgnw5gj7if3yq" path="res://World/lights/gameBakedLights.lmbake" id="5_kmhrd"]
 [ext_resource type="Texture2D" uid="uid://b575dpb28nak1" path="res://Player/PNG/White Retina/crosshair007.png" id="5_nv86x"]
 [ext_resource type="Texture2D" uid="uid://bsb23ca6s8p8" path="res://Player/PNG/Black/crosshair007.png" id="6_oq660"]
 [ext_resource type="PackedScene" uid="uid://g5de8nu46712" path="res://Museum/Room_Complisonist/crowbar.tscn" id="7_4cdp1"]
@@ -19,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://ccx7imudr87yj" path="res://Player/Album/Photos/khachkar5_pa.png" id="16_4pkn8"]
 [ext_resource type="Texture2D" uid="uid://2aookvrniqcu" path="res://Player/Album/Photos/khachkar6_pa.png" id="17_umsqh"]
 [ext_resource type="Material" uid="uid://0q61kot8t24v" path="res://Terrain/Textures/Ground003_4K-JPG.tres" id="18_24doq"]
+[ext_resource type="Texture2D" uid="uid://bdc2jawivccup" path="res://Terrain/forest-4027242_1280.png" id="19_0wtps"]
 [ext_resource type="Texture2D" uid="uid://byptx3femarou" path="res://Player/UI/Keyboard & Mouse/Light/A_Key_Light.png" id="20_5vpuc"]
 [ext_resource type="Texture2D" uid="uid://0gl11x3lcnn3" path="res://Player/UI/Keyboard & Mouse/Light/D_Key_Light.png" id="21_0wtps"]
 [ext_resource type="Texture2D" uid="uid://plnqvec253k6" path="res://Player/UI/Keyboard & Mouse/Light/S_Key_Light.png" id="22_3ovrp"]
@@ -165,7 +165,7 @@ _data = {
 }
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sfnqe"]
-lightmap_size_hint = Vector2i(4266, 8018)
+lightmap_size_hint = Vector2i(3690, 8018)
 _surfaces = [{
 "aabb": AABB(-100, -0.5, -100, 200, 1, 200),
 "attribute_data": PackedByteArray("AACAPwAAgD8GliY96vt/PwAAgD8AAAAABpYmPU09AD8AAAAAAAAAAEJsEj1NPQA/AACAPwAAgD8A/TQ9cLb/PgAAgD8AAAAAx2h7P3C2/z4AAAAAAAAAAMdoez/UmX8/AACAPwAAgD9S+H8/x4UpPwAAgD8AAAAAtbV+P8eFKT8AAAAAAAAAALW1fj+sHCc+AAAAAAAAgD9CbBI96vt/PwAAgD8AAIA/kAd9P06tNj8AAIA/AAAAACxKfj9OrTY/AAAAAAAAAAAsSn4/yLpbPgAAAAAAAAAApSBwP2WF/z4AAAAAAACAP2TM9Thlhf8+AACAPwAAgD9kzPU4G8eCOAAAAAAAAIA/AP00PdSZfz8AAAAAAACAP5AHfT/Iuls+AACAPwAAgD952Xw/VEfrPgAAgD8AAAAAedl8P0ZidT8AAAAAAAAAAN2Wez9GYnU/AAAAAAAAgD9S+H8/rBwnPgAAgD8AAAAApSBwPxvHgjgAAAAAAACAP92Wez9UR+s+"),
@@ -193,6 +193,23 @@ map_width = 45
 map_depth = 70
 map_data = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
+[sub_resource type="ArrayMesh" id="ArrayMesh_0wtps"]
+lightmap_size_hint = Vector2i(3690, 8018)
+_surfaces = [{
+"aabb": AABB(-100, -0.5, -100, 200, 1, 200),
+"attribute_data": PackedByteArray("AACAPwAAgD8GliY96vt/PwAAgD8AAAAABpYmPU09AD8AAAAAAAAAAEJsEj1NPQA/AACAPwAAgD8A/TQ9cLb/PgAAgD8AAAAAx2h7P3C2/z4AAAAAAAAAAMdoez/UmX8/AACAPwAAgD9S+H8/x4UpPwAAgD8AAAAAtbV+P8eFKT8AAAAAAAAAALW1fj+sHCc+AAAAAAAAgD9CbBI96vt/PwAAgD8AAIA/kAd9P06tNj8AAIA/AAAAACxKfj9OrTY/AAAAAAAAAAAsSn4/yLpbPgAAAAAAAAAApSBwP2WF/z4AAAAAAACAP2TM9Thlhf8+AACAPwAAgD9kzPU4G8eCOAAAAAAAAIA/AP00PdSZfz8AAAAAAACAP5AHfT/Iuls+AACAPwAAgD952Xw/VEfrPgAAgD8AAAAAedl8P0ZidT8AAAAAAAAAAN2Wez9GYnU/AAAAAAAAgD9S+H8/rBwnPgAAgD8AAAAApSBwPxvHgjgAAAAAAACAP92Wez9UR+s+"),
+"format": 34359742519,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgAAgAJAAAACgALAAwADQAOAA8ABQAQAAMADAARAAoAEgATABQACAAVAAYADwAWAA0AFAAXABIA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AADIwgAAAL8AAMhCAADIwgAAAL8AAMjCAADIwgAAAD8AAMjCAADIQgAAAL8AAMjCAADIwgAAAL8AAMjCAADIwgAAAL8AAMhCAADIwgAAAD8AAMjCAADIwgAAAL8AAMjCAADIQgAAAL8AAMjCAADIwgAAAD8AAMhCAADIwgAAAL8AAMhCAADIwgAAAD8AAMhCAADIQgAAAD8AAMhCAADIQgAAAD8AAMhCAADIwgAAAD8AAMhCAADIwgAAAD8AAMjCAADIQgAAAL8AAMhCAADIQgAAAL8AAMhCAADIQgAAAL8AAMjCAADIQgAAAL8AAMhCAADIQgAAAD8AAMhCAADIQgAAAD8AAMjCAADIQgAAAD8AAMjCAADIQgAAAD8AAMjCAAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
+}]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_0wtps"]
+plane = Plane(0, 1, 0, -0.065)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vpuc"]
 bg_color = Color(0, 0, 0, 0)
 
@@ -209,7 +226,7 @@ environment = SubResource("Environment_pwprq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" type="CharacterBody3D" parent="." unique_id=1779176938]
-transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 30.068027, 9.236002, 0.50567245)
+transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 65.82332, 1.6129656, -20.615269)
 script = ExtResource("3_24doq")
 sprint_speed = 5.6
 
@@ -469,10 +486,136 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.12
 shape = SubResource("HeightMapShape3D_nv86x")
 debug_color = Color(0.29095587, 0.62489116, 0.23617184, 0.41960785)
 
+[node name="CSGBakedMeshInstance3D2" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=1131755605]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, 162.126, -0.501, 0)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D3" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=959545909]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, -162.37119, -0.5009999, 0)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D4" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=109856314]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, -162.37119, -0.5009999, -110.823105)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D5" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=770651822]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, -0.7065277, -0.5009999, -110.823105)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D6" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=637863518]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, 158.67313, -0.5009999, -110.823105)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D7" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=241753445]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, -162.37119, -0.5009999, 111.44321)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D8" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=781667034]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, -0.7065277, -0.5009999, 111.44321)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="CSGBakedMeshInstance3D9" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=986988981]
+transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, 158.67313, -0.5009999, 111.44321)
+mesh = SubResource("ArrayMesh_0wtps")
+surface_material_override/0 = ExtResource("18_24doq")
+
 [node name="Forest" type="Node3D" parent="OutsideWorld" unique_id=637291074]
 
+[node name="walls" type="StaticBody3D" parent="OutsideWorld/Forest" unique_id=486547929]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.619486, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="OutsideWorld/Forest/walls" unique_id=368960777]
+transform = Transform3D(4.371139e-08, -1, 8.742278e-08, -1, -4.371139e-08, 0, 3.821371e-15, -8.742278e-08, -1, 70.2443, 6.773306, 0)
+shape = SubResource("WorldBoundaryShape3D_0wtps")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="OutsideWorld/Forest/walls" unique_id=924235364]
+transform = Transform3D(1.9106855e-15, -4.371139e-08, -1, -1, -4.371139e-08, 0, -4.371139e-08, 1, -4.371139e-08, 22.648438, 6.773306, -48.671463)
+shape = SubResource("WorldBoundaryShape3D_0wtps")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="OutsideWorld/Forest/walls" unique_id=393243653]
+transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 22.648438, 6.773306, 40.328537)
+shape = SubResource("WorldBoundaryShape3D_0wtps")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="OutsideWorld/Forest/walls" unique_id=167124780]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -69.995445, 6.773306, 0)
+shape = SubResource("WorldBoundaryShape3D_0wtps")
+
+[node name="Sprite3D" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1168906219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.930923, 24.63723, 153.76608)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D2" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1241439850]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -129.3056, 24.63723, -0.23492432)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D3" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=347239083]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 35.785763, 24.63723, -116.10332)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D4" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=237567369]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 160.62326, 24.63723, -0.23492432)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D5" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1644941201]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 199.27428, 10.296852, 28.205614)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D7" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=196691497]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -175.24794, 24.63723, -51.672947)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D8" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1949239865]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -216.38971, 24.63723, 65.15655)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D11" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=676829343]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -25.824299, 24.63723, -135.532)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D12" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=730198348]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 98.927795, 24.63723, -164.55711)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D15" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=741335644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.80989, 24.63723, 216.28139)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D17" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1052345714]
+transform = Transform3D(0.7071069, 0, 0.70710665, 0, 1, 0, -0.70710665, 0, 0.7071069, 149.73433, 23.566986, 149.44156)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D20" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1340884663]
+transform = Transform3D(-0.7071067, 0, 0.7071068, 0, 1, 0, -0.7071068, 0, -0.7071067, 175.01831, 23.566986, -97.820244)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
+[node name="Sprite3D18" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=757833931]
+transform = Transform3D(0.49999976, 0, -0.8660255, 0, 1, 0, 0.8660255, 0, 0.49999976, -90.068405, 23.566986, 149.44156)
+pixel_size = 0.2
+texture = ExtResource("19_0wtps")
+
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1106804151]
-light_data = ExtResource("5_kmhrd")
+quality = 0
+texel_scale = 0.4
+max_texture_size = 4096
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=380086807]
 

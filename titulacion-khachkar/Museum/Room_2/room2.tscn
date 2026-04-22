@@ -1450,7 +1450,7 @@ transform = Transform3D(1, 6.363621e-11, 9.8661985e-09, -1.4210855e-13, 1, -2.00
 shape = SubResource("BoxShape3D_fu4yr")
 
 [node name="Khachkar2" parent="." unique_id=61044468 instance=ExtResource("10_detsc")]
-transform = Transform3D(-1.6904014, -0.91653174, 0.55001014, -0.9382433, 1.7653111, 0.058098983, -0.5120942, -0.20891643, -1.9220077, -6.644971, 5.4783225, 1.4228711)
+transform = Transform3D(-1.6904013, -0.91653174, 0.55001014, -0.93824327, 1.7653111, 0.058098983, -0.51209414, -0.20891643, -1.9220077, -6.644971, 5.4783225, 1.4228711)
 visible = false
 
 [node name="collisionKhachkar2" type="StaticBody3D" parent="Khachkar2" unique_id=2037283573 groups=["khachkars"]]
@@ -1516,10 +1516,10 @@ spot_angle = 37.776726
 
 [node name="l8" type="SpotLight3D" parent="." unique_id=1197235369]
 transform = Transform3D(-0.29025984, -0.58582395, -0.7566767, 0.07779053, 0.7736573, -0.62881076, 0.9537809, -0.24138077, -0.17899008, -12.074911, 4.2039366, 0.37509793)
-light_energy = 1.5
+light_energy = 4.0
 light_bake_mode = 1
-spot_range = 18.239393
-spot_angle = 30.883446
+spot_range = 184.53267
+spot_angle = 31.191126
 
 [node name="l9" type="SpotLight3D" parent="." unique_id=1648084383]
 transform = Transform3D(0.2902599, 0.58582395, 0.7566767, 0.07779054, 0.7736574, -0.6288108, -0.95378083, 0.24138086, 0.17899014, 11.857699, 4.2039366, 0.37509793)

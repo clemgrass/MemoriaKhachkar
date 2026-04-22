@@ -209,3 +209,4 @@ spot_range = 15.244019
 
 [node name="ol1" type="OmniLight3D" parent="lights" unique_id=2064410026]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.849512, -3.2943175, 0)
+light_bake_mode = 1

@@ -119,21 +119,27 @@ refraction_scale = 0.02
 albedo_color = Color(0.23031491, 0.23031494, 0.23031494, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_a5rc1"]
+lightmap_size_hint = Vector2i(5, 22)
 material = SubResource("StandardMaterial3D_d50lt")
+add_uv2 = true
 size = Vector3(0.1, 1.59, 0.1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6unu5"]
 albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_5umqg"]
+lightmap_size_hint = Vector2i(12, 12)
 material = SubResource("StandardMaterial3D_6unu5")
+add_uv2 = true
 size = Vector3(1, 0.1, 0.755)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijxxw"]
 albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_50pol"]
+lightmap_size_hint = Vector2i(9, 12)
 material = SubResource("StandardMaterial3D_ijxxw")
+add_uv2 = true
 size = Vector3(1.02, 0.1, 0.15)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0j231"]
@@ -141,7 +147,9 @@ emission_enabled = true
 emission = Color(1, 0.43137255, 0.09019608, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_gn0up"]
+lightmap_size_hint = Vector2i(9, 10)
 material = SubResource("StandardMaterial3D_0j231")
+add_uv2 = true
 size = Vector3(0.925, 0.025, 0.16)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i3le6"]
@@ -170,7 +178,9 @@ uv1_scale = Vector3(0.46, 0.23, 0.995)
 uv1_offset = Vector3(1.3, 0, 0)
 
 [sub_resource type="BoxMesh" id="BoxMesh_mvpba"]
+lightmap_size_hint = Vector2i(15, 39)
 material = SubResource("StandardMaterial3D_i3le6")
+add_uv2 = true
 size = Vector3(0.085, 2.195, 2.275)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvpba"]
@@ -178,12 +188,16 @@ emission_enabled = true
 emission = Color(1, 1, 1, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_bon7a"]
+lightmap_size_hint = Vector2i(5, 3)
 material = SubResource("StandardMaterial3D_mvpba")
+add_uv2 = true
 radius = 0.1
 height = 0.2
 
 [sub_resource type="BoxMesh" id="BoxMesh_d50lt"]
+lightmap_size_hint = Vector2i(7, 12)
 material = SubResource("StandardMaterial3D_nttmd")
+add_uv2 = true
 size = Vector3(0.01, 0.33, 0.64)
 
 [node name="KhachkarRoom" type="Node3D" unique_id=2080924142 groups=["room_khachkars"]]
@@ -218,6 +232,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_nttmd")
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 1.9420576, 2.617868, 1.4694642)
 light_energy = 3.0
 light_indirect_energy = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 32.705063
@@ -280,6 +295,7 @@ transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0
 light_color = Color(1, 0.43137255, 0.078431375, 1)
 light_energy = 2.811
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 0.9462184
 spot_angle = 89.99
 
@@ -297,6 +313,7 @@ font_size = 141
 transform = Transform3D(0.62251467, 0.78260815, 0, -0.7671682, 0.6102332, 0.19765735, 0.15468824, -0.12304459, 0.9802712, 1.9420576, 2.617868, -0.99886763)
 light_energy = 3.0
 light_indirect_energy = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 32.705063
@@ -359,6 +376,7 @@ transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0
 light_color = Color(1, 0.43137255, 0.078431375, 1)
 light_energy = 2.811
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 0.9462184
 spot_angle = 89.99
 
@@ -376,6 +394,7 @@ font_size = 141
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 5.741802, 2.617868, 1.1899415)
 light_energy = 3.0
 light_indirect_energy = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 32.705063
@@ -438,6 +457,7 @@ transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0
 light_color = Color(1, 0.43137255, 0.078431375, 1)
 light_energy = 2.811
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 0.9462184
 spot_angle = 89.99
 
@@ -455,6 +475,7 @@ font_size = 141
 transform = Transform3D(0.6225147, 0.78260815, 1.1698804e-08, -0.7671682, 0.6102332, 0.19765736, 0.15468825, -0.1230446, 0.9802712, 6.2359805, 2.617868, -1.1598448)
 light_energy = 2.0
 light_indirect_energy = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 32.705063
@@ -517,6 +538,7 @@ transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0
 light_color = Color(1, 0.43137255, 0.078431375, 1)
 light_energy = 2.811
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 0.9462184
 spot_angle = 89.99
 
@@ -533,6 +555,7 @@ font_size = 141
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 9.3561535, 2.617868, 1.2540892)
 light_energy = 3.0
 light_indirect_energy = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 32.705063
@@ -558,6 +581,7 @@ transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0
 light_color = Color(1, 0.43137255, 0.078431375, 1)
 light_energy = 2.811
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 0.9462184
 spot_angle = 89.99
 
@@ -611,6 +635,7 @@ material = SubResource("StandardMaterial3D_bon7a")
 transform = Transform3D(0.62251467, 0.78260815, 9.276191e-09, -0.7671682, 0.6102332, 0.19765733, 0.15468824, -0.12304459, 0.9802712, 9.174454, 2.617868, -1.1598448)
 light_energy = 2.0
 light_indirect_energy = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 41.025345
@@ -673,6 +698,7 @@ transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0
 light_color = Color(1, 0.43137255, 0.078431375, 1)
 light_energy = 2.811
 light_specular = 0.0
+light_bake_mode = 1
 spot_range = 0.9462184
 spot_angle = 89.99
 
@@ -744,6 +770,7 @@ font_size = 268
 
 [node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D" unique_id=474752306]
 transform = Transform3D(-2.8747431e-08, -0.7533109, 0.6576646, -3.2928266e-08, 0.6576646, 0.7533109, -1, 0, -4.3711392e-08, 1.1835804, 0.9995582, 0)
+light_bake_mode = 1
 spot_angle = 33.72824
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1907527031]

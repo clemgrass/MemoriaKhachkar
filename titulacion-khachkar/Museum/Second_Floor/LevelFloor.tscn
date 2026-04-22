@@ -382,7 +382,9 @@ size = Vector3(0.26989746, 6.7873535, 19.892822)
 size = Vector3(11.88385, 0.32348633, 10.004852)
 
 [sub_resource type="BoxMesh" id="BoxMesh_nir6r"]
+lightmap_size_hint = Vector2i(14, 21)
 material = ExtResource("13_mxt4c")
+add_uv2 = true
 
 [node name="LevelFloor" type="Node3D" unique_id=532701115]
 
@@ -1356,47 +1358,56 @@ shape = SubResource("BoxShape3D_nir6r")
 [node name="l1" type="SpotLight3D" parent="." unique_id=618419082]
 transform = Transform3D(-0.3536469, -0.5608764, 0.7485663, 0.4140596, 0.6237323, 0.6629575, -0.83874226, 0.544404, 0.011655265, 53.006115, 10.596102, 0.11037946)
 light_energy = 2.0
+light_bake_mode = 1
 spot_range = 9.672892
 spot_angle = 25.29067
 
 [node name="l2" type="SpotLight3D" parent="." unique_id=1007907017]
 transform = Transform3D(0.5389541, -0.7549271, 0.37364903, 0.41405958, 0.6237324, 0.6629575, -0.7335416, -0.20259067, 0.64874786, 50.34212, 10.596102, 5.35174)
 light_energy = 2.0
+light_bake_mode = 1
 spot_range = 16.334002
 spot_angle = 25.29067
 
 [node name="l3" type="SpotLight3D" parent="." unique_id=1527851859]
 transform = Transform3D(-0.90513164, 0.20500489, 0.3724375, 0.4140596, 0.6237324, 0.66295743, -0.0963918, 0.7542751, -0.6494441, 50.34212, 10.596102, -4.8844433)
 light_energy = 2.0
+light_bake_mode = 1
 spot_range = 16.334002
 spot_angle = 25.29067
 
 [node name="ol1" type="OmniLight3D" parent="." unique_id=1968351962]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 13, -8.304719)
 light_energy = 4.0
+light_bake_mode = 1
 omni_range = 16.296993
 
 [node name="ol2" type="OmniLight3D" parent="." unique_id=1559809896]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.80494, 13, -8.304719)
 light_energy = 4.0
+light_bake_mode = 1
 omni_range = 16.227705
 
 [node name="ol3" type="OmniLight3D" parent="." unique_id=1969065126]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.254852, 13, -8.304719)
+light_bake_mode = 1
 omni_range = 16.360617
 
 [node name="ol4" type="OmniLight3D" parent="." unique_id=254093441]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 13, 8.241328)
 light_energy = 4.0
+light_bake_mode = 1
 omni_range = 16.296993
 
 [node name="ol5" type="OmniLight3D" parent="." unique_id=1588190086]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.80494, 13, 8.241328)
 light_energy = 4.0
+light_bake_mode = 1
 omni_range = 16.227705
 
 [node name="ol6" type="OmniLight3D" parent="." unique_id=1224257688]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.254852, 13, 8.241328)
+light_bake_mode = 1
 omni_range = 16.360617
 
 [node name="wall behind stairs" type="MeshInstance3D" parent="." unique_id=1484350834]

@@ -1364,6 +1364,7 @@ albedo_color = Color(0.11764706, 0.18039216, 0.16078432, 1)
 [sub_resource type="PlaneMesh" id="PlaneMesh_jo10s"]
 lightmap_size_hint = Vector2i(12, 12)
 material = SubResource("StandardMaterial3D_y3u5u")
+add_uv2 = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jo10s"]
 size = Vector3(0.67333984, 1, 0.5527344)
@@ -1816,6 +1817,7 @@ omni_range = 7.0330977
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=951766415]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 2.1121926, -2.9540405)
 light_energy = 1.5
+light_bake_mode = 1
 spot_range = 4.9673986
 spot_angle = 35.07509
 
