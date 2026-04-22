@@ -12,3 +12,6 @@ res://Museum/Room_Khachkar/khachkarRoom.tscn
 res://World/lights/gameBakedLights.exr
 res://World/lights/gameBakedLights.lmbake
 res://Museum/Second_Floor/LevelFloor.tscn
+res://Museum/museum.tscn
+res://Museum/ladder.gd
+res://Museum/Ladder/ladder.tscn

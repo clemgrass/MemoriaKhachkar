@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://b4mvcnpm6e0t1" path="res://Museum/Entrance/reception.tscn" id="17_5cig3"]
 [ext_resource type="PackedScene" uid="uid://b1lvcmtjoytdh" path="res://Museum/Room_Complisonist/roomComplete.tscn" id="18_yhcug"]
 [ext_resource type="PackedScene" uid="uid://c1dtxjvi6eowg" path="res://Museum/Final_Room/finalRoom.tscn" id="19_uyxyj"]
+[ext_resource type="PackedScene" uid="uid://d3hd1f4hrppi7" path="res://Museum/Ladder/ladder.tscn" id="20_vjm7g"]
 
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
@@ -77,3 +78,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.61533, 0.05014789, -10.00
 
 [node name="FinalRoom" parent="." unique_id=909443158 instance=ExtResource("19_uyxyj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.239155, -6.61023, 0.009725094)
+
+[node name="Ladder" parent="." unique_id=1112118908 instance=ExtResource("20_vjm7g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.276134, 4.4533167, 8.616435)

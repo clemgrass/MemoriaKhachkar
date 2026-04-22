@@ -10,6 +10,7 @@ extends CharacterBody3D
 @export var base_speed : float = 2.8
 @export var jump_velocity : float = 4.5
 @export var sprint_speed : float = 10.0
+@export var climb_speed : float = 4.0
 
 @export_group("Input Actions")
 @export var input_left : String = "ui_left"
@@ -37,7 +38,7 @@ var move_speed : float = 0.0
 @onready var album_obj = $Head/Camera3D/Album
 @onready var animation_player = $AnimationPlayer
 
-enum PlayerState { NORMAL, TERMINAL, ALBUM, CAMERA, ENDING }
+enum PlayerState { NORMAL, TERMINAL, ALBUM, CAMERA, LADDER, ENDING }
 var state : PlayerState = PlayerState.NORMAL
 var current_terminal: Node = null
 
@@ -63,7 +64,12 @@ var default_fov: float
 """
 Practice code 
 """
-
+func enter_ladder(ladder):
+	state = PlayerState.LADDER
+	velocity = Vector3.ZERO
+	
+func exit_ladder():
+	state = PlayerState.NORMAL
 """
 Practice code 
 """
@@ -137,6 +143,17 @@ func _physics_process(delta: float) -> void:
 				UI_camera.visible = false
 				crosshair_normal.visible = true
 		
+		PlayerState.LADDER:
+			var climb_input = 0.0
+
+			if Input.is_action_pressed(input_forward):
+				climb_input = 1.0
+			elif Input.is_action_pressed(input_back):
+				climb_input = -1.0
+			velocity.y = climb_input * climb_speed
+
+			move_and_slide()
+		
 		PlayerState.ENDING:
 			return
 
@@ -183,7 +200,7 @@ func _normal_movement(delta):
 		
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
-		print(collider)
+		#print(collider)
 		if collider != null: 
 			if collider.is_in_group("p0_piece"):
 				crosshair(true)

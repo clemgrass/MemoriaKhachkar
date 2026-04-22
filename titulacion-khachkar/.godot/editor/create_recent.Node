@@ -1,6 +1,8 @@
-CollisionShape3D
 SpotLight3D
 MeshInstance3D
+CollisionShape3D
+Area3D
+Node3D
 Label3D
 Label
 MeshInstance2D
@@ -10,6 +12,3 @@ CollisionShape2D
 Control
 VBoxContainer
 Node2D
-ColorRect
-Node
-Panel

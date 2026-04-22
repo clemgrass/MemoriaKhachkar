@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://d3hd1f4hrppi7"]
+
+[ext_resource type="Script" uid="uid://cmymbwa8ex28t" path="res://Museum/Ladder/ladder.gd" id="1_2ppbr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uyxyj"]
+size = Vector3(0.3854561, 4.598423, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjm7g"]
+albedo_color = Color(0.7882353, 0, 0, 1)
+metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_iu5dn"]
+material = SubResource("StandardMaterial3D_vjm7g")
+size = Vector3(0.075, 5.28, 0.115)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7vy63"]
+material = SubResource("StandardMaterial3D_vjm7g")
+size = Vector3(0.075, 4.725, 0.115)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2rbjo"]
+albedo_color = Color(0.45882353, 0, 0, 1)
+metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_a78xm"]
+material = SubResource("StandardMaterial3D_2rbjo")
+size = Vector3(-0.015, 0.71, 0.115)
+
+[node name="Ladder" type="Node3D" unique_id=1112118908]
+script = ExtResource("1_2ppbr")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1988269956]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=992271761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.081502914, 0.73822975, 0)
+shape = SubResource("BoxShape3D_uyxyj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=893359308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6519799, 0.3714409)
+mesh = SubResource("BoxMesh_iu5dn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=833230372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9247341, -0.37042046)
+mesh = SubResource("BoxMesh_7vy63")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1165971307]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.300425, -0.017543793)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1385518564]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.93468, -0.017543793)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1283134727]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.57, -0.018)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=560193728]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.205, -0.018)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=2008892990]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.16, -0.018)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." unique_id=1860250219]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.525, -0.018)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=1717761824]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.89, -0.018)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=453035058]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -1.255, -0.018)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="." unique_id=122852082]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.1267757, -0.017543793)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="." unique_id=1682455799]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 2.7610307, -0.017543793)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="." unique_id=1000727583]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 2.3963509, -0.017999649)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="." unique_id=1064294239]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 2.0313506, -0.017999649)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="." unique_id=604117553]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.6663508, -0.017999649)
+mesh = SubResource("BoxMesh_a78xm")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1629141631]
+transform = Transform3D(-4.3711157e-08, -0.0032462925, -0.99999475, -1.419016e-10, 0.99999475, -0.0032462925, 1, 1.6514567e-15, -4.371139e-08, -4.140401, 0.71999943, 0.05173862)
+light_energy = 2.0
+spot_range = 15.48698
+spot_angle = 41.945076
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
