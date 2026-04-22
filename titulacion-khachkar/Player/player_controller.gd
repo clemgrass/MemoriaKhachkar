@@ -36,7 +36,6 @@ var move_speed : float = 0.0
 @onready var crosshair_pick_piano = $Head/Camera3D/pick_piano
 @onready var album_obj = $Head/Camera3D/Album
 @onready var animation_player = $AnimationPlayer
-@onready var analog_camera = $Head/Camera3D/pivot_camera
 
 enum PlayerState { NORMAL, TERMINAL, ALBUM, CAMERA, ENDING }
 var state : PlayerState = PlayerState.NORMAL
@@ -56,6 +55,11 @@ var target_fov: float
 var default_fov: float
 
 @onready var sequence_p3 = [true, false, false, false, false, false, false, false, false, false, false, false, false]
+
+@onready var UI_clickRemember = $"../UI/clickRemember"
+@onready var UI_zoomRemember = $"../UI/zoomRemember"
+@onready var UI_textRemember = $"../UI/textRemember/Label"
+@onready var UI_camera = $"../UI/camera"
 """
 Practice code 
 """
@@ -102,6 +106,7 @@ func _physics_process(delta: float) -> void:
 			
 			move_and_slide()
 		PlayerState.ALBUM:
+			clean_ui()
 			velocity = Vector3.ZERO
 			if Input.is_action_just_pressed("album"):
 				state = PlayerState.NORMAL
@@ -109,9 +114,9 @@ func _physics_process(delta: float) -> void:
 				await animation_player.animation_finished
 				album_obj.visible = false
 		PlayerState.CAMERA:
-			crosshair_normal.visible = false
-			crosshair_pick.visible = false
-			crosshair_pick_piano.visible = false
+			clean_ui()
+			UI_camera.visible = true
+			UI_zoomRemember.visible = true
 			velocity = Vector3.ZERO
 			
 			if Input.is_action_pressed(input_left_click):
@@ -124,13 +129,12 @@ func _physics_process(delta: float) -> void:
 			
 			var zoom_factor = player_camera.fov / default_fov
 			zoom_factor = clamp(zoom_factor, min_fov / default_fov, max_fov / default_fov)
-			analog_camera.scale = Vector3.ONE * zoom_factor
 			
 			if Input.is_action_just_pressed(open_close_camera):
 				player_camera.fov = default_fov
-				analog_camera.scale = Vector3.ONE
 				state = PlayerState.NORMAL
-				analog_camera.visible = false
+				UI_zoomRemember.visible = false
+				UI_camera.visible = false
 				crosshair_normal.visible = true
 		
 		PlayerState.ENDING:
@@ -176,11 +180,10 @@ func _normal_movement(delta):
 	
 	if Input.is_action_just_pressed(open_close_camera):
 		state = PlayerState.CAMERA
-		analog_camera.visible = true
 		
 	if raycast.is_colliding():
 		var collider = raycast.get_collider()
-		#print(collider)
+		print(collider)
 		if collider != null: 
 			if collider.is_in_group("p0_piece"):
 				crosshair(true)
@@ -200,6 +203,7 @@ func _normal_movement(delta):
 			elif collider.is_in_group("p3_computer"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					crosshair(false)
 					enter_terminal(collider)
 			elif collider.is_in_group("p6_crowbar"):
 				crosshair(true)
@@ -223,11 +227,16 @@ func _normal_movement(delta):
 				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.country_wrong_highlight()
+			elif collider.is_in_group("final_door_interact"):
+				crosshair(true)
+				if Input.is_action_just_pressed(input_left_click):
+					show_interaction_text("Esta cerrado")
 			elif collider.is_in_group("ending"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					state = PlayerState.ENDING
 					player_camera.current = false
+					clean_ui()
 					collider.grand_final()
 			elif collider.is_in_group("khachkars"):
 				crosshair(true)
@@ -235,6 +244,8 @@ func _normal_movement(delta):
 					collider.khachkar_photo(has_crowbar)
 					if has_crowbar and collider.name == "collisionKhachkar6":
 						$Head/Camera3D/Crowbar.visible = false
+					if not has_crowbar and collider.name == "collisionKhachkar6":
+						show_interaction_text("Nesecito algo para poder sacarlo")
 			else:
 				crosshair(false)
 		else:
@@ -297,19 +308,41 @@ func crosshair(wich: bool):
 	if wich:
 		crosshair_normal.visible = false
 		crosshair_pick.visible = true
+		UI_clickRemember.visible = true
+	elif grabbed_object: 
+		crosshair_normal.visible = false
+		crosshair_pick.visible = true
+		UI_clickRemember.visible = true
 	else:
 		crosshair_normal.visible = true
 		crosshair_pick.visible = false
 		crosshair_pick_piano.visible = false
+		UI_clickRemember.visible = false
 
 func crosshair_piano(wich: bool):
 	if wich:
 		crosshair_normal.visible = false
 		crosshair_pick_piano.visible = true
+		UI_clickRemember.visible = true
 	else:
 		crosshair_normal.visible = true
 		crosshair_pick.visible = false
 		crosshair_pick_piano.visible = false
+		UI_clickRemember.visible = false
+
+func clean_ui():
+	crosshair_normal.visible = false
+	crosshair_pick.visible = false
+	crosshair_pick_piano.visible = false
+	UI_clickRemember.visible = false
+	UI_textRemember.visible = false
+	
+		
+func show_interaction_text(text: String):
+	UI_textRemember.text = text
+	UI_textRemember.visible = true
+	await get_tree().create_timer(5.0).timeout
+	UI_textRemember.visible = false
 
 func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed

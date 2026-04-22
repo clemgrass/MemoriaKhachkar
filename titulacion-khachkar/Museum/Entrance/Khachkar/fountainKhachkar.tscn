@@ -196,7 +196,7 @@ radius = 1.9907227
 size = Vector3(0.7715454, 0.5864258, 2.8901367)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e6ru3"]
-size = Vector3(0.7715454, 0.45324707, 2.49646)
+size = Vector3(0.15596008, 1.5360565, 2.49646)
 
 [node name="FountainKhachkar" type="Node3D" unique_id=1898502432]
 
@@ -588,8 +588,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06494737, 1.2390119, -0.05
 shape = SubResource("BoxShape3D_d2twf")
 
 [node name="coll7" type="CollisionShape3D" parent="fountainB" unique_id=1515228000]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06494737, 1.7777067, -0.018005371)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023664713, 1.6693388, -0.018005371)
 shape = SubResource("BoxShape3D_e6ru3")
+
+[node name="collFinal" type="CollisionShape3D" parent="fountainB" unique_id=2009720324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023664713, 2.3191113, -0.018005371)
+shape = SubResource("BoxShape3D_e6ru3")
+disabled = true
 
 [node name="lights" type="Node3D" parent="." unique_id=894445293]
 

@@ -121,6 +121,35 @@ radius = 8.308594
 [sub_resource type="BoxShape3D" id="BoxShape3D_bon7a"]
 size = Vector3(0.16351318, 1.9311523, 1.8588257)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3le6"]
+albedo_texture = ExtResource("1_sfs07")
+roughness_texture = ExtResource("4_bon7a")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_mvpba")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("2_i3le6")
+uv1_scale = Vector3(0.46, 0.23, 0.995)
+uv1_offset = Vector3(1.3, 0, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mvpba"]
+material = SubResource("StandardMaterial3D_i3le6")
+size = Vector3(0.085, 2.195, 2.275)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvpba"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_bon7a"]
+material = SubResource("StandardMaterial3D_mvpba")
+radius = 0.1
+height = 0.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_d50lt"]
+material = SubResource("StandardMaterial3D_nttmd")
+size = Vector3(0.01, 0.33, 0.64)
+
 [node name="KhachkarRoom" type="Node3D" unique_id=2080924142 groups=["room_khachkars"]]
 script = ExtResource("1_i3le6")
 
@@ -262,3 +291,37 @@ shape = SubResource("BoxShape3D_bon7a")
 [node name="coll9" type="CollisionShape3D" parent="roomB" unique_id=267512288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.415552, 3.414022, -0.005706787)
 shape = SubResource("BoxShape3D_bon7a")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=988490055]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=586707393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.473753, 3.5557573, 0)
+mesh = SubResource("BoxMesh_mvpba")
+
+[node name="Label3D" type="Label3D" parent="MeshInstance3D" unique_id=1388330277]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.042650223, -0.83460045, 0)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Khachkar Room"
+font_size = 268
+
+[node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D" unique_id=474752306]
+transform = Transform3D(-2.8747431e-08, -0.7533109, 0.6576646, -3.2928266e-08, 0.6576646, 0.7533109, -1, 0, -4.3711392e-08, 1.1835804, 0.9995582, 0)
+spot_angle = 33.72824
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1907527031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1178913, 1.005892, 0)
+mesh = SubResource("SphereMesh_bon7a")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1421460629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2328033, 0.8933022, 0)
+mesh = SubResource("BoxMesh_d50lt")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1981617666]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 1.007124, 0.8933022, -0.54267156)
+mesh = SubResource("BoxMesh_d50lt")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="MeshInstance3D" unique_id=255305985]
+transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, 1.007124, 0.8933022, 0.54188263)
+mesh = SubResource("BoxMesh_d50lt")

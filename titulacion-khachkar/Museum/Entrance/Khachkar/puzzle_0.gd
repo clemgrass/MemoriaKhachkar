@@ -9,6 +9,7 @@ func puzzle_state():
 		if not piece:
 			return 
 	print("Solved")
+	$"../../fountainB/collFinal".disabled = false
 	emit_signal("puzzle0_solved", 0)
 
 func change_place(piece: int):

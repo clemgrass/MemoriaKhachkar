@@ -1,1 +1,13 @@
 res://World/MainGame.tscn
+res://World/main_game.gd
+res://Player/player_controller.gd
+res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
+res://Museum/Entrance/Khachkar/snapZone.gd
+res://Museum/Entrance/Khachkar/puzzle_0.gd
+res://Museum/Final_Room/finalRoom.tscn
+res://Museum/Final_Room/ending_animation.gd
+res://Museum/Room_3/room3.tscn
+res://Player/playerController.tscn
+res://Museum/Room_Khachkar/khachkarRoom.tscn
+res://World/lights/gameBakedLights.exr
+res://World/lights/gameBakedLights.lmbake

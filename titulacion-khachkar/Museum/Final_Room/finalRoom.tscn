@@ -811,7 +811,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
 mesh = SubResource("ArrayMesh_s0x04")
 surface_material_override/0 = ExtResource("1_2ywwh")
 
-[node name="door2" type="StaticBody3D" parent="." unique_id=1648261486]
+[node name="door2" type="StaticBody3D" parent="." unique_id=1648261486 groups=["final_door_interact"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 13.130463, 6.63566, 0)
 
 [node name="doorMesh" type="MeshInstance3D" parent="door2" unique_id=755136195]

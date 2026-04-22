@@ -74,27 +74,6 @@ albedo_texture = ExtResource("9_at42o")
 albedo_color = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
 albedo_texture = ExtResource("10_n5prf")
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_24doq"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v11vh"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_nv86x"]
-flip_faces = true
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_oq660"]
-flip_faces = true
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_4cdp1"]
-flip_faces = true
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_hp332"]
-flip_faces = true
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_at42o"]
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_n5prf"]
-
 [sub_resource type="Animation" id="Animation_0mu5q"]
 length = 0.001
 tracks/0/type = "value"
@@ -214,6 +193,12 @@ map_width = 45
 map_depth = 70
 map_data = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vpuc"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wtps"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [node name="MainGame" type="Node3D" unique_id=517629617]
 script = ExtResource("1_kmhrd")
 
@@ -224,7 +209,7 @@ environment = SubResource("Environment_pwprq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" type="CharacterBody3D" parent="." unique_id=1779176938]
-transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 72.34395, 2.8620605, -25.20035)
+transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 30.068027, 9.236002, 0.50567245)
 script = ExtResource("3_24doq")
 sprint_speed = 5.6
 
@@ -296,6 +281,14 @@ size = Vector3(0.9169922, 0.017578125, 0.68066406)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.059952997, -0.33532715)
 material_override = SubResource("StandardMaterial3D_een4a")
 size = Vector3(0.9169922, 0.017578125, 0.6652832)
+
+[node name="Label3D" type="Label3D" parent="PlayerController/Head/Camera3D/Album/leftSide/paper3" unique_id=954022759]
+transform = Transform3D(-0.004198741, 0.9999473, 0.0092025865, 0.0030348003, -0.0091900565, 0.99995136, 0.999984, 0.0042264275, -0.0029955506, 0.3711624, 0.060043335, -0.010803223)
+pixel_size = 0.0001
+modulate = Color(0, 0, 0, 1)
+text = "Khachkars Encontrados"
+font_size = 367
+outline_size = 0
 
 [node name="holder1" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide" unique_id=614400161]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, -0.1960642, 0.06923176, -0.17052284)
@@ -441,93 +434,6 @@ texture = ExtResource("17_umsqh")
 transform = Transform3D(7.142857, -1.4901161e-08, 0, -1.4901161e-08, 7.1428576, 2.3841858e-07, -2.9802322e-08, 0, 7.1428556, -0.06046295, 0.9316406, -0.04963684)
 omni_range = 0.16293268
 
-[node name="pivot_camera" type="Node3D" parent="PlayerController/Head/Camera3D" unique_id=116345526]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0011634883, -0.18292694)
-visible = false
-
-[node name="camera" type="Node3D" parent="PlayerController/Head/Camera3D/pivot_camera" unique_id=1304873518]
-transform = Transform3D(0.11, 0, 0, 0, 0.145, 0, 0, 0, 1, -0.165, -0.10383651, 1.422927)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=79783859]
-transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, -0.5, 0, -1.4216805)
-mesh = SubResource("PlaneMesh_24doq")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D" unique_id=1488055362]
-transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982346, -0.0003196001, 0.8830776)
-mesh = SubResource("PlaneMesh_24doq")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=878673576]
-transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 3.51, 0, -1.422)
-mesh = SubResource("PlaneMesh_nv86x")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D3" unique_id=1493852934]
-transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
-mesh = SubResource("PlaneMesh_oq660")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=2060807632]
-transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, -0.5, 1.49, -1.4216805)
-mesh = SubResource("PlaneMesh_4cdp1")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D2" unique_id=2033825816]
-transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452604, -1.110223e-16, 0.99999994, -9.13568e-09, 0.13876934, 0, -1.1525022e-07, 18.982346, 0.00036779046, 0.8830776)
-mesh = SubResource("PlaneMesh_hp332")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=1467018398]
-transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 3.51, 1.49, -1.422)
-mesh = SubResource("PlaneMesh_at42o")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D4" unique_id=2141792789]
-transform = Transform3D(-4.2452047e-08, -3.8592775e-06, -18.452606, -5.551115e-17, 1, -9.135681e-09, 0.13876934, 0, -1.15250224e-07, 18.982, 0, 0.859)
-mesh = SubResource("PlaneMesh_n5prf")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=689220222]
-transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, -0.07926822, 0, 0.99999994, -3.464924e-09, 1.145, 0.62, -1.4216805)
-mesh = SubResource("PlaneMesh_24doq")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D5" unique_id=40124184]
-transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.537, 0, 0.868)
-mesh = SubResource("PlaneMesh_24doq")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=2106650714]
-transform = Transform3D(-0.011326313, -8.742277e-08, 3.0291325e-16, 0, -4.3711385e-08, -0.07926822, 9.901777e-10, -0.99999994, 3.464924e-09, 1.855, 0.62, -1.422)
-mesh = SubResource("PlaneMesh_nv86x")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D6" unique_id=1630029344]
-transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.367, 0, 0.859)
-mesh = SubResource("PlaneMesh_oq660")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=468087400]
-transform = Transform3D(0.011326313, 0, 0, 0, -4.3711385e-08, 0.07926822, 0, -0.99999994, -3.464924e-09, 1.145, 0.77, -1.4216805)
-mesh = SubResource("PlaneMesh_4cdp1")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D7" unique_id=1281593250]
-transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.432, 0, 0.873)
-mesh = SubResource("PlaneMesh_hp332")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera" unique_id=1198739653]
-transform = Transform3D(-0.011326313, -8.742277e-08, -3.0291325e-16, 0, -4.3711385e-08, 0.07926822, -9.901777e-10, 0.99999994, 3.464924e-09, 1.855, 0.77, -1.422)
-mesh = SubResource("PlaneMesh_at42o")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="PlayerController/Head/Camera3D/pivot_camera/camera/MeshInstance3D8" unique_id=1179130979]
-transform = Transform3D(-3.9216065e-08, -3.8592775e-06, -3.168, -5.560342e-17, 1, -1.2226191e-05, 0.139, -1.0884178e-12, -8.937877e-07, 3.637, 0, 0.859)
-mesh = SubResource("PlaneMesh_n5prf")
-surface_material_override/0 = SubResource("StandardMaterial3D_v11vh")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerController" unique_id=1718975483]
 libraries/ = SubResource("AnimationLibrary_cylip")
 
@@ -571,6 +477,7 @@ light_data = ExtResource("5_kmhrd")
 [node name="UI" type="CanvasLayer" parent="." unique_id=380086807]
 
 [node name="KeyBindings" type="Control" parent="UI" unique_id=597080493]
+z_index = -2
 layout_mode = 3
 anchors_preset = 0
 offset_left = 274.0
@@ -690,20 +597,340 @@ texture = ExtResource("29_nqjgh")
 [node name="PauseMenu" type="ColorRect" parent="UI" unique_id=529241388]
 process_mode = 2
 visible = false
-offset_left = -23.99997
-offset_top = -18.00003
-offset_right = 6.109083
-offset_bottom = 11.940918
+z_index = 11
+offset_left = -319.99997
+offset_top = -261.0
+offset_right = -278.92142
+offset_bottom = -218.66328
 scale = Vector2(65.72774, 37.674156)
-color = Color(0.28118688, 0.28118688, 0.28118694, 0.23529412)
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
 
-[node name="Button" type="Button" parent="UI/PauseMenu" unique_id=655435152]
+[node name="Button" type="Button" parent="UI" unique_id=655435152]
+process_mode = 2
 process_priority = 2
-layout_mode = 0
-offset_left = 11.319421
-offset_top = -0.61049724
-offset_right = 30.31942
-offset_bottom = 30.389503
-text = "B"
+visible = false
+z_index = 12
+offset_left = 1031.0
+offset_top = 142.0
+offset_right = 4771.0586
+offset_bottom = 1256.1014
+scale = Vector2(0.18, 0.18)
+theme_override_font_sizes/font_size = 765
+theme_override_styles/normal = SubResource("StyleBoxFlat_5vpuc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0wtps")
+text = "Resume"
 
-[connection signal="pressed" from="UI/PauseMenu/Button" to="." method="_on_button_pressed"]
+[node name="KeyBindingsPM" type="Control" parent="UI" unique_id=1595273928]
+process_mode = 2
+visible = false
+z_index = 12
+layout_mode = 3
+anchors_preset = 0
+offset_left = 402.0
+offset_top = 358.0
+offset_right = 442.0
+offset_bottom = 398.0
+scale = Vector2(1.75, 1.75)
+pivot_offset = Vector2(10, 10)
+
+[node name="mov" type="Label" parent="UI/KeyBindingsPM" unique_id=1033350128]
+layout_mode = 0
+offset_left = -112.0
+offset_top = -139.0
+offset_right = -28.0
+offset_bottom = -116.0
+text = "Movement"
+
+[node name="AKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1067043630]
+position = Vector2(-75, 0)
+texture = ExtResource("20_5vpuc")
+
+[node name="DKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=325017019]
+position = Vector2(75, 0)
+texture = ExtResource("21_0wtps")
+
+[node name="SKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1254891029]
+texture = ExtResource("22_3ovrp")
+
+[node name="WKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1800255410]
+position = Vector2(0, -75)
+texture = ExtResource("23_4pkn8")
+
+[node name="album" type="Label" parent="UI/KeyBindingsPM" unique_id=1258074532]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 50.0
+offset_right = -28.0
+offset_bottom = 73.0
+text = "Album"
+
+[node name="EKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=853738333]
+position = Vector2(-50, 108)
+texture = ExtResource("24_umsqh")
+
+[node name="camera" type="Label" parent="UI/KeyBindingsPM" unique_id=1142570317]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 145.0
+offset_right = -28.0
+offset_bottom = 168.0
+text = "Camera"
+
+[node name="QKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=80944281]
+position = Vector2(-50, 206)
+texture = ExtResource("25_1yr47")
+
+[node name="sprint" type="Label" parent="UI/KeyBindingsPM" unique_id=913515402]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 249.0
+offset_right = -28.0
+offset_bottom = 272.0
+text = "Sprint"
+
+[node name="ShiftKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1293141689]
+position = Vector2(-50, 302)
+texture = ExtResource("26_xaylg")
+
+[node name="jump" type="Label" parent="UI/KeyBindingsPM" unique_id=1083081902]
+layout_mode = 0
+offset_top = 247.0
+offset_right = 84.0
+offset_bottom = 270.0
+text = "Jump"
+
+[node name="SpaceKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=556545881]
+position = Vector2(71, 307.00003)
+scale = Vector2(1.13, 1.09)
+texture = ExtResource("27_onmfn")
+
+[node name="interact" type="Label" parent="UI/KeyBindingsPM" unique_id=1110473765]
+layout_mode = 0
+offset_top = 50.0
+offset_right = 84.0
+offset_bottom = 73.0
+text = "Interact"
+
+[node name="MouseLeftKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=498087160]
+position = Vector2(50.000004, 110.00001)
+scale = Vector2(0.78, 0.73)
+texture = ExtResource("28_8ja0g")
+
+[node name="zoomIn" type="Label" parent="UI/KeyBindingsPM" unique_id=1630441006]
+layout_mode = 0
+offset_top = 145.0
+offset_right = 84.0
+offset_bottom = 168.0
+text = "Zoom In"
+
+[node name="zoomOut" type="Label" parent="UI/KeyBindingsPM" unique_id=491912139]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 145.0
+offset_right = 168.0
+offset_bottom = 168.0
+text = "Zoom Out"
+
+[node name="MouseLeftKeyLight2" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1020570671]
+position = Vector2(40, 210.00002)
+scale = Vector2(0.78, 0.73)
+texture = ExtResource("28_8ja0g")
+
+[node name="MouseRightKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=2010130805]
+position = Vector2(125, 209)
+scale = Vector2(0.78, 0.72)
+texture = ExtResource("29_nqjgh")
+
+[node name="clickRemember" type="Control" parent="UI" unique_id=1596648580]
+visible = false
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -28.0
+offset_right = 20.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.77, 0.77)
+size_flags_vertical = 4
+
+[node name="MouseLeftKeyLight" type="Sprite2D" parent="UI/clickRemember" unique_id=1555496615]
+position = Vector2(-51, -35)
+texture = ExtResource("28_8ja0g")
+
+[node name="Label" type="Label" parent="UI/clickRemember" unique_id=826135911]
+layout_mode = 0
+offset_top = -57.0
+offset_right = 72.0
+offset_bottom = -12.0
+theme_override_font_sizes/font_size = 32
+text = "Click"
+
+[node name="zoomRemember" type="Control" parent="UI" unique_id=196933942]
+visible = false
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -28.0
+offset_right = 20.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.77, 0.77)
+size_flags_vertical = 4
+
+[node name="MouseLeftKeyLight" type="Sprite2D" parent="UI/zoomRemember" unique_id=1431706344]
+position = Vector2(-178.57141, -34.41565)
+texture = ExtResource("28_8ja0g")
+
+[node name="Label" type="Label" parent="UI/zoomRemember" unique_id=631906050]
+layout_mode = 0
+offset_left = -127.5714
+offset_top = -56.41565
+offset_right = -1.5714035
+offset_bottom = -11.415649
+theme_override_font_sizes/font_size = 32
+text = "Zoom In / Zoom Out"
+
+[node name="MouseRightKeyLight" type="Sprite2D" parent="UI/zoomRemember" unique_id=165684448]
+position = Vector2(233.76619, -35.064877)
+texture = ExtResource("29_nqjgh")
+
+[node name="textRemember" type="Control" parent="UI" unique_id=1798485177]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -28.0
+offset_right = 20.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.77, 0.77)
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="UI/textRemember" unique_id=1136193066]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = -179.905
+offset_right = 63.0
+offset_bottom = -134.90495
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+
+[node name="camera" type="Control" parent="UI" unique_id=995715571]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Line2D" type="Line2D" parent="UI/camera" unique_id=1869101793]
+position = Vector2(-920, -500)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D2" type="Line2D" parent="UI/camera" unique_id=153017583]
+position = Vector2(-915.145, -500)
+rotation = 1.5707964
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D3" type="Line2D" parent="UI/camera" unique_id=1225801212]
+position = Vector2(920, -500)
+rotation = 3.1415927
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D4" type="Line2D" parent="UI/camera" unique_id=1659448921]
+position = Vector2(915, -500)
+rotation = 1.5707964
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D5" type="Line2D" parent="UI/camera" unique_id=1385555663]
+position = Vector2(-920, 500)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D6" type="Line2D" parent="UI/camera" unique_id=378162893]
+position = Vector2(-915.145, 500)
+rotation = -1.5707964
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D7" type="Line2D" parent="UI/camera" unique_id=748118172]
+position = Vector2(920, 500)
+rotation = 3.1415927
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D8" type="Line2D" parent="UI/camera" unique_id=1379278877]
+position = Vector2(915, 500)
+rotation = -1.5707964
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D9" type="Line2D" parent="UI/camera" unique_id=2094857752]
+position = Vector2(-182.5, -180)
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D10" type="Line2D" parent="UI/camera" unique_id=1851188507]
+position = Vector2(-180, -180)
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D11" type="Line2D" parent="UI/camera" unique_id=58760516]
+position = Vector2(185, -180)
+rotation = 3.1415927
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D12" type="Line2D" parent="UI/camera" unique_id=493743945]
+position = Vector2(182.5, -180)
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D13" type="Line2D" parent="UI/camera" unique_id=911648549]
+position = Vector2(-182.5, 180)
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D14" type="Line2D" parent="UI/camera" unique_id=708527459]
+position = Vector2(-180, 180)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D15" type="Line2D" parent="UI/camera" unique_id=1882501942]
+position = Vector2(185, 180)
+rotation = 3.1415927
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="Line2D16" type="Line2D" parent="UI/camera" unique_id=1716885372]
+position = Vector2(182.5, 180)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(273.725, 0, 0, 0)
+
+[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]
