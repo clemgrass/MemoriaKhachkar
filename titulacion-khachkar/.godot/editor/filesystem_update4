@@ -1,8 +1,1 @@
-res://Player/UI/HUDOverlay.tscn
-res://Player/playerController.tscn
-res://Player/UI/HudOverlay.gd
-res://Player/UI/hudoverlay.tscn
-res://Player/player_controller.gd
 res://World/MainGame.tscn
-res://World/main_game.gd
-res://World/pause_menu.gd
