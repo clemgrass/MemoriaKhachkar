@@ -108,6 +108,42 @@ _surfaces = [{
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nttmd"]
 albedo_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bon7a"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.1764706)
+metallic = 0.1
+roughness = 0.1
+refraction_scale = 0.02
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d50lt"]
+albedo_color = Color(0.23031491, 0.23031494, 0.23031494, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a5rc1"]
+material = SubResource("StandardMaterial3D_d50lt")
+size = Vector3(0.1, 1.59, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6unu5"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5umqg"]
+material = SubResource("StandardMaterial3D_6unu5")
+size = Vector3(1, 0.1, 0.755)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijxxw"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_50pol"]
+material = SubResource("StandardMaterial3D_ijxxw")
+size = Vector3(1.02, 0.1, 0.15)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0j231"]
+emission_enabled = true
+emission = Color(1, 0.43137255, 0.09019608, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gn0up"]
+material = SubResource("StandardMaterial3D_0j231")
+size = Vector3(0.925, 0.025, 0.16)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_i3le6"]
 size = Vector3(12.005859, 5.1524963, 0.24804688)
 
@@ -188,7 +224,73 @@ spot_angle = 32.705063
 
 [node name="khachkar1" parent="lightK1" unique_id=497236083 instance=ExtResource("2_smiyn")]
 transform = Transform3D(0.2909655, -1.5345414, -1.249208, -0.26819852, 1.2204044, -1.5616276, 1.9604608, 0.39470774, -0.028233146, 1.8843141, -1.7920623, -3.9832883)
-visible = false
+
+[node name="windows1" type="Node3D" parent="lightK1" unique_id=193938737]
+transform = Transform3D(-0.6247888, -0.7672708, -0.14468679, -0.78064245, 0.61020225, 0.13509405, -0.015365524, 0.1973539, -0.9802118, 0.93389297, -0.49343655, -7.2968516)
+
+[node name="KhachkarWinProtect" type="CSGBox3D" parent="lightK1/windows1" unique_id=71001319]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, 1.5784132, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect2" type="CSGBox3D" parent="lightK1/windows1" unique_id=1612985150]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, -1.3699205, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect3" type="CSGBox3D" parent="lightK1/windows1" unique_id=415416879]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10416387, 1.0892022, -4.7269316)
+use_collision = true
+size = Vector3(2.7399216, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect4" type="CSGBox3D" parent="lightK1/windows1" unique_id=1175056657]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10528292, 1.0892022, -2.897356)
+use_collision = true
+size = Vector3(2.73349, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect5" type="CSGBox3D" parent="lightK1/windows1" unique_id=54323484]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10378331, 3.1976192, -3.8091915)
+use_collision = true
+size = Vector3(2.7351913, 0.1115967, 2.0239625)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="stand" type="MeshInstance3D" parent="lightK1" unique_id=1208888926]
+transform = Transform3D(0.6134264, -0.7672708, -0.187092, 0.6085092, 0.61020225, -0.5073162, 0.5034129, 0.1973539, 0.84120554, 2.3944786, 0.73000896, -1.8750919)
+mesh = SubResource("BoxMesh_a5rc1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="lightK1/stand" unique_id=1315537834]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0.8022804, 0)
+mesh = SubResource("BoxMesh_5umqg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="lightK1/stand" unique_id=23329165]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1250904, -0.19007754)
+mesh = SubResource("BoxMesh_50pol")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="lightK1/stand" unique_id=2075638932]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1171243, -0.19007754)
+mesh = SubResource("BoxMesh_gn0up")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lightK1/stand" unique_id=940500340]
+transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0.757557, 0.6512014, 0.004046321, 0.65200156, -0.75820684, 0.0006272793, 1.1493113, -0.16063166)
+light_color = Color(1, 0.43137255, 0.078431375, 1)
+light_energy = 2.811
+light_specular = 0.0
+spot_range = 0.9462184
+spot_angle = 89.99
+
+[node name="Label3D2" type="Label3D" parent="lightK1/stand" unique_id=618510973]
+transform = Transform3D(0.9999999, -5.9604645e-08, 1.7881393e-07, -1.16891655e-07, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.0023748875, 0.80539465, 0.07109976)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Artsakh
+Khachkar
+1"
+font_size = 141
 
 [node name="lightK2" type="SpotLight3D" parent="." unique_id=1160923728]
 transform = Transform3D(0.62251467, 0.78260815, 0, -0.7671682, 0.6102332, 0.19765735, 0.15468824, -0.12304459, 0.9802712, 1.9420576, 2.617868, -0.99886763)
@@ -200,7 +302,73 @@ spot_angle = 32.705063
 
 [node name="Khachkar2" parent="lightK2" unique_id=61044468 instance=ExtResource("2_ewkbf")]
 transform = Transform3D(0.31039768, -1.5343362, -1.2447749, -0.24480504, 1.2204663, -1.5654174, 1.9605415, 0.3953146, 0.0016083396, 1.6576269, -1.4895281, -4.3507395)
-visible = false
+
+[node name="windows2" type="Node3D" parent="lightK2" unique_id=1014320981]
+transform = Transform3D(0.6225146, -0.9666318, 0.15468822, 0.7826081, 0.7688937, -0.12304458, 0, 0.2490482, 0.9802711, 1.8277352, -1.5639503, -0.5117565)
+
+[node name="KhachkarWinProtect" type="CSGBox3D" parent="lightK2/windows2" unique_id=1595618899]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, 1.5784132, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect2" type="CSGBox3D" parent="lightK2/windows2" unique_id=27742577]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, -1.3699205, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect3" type="CSGBox3D" parent="lightK2/windows2" unique_id=1526297215]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10416387, 1.0892022, -4.7269316)
+use_collision = true
+size = Vector3(2.7399216, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect4" type="CSGBox3D" parent="lightK2/windows2" unique_id=188736810]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10528292, 1.0892022, -2.897356)
+use_collision = true
+size = Vector3(2.73349, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect5" type="CSGBox3D" parent="lightK2/windows2" unique_id=987748173]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10378331, 3.1976192, -3.8091915)
+use_collision = true
+size = Vector3(2.7351913, 0.1115967, 2.0239625)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="stand2" type="MeshInstance3D" parent="lightK2" unique_id=1113256484]
+transform = Transform3D(0.46176937, -0.7671681, 0.4452212, 0.7392807, 0.6102331, 0.28474423, -0.49013543, 0.1976573, 0.84893966, -0.33385402, -2.5396786, -2.3687143)
+mesh = SubResource("BoxMesh_a5rc1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="lightK2/stand2" unique_id=1321965175]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0.8022804, 0)
+mesh = SubResource("BoxMesh_5umqg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="lightK2/stand2" unique_id=418392958]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1250904, -0.19007754)
+mesh = SubResource("BoxMesh_50pol")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="lightK2/stand2" unique_id=1721858757]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1171243, -0.19007754)
+mesh = SubResource("BoxMesh_gn0up")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lightK2/stand2" unique_id=469387886]
+transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0.757557, 0.6512014, 0.004046321, 0.65200156, -0.75820684, 0.0006272793, 1.1493113, -0.16063166)
+light_color = Color(1, 0.43137255, 0.078431375, 1)
+light_energy = 2.811
+light_specular = 0.0
+spot_range = 0.9462184
+spot_angle = 89.99
+
+[node name="Label3D2" type="Label3D" parent="lightK2/stand2" unique_id=910539737]
+transform = Transform3D(0.9999999, -5.9604645e-08, 1.7881393e-07, -1.16891655e-07, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.0023748875, 0.80539465, 0.07109976)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Artsakh
+Khachkar
+2"
+font_size = 141
 
 [node name="lightK3" type="SpotLight3D" parent="." unique_id=1386856131]
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 5.741802, 2.617868, 1.1899415)
@@ -212,7 +380,73 @@ spot_angle = 32.705063
 
 [node name="Khachkar3" parent="lightK3" unique_id=960770345 instance=ExtResource("3_smiyn")]
 transform = Transform3D(0.2898534, -1.5345416, -1.2494664, -0.2695885, 1.2204045, -1.5613885, 1.9604353, 0.3947078, -0.02997821, 1.9324362, -1.6802304, -4.1723256)
-visible = false
+
+[node name="windows3" type="Node3D" parent="lightK3" unique_id=1283932330]
+transform = Transform3D(-0.6247888, -0.96676123, -0.14468679, -0.78064245, 0.76885486, 0.13509405, -0.015365524, 0.24866591, -0.9802118, 0.8588939, -0.47592306, -7.642581)
+
+[node name="KhachkarWinProtect" type="CSGBox3D" parent="lightK3/windows3" unique_id=431366654]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, 1.5784132, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect2" type="CSGBox3D" parent="lightK3/windows3" unique_id=1879638183]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, -1.3699205, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect3" type="CSGBox3D" parent="lightK3/windows3" unique_id=1815909586]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10416387, 1.0892022, -4.7269316)
+use_collision = true
+size = Vector3(2.7399216, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect4" type="CSGBox3D" parent="lightK3/windows3" unique_id=1014127156]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10528292, 1.0892022, -2.897356)
+use_collision = true
+size = Vector3(2.73349, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect5" type="CSGBox3D" parent="lightK3/windows3" unique_id=62979885]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10378331, 3.1976192, -3.8091915)
+use_collision = true
+size = Vector3(2.7351913, 0.1115967, 2.0239625)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="stand3" type="MeshInstance3D" parent="lightK3" unique_id=666624608]
+transform = Transform3D(0.62478876, -0.7672708, 0.14468676, 0.7806424, 0.61020225, -0.13509406, 0.015365552, 0.1973539, 0.98021173, 1.7674685, -1.2060406, -1.5097331)
+mesh = SubResource("BoxMesh_a5rc1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="lightK3/stand3" unique_id=952793951]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0.8022804, 0)
+mesh = SubResource("BoxMesh_5umqg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="lightK3/stand3" unique_id=84333092]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1250904, -0.19007754)
+mesh = SubResource("BoxMesh_50pol")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="lightK3/stand3" unique_id=402418596]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1171243, -0.19007754)
+mesh = SubResource("BoxMesh_gn0up")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lightK3/stand3" unique_id=2121546845]
+transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0.757557, 0.6512014, 0.004046321, 0.65200156, -0.75820684, 0.0006272793, 1.1493113, -0.16063166)
+light_color = Color(1, 0.43137255, 0.078431375, 1)
+light_energy = 2.811
+light_specular = 0.0
+spot_range = 0.9462184
+spot_angle = 89.99
+
+[node name="Label3D2" type="Label3D" parent="lightK3/stand3" unique_id=116385582]
+transform = Transform3D(0.9999999, -5.9604645e-08, 1.7881393e-07, -1.16891655e-07, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.0023748875, 0.80539465, 0.07109976)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Artsakh
+Khachkar
+3"
+font_size = 141
 
 [node name="lightK4" type="SpotLight3D" parent="." unique_id=15557646]
 transform = Transform3D(0.6225147, 0.78260815, 1.1698804e-08, -0.7671682, 0.6102332, 0.19765736, 0.15468825, -0.1230446, 0.9802712, 6.2359805, 2.617868, -1.1598448)
@@ -224,7 +458,72 @@ spot_angle = 32.705063
 
 [node name="Khachkar4" parent="lightK4" unique_id=1903476150 instance=ExtResource("4_yutx4")]
 transform = Transform3D(1.2442696, -1.5343362, 0.31241772, 1.5658128, 1.2204664, -0.24226394, -0.0047904965, 0.3953147, 1.9605364, 2.1100266, -1.6122103, -1.833961)
-visible = false
+
+[node name="windows4" type="Node3D" parent="lightK4" unique_id=2007540045]
+transform = Transform3D(0.6225146, -0.9666318, 0.15468822, 0.7826081, 0.76889384, -0.12304461, 7.4505797e-09, 0.24904825, 0.9802711, 1.829813, -1.6097956, -0.3621515)
+
+[node name="KhachkarWinProtect" type="CSGBox3D" parent="lightK4/windows4" unique_id=390112020]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, 1.5784132, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect2" type="CSGBox3D" parent="lightK4/windows4" unique_id=1653730935]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, -1.3699205, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect3" type="CSGBox3D" parent="lightK4/windows4" unique_id=278406929]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10416387, 1.0892022, -4.7269316)
+use_collision = true
+size = Vector3(2.7399216, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect4" type="CSGBox3D" parent="lightK4/windows4" unique_id=2049164654]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10528292, 1.0892022, -2.897356)
+use_collision = true
+size = Vector3(2.73349, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect5" type="CSGBox3D" parent="lightK4/windows4" unique_id=638319408]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10378331, 3.1976192, -3.8091915)
+use_collision = true
+size = Vector3(2.7351913, 0.1115967, 2.0239625)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="stand4" type="MeshInstance3D" parent="lightK4" unique_id=935361826]
+transform = Transform3D(0.62251455, -0.7671681, 0.15468821, 0.782608, 0.6102332, -0.123044595, 7.450579e-09, 0.19765735, 0.980271, 1.6793654, -1.3056059, -1.5420029)
+mesh = SubResource("BoxMesh_a5rc1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="lightK4/stand4" unique_id=1583468203]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0.8022804, 0)
+mesh = SubResource("BoxMesh_5umqg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="lightK4/stand4" unique_id=2096516845]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1250904, -0.19007754)
+mesh = SubResource("BoxMesh_50pol")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="lightK4/stand4" unique_id=813985616]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1171243, -0.19007754)
+mesh = SubResource("BoxMesh_gn0up")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lightK4/stand4" unique_id=510118716]
+transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0.757557, 0.6512014, 0.004046321, 0.65200156, -0.75820684, 0.0006272793, 1.1493113, -0.16063166)
+light_color = Color(1, 0.43137255, 0.078431375, 1)
+light_energy = 2.811
+light_specular = 0.0
+spot_range = 0.9462184
+spot_angle = 89.99
+
+[node name="Label3D2" type="Label3D" parent="lightK4/stand4" unique_id=513177530]
+transform = Transform3D(0.9999999, -5.9604645e-08, 1.7881393e-07, -1.16891655e-07, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.0023748875, 0.80539465, 0.07109976)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Haghpat
+Khachkar"
+font_size = 141
 
 [node name="lightK5" type="SpotLight3D" parent="." unique_id=1247751707]
 transform = Transform3D(-0.6247889, -0.78064257, -0.015365523, -0.7672709, 0.61020225, 0.19735393, -0.1446868, 0.13509405, -0.9802119, 9.3561535, 2.617868, 1.2540892)
@@ -234,9 +533,74 @@ shadow_enabled = true
 spot_range = 5.717404
 spot_angle = 32.705063
 
+[node name="stand5" type="MeshInstance3D" parent="lightK5" unique_id=266130122]
+transform = Transform3D(0.5660519, -0.7672707, 0.30146396, 0.78900754, 0.6102022, 0.0715543, -0.23885553, 0.19735387, 0.9507887, -0.3193407, -2.5927415, -2.1521797)
+mesh = SubResource("BoxMesh_a5rc1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="lightK5/stand5" unique_id=752481072]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0.8022804, 0)
+mesh = SubResource("BoxMesh_5umqg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="lightK5/stand5" unique_id=1234410842]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1250904, -0.19007754)
+mesh = SubResource("BoxMesh_50pol")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="lightK5/stand5" unique_id=1414455658]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1171243, -0.19007754)
+mesh = SubResource("BoxMesh_gn0up")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lightK5/stand5" unique_id=72017539]
+transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0.757557, 0.6512014, 0.004046321, 0.65200156, -0.75820684, 0.0006272793, 1.1493113, -0.16063166)
+light_color = Color(1, 0.43137255, 0.078431375, 1)
+light_energy = 2.811
+light_specular = 0.0
+spot_range = 0.9462184
+spot_angle = 89.99
+
+[node name="Label3D2" type="Label3D" parent="lightK5/stand5" unique_id=2074682042]
+transform = Transform3D(0.9999999, -5.9604645e-08, 1.7881393e-07, -1.16891655e-07, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.0023748875, 0.80539465, 0.07109976)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Haghartsin
+Khachkar"
+font_size = 141
+
 [node name="Khachkar5" parent="lightK5" unique_id=1741839314 instance=ExtResource("5_ebdpw")]
 transform = Transform3D(0.2884141, -1.5345416, -1.2497995, -0.27138674, 1.2204045, -1.561077, 1.9603994, 0.3947078, -0.03223622, 1.7494502, -1.800569, -3.9962952)
-visible = false
+
+[node name="windows5" type="Node3D" parent="lightK5" unique_id=1798690115]
+transform = Transform3D(-0.6247888, -0.96676123, -0.14468679, -0.78064245, 0.76885486, 0.13509405, -0.015365524, 0.24866591, -0.9802118, 0.8737416, -0.45834208, -7.6392126)
+
+[node name="KhachkarWinProtect" type="CSGBox3D" parent="lightK5/windows5" unique_id=507311930]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, 1.5784132, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect2" type="CSGBox3D" parent="lightK5/windows5" unique_id=1113512046]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, -1.3699205, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect3" type="CSGBox3D" parent="lightK5/windows5" unique_id=1753184678]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10416387, 1.0892022, -4.7269316)
+use_collision = true
+size = Vector3(2.7399216, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect4" type="CSGBox3D" parent="lightK5/windows5" unique_id=231592557]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10528292, 1.0892022, -2.897356)
+use_collision = true
+size = Vector3(2.73349, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect5" type="CSGBox3D" parent="lightK5/windows5" unique_id=644929788]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10378331, 3.1976192, -3.8091915)
+use_collision = true
+size = Vector3(2.7351913, 0.1115967, 2.0239625)
+material = SubResource("StandardMaterial3D_bon7a")
 
 [node name="lightK6" type="SpotLight3D" parent="." unique_id=1678764267]
 transform = Transform3D(0.62251467, 0.78260815, 9.276191e-09, -0.7671682, 0.6102332, 0.19765733, 0.15468824, -0.12304459, 0.9802712, 9.174454, 2.617868, -1.1598448)
@@ -248,7 +612,73 @@ spot_angle = 41.025345
 
 [node name="Kachkar6" parent="lightK6" unique_id=2029568894 instance=ExtResource("6_sfs07")]
 transform = Transform3D(0.46566203, -2.3015044, -1.8671463, -0.3671253, 1.8306994, -2.3481393, 2.9408123, 0.5929719, 0.0025155777, -3.1805525, -6.7676888, -4.062951)
-visible = false
+
+[node name="windows6" type="Node3D" parent="lightK6" unique_id=486324062]
+transform = Transform3D(0.4295351, -1.0740353, 0.15468822, 0.5399996, 0.85432637, -0.12304458, 0, 0.27672023, 0.9802711, 1.9561193, -1.458158, -0.3408876)
+
+[node name="KhachkarWinProtect" type="CSGBox3D" parent="lightK6/windows6" unique_id=142904719]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, 1.5784132, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect2" type="CSGBox3D" parent="lightK6/windows6" unique_id=32989474]
+transform = Transform3D(-5.1914064e-08, 0, 1.01463, 0, 1.5, 0, -1.1876553, 0, -4.4350884e-08, -1.3699205, 1.0892022, -3.7173629)
+use_collision = true
+size = Vector3(1.5827637, 2.7, 0.3)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect3" type="CSGBox3D" parent="lightK6/windows6" unique_id=209777586]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10416387, 1.0892022, -4.7269316)
+use_collision = true
+size = Vector3(2.7399216, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect4" type="CSGBox3D" parent="lightK6/windows6" unique_id=1335211267]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10528292, 1.0892022, -2.897356)
+use_collision = true
+size = Vector3(2.73349, 2.7, 0.2310547)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="KhachkarWinProtect5" type="CSGBox3D" parent="lightK6/windows6" unique_id=1750263338]
+transform = Transform3D(1.1876553, 0, 0, 0, 1.5, 0, 0, 0, 1.01463, 0.10378331, 3.1976192, -3.8091915)
+use_collision = true
+size = Vector3(2.7351913, 0.1115967, 2.0239625)
+material = SubResource("StandardMaterial3D_bon7a")
+
+[node name="stand6" type="MeshInstance3D" parent="lightK6" unique_id=1929648227]
+transform = Transform3D(0.6164574, -0.7671679, -0.17729343, 0.616236, 0.610233, -0.4978638, 0.4901356, 0.19765726, 0.8489394, 2.3246577, 0.75141525, -2.2109132)
+mesh = SubResource("BoxMesh_a5rc1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="lightK6/stand6" unique_id=1078551401]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0.8022804, 0)
+mesh = SubResource("BoxMesh_5umqg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="lightK6/stand6" unique_id=5400446]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1250904, -0.19007754)
+mesh = SubResource("BoxMesh_50pol")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="lightK6/stand6" unique_id=670095929]
+transform = Transform3D(1, 0, 0, 0, 0.7071067, -0.7071067, 0, 0.7071067, 0.7071067, 0.008383155, 1.1171243, -0.19007754)
+mesh = SubResource("BoxMesh_gn0up")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="lightK6/stand6" unique_id=1690941870]
+transform = Transform3D(-0.99896926, -0.031645775, -0.032544196, -0.045212865, 0.757557, 0.6512014, 0.004046321, 0.65200156, -0.75820684, 0.0006272793, 1.1493113, -0.16063166)
+light_color = Color(1, 0.43137255, 0.078431375, 1)
+light_energy = 2.811
+light_specular = 0.0
+spot_range = 0.9462184
+spot_angle = 89.99
+
+[node name="Label3D2" type="Label3D" parent="lightK6/stand6" unique_id=1176976403]
+transform = Transform3D(0.9999999, -5.9604645e-08, 1.7881393e-07, -1.16891655e-07, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.0023748875, 0.80539465, 0.07109976)
+pixel_size = 0.001
+shaded = true
+outline_modulate = Color(0.45490196, 0.49019608, 0.5568628, 1)
+text = "Echmiadzin
+Khachkar
+"
+font_size = 141
 
 [node name="roomB" type="StaticBody3D" parent="." unique_id=427308374]
 
