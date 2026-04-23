@@ -1,0 +1,480 @@
+[gd_scene format=3 uid="uid://bipgyxtev7ae"]
+
+[ext_resource type="Texture2D" uid="uid://vyq1ve03dq4i" path="res://Terrain/Textures/bark_willow_02_4k.blend/textures/bark_willow_02_diff_4k.jpg" id="1_rwp37"]
+[ext_resource type="Texture2D" uid="uid://bg8j0045vqcgw" path="res://Terrain/Textures/LeafSet029.png" id="2_6klpc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yksep"]
+albedo_texture = ExtResource("1_rwp37")
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_55j3r"]
+material = SubResource("StandardMaterial3D_yksep")
+top_radius = 1.7
+bottom_radius = 2.0
+height = 6.0
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5gu30"]
+albedo_texture = ExtResource("1_rwp37")
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gk7g4"]
+material = SubResource("StandardMaterial3D_5gu30")
+top_radius = 1.0
+bottom_radius = 1.5
+height = 6.0
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c77ll"]
+albedo_texture = ExtResource("1_rwp37")
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rwp37"]
+material = SubResource("StandardMaterial3D_c77ll")
+top_radius = 0.85
+bottom_radius = 1.0
+height = 3.0
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1t8b0"]
+albedo_texture = ExtResource("1_rwp37")
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6klpc"]
+material = SubResource("StandardMaterial3D_1t8b0")
+bottom_radius = 0.75
+height = 3.0
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp14g"]
+albedo_texture = ExtResource("1_rwp37")
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yksep"]
+material = SubResource("StandardMaterial3D_kp14g")
+bottom_radius = 0.75
+height = 3.0
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ecl7"]
+albedo_texture = ExtResource("1_rwp37")
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5gu30"]
+material = SubResource("StandardMaterial3D_1ecl7")
+bottom_radius = 0.75
+height = 3.0
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3iggs"]
+transparency = 1
+albedo_color = Color(0.646029, 0.646029, 0.646029, 1)
+albedo_texture = ExtResource("2_6klpc")
+uv1_scale = Vector3(4.78, 4.78, 4.78)
+uv1_offset = Vector3(2.28, 0, 0)
+
+[sub_resource type="SphereMesh" id="SphereMesh_c77ll"]
+material = SubResource("StandardMaterial3D_3iggs")
+radius = 5.0
+height = 10.0
+radial_segments = 5
+rings = 3
+
+[node name="tree2_0" type="Node3D" unique_id=133689692]
+
+[node name="trunk" type="Node3D" parent="." unique_id=345072032]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="trunk" unique_id=332793237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+mesh = SubResource("CylinderMesh_55j3r")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="trunk" unique_id=1242293735]
+transform = Transform3D(0.9527113, -0.28913775, 0.093492605, 0.30293125, 0.92793715, -0.21717568, -0.023961585, 0.2352275, 0.97164506, -1.0195609, 8.204948, 0.60689116)
+mesh = SubResource("CylinderMesh_gk7g4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="trunk" unique_id=277521478]
+transform = Transform3D(0.86945325, 0.3872564, -0.3067304, -0.46053267, 0.86005723, -0.21957013, 0.17877577, 0.33216527, 0.9261239, 1.4273542, 8.204948, 1.2905219)
+mesh = SubResource("CylinderMesh_gk7g4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="trunk" unique_id=1899429422]
+transform = Transform3D(-0.08351709, 0.20428151, 0.97534317, -0.46053278, 0.86005735, -0.21957017, -0.88370526, -0.46751523, 0.022248864, 0.79596364, 8.204948, -1.4719603)
+mesh = SubResource("CylinderMesh_gk7g4")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="trunk" unique_id=2092093831]
+transform = Transform3D(-0.50864226, 0.2596665, -0.82088757, -0.11928152, 0.92298895, 0.3658734, 0.8526752, 0.28401533, -0.43849775, 2.8209805, 11.782227, 2.5170698)
+mesh = SubResource("CylinderMesh_rwp37")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="trunk" unique_id=978879133]
+transform = Transform3D(-0.3862583, 0.1949265, -0.9015588, 0.15719442, 0.9770279, 0.14389634, 0.9088974, -0.086138934, -0.40802655, 3.5293517, 14.574874, 2.6897774)
+mesh = SubResource("CylinderMesh_6klpc")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="trunk" unique_id=1439639645]
+transform = Transform3D(-0.70858043, -0.24631736, -0.6612427, -0.463367, 0.8691612, 0.17277054, 0.5321701, 0.4288197, -0.730006, 2.780769, 14.509248, 3.5874534)
+mesh = SubResource("CylinderMesh_yksep")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="trunk" unique_id=1842973192]
+transform = Transform3D(0.64831805, 0.50319934, -0.57137954, -0.73842883, 0.598405, -0.310861, 0.18549144, 0.6234595, 0.7595335, 4.056209, 14.000277, 4.0608435)
+mesh = SubResource("CylinderMesh_5gu30")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="trunk" unique_id=831916659]
+transform = Transform3D(-0.50864226, 0.2596665, -0.82088757, -0.11928152, 0.92298895, 0.3658734, 0.8526752, 0.28401533, -0.43849775, 2.8209805, 11.782227, 2.5170698)
+mesh = SubResource("CylinderMesh_rwp37")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="trunk" unique_id=649153759]
+transform = Transform3D(-0.3862583, 0.1949265, -0.9015588, 0.15719442, 0.9770279, 0.14389634, 0.9088974, -0.086138934, -0.40802655, 3.5293517, 14.574874, 2.6897774)
+mesh = SubResource("CylinderMesh_6klpc")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="trunk" unique_id=976148639]
+transform = Transform3D(-0.70858043, -0.24631736, -0.6612427, -0.463367, 0.8691612, 0.17277054, 0.5321701, 0.4288197, -0.730006, 2.780769, 14.509248, 3.5874534)
+mesh = SubResource("CylinderMesh_yksep")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="trunk" unique_id=1789587425]
+transform = Transform3D(0.64831805, 0.50319934, -0.57137954, -0.73842883, 0.598405, -0.310861, 0.18549144, 0.6234595, 0.7595335, 4.056209, 14.000277, 4.0608435)
+mesh = SubResource("CylinderMesh_5gu30")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="trunk" unique_id=161429246]
+transform = Transform3D(0.96892977, 0.18863344, -0.15997675, -0.11928152, 0.9229891, 0.36587346, 0.21667275, -0.33542338, 0.91681194, 1.6461418, 11.986495, -3.2362728)
+mesh = SubResource("CylinderMesh_rwp37")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="trunk" unique_id=2146854340]
+transform = Transform3D(0.98408645, -0.14274508, -0.10581949, 0.15719442, 0.9770279, 0.14389634, 0.0828481, -0.15824065, 0.98391885, 1.7183285, 14.779142, -4.0573077)
+mesh = SubResource("CylinderMesh_6klpc")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="trunk" unique_id=1642284938]
+transform = Transform3D(0.72696733, 0.48432118, -0.48677677, -0.46336696, 0.8691612, 0.17277056, 0.5067641, 0.099957794, 0.85627043, 2.804994, 14.713516, -3.6267784)
+mesh = SubResource("CylinderMesh_yksep")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="trunk" unique_id=499542490]
+transform = Transform3D(-0.02642177, 0.43496144, 0.9000615, -0.73842883, 0.598405, -0.310861, -0.673814, -0.6728446, 0.30537724, 2.8560524, 14.204545, -4.9862776)
+mesh = SubResource("CylinderMesh_5gu30")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="trunk" unique_id=85852303]
+transform = Transform3D(-0.86686623, -0.27647677, 0.41485375, -0.11928155, 0.9229892, 0.36587346, -0.484061, 0.2676789, -0.83308667, -2.1860898, 11.986495, 1.5618067)
+mesh = SubResource("CylinderMesh_rwp37")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="trunk" unique_id=535667911]
+transform = Transform3D(-0.9195671, 0.09167563, 0.38208908, 0.1571944, 0.9770279, 0.14389633, -0.3601199, 0.19238457, -0.9128538, -2.3138387, 14.779142, 2.367763)
+mesh = SubResource("CylinderMesh_6klpc")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="trunk" unique_id=569452711]
+transform = Transform3D(-0.5522073, -0.4356853, 0.7108062, -0.4633669, 0.8691611, 0.17277053, -0.69307905, -0.23395899, -0.6818396, -3.2325459, 14.713516, 1.6451463)
+mesh = SubResource("CylinderMesh_yksep")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="trunk" unique_id=415018131]
+transform = Transform3D(-0.16688374, -0.6088209, -0.77555597, -0.7384287, 0.598405, -0.31086096, 0.6533554, 0.5208151, -0.549435, -3.6692846, 14.204545, 2.9335966)
+mesh = SubResource("CylinderMesh_5gu30")
+
+[node name="leaves" type="Node3D" parent="." unique_id=311297405]
+transform = Transform3D(1.79, 0, 0, 0, 1.79, 0, 0, 0, 1.79, 0, -13.7900305, -0.10481262)
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="leaves" unique_id=1096182725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6156006, 18.33061, 6.753531)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="leaves" unique_id=1398997436]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6156006, 19.63534, 0.95163584)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="leaves" unique_id=2090182674]
+transform = Transform3D(0.76909846, 0, 0.6391303, -0.34973085, 0.8370032, 0.42084917, -0.5349541, -0.54719806, 0.64373785, 3.1300163, 19.672045, -2.3553863)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="leaves" unique_id=146367941]
+transform = Transform3D(0.76909846, 0, 0.6391303, -0.34973085, 0.8370032, 0.42084917, -0.5349541, -0.54719806, 0.64373785, 2.4977956, 18.550713, -6.804231)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="leaves" unique_id=1808324626]
+transform = Transform3D(-0.934111, 0, -0.35698262, 0, 1, 0, 0.35698262, 0, -0.934111, 0.06744003, 26.24227, -1.159215)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="leaves" unique_id=903317084]
+transform = Transform3D(-0.934111, 0, -0.35698262, 0, 1, 0, 0.35698262, 0, -0.934111, -5.0932403, 19.370016, 3.3523426)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="leaves" unique_id=1525598402]
+transform = Transform3D(-0.527454, 0.19534019, -0.82682186, -0.3497308, 0.8370031, 0.4208491, 0.77426124, 0.51114374, -0.3731642, -0.6567683, 19.406721, 5.197174)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="leaves" unique_id=1165029014]
+transform = Transform3D(-0.527454, 0.19534019, -0.82682186, -0.3497308, 0.8370031, 0.4208491, 0.77426124, 0.51114374, -0.3731642, 1.5219564, 19.041887, 9.127197)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="leaves" unique_id=620300393]
+transform = Transform3D(1, 0, 0, 0, -0.8816497, -0.47190455, 0, 0.47190455, -0.8816497, -1.8696842, 20.01132, -5.7145596)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="leaves" unique_id=498435288]
+transform = Transform3D(1, 0, 0, 0, -0.8816497, -0.47190455, 0, 0.47190455, -0.8816497, 1.5743065, 24.101887, 2.741244)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="leaves" unique_id=465826508]
+transform = Transform3D(0.76909846, 0, 0.6391303, 0.5607873, -0.4797183, -0.6748243, 0.3066025, 0.8774226, -0.36895064, -4.337145, 23.49854, -0.21741486)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="leaves" unique_id=1789764749]
+transform = Transform3D(0.76909846, 0, 0.6391303, 0.5607873, -0.4797183, -0.6748243, 0.3066025, 0.8774226, -0.36895064, 2.8761106, 23.83699, -2.4662552)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D36" type="MeshInstance3D" parent="leaves" unique_id=1497402076]
+transform = Transform3D(-0.5274541, 0.19534016, -0.82682186, -0.057037354, -0.9791546, -0.19494356, -0.8476666, -0.05566418, 0.5276008, 3.9057903, 21.066742, 6.0492954)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="leaves" unique_id=21714789]
+transform = Transform3D(-0.8559785, 0, 0.51701146, 0, 1, 0, -0.51701146, 0, -0.8559785, -0.38050377, 18.33061, -6.3246565)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D34" type="MeshInstance3D" parent="leaves" unique_id=579713897]
+transform = Transform3D(-0.8559785, 0, 0.51701146, 0, 1, 0, -0.51701146, 0, -0.8559785, -3.3801503, 19.63534, -1.3583589)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D35" type="MeshInstance3D" parent="leaves" unique_id=301329428]
+transform = Transform3D(-0.9349091, -0.28290766, -0.21426192, -0.3497308, 0.8370031, 0.4208491, 0.06027645, 0.46838975, -0.8814634, -2.1063333, 19.672045, 3.274468)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D37" type="MeshInstance3D" parent="leaves" unique_id=1343222615]
+transform = Transform3D(-0.9349091, -0.28290766, -0.21426192, -0.3497308, 0.8370031, 0.4208491, 0.06027645, 0.46838975, -0.8814634, -3.8652697, 18.550713, 7.409449)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D38" type="MeshInstance3D" parent="leaves" unique_id=1688918601]
+transform = Transform3D(0.98414314, 0, -0.17737666, 0, 1, 0, 0.17737666, 0, 0.98414314, 1.1336005, 26.24227, 3.833958)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D39" type="MeshInstance3D" parent="leaves" unique_id=1007248022]
+transform = Transform3D(0.98414314, 0, -0.17737666, 0, 1, 0, 0.17737666, 0, 0.98414314, 7.8835588, 19.370016, 2.6402926)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D40" type="MeshInstance3D" parent="leaves" unique_id=236410918]
+transform = Transform3D(0.85179126, 0.09706022, 0.5148115, -0.3497308, 0.8370031, 0.4208491, -0.3900512, -0.5385212, 0.7468969, 5.039833, 19.406721, -1.2325501)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D41" type="MeshInstance3D" parent="leaves" unique_id=492302709]
+transform = Transform3D(0.85179126, 0.09706022, 0.5148115, -0.3497308, 0.8370031, 0.4208491, -0.3900512, -0.5385212, 0.7468969, 5.2067585, 19.041887, -5.722991)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D42" type="MeshInstance3D" parent="leaves" unique_id=596176255]
+transform = Transform3D(-0.8559785, 0.24398006, -0.45582297, 0, -0.8816497, -0.47190455, -0.51701146, -0.40394014, 0.7546732, 0.43657172, 20.01132, 8.734751)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D43" type="MeshInstance3D" parent="leaves" unique_id=646659754]
+transform = Transform3D(-0.8559785, 0.24398006, -0.45582297, 0, -0.8816497, -0.47190455, -0.51701146, -0.40394014, 0.7546732, 1.8603373, 24.101887, -0.28381824)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D44" type="MeshInstance3D" parent="leaves" unique_id=680280182]
+transform = Transform3D(-0.49981475, 0.45363757, -0.7378335, 0.5607874, -0.47971836, -0.67482436, -0.66007787, -0.7510548, -0.01462388, 5.3907514, 23.49854, 5.305018)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D45" type="MeshInstance3D" parent="leaves" unique_id=22529791]
+transform = Transform3D(-0.49981475, 0.45363757, -0.7378335, 0.5607874, -0.47971836, -0.67482436, -0.66007787, -0.7510548, -0.01462388, -1.9463159, 23.83699, 3.5006413)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D46" type="MeshInstance3D" parent="leaves" unique_id=437676277]
+transform = Transform3D(0.013235986, -0.19598594, 0.9805174, -0.05703736, -0.9791547, -0.19494358, 0.99828434, -0.053345777, -0.02413857, 1.5749375, 21.066742, -4.320843)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D47" type="MeshInstance3D" parent="leaves" unique_id=1016153355]
+transform = Transform3D(-0.20692143, 0, 0.97835755, 0, 1, 0, -0.97835755, 0, -0.20692143, 5.6394644, 18.33061, -5.1670613)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D48" type="MeshInstance3D" parent="leaves" unique_id=446220426]
+transform = Transform3D(-0.20692143, 0, 0.97835755, 0, 1, 0, -0.97835755, 0, -0.20692143, -0.036863446, 19.63534, -3.966525)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D49" type="MeshInstance3D" parent="leaves" unique_id=1371542303]
+transform = Transform3D(-0.6825193, -0.5353553, 0.49755606, -0.3497308, 0.8370031, 0.4208491, -0.6417598, 0.113226995, -0.7585011, -2.5510716, 19.672045, 0.12791681)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D50" type="MeshInstance3D" parent="leaves" unique_id=1456856005]
+transform = Transform3D(-0.6825193, -0.5353553, 0.49755606, -0.3497308, 0.8370031, 0.4208491, -0.6417598, 0.113226995, -0.7585011, -6.7728124, 18.550713, 1.667016)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D51" type="MeshInstance3D" parent="leaves" unique_id=850736820]
+transform = Transform3D(0.54254436, 0, -0.8400273, 0, 1, 0, 0.8400273, 0, 0.54254436, -0.74707544, 26.24227, 2.876698)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D52" type="MeshInstance3D" parent="leaves" unique_id=1569950466]
+transform = Transform3D(0.54254436, 0, -0.8400273, 0, 1, 0, 0.8400273, 0, 0.54254436, 4.734696, 19.370016, 6.9921503)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D53" type="MeshInstance3D" parent="leaves" unique_id=1319028334]
+transform = Transform3D(0.8666458, 0.4596613, -0.1940009, -0.3497308, 0.8370031, 0.4208491, 0.35582736, -0.2968791, 0.8861431, 5.6215997, 19.406721, 2.2699594)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D54" type="MeshInstance3D" parent="leaves" unique_id=688704956]
+transform = Transform3D(0.8666458, 0.4596613, -0.1940009, -0.3497308, 0.8370031, 0.4208491, 0.35582736, -0.2968791, 0.8861431, 9.015743, 19.041887, -0.6748183)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D55" type="MeshInstance3D" parent="leaves" unique_id=1365140360]
+transform = Transform3D(-0.20692143, 0.46169138, -0.8625686, 0, -0.8816497, -0.47190455, -0.97835755, -0.09764716, 0.1824322, -4.8029985, 20.01132, 5.714496)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D56" type="MeshInstance3D" parent="leaves" unique_id=1006359470]
+transform = Transform3D(-0.20692143, 0.46169138, -0.8625686, 0, -0.8816497, -0.47190455, -0.97835755, -0.09764716, 0.1824322, 2.757165, 24.101887, 0.59535515)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D57" type="MeshInstance3D" parent="leaves" unique_id=2128892972]
+transform = Transform3D(0.14082389, 0.858433, -0.49321538, 0.5607874, -0.47971836, -0.67482436, -0.8158959, -0.18155754, -0.5489542, 1.0857447, 23.49854, 6.991078)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D58" type="MeshInstance3D" parent="leaves" unique_id=1093126440]
+transform = Transform3D(0.14082389, 0.858433, -0.49321538, 0.5607874, -0.47971836, -0.67482436, -0.8158959, -0.18155754, -0.5489542, -2.6070023, 23.83699, 0.3992685)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D59" type="MeshInstance3D" parent="leaves" unique_id=1891999433]
+transform = Transform3D(-0.7201795, -0.09487949, 0.68726945, -0.05703736, -0.9791547, -0.19494358, 0.6914391, -0.17959444, 0.6997556, 5.511188, 21.066742, -2.3701766)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D60" type="MeshInstance3D" parent="leaves" unique_id=2087345896]
+transform = Transform3D(0.92674524, 0, -0.37569043, 0, 1, 0, 0.37569043, 0, 0.92674524, 4.1353245, 18.33061, 8.344423)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D61" type="MeshInstance3D" parent="leaves" unique_id=538322827]
+transform = Transform3D(0.92674524, 0, -0.37569043, 0, 1, 0, 0.37569043, 0, 0.92674524, 6.315041, 19.63534, 2.967544)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D62" type="MeshInstance3D" parent="leaves" unique_id=29841638]
+transform = Transform3D(0.9137355, 0.20557706, 0.35046482, -0.3497308, 0.8370031, 0.4208491, -0.2068232, -0.5071132, 0.83669615, 4.327209, 19.672045, -1.4067235)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D63" type="MeshInstance3D" parent="leaves" unique_id=777106397]
+transform = Transform3D(0.9137355, 0.20557706, 0.35046482, -0.3497308, 0.8370031, 0.4208491, -0.2068232, -0.5071132, 0.83669615, 5.41269, 18.550713, -5.7671885)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D64" type="MeshInstance3D" parent="leaves" unique_id=1457524583]
+transform = Transform3D(-0.999798, 0, 0.020104617, 0, 1, 0, -0.020104617, 0, -0.999798, 1.0395911, 26.24227, -1.4487581)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D65" type="MeshInstance3D" parent="leaves" unique_id=491840123]
+transform = Transform3D(-0.999798, 0, 0.020104617, 0, 1, 0, -0.020104617, 0, -0.999798, -5.437994, 19.370016, 0.79348826)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D66" type="MeshInstance3D" parent="leaves" unique_id=271125542]
+transform = Transform3D(-0.7796981, -0.011001259, -0.626059, -0.3497308, 0.8370031, 0.4208491, 0.51938343, 0.5470875, -0.6564572, -2.0196004, 19.406721, 4.169917)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D67" type="MeshInstance3D" parent="leaves" unique_id=664745958]
+transform = Transform3D(-0.7796981, -0.011001259, -0.626059, -0.3497308, 0.8370031, 0.4208491, 0.51938343, 0.5470875, -0.6564572, -1.4769496, 19.041887, 8.630573)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D68" type="MeshInstance3D" parent="leaves" unique_id=2128628676]
+transform = Transform3D(0.92674524, -0.17729002, 0.33122733, 0, -0.8816497, -0.47190455, 0.37569043, 0.43733528, -0.81706464, 0.9557699, 20.01132, -6.3981614)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D69" type="MeshInstance3D" parent="leaves" unique_id=1038134559]
+transform = Transform3D(0.92674524, -0.17729002, 0.33122733, 0, -0.8816497, -0.47190455, 0.37569043, 0.43733528, -0.81706464, 0.9707073, 24.101887, 2.732089)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D70" type="MeshInstance3D" parent="leaves" unique_id=1469509639]
+transform = Transform3D(0.5975707, -0.32963926, 0.7309222, 0.5607874, -0.47971836, -0.67482436, 0.5730853, 0.8131472, -0.101808086, -3.396162, 23.49854, -2.2307098)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D71" type="MeshInstance3D" parent="leaves" unique_id=1820832503]
+transform = Transform3D(0.5975707, -0.32963926, 0.7309222, 0.5607874, -0.47971836, -0.67482436, 0.5730853, 0.8131472, -0.101808086, 4.1335554, 23.83699, -1.6048608)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D72" type="MeshInstance3D" parent="leaves" unique_id=1251457476]
+transform = Transform3D(-0.17035532, 0.20194307, -0.9644678, -0.05703736, -0.9791547, -0.19494358, -0.9837306, 0.021800905, 0.1783225, 1.8885956, 21.066742, 6.673726)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D73" type="MeshInstance3D" parent="leaves" unique_id=1099046393]
+transform = Transform3D(-0.11753737, 0, 0.99306846, 0, 1, 0, -0.99306846, 0, -0.11753737, 6.196814, 18.33061, -4.7479258)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D74" type="MeshInstance3D" parent="leaves" unique_id=649878682]
+transform = Transform3D(-0.11753737, 0, 0.99306846, 0, 1, 0, -0.99306846, 0, -0.11753737, 0.43513554, 19.63534, -4.065986)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D75" type="MeshInstance3D" parent="leaves" unique_id=582644673]
+transform = Transform3D(-0.62164384, -0.5434051, 0.564154, -0.3497308, 0.8370031, 0.4208491, -0.7008903, 0.06431622, -0.7103634, -2.4392772, 19.672045, -0.21586394)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D76" type="MeshInstance3D" parent="leaves" unique_id=302056255]
+transform = Transform3D(-0.62164384, -0.5434051, 0.564154, -0.3497308, 0.8370031, 0.4208491, -0.7008903, 0.06431622, -0.7103634, -6.7829757, 18.550713, 0.93488014)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D77" type="MeshInstance3D" parent="leaves" unique_id=2021096992]
+transform = Transform3D(0.46430123, 0, -0.88567746, 0, 1, 0, 0.88567746, 0, 0.46430123, -0.89143026, 26.24227, 2.6848893)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D78" type="MeshInstance3D" parent="leaves" unique_id=1603674445]
+transform = Transform3D(0.46430123, 0, -0.88567746, 0, 1, 0, 0.88567746, 0, 0.46430123, 4.195428, 19.370016, 7.2795215)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D79" type="MeshInstance3D" parent="leaves" unique_id=559797534]
+transform = Transform3D(0.83088994, 0.484641, -0.27339518, -0.3497308, 0.8370031, 0.4208491, 0.4327933, -0.25406465, 0.86495143, 5.5060205, 19.406721, 2.6569643)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D80" type="MeshInstance3D" parent="leaves" unique_id=1373372552]
+transform = Transform3D(0.83088994, 0.484641, -0.27339518, -0.3497308, 0.8370031, 0.4208491, 0.4327933, -0.25406465, 0.86495143, 9.152721, 19.041887, 0.031416893)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D81" type="MeshInstance3D" parent="leaves" unique_id=48633540]
+transform = Transform3D(-0.11753737, 0.46863353, -0.87553847, 0, -0.8816497, -0.47190455, -0.99306846, -0.05546642, 0.10362679, -5.187515, 20.01132, 5.1440096)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D82" type="MeshInstance3D" parent="leaves" unique_id=1100275572]
+transform = Transform3D(-0.11753737, 0.46863353, -0.87553847, 0, -0.8816497, -0.47190455, -0.99306846, -0.05546642, 0.10362679, 2.8048797, 24.101887, 0.7300179)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D83" type="MeshInstance3D" parent="leaves" unique_id=571639862]
+transform = Transform3D(0.21407944, 0.8713407, -0.4415149, 0.5607874, -0.47971836, -0.67482436, -0.7998047, -0.10312994, -0.59133464, 0.5615451, 23.49854, 6.9482465)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D84" type="MeshInstance3D" parent="leaves" unique_id=1920660265]
+transform = Transform3D(0.21407944, 0.8713407, -0.4415149, 0.5607874, -0.47971836, -0.67482436, -0.7998047, -0.10312994, -0.59133464, -2.519534, 23.83699, 0.04931307)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D85" type="MeshInstance3D" parent="leaves" unique_id=772333200]
+transform = Transform3D(-0.7797954, -0.07823807, 0.6211262, -0.05703736, -0.9791547, -0.19494358, 0.62343055, -0.18744355, 0.759078, 5.815964, 21.066742, -1.9741249)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D86" type="MeshInstance3D" parent="leaves" unique_id=1547342164]
+transform = Transform3D(-0.9987211, 0, -0.05055807, 0, 1, 0, 0.05055807, 0, -0.9987211, -4.29817, 18.33061, -4.0997176)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D87" type="MeshInstance3D" parent="leaves" unique_id=1056885219]
+transform = Transform3D(-0.9987211, 0, -0.05055807, 0, 1, 0, 0.05055807, 0, -0.9987211, -4.0048375, 19.63534, 1.6947579)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D88" type="MeshInstance3D" parent="leaves" unique_id=24131821]
+transform = Transform3D(-0.7410686, 0.027665276, -0.6708591, -0.3497308, 0.8370031, 0.4208491, 0.5731541, 0.54649824, -0.6106014, -0.35651386, 19.672045, 4.8213263)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D89" type="MeshInstance3D" parent="leaves" unique_id=449684432]
+transform = Transform3D(-0.7410686, 0.027665276, -0.6708591, -0.3497308, 0.8370031, 0.4208491, 0.5731541, 0.54649824, -0.6106014, 0.49982327, 18.550713, 9.232517)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D90" type="MeshInstance3D" parent="leaves" unique_id=1656816373]
+transform = Transform3D(0.9148682, 0, 0.403753, 0, 1, 0, -0.403753, 0, 0.9148682, 2.6416695, 26.24227, 3.4718468)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D91" type="MeshInstance3D" parent="leaves" unique_id=138070401]
+transform = Transform3D(0.9148682, 0, 0.403753, 0, 1, 0, -0.403753, 0, 0.9148682, 7.567654, 19.370016, -1.2948551)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D92" type="MeshInstance3D" parent="leaves" unique_id=1486448834]
+transform = Transform3D(0.48763436, -0.22093278, 0.8446309, -0.3497308, 0.8370031, 0.4208491, -0.7999381, -0.50061405, 0.33088446, 3.0435848, 19.406721, -2.9130278)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D93" type="MeshInstance3D" parent="leaves" unique_id=1183634378]
+transform = Transform3D(0.48763436, -0.22093278, 0.8446309, -0.3497308, 0.8370031, 0.4208491, -0.7999381, -0.50061405, 0.33088446, 0.6689521, 19.041887, -6.7278724)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D94" type="MeshInstance3D" parent="leaves" unique_id=1834765019]
+transform = Transform3D(-0.9987211, -0.023858584, 0.044574507, 0, -0.8816497, -0.47190455, 0.05055807, -0.47130105, 0.88052213, 4.806626, 20.01132, 7.9234285)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D95" type="MeshInstance3D" parent="leaves" unique_id=1175341767]
+transform = Transform3D(-0.9987211, -0.023858584, 0.044574507, 0, -0.8816497, -0.47190455, 0.05055807, -0.47130105, 0.88052213, 0.9395305, 24.101887, -0.34743977)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D96" type="MeshInstance3D" parent="leaves" unique_id=792313070]
+transform = Transform3D(-0.7836161, -0.04436079, -0.6196595, 0.5607874, -0.47971836, -0.67482436, -0.26732627, -0.87630045, 0.400792, 6.9930058, 23.49854, 2.3085637)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D97" type="MeshInstance3D" parent="leaves" unique_id=358905927]
+transform = Transform3D(-0.7836161, -0.04436079, -0.6196595, 0.5607874, -0.47971836, -0.67482436, -0.26732627, -0.87630045, 0.400792, -0.09732759, 23.83699, 4.919216)
+mesh = SubResource("SphereMesh_c77ll")
+
+[node name="MeshInstance3D98" type="MeshInstance3D" parent="leaves" unique_id=1555425317]
+transform = Transform3D(0.5696359, -0.19227602, 0.79908997, -0.05703736, -0.9791547, -0.19494358, 0.8199156, 0.065469, -0.5687287, -1.5562204, 21.066742, -3.5333848)
+mesh = SubResource("SphereMesh_c77ll")
