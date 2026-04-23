@@ -259,6 +259,7 @@ func _normal_movement(delta):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
 					collider.khachkar_photo(has_crowbar)
+					show_interaction_text("El album ha sido actualizado")
 					if has_crowbar and collider.name == "collisionKhachkar6":
 						$Head/Camera3D/Crowbar.visible = false
 					if not has_crowbar and collider.name == "collisionKhachkar6":
