@@ -86,26 +86,26 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/Album:position")
+tracks/0/path = NodePath("Head/Camera3D/Album:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, -0.051, -0.708)]
+"values": [Vector3(0, 1.5707964, 1.4433873)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/Album:rotation")
+tracks/1/path = NodePath("Head/Camera3D/Album:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 1.5707964, 1.4433873)]
+"values": [Vector3(0, -0.051, -0.708)]
 }
 
 [sub_resource type="Animation" id="Animation_kjbsb"]
@@ -114,26 +114,26 @@ length = 0.26666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/Album:position")
+tracks/0/path = NodePath("Head/Camera3D/Album:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.16666667, 0.26666668),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0.001, -0.093), Vector3(0, -0.161, -0.093)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/Album:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
 "times": PackedFloat32Array(),
 "transitions": PackedFloat32Array(),
 "update": 0,
 "values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head/Camera3D/Album:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.16666667, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.001, -0.093), Vector3(0, -0.161, -0.093)]
 }
 
 [sub_resource type="Animation" id="Animation_h8xto"]
@@ -142,26 +142,26 @@ length = 0.6666667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/Album:position")
+tracks/0/path = NodePath("Head/Camera3D/Album:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.33333334, 0.5975715),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, -0.161, -0.093), Vector3(0, 0.004, -0.093), Vector3(0, -0.004, -0.093), Vector3(0, 0.001, -0.093)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/Album:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
 "times": PackedFloat32Array(0.26666668, 0.6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 1.5707964, 1.4433873), Vector3(0, 1.5707964, 1.4433873)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Head/Camera3D/Album:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.33333334, 0.5975715),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, -0.161, -0.093), Vector3(0, 0.004, -0.093), Vector3(0, -0.004, -0.093), Vector3(0, 0.001, -0.093)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cylip"]
@@ -433,6 +433,7 @@ target_position = Vector3(0, -2.5, 0)
 
 [node name="normal" type="Sprite3D" parent="PlayerController/Head/Camera3D" unique_id=1812411787]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.264)
+visible = false
 pixel_size = 0.0002
 texture = ExtResource("4_v11vh")
 

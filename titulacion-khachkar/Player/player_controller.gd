@@ -64,12 +64,6 @@ var default_fov: float
 """
 Practice code 
 """
-func enter_ladder(ladder):
-	state = PlayerState.LADDER
-	velocity = Vector3.ZERO
-	
-func exit_ladder():
-	state = PlayerState.NORMAL
 """
 Practice code 
 """
@@ -358,6 +352,13 @@ func clean_ui():
 
 func _on_puzzle_solved(num0):
 	show_interaction_text("El album ha sido actualizado")
+
+func enter_ladder(ladder):
+	state = PlayerState.LADDER
+	velocity = Vector3.ZERO
+	
+func exit_ladder():
+	state = PlayerState.NORMAL
 
 func show_interaction_text(text: String):
 	UI_textRemember.text = text
