@@ -400,7 +400,7 @@ environment = SubResource("Environment_pwprq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" type="CharacterBody3D" parent="." unique_id=1779176938 groups=["player"]]
-transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 52.524757, 1.968286, -12.86068)
+transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, -2.051653, 2.609797, 21.614473)
 script = ExtResource("3_24doq")
 sprint_speed = 5.6
 
