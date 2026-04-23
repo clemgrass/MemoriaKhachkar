@@ -80,6 +80,9 @@ height = 10.0
 radial_segments = 5
 rings = 3
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rwp37"]
+size = Vector3(4.015869, 2.7282715, 3.9550781)
+
 [node name="tree2_0" type="Node3D" unique_id=133689692]
 
 [node name="trunk" type="Node3D" parent="." unique_id=345072032]
@@ -478,3 +481,9 @@ mesh = SubResource("SphereMesh_c77ll")
 [node name="MeshInstance3D98" type="MeshInstance3D" parent="leaves" unique_id=1555425317]
 transform = Transform3D(0.5696359, -0.19227602, 0.79908997, -0.05703736, -0.9791547, -0.19494358, 0.8199156, 0.065469, -0.5687287, -1.5562204, 21.066742, -3.5333848)
 mesh = SubResource("SphereMesh_c77ll")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=793133935]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1204008575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3249636, 0)
+shape = SubResource("BoxShape3D_rwp37")

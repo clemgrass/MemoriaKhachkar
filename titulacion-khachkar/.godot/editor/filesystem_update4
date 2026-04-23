@@ -3,3 +3,6 @@ res://Museum/museum.tscn
 res://Museum/Entrance/Khachkar/fountainKhachkar.tscn
 res://Terrain/tree_1.tscn
 res://Terrain/tree_2.tscn
+res://Terrain/Textures/LeafSet029_4K-PNG.tres
+res://World/tree_3.tscn
+res://Terrain/tree_3.tscn
