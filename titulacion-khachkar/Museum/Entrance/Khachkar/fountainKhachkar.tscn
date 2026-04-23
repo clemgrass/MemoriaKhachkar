@@ -179,23 +179,14 @@ size = Vector3(0.22817993, 0.079315186, 0.27574158)
 height = 0.28149414
 radius = 4.0
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_o62cf"]
-height = 0.28149414
-radius = 2.4516602
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_vu3v5"]
-height = 0.28149414
-radius = 2.2080078
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_c7lro"]
-height = 0.28149414
-radius = 1.9907227
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_d2twf"]
 size = Vector3(0.7715454, 0.5864258, 2.8901367)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e6ru3"]
 size = Vector3(0.15596008, 1.5360565, 2.49646)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o62cf"]
+size = Vector3(2.2695313, 1, 3.8916016)
 
 [node name="FountainKhachkar" type="Node3D" unique_id=1898502432]
 
@@ -561,26 +552,9 @@ shape = SubResource("BoxShape3D_8xwts")
 
 [node name="fountainB" type="StaticBody3D" parent="." unique_id=576781654]
 
-[node name="coll1" type="CollisionPolygon3D" parent="fountainB" unique_id=1590101625]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.47867382, 0)
-depth = 0.44
-polygon = PackedVector2Array(1.728555, -3.3225849, 1.8452852, -3.5666583, 0.7098143, -3.948686, 0.009430617, -4.0123568, -0.7440126, -3.9168503, -2.2084517, -3.3225849, -3.152909, -2.473635, -3.8214571, -1.2638807, -3.9912474, 0.020156598, -3.7896216, 1.2723582, -3.1316853, 2.4290526, -2.3251824, 3.246167, -1.1790998, 3.8298209, -0.011792928, 3.9996102, 1.1767371, 3.7979853, 2.32282, 3.246167, 3.1929939, 2.4184406, 3.6705282, 1.6013262, 3.9782732, 0.5295264, 3.9570491, -0.6059443, 3.6705282, -1.5610132, 2.9383085, -2.791991, 1.9726279, -3.4605396, 1.8771212, -3.2907493, 2.7897422, -2.6328132, 3.4901264, -1.5397898, 3.7554233, -0.5953325, 3.7235878, 0.571974, 3.4689028, 1.4739835, 2.9383085, 2.312322, 2.1318066, 3.002094, 0.9644997, 3.4796283, -0.22403076, 3.5114639, -1.3701136, 3.2037194, -2.643539, 2.1955912, -3.2696397, 1.1344035, -3.6941147, -0.1602455, -3.513713, -1.2744927, -2.8663883, -2.3993518, -1.9113193, -3.2058542, -0.61667013, -3.7152245, 0.17922089, -3.7895076, 0.8371575, -3.7152245)
-
 [node name="coll2" type="CollisionShape3D" parent="fountainB" unique_id=216418644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24780822, 0)
 shape = SubResource("CylinderShape3D_e6ru3")
-
-[node name="coll3" type="CollisionShape3D" parent="fountainB" unique_id=2075254206]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4180628, 0.11474919)
-shape = SubResource("CylinderShape3D_o62cf")
-
-[node name="coll4" type="CollisionShape3D" parent="fountainB" unique_id=1713514815]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52890277, 0.082479)
-shape = SubResource("CylinderShape3D_vu3v5")
-
-[node name="coll5" type="CollisionShape3D" parent="fountainB" unique_id=1822707252]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6605923, 0.07700586)
-shape = SubResource("CylinderShape3D_c7lro")
 
 [node name="coll6" type="CollisionShape3D" parent="fountainB" unique_id=653283225]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06494737, 1.2390119, -0.05883789)
@@ -594,6 +568,14 @@ shape = SubResource("BoxShape3D_e6ru3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023664713, 2.3191113, -0.018005371)
 shape = SubResource("BoxShape3D_e6ru3")
 disabled = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="fountainB" unique_id=1427587061]
+transform = Transform3D(0.95165336, 0.30717394, 0, -0.30717394, 0.95165336, 0, 0, 0, 1, 1.2521259, 0.2533922, 0)
+shape = SubResource("BoxShape3D_o62cf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="fountainB" unique_id=1274658981]
+transform = Transform3D(-0.9516535, -0.30717397, -8.7422784e-08, -0.30717397, 0.9516535, 0, 8.319618e-08, 2.6853998e-08, -1, -1.4129533, 0.2533922, 0)
+shape = SubResource("BoxShape3D_o62cf")
 
 [node name="lights" type="Node3D" parent="." unique_id=894445293]
 

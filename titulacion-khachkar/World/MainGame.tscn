@@ -18,9 +18,11 @@
 [ext_resource type="Texture2D" uid="uid://ccx7imudr87yj" path="res://Player/Album/Photos/khachkar5_pa.png" id="16_4pkn8"]
 [ext_resource type="Texture2D" uid="uid://2aookvrniqcu" path="res://Player/Album/Photos/khachkar6_pa.png" id="17_umsqh"]
 [ext_resource type="Material" uid="uid://0q61kot8t24v" path="res://Terrain/Textures/Ground003_4K-JPG.tres" id="18_24doq"]
-[ext_resource type="Texture2D" uid="uid://bdc2jawivccup" path="res://Terrain/forest-4027242_1280.png" id="19_0wtps"]
+[ext_resource type="Texture2D" uid="uid://vhfqw88h2sky" path="res://Terrain/forestImage.png" id="19_5vpuc"]
+[ext_resource type="Texture2D" uid="uid://dbv34bj2ynosv" path="res://Terrain/trees-305811_1280.png" id="20_0wtps"]
 [ext_resource type="Texture2D" uid="uid://byptx3femarou" path="res://Player/UI/Keyboard & Mouse/Light/A_Key_Light.png" id="20_5vpuc"]
 [ext_resource type="Texture2D" uid="uid://0gl11x3lcnn3" path="res://Player/UI/Keyboard & Mouse/Light/D_Key_Light.png" id="21_0wtps"]
+[ext_resource type="Texture2D" uid="uid://bt51yd1w7qk7o" path="res://Terrain/pine-trees-311512_1280.png" id="21_3ovrp"]
 [ext_resource type="Texture2D" uid="uid://plnqvec253k6" path="res://Player/UI/Keyboard & Mouse/Light/S_Key_Light.png" id="22_3ovrp"]
 [ext_resource type="Texture2D" uid="uid://b8vfudlkx1lxu" path="res://Player/UI/Keyboard & Mouse/Light/W_Key_Light.png" id="23_4pkn8"]
 [ext_resource type="Texture2D" uid="uid://dk2l35045idge" path="res://Player/UI/Keyboard & Mouse/Light/E_Key_Light.png" id="24_umsqh"]
@@ -210,6 +212,104 @@ _surfaces = [{
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_0wtps"]
 plane = Plane(0, 1, 0, -0.065)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wtps"]
+transparency = 1
+albedo_texture = ExtResource("19_5vpuc")
+
+[sub_resource type="QuadMesh" id="QuadMesh_3ovrp"]
+size = Vector2(350, 75)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ovrp"]
+transparency = 1
+albedo_texture = ExtResource("20_0wtps")
+
+[sub_resource type="QuadMesh" id="QuadMesh_4pkn8"]
+size = Vector2(100, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umsqh"]
+transparency = 1
+albedo_texture = ExtResource("20_0wtps")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yr47"]
+transparency = 1
+albedo_texture = ExtResource("20_0wtps")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4pkn8"]
+transparency = 1
+albedo_texture = ExtResource("21_3ovrp")
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_umsqh"]
+size = Vector2(30, 50)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xaylg"]
+transparency = 1
+albedo_texture = ExtResource("21_3ovrp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onmfn"]
+transparency = 1
+albedo_texture = ExtResource("21_3ovrp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ja0g"]
+transparency = 1
+albedo_texture = ExtResource("21_3ovrp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nqjgh"]
+transparency = 1
+albedo_texture = ExtResource("19_5vpuc")
+
+[sub_resource type="QuadMesh" id="QuadMesh_wacu2"]
+flip_faces = true
+size = Vector2(500, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7gihv"]
+transparency = 1
+albedo_texture = ExtResource("21_3ovrp")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p6skv"]
+transparency = 1
+albedo_texture = ExtResource("19_5vpuc")
+
+[sub_resource type="QuadMesh" id="QuadMesh_xe17i"]
+flip_faces = true
+size = Vector2(500, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hgkk"]
+transparency = 1
+albedo_texture = ExtResource("21_3ovrp")
+billboard_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wacu2"]
+transparency = 1
+albedo_texture = ExtResource("19_5vpuc")
+
+[sub_resource type="QuadMesh" id="QuadMesh_p6skv"]
+size = Vector2(350, 75)
+
+[sub_resource type="QuadMesh" id="QuadMesh_1yr47"]
+size = Vector2(70, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xe17i"]
+transparency = 1
+albedo_texture = ExtResource("20_0wtps")
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_xaylg"]
+size = Vector2(70, 40)
+
+[sub_resource type="QuadMesh" id="QuadMesh_onmfn"]
+size = Vector2(70, 40)
+
+[sub_resource type="QuadMesh" id="QuadMesh_8ja0g"]
+size = Vector2(70, 40)
+
+[sub_resource type="QuadMesh" id="QuadMesh_nqjgh"]
+size = Vector2(70, 40)
+
+[sub_resource type="QuadMesh" id="QuadMesh_3hgkk"]
+size = Vector2(70, 40)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vpuc"]
 bg_color = Color(0, 0, 0, 0)
 
@@ -226,7 +326,7 @@ environment = SubResource("Environment_pwprq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" type="CharacterBody3D" parent="." unique_id=1779176938]
-transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 65.82332, 1.6129656, -20.615269)
+transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 67.68525, 1.6129656, -37.50903)
 script = ExtResource("3_24doq")
 sprint_speed = 5.6
 
@@ -547,70 +647,195 @@ shape = SubResource("WorldBoundaryShape3D_0wtps")
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -69.995445, 6.773306, 0)
 shape = SubResource("WorldBoundaryShape3D_0wtps")
 
-[node name="Sprite3D" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1168906219]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.930923, 24.63723, 153.76608)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="forestNorth" type="Node3D" parent="OutsideWorld/Forest" unique_id=1105870024]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 128.34357, 0, -20.038486)
 
-[node name="Sprite3D2" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1241439850]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -129.3056, 24.63723, -0.23492432)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_far" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=1706888987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.74478, 31.811167, -103.11528)
+material_override = SubResource("StandardMaterial3D_0wtps")
+mesh = SubResource("QuadMesh_3ovrp")
 
-[node name="Sprite3D3" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=347239083]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 35.785763, 24.63723, -116.10332)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_middle" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=720814790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.80551, 18.551996, -53.46846)
+material_override = SubResource("StandardMaterial3D_3ovrp")
+mesh = SubResource("QuadMesh_4pkn8")
 
-[node name="Sprite3D4" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=237567369]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 160.62326, 24.63723, -0.23492432)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_middle2" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=1235993623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.74478, 18.551996, -74.12825)
+material_override = SubResource("StandardMaterial3D_umsqh")
+mesh = SubResource("QuadMesh_4pkn8")
 
-[node name="Sprite3D5" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1644941201]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 199.27428, 10.296852, 28.205614)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_middle3" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=677069650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.435196, 18.551996, -56.11714)
+material_override = SubResource("StandardMaterial3D_1yr47")
+mesh = SubResource("QuadMesh_4pkn8")
 
-[node name="Sprite3D7" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=196691497]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -175.24794, 24.63723, -51.672947)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=1770822448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.435196, 24.208988, 0.20793152)
+material_override = SubResource("StandardMaterial3D_4pkn8")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D8" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1949239865]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -216.38971, 24.63723, 65.15655)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near2" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=113792853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 117.65065, 24.208988, -10.138626)
+material_override = SubResource("StandardMaterial3D_4pkn8")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D11" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=676829343]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -25.824299, 24.63723, -135.532)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near3" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=544198180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.736868, 24.208988, 0.20793152)
+material_override = SubResource("StandardMaterial3D_xaylg")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D12" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=730198348]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 98.927795, 24.63723, -164.55711)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near4" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=1490174069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.407212, 24.208988, 13.228516)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D15" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=741335644]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.80989, 24.63723, 216.28139)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near5" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=246055366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.7371, 24.208988, 23.388283)
+material_override = SubResource("StandardMaterial3D_4pkn8")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D17" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1052345714]
-transform = Transform3D(0.7071069, 0, 0.70710665, 0, 1, 0, -0.70710665, 0, 0.7071069, 149.73433, 23.566986, 149.44156)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near6" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=1940344595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.46778, 24.208988, 0.20793152)
+material_override = SubResource("StandardMaterial3D_8ja0g")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D20" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=1340884663]
-transform = Transform3D(-0.7071067, 0, 0.7071068, 0, 1, 0, -0.7071068, 0, -0.7071067, 175.01831, 23.566986, -97.820244)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="layer_near7" type="MeshInstance3D" parent="OutsideWorld/Forest/forestNorth" unique_id=55966395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.90236, 24.208988, 27.221718)
+material_override = SubResource("StandardMaterial3D_4pkn8")
+mesh = SubResource("QuadMesh_umsqh")
 
-[node name="Sprite3D18" type="Sprite3D" parent="OutsideWorld/Forest" unique_id=757833931]
-transform = Transform3D(0.49999976, 0, -0.8660255, 0, 1, 0, 0.8660255, 0, 0.49999976, -90.068405, 23.566986, 149.44156)
-pixel_size = 0.2
-texture = ExtResource("19_0wtps")
+[node name="forestEast" type="Node3D" parent="OutsideWorld/Forest" unique_id=766585621]
+
+[node name="layer_far" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=444159131]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -2.3573322, 45.139286, 164.99297)
+material_override = SubResource("StandardMaterial3D_nqjgh")
+mesh = SubResource("QuadMesh_wacu2")
+
+[node name="layer_near" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=1629276671]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -17.71397, 24.125465, 129.84029)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near2" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=200977375]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 44.184624, 24.125465, 129.84029)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near3" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=18090693]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.429966, 24.125465, 112.71111)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near4" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=1911891476]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -81.5591, 24.125465, 126.7259)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near5" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=68419532]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -54.697365, 24.125465, 107.2609)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near6" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=411921831]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 71.43556, 24.125465, 108.03954)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near7" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=53294755]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 114.9073, 24.125465, 109.485016)
+material_override = SubResource("StandardMaterial3D_7gihv")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near8" type="MeshInstance3D" parent="OutsideWorld/Forest/forestEast" unique_id=276939098]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 97.38884, 24.125465, 88.07355)
+material_override = SubResource("StandardMaterial3D_7gihv")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="forestWest" type="Node3D" parent="OutsideWorld/Forest" unique_id=2116387211]
+
+[node name="layer_far" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=1584741609]
+transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, -2.3573322, 32.870007, -165.16446)
+material_override = SubResource("StandardMaterial3D_p6skv")
+mesh = SubResource("QuadMesh_xe17i")
+
+[node name="layer_middle" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=105113302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.91794, 18.551996, -121.12603)
+material_override = SubResource("StandardMaterial3D_3ovrp")
+mesh = SubResource("QuadMesh_4pkn8")
+
+[node name="layer_middle2" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=1207098507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.229494, 17.89431, -125.439026)
+material_override = SubResource("StandardMaterial3D_umsqh")
+mesh = SubResource("QuadMesh_4pkn8")
+
+[node name="layer_middle3" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=845397331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.51677, 18.551996, -134.2185)
+material_override = SubResource("StandardMaterial3D_1yr47")
+mesh = SubResource("QuadMesh_4pkn8")
+
+[node name="layer_near" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=979687158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.407212, 24.208994, -93.758194)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near2" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=1401622883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.63876, 24.208994, -94.28783)
+material_override = SubResource("StandardMaterial3D_3hgkk")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near3" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=661725012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.078384, 24.208994, -109.64731)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near4" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=927599578]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.445602, 24.208994, -113.35476)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="layer_near5" type="MeshInstance3D" parent="OutsideWorld/Forest/forestWest" unique_id=581701755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6674, 24.208994, -102.762024)
+material_override = SubResource("StandardMaterial3D_onmfn")
+mesh = SubResource("QuadMesh_umsqh")
+
+[node name="forestSouth" type="Node3D" parent="OutsideWorld/Forest" unique_id=1394554241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -15.619486, 0)
+
+[node name="layer_far" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=475472773]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -241.702, 50.455677, -7.37)
+material_override = SubResource("StandardMaterial3D_wacu2")
+mesh = SubResource("QuadMesh_p6skv")
+
+[node name="layer_middle" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=319610800]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -168.65443, 33.64838, -23.04192)
+material_override = SubResource("StandardMaterial3D_3ovrp")
+mesh = SubResource("QuadMesh_1yr47")
+
+[node name="layer_middle2" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=1686808624]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -189.31421, 33.64838, 94.52356)
+material_override = SubResource("StandardMaterial3D_xe17i")
+mesh = SubResource("QuadMesh_xaylg")
+
+[node name="layer_middle3" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=679138874]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -157.22672, 33.64838, 99.89317)
+material_override = SubResource("StandardMaterial3D_1yr47")
+mesh = SubResource("QuadMesh_onmfn")
+
+[node name="layer_middle4" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=570000922]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -161.84328, 33.64838, -66.47653)
+material_override = SubResource("StandardMaterial3D_3ovrp")
+mesh = SubResource("QuadMesh_8ja0g")
+
+[node name="layer_middle5" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=154057545]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -189.31421, 33.64838, -103.00021)
+material_override = SubResource("StandardMaterial3D_xe17i")
+mesh = SubResource("QuadMesh_nqjgh")
+
+[node name="layer_middle6" type="MeshInstance3D" parent="OutsideWorld/Forest/forestSouth" unique_id=872002687]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -171.7572, 33.64838, 29.4053)
+material_override = SubResource("StandardMaterial3D_1yr47")
+mesh = SubResource("QuadMesh_3hgkk")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1106804151]
 visible = false
