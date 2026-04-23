@@ -35,6 +35,15 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgvx8"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="LabelSettings" id="LabelSettings_qjfgb"]
+font = ExtResource("1_f0et7")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_c824c"]
+font = ExtResource("1_f0et7")
+font_color = Color(0, 0, 0, 1)
+
 [sub_resource type="Animation" id="Animation_ch7cu"]
 length = 0.001
 tracks/0/type = "value"
@@ -60,54 +69,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Node2D/Play:theme_override_colors/font_color")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0, 0, 0, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D/Quit:theme_override_colors/font_color")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0, 0, 0, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Node2D/Title:label_settings:font_color")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0, 0, 0, 1)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Node2D/SubTitle:label_settings:font_color")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0, 0, 0, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_qjfgb"]
@@ -137,54 +98,6 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(0, 0), Vector2(0, 0), Vector2(-805, -364)]
 }
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Node2D/Play:theme_override_colors/font_color")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.23333335, 1.94),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D/Quit:theme_override_colors/font_color")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.76666665, 1.94),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Node2D/Title:label_settings:font_color")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(1.3333334, 1.94),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Node2D/SubTitle:label_settings:font_color")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0.93333334, 1.94),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c824c"]
 _data = {
@@ -206,11 +119,23 @@ grow_vertical = 2
 
 [node name="Node2D" type="Node2D" parent="." unique_id=634715872]
 
+[node name="Line2D" type="Line2D" parent="Node2D" unique_id=681559736]
+position = Vector2(-1232, -257)
+scale = Vector2(1, 0.21)
+points = PackedVector2Array(0, 0, 2500, 0)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D" unique_id=388460451]
+position = Vector2(-1242, -153)
+scale = Vector2(1, 0.345)
+points = PackedVector2Array(0, 0, 2500, 0)
+default_color = Color(0, 0, 0, 1)
+
 [node name="Title" type="Label" parent="Node2D" unique_id=707826521]
-offset_left = -863.26526
-offset_top = -522.449
-offset_right = 1206.7347
-offset_bottom = -257.44897
+offset_left = -863.0
+offset_top = -542.0
+offset_right = 1207.0
+offset_bottom = -277.0
 text = "The Legacy Times"
 label_settings = SubResource("LabelSettings_fvnh7")
 
@@ -225,10 +150,10 @@ horizontal_alignment = 1
 
 [node name="Play" type="Button" parent="Node2D" unique_id=448516433]
 z_index = 4
-offset_left = -736.7345
-offset_top = -75.51016
-offset_right = -596.7345
-offset_bottom = 5.489868
+offset_left = -863.0
+offset_top = -108.0
+offset_right = -723.0
+offset_bottom = -26.99997
 scale = Vector2(1.000001, 1)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -246,10 +171,10 @@ script = ExtResource("3_qjfgb")
 
 [node name="Quit" type="Button" parent="Node2D" unique_id=48466373]
 z_index = 4
-offset_left = -722.449
-offset_top = 225.5102
-offset_right = -572.449
-offset_bottom = 306.5102
+offset_left = -863.0
+offset_top = 227.0
+offset_right = -713.0
+offset_bottom = 308.0
 size_flags_horizontal = 4
 size_flags_vertical = 10
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -283,6 +208,33 @@ offset_bottom = 629.81635
 mouse_filter = 2
 texture = ExtResource("2_f0et7")
 expand_mode = 1
+
+[node name="columnNewspaper" type="Label" parent="Node2D" unique_id=1708349832]
+offset_left = -939.0
+offset_top = 374.0
+offset_right = 1131.0
+offset_bottom = 459.0
+text = "Misterio en museo olvidado
+"
+label_settings = SubResource("LabelSettings_qjfgb")
+
+[node name="columnNewspaper2" type="Label" parent="Node2D" unique_id=1718765580]
+offset_left = -939.0
+offset_top = 415.0
+offset_right = 1131.0
+offset_bottom = 500.0
+text = "Por C. Pasto, corresponsal independiente
+"
+label_settings = SubResource("LabelSettings_c824c")
+
+[node name="columnNewspaper3" type="Label" parent="Node2D" unique_id=1236398203]
+offset_left = -939.0
+offset_top = 459.0
+offset_right = 933.405
+offset_bottom = 544.0
+text = "El museo de khachkars, que albergaba una colección significativa de estas piedras talladas, fue cerrado de forma repentina hace algunos años. Desde entonces, no se ha emitido un informe oficial concluyente. Visitantes recientes describen el acceso principal como parcialmente deteriorado. Una de las piezas cercanas a la entrada presenta daños visibles, aunque no existen registros públicos que expliquen cuándo ocurrieron. Documentos internos apuntan a actividad inusual en los días previos al cierre, incluyendo accesos fuera de horario y el uso de áreas no abiertas al público. Inventarios incompletos muestran discrepancias: ciertas piezas no figuran como trasladadas, pero tampoco fueron encontradas en sus ubicaciones habituales. El paradero de parte del personal sigue sin esclarecerse. Los últimos reportes indican que varios permanecieron en el recinto más tiempo del previsto."
+label_settings = SubResource("LabelSettings_c824c")
+autowrap_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1240265653]
 libraries/ = SubResource("AnimationLibrary_c824c")
