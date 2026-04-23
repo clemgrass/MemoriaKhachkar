@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://dg82sgdr7aemu" path="res://Player/UI/Keyboard & Mouse/Light/Space_Key_Light.png" id="27_onmfn"]
 [ext_resource type="Texture2D" uid="uid://ylry8nphu04a" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Left_Key_Light.png" id="28_8ja0g"]
 [ext_resource type="Texture2D" uid="uid://ctoatenju0k3x" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Right_Key_Light.png" id="29_nqjgh"]
+[ext_resource type="Texture2D" uid="uid://bcd4pl58ebgx1" path="res://MainMenu/Texturelabs_Paper_290XL.jpg" id="36_onmfn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_afcvc"]
 sky_top_color = Color(0.23098785, 0.4009148, 0.43838903, 1)
@@ -406,7 +407,7 @@ environment = SubResource("Environment_pwprq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87054825, -0.7420349, 2.6367583)
 
 [node name="PlayerController" type="CharacterBody3D" parent="." unique_id=1779176938 groups=["player"]]
-transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 37.914375, 2.609797, 21.614473)
+transform = Transform3D(-0.38994363, 0, 0.9208387, 0, 1, 0, -0.9208387, 0, -0.38994363, 65.05487, 0.01009202, -23.07379)
 script = ExtResource("3_24doq")
 sprint_speed = 5.6
 
@@ -1132,22 +1133,23 @@ position = Vector2(125, 209)
 scale = Vector2(0.78, 0.72)
 texture = ExtResource("29_nqjgh")
 
-[node name="PauseMenu" type="ColorRect" parent="UI" unique_id=529241388]
+[node name="PauseMenu" type="TextureRect" parent="UI" unique_id=1666015396]
 process_mode = 2
 visible = false
 z_index = 11
-offset_left = -319.99997
-offset_top = -261.0
-offset_right = -278.92142
-offset_bottom = -218.66328
-scale = Vector2(65.72774, 37.674156)
+offset_left = -1909.0
+offset_top = -311.0
+offset_right = 6043.0
+offset_bottom = 4993.0
+scale = Vector2(0.563, 0.322)
 mouse_filter = 2
-color = Color(0, 0, 0, 1)
+texture = ExtResource("36_onmfn")
 
 [node name="Button" type="Button" parent="UI" unique_id=655435152]
 process_mode = 2
 process_priority = 2
 visible = false
+modulate = Color(0, 0, 0, 1)
 z_index = 12
 offset_left = 1031.0
 offset_top = 142.0
@@ -1178,6 +1180,7 @@ offset_left = -112.0
 offset_top = -139.0
 offset_right = -28.0
 offset_bottom = -116.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Movement"
 
 [node name="AKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1067043630]
@@ -1201,6 +1204,7 @@ offset_left = -112.0
 offset_top = 50.0
 offset_right = -28.0
 offset_bottom = 73.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Album"
 
 [node name="EKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=853738333]
@@ -1213,6 +1217,7 @@ offset_left = -112.0
 offset_top = 145.0
 offset_right = -28.0
 offset_bottom = 168.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Camera"
 
 [node name="QKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=80944281]
@@ -1225,6 +1230,7 @@ offset_left = -112.0
 offset_top = 249.0
 offset_right = -28.0
 offset_bottom = 272.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Sprint"
 
 [node name="ShiftKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1293141689]
@@ -1236,6 +1242,7 @@ layout_mode = 0
 offset_top = 247.0
 offset_right = 84.0
 offset_bottom = 270.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Jump"
 
 [node name="SpaceKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=556545881]
@@ -1248,6 +1255,7 @@ layout_mode = 0
 offset_top = 50.0
 offset_right = 84.0
 offset_bottom = 73.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Interact"
 
 [node name="MouseLeftKeyLight" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=498087160]
@@ -1260,6 +1268,7 @@ layout_mode = 0
 offset_top = 145.0
 offset_right = 84.0
 offset_bottom = 168.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Zoom In"
 
 [node name="zoomOut" type="Label" parent="UI/KeyBindingsPM" unique_id=491912139]
@@ -1268,6 +1277,7 @@ offset_left = 84.0
 offset_top = 145.0
 offset_right = 168.0
 offset_bottom = 168.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Zoom Out"
 
 [node name="MouseLeftKeyLight2" type="Sprite2D" parent="UI/KeyBindingsPM" unique_id=1020570671]
