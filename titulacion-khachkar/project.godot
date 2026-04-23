@@ -41,6 +41,7 @@ ending=""
 album=""
 letters=""
 final_door_interact=""
+player=""
 
 [input]
 

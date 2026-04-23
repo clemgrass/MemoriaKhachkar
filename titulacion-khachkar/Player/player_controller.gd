@@ -355,7 +355,10 @@ func clean_ui():
 	UI_clickRemember.visible = false
 	UI_textRemember.visible = false
 	
-		
+
+func _on_puzzle_solved(num0):
+	show_interaction_text("El album ha sido actualizado")
+
 func show_interaction_text(text: String):
 	UI_textRemember.text = text
 	UI_textRemember.visible = true

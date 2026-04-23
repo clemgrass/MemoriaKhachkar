@@ -42,6 +42,8 @@ func _ready() -> void:
 	var album = get_tree().get_first_node_in_group("album")
 	
 	var final_door = get_tree().get_first_node_in_group("final_door")
+	
+	var player = get_tree().get_first_node_in_group("player")
 
 	for khachkar in khachkars:
 		khachkar.puzzle_solved.connect(room_khachkars._on_puzzle_solved)
@@ -51,6 +53,7 @@ func _ready() -> void:
 	
 	puzzle.puzzle0_solved.connect(door._on_puzzle_solved)
 	puzzle.puzzle0_solved.connect(album._on_puzzle_solved)
+	puzzle.puzzle0_solved.connect(player._on_puzzle_solved)
 	
 
 func _input(event):
