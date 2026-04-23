@@ -173,6 +173,9 @@ size = Vector3(0.10449219, 0.83197784, 8.280352)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4g6p8"]
 size = Vector3(0.10449219, 3.006897, 5.1802692)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ej6mq"]
+size = Vector3(5.1673927, 0.12109375, 10.013672)
+
 [node name="RoomComplete" type="Node3D" unique_id=4710292]
 
 [node name="northWallMesh" type="MeshInstance3D" parent="." unique_id=425264134]
@@ -271,6 +274,10 @@ shape = SubResource("BoxShape3D_50034")
 [node name="coll10" type="CollisionShape3D" parent="rcB" unique_id=590614032]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.6296515, 1.5053082, 4.965714)
 shape = SubResource("BoxShape3D_4g6p8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="rcB" unique_id=310906613]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6289272, 3.0051687, 0)
+shape = SubResource("BoxShape3D_ej6mq")
 
 [node name="ol1" type="OmniLight3D" parent="." unique_id=29451480]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.875935, 2.2721329, -2.7782495)

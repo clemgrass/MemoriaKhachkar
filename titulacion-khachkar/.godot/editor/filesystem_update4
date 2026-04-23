@@ -13,3 +13,4 @@ res://World/main_game.gd
 res://Museum/Room_1/room1.tscn
 res://Museum/Room_3/room3.tscn
 res://Museum/Final_Room/finalRoom.tscn
+res://Museum/Room_Complisonist/roomComplete.tscn
