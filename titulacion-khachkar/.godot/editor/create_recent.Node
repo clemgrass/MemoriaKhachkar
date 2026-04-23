@@ -1,4 +1,5 @@
 MeshInstance3D
+Label3D
 CollisionShape3D
 CollisionPolygon3D
 StaticBody3D
@@ -10,5 +11,4 @@ CSGMesh3D
 Sprite3D
 SpotLight3D
 Area3D
-Label3D
 Label

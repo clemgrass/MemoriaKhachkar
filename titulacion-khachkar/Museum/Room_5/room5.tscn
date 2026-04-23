@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dluku7iidubai" path="res://Museum/Entrance/Textures/textures/concrete_wall_001_diff_4k.jpg" id="3_7d2qp"]
 [ext_resource type="Texture2D" uid="uid://d21amkealwwoe" path="res://Museum/Room_0/textures/floor_tiles_02_rough_4k.jpg" id="3_8aotp"]
 [ext_resource type="Material" uid="uid://ds8g4drlj1ly4" path="res://Museum/Room_5/Marble012_4K-JPG.tres" id="3_rhmn8"]
+[ext_resource type="Texture2D" uid="uid://cvqdbg1yblxys" path="res://Museum/Room_5/old-paper-texture.jpg" id="5_akdfo"]
+[ext_resource type="FontFile" uid="uid://dnyfat4280h82" path="res://MainMenu/LibreBaskerville-Italic-VariableFont_wght.ttf" id="5_m411c"]
+[ext_resource type="Texture2D" uid="uid://bdjgp2o26ifmw" path="res://Museum/Room_5/black-2189644_1280.png" id="7_o36uw"]
 [ext_resource type="PackedScene" uid="uid://b3q7ckmb77pja" path="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar5.glb" id="7_u8e0v"]
 [ext_resource type="Texture2D" uid="uid://vsh6h54yae8c" path="res://Museum/Room_Khachkar/Khachkar_Models/khachkar5maninfold_khachkar5_uv_map.jpg" id="8_7d2qp"]
 [ext_resource type="Script" uid="uid://bjqa18cdsuel0" path="res://Museum/Room_5/collision_khachkar_5.gd" id="9_83co1"]
@@ -181,6 +184,22 @@ _surfaces = [{
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7kgq0"]
 albedo_texture = ExtResource("3_7d2qp")
 uv1_scale = Vector3(15, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4o38"]
+albedo_texture = ExtResource("5_akdfo")
+
+[sub_resource type="QuadMesh" id="QuadMesh_biyon"]
+material = SubResource("StandardMaterial3D_o4o38")
+size = Vector2(7.32, 2.28)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_biyon"]
+render_priority = 1
+transparency = 1
+albedo_texture = ExtResource("7_o36uw")
+
+[sub_resource type="QuadMesh" id="QuadMesh_7xbfk"]
+material = SubResource("StandardMaterial3D_biyon")
+size = Vector2(1.655, 0.465)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ade31"]
 lightmap_size_hint = Vector2i(602, 798)
@@ -474,6 +493,25 @@ surface_material_override/0 = SubResource("StandardMaterial3D_akdfo")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.000617, 1.995, 0.00012874603)
 mesh = SubResource("ArrayMesh_7j2xw")
 surface_material_override/0 = SubResource("StandardMaterial3D_7kgq0")
+
+[node name="Label3D" type="Label3D" parent="CSGBakedMeshInstance3D7" unique_id=1500554599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2555469e-09, 0.33477676, 0.051732063)
+pixel_size = 0.001
+text = "Hay diferentes piezas de khachkars
+repartidas por el mundo.
+ A pesar de que estos sean originarios de 
+
+Armenia"
+font = ExtResource("5_m411c")
+font_size = 368
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGBakedMeshInstance3D7" unique_id=1431061245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1245796e-09, 0.40898502, 0.049832344)
+mesh = SubResource("QuadMesh_biyon")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CSGBakedMeshInstance3D7" unique_id=1435326718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.039069593, -0.38359773, 0.05530548)
+mesh = SubResource("QuadMesh_7xbfk")
 
 [node name="CSGBakedMeshInstance3D8" type="MeshInstance3D" parent="." unique_id=764228550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9838867, -0.05, 0)
