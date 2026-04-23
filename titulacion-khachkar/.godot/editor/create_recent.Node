@@ -1,15 +1,14 @@
+MeshInstance3D
+Node3D
 TextureRect
 CSGBox3D
-MeshInstance3D
 Label3D
 CollisionShape3D
 CollisionPolygon3D
 StaticBody3D
-Node3D
 MultiMeshInstance3D
 CSGCylinder3D
 CSGSphere3D
 CSGMesh3D
 Sprite3D
 SpotLight3D
-Area3D

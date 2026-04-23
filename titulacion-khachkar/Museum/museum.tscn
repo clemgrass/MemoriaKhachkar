@@ -35,7 +35,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.358395, 0, -32.37526)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.876568, -0.4462552, 19.927616)
 
 [node name="Room4" parent="." unique_id=830062090 instance=ExtResource("5_28ihr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.184, 0.05, -22.561335)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.184, 0.05, -22.5)
 
 [node name="Room5" parent="." unique_id=342335966 instance=ExtResource("6_5l4ao")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.157475, 6.739397, 0)
