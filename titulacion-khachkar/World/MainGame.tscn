@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://2aookvrniqcu" path="res://Player/Album/Photos/khachkar6_pa.png" id="17_umsqh"]
 [ext_resource type="Material" uid="uid://0q61kot8t24v" path="res://Terrain/Textures/Ground003_4K-JPG.tres" id="18_24doq"]
 [ext_resource type="Texture2D" uid="uid://vhfqw88h2sky" path="res://Terrain/forestImage.png" id="19_5vpuc"]
+[ext_resource type="Texture2D" uid="uid://cihuttuf7fk1i" path="res://World/road-street-texture-floor-wall-asphalt-372901-pxhere.com.jpg" id="19_xaylg"]
 [ext_resource type="Texture2D" uid="uid://dbv34bj2ynosv" path="res://Terrain/trees-305811_1280.png" id="20_0wtps"]
 [ext_resource type="Texture2D" uid="uid://byptx3femarou" path="res://Player/UI/Keyboard & Mouse/Light/A_Key_Light.png" id="20_5vpuc"]
 [ext_resource type="Texture2D" uid="uid://0gl11x3lcnn3" path="res://Player/UI/Keyboard & Mouse/Light/D_Key_Light.png" id="21_0wtps"]
@@ -169,7 +170,7 @@ _data = {
 &"album_open": SubResource("Animation_h8xto")
 }
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_sfnqe"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_1yr47"]
 lightmap_size_hint = Vector2i(3690, 8018)
 _surfaces = [{
 "aabb": AABB(-100, -0.5, -100, 200, 1, 200),
@@ -211,6 +212,18 @@ _surfaces = [{
 "vertex_count": 24,
 "vertex_data": PackedByteArray("AADIwgAAAL8AAMhCAADIwgAAAL8AAMjCAADIwgAAAD8AAMjCAADIQgAAAL8AAMjCAADIwgAAAL8AAMjCAADIwgAAAL8AAMhCAADIwgAAAD8AAMjCAADIwgAAAL8AAMjCAADIQgAAAL8AAMjCAADIwgAAAD8AAMhCAADIwgAAAL8AAMhCAADIwgAAAD8AAMhCAADIQgAAAD8AAMhCAADIQgAAAD8AAMhCAADIwgAAAD8AAMhCAADIwgAAAD8AAMjCAADIQgAAAL8AAMhCAADIQgAAAL8AAMhCAADIQgAAAL8AAMjCAADIQgAAAL8AAMhCAADIQgAAAD8AAMhCAADIQgAAAD8AAMjCAADIQgAAAD8AAMjCAADIQgAAAD8AAMjCAAAAgP9//n8AAACA/3/+fwAAAID/f/5/AIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAAAgP9//n//f/9/AAD/P/9//38AAP8//3//fwAA/z8AgP////8AAACA/////wAAAID/////AAAAgAAA//8AAP9//38AAP8///8AgP9//n///wCA/3/+f///AID/f/5//////wAA/z8AgP////8AAP//AID/f/5/")
 }]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vflwn"]
+albedo_texture = ExtResource("19_xaylg")
+uv1_scale = Vector3(24.235, 9.05, 8.785)
+uv1_offset = Vector3(0, 0.145, 0)
+
+[sub_resource type="TorusMesh" id="TorusMesh_xaylg"]
+material = SubResource("StandardMaterial3D_vflwn")
+inner_radius = 64.905
+outer_radius = 81.855
+rings = 10
+ring_segments = 6
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_0wtps"]
 plane = Plane(0, 1, 0, -0.065)
@@ -622,7 +635,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7907693, 0)
 
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=1068619919]
 transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, 0, -0.50099087, 0)
-mesh = SubResource("ArrayMesh_sfnqe")
+mesh = SubResource("ArrayMesh_1yr47")
 surface_material_override/0 = ExtResource("18_24doq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="OutsideWorld/Ground" unique_id=1159575935]
@@ -686,6 +699,10 @@ surface_material_override/0 = ExtResource("18_24doq")
 transform = Transform3D(0.81237423, 0, 0, 0, 1, 0, 0, 0, 0.5604243, 158.67313, -0.5009999, 111.44321)
 mesh = SubResource("ArrayMesh_0wtps")
 surface_material_override/0 = ExtResource("18_24doq")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="OutsideWorld/Ground" unique_id=1993779803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 141.16226, -7.333523, 2.28)
+mesh = SubResource("TorusMesh_xaylg")
 
 [node name="Forest" type="Node3D" parent="OutsideWorld" unique_id=637291074]
 

@@ -1,7 +1,7 @@
+MeshInstance3D
 CollisionShape3D
 CollisionPolygon3D
 StaticBody3D
-MeshInstance3D
 Node3D
 MultiMeshInstance3D
 CSGCylinder3D
