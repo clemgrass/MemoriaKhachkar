@@ -61,6 +61,7 @@ var default_fov: float
 @onready var UI_zoomRemember = $"../UI/zoomRemember"
 @onready var UI_textRemember = $"../UI/textRemember/Label"
 @onready var UI_camera = $"../UI/camera"
+
 """
 Practice code 
 """
@@ -149,6 +150,8 @@ func _physics_process(delta: float) -> void:
 			move_and_slide()
 		
 		PlayerState.ENDING:
+			$"../UI/textRemember/Label".visible = true
+			$"../AnimationPlayer".play("subtitles")
 			return
 
 func _normal_movement(delta):
@@ -273,6 +276,16 @@ func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed(input_left_click) and grabbed_object:
 		grabbed_object = null
 		just_released = true
+	
+	if Input.is_action_just_pressed("screenshot"):
+		await RenderingServer.frame_post_draw
+	
+		var image = get_viewport().get_texture().get_image()
+		
+		var path = "res://Player/Album/Photos/screenshot.png"
+		image.save_png(path)
+		
+		print("Guardado en: ", path)
 		
 func enter_terminal(terminal_node):
 	state = PlayerState.TERMINAL

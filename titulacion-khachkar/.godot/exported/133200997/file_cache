@@ -11,15 +11,15 @@ res://Museum/Walls/eastWall.tscn::9426f95542ca1e9cd0feb32f12e106f4::1775575318::
 res://Museum/Walls/roof.tscn::95ab4cf7d82d20aea623e485f907d039::1775574785::res://.godot/exported/133200997/export-cb5ba5f1beb88dfcb3ef1aff8c74ccd8-roof.scn
 res://Museum/Walls/southWall.tscn::7f52476e39ff530a664d0da96366f984::1775574916::res://.godot/exported/133200997/export-937355a3dc617ac3960791751b5de3f3-southWall.scn
 res://Museum/Walls/westWall.tscn::bbea1a74aa8da68a1d98bc1591795073::1775739892::res://.godot/exported/133200997/export-d68831e015b0ddaf975fe5b0af703242-westWall.scn
-res://Museum/museum.tscn::c4d5f586397eae33fcbb07821047c291::1776984371::res://.godot/exported/133200997/export-eba78c453e1783cf06dab7d201b49471-museum.scn
+res://Museum/museum.tscn::dfb10bbc30084fc87041e8dfa7efd2b1::1777839511::res://.godot/exported/133200997/export-eba78c453e1783cf06dab7d201b49471-museum.scn
 res://Player/playerController.tscn::1fccc30a09ddeb148887fbbe09a872b4::1776871297::res://.godot/exported/133200997/export-a31bc38c56e1a46daefc8a6a1f49031c-playerController.scn
-res://World/MainGame.tscn::6364167f8da7d5e98894aa5df82e3777::1776993563::res://.godot/exported/133200997/export-5814d8efed3e89ac5e3b401a1eef1d40-MainGame.scn
+res://World/MainGame.tscn::448708f598228e895b34fd157d4244f7::1777845790::res://.godot/exported/133200997/export-5814d8efed3e89ac5e3b401a1eef1d40-MainGame.scn
 res://Museum/Entrance/Textures/Marble016_4K-JPG.tres::4c483dadef4e34c2f8aa5bd05a500534::1773943771::res://.godot/exported/133200997/export-11d9af47f1088c6d19fcb040bc7144c7-Marble016_4K-JPG.res
 res://Museum/Entrance/reception.tscn::0a1d0557f752e15cd56ec6fa4c5a4d42::1776884694::res://.godot/exported/133200997/export-f3cc5faa5aca32515b3c015d1ce98f83-reception.scn
 res://Museum/Entrance/stool.tscn::839c894cb61554b03a3f9bc8f1ae575a::1775577731::res://.godot/exported/133200997/export-fdaf2744dc911cc2e4a66e2771d7b294-stool.scn
 res://Museum/Final_Room/big_computer.tscn::f55949f23d65392fbc2979168af3eea6::1775589353::res://.godot/exported/133200997/export-3898c0aa7806f830464d0772f95763d4-big_computer.scn
 res://Museum/Final_Room/cassette.tscn::03ca0f15477be3d268ee64f15469841a::1775589630::res://.godot/exported/133200997/export-f970410060ec98820318d365a98d8f54-cassette.scn
-res://Museum/Final_Room/finalRoom.tscn::2e02c087f9911e5d51c6c2aa76b61c6a::1776984277::res://.godot/exported/133200997/export-4d851621ed670f393a94a612db4b15d6-finalRoom.scn
+res://Museum/Final_Room/finalRoom.tscn::d5d58da84a4f3db949da314b579e713a::1777847112::res://.godot/exported/133200997/export-4d851621ed670f393a94a612db4b15d6-finalRoom.scn
 res://Museum/Final_Room/record_system.tscn::401e95a96ff6db4e7302760794a0a9a1::1775589636::res://.godot/exported/133200997/export-e6ff37b7c30f1399e161720183552ecc-record_system.scn
 res://Museum/Room_1/room1.tscn::4476843b947d8a307b919a14977105e7::1776982251::res://.godot/exported/133200997/export-bc8cd876c6db31e107ec7cade5e30f55-room1.scn
 res://Museum/Room_2/Metal048A_4K-JPG.tres::13b1a3b0e887c532a889ce74e1a76a18::1773931367::res://.godot/exported/133200997/export-a62306da7a1b23bc95f6c930fe762ac6-Metal048A_4K-JPG.res
@@ -53,7 +53,7 @@ res://Museum/Room_3/khachkar_3_maninfold.tscn::589b5a1e96d1b0086ccc0bb69782a125:
 res://MainMenu/credits.tscn::fe3460fc722573a667174ad3596ca810::1774973989::res://.godot/exported/133200997/export-de72aa02c1b0e150dd01c6306feab986-credits.scn
 res://Museum/Room_4/khachkar_4_maninfold.tscn::5651ae75ee7abface79c03c17cbc3e31::1774880623::res://.godot/exported/133200997/export-b5885948e8136f613ca560b769b843a5-khachkar_4_maninfold.scn
 res://Museum/Room_5/khachkar_5_maninfold.tscn::ff2e3c71632e107c1de182d7f3f342b5::1774961766::res://.godot/exported/133200997/export-bc7a0703fd1255d11f094ade54f1298a-khachkar_5_maninfold.scn
-res://MainMenu/mainMenu.tscn::c4d2e44fab6097a889ed2f4cc2b3ab56::1776987208::res://.godot/exported/133200997/export-6a31f80e7684824d7dfedc18955f5737-mainMenu.scn
+res://MainMenu/mainMenu.tscn::4a302c7d2bfedf7906d3b9a57b325a8d::1777847168::res://.godot/exported/133200997/export-6a31f80e7684824d7dfedc18955f5737-mainMenu.scn
 res://MainMenu/font_theme.tres::fe622be4f29248916372cefb354ffa63::1775753233::res://.godot/exported/133200997/export-00b8ea1abfdaaae116b3763aa7c22a36-font_theme.res
 res://Player/Album/album.tscn::b18cb61298dd2d7488c7b694e090f254::1775498130::res://.godot/exported/133200997/export-ea4ae3d9ed249abcfd90670a7865406e-album.scn
 res://Museum/Ladder/ladder.tscn::1bf24585e3dc4c1b37c1700ca0211a98::1776887467::res://.godot/exported/133200997/export-7e57d05a5eaaa5ef4efc6472896641b6-ladder.scn

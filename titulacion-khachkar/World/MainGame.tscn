@@ -10,13 +10,13 @@
 [ext_resource type="Script" uid="uid://qkx48dpsuqbs" path="res://Player/Album/album.gd" id="8_hp332"]
 [ext_resource type="Texture2D" uid="uid://c1fp3wn05eyl6" path="res://Player/Album/heather-green-SJ8aL5n8vOw-unsplash.jpg" id="9_at42o"]
 [ext_resource type="Texture2D" uid="uid://bpbsit5bb7nke" path="res://Player/Album/olga-thelavart-vS3idIiYxX0-unsplash.jpg" id="10_n5prf"]
-[ext_resource type="Texture2D" uid="uid://bstsoo2f5c4lw" path="res://Player/Album/Photos/khachkar0_pa.png" id="11_mxvto"]
-[ext_resource type="Texture2D" uid="uid://dluogp5fp0enu" path="res://Player/Album/Photos/khachkar1_pa.png" id="12_7fbxh"]
-[ext_resource type="Texture2D" uid="uid://basep5qpo3b2v" path="res://Player/Album/Photos/khachkar2_pa.png" id="13_5vpuc"]
-[ext_resource type="Texture2D" uid="uid://bsbhp5s1vftf8" path="res://Player/Album/Photos/khachkar3_pa.png" id="14_0wtps"]
-[ext_resource type="Texture2D" uid="uid://c3pmc8fy8bo5i" path="res://Player/Album/Photos/khachkar4_pa.png" id="15_3ovrp"]
-[ext_resource type="Texture2D" uid="uid://ccx7imudr87yj" path="res://Player/Album/Photos/khachkar5_pa.png" id="16_4pkn8"]
-[ext_resource type="Texture2D" uid="uid://2aookvrniqcu" path="res://Player/Album/Photos/khachkar6_pa.png" id="17_umsqh"]
+[ext_resource type="Texture2D" uid="uid://ufhtteq6j8f7" path="res://Player/Album/Photos/khachkar0.png" id="11_4pkn8"]
+[ext_resource type="Texture2D" uid="uid://cjk0f73uqrol" path="res://Player/Album/Photos/khachkar1.png" id="12_umsqh"]
+[ext_resource type="Texture2D" uid="uid://q7go51au5olo" path="res://Player/Album/Photos/khachkar2.png" id="13_8ja0g"]
+[ext_resource type="Texture2D" uid="uid://cl8r2i1ekc0v" path="res://Player/Album/Photos/khachkar3.png" id="14_nqjgh"]
+[ext_resource type="Texture2D" uid="uid://djh7ve8hxsxft" path="res://Player/Album/Photos/khachkar4.png" id="15_wacu2"]
+[ext_resource type="Texture2D" uid="uid://d4gmko5ay8j36" path="res://Player/Album/Photos/khachkar5.png" id="16_p6skv"]
+[ext_resource type="Texture2D" uid="uid://dwd2ksdbudqo7" path="res://Player/Album/Photos/khachkar6.png" id="17_xe17i"]
 [ext_resource type="Material" uid="uid://0q61kot8t24v" path="res://Terrain/Textures/Ground003_4K-JPG.tres" id="18_24doq"]
 [ext_resource type="Texture2D" uid="uid://vhfqw88h2sky" path="res://Terrain/forestImage.png" id="19_5vpuc"]
 [ext_resource type="Texture2D" uid="uid://cihuttuf7fk1i" path="res://World/road-street-texture-floor-wall-asphalt-372901-pxhere.com.jpg" id="19_xaylg"]
@@ -70,9 +70,6 @@ albedo_texture = ExtResource("9_at42o")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_een4a"]
 albedo_texture = ExtResource("10_n5prf")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7m0u0"]
-albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xes3d"]
 albedo_color = Color(0.89059, 0.89059, 0.8905901, 1)
@@ -398,6 +395,43 @@ bg_color = Color(0, 0, 0, 0)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wtps"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="Animation" id="Animation_8ja0g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/textRemember/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [""]
+}
+
+[sub_resource type="Animation" id="Animation_nqjgh"]
+resource_name = "subtitles"
+length = 145.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/textRemember/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 11, 14, 21, 25, 27, 31, 36, 39, 47, 53, 61, 64, 72, 81, 85, 89, 94, 99, 105, 110, 118, 128, 136, 143),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["\"[Grabación] *[Sonido de cinta avanzando]*\"", "[Grabación] Si alguien encontró esta sala… entonces el museo resistió más de lo esperado.", "[Grabación] Esta tarde vinieron visitantes.", "[Grabación] Nada extraño al principio. Preguntas simples. Miradas rápidas. Se fueron antes del cierre.", "[Grabación] Horas después regresaron los vehículos.", "[Grabación] Ahí entendimos.", "[Grabación] La forma en que observaban las salas… las piedras…", "[Grabación] como si su sola existencia fuera una ofensa.", "[Grabación] Tuvimos poco tiempo.", "[Grabación] Cada uno tomó lo que pudo y comenzó a esconder piezas antes de que entraran al ala principal.", "[Grabación] No fue difícil ocultarlas. Dejamos pistas en casi todas las salas.", "[Grabación] Pero para encontrar algo… primero hay que querer entender por qué existe.", "[Grabación] *[Interferencia]*", "[Grabación] Hay una tristeza difícil de explicar en ver a alguien destruir algo que sobrevivió siglos.", "[Grabación] Algo hecho por personas que ya no existen… y que aun así lograron dejar una marca en el mundo.", "[Grabación] La piedra del patio no pudo salvarse.", "[Grabación] Escuché cuando cayó.", "[Grabación] *[La cinta cruje suavemente]*", "[Grabación] Dudo que alguien llegue a escuchar esto.", "[Grabación] La mayoría ve edificios vacíos y sigue de largo.", "[Grabación] Y quizá así termine todo esto algún día.", "[Grabación] No por el fuego, ni por los golpes… sino porque deja de importarle a la gente.", "[Grabación] Porque los lugares desaparecen dos veces, primero cuando los destruyen… y después, cuando nadie pregunta por ellos.", "Grabación] Pero… si alguien todavía vino hasta aquí… aunque sea demasiado tarde…", "[Grabación] supongo que eso significa que no lograron borrar todo.", ""]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wacu2"]
+_data = {
+&"RESET": SubResource("Animation_8ja0g"),
+&"subtitles": SubResource("Animation_nqjgh")
+}
+
 [node name="MainGame" type="Node3D" unique_id=517629617]
 script = ExtResource("1_kmhrd")
 
@@ -490,36 +524,6 @@ text = "Khachkars Encontrados"
 font_size = 367
 outline_size = 0
 
-[node name="holder1" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide" unique_id=614400161]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, -0.1960642, 0.06923176, -0.17052284)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.22070313, 0.001, 0.25585938)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide/holder1" unique_id=959406236]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
-operation = 2
-size = Vector3(0.2861328, 0.057617188, 0.24316406)
-
-[node name="holder2" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide" unique_id=537197228]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, -0.1960642, 0.069407426, -0.47254607)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.22070313, 0.001, 0.25585938)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide/holder2" unique_id=1609156256]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
-operation = 2
-size = Vector3(0.2861328, 0.057617188, 0.24316406)
-
-[node name="holder3" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide" unique_id=114038163]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, -0.00052358955, 0, 0.00052358955, 0.9999999, 0.18355477, 0.068828605, -0.32974136)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.24987793, 0.001, 0.4746704)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/leftSide/holder3" unique_id=1404979851]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.033203125, 0, 0)
-operation = 2
-size = Vector3(0.29907227, 0.057617188, 0.46069336)
-
 [node name="rightSide" type="Node3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1554130837]
 transform = Transform3D(1, 0, 0, 0, 0.9961947, 0.08715574, 0, -0.08715574, 0.9961947, 0, 0, 0.008)
 
@@ -543,46 +547,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4)
 material_override = SubResource("StandardMaterial3D_rbuub")
 size = Vector3(1, 0.064, 0.7)
 
-[node name="holder4" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide" unique_id=1095532111]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.196, 0.06938682, 0.17069702)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.22070313, 0.001, 0.25585938)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide/holder4" unique_id=196280055]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
-operation = 2
-size = Vector3(0.2861328, 0.057617188, 0.24316406)
-
-[node name="holder5" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide" unique_id=100345029]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.196, 0.069054, 0.47281766)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.22070313, 0.001, 0.25585938)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide/holder5" unique_id=1148842706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
-operation = 2
-size = Vector3(0.2861328, 0.057617188, 0.24316406)
-
-[node name="holder6" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide" unique_id=1719430909]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17015044, 0.06938682, 0.17069702)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.22070313, 0.001, 0.25585938)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide/holder6" unique_id=1768099264]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
-operation = 2
-size = Vector3(0.2861328, 0.057617188, 0.24316406)
-
-[node name="holder7" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide" unique_id=414513089]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17015044, 0.069054, 0.47281766)
-material_override = SubResource("StandardMaterial3D_7m0u0")
-size = Vector3(0.22070313, 0.001, 0.25585938)
-
-[node name="dH" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/rightSide/holder7" unique_id=273783356]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03967285, 0, 0)
-operation = 2
-size = Vector3(0.2861328, 0.057617188, 0.24316406)
-
 [node name="middle" type="Node3D" parent="PlayerController/Head/Camera3D/Album" unique_id=693097324]
 
 [node name="split" type="CSGBox3D" parent="PlayerController/Head/Camera3D/Album/middle" unique_id=1014945612]
@@ -596,39 +560,39 @@ material_override = SubResource("StandardMaterial3D_wr8je")
 size = Vector3(0.9121094, 0.037597656, 0.034729004)
 
 [node name="photok0" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1856397171]
-transform = Transform3D(-1.7484558e-09, 0.038, -2.3207005e-17, -0.003486246, -1.4476922e-10, 0.034866814, 0.039847784, 1.6547121e-09, 0.0030504654, 0.20311782, 0.097522564, -0.33012772)
+transform = Transform3D(-1.005362e-09, 0.023, -9.3292176e-18, -0.0020045915, -8.762348e-11, 0.034866814, 0.022912478, 1.0015362e-09, 0.0030504654, 0.20311782, 0.097522564, -0.33012772)
 visible = false
-texture = ExtResource("11_mxvto")
+texture = ExtResource("11_4pkn8")
 
 [node name="photok1" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=651091392]
-transform = Transform3D(-1.3113416e-09, 0.03, -2.7753169e-18, -0.0026146634, -1.1429056e-10, 0.029885842, 0.029885842, 1.3063516e-09, 0.0026146634, -0.18257928, 0.0833744, -0.17155024)
+transform = Transform3D(-4.0745363e-10, 0.01999999, -1.6880222e-09, -0.0017431215, -2.6193447e-10, 0.029885825, 0.019923883, 9.895302e-10, 0.0026146881, -0.281044, 0.09262085, -0.23710632)
 visible = false
-texture = ExtResource("12_7fbxh")
+texture = ExtResource("12_umsqh")
 
 [node name="photok2" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1207398466]
-transform = Transform3D(-1.3113417e-09, 0.03, -1.29528245e-17, -0.0026146846, -1.1429149e-10, 0.02988584, 0.02988584, 1.3063516e-09, 0.0026146846, -0.17901358, 0.110265195, -0.47306082)
+transform = Transform3D(-8.1490725e-10, 0.019999992, -4.0745363e-10, -0.001743122, -1.1641532e-10, 0.029885832, 0.019923884, 8.731149e-10, 0.0026146872, -0.04842758, 0.11138916, -0.43771362)
 visible = false
-texture = ExtResource("13_5vpuc")
+texture = ExtResource("13_8ja0g")
 
 [node name="photok3" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=111444545]
-transform = Transform3D(-4.715052e-09, 0.029, 2.2858113e-10, 0.002527508, 1.9082154e-10, 0.029885842, 0.028889647, 4.716368e-09, -0.0026146634, -0.1763548, 0.084149264, 0.172)
+transform = Transform3D(-4.598405e-09, 0.01999999, -8.731149e-11, 0.0017431239, 7.858034e-10, 0.029885838, 0.019923888, 4.132744e-09, -0.0026146835, -0.27835083, 0.08892822, 0.20762634)
 visible = false
-texture = ExtResource("14_0wtps")
+texture = ExtResource("14_nqjgh")
 
 [node name="photok4" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=1710273689]
-transform = Transform3D(-1.6173214e-09, 0.037, 0, 0.0032247633, 1.4095888e-10, 0.029885842, 0.036859207, 1.611167e-09, -0.002614673, -0.16276887, 0.11, 0.473)
+transform = Transform3D(-3.3760443e-09, 0.019999992, -8.731149e-11, 0.0017431248, 4.947651e-10, 0.029885838, 0.019923886, 3.0267984e-09, -0.0026146835, -0.119083405, 0.1277771, 0.42669678)
 visible = false
-texture = ExtResource("15_3ovrp")
+texture = ExtResource("15_wacu2")
 
 [node name="photok5" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=409067733]
-transform = Transform3D(-1.3103308e-08, 0.049, 6.711709e-10, 0.005055057, 3.2242523e-10, 0.050805926, 0.05777929, 1.1084114e-08, -0.0044449638, 0.19525605, 0.084149264, 0.172)
+transform = Transform3D(-4.598405e-09, 0.01999999, 3.4924597e-10, 0.0017431239, 7.2759576e-10, 0.050805908, 0.019923888, 4.132744e-09, -0.0044449577, 0.31381607, 0.12716675, 0.42718506)
 visible = false
-texture = ExtResource("16_4pkn8")
+texture = ExtResource("16_p6skv")
 
 [node name="photok6" type="Sprite3D" parent="PlayerController/Head/Camera3D/Album" unique_id=293190573]
-transform = Transform3D(-3.576936e-09, 0.022, 1.3714979e-10, 0.0019174354, 1.4476234e-10, 0.017931502, 0.021916283, 3.5779344e-09, -0.0015688107, 0.1616993, 0.11, 0.473)
+transform = Transform3D(-6.5774657e-09, 0.01999999, 6.4028427e-10, 0.0017431066, -2.6193447e-10, 0.017931502, 0.019923879, 6.868504e-09, -0.0015687984, 0.11410141, 0.09814453, 0.22683716)
 visible = false
-texture = ExtResource("17_umsqh")
+texture = ExtResource("17_xe17i")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="PlayerController/Head/Camera3D/Album" unique_id=514469139]
 transform = Transform3D(7.142857, -1.4901161e-08, 0, -1.4901161e-08, 7.1428576, 2.3841858e-07, -2.9802322e-08, 0, 7.1428556, -0.06046295, 0.9316406, -0.04963684)
@@ -1485,5 +1449,8 @@ position = Vector2(182.5, 180)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
 points = PackedVector2Array(273.725, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=409728768]
+libraries/ = SubResource("AnimationLibrary_wacu2")
 
 [connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]

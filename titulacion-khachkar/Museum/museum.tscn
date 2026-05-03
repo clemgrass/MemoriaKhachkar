@@ -249,7 +249,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.239155, -6.61023, 0.00972
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.276134, 4.4533167, 8.616435)
 
 [node name="DoorBack" type="Node3D" parent="." unique_id=1202346827 groups=["door"]]
-transform = Transform3D(-0.445, 0, 3.8503927e-08, 0, 0.585, 0, -6.719313e-08, 0, -0.255, -33.09882, 0.62860274, -19.990744)
+transform = Transform3D(-0.445, 0, 4.0768867e-08, 0, 0.585, 0, -6.719313e-08, 0, -0.27, -33.05689, 0.62860274, -19.990744)
 script = ExtResource("21_j2oar")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DoorBack" unique_id=1921387980]
