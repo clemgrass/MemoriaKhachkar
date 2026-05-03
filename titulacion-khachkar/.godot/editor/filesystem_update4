@@ -1,2 +1,2 @@
 res://MainMenu/mainMenu.tscn
-res://Player/player_controller.gd
+res://MainMenu/main_menu.gd

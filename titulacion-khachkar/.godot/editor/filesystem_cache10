@@ -1,14 +1,14 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777847350
-export_presets.cfg::TextFile::-1::1777847191::0::1::::<><><>0<>0<><>::
-::res://MainMenu/::1777847168
+::res://::1777847865
+export_presets.cfg::TextFile::-1::1777847373::0::1::::<><><>0<>0<><>::
+::res://MainMenu/::1777847366
 button.gd::GDScript::5090796037382418610::1777846683::0::1::::<>Button<><>0<>0<><>::
 credits.gd::GDScript::7886770776894474853::1774973526::0::1::::<>Node2D<><>0<>0<><>::
 credits.tscn::PackedScene::8108618644080686234::1774973989::0::1::::<><><>0<>0<><>::uid://dkmn7ytdumpon::::res://MainMenu/credits.gd
 font_theme.tres::Theme::6193381812883684279::1775753233::0::1::::<><><>0<>0<><>::uid://bo1li5jeb38e2::::res://MainMenu/LibreBaskerville-VariableFont_wght.ttf
 LibreBaskerville-Italic-VariableFont_wght.ttf::FontFile::8121566713449819281::1775750371::1775750376::1::::<><><>0<>0<>d971c7fc87feef5362b568a8d490de8d<>res://.godot/imported/LibreBaskerville-Italic-VariableFont_wght.ttf-472523450a3ef16d3e5dcdf44cd0e410.fontdata::
 LibreBaskerville-VariableFont_wght.ttf::FontFile::3423422079290739799::1775750371::1775750376::1::::<><><>0<>0<>c27b99ee128f8d312b719e7e10c5d0e0<>res://.godot/imported/LibreBaskerville-VariableFont_wght.ttf-ac3cb0885a4ccae515c261924d76eb21.fontdata::
-mainMenu.tscn::PackedScene::1590292807376358003::1777847168::0::1::::<><><>0<>0<><>::uid://bnam1be50u0sm::::res://MainMenu/main_menu.gd<>uid://dnyfat4280h82::::res://MainMenu/LibreBaskerville-Italic-VariableFont_wght.ttf<>uid://bo1li5jeb38e2::::res://MainMenu/LibreBaskerville-VariableFont_wght.ttf<>uid://bcd4pl58ebgx1::::res://MainMenu/Texturelabs_Paper_290XL.jpg<>uid://cevd8qjgict52::::res://MainMenu/newspaper_photo.png<>uid://cesawxaidogle::::res://MainMenu/button.gd<>uid://bnt7wvf0kjmft::::res://MainMenu/quit.gd
+mainMenu.tscn::PackedScene::1590292807376358003::1777847366::0::1::::<><><>0<>0<><>::uid://bnam1be50u0sm::::res://MainMenu/main_menu.gd<>uid://dnyfat4280h82::::res://MainMenu/LibreBaskerville-Italic-VariableFont_wght.ttf<>uid://bo1li5jeb38e2::::res://MainMenu/LibreBaskerville-VariableFont_wght.ttf<>uid://bcd4pl58ebgx1::::res://MainMenu/Texturelabs_Paper_290XL.jpg<>uid://cevd8qjgict52::::res://MainMenu/newspaper_photo.png<>uid://cesawxaidogle::::res://MainMenu/button.gd<>uid://bnt7wvf0kjmft::::res://MainMenu/quit.gd
 main_menu.gd::GDScript::3299650745642101444::1777847034::0::1::::<>Control<><>0<>0<><>::
 newspaper_photo.png::CompressedTexture2D::5097190611510994803::1776985298::1776985343::1::::<><><>0<>0<>1d57f4cd4ed1c3d353fe04e9b194e38a<>res://.godot/imported/newspaper_photo.png-1cea88f3d4ccf77ebf10ecb1782e8c85.ctex::
 quit.gd::GDScript::3340082171413084213::1775757075::0::1::::<>Button<><>0<>0<><>::
@@ -268,9 +268,9 @@ westWall.tscn::PackedScene::6399091110454656408::1775739892::0::1::::<><><>0<>0<
 blue_metal_plate_arm_4k.jpg::CompressedTexture2D::5102840690479163941::1773926839::1773926845::1::::<><><>0<>0<>56c4de87a7bc7fee749d5a45e35dbf87<>res://.godot/imported/blue_metal_plate_arm_4k.jpg-68e7a37317a7c646b6615c96a87510c8.s3tc.ctex::
 blue_metal_plate_diff_4k.jpg::CompressedTexture2D::3054474921065418334::1773926839::1773926845::1::::<><><>0<>0<>d14b41750492ad83bc5d346d304ccc9a<>res://.godot/imported/blue_metal_plate_diff_4k.jpg-64deba5f4824432d0d5d0575c334cc33.s3tc.ctex::
 blue_metal_plate_nor_gl_4k.jpg::CompressedTexture2D::5229290386749224565::1773926839::1773926845::1::::<><><>0<>0<>82647911109af150f45f6a059b80787c<>res://.godot/imported/blue_metal_plate_nor_gl_4k.jpg-ac3939c635dfb6a30050bc8eb5878b1e.s3tc.ctex::
-::res://Player/::1777847168
+::res://Player/::1777847365
 playerController.tscn::PackedScene::97915239036222750::1776871297::0::1::::<><><>0<>0<><>::uid://uyc6a0144gf5::::res://Player/player_controller.gd<>uid://j7nv0wdgspik::::res://Player/PNG/White Retina/crosshair002.png<>uid://b575dpb28nak1::::res://Player/PNG/White Retina/crosshair007.png<>uid://g5de8nu46712::::res://Museum/Room_Complisonist/crowbar.tscn<>uid://bsb23ca6s8p8::::res://Player/PNG/Black/crosshair007.png<>uid://qkx48dpsuqbs::::res://Player/Album/album.gd<>uid://c1fp3wn05eyl6::::res://Player/Album/heather-green-SJ8aL5n8vOw-unsplash.jpg<>uid://bpbsit5bb7nke::::res://Player/Album/olga-thelavart-vS3idIiYxX0-unsplash.jpg<>uid://bstsoo2f5c4lw::::res://Player/Album/Photos/khachkar0_pa.png<>uid://dluogp5fp0enu::::res://Player/Album/Photos/khachkar1_pa.png<>uid://basep5qpo3b2v::::res://Player/Album/Photos/khachkar2_pa.png<>uid://bsbhp5s1vftf8::::res://Player/Album/Photos/khachkar3_pa.png<>uid://c3pmc8fy8bo5i::::res://Player/Album/Photos/khachkar4_pa.png<>uid://ccx7imudr87yj::::res://Player/Album/Photos/khachkar5_pa.png<>uid://2aookvrniqcu::::res://Player/Album/Photos/khachkar6_pa.png
-player_controller.gd::GDScript::1453498772295999128::1777847168::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player_controller.gd::GDScript::1453498772295999128::1777847365::0::1::::<>CharacterBody3D<><>0<>0<><>::
 Preview.png::CompressedTexture2D::8102950515812567257::1774361239::1774361244::1::::<><><>0<>0<>365e92dad5ac373f1dbce47f01167da9<>res://.godot/imported/Preview.png-fdd15dc5f675f3f27c3944af0d49417f.ctex::
 ::res://Player/Album/::1775498130
 album.gd::GDScript::1145115293217344596::1775497125::0::1::::<>Node3D<><>0<>0<><>::
