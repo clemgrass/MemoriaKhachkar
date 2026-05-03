@@ -277,15 +277,6 @@ func _input(event: InputEvent) -> void:
 		grabbed_object = null
 		just_released = true
 	
-	if Input.is_action_just_pressed("screenshot"):
-		await RenderingServer.frame_post_draw
-	
-		var image = get_viewport().get_texture().get_image()
-		
-		var path = "res://Player/Album/Photos/screenshot.png"
-		image.save_png(path)
-		
-		print("Guardado en: ", path)
 		
 func enter_terminal(terminal_node):
 	state = PlayerState.TERMINAL
