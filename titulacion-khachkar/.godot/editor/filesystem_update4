@@ -1,0 +1,4 @@
+res://MainMenu/mainMenu.tscn
+res://MainMenu/main_menu.gd
+res://World/MainGame.tscn
+res://Museum/Room_0/room0.tscn

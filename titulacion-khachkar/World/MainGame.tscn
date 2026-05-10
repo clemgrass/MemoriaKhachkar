@@ -387,8 +387,6 @@ uv1_offset = Vector3(0, 0.001, 0)
 [sub_resource type="QuadMesh" id="QuadMesh_3hgkk"]
 size = Vector2(70, 40)
 
-[sub_resource type="MultiMesh" id="MultiMesh_1yr47"]
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vpuc"]
 bg_color = Color(0, 0, 0, 0)
 
@@ -973,14 +971,8 @@ transform = Transform3D(1.3806422, 0, 0.23200648, 0, 1.4, 0, -0.23200648, 0, 1.3
 [node name="tree3_10" parent="OutsideWorld/Forest/trees" unique_id=822682256 instance=ExtResource("24_1yr47")]
 transform = Transform3D(0.748134, 0, -0.66354764, 0, 1, 0, 0.66354764, 0, 0.748134, 104.17588, 0, -53.36022)
 
-[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="OutsideWorld/Forest" unique_id=1070887541]
-multimesh = SubResource("MultiMesh_1yr47")
-
 [node name="Moto" parent="OutsideWorld" unique_id=1636863557 instance=ExtResource("26_8ja0g")]
 transform = Transform3D(-1.0625184, 0, 0.25881913, 0, 1.1, 0, -0.28470105, 0, -0.9659258, 71.43202, 0.9046512, -24.554667)
-
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1106804151]
-visible = false
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=380086807]
 
