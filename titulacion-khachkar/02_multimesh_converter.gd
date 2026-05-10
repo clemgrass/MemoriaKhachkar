@@ -19,9 +19,9 @@ var multimesh_instances_created = 0
 
 func _ready():
 	if auto_convert_on_ready:
-		print("\n" + "="*70)
+		print("\n" + "=".repeat(70))
 		print("🔄 INICIANDO CONVERSIÓN A MULTIMESH")
-		print("="*70)
+		print("=".repeat(70))
 		
 		await get_tree().process_frame  # Esperar a que cargue la escena
 		
@@ -31,7 +31,7 @@ func _ready():
 		print("\n✅ MULTIMESH CONVERSION COMPLETADA")
 		print("   MultiMeshInstance3D creadas: %d" % multimesh_instances_created)
 		print("   Impacto estimado: -30% a -50% draw calls")
-		print("="*70 + "\n")
+		print("=".repeat(70) + "\n")
 
 func scan_and_group_meshes() -> void:
 	"""Escanea la escena y agrupa MeshInstance3D idénticas"""
@@ -185,4 +185,3 @@ static func optimize_multimesh_performance():
 	   - Si algo se ve mal: revisa cull_mask y materials
 	   - MultiMesh hereda material del MultiMeshInstance3D
 	""")
-

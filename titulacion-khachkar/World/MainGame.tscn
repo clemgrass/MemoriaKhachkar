@@ -898,7 +898,7 @@ transform = Transform3D(-0.949217, 0, -0.31462207, 0, 1, 0, 0.31462207, 0, -0.94
 transform = Transform3D(0.358987, 0, -0.9333426, 0, 1, 0, 0.9333426, 0, 0.358987, -106.25216, -0.049999952, 54.908108)
 
 [node name="tree1_3" parent="OutsideWorld/Forest/trees" unique_id=528471139 instance=ExtResource("22_4pkn8")]
-transform = Transform3D(-0.5698331, 0, -1.2787846, 0, 1.4, 0, 1.2787846, 0, -0.5698331, -0.7810612, -0.049999952, 46.946377)
+transform = Transform3D(-1.2447917, 0, 0.6406977, 0, 1.4000001, 0, -0.6406977, 0, -1.2447917, -0.7810612, -0.049999952, 46.946377)
 
 [node name="tree1_4" parent="OutsideWorld/Forest/trees" unique_id=1344862144 instance=ExtResource("22_4pkn8")]
 transform = Transform3D(-0.9325508, 0, 0.3610388, 0, 1, 0, -0.3610388, 0, -0.9325508, -59.654472, -0.049999952, -42.64844)
@@ -1448,5 +1448,7 @@ libraries/ = SubResource("AnimationLibrary_wacu2")
 
 [node name="optiNode" type="Node3D" parent="." unique_id=1437308780]
 script = ExtResource("38_nqjgh")
+
+[node name="multimeshnode" type="Node3D" parent="." unique_id=1139326522]
 
 [connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]

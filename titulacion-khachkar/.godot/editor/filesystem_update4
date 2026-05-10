@@ -19,3 +19,12 @@ res://Museum/Second_Floor/LevelFloor.tscn
 res://Museum/Entrance/reception.tscn
 res://Museum/Room_Complisonist/roomComplete.tscn
 res://Museum/Final_Room/finalRoom.tscn
+res://02_multimesh_converter.gd
+res://scene_analysis_results.txt
+res://Museum/Second_Floor/Rail/Rings.tscn
+res://Museum/Room_5/Marble012_4K-JPG.tres
+res://Museum/Second_Floor/pilar_mm_1.gd
+res://Terrain/tree_1.tscn
+res://Terrain/tree_2.tscn
+res://Terrain/tree_3.tscn
+res://MainMenu/mainMenu.tscn

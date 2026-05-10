@@ -5,27 +5,27 @@
 
 📈 RESUMEN GENERAL:
 ----------------------------------------------------------------------
-Total MeshInstance3D: 6804
-Materiales únicos: 280
-Texturas únicas: 75
-Total vértices: 911488
-StaticBody3D: 87
+Total MeshInstance3D: 794
+Materiales únicos: 278
+Texturas únicas: 72
+Total vértices: 165854
+StaticBody3D: 85
 RigidBody3D: 6
 Luces OmniLight3D: 29
 Luces DirectionalLight3D: 0
 
 🔄 TOP 10 MESHES MÁS INSTANCIADOS:
 ----------------------------------------------------------------------
-1. tree_3.tscn::QuadMesh_h5mpy x924 (vértices: 3696) ⚠️ CANDIDATO PARA MULTIMESH
-2. Rings.tscn::ArrayMesh_7a3is x718 (vértices: 162268) ⚠️ CANDIDATO PARA MULTIMESH
-3. Rings.tscn::ArrayMesh_tmoiq x718 (vértices: 162268) ⚠️ CANDIDATO PARA MULTIMESH
-4. Rings.tscn::ArrayMesh_byipx x718 (vértices: 162268) ⚠️ CANDIDATO PARA MULTIMESH
-5. Rings.tscn::ArrayMesh_377fo x718 (vértices: 162268) ⚠️ CANDIDATO PARA MULTIMESH
-6. tree_2.tscn::SphereMesh_c77ll x390 (vértices: 11700) ⚠️ CANDIDATO PARA MULTIMESH
-7. tree_1.tscn::CylinderMesh_b5my3 x168 (vértices: 7056) ⚠️ CANDIDATO PARA MULTIMESH
-8. FloorDetail.tscn::ArrayMesh_jjm14 x152 (vértices: 3648) ⚠️ CANDIDATO PARA MULTIMESH
-9. FloorDetail.tscn::ArrayMesh_tpbdn x152 (vértices: 3648) ⚠️ CANDIDATO PARA MULTIMESH
-10. Pilar.tscn::ArrayMesh_3sikt x147 (vértices: 9114) ⚠️ CANDIDATO PARA MULTIMESH
+1. MainGame.tscn::QuadMesh_umsqh x20 (vértices: 80) ⚡ Considera MultiMesh
+2. ladder.tscn::BoxMesh_a78xm x13 (vértices: 312) ⚡ Considera MultiMesh
+3. tree_1.tscn::CylinderMesh_0o1lx x12 (vértices: 888) ⚡ Considera MultiMesh
+4. tree_1.tscn::ArrayMesh_dgrbd x12 (vértices: 18216) ⚡ Considera MultiMesh
+5. tree_3.tscn::CylinderMesh_r2kqu x11 (vértices: 638) ⚡ Considera MultiMesh
+6. tree_3.tscn::QuadMesh_h5mpy x11 (vértices: 44) ⚡ Considera MultiMesh
+7. tree_3.tscn::CylinderMesh_lktq3 x11 (vértices: 638) ⚡ Considera MultiMesh
+8. MainGame.tscn::ArrayMesh_0wtps x8 (vértices: 192) ⚡ Considera MultiMesh
+9. LevelFloor.tscn::ArrayMesh_2nray x6 (vértices: 144) ⚡ Considera MultiMesh
+10. LevelFloor.tscn::ArrayMesh_qr160 x6 (vértices: 144) ⚡ Considera MultiMesh
 
 🖼️ INFORMACIÓN DE TEXTURAS:
 ----------------------------------------------------------------------
@@ -34,15 +34,15 @@ Top 15 texturas por consumo de VRAM:
   2. long_white_tiles_diff_4k.jpg (2048x2048) = ~16.00 MB
   3. Ground003_4K-JPG_NormalGL.jpg (2048x2048) = ~16.00 MB ⚠️ Usada en 1 sola imagen
   4. Kachkar6_uv_map (1).jpg (2047x2048) = ~15.99 MB ⚠️ Usada en 1 sola imagen
-  5. khachkar2maninfold_khachkar2_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  6. Khachkar2_uv_map (1).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  7. khachkar3maninfold_khachkar3_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  8. Khachkar3_uv_map (2).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  9. khachkar4maninfold_khachkar4_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  10. khachkar1_khachkar1_uv_map.jpg (1536x2048) = ~12.00 MB
-  11. Khachkar4_uv_map (4).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  12. Khachkar5_uv_map (5).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
-  13. khachkar5maninfold_khachkar5_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  5. Khachkar5_uv_map (5).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  6. khachkar5maninfold_khachkar5_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  7. Khachkar4_uv_map (4).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  8. khachkar4maninfold_khachkar4_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  9. Khachkar3_uv_map (2).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  10. khachkar3maninfold_khachkar3_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  11. Khachkar2_uv_map (1).jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  12. khachkar2maninfold_khachkar2_uv_map.jpg (1536x2048) = ~12.00 MB ⚠️ Usada en 1 sola imagen
+  13. khachkar1_khachkar1_uv_map.jpg (1536x2048) = ~12.00 MB
   14. road-street-texture-floor-wall-asphalt-372901-pxhere.com.jpg (2048x1365) = ~10.66 MB ⚠️ Usada en 1 sola imagen
   15. trees-305811_1280.png (1280x1154) = ~5.63 MB
 
@@ -50,35 +50,32 @@ Memoria total (texturas): ~192.49 MB
 
 🎨 INFORMACIÓN DE MATERIALES:
 ----------------------------------------------------------------------
-Materiales únicos: 280
+Materiales únicos: 278
 
 Top materiales por uso:
-  1. Marble016_4K-JPG.tres x2882 instancias
-  2. tree_3.tscn::StandardMaterial3D_l6b1a x924 instancias
-  3. Marble022_4K-JPG.tres x588 instancias
-  4. tree_1.tscn::StandardMaterial3D_g3t73 x516 instancias
-  5. tree_2.tscn::StandardMaterial3D_3iggs x390 instancias
-  6. Marble012_4K-JPG.tres x336 instancias
-  7. Pilar.tscn::StandardMaterial3D_r0l16 x147 instancias
-  8. Marble013_4K-JPG.tres x78 instancias
-  9. tree_3.tscn::StandardMaterial3D_2hr0w x77 instancias
-  10. finalRoom.tscn::StandardMaterial3D_1ees7 x55 instancias
+  1. room2.tscn::StandardMaterial3D_sd7ib x40 instancias
+  2. room4.tscn::StandardMaterial3D_plvat x33 instancias
+  3. LevelFloor.tscn::StandardMaterial3D_qr160 x30 instancias
+  4. big_computer.tscn::StandardMaterial3D_gbetb x27 instancias
+  5. room3.tscn::StandardMaterial3D_gnxj8 x27 instancias
+  6. finalRoom.tscn::StandardMaterial3D_7yh7v x24 instancias
+  7. finalRoom.tscn::StandardMaterial3D_dff6b x24 instancias
+  8. tree_1.tscn::StandardMaterial3D_g3t73 x24 instancias
+  9. stairs.tscn::StandardMaterial3D_qr160 x20 instancias
+  10. big_computer.tscn::StandardMaterial3D_dnhsr x18 instancias
 
 💡 RECOMENDACIONES DE OPTIMIZACIÓN:
 ----------------------------------------------------------------------
-✅ MultiMesh: Tienes 24 meshes que aparecen 20+ veces
-   Convertir a MultiMesh podría reducir draw calls significativamente
-
 ✅ Atlas de Texturas: Tienes 33 texturas usadas solo 1 vez
    Crear atlas de texturas podría reducir cambios de textura
 
-✅ LOD (Level of Detail): Con 6804 meshes, implementar LOD es crucial
+✅ LOD (Level of Detail): Con 794 meshes, implementar LOD es crucial
    Para WebGL, especialmente importante reducir vértices en distancia
 
 ✅ Occlusion Culling: Con varias salas visibles simultáneamente,
    implementar occlusion culling es CRÍTICO para WebGL
 
-⚠️ Física: Solo 1.3% de meshes tienen StaticBody3D
+⚠️ Física: Solo 10.7% de meshes tienen StaticBody3D
    Para objetos puramente decorativos, evita physics bodies
 
 ======================================================================
