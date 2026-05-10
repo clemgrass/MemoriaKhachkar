@@ -28,3 +28,9 @@ res://Terrain/tree_1.tscn
 res://Terrain/tree_2.tscn
 res://Terrain/tree_3.tscn
 res://MainMenu/mainMenu.tscn
+res://export_presets.cfg
+res://06_async_scene_loader.gd
+res://ELIMINAR_STUTTERS.md
+res://MainMenu/main_menu.gd
+res://MAIN_MENU_GUIA_IMPLEMENTACION.md
+res://MAIN_MENU_OPTIMIZADO.gd

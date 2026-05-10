@@ -111,7 +111,6 @@ text = "Play"
 script = ExtResource("3_qjfgb")
 
 [node name="Quit" type="Button" parent="Node2D" unique_id=48466373]
-visible = false
 z_index = 4
 offset_left = -863.0
 offset_top = 227.0
@@ -186,6 +185,13 @@ offset_left = 796.0
 offset_top = -197.0
 offset_right = 800.0
 offset_bottom = -170.0
+
+[node name="LoadingLabel" type="Label" parent="." unique_id=101423286]
+layout_mode = 0
+offset_left = 778.0
+offset_top = -241.0
+offset_right = 818.0
+offset_bottom = -218.0
 
 [connection signal="mouse_entered" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_exited"]
