@@ -45,67 +45,6 @@ font_color = Color(0, 0, 0, 1)
 font = ExtResource("1_f0et7")
 font_color = Color(0, 0, 0, 1)
 
-[sub_resource type="Animation" id="Animation_ch7cu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:zoom")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_qjfgb"]
-resource_name = "start_game"
-length = 6.15
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 6.1013746),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(428, 184)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:zoom")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 6.1013746),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(2.015, 2.11)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_c824c"]
-_data = {
-&"RESET": SubResource("Animation_ch7cu"),
-&"start_game": SubResource("Animation_qjfgb")
-}
-
 [node name="MainMenu" type="Control" unique_id=20530609]
 layout_mode = 3
 anchors_preset = 15
@@ -196,7 +135,7 @@ offset_left = -76.53058
 offset_top = -86.73468
 offset_right = 1839.4695
 offset_bottom = 989.2653
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.53, 0.51)
 size_flags_horizontal = 10
 size_flags_vertical = 4
 texture = ExtResource("3_ch7cu")
@@ -237,9 +176,6 @@ offset_bottom = 544.0
 text = "El museo de khachkars, que albergaba una colección significativa de estas piedras talladas, fue cerrado de forma repentina hace algunos años. Desde entonces, no se ha emitido un informe oficial concluyente. Visitantes recientes describen el acceso principal como parcialmente deteriorado. Una de las piezas cercanas a la entrada presenta daños visibles, aunque no existen registros públicos que expliquen cuándo ocurrieron. Documentos internos apuntan a actividad inusual en los días previos al cierre, incluyendo accesos fuera de horario y el uso de áreas no abiertas al público. Inventarios incompletos muestran discrepancias: ciertas piezas no figuran como trasladadas, pero tampoco fueron encontradas en sus ubicaciones habituales. El paradero de parte del personal sigue sin esclarecerse. Los últimos reportes indican que varios permanecieron en el recinto más tiempo del previsto."
 label_settings = SubResource("LabelSettings_c824c")
 autowrap_mode = 2
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1240265653]
-libraries/ = SubResource("AnimationLibrary_c824c")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=283122894]
 
