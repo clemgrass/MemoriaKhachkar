@@ -40,6 +40,5 @@ func _on_play_pressed() -> void:
 		return
 		
 	$Node2D/Play.disabled = true
-	$Node2D/Quit.disabled = true
 	get_tree().root.add_child(game_instance)
 	queue_free()
