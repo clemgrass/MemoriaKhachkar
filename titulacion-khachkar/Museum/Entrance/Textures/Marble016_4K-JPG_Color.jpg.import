@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd0n6qf5pam7v"
 path.s3tc="res://.godot/imported/Marble016_4K-JPG_Color.jpg-92366410407cb44dff5b1c9dd10ad596.s3tc.ctex"
+path.etc2="res://.godot/imported/Marble016_4K-JPG_Color.jpg-92366410407cb44dff5b1c9dd10ad596.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Entrance/Textures/Marble016_4K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/Marble016_4K-JPG_Color.jpg-92366410407cb44dff5b1c9dd10ad596.s3tc.ctex"]
+dest_files=["res://.godot/imported/Marble016_4K-JPG_Color.jpg-92366410407cb44dff5b1c9dd10ad596.s3tc.ctex", "res://.godot/imported/Marble016_4K-JPG_Color.jpg-92366410407cb44dff5b1c9dd10ad596.etc2.ctex"]
 
 [params]
 

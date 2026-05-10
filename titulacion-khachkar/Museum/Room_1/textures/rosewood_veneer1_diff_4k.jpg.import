@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dladw1p2wab13"
 path.s3tc="res://.godot/imported/rosewood_veneer1_diff_4k.jpg-edf9052051a285e562799f736322995e.s3tc.ctex"
+path.etc2="res://.godot/imported/rosewood_veneer1_diff_4k.jpg-edf9052051a285e562799f736322995e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_1/textures/rosewood_veneer1_diff_4k.jpg"
-dest_files=["res://.godot/imported/rosewood_veneer1_diff_4k.jpg-edf9052051a285e562799f736322995e.s3tc.ctex"]
+dest_files=["res://.godot/imported/rosewood_veneer1_diff_4k.jpg-edf9052051a285e562799f736322995e.s3tc.ctex", "res://.godot/imported/rosewood_veneer1_diff_4k.jpg-edf9052051a285e562799f736322995e.etc2.ctex"]
 
 [params]
 

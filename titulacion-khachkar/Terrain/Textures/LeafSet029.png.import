@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg8j0045vqcgw"
 path.s3tc="res://.godot/imported/LeafSet029.png-1a944bf0ae8ba9d5f5f3fc2db5e270db.s3tc.ctex"
+path.etc2="res://.godot/imported/LeafSet029.png-1a944bf0ae8ba9d5f5f3fc2db5e270db.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Terrain/Textures/LeafSet029.png"
-dest_files=["res://.godot/imported/LeafSet029.png-1a944bf0ae8ba9d5f5f3fc2db5e270db.s3tc.ctex"]
+dest_files=["res://.godot/imported/LeafSet029.png-1a944bf0ae8ba9d5f5f3fc2db5e270db.s3tc.ctex", "res://.godot/imported/LeafSet029.png-1a944bf0ae8ba9d5f5f3fc2db5e270db.etc2.ctex"]
 
 [params]
 

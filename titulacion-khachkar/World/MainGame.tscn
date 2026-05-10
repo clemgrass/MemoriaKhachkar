@@ -37,6 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://ylry8nphu04a" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Left_Key_Light.png" id="28_8ja0g"]
 [ext_resource type="Texture2D" uid="uid://ctoatenju0k3x" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Right_Key_Light.png" id="29_nqjgh"]
 [ext_resource type="Texture2D" uid="uid://bcd4pl58ebgx1" path="res://MainMenu/Texturelabs_Paper_290XL.jpg" id="36_onmfn"]
+[ext_resource type="Script" uid="uid://drtvevx60eu4t" path="res://World/data_opti.gd" id="38_nqjgh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_afcvc"]
 sky_top_color = Color(0.23098785, 0.4009148, 0.43838903, 1)
@@ -1444,5 +1445,8 @@ points = PackedVector2Array(273.725, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=409728768]
 libraries/ = SubResource("AnimationLibrary_wacu2")
+
+[node name="optiNode" type="Node3D" parent="." unique_id=1437308780]
+script = ExtResource("38_nqjgh")
 
 [connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]

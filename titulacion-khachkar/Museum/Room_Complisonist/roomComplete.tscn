@@ -176,6 +176,15 @@ size = Vector3(0.10449219, 3.006897, 5.1802692)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ej6mq"]
 size = Vector3(5.1673927, 0.12109375, 10.013672)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_glbuj"]
+size = Vector2(4.0302763, 6.5660944)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_4g6p8"]
+size = Vector2(1.9139452, 3.940773)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_2sslb"]
+size = Vector2(3.036859, 5.125267)
+
 [node name="RoomComplete" type="Node3D" unique_id=4710292]
 
 [node name="northWallMesh" type="MeshInstance3D" parent="." unique_id=425264134]
@@ -288,3 +297,25 @@ omni_range = 8.0633
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.875935, 2.2721329, 2.2393978)
 light_bake_mode = 1
 omni_range = 8.0633
+
+[node name="culling" type="Node3D" parent="." unique_id=931574581]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=159752807]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 3.2146783, 2.8798156)
+occluder = SubResource("QuadOccluder3D_glbuj")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="culling" unique_id=1978747293]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 3.2146783, -2.933394)
+occluder = SubResource("QuadOccluder3D_glbuj")
+
+[node name="OccluderInstance3D3" type="OccluderInstance3D" parent="culling" unique_id=750183580]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 4.567522, 0.06697178)
+occluder = SubResource("QuadOccluder3D_4g6p8")
+
+[node name="OccluderInstance3D4" type="OccluderInstance3D" parent="culling" unique_id=431142475]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1, 0, -4.371139e-08, -2.606711, 3.0036957, 0.06697178)
+occluder = SubResource("QuadOccluder3D_2sslb")
+
+[node name="OccluderInstance3D5" type="OccluderInstance3D" parent="culling" unique_id=159885146]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, 1, 1.9106855e-15, 0, 0, -4.371139e-08, 1, -2.606711, 1.4523256, 4.950373)
+occluder = SubResource("QuadOccluder3D_2sslb")

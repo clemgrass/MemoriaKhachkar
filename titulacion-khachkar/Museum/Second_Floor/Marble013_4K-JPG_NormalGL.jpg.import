@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckhavysrvqi62"
 path.s3tc="res://.godot/imported/Marble013_4K-JPG_NormalGL.jpg-96e397eae6f78410a1f94a7a8749f26a.s3tc.ctex"
+path.etc2="res://.godot/imported/Marble013_4K-JPG_NormalGL.jpg-96e397eae6f78410a1f94a7a8749f26a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Second_Floor/Marble013_4K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/Marble013_4K-JPG_NormalGL.jpg-96e397eae6f78410a1f94a7a8749f26a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Marble013_4K-JPG_NormalGL.jpg-96e397eae6f78410a1f94a7a8749f26a.s3tc.ctex", "res://.godot/imported/Marble013_4K-JPG_NormalGL.jpg-96e397eae6f78410a1f94a7a8749f26a.etc2.ctex"]
 
 [params]
 

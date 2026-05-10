@@ -37,6 +37,12 @@ _surfaces = [{
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_52qta"]
 albedo_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_52qta"]
+size = Vector2(47.449364, 28.52229)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_gykib"]
+size = Vector2(28.417019, 28.52229)
+
 [node name="Room0" type="Node3D" unique_id=307174438]
 
 [node name="floor" type="StaticBody3D" parent="." unique_id=1216273423]
@@ -49,3 +55,13 @@ shape = SubResource("ConcavePolygonShape3D_52qta")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6902491, 0)
 mesh = SubResource("ArrayMesh_gykib")
 surface_material_override/1 = SubResource("StandardMaterial3D_52qta")
+
+[node name="culling" type="Node3D" parent="." unique_id=1363044189]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=1997554682]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 15.976985, -0.6719332, 0)
+occluder = SubResource("QuadOccluder3D_52qta")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="culling" unique_id=1701717563]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -25.296879, -0.6719332, 0)
+occluder = SubResource("QuadOccluder3D_gykib")

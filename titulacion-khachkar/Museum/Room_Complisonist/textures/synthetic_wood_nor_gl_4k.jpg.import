@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://di6xouwdmx0rv"
 path.s3tc="res://.godot/imported/synthetic_wood_nor_gl_4k.jpg-95655743a922ab7ee6058f33c4c15994.s3tc.ctex"
+path.etc2="res://.godot/imported/synthetic_wood_nor_gl_4k.jpg-95655743a922ab7ee6058f33c4c15994.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_Complisonist/textures/synthetic_wood_nor_gl_4k.jpg"
-dest_files=["res://.godot/imported/synthetic_wood_nor_gl_4k.jpg-95655743a922ab7ee6058f33c4c15994.s3tc.ctex"]
+dest_files=["res://.godot/imported/synthetic_wood_nor_gl_4k.jpg-95655743a922ab7ee6058f33c4c15994.s3tc.ctex", "res://.godot/imported/synthetic_wood_nor_gl_4k.jpg-95655743a922ab7ee6058f33c4c15994.etc2.ctex"]
 
 [params]
 

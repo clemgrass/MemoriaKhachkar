@@ -200,6 +200,9 @@ size = Vector3(2.0007248, 0.09857178, 10)
 [sub_resource type="BoxShape3D" id="BoxShape3D_54e8e"]
 size = Vector3(0.50897026, 0.09857178, 10)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_2nray"]
+size = Vector2(9.710082, 6.9016113)
+
 [node name="Stairs" type="Node3D" unique_id=1301923489]
 
 [node name="stairMesh" type="MeshInstance3D" parent="." unique_id=1410928762]
@@ -302,3 +305,9 @@ shape = SubResource("BoxShape3D_54e8e")
 [node name="coll11" type="CollisionShape3D" parent="stairB" unique_id=1325403425]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.504311, 1.0007428, 0)
 shape = SubResource("BoxShape3D_54e8e")
+
+[node name="culling" type="Node3D" parent="." unique_id=2070590201]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=319066258]
+transform = Transform3D(-2.61064e-09, -0.998215, -0.059724495, -4.3633364e-08, 0.059724495, -0.998215, 1, 7.8353036e-16, -4.3711392e-08, -3.2406216, 0.17914009, 0)
+occluder = SubResource("QuadOccluder3D_2nray")

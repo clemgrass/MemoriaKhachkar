@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba5v8xdxnvrqf"
 path.s3tc="res://.godot/imported/world-political-mw7-miller.png-8518976d8221cc0dce6e9562b87a067e.s3tc.ctex"
+path.etc2="res://.godot/imported/world-political-mw7-miller.png-8518976d8221cc0dce6e9562b87a067e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_5/world-political-mw7-miller.png"
-dest_files=["res://.godot/imported/world-political-mw7-miller.png-8518976d8221cc0dce6e9562b87a067e.s3tc.ctex"]
+dest_files=["res://.godot/imported/world-political-mw7-miller.png-8518976d8221cc0dce6e9562b87a067e.s3tc.ctex", "res://.godot/imported/world-political-mw7-miller.png-8518976d8221cc0dce6e9562b87a067e.etc2.ctex"]
 
 [params]
 

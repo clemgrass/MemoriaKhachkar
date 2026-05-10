@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6capd78klpum"
 path.s3tc="res://.godot/imported/wood_table_diff_4k.jpg-91228ba1ac5b66d071b459a3eaee01d7.s3tc.ctex"
+path.etc2="res://.godot/imported/wood_table_diff_4k.jpg-91228ba1ac5b66d071b459a3eaee01d7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Entrance/Textures/textures/wood_table_diff_4k.jpg"
-dest_files=["res://.godot/imported/wood_table_diff_4k.jpg-91228ba1ac5b66d071b459a3eaee01d7.s3tc.ctex"]
+dest_files=["res://.godot/imported/wood_table_diff_4k.jpg-91228ba1ac5b66d071b459a3eaee01d7.s3tc.ctex", "res://.godot/imported/wood_table_diff_4k.jpg-91228ba1ac5b66d071b459a3eaee01d7.etc2.ctex"]
 
 [params]
 

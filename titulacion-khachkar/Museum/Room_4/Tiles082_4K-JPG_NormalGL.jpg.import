@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp2errjjt8c7n"
 path.s3tc="res://.godot/imported/Tiles082_4K-JPG_NormalGL.jpg-94a8b9ff96531ec55b493be58104e25d.s3tc.ctex"
+path.etc2="res://.godot/imported/Tiles082_4K-JPG_NormalGL.jpg-94a8b9ff96531ec55b493be58104e25d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_4/Tiles082_4K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/Tiles082_4K-JPG_NormalGL.jpg-94a8b9ff96531ec55b493be58104e25d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tiles082_4K-JPG_NormalGL.jpg-94a8b9ff96531ec55b493be58104e25d.s3tc.ctex", "res://.godot/imported/Tiles082_4K-JPG_NormalGL.jpg-94a8b9ff96531ec55b493be58104e25d.etc2.ctex"]
 
 [params]
 

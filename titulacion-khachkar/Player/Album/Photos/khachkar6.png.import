@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwd2ksdbudqo7"
 path.s3tc="res://.godot/imported/khachkar6.png-47ca9a79512dd74ce3b45632b5b4eb14.s3tc.ctex"
+path.etc2="res://.godot/imported/khachkar6.png-47ca9a79512dd74ce3b45632b5b4eb14.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Player/Album/Photos/khachkar6.png"
-dest_files=["res://.godot/imported/khachkar6.png-47ca9a79512dd74ce3b45632b5b4eb14.s3tc.ctex"]
+dest_files=["res://.godot/imported/khachkar6.png-47ca9a79512dd74ce3b45632b5b4eb14.s3tc.ctex", "res://.godot/imported/khachkar6.png-47ca9a79512dd74ce3b45632b5b4eb14.etc2.ctex"]
 
 [params]
 

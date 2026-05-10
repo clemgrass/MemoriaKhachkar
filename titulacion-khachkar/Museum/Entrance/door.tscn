@@ -117,6 +117,9 @@ _surfaces = [{
 [sub_resource type="BoxShape3D" id="BoxShape3D_44big"]
 size = Vector3(0.3564453, 6.444702, 2.81839)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_yep6o"]
+size = Vector2(2.6399295, 6.1806116)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_44big"]
 lightmap_size_hint = Vector2i(142, 154)
 _surfaces = [{
@@ -183,6 +186,11 @@ mesh = SubResource("ArrayMesh_yep6o")
 [node name="leftDoorColl" type="CollisionShape3D" parent="leftDoor" unique_id=716011525]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00970459, -1.4065275)
 shape = SubResource("BoxShape3D_44big")
+disabled = true
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="leftDoor" unique_id=1580479214]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -1.4101529)
+occluder = SubResource("QuadOccluder3D_yep6o")
 
 [node name="rightDoor" type="StaticBody3D" parent="." unique_id=822309078]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.8227558)
@@ -194,6 +202,10 @@ mesh = SubResource("ArrayMesh_44big")
 [node name="eightDoorColl" type="CollisionShape3D" parent="rightDoor" unique_id=917241298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009979248, 0.007751465, 1.4228363)
 shape = SubResource("BoxShape3D_yep6o")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="rightDoor" unique_id=1532442923]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 1.4262333)
+occluder = SubResource("QuadOccluder3D_yep6o")
 
 [node name="lights" type="Node3D" parent="." unique_id=681328649]
 

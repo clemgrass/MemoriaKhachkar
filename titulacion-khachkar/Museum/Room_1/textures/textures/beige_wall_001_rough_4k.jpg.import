@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cml53tgso8n5j"
 path.s3tc="res://.godot/imported/beige_wall_001_rough_4k.jpg-63f922e534e23b43817473b83363013a.s3tc.ctex"
+path.etc2="res://.godot/imported/beige_wall_001_rough_4k.jpg-63f922e534e23b43817473b83363013a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_1/textures/textures/beige_wall_001_rough_4k.jpg"
-dest_files=["res://.godot/imported/beige_wall_001_rough_4k.jpg-63f922e534e23b43817473b83363013a.s3tc.ctex"]
+dest_files=["res://.godot/imported/beige_wall_001_rough_4k.jpg-63f922e534e23b43817473b83363013a.s3tc.ctex", "res://.godot/imported/beige_wall_001_rough_4k.jpg-63f922e534e23b43817473b83363013a.etc2.ctex"]
 
 [params]
 

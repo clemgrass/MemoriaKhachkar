@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcd4pl58ebgx1"
 path.s3tc="res://.godot/imported/Texturelabs_Paper_290XL.jpg-f92f7963d163d65e300e8375cb34549e.s3tc.ctex"
+path.etc2="res://.godot/imported/Texturelabs_Paper_290XL.jpg-f92f7963d163d65e300e8375cb34549e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://MainMenu/Texturelabs_Paper_290XL.jpg"
-dest_files=["res://.godot/imported/Texturelabs_Paper_290XL.jpg-f92f7963d163d65e300e8375cb34549e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Texturelabs_Paper_290XL.jpg-f92f7963d163d65e300e8375cb34549e.s3tc.ctex", "res://.godot/imported/Texturelabs_Paper_290XL.jpg-f92f7963d163d65e300e8375cb34549e.etc2.ctex"]
 
 [params]
 

@@ -818,6 +818,9 @@ albedo_texture = ExtResource("15_5000v")
 material = SubResource("StandardMaterial3D_1ees7")
 size = Vector2(0.21, 0.3)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_iipbm"]
+size = Vector2(17.26674, 19.09396)
+
 [node name="FinalRoom" type="Node3D" unique_id=909443158]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1933467520]
@@ -1394,3 +1397,9 @@ mesh = SubResource("QuadMesh_g5kq2")
 [node name="MeshInstance3D55" type="MeshInstance3D" parent="papers" unique_id=853182906]
 transform = Transform3D(-0.107148975, -0.9942431, 1.3037925e-07, 0, 1.3113416e-07, 1, -0.9942431, 0.107148975, -1.40509115e-08, -0.909, 1.004, 0.712)
 mesh = SubResource("QuadMesh_g5kq2")
+
+[node name="culling" type="Node3D" parent="." unique_id=412106250]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=1334985263]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, -1, 1, -4.371139e-08, -4.371139e-08, 0.6883781, 6.417455, 0)
+occluder = SubResource("QuadOccluder3D_iipbm")
