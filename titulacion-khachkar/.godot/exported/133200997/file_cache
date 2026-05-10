@@ -4,7 +4,7 @@ res://Museum/Entrance/Textures/mainDoorTexture.tres::2826b118477d6e4f8aa37d261b3
 res://Museum/Entrance/arches.tscn::ce791129b11a44c1845f46fa24b5f571::1777942734::res://.godot/exported/133200997/export-7220d11900fc92a0d2a57271d1ec5243-arches.scn
 res://Museum/Entrance/door.tscn::c2a52c618fe908f2f05c2f73929a8b7f::1776883285::res://.godot/exported/133200997/export-e323b0427976b1bce39ffce7133cb6da-door.scn
 res://Museum/Entrance/stairs.tscn::570a4ccf61d8403adffaf41fbd60e027::1775741027::res://.godot/exported/133200997/export-aa0a98c71eb72d5ac72c32033b6af0ee-stairs.scn
-res://Museum/Room_0/room0.tscn::3b4c33bb4c36bba31eaa0627b540e4f9::1776884945::res://.godot/exported/133200997/export-afff1799ddf1785af29f53e0e479cc2a-room0.scn
+res://Museum/Room_0/room0.tscn::3b4c33bb4c36bba31eaa0627b540e4f9::1778382322::res://.godot/exported/133200997/export-afff1799ddf1785af29f53e0e479cc2a-room0.scn
 res://Museum/Room_Khachkar/khachkarRoom.tscn::b970b96fc36d40aa9c08759ac4e94f78::1776884861::res://.godot/exported/133200997/export-d3a9add031345d0355717d71a2566b2b-khachkarRoom.scn
 res://Museum/Walls/eastWall.tscn::9426f95542ca1e9cd0feb32f12e106f4::1775575318::res://.godot/exported/133200997/export-0357719e19fed163e16ea966f327504c-eastWall.scn
 res://Museum/Walls/roof.tscn::95ab4cf7d82d20aea623e485f907d039::1777942714::res://.godot/exported/133200997/export-cb5ba5f1beb88dfcb3ef1aff8c74ccd8-roof.scn
@@ -12,7 +12,7 @@ res://Museum/Walls/southWall.tscn::7f52476e39ff530a664d0da96366f984::1775574916:
 res://Museum/Walls/westWall.tscn::bbea1a74aa8da68a1d98bc1591795073::1775739892::res://.godot/exported/133200997/export-d68831e015b0ddaf975fe5b0af703242-westWall.scn
 res://Museum/museum.tscn::dfb10bbc30084fc87041e8dfa7efd2b1::1777947624::res://.godot/exported/133200997/export-eba78c453e1783cf06dab7d201b49471-museum.scn
 res://Player/playerController.tscn::1fccc30a09ddeb148887fbbe09a872b4::1776871297::res://.godot/exported/133200997/export-a31bc38c56e1a46daefc8a6a1f49031c-playerController.scn
-res://World/MainGame.tscn::448708f598228e895b34fd157d4244f7::1777946645::res://.godot/exported/133200997/export-5814d8efed3e89ac5e3b401a1eef1d40-MainGame.scn
+res://World/MainGame.tscn::16a3c6abdd1bae2e6c4ecdddfe738263::1778383408::res://.godot/exported/133200997/export-5814d8efed3e89ac5e3b401a1eef1d40-MainGame.scn
 res://Museum/Entrance/Textures/Marble016_4K-JPG.tres::4c483dadef4e34c2f8aa5bd05a500534::1777943440::res://.godot/exported/133200997/export-11d9af47f1088c6d19fcb040bc7144c7-Marble016_4K-JPG.res
 res://Museum/Entrance/reception.tscn::0a1d0557f752e15cd56ec6fa4c5a4d42::1776884694::res://.godot/exported/133200997/export-f3cc5faa5aca32515b3c015d1ce98f83-reception.scn
 res://Museum/Entrance/stool.tscn::839c894cb61554b03a3f9bc8f1ae575a::1775577731::res://.godot/exported/133200997/export-fdaf2744dc911cc2e4a66e2771d7b294-stool.scn
@@ -51,7 +51,7 @@ res://Museum/Room_3/khachkar_3_maninfold.tscn::589b5a1e96d1b0086ccc0bb69782a125:
 res://MainMenu/credits.tscn::fe3460fc722573a667174ad3596ca810::1774973989::res://.godot/exported/133200997/export-de72aa02c1b0e150dd01c6306feab986-credits.scn
 res://Museum/Room_4/khachkar_4_maninfold.tscn::5651ae75ee7abface79c03c17cbc3e31::1774880623::res://.godot/exported/133200997/export-b5885948e8136f613ca560b769b843a5-khachkar_4_maninfold.scn
 res://Museum/Room_5/khachkar_5_maninfold.tscn::ff2e3c71632e107c1de182d7f3f342b5::1774961766::res://.godot/exported/133200997/export-bc7a0703fd1255d11f094ade54f1298a-khachkar_5_maninfold.scn
-res://MainMenu/mainMenu.tscn::06d8aa8c09fe6c8d47fd8125448bee03::1777941057::res://.godot/exported/133200997/export-6a31f80e7684824d7dfedc18955f5737-mainMenu.scn
+res://MainMenu/mainMenu.tscn::610ee1232ea45859b761165d7459922b::1778380799::res://.godot/exported/133200997/export-6a31f80e7684824d7dfedc18955f5737-mainMenu.scn
 res://MainMenu/font_theme.tres::fe622be4f29248916372cefb354ffa63::1775753233::res://.godot/exported/133200997/export-00b8ea1abfdaaae116b3763aa7c22a36-font_theme.res
 res://Player/Album/album.tscn::b18cb61298dd2d7488c7b694e090f254::1775498130::res://.godot/exported/133200997/export-ea4ae3d9ed249abcfd90670a7865406e-album.scn
 res://Museum/Ladder/ladder.tscn::1bf24585e3dc4c1b37c1700ca0211a98::1776887467::res://.godot/exported/133200997/export-7e57d05a5eaaa5ef4efc6472896641b6-ladder.scn
