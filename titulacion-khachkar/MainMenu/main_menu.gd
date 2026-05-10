@@ -4,6 +4,7 @@ const GAME_SCENE := "res://World/MainGame.tscn"
 
 @onready var progress_bar = $ProgressBar
 var packed_scene
+var game_instance
 var is_loaded := false
 
 # Called when the node enters the scene tree for the first time.
@@ -14,6 +15,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if is_loaded:
+		return
+	
 	var progress = []
 	var status = ResourceLoader.load_threaded_get_status(
 		GAME_SCENE,
@@ -28,6 +32,7 @@ func _process(delta: float) -> void:
 		ResourceLoader.THREAD_LOAD_LOADED:
 			progress_bar.visible = false
 			packed_scene = ResourceLoader.load_threaded_get(GAME_SCENE)
+			game_instance = packed_scene.instantiate()
 			is_loaded = true
 
 func _on_play_pressed() -> void:
@@ -36,6 +41,5 @@ func _on_play_pressed() -> void:
 		
 	$Node2D/Play.disabled = true
 	$Node2D/Quit.disabled = true
-	$AnimationPlayer.play("start_game")
-	await $AnimationPlayer.animation_finished
-	get_tree().change_scene_to_packed(packed_scene)
+	get_tree().root.add_child(game_instance)
+	queue_free()
