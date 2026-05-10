@@ -4,9 +4,9 @@
 [ext_resource type="FontFile" uid="uid://dnyfat4280h82" path="res://MainMenu/LibreBaskerville-Italic-VariableFont_wght.ttf" id="1_f0et7"]
 [ext_resource type="FontFile" uid="uid://bo1li5jeb38e2" path="res://MainMenu/LibreBaskerville-VariableFont_wght.ttf" id="2_ch7cu"]
 [ext_resource type="Texture2D" uid="uid://bcd4pl58ebgx1" path="res://MainMenu/Texturelabs_Paper_290XL.jpg" id="2_f0et7"]
-[ext_resource type="Texture2D" uid="uid://cevd8qjgict52" path="res://MainMenu/newspaper_photo.png" id="3_ch7cu"]
 [ext_resource type="Script" uid="uid://cesawxaidogle" path="res://MainMenu/button.gd" id="3_qjfgb"]
 [ext_resource type="Script" uid="uid://bnt7wvf0kjmft" path="res://MainMenu/quit.gd" id="4_qjfgb"]
+[ext_resource type="Texture2D" uid="uid://ufhtteq6j8f7" path="res://Player/Album/Photos/khachkar0.png" id="6_c824c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fvnh7"]
 font = ExtResource("1_f0et7")
@@ -138,7 +138,7 @@ offset_bottom = 989.2653
 scale = Vector2(0.53, 0.51)
 size_flags_horizontal = 10
 size_flags_vertical = 4
-texture = ExtResource("3_ch7cu")
+texture = ExtResource("6_c824c")
 
 [node name="TextureRect" type="TextureRect" parent="Node2D" unique_id=1068816087]
 z_index = -1
