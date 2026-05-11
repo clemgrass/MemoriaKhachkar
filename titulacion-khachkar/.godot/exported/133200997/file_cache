@@ -2,7 +2,7 @@ res://Museum/Entrance/Khachkar/fountainKhachkar.tscn::b80458525d21e422ba5173c76f
 res://Museum/Entrance/Textures/entranceWall.tres::2c80dbb31e10d4ff44edc69ddddd4759::1777943006::res://.godot/exported/133200997/export-d2e7174c422f2f2073cf9a435aeb46d8-entranceWall.res
 res://Museum/Entrance/Textures/mainDoorTexture.tres::2826b118477d6e4f8aa37d261b3e567a::1773937839::res://.godot/exported/133200997/export-b06b513ffc8483c0f9ac9f740a099dbf-mainDoorTexture.res
 res://Museum/Entrance/arches.tscn::9c8df2275cbc4bf4a021cfc18c7cf22b::1778430849::res://.godot/exported/133200997/export-7220d11900fc92a0d2a57271d1ec5243-arches.scn
-res://Museum/Entrance/door.tscn::24a3c671480ee4fb5a3b0ee669cbf449::1778432334::res://.godot/exported/133200997/export-e323b0427976b1bce39ffce7133cb6da-door.scn
+res://Museum/Entrance/door.tscn::3d8307bf36fde37beacdbd1a99d460e1::1778541143::res://.godot/exported/133200997/export-e323b0427976b1bce39ffce7133cb6da-door.scn
 res://Museum/Entrance/stairs.tscn::1a251614262974d9f9e6084dfe0ba47f::1778432184::res://.godot/exported/133200997/export-aa0a98c71eb72d5ac72c32033b6af0ee-stairs.scn
 res://Museum/Room_0/room0.tscn::6404f27543b76d219031918fe3472720::1778432101::res://.godot/exported/133200997/export-afff1799ddf1785af29f53e0e479cc2a-room0.scn
 res://Museum/Room_Khachkar/khachkarRoom.tscn::1862d180fb2f3c074d9b697b310a9c9c::1778432979::res://.godot/exported/133200997/export-d3a9add031345d0355717d71a2566b2b-khachkarRoom.scn

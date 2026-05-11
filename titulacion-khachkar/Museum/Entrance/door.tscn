@@ -186,7 +186,6 @@ mesh = SubResource("ArrayMesh_yep6o")
 [node name="leftDoorColl" type="CollisionShape3D" parent="leftDoor" unique_id=716011525]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00970459, -1.4065275)
 shape = SubResource("BoxShape3D_44big")
-disabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="leftDoor" unique_id=1580479214]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -1.4101529)

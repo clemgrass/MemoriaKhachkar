@@ -111,6 +111,7 @@ text = "Play"
 script = ExtResource("3_qjfgb")
 
 [node name="Quit" type="Button" parent="Node2D" unique_id=48466373]
+visible = false
 z_index = 4
 offset_left = -863.0
 offset_top = 227.0
