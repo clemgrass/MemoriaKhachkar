@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://d4gmko5ay8j36" path="res://Player/Album/Photos/khachkar5.png" id="16_p6skv"]
 [ext_resource type="Texture2D" uid="uid://dwd2ksdbudqo7" path="res://Player/Album/Photos/khachkar6.png" id="17_xe17i"]
 [ext_resource type="Material" uid="uid://0q61kot8t24v" path="res://Terrain/Textures/Ground003_4K-JPG.tres" id="18_24doq"]
+[ext_resource type="AudioStream" uid="uid://cmxn5p8oaj606" path="res://sound/emilianodleon-button-ui-sound-effect-395762.mp3" id="18_nqjgh"]
 [ext_resource type="Texture2D" uid="uid://vhfqw88h2sky" path="res://Terrain/forestImage.png" id="19_5vpuc"]
 [ext_resource type="Texture2D" uid="uid://cihuttuf7fk1i" path="res://World/road-street-texture-floor-wall-asphalt-372901-pxhere.com.jpg" id="19_xaylg"]
 [ext_resource type="Texture2D" uid="uid://dbv34bj2ynosv" path="res://Terrain/trees-305811_1280.png" id="20_0wtps"]
@@ -37,7 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://ylry8nphu04a" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Left_Key_Light.png" id="28_8ja0g"]
 [ext_resource type="Texture2D" uid="uid://ctoatenju0k3x" path="res://Player/UI/Keyboard & Mouse/Light/Mouse_Right_Key_Light.png" id="29_nqjgh"]
 [ext_resource type="Texture2D" uid="uid://bcd4pl58ebgx1" path="res://MainMenu/Texturelabs_Paper_290XL.jpg" id="36_onmfn"]
-[ext_resource type="Script" uid="uid://drtvevx60eu4t" path="res://World/data_opti.gd" id="38_nqjgh"]
+[ext_resource type="AudioStream" uid="uid://rly724oejan3" path="res://sound/khachkar music.wav" id="39_wacu2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_afcvc"]
 sky_top_color = Color(0.23098785, 0.4009148, 0.43838903, 1)
@@ -599,6 +600,9 @@ omni_range = 0.16293268
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerController" unique_id=1718975483]
 libraries/ = SubResource("AnimationLibrary_cylip")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="PlayerController" unique_id=1106582153]
+stream = ExtResource("18_nqjgh")
 
 [node name="OutsideWorld" type="Node3D" parent="." unique_id=1986257652]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.7907693, 0)
@@ -1446,9 +1450,10 @@ points = PackedVector2Array(273.725, 0, 0, 0)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=409728768]
 libraries/ = SubResource("AnimationLibrary_wacu2")
 
-[node name="optiNode" type="Node3D" parent="." unique_id=1437308780]
-script = ExtResource("38_nqjgh")
-
 [node name="multimeshnode" type="Node3D" parent="." unique_id=1139326522]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=350352789]
+stream = ExtResource("39_wacu2")
+volume_db = 5.12
 
 [connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]

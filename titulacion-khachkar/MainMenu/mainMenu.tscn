@@ -178,6 +178,27 @@ text = "El museo de khachkars, que albergaba una colección significativa de est
 label_settings = SubResource("LabelSettings_c824c")
 autowrap_mode = 2
 
+[node name="CreditsButton" type="Button" parent="Node2D" unique_id=1573130634]
+z_index = 4
+offset_left = -859.0
+offset_top = 130.0
+offset_right = -623.0
+offset_bottom = 211.00003
+scale = Vector2(1.000001, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.2231029, 0.2231029, 0.22310287, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ch7cu")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_xvtlb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c824c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjfgb")
+action_mode = 0
+text = "Credits"
+script = ExtResource("3_qjfgb")
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=283122894]
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=529705468]
@@ -197,7 +218,9 @@ offset_bottom = -218.0
 [connection signal="mouse_entered" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_exited"]
 [connection signal="pressed" from="Node2D/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Node2D/Play" to="Node2D/Play" method="_on_pressed"]
 [connection signal="mouse_entered" from="Node2D/Quit" to="Node2D/Quit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Node2D/Quit" to="Node2D/Quit" method="_on_mouse_exited"]
 [connection signal="pressed" from="Node2D/Quit" to="Node2D/Quit" method="_on_pressed"]
+[connection signal="mouse_entered" from="Node2D/CreditsButton" to="Node2D/CreditsButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/CreditsButton" to="Node2D/CreditsButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="Node2D/CreditsButton" to="Node2D/CreditsButton" method="_on_pressed"]

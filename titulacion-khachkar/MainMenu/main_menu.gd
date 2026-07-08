@@ -33,6 +33,8 @@ func _ready() -> void:
 	timer.timeout.connect(_on_loading_timer_timeout)
 	add_child(timer)
 	timer.start()
+	
+	
 
 func _on_loading_timer_timeout() -> void:
 	loading_dots = (loading_dots + 1) % 4

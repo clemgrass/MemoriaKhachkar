@@ -1,0 +1,241 @@
+[gd_scene format=3 uid="uid://wwl5jcexndpr"]
+
+[ext_resource type="Script" uid="uid://bnam1be50u0sm" path="res://MainMenu/main_menu.gd" id="1_c824c"]
+[ext_resource type="FontFile" uid="uid://dnyfat4280h82" path="res://MainMenu/LibreBaskerville-Italic-VariableFont_wght.ttf" id="1_f0et7"]
+[ext_resource type="FontFile" uid="uid://bo1li5jeb38e2" path="res://MainMenu/LibreBaskerville-VariableFont_wght.ttf" id="2_ch7cu"]
+[ext_resource type="Texture2D" uid="uid://bcd4pl58ebgx1" path="res://MainMenu/Texturelabs_Paper_290XL.jpg" id="2_f0et7"]
+[ext_resource type="Script" uid="uid://cesawxaidogle" path="res://MainMenu/button.gd" id="3_qjfgb"]
+[ext_resource type="Script" uid="uid://bnt7wvf0kjmft" path="res://MainMenu/quit.gd" id="4_qjfgb"]
+[ext_resource type="Texture2D" uid="uid://ufhtteq6j8f7" path="res://Player/Album/Photos/khachkar0.png" id="6_c824c"]
+[ext_resource type="Script" uid="uid://c4piw74txxj5x" path="res://MainMenu/credits_panel.gd" id="8_i10pk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fvnh7"]
+font = ExtResource("1_f0et7")
+font_size = 213
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xvtlb"]
+font = ExtResource("1_f0et7")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xvtlb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c824c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjfgb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ch7cu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i10pk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgvx8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qjfgb"]
+font = ExtResource("1_f0et7")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_c824c"]
+font = ExtResource("1_f0et7")
+font_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="Control" unique_id=20530609]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 139.0
+offset_top = 79.0
+offset_right = 139.0
+offset_bottom = 79.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c824c")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=634715872]
+
+[node name="Line2D" type="Line2D" parent="Node2D" unique_id=681559736]
+position = Vector2(-1232, -257)
+scale = Vector2(1, 0.21)
+points = PackedVector2Array(0, 0, 2500, 0)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Node2D" unique_id=388460451]
+position = Vector2(-1242, -153)
+scale = Vector2(1, 0.345)
+points = PackedVector2Array(0, 0, 2500, 0)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Label" parent="Node2D" unique_id=707826521]
+offset_left = -863.0
+offset_top = -542.0
+offset_right = 1207.0
+offset_bottom = -277.0
+text = "The Legacy Times"
+label_settings = SubResource("LabelSettings_fvnh7")
+
+[node name="SubTitle" type="Label" parent="Node2D" unique_id=261725841]
+offset_left = -1059.1836
+offset_top = -233.67343
+offset_right = 1010.8164
+offset_bottom = -152.67343
+text = "Khachkar"
+label_settings = SubResource("LabelSettings_xvtlb")
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="Node2D" unique_id=448516433]
+z_index = 4
+offset_left = -863.0
+offset_top = -108.0
+offset_right = -723.0
+offset_bottom = -26.99997
+scale = Vector2(1.000001, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.2231029, 0.2231029, 0.22310287, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ch7cu")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_xvtlb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c824c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjfgb")
+action_mode = 0
+text = "Play"
+script = ExtResource("3_qjfgb")
+
+[node name="Quit" type="Button" parent="Node2D" unique_id=48466373]
+visible = false
+z_index = 4
+offset_left = -863.0
+offset_top = 227.0
+offset_right = -713.0
+offset_bottom = 308.0
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ch7cu")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_ch7cu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i10pk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bgvx8")
+action_mode = 0
+text = "Quit"
+script = ExtResource("4_qjfgb")
+
+[node name="MainImage" type="TextureRect" parent="Node2D" unique_id=924791559]
+offset_left = -76.53058
+offset_top = -86.73468
+offset_right = 1839.4695
+offset_bottom = 989.2653
+scale = Vector2(0.53, 0.51)
+size_flags_horizontal = 10
+size_flags_vertical = 4
+texture = ExtResource("6_c824c")
+
+[node name="TextureRect" type="TextureRect" parent="Node2D" unique_id=1068816087]
+z_index = -1
+offset_left = -1477.0
+offset_top = -945.0
+offset_right = 1601.0
+offset_bottom = 974.0
+mouse_filter = 2
+texture = ExtResource("2_f0et7")
+expand_mode = 1
+
+[node name="columnNewspaper" type="Label" parent="Node2D" unique_id=1708349832]
+offset_left = -939.0
+offset_top = 374.0
+offset_right = 1131.0
+offset_bottom = 459.0
+text = "Misterio en museo olvidado
+"
+label_settings = SubResource("LabelSettings_qjfgb")
+
+[node name="columnNewspaper2" type="Label" parent="Node2D" unique_id=1718765580]
+offset_left = -939.0
+offset_top = 415.0
+offset_right = 1131.0
+offset_bottom = 500.0
+text = "Por C. Pasto, corresponsal independiente
+"
+label_settings = SubResource("LabelSettings_c824c")
+
+[node name="columnNewspaper3" type="Label" parent="Node2D" unique_id=1236398203]
+offset_left = -939.0
+offset_top = 459.0
+offset_right = 933.405
+offset_bottom = 544.0
+text = "El museo de khachkars, que albergaba una colección significativa de estas piedras talladas, fue cerrado de forma repentina hace algunos años. Desde entonces, no se ha emitido un informe oficial concluyente. Visitantes recientes describen el acceso principal como parcialmente deteriorado. Una de las piezas cercanas a la entrada presenta daños visibles, aunque no existen registros públicos que expliquen cuándo ocurrieron. Documentos internos apuntan a actividad inusual en los días previos al cierre, incluyendo accesos fuera de horario y el uso de áreas no abiertas al público. Inventarios incompletos muestran discrepancias: ciertas piezas no figuran como trasladadas, pero tampoco fueron encontradas en sus ubicaciones habituales. El paradero de parte del personal sigue sin esclarecerse. Los últimos reportes indican que varios permanecieron en el recinto más tiempo del previsto."
+label_settings = SubResource("LabelSettings_c824c")
+autowrap_mode = 2
+
+[node name="CreditsButton" type="Button" parent="Node2D" unique_id=1573130634]
+z_index = 4
+offset_left = -859.0
+offset_top = 130.0
+offset_right = -719.0
+offset_bottom = 211.00003
+scale = Vector2(1.000001, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.2231029, 0.2231029, 0.22310287, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ch7cu")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_xvtlb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c824c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjfgb")
+action_mode = 0
+text = "Credits"
+script = ExtResource("3_qjfgb")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=283122894]
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=529705468]
+layout_mode = 0
+offset_left = 796.0
+offset_top = -197.0
+offset_right = 800.0
+offset_bottom = -170.0
+
+[node name="LoadingLabel" type="Label" parent="." unique_id=101423286]
+layout_mode = 0
+offset_left = 778.0
+offset_top = -241.0
+offset_right = 818.0
+offset_bottom = -218.0
+
+[node name="CreditsPanel" type="Control" parent="." unique_id=1364431721]
+visible = false
+anchors_preset = 0
+script = ExtResource("8_i10pk")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CreditsPanel" unique_id=1037946017]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CreditsPanel/ScrollContainer" unique_id=1192427102]
+layout_mode = 2
+
+[connection signal="mouse_entered" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/Play" to="Node2D/Play" method="_on_mouse_exited"]
+[connection signal="pressed" from="Node2D/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Node2D/Play" to="Node2D/Play" method="_on_pressed"]
+[connection signal="mouse_entered" from="Node2D/Quit" to="Node2D/Quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/Quit" to="Node2D/Quit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Node2D/Quit" to="Node2D/Quit" method="_on_pressed"]
+[connection signal="mouse_entered" from="Node2D/CreditsButton" to="Node2D/CreditsButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/CreditsButton" to="Node2D/CreditsButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="Node2D/CreditsButton" to="Node2D/CreditsButton" method="_on_pressed"]
