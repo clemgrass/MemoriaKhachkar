@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-MIT applies to the source code only. The 3D models of the khachkars
-(titulacion-khachkar/Museum/Room_Khachkar/Khachkar_Models/ and
-titulacion-khachkar/Museum/Entrance/Khachkar/Khachkar0.glb, with their
-textures) are © Nelson Baloian and are not licensed for reuse.
-Third-party assets (textures, images, sounds, icons and fonts) remain under
-their own licenses; see the Credits section of README.md.
