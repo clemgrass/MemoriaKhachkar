@@ -6,7 +6,7 @@ A first-person puzzle game. You explore a museum of khachkars (Armenian cross-st
 
 ![Rebuilding the broken khachkar at the entrance, piece by piece](docs/media/armar-khachkar.gif)
 
-> **Finished** · v1.2.0 · Windows and Linux · Spanish only · itch page: coming soon
+> **Finished** · v1.2.0 · Windows and Linux · Spanish only · [itch page](https://cgrassdev.itch.io/legacy-times-khachkar)
 
 ## How it plays
 
