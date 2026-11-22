@@ -6,7 +6,7 @@ Juego de puzzles en primera persona. Recorres un museo de khachkars (cruces de p
 
 ![Armando el khachkar roto de la entrada, pieza por pieza](docs/media/armar-khachkar.gif)
 
-> **Terminado** · v1.2.0 · Windows y Linux · Solo en español · ![Página en itch](https://cgrassdev.itch.io/legacy-times-khachkar) 
+> **Terminado** · v1.2.0 · Windows y Linux · Solo en español · [Página en itch](https://cgrassdev.itch.io/legacy-times-khachkar) 
 
 ## Cómo se juega
 
