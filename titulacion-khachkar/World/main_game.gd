@@ -24,10 +24,12 @@ extends Node3D
 @onready var zoomOut = $UI/KeyBindings/zoomOut
 @onready var mouseLeft2 = $UI/KeyBindings/MouseLeftKeyLight2
 @onready var mouseRight = $UI/KeyBindings/MouseRightKeyLight
+@onready var music  = $AudioStreamPlayer3D
 
 @onready var tutorialDone = false
 @onready var in_camera = false
 @onready var in_album = false
+
 
 
 # Called when the node enters the scene tree for the first time.
@@ -57,6 +59,16 @@ func _ready() -> void:
 	puzzle.puzzle0_solved.connect(album._on_puzzle_solved)
 	puzzle.puzzle0_solved.connect(player._on_puzzle_solved)
 	
+	play_music_loop()
+	
+
+func play_music_loop():
+	while true:
+		music.volume_db = 6.5
+		music.pitch_scale = randf_range(0.985, 1.015)
+		music.play()
+		await music.finished
+		await get_tree().create_timer(randf_range(15, 45)).timeout
 
 func _input(event):
 	if Input.is_key_pressed(KEY_ESCAPE):

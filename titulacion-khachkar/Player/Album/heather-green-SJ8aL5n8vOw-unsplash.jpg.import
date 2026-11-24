@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1fp3wn05eyl6"
 path.s3tc="res://.godot/imported/heather-green-SJ8aL5n8vOw-unsplash.jpg-9827e323657c03f3e02f1a8ff5c5e9b8.s3tc.ctex"
+path.etc2="res://.godot/imported/heather-green-SJ8aL5n8vOw-unsplash.jpg-9827e323657c03f3e02f1a8ff5c5e9b8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Player/Album/heather-green-SJ8aL5n8vOw-unsplash.jpg"
-dest_files=["res://.godot/imported/heather-green-SJ8aL5n8vOw-unsplash.jpg-9827e323657c03f3e02f1a8ff5c5e9b8.s3tc.ctex"]
+dest_files=["res://.godot/imported/heather-green-SJ8aL5n8vOw-unsplash.jpg-9827e323657c03f3e02f1a8ff5c5e9b8.s3tc.ctex", "res://.godot/imported/heather-green-SJ8aL5n8vOw-unsplash.jpg-9827e323657c03f3e02f1a8ff5c5e9b8.etc2.ctex"]
 
 [params]
 

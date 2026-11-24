@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bug5axg4a4hok"
 path.s3tc="res://.godot/imported/Metal048A_4K-JPG_Roughness.jpg-7e700ce088804d9343bc17a9630955d1.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal048A_4K-JPG_Roughness.jpg-7e700ce088804d9343bc17a9630955d1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_2/Metal048A_4K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/Metal048A_4K-JPG_Roughness.jpg-7e700ce088804d9343bc17a9630955d1.s3tc.ctex"]
+dest_files=["res://.godot/imported/Metal048A_4K-JPG_Roughness.jpg-7e700ce088804d9343bc17a9630955d1.s3tc.ctex", "res://.godot/imported/Metal048A_4K-JPG_Roughness.jpg-7e700ce088804d9343bc17a9630955d1.etc2.ctex"]
 
 [params]
 

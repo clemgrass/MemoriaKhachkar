@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfrd7bk805l1"
 path.s3tc="res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.s3tc.ctex"
+path.etc2="res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Entrance/Textures/texturesDoor/rough_pine_door_diff_4k.jpg"
-dest_files=["res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.s3tc.ctex"]
+dest_files=["res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.s3tc.ctex", "res://.godot/imported/rough_pine_door_diff_4k.jpg-be86b9a7dc1e982cffa54381a1e6da02.etc2.ctex"]
 
 [params]
 

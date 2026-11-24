@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://75mnr2g53qp0"
 path.s3tc="res://.godot/imported/Metal048A_4K-JPG_Displacement.jpg-3f1f69035e4a12b893136f6b2ab72f8c.s3tc.ctex"
+path.etc2="res://.godot/imported/Metal048A_4K-JPG_Displacement.jpg-3f1f69035e4a12b893136f6b2ab72f8c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_2/Metal048A_4K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Metal048A_4K-JPG_Displacement.jpg-3f1f69035e4a12b893136f6b2ab72f8c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Metal048A_4K-JPG_Displacement.jpg-3f1f69035e4a12b893136f6b2ab72f8c.s3tc.ctex", "res://.godot/imported/Metal048A_4K-JPG_Displacement.jpg-3f1f69035e4a12b893136f6b2ab72f8c.etc2.ctex"]
 
 [params]
 

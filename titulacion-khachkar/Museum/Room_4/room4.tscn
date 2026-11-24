@@ -1288,6 +1288,21 @@ _data = {
 &"windows_down": SubResource("Animation_755wm")
 }
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_755wm"]
+size = Vector2(8.9558325, 5.322854)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_o70lk"]
+size = Vector2(3.9578905, 5.322854)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_2no8f"]
+size = Vector2(3.9578905, 2.937807)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_8c8di"]
+size = Vector2(14.746222, 5.322854)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_l2x0o"]
+size = Vector2(34.198746, 5.322854)
+
 [node name="Room4" type="Node3D" unique_id=830062090]
 script = ExtResource("1_bk62l")
 
@@ -2017,3 +2032,25 @@ light_energy = 5.0
 light_bake_mode = 1
 spot_range = 34.605156
 spot_angle = 11.88
+
+[node name="ocludding" type="Node3D" parent="." unique_id=534037289]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="ocludding" unique_id=40587391]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -24.909346, 2.0912333, -2.8637896)
+occluder = SubResource("QuadOccluder3D_755wm")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="ocludding" unique_id=819888898]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -24.909346, 2.0912333, 5.3705096)
+occluder = SubResource("QuadOccluder3D_o70lk")
+
+[node name="OccluderInstance3D3" type="OccluderInstance3D" parent="ocludding" unique_id=2085907944]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -24.909346, 4.109688, 2.560953)
+occluder = SubResource("QuadOccluder3D_2no8f")
+
+[node name="OccluderInstance3D4" type="OccluderInstance3D" parent="ocludding" unique_id=718670467]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.951523, 2.1689157, 0.0104494095)
+occluder = SubResource("QuadOccluder3D_8c8di")
+
+[node name="OccluderInstance3D5" type="OccluderInstance3D" parent="ocludding" unique_id=1554239208]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -7.612252, 2.1689157, -7.4764733)
+occluder = SubResource("QuadOccluder3D_l2x0o")

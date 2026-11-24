@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://de1pp06wwcprv"
 path.s3tc="res://.godot/imported/concrete_wall_001_rough_4k.jpg-e7c8b4ec74bdc526b4f4a17cc89eb173.s3tc.ctex"
+path.etc2="res://.godot/imported/concrete_wall_001_rough_4k.jpg-e7c8b4ec74bdc526b4f4a17cc89eb173.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Entrance/Textures/textures/concrete_wall_001_rough_4k.jpg"
-dest_files=["res://.godot/imported/concrete_wall_001_rough_4k.jpg-e7c8b4ec74bdc526b4f4a17cc89eb173.s3tc.ctex"]
+dest_files=["res://.godot/imported/concrete_wall_001_rough_4k.jpg-e7c8b4ec74bdc526b4f4a17cc89eb173.s3tc.ctex", "res://.godot/imported/concrete_wall_001_rough_4k.jpg-e7c8b4ec74bdc526b4f4a17cc89eb173.etc2.ctex"]
 
 [params]
 

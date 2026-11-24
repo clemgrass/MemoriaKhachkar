@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2qguh0xixbi5"
 path.s3tc="res://.godot/imported/concrete_tile_facade_diff_4k.jpg-2eaee0ed3c9fa706a81dbb4cae3def41.s3tc.ctex"
+path.etc2="res://.godot/imported/concrete_tile_facade_diff_4k.jpg-2eaee0ed3c9fa706a81dbb4cae3def41.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_1/textures/textures/concrete_tile_facade_diff_4k.jpg"
-dest_files=["res://.godot/imported/concrete_tile_facade_diff_4k.jpg-2eaee0ed3c9fa706a81dbb4cae3def41.s3tc.ctex"]
+dest_files=["res://.godot/imported/concrete_tile_facade_diff_4k.jpg-2eaee0ed3c9fa706a81dbb4cae3def41.s3tc.ctex", "res://.godot/imported/concrete_tile_facade_diff_4k.jpg-2eaee0ed3c9fa706a81dbb4cae3def41.etc2.ctex"]
 
 [params]
 

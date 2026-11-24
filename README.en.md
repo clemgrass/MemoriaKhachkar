@@ -6,7 +6,7 @@ A first-person puzzle game. You explore a museum of khachkars (Armenian cross-st
 
 ![Rebuilding the broken khachkar at the entrance, piece by piece](docs/media/armar-khachkar.gif)
 
-> **Finished** · v1.2.0 · Windows and Linux · Spanish only · [itch page](https://cgrassdev.itch.io/legacy-times-khachkar)
+> **Finished** · v1.3.0 · Windows and Linux · Story in Spanish, menus in English · [itch page](https://cgrassdev.itch.io/legacy-times-khachkar)
 
 ## How it plays
 
@@ -14,6 +14,7 @@ A first-person puzzle game. You explore a museum of khachkars (Armenian cross-st
 - Each room hides a khachkar behind a different puzzle: physical pieces you assemble by hand, photo panels, a terminal you type into, a piano and a world map.
 - A camera with zoom lets you look for clues in the carved details, and an album keeps track of the khachkars you have found.
 - Once every khachkar is back in its room, the final room opens and a recorded tape tells what happened.
+- Original music by Nicolás Marín.
 
 | Action | Keyboard and mouse |
 |---|---|
@@ -33,7 +34,7 @@ Played with keyboard and mouse. The controls are shown on screen at the start, a
 
 *Legacy Times: Khachkar* is my undergraduate thesis project for Computer Science Engineering (Ingeniería Civil en Computación) at Universidad de Chile, first semester of 2026, with Nelson Baloian as thesis advisor. The topic was the gamification of my advisor's virtual khachkar museum, which ended up becoming a video game for implicit learning: players get to know the khachkars while solving the puzzles, without the game teaching them as a lesson.
 
-I worked alone on the game: design, programming, puzzles, story and level layout. The 3D models of the khachkars belong to Professor Baloian. The rest of the art and sound are free third-party assets (see [Credits](#credits-and-license)). Version 1.2.0 is the build used in the playtest evaluation, where players filled in a questionnaire after playing.
+I did the design, programming, puzzles, story and level layout. The 3D models of the khachkars belong to Professor Baloian, and the music is by Nicolás Marín. The rest of the art and sound are free third-party assets (see [Credits](#credits-and-license)). Version 1.2.0 is the build used in the playtest evaluation, where players filled in a questionnaire after playing. Version 1.3.0 is the final release: it adds the music, sound effects, full credits and performance optimizations.
 
 ## How it's built
 
@@ -46,16 +47,17 @@ I worked alone on the game: design, programming, puzzles, story and level layout
 | Platforms | Windows and Linux |
 
 - **Puzzles decoupled through signals.** Each puzzle emits `puzzle_solved` with its number. The main scene (`World/main_game.gd`) connects that signal to the khachkar room and to the album through groups. When the room has all six, it emits `all_solved` and the final door opens.
-- **Built for integrated graphics.** It uses the compatibility renderer, baked lightmaps and occlusion culling. Tested on an Intel UHD 620.
+- **Built for integrated graphics.** It uses the compatibility renderer, baked lightmaps, occlusion culling, MultiMesh for repeated objects and mesh LOD. Tested on an Intel UHD 620.
 - **Background loading.** The menu requests the museum scene with `ResourceLoader.load_threaded_request` and shows the progress. *Play* is enabled once loading finishes, so entering the game doesn't freeze the screen.
 - **Physical interaction.** The pieces of the first puzzle are `RigidBody3D`s you pick up and drop. An `Area3D` detects when a piece reaches its spot and swaps it for the fixed version.
 - The final tape reads its timed subtitles from a JSON file (`World/final_tape.json`).
+- The music loops with random 15–45 second pauses and a slight pitch variation on each pass (`World/main_game.gd`).
 
 ## Opening and exporting
 
 You need [Godot 4.6.1](https://godotengine.org/download/archive/4.6.1-stable/), the standard build (not .NET), with its export templates. A newer version converts the project when you open it.
 
-The repo includes Godot's import cache (`.godot/`) and weighs about 5.6 GB. Clone it without history:
+The repo includes Godot's import cache (`.godot/`) and weighs about 6 GB. Clone it without history:
 
 ```
 git clone --depth 1 https://github.com/clemgrass/MemoriaKhachkar.git
@@ -75,6 +77,9 @@ godot --headless --path titulacion-khachkar --export-release "Linux" build/Legac
 
 - **Clemente Grass Briones**: design, programming, puzzles, story and levels.
 - **Nelson Baloian**: thesis advisor. 3D models of the khachkars.
+- **Nicolás Marín**: original music.
+- **Mateo Grass** and **Martín Vergara**: testers.
+- Thanks to the 29 players who answered the thesis questionnaire. Their names are in the in-game credits.
 
 Third-party assets:
 
@@ -82,6 +87,7 @@ Third-party assets:
 - Piano notes: the *Do, re, mi, fa, so, la, ti, do* pack by [Jaz_the_MAN_2](https://freesound.org/people/Jaz_the_MAN_2/) on Freesound (CC0).
 - Key and mouse icons: [Kenney](https://kenney.nl) and [Xelu's Free Controller & Key Prompts](https://thoseawesomeguys.com/prompts/) (CC0).
 - Images and textures from [Pixabay](https://pixabay.com), [Unsplash](https://unsplash.com), [pxhere](https://pxhere.com) and [Texturelabs](https://texturelabs.org), under their respective licenses.
+- Button sound: *Button UI sound effect* by emilianodleon on [Pixabay](https://pixabay.com) (Pixabay Content License).
 - [Libre Baskerville](https://fonts.google.com/specimen/Libre+Baskerville) font (SIL Open Font License 1.1).
 
-**Code:** [MIT](LICENSE). MIT applies to the source code only; the 3D models of the khachkars are © Nelson Baloian and are not licensed for reuse. Third-party assets remain under their own licenses.
+**Code:** [MIT](LICENSE). MIT applies to the source code only; the 3D models of the khachkars are © Nelson Baloian and the music is © Nicolás Marín; neither is licensed for reuse. Third-party assets remain under their own licenses.

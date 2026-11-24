@@ -367,6 +367,15 @@ data = PackedVector3Array(-5.5, -2.5, -7.5, -5, -2.5, 7.5, -5, -2.5, -6.9960938,
 [sub_resource type="BoxShape3D" id="BoxShape3D_jx7bv"]
 size = Vector3(6.475128, 2.677246, 0.32019043)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_3b8qd"]
+size = Vector2(14.509178, 4.110711)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_elsen"]
+size = Vector2(10.296598, 4.110711)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_1jjld"]
+size = Vector2(14.509178, 9.641533)
+
 [node name="Room1" type="Node3D" unique_id=541123252]
 
 [node name="Stairs" parent="." unique_id=1301923489 instance=ExtResource("1_472g3")]
@@ -939,3 +948,25 @@ spot_range = 2.461269
 transform = Transform3D(0.87115383, -0.0728556, 0.485575, 0, 0.9889306, 0.148379, -0.4910102, -0.12926093, 0.8615107, -1.675725, 2.9237533, -6.783228)
 light_bake_mode = 1
 spot_range = 2.6923013
+
+[node name="occlusion" type="Node3D" parent="." unique_id=857126397]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="occlusion" unique_id=1325931785]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.253217, 1.50789, -2.5131507)
+occluder = SubResource("QuadOccluder3D_3b8qd")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="occlusion" unique_id=1685368907]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.008383274, 1.50789, -9.912583)
+occluder = SubResource("QuadOccluder3D_elsen")
+
+[node name="OccluderInstance3D3" type="OccluderInstance3D" parent="occlusion" unique_id=87602760]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.2590837, 1.50789, -2.5131507)
+occluder = SubResource("QuadOccluder3D_3b8qd")
+
+[node name="OccluderInstance3D4" type="OccluderInstance3D" parent="occlusion" unique_id=1326979587]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1, 0, -4.371139e-08, 0.10599089, 3.9343145, -2.5131507)
+occluder = SubResource("QuadOccluder3D_1jjld")
+
+[node name="OccluderInstance3D5" type="OccluderInstance3D" parent="occlusion" unique_id=878385406]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1, 0, -4.371139e-08, 0.10599089, -0.45877194, -2.5131507)
+occluder = SubResource("QuadOccluder3D_1jjld")

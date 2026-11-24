@@ -44,6 +44,18 @@ size = Vector3(0.51140946, 4.239287, 0.4189453)
 [sub_resource type="BoxShape3D" id="BoxShape3D_sgm11"]
 size = Vector3(2.5849447, 0.80951655, 0.4182129)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_c2x4x"]
+size = Vector2(34.454727, 3.3421354)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_3e7bb"]
+size = Vector2(18.138678, 3.7970395)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_oxvnp"]
+size = Vector2(17.695248, 3.7970395)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_ndjwi"]
+size = Vector2(72.318436, 6.5671277)
+
 [node name="EastWall" type="Node3D" unique_id=1440207670]
 
 [node name="wall" type="StaticBody3D" parent="." unique_id=827130404]
@@ -83,3 +95,21 @@ shape = SubResource("BoxShape3D_poiap")
 [node name="coll8" type="CollisionShape3D" parent="wall" unique_id=353821407]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.09118, 5.098863, 0)
 shape = SubResource("BoxShape3D_sgm11")
+
+[node name="culling" type="Node3D" parent="." unique_id=106237083]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=185374319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.586193, -3.9245312, 0)
+occluder = SubResource("QuadOccluder3D_c2x4x")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="culling" unique_id=486349231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.562998, -3.6718702, 0)
+occluder = SubResource("QuadOccluder3D_3e7bb")
+
+[node name="OccluderInstance3D3" type="OccluderInstance3D" parent="culling" unique_id=1215126157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.930862, -3.6797073, 0)
+occluder = SubResource("QuadOccluder3D_oxvnp")
+
+[node name="OccluderInstance3D4" type="OccluderInstance3D" parent="culling" unique_id=1021044162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5499859, 1.8593109, 0)
+occluder = SubResource("QuadOccluder3D_ndjwi")

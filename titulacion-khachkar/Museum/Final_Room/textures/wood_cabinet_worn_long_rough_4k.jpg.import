@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7hbetbyl8dj6"
 path.s3tc="res://.godot/imported/wood_cabinet_worn_long_rough_4k.jpg-3ff9de425db34bd3ed52bacd6770db8a.s3tc.ctex"
+path.etc2="res://.godot/imported/wood_cabinet_worn_long_rough_4k.jpg-3ff9de425db34bd3ed52bacd6770db8a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Final_Room/textures/wood_cabinet_worn_long_rough_4k.jpg"
-dest_files=["res://.godot/imported/wood_cabinet_worn_long_rough_4k.jpg-3ff9de425db34bd3ed52bacd6770db8a.s3tc.ctex"]
+dest_files=["res://.godot/imported/wood_cabinet_worn_long_rough_4k.jpg-3ff9de425db34bd3ed52bacd6770db8a.s3tc.ctex", "res://.godot/imported/wood_cabinet_worn_long_rough_4k.jpg-3ff9de425db34bd3ed52bacd6770db8a.etc2.ctex"]
 
 [params]
 

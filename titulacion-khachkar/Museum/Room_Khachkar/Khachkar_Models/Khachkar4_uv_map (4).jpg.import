@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d05x8rmy4unm2"
 path.s3tc="res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.s3tc.ctex"
+path.etc2="res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Museum/Room_Khachkar/Khachkar_Models/Khachkar4_uv_map (4).jpg"
-dest_files=["res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.s3tc.ctex"]
+dest_files=["res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.s3tc.ctex", "res://.godot/imported/Khachkar4_uv_map (4).jpg-cfd4809518d3107d3e897c28234c5553.etc2.ctex"]
 
 [params]
 

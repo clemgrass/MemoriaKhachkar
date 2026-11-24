@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdjgp2o26ifmw"
 path.s3tc="res://.godot/imported/black-2189644_1280.png-3033a5bfb8d687f42bcfae9b7ae5c1ed.s3tc.ctex"
+path.etc2="res://.godot/imported/black-2189644_1280.png-3033a5bfb8d687f42bcfae9b7ae5c1ed.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_5/black-2189644_1280.png"
-dest_files=["res://.godot/imported/black-2189644_1280.png-3033a5bfb8d687f42bcfae9b7ae5c1ed.s3tc.ctex"]
+dest_files=["res://.godot/imported/black-2189644_1280.png-3033a5bfb8d687f42bcfae9b7ae5c1ed.s3tc.ctex", "res://.godot/imported/black-2189644_1280.png-3033a5bfb8d687f42bcfae9b7ae5c1ed.etc2.ctex"]
 
 [params]
 

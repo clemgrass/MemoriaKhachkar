@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnqsyb1bgy6kb"
 path.s3tc="res://.godot/imported/Ground003_4K-JPG_Displacement.jpg-ae63115489e17f503a16ef1270ae12f3.s3tc.ctex"
+path.etc2="res://.godot/imported/Ground003_4K-JPG_Displacement.jpg-ae63115489e17f503a16ef1270ae12f3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Terrain/Textures/Ground003_4K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Ground003_4K-JPG_Displacement.jpg-ae63115489e17f503a16ef1270ae12f3.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ground003_4K-JPG_Displacement.jpg-ae63115489e17f503a16ef1270ae12f3.s3tc.ctex", "res://.godot/imported/Ground003_4K-JPG_Displacement.jpg-ae63115489e17f503a16ef1270ae12f3.etc2.ctex"]
 
 [params]
 

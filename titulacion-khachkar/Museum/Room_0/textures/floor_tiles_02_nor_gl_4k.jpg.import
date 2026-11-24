@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhlhcvesr88aw"
 path.s3tc="res://.godot/imported/floor_tiles_02_nor_gl_4k.jpg-110e558edfc621259b0a95e1c138f088.s3tc.ctex"
+path.etc2="res://.godot/imported/floor_tiles_02_nor_gl_4k.jpg-110e558edfc621259b0a95e1c138f088.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_0/textures/floor_tiles_02_nor_gl_4k.jpg"
-dest_files=["res://.godot/imported/floor_tiles_02_nor_gl_4k.jpg-110e558edfc621259b0a95e1c138f088.s3tc.ctex"]
+dest_files=["res://.godot/imported/floor_tiles_02_nor_gl_4k.jpg-110e558edfc621259b0a95e1c138f088.s3tc.ctex", "res://.godot/imported/floor_tiles_02_nor_gl_4k.jpg-110e558edfc621259b0a95e1c138f088.etc2.ctex"]
 
 [params]
 

@@ -78,11 +78,56 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	mouse_captured = true
 
+var screenshot_count: int = 110
+const SCREENSHOT_DIR := "res://screenshots"
+
+func get_next_screenshot_number() -> int:
+	var dir := DirAccess.open(SCREENSHOT_DIR)
+	var max_number := 0
+	
+	if dir == null:
+		return 1
+	
+	dir.list_dir_begin()
+	var file_name := dir.get_next()
+	
+	while file_name != "":
+		if not dir.current_is_dir():
+			if file_name.begins_with("sc_") and file_name.ends_with(".jpg"):
+				var base_name := file_name.get_basename() # ejemplo: sc_12
+				var number_text := base_name.substr(3) # saca el "sc_"
+				
+				if number_text.is_valid_int():
+					max_number = max(max_number, int(number_text))
+		
+		file_name = dir.get_next()
+	
+	dir.list_dir_end()
+	return max_number + 1
+
+
+func take_screenshot() -> void:
+	await RenderingServer.frame_post_draw
+	
+	var image := get_viewport().get_texture().get_image()
+	var file_path := SCREENSHOT_DIR + "/sc_%d.jpg" % screenshot_count
+	
+	var err := image.save_jpg(file_path, 0.95)
+	
+	if err == OK:
+		print("Screenshot guardado: " + file_path)
+		screenshot_count += 1
+	else:
+		push_error("No se pudo guardar el screenshot. Error: " + str(err))
+		
 func _unhandled_input(event: InputEvent) -> void:
+	
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		capture_mouse()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		release_mouse()
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_I and false:
+		take_screenshot()
 	
 	if mouse_captured and event is InputEventMouseMotion:
 		rotate_look(event.relative)
@@ -153,6 +198,10 @@ func _physics_process(delta: float) -> void:
 			$"../UI/textRemember/Label".visible = true
 			$"../AnimationPlayer".play("subtitles")
 			return
+			
+func play_pickup():
+	$AudioStreamPlayer3D.volume_db = -60
+	$AudioStreamPlayer3D.play()
 
 func _normal_movement(delta):
 	if has_gravity:
@@ -203,51 +252,62 @@ func _normal_movement(delta):
 				crosshair(true)
 				if not grabbed_object and not just_released:
 					if Input.is_action_just_pressed(input_left_click):	
+						play_pickup()
 						grabbed_object = collider
 				if grabbed_object and not grabbed_object.visible:
 					grabbed_object = null
 			elif collider.is_in_group("p1_buttons"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.pressed_button()
 			elif collider.is_in_group("p2_highlight"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.pressed_button()
 			elif collider.is_in_group("p3_computer"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					crosshair(false)
 					enter_terminal(collider)
 			elif collider.is_in_group("p6_crowbar"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.grab_crowbar()
 					$Head/Camera3D/Crowbar.visible = true
 					has_crowbar = true
 			elif collider.is_in_group("p4_piano"):
 				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.play_note()
 			elif collider.is_in_group("letters"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					sequence_p3 = collider.on_click_letter(sequence_p3)
 			elif collider.is_in_group("countries"):
 				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.country_click_highlight()
 			elif collider.is_in_group("wrong_countries"):
 				crosshair_piano(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.country_wrong_highlight()
 			elif collider.is_in_group("final_door_interact"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					show_interaction_text("Esta cerrado")
 			elif collider.is_in_group("ending"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					state = PlayerState.ENDING
 					player_camera.current = false
 					clean_ui()
@@ -255,12 +315,13 @@ func _normal_movement(delta):
 			elif collider.is_in_group("khachkars"):
 				crosshair(true)
 				if Input.is_action_just_pressed(input_left_click):
+					play_pickup()
 					collider.khachkar_photo(has_crowbar)
 					show_interaction_text("El album ha sido actualizado")
 					if has_crowbar and collider.name == "collisionKhachkar6":
 						$Head/Camera3D/Crowbar.visible = false
 					if not has_crowbar and collider.name == "collisionKhachkar6":
-						show_interaction_text("Nesecito algo para poder sacarlo")
+						show_interaction_text("Necesito algo para poder sacarlo")
 			else:
 				crosshair(false)
 		else:

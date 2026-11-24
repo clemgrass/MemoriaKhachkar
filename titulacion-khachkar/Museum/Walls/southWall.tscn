@@ -23,6 +23,9 @@ uv1_scale = Vector3(0.08, 1, 6)
 [sub_resource type="BoxShape3D" id="BoxShape3D_1fcha"]
 size = Vector3(0.40063477, 11.012695, 30.114258)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_1fcha"]
+size = Vector2(29.640003, 11.336735)
+
 [node name="SouthWall" type="Node3D" unique_id=1256002170]
 
 [node name="southWallB" type="StaticBody3D" parent="." unique_id=1110588847]
@@ -33,3 +36,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qb0ab")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="southWallB" unique_id=1521065847]
 shape = SubResource("BoxShape3D_1fcha")
+
+[node name="culling" type="Node3D" parent="." unique_id=1069838794]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=227361354]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -0.4307356, 0)
+occluder = SubResource("QuadOccluder3D_1fcha")

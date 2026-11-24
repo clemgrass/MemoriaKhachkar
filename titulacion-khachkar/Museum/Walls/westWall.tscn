@@ -41,6 +41,21 @@ size = Vector3(0.5223267, 4.2940984, 0.40039063)
 [sub_resource type="BoxShape3D" id="BoxShape3D_xai40"]
 size = Vector3(3.1047912, 0.78462243, 0.40039063)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_bjw3p"]
+size = Vector2(16.470802, 10.918931)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_0p2op"]
+size = Vector2(15.629751, 10.918931)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_tr5e0"]
+size = Vector2(1.9032326, 7.3973737)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_y2n84"]
+size = Vector2(38.502983, 4.094602)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_q01vi"]
+size = Vector2(6.8732224, 6.572039)
+
 [node name="WestWall" type="Node3D" unique_id=237330063]
 
 [node name="wall" type="StaticBody3D" parent="." unique_id=713150404]
@@ -76,3 +91,25 @@ shape = SubResource("BoxShape3D_8535t")
 [node name="coll7" type="CollisionShape3D" parent="wall" unique_id=2106217688]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.354366, 5.1033554, 0)
 shape = SubResource("BoxShape3D_xai40")
+
+[node name="Culling" type="Node3D" parent="." unique_id=2085632244]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="Culling" unique_id=1343655038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.588722, -0.09025478, 0)
+occluder = SubResource("QuadOccluder3D_bjw3p")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="Culling" unique_id=118814210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.68089, -0.09025478, 0)
+occluder = SubResource("QuadOccluder3D_0p2op")
+
+[node name="OccluderInstance3D3" type="OccluderInstance3D" parent="Culling" unique_id=795776759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.379408, 1.5389698, 0)
+occluder = SubResource("QuadOccluder3D_tr5e0")
+
+[node name="OccluderInstance3D4" type="OccluderInstance3D" parent="Culling" unique_id=1126004882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.332281, 3.1761162, 0)
+occluder = SubResource("QuadOccluder3D_y2n84")
+
+[node name="OccluderInstance3D5" type="OccluderInstance3D" parent="Culling" unique_id=1551222743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.397404, -2.1805258, 0)
+occluder = SubResource("QuadOccluder3D_q01vi")

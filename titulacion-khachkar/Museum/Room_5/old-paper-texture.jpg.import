@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvqdbg1yblxys"
 path.s3tc="res://.godot/imported/old-paper-texture.jpg-ef75f08a4a140147c684463e41671f12.s3tc.ctex"
+path.etc2="res://.godot/imported/old-paper-texture.jpg-ef75f08a4a140147c684463e41671f12.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Museum/Room_5/old-paper-texture.jpg"
-dest_files=["res://.godot/imported/old-paper-texture.jpg-ef75f08a4a140147c684463e41671f12.s3tc.ctex"]
+dest_files=["res://.godot/imported/old-paper-texture.jpg-ef75f08a4a140147c684463e41671f12.s3tc.ctex", "res://.godot/imported/old-paper-texture.jpg-ef75f08a4a140147c684463e41671f12.etc2.ctex"]
 
 [params]
 

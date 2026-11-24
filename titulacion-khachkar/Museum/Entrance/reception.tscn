@@ -431,6 +431,24 @@ _surfaces = [{
 "vertex_data": PackedByteArray("9AS1vgDQFr3yBLW+AAAAvwDQFr0uvTuzAAAAAADQFr0AAAAAAAAAvwDQFr0uvTuz9AS1vgDQFr3yBLW+9AS1vgDQFj3yBLW+Lt7MMQDQFr0AAAC/Lt7MMQDQFr0AAAC/Lt7MMQDQFj0AAAC/AAAAvwDQFr0uvTuz8wS1vgDQFr3zBLU+AAAAAADQFr0AAAAA8wS1vgDQFr3zBLU+AAAAvwDQFr0uvTuzAAAAvwDQFj0uvTuzLr27sgDQFr0AAAA/Lr27sgDQFr0AAAA/8wS1vgDQFr3zBLU+8wS1vgDQFj3zBLU+AAAAvwDQFj0uvTuzAAAAvwDQFj0uvTuz9AS1vgDQFj3yBLW+AAAAAADQFj0AAAAA9AS1vgDQFj3yBLW+Lt7MMQDQFj0AAAC/AAAAAADQFj0AAAAA8wS1vgDQFj3zBLU+8wS1vgDQFj3zBLU+AAAAvwDQFj0uvTuzAAAAAADQFj0AAAAALr27sgDQFj0AAAA/Lr27sgDQFj0AAAA/8wS1vgDQFj3zBLU+AAAAAADQFj0AAAAA8QS1PgDQFr31BLW+Lt7MMQDQFr0AAAC/8QS1PgDQFr31BLW+8QS1PgDQFj31BLW+AAAAPwDQFr0AAAAA8QS1PgDQFr31BLW+AAAAPwDQFr0AAAAAAAAAPwDQFj0AAAAA8wS1PgDQFr3zBLU+8wS1PgDQFr3zBLU+AAAAPwDQFr0AAAAAAAAAPwDQFr0AAAAA8wS1PgDQFr3zBLU+8wS1PgDQFj3zBLU+Lt7MMQDQFj0AAAC/Lt7MMQDQFj0AAAC/8QS1PgDQFj31BLW+AAAAAADQFj0AAAAA8QS1PgDQFj31BLW+8QS1PgDQFj31BLW+AAAAPwDQFj0AAAAAAAAAAADQFj0AAAAA8wS1PgDQFj3zBLU+8wS1PgDQFj3zBLU+Lr27sgDQFj0AAAA/AAAAAADQFj0AAAAAAAAAPwDQFj0AAAAAAAAAPwDQFj0AAAAA8wS1PgDQFj3zBLU+AAAAAADQFj0AAAAAAIAAAP///x8AgAAA//++EgCAAAD///8/AACGj///O/gAANXI//+U2wAAKbf//2rkAIAAAP///z///3fwd/D/vwAAd/D//8LHAIAAAHyl/78AgAAA/7//vwCAAAD///+/KDf/fwAAauQAAIaP//87+IcP/38AADv4AIAAAP///794cP9/AADCxyg3/38AAGrk1Uj/fwAAlNuHD/9/AAA7+ACA//+CWv8/AID//4Ja/z8AgP//glr/PwCA//99Jf8/AID//30l/z8AgP//fSX/P9VI/38AAJTbAID//wAAQO0AgP//AABA7QCA//8AAEDtho//f4cP/78AgP//AAC90gCA//8AAL3SAID//wAAvdIAgAAA/7//P///d/B38P+///8ptym3/7///9XI1Mj/vwCAAAB8pf8///8ptwAAlBt38P9////DB///ho8AAMMHAIAAAP///98pt/9/KDf/vwCAAAD//0Dtd/D/f3hw/78pt/9/KDf/v9TI/3/VSP+/AAB38P//wscAgP//AABALQCA//8AAEAtAID//wAAQC3//9XIAABpJACA//8AAL4SAID//wAAvhIAgP//AAC+EtTI/3/VSP+/AID//30l/78AgP//fSX/vwCA//99Jf+///+Gj4aP/78AgP//glr/vwCA//+CWv+/AID//4Ja/78=")
 }]
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_bgtb2"]
+size = Vector2(11.968864, 7.2772636)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_slddd"]
+size = Vector2(9.056652, 7.2772636)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_wcxr0"]
+size = Vector2(9.660532, 7.2772636)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_liuco"]
+size = Vector2(9.660532, 2.5716667)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_xrdb0"]
+size = Vector2(11.440212, 1.0870972)
+
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_b01th"]
+size = Vector2(3.7018757, 1.0870972)
+
 [node name="Reception" type="Node3D" unique_id=1530775575]
 
 [node name="Recep" type="StaticBody3D" parent="." unique_id=1937881757]
@@ -567,3 +585,37 @@ omni_range = 13.337645
 [node name="CSGBakedMeshInstance3D2" type="MeshInstance3D" parent="OmniLight3D2" unique_id=1036862491]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3120661, 0.16095924, -0.004397869)
 mesh = SubResource("ArrayMesh_qmpdb")
+
+[node name="culling" type="Node3D" parent="." unique_id=389535756]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="culling" unique_id=572308394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0018015, 3.2685175, -11.935591)
+occluder = SubResource("QuadOccluder3D_bgtb2")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="culling" unique_id=1770823261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0018015, 3.2685175, 11.931227)
+occluder = SubResource("QuadOccluder3D_bgtb2")
+
+[node name="OccluderInstance3D3" type="OccluderInstance3D" parent="culling" unique_id=2043384961]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.0069206953, 3.2685175, 7.378851)
+occluder = SubResource("QuadOccluder3D_slddd")
+
+[node name="OccluderInstance3D4" type="OccluderInstance3D" parent="culling" unique_id=1702897740]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.0069206953, 3.2685175, -7.0948944)
+occluder = SubResource("QuadOccluder3D_wcxr0")
+
+[node name="OccluderInstance3D5" type="OccluderInstance3D" parent="culling" unique_id=1841713636]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.0069206953, 5.631042, 0.29329717)
+occluder = SubResource("QuadOccluder3D_liuco")
+
+[node name="OccluderInstance3D6" type="OccluderInstance3D" parent="culling" unique_id=1288155660]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.0759983, 1.0205207, 0.0002501011)
+occluder = SubResource("QuadOccluder3D_xrdb0")
+
+[node name="OccluderInstance3D7" type="OccluderInstance3D" parent="culling" unique_id=1471914351]
+transform = Transform3D(-0.7071068, 0, 0.7071067, 0, 1, 0, -0.7071067, 0, -0.7071068, 3.9564238, 1.0205207, -6.531843)
+occluder = SubResource("QuadOccluder3D_b01th")
+
+[node name="OccluderInstance3D8" type="OccluderInstance3D" parent="culling" unique_id=1700877588]
+transform = Transform3D(-0.70710665, 0, -0.7071069, 0, 1, 0, 0.7071069, 0, -0.70710665, 3.9564238, 1.0205207, 6.4889607)
+occluder = SubResource("QuadOccluder3D_b01th")

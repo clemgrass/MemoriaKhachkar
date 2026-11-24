@@ -187,6 +187,9 @@ _surfaces = [{
 [sub_resource type="BoxShape3D" id="BoxShape3D_yep6o"]
 size = Vector3(0.37615967, 6.4490967, 2.8459778)
 
+[sub_resource type="QuadOccluder3D" id="QuadOccluder3D_j2oar"]
+size = Vector2(2.685993, 4.1339593)
+
 [node name="Museum" type="Node3D" unique_id=1748015087]
 
 [node name="Room0" parent="." unique_id=307174438 instance=ExtResource("1_gh3s1")]
@@ -276,3 +279,13 @@ mesh = SubResource("ArrayMesh_44big")
 [node name="eightDoorColl" type="CollisionShape3D" parent="DoorBack/rightDoor" unique_id=917241298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009979248, 0.007751465, 1.4228363)
 shape = SubResource("BoxShape3D_yep6o")
+
+[node name="culling" type="Node3D" parent="DoorBack" unique_id=1267699747]
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="DoorBack/culling" unique_id=792542423]
+transform = Transform3D(1.3113412e-07, 0, 0.9999997, 0, 1, 0, -0.99999976, 0, 1.3113402e-07, 0, 1.1521611, 1.4544678)
+occluder = SubResource("QuadOccluder3D_j2oar")
+
+[node name="OccluderInstance3D2" type="OccluderInstance3D" parent="DoorBack/culling" unique_id=2088012814]
+transform = Transform3D(1.3113412e-07, 0, 0.9999997, 0, 1, 0, -0.99999976, 0, 1.3113396e-07, 0, 1.1521611, -1.4107971)
+occluder = SubResource("QuadOccluder3D_j2oar")
